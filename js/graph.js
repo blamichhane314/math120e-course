@@ -8,6 +8,8 @@
 // requirement, dotted for a soft ordering. The reason an edge exists is shown
 // on hover, not at rest.
 
+import { inline, tex } from './blocks.js?v=4';
+
 const esc = (s) => String(s ?? '').replace(/[&<>]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
 
 /**
@@ -99,6 +101,7 @@ export function mountGraph(host, G, focus, opts = {}) {
             (node.problems === 1 ? '' : 's') + '</span>' +
         '</div>' +
         (anySoft ? '<button class="gr-filter" aria-pressed="false">requirements only</button>' : '') +
+        '<div class="gr-ex" hidden></div>' +
       '</div>' +
       '<div class="gr-col gr-fwd">' + column(R, 'fwd') + '</div>' +
     '</div>' +
@@ -129,38 +132,65 @@ export function mountGraph(host, G, focus, opts = {}) {
     if (why.classList.contains('pinned')) return;   // pinned stays until replaced
     why.hidden = true;
   });
-  // a click opens a small menu on the node
-  let menu = null;
-  const closeMenu = () => { if (menu) { menu.remove(); menu = null; } };
-  host.addEventListener('click', (e) => {
-    const b = e.target.closest('.gr-n');
-    if (!b) { closeMenu(); return; }
-    closeMenu();
+  /* Clicking a neighbour shows how the two are joined: a short worked
+     example in which the focused objective is visibly used inside the later
+     one. It goes in the middle column, which was otherwise empty ground
+     beside the list. */
+  const ex = host.querySelector('.gr-ex');
+  const B = opts.bridges || {};
+
+  function showExample(b) {
     const id = b.getAttribute('data-id');
+    const key = focus + '>' + id;
+    const d = B[key];
+    host.querySelectorAll('.gr-n.sel').forEach((n) => n.classList.remove('sel'));
+    b.classList.add('sel');
+
     const n = G.nodes[id];
-    menu = document.createElement('div');
-    menu.className = 'gr-menu';
-    menu.innerHTML =
-      '<div class=gr-menu-h>' + esc(id) + '</div>' +
-      '<button data-a=focus>centre on this</button>' +
-      '<button data-a=why>keep the reason in view</button>' +
-      '<button data-a=problems>open ' + esc(n.section) + ' in the reader</button>' +
-      '<button data-a=close>dismiss</button>';
-    b.appendChild(menu);
-    menu.addEventListener('click', (ev) => {
-      const a = ev.target.closest('button');
-      if (!a) return;
-      ev.stopPropagation();
-      const act = a.getAttribute('data-a');
-      closeMenu();
-      if (act === 'focus') { opts.onFocus ? opts.onFocus(id) : mountGraph(host, G, id, opts); }
-      else if (act === 'why') {
-        why.textContent = b.getAttribute('data-why');
-        why.hidden = false; why.classList.add('pinned');
-      } else if (act === 'problems' && opts.onSection) opts.onSection(n.section);
-    });
+    const head = '<div class=ex-h><span class=ex-a>' + esc(focus) + '</span>' +
+      '<span class=ex-arrow>&rarr;</span><span class=ex-b>' + esc(id) + '</span>' +
+      '<span class=ex-type>' + (b.getAttribute('data-type') === 'requires'
+        ? 'required' : 'prepares for') + '</span></div>' +
+      '<div class=ex-t>' + esc(n.text) + '</div>';
+
+    const body = d
+      ? '<div class=ex-p>' + inline(d.prompt) + '</div>' +
+        '<ol class=ex-steps>' + d.steps.map((st) =>
+          '<li><span class=ex-tex>' + tex(st.tex) + '</span>' +
+          (st.say ? '<span class=ex-say>' + inline(st.say) + '</span>' : '') +
+          '</li>').join('') + '</ol>' +
+        '<div class=ex-point>' + inline(d.point) + '</div>'
+      : '<div class=ex-none>' + esc(b.getAttribute('data-why') || 'No worked example written for this pair yet.') + '</div>';
+
+    ex.innerHTML = head + body +
+      '<div class=ex-acts>' +
+        '<button data-a=focus>centre on ' + esc(id) + '</button>' +
+        '<button data-a=section>open ' + esc(n.section) + '</button>' +
+        '<button data-a=close>close</button>' +
+      '</div>';
+    ex.hidden = false;
+  }
+
+  host.addEventListener('click', (e) => {
+    const act = e.target.closest('.gr-ex button[data-a]');
+    if (act) {
+      const a = act.getAttribute('data-a');
+      const sel = host.querySelector('.gr-n.sel');
+      const id = sel && sel.getAttribute('data-id');
+      if (a === 'focus' && id) { opts.onFocus ? opts.onFocus(id) : mountGraph(host, G, id, opts); }
+      else if (a === 'section' && id && opts.onSection) opts.onSection(G.nodes[id].section);
+      else { ex.hidden = true; if (sel) sel.classList.remove('sel'); }
+      return;
+    }
+    const b = e.target.closest('.gr-n');
+    if (b) showExample(b);
   });
-  addEventListener('keydown', (e) => { if (e.key === 'Escape') closeMenu(); });
+
+  addEventListener('keydown', (e) => {
+    if (e.key !== 'Escape') return;
+    ex.hidden = true;
+    host.querySelectorAll('.gr-n.sel').forEach((n) => n.classList.remove('sel'));
+  });
 }
 
 /** Build the lookup the view needs from the node list and edge list. */

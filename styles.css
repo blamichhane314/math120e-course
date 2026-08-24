@@ -1046,3 +1046,43 @@ body::before{background:radial-gradient(120% 90% at 50% 0%,
   .gr-t{font-size:17.5px}
   .gr-focus .gr-t{font-size:28px}
 }
+
+/* ── how two objectives are joined ───────────────────────────────
+   The middle column stood empty below the focused objective while the list
+   beside it did all the work. Selecting a neighbour puts the join there: a
+   short worked example in which the focused objective is visibly used inside
+   the later one. */
+.gr-ex{margin-top:calc(var(--s)*3);padding:calc(var(--s)*2.5) calc(var(--s)*2.5);
+  border:1px solid var(--line);border-left:2px solid var(--accent);
+  border-radius:3px;background:var(--paper-lift)}
+.ex-h{display:flex;align-items:baseline;gap:calc(var(--s));flex-wrap:wrap;
+  font:11px/1.7 var(--mono);letter-spacing:.1em;color:var(--ink-faint)}
+.ex-a,.ex-b{color:var(--accent)}
+.ex-arrow{color:var(--ink-faint)}
+.ex-type{margin-left:auto;letter-spacing:.14em}
+.ex-t{font-size:16px;line-height:1.4;color:var(--ink);
+  margin:calc(var(--s)*.75) 0 calc(var(--s)*2)}
+.ex-p{font-size:16px;line-height:1.6;color:var(--ink);
+  padding-bottom:calc(var(--s)*1.5);margin-bottom:calc(var(--s)*1.5);
+  border-bottom:1px solid var(--line-soft)}
+.ex-steps{list-style:none;counter-reset:st;margin:0;padding:0}
+.ex-steps li{counter-increment:st;position:relative;
+  padding:calc(var(--s)*.9) 0 calc(var(--s)*.9) calc(var(--s)*3.25)}
+.ex-steps li::before{content:counter(st);position:absolute;left:0;top:calc(var(--s)*1.1);
+  font:10px var(--mono);color:var(--ink-faint)}
+.ex-tex{display:block;font-size:17px}
+.ex-say{display:block;margin-top:5px;font-size:14px;line-height:1.5;color:var(--ink-soft)}
+.ex-point{margin-top:calc(var(--s)*1.5);padding-top:calc(var(--s)*1.5);
+  border-top:1px solid var(--line-soft);font-size:14.5px;line-height:1.6;
+  color:var(--ink-soft)}
+.ex-none{font-size:14.5px;line-height:1.6;color:var(--ink-soft)}
+.ex-acts{display:flex;gap:calc(var(--s));flex-wrap:wrap;margin-top:calc(var(--s)*2)}
+.ex-acts button{font:10px var(--mono);letter-spacing:.12em;background:none;
+  border:1px solid var(--line);color:var(--ink-soft);padding:7px 11px;
+  border-radius:2px;cursor:pointer;transition:color .14s var(--ease),border-color .14s var(--ease)}
+.ex-acts button:hover{color:var(--accent);border-color:var(--accent)}
+
+/* the neighbour whose join is on show */
+.gr-n.sel{background:var(--accent-tint)}
+.gr-n.sel .gr-t{color:var(--ink)}
+.gr-n.sel .gr-id{color:var(--accent)}

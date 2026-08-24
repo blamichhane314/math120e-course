@@ -1,0 +1,308 @@
+{
+ "1.1/O1>1.2/O4": {
+  "prompt": "Simplify $(5x^{2}-3x+2)-(2x^{2}+4x-1)$",
+  "steps": [
+   {
+    "tex": "-(2x^{2}+4x-1)=-2x^{2}-4x+1",
+    "say": "the distributive property, with $-1$ as the factor"
+   },
+   {
+    "tex": "5x^{2}-2x^{2}-3x-4x+2+1",
+    "say": "commutative and associative: reorder and regroup"
+   },
+   {
+    "tex": "3x^{2}-7x+3",
+    "say": null
+   }
+  ],
+  "point": "Collecting like terms is itself the distributive property: $5x^{2}-2x^{2}=(5-2)x^{2}$."
+ },
+ "1.1/O1>1.2/O5": {
+  "prompt": "Expand $(x+3)(x-5)$",
+  "steps": [
+   {
+    "tex": "x(x-5)+3(x-5)",
+    "say": "distribute the first factor over the second"
+   },
+   {
+    "tex": "x^{2}-5x+3x-15",
+    "say": "distribute again, twice"
+   },
+   {
+    "tex": "x^{2}-2x-15",
+    "say": null
+   }
+  ],
+  "point": "FOIL is not a separate rule. It is the distributive property used twice."
+ },
+ "1.1/O1>1.3/O1": {
+  "prompt": "Factor $12x^{3}-18x^{2}$",
+  "steps": [
+   {
+    "tex": "6x^{2}\\cdot 2x-6x^{2}\\cdot 3",
+    "say": "write each term with the common factor showing"
+   },
+   {
+    "tex": "6x^{2}(2x-3)",
+    "say": "the distributive property, read right to left"
+   }
+  ],
+  "point": "Factoring is distributing run backwards. Multiply out to check."
+ },
+ "1.1/O1>1.6/O1": {
+  "prompt": "Solve $3(x+4)=18$",
+  "steps": [
+   {
+    "tex": "3x+12=18",
+    "say": "distributive property"
+   },
+   {
+    "tex": "3x=6",
+    "say": "add $-12$ to both sides — the additive inverse"
+   },
+   {
+    "tex": "x=2",
+    "say": "multiply both sides by $\\tfrac{1}{3}$ — the multiplicative inverse"
+   }
+  ],
+  "point": "Every step is a property of the real numbers applied to both sides. Without them the steps are moves to memorise."
+ },
+ "1.1/O1>8.1/O2": {
+  "prompt": "$A\\cap(B\\cup C)=(A\\cap B)\\cup(A\\cap C)$",
+  "steps": [
+   {
+    "tex": "a(b+c)=ab+ac",
+    "say": "the same shape, for numbers"
+   },
+   {
+    "tex": "A\\cap(B\\cup C)=(A\\cap B)\\cup(A\\cap C)",
+    "say": "$\\cap$ distributes over $\\cup$"
+   }
+  ],
+  "point": "Sets obey commutative, associative and distributive laws with the same shape as arithmetic."
+ },
+ "1.1/O3>1.2/O1": {
+  "prompt": "Evaluate $-3^{2}$ and $(-3)^{2}$",
+  "steps": [
+   {
+    "tex": "-3^{2}=-(3\\cdot 3)=-9",
+    "say": "the exponent binds tighter than the minus"
+   },
+   {
+    "tex": "(-3)^{2}=(-3)(-3)=9",
+    "say": "the parentheses make $-3$ the base"
+   }
+  ],
+  "point": "The order of operations is what decides which number is the base."
+ },
+ "1.1/O3>1.6/O1": {
+  "prompt": "Solve $2(x-3)+4=12$",
+  "steps": [
+   {
+    "tex": "2x-6+4=12",
+    "say": "parentheses first"
+   },
+   {
+    "tex": "2x-2=12",
+    "say": "then combine"
+   },
+   {
+    "tex": "2x=14,\\quad x=7",
+    "say": "undo in reverse order"
+   }
+  ],
+  "point": "Solving undoes operations in the reverse of the order that built the expression."
+ },
+ "1.1/O3>1.7/O2": {
+  "prompt": "Evaluate $x=\\dfrac{-(-5)+\\sqrt{(-5)^{2}-4(1)(6)}}{2(1)}$",
+  "steps": [
+   {
+    "tex": "(-5)^{2}=25,\\quad 4(1)(6)=24",
+    "say": "exponent before multiplication"
+   },
+   {
+    "tex": "\\sqrt{25-24}=\\sqrt{1}=1",
+    "say": "the radical groups what is under it"
+   },
+   {
+    "tex": "\\frac{5+1}{2}=3",
+    "say": "the bar groups: the whole numerator over the whole denominator"
+   }
+  ],
+  "point": "Three grouping symbols at once — parentheses, radical, fraction bar. This is where the formula usually goes wrong."
+ },
+ "1.1/O3>2.1/O2": {
+  "prompt": "Is $(2,-1)$ a solution of $3x-2y=8$?",
+  "steps": [
+   {
+    "tex": "3(2)-2(-1)",
+    "say": "substitute, in parentheses"
+   },
+   {
+    "tex": "6+2=8",
+    "say": "multiply before subtracting; $-2(-1)=+2$"
+   },
+   {
+    "tex": "8=8",
+    "say": "yes"
+   }
+  ],
+  "point": "Checking a solution is evaluating an expression. Precedence decides the answer."
+ },
+ "1.1/O3>2.2/O1": {
+  "prompt": "Slope through $(1,-2)$ and $(4,7)$",
+  "steps": [
+   {
+    "tex": "m=\\frac{7-(-2)}{4-1}",
+    "say": "both differences are grouped by the bar"
+   },
+   {
+    "tex": "m=\\frac{9}{3}=3",
+    "say": null
+   }
+  ],
+  "point": "The bar means the whole numerator over the whole denominator, not term by term."
+ },
+ "1.1/O3>3.1/O2": {
+  "prompt": "$f(x)=x^{2}-4x$. Find $f(-3)$",
+  "steps": [
+   {
+    "tex": "(-3)^{2}-4(-3)",
+    "say": "substitute in parentheses"
+   },
+   {
+    "tex": "9+12=21",
+    "say": null
+   }
+  ],
+  "point": "Substituting without parentheses gives $-9-12=-21$, a different number."
+ },
+ "1.1/O3>4.2/O2": {
+  "prompt": "Evaluate $\\dfrac{574.7}{1+31.8e^{-0.077t}}$ at $t=0$",
+  "steps": [
+   {
+    "tex": "e^{0}=1",
+    "say": "the exponent first"
+   },
+   {
+    "tex": "1+31.8(1)=32.8",
+    "say": "multiply, then add — inside the denominator"
+   },
+   {
+    "tex": "\\frac{574.7}{32.8}\\approx 17.5",
+    "say": "divide last"
+   }
+  ],
+  "point": "The denominator has to be finished before the division happens."
+ },
+ "1.1/O3>4.3/O4": {
+  "prompt": "$\\log_{5}40=\\dfrac{\\ln 40}{\\ln 5}$",
+  "steps": [
+   {
+    "tex": "\\ln 40\\approx 3.689,\\quad \\ln 5\\approx 1.609",
+    "say": "each logarithm first"
+   },
+   {
+    "tex": "\\frac{3.689}{1.609}\\approx 2.29",
+    "say": "then divide"
+   }
+  ],
+  "point": "The bar groups. It is not $\\ln(40\\div 5)$."
+ },
+ "1.1/O3>5.1/O2": {
+  "prompt": "$A=1000\\left(1+\\dfrac{0.06}{4}\\right)^{4\\cdot 3}$",
+  "steps": [
+   {
+    "tex": "\\frac{0.06}{4}=0.015",
+    "say": "inside the parentheses first"
+   },
+   {
+    "tex": "1000(1.015)^{12}",
+    "say": "the exponent applies to the bracket, not to 1000"
+   },
+   {
+    "tex": "\\approx 1195.62",
+    "say": "power before the multiplication"
+   }
+  ],
+  "point": "Raising 1000 to the power first is the usual error, and it is an order-of-operations error."
+ },
+ "1.1/O3>5.2/O1": {
+  "prompt": "$S=200\\cdot\\dfrac{(1+0.005)^{24}-1}{0.005}$",
+  "steps": [
+   {
+    "tex": "(1.005)^{24}\\approx 1.12716",
+    "say": "power first"
+   },
+   {
+    "tex": "\\frac{1.12716-1}{0.005}\\approx 25.42",
+    "say": "the $-1$ is inside the numerator"
+   },
+   {
+    "tex": "200(25.42)\\approx 5083.3",
+    "say": null
+   }
+  ],
+  "point": "Subtract before dividing: the bar groups everything above it."
+ },
+ "1.1/O3>8.1/O5": {
+  "prompt": "$A\\cup(B\\cap C)$ with $A=\\{1,2\\}$, $B=\\{2,3\\}$, $C=\\{3,4\\}$",
+  "steps": [
+   {
+    "tex": "B\\cap C=\\{3\\}",
+    "say": "innermost parentheses first"
+   },
+   {
+    "tex": "A\\cup\\{3\\}=\\{1,2,3\\}",
+    "say": null
+   }
+  ],
+  "point": "Parentheses fix the order for set operations exactly as they do for numbers."
+ },
+ "1.1/O3>9.1/O3": {
+  "prompt": "$E=\\sum x\\cdot P(x)$ for $x=1,2$ with $P=0.3,\\ 0.7$",
+  "steps": [
+   {
+    "tex": "1(0.3)+2(0.7)",
+    "say": "every product is formed first"
+   },
+   {
+    "tex": "0.3+1.4=1.7",
+    "say": "then the sum"
+   }
+  ],
+  "point": "Multiplication before addition is the whole structure of an expected value."
+ },
+ "1.1/O3>10.2/O1": {
+  "prompt": "Mean of $4,\\ 7,\\ 9,\\ 12$",
+  "steps": [
+   {
+    "tex": "\\frac{4+7+9+12}{4}",
+    "say": "the bar groups the whole sum"
+   },
+   {
+    "tex": "\\frac{32}{4}=8",
+    "say": null
+   }
+  ],
+  "point": "Dividing only the last term gives $4+7+9+3=23$, which is the same mistake as $\\tfrac{3x+6}{3}=x+6$."
+ },
+ "1.1/O3>10.3/O1": {
+  "prompt": "$s=\\sqrt{\\dfrac{\\sum(x-\\bar{x})^{2}}{n-1}}$",
+  "steps": [
+   {
+    "tex": "(x-\\bar{x})^{2}",
+    "say": "subtract the mean, then square — parentheses before the exponent"
+   },
+   {
+    "tex": "\\frac{\\sum(x-\\bar{x})^{2}}{n-1}",
+    "say": "sum, then divide"
+   },
+   {
+    "tex": "\\sqrt{\\ \\cdot\\ }",
+    "say": "take the root last"
+   }
+  ],
+  "point": "Four levels of grouping, evaluated from the inside out. Nothing here is new beyond 1.1."
+ }
+}

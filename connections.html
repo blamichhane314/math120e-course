@@ -3,7 +3,8 @@
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <title>math 120e · connections</title>
-<link rel=stylesheet href="styles.css?v=28">
+<link rel=stylesheet href="vendor/katex/katex.min.css">
+<link rel=stylesheet href="styles.css?v=29">
 <script>try{document.documentElement.dataset.theme=localStorage.getItem("m120.theme")||"ink"}catch(e){}</script>
 <body class=no-rail>
 <div id=read><div id=doc>
@@ -17,10 +18,18 @@
 </div></div>
 <div id=margin></div>
 
+<script defer src="vendor/katex/katex.min.js"></script>
 <script type=module>
-import { mountGraph, buildGraph, mountMatrix, mountChapters } from './js/graph.js?v=25';
+import { mountGraph, buildGraph, mountMatrix, mountChapters } from './js/graph.js?v=26';
 
 const raw = await (await fetch('data/graph_provisional.json', {cache:'no-store'})).json();
+
+// worked examples for a pair, where one has been written
+let BRIDGES = {};
+try { BRIDGES = await (await fetch('data/bridges.json', {cache:'no-store'})).json(); } catch {}
+
+// tex() needs KaTeX present before the first render
+await new Promise((r) => (window.katex ? r() : addEventListener('load', r)));
 
 // Round 1 is claims, not yet reconciled. A pair claimed from BOTH ends is
 // already mutually confirmed; one claimed from a single end is provisional.
@@ -68,11 +77,16 @@ function show(id) {
   sel.value = cur;
   document.getElementById('gpos').innerHTML =
     (at + 1) + ' <i>/</i> ' + ORDER.length;
-  mountGraph(nb, G, cur, { onFocus: show,
+  mountGraph(nb, G, cur, { bridges: BRIDGES, onFocus: show,
     onSection: (s) => window.open('index.html#/' + s, '_blank') });
   location.replace('#' + cur);
 }
 const step = (d) => show(ORDER[(at + d + ORDER.length) % ORDER.length]);
+
+addEventListener('hashchange', () => {
+  const id = decodeURIComponent(location.hash.slice(1));
+  if (id && id !== ORDER[at]) show(id);
+});
 
 document.getElementById('gprev').onclick = () => step(-1);
 document.getElementById('gnext').onclick = () => step(1);

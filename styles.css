@@ -530,7 +530,8 @@ body{max-width:none}
 
 /* ── dependency matrix ─────────────────────────────────────────── */
 .mx-wrap{overflow-x:auto;margin-top:calc(var(--s)*2)}
-.mx{display:block;max-width:100%;height:auto;min-width:760px}
+.mx{display:block;aspect-ratio:1;width:auto;max-width:100%;min-width:0;
+  height:min(calc(100vh - 15rem),760px)}
 .mx-lab{font-family:var(--mono);font-size:8.5px;letter-spacing:.06em;
   fill:var(--ink-faint);text-anchor:middle}
 .mx-lab.end{text-anchor:end}
@@ -693,3 +694,70 @@ h1{font-size:32px}
    never writes to it, it is 17rem of nothing between the work and the edge */
 body.no-margin{grid-template-columns:var(--rail) minmax(0,1fr) 0}
 body.no-margin #margin{display:none}
+
+/* The reason a relation exists has to be visible while the cursor is still on
+   the item. With fourteen neighbours the column runs past the fold, so a block
+   at the end of the document is never on screen at the moment it is wanted. */
+.gr-why{position:sticky;bottom:0;z-index:5;margin-top:calc(var(--s)*3);
+  background:var(--paper-lift);border-left:2px solid var(--accent);
+  border-top:1px solid var(--line-soft);
+  padding:calc(var(--s)*1.5) calc(var(--s)*2);max-width:none;
+  box-shadow:0 -8px 20px -14px rgba(38,34,29,.28)}
+.gr-why[hidden]{display:none}
+
+/* three columns of names read better than one long one */
+.gr-col{min-width:0}
+.gr-back,.gr-fwd{display:flex;flex-direction:column}
+@media (min-width:1250px){
+  .gr{grid-template-columns:1fr 1.05fr 1fr;gap:calc(var(--s)*3)}
+  .gr-back,.gr-fwd{max-height:none}
+}
+.gr-n{padding-top:calc(var(--s)*.6);padding-bottom:calc(var(--s)*.6);
+  margin-bottom:calc(var(--s)*.5)}
+.gr-t{font-size:14px}
+.gr-id{font-size:10px}
+.gr-focus .gr-t{font-size:19px}
+.gr-head{font-size:9.5px}
+
+/* An input typeset inside an expression. The phantom behind it holds the
+   space; the input lies over that space so it cannot push its neighbours
+   apart, and it inherits KaTeX's font-size, which is how a slot in an
+   exponent comes out at exponent size. */
+.tslot{position:relative;display:inline-block}
+.tslot .a-slot.in-math{position:absolute;inset:0;display:block}
+.a-slot.in-math .a-in{width:100%;min-width:0;height:100%;font-size:inherit;
+  padding:0;text-align:center;border:0;border-bottom:1.5px solid var(--accent-soft);
+  border-radius:0;background:rgba(168,67,46,.05);line-height:1}
+.a-slot.in-math .a-in:focus{background:var(--accent-tint);
+  border-bottom-color:var(--accent);outline:none}
+
+/* The matrix is square, so filling the column made it as tall as the column is
+   wide and pushed the whole grid past the fold. It is sized to the viewport
+   instead, which leaves width over — enough to stand the hover detail beside
+   it rather than underneath, where a cell in the top row could not be read
+   and pointed at simultaneously. */
+@media (min-width:1180px){
+  #tl{display:grid;grid-template-columns:auto minmax(15rem,21rem);
+    gap:0 calc(var(--s)*4);align-items:start}
+  .mx-wrap{grid-column:1}
+  /* max-width:100% would resolve against a track the matrix itself sizes,
+     so the square could never grow past its own letterboxed width. The
+     height cap is what bounds it here. */
+  .mx{max-width:none}
+  .mx-cap{grid-column:2;position:sticky;top:calc(var(--s)*3);
+    margin-top:calc(var(--s)*4);padding-left:calc(var(--s)*2);
+    border-left:2px solid var(--accent);border-top:0;background:none;box-shadow:none}
+}
+@media (max-width:1179px){
+  .mx-cap{position:sticky;bottom:0;z-index:5;background:var(--paper-lift);
+    border-top:1px solid var(--line-soft);border-left:2px solid var(--accent);
+    padding:calc(var(--s)*1.25) calc(var(--s)*2);
+    box-shadow:0 -8px 20px -14px rgba(38,34,29,.28)}
+}
+.mx-wrap{min-width:0}
+.mx-list div{padding:3px 0;border-top:1px solid var(--line-soft)}
+.mx-list div:first-child{border-top:0}
+
+/* With nothing hovered the caption is an accent rule with no text beside it,
+   which reads as a stray mark. */
+.ch-cap:empty{min-height:0;border-left:0;padding-left:0}

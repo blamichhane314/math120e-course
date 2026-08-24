@@ -3,14 +3,11 @@
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <title>math 120e · connections</title>
-<link rel=stylesheet href="styles.css?v=6">
+<link rel=stylesheet href="styles.css?v=13">
 <body>
 <div id=rail><div class=mast><a href="index.html">math 120e</a><span class=sub>connections</span></div></div>
 <div id=read><div id=doc>
   <h1><span class=num>connections</span>How the ideas depend on each other</h1>
-  <p class=lede>One objective at a time, with what it rests on and what it leads to.
-  The whole graph is never drawn — at this size a full map is a hairball, and it
-  answers no question a learner actually has.</p>
   <div id=views></div>
   <div id=ch hidden></div>
   <div id=picker></div>
@@ -41,9 +38,7 @@ const G = buildGraph(raw.nodes, edges);
 
 const nb = document.getElementById('nb');
 
-// Objectives in course order — stepping is the primary way through, because
-// walking the sequence is itself the thing being taught. The jump list stays
-// for when you already know where you are going.
+// Objectives in course order. Step with prev/next, or jump with the list.
 const ORDER = raw.nodes.filter(n => G.nodes[n.id]).map(n => n.id);
 let at = 0;
 
@@ -87,7 +82,6 @@ addEventListener('keydown', (e) => {
   else if (e.key === 'ArrowLeft') step(-1);
 });
 
-// the timeline is summoned, not resident
 document.getElementById('views').innerHTML =
   '<div class=stepper>' +
     '<button class=sbtn id=vch>chapters</button>' +

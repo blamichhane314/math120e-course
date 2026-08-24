@@ -1,27 +1,31 @@
 # MATH 120E — course companion
 
-A static site alongside the course. It holds the structure — objectives, the
-schedule, and how the two relate — so that the work a student is doing has
-somewhere to sit.
+A static site for the course. It holds the objectives, the schedule, and
+practice questions written for this course. The assigned problems are in MyLab
+and are not reproduced here.
 
 ## Pages
 
-- `index.html` — the term at a glance, and the way in to everything else
-- `connections.html` — the objective graph at three scales: whole course by
-  chapter, section by section, or one objective and its immediate neighbours
-- `homework.html` — every problem, one at a time, with the objectives it serves
-- the first-day diagnostic lives in its own repository
+- `index.html`: the term at a glance
+- `connections.html`: the objective graph by chapter, by section, or one
+  objective at a time
+- `homework.html`: the objectives for a section, with practice questions
+  written for them, one at a time
+- the first-day diagnostic is in its own repository
 
-## Why this repository is private
+## What is and is not in this repository
 
-It carries the converted assignments in full. Those are the publisher's
-exercises, so the site is served privately to the class rather than published
-openly — the repository is private and Cloudflare Pages serves it behind Access,
-which gates by email for roughly a class-sized group.
+The repository is public and is served by GitHub Pages at
+<https://blamichhane314.github.io/math120e-course/>.
 
-Apply Access to the site itself. Never put it in front of an API path a page
-posts to: a browser posting in the background has no session and would be
-redirected to a sign-in screen.
+Nothing here reproduces the publisher's exercises. `data/course.json` carries
+the structure only — section, week, objective, and a record for each assigned
+problem giving its number, the objectives it serves, and what kind of problem
+it is (`mcq`, the block types it uses), with every content field stripped.
+The converted assignments stay in the private working repository.
+
+Publishing anything to this repository publishes it openly. Check what a data
+file contains before committing it.
 
 ## Building it
 
@@ -32,7 +36,7 @@ two typefaces are vendored so the site makes no external requests.
 
 ## Where the data comes from
 
-Generated from the private working repository, which holds the full converted
-assignments. `course.json` here is that file with every content field removed;
-`examples.json` is a deliberate small sample. Regenerate both when the source
-changes rather than editing them by hand.
+`data/course.json` is generated from the private working repository, stripped of
+content fields. `data/q_a.json`, `q_b.json` and `q_c.json` are the practice
+questions, written against `AUTHORING.md`. Regenerate `course.json` from the
+source rather than editing it by hand.

@@ -1,21 +1,12 @@
-// graph.js — the neighbourhood view.
+// graph.js — one objective and its immediate relations.
 //
-// The whole graph is never drawn. 119 nodes in a force layout is the hairball
-// the design language names as an anti-pattern, and it answers no question a
-// learner actually has. The two questions they do have are local:
+// The view is a spine: what the objective rests on to the left, the objective
+// in the middle, what uses it later to the right. Left to right is course
+// order.
 //
-//     why am I learning this now?      → what this rests on
-//     where does this go?              → what uses it later
-//
-// So the view is a spine: what comes before on the left, the current objective
-// in the middle, what comes after on the right. Time runs left to right, which
-// is already the course's own order, so the layout carries meaning rather than
-// being an arbitrary embedding.
-//
-// Relation type is carried by VALUE, not hue — solid for a hard requirement,
-// dotted for a soft ordering. That is the same convention the citation
-// underlines use elsewhere, and it needs no legend: touching one edge teaches
-// it. The reason a relation exists is an answer to a gesture, never resident.
+// Relation type is carried by line style, not hue: solid for a hard
+// requirement, dotted for a soft ordering. The reason an edge exists is shown
+// on hover, not at rest.
 
 const esc = (s) => String(s ?? '').replace(/[&<>]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
 
@@ -83,7 +74,7 @@ export function mountGraph(host, G, focus, opts = {}) {
 
   const why = host.querySelector('.gr-why');
 
-  // the reason is pulled, not pushed
+  // hovering a node shows the reason for its edge
   host.addEventListener('mouseover', (e) => {
     const b = e.target.closest('.gr-n');
     if (!b) return;
@@ -96,9 +87,7 @@ export function mountGraph(host, G, focus, opts = {}) {
     if (why.classList.contains('pinned')) return;   // pinned stays until replaced
     why.hidden = true;
   });
-  // A click offers what you might want to do with this objective. Jumping
-  // straight to it is one option among several, not the only outcome — the
-  // reason you touched a neighbour is often to read it, not to leave.
+  // a click opens a small menu on the node
   let menu = null;
   const closeMenu = () => { if (menu) { menu.remove(); menu = null; } };
   host.addEventListener('click', (e) => {
@@ -148,7 +137,7 @@ export function buildGraph(nodes, edges) {
   return { nodes: byId, edges: clean };
 }
 
-/** Section-level aggregation: the only view small enough to draw whole. */
+/** Section-level aggregation. */
 export function aggregate(G) {
   const secs = {};
   for (const id in G.nodes) {
@@ -183,12 +172,9 @@ export function components(secs) {
 }
 
 /* ── the underlying graph, as a matrix ─────────────────────────────
-   Ordered by time on both axes, so a cell is "section on the left feeds
-   section along the top". An arc diagram of 119 unlabelled dots showed only
-   that edges exist. A matrix is readable: every row and column is named, and
-   structure appears as blocks and as empty regions rather than as a shape you
-   have to trust. Reading DOWN a column tells you what a section rests on;
-   reading ACROSS a row tells you where it goes. */
+   Ordered by course order on both axes, so a cell is "section on the left
+   feeds section along the top". Reading down a column tells you what a section
+   rests on; reading across a row tells you where it goes. */
 const NS2 = 'http://www.w3.org/2000/svg';
 const mk = (t, a = {}) => {
   const n = document.createElementNS(NS2, t);
@@ -229,7 +215,7 @@ export function mountMatrix(host, G, opts = {}) {
     cl.textContent = s; svg.appendChild(cl);
   });
 
-  // chapter blocks, so the eye finds the regions without a legend
+  // dividers between chapters
   let prev = null;
   secs.forEach((s, i) => {
     const ch = key(s)[0];
@@ -287,17 +273,14 @@ export function mountMatrix(host, G, opts = {}) {
 }
 
 /* ── chapters ──────────────────────────────────────────────────────
-   Eight nodes and roughly nine hard edges: the one level where a real
-   node-link drawing is the right form rather than a hairball. Time runs left
-   to right, so an arc's horizontal span is how far the dependency reaches.
-   Weight is NORMALISED, because a raw count rewards whichever chapter happens
-   to hold more objectives — chapter 1 has 24 and chapter 3 has 4, so counting
-   would make every edge out of chapter 1 look important regardless of whether
-   anything actually rests on it.
-       receiver  — what share of the TARGET chapter depends on the source
-       sender    — what share of the SOURCE chapter is used by the target
-   Hard requirements are drawn at rest. Soft ordering is detail, and detail is
-   summoned by selecting a chapter, never resident. */
+   Eight nodes and roughly nine hard edges, drawn as arcs in course order, so
+   an arc's horizontal span is how far the dependency reaches.
+   Weight is normalised, because a raw count rewards whichever chapter holds
+   more objectives: chapter 1 has 24 and chapter 3 has 4.
+       receiver  = what share of the target chapter depends on the source
+       sender    = what share of the source chapter is used by the target
+   Hard requirements are drawn at rest; soft ordering appears when a chapter
+   is selected. */
 export function chapterModel(G) {
   const chOf = (id) => +G.nodes[id].section.split('.')[0];
   const chapters = new Map();

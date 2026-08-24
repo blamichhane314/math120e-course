@@ -3,13 +3,11 @@
 //
 // Counts across the 524-problem corpus that drove this list:
 //   compute 219 · choice(text) 116 · multipart 87 · fill 79 · choice(figure) 14
-// The unglamorous ones carry the course: fill + multipart is 166 problems,
-// four times every figure combined.
 //
 // Nothing here grades. An answer component collects a response and reports it;
-// what is correct lives with the content, and checking is a separate concern so
-// the same component can be used for practice, for a quiz, or for a worked
-// example with the response pre-filled.
+// what is correct lives with the content. Checking is a separate concern, so
+// the same component serves practice, a quiz, or a worked example with the
+// response pre-filled.
 
 import { renderBlocks, tex, inline, hasMath } from './blocks.js?v=1';
 
@@ -20,24 +18,79 @@ let uid = 0;
 const nextId = () => 'a' + (++uid);
 
 /** Render a template string carrying ⟨n⟩ markers into a line, substituting the
- *  matching slot. Shared by fill, select, and options that contain a box —
- *  the publisher freely mixes an input INTO a choice ("A. x²+5x+6 = ▭ /
- *  B. not factorable"), so a slot has to be placeable anywhere prose is. */
+ *  matching slot. Shared by fill, select, and options that contain a box: the
+ *  publisher mixes an input into a choice ("A. x²+5x+6 = ▭ / B. not
+ *  factorable"), so a slot has to be placeable anywhere prose is. */
 function templateInto(line, template, slots, ctx, asSelect = false) {
-  String(template ?? '').split(/(⟨\d+⟩)/).forEach((p) => {
-    const m = /^⟨(\d+)⟩$/.exec(p);
-    if (m) {
-      const s = (slots || [])[+m[1]] || {};
-      const id = s.id ?? +m[1];
-      line.appendChild(asSelect || s.options ? SelectSlot({ ...s, id }, ctx)
-                                             : Slot({ ...s, id }, ctx.onChange));
-    } else if (p) {
-      const span = document.createElement('span');
-      span.innerHTML = inline(p);
-      line.appendChild(span);
-    }
-  });
+  // A slot can sit inside the mathematics as well as beside it: "x^5 · x^3 =
+  // x^⟨0⟩" wants a box in the exponent, not a box after the expression. So the
+  // template is cut into math spans and prose FIRST. Splitting on the markers
+  // first would tear a `$…$` pair in half, and the surviving halves then pair
+  // with the wrong partners — the prose between two expressions ends up
+  // typeset as mathematics while the algebra is left as source.
+  const src = String(template ?? '');
+  const re = /\$([^$]+)\$/g;
+  let last = 0, m;
+  const prose = (t) => {
+    t.split(/(⟨\d+⟩)/).forEach((p) => {
+      const k = /^⟨(\d+)⟩$/.exec(p);
+      if (k) line.appendChild(slotFor(+k[1], slots, ctx, asSelect));
+      else if (p) {
+        const span = document.createElement('span');
+        span.innerHTML = inline(p);
+        line.appendChild(span);
+      }
+    });
+  };
+  while ((m = re.exec(src)) !== null) {
+    prose(src.slice(last, m.index));
+    line.appendChild(mathSpan(m[1], slots, ctx, asSelect));
+    last = m.index + m[0].length;
+  }
+  prose(src.slice(last));
   return line;
+}
+
+function slotFor(n, slots, ctx, asSelect) {
+  const s = (slots || [])[n] || {};
+  const id = s.id ?? n;
+  return asSelect || s.options ? SelectSlot({ ...s, id }, ctx)
+                               : Slot({ ...s, id }, ctx.onChange);
+}
+
+/** One `$…$` span, which may carry ⟨n⟩ markers. Each marker becomes a phantom
+ *  of the slot's own width, so KaTeX reserves exactly the room the input needs
+ *  and — because the phantom is typeset in position — reserves it at the size
+ *  the position calls for. A slot in an exponent comes out in script size
+ *  without anything here knowing it was in an exponent. */
+function mathSpan(source, slots, ctx, asSelect) {
+  const span = document.createElement('span');
+  if (!/⟨\d+⟩/.test(source)) { span.innerHTML = tex(source); return span; }
+
+  const used = [];
+  const marked = source.replace(/⟨(\d+)⟩/g, (_, n) => {
+    used.push(+n);
+    const s = (slots || [])[+n] || {};
+    return '\\htmlClass{tslot tslot-' + n + '}{\\phantom{' +
+           '0'.repeat(Math.max(2, Math.min(+s.size || 3, 3))) + '}}';
+    // The authored size suits a box standing on its own. Set into an
+    // expression it reads as a rule rather than a blank, so it is capped.
+  });
+
+  try {
+    span.innerHTML = window.katex.renderToString(marked, {
+      throwOnError: false, output: 'html', trust: true, strict: false,
+    });
+  } catch { span.innerHTML = tex(source); return span; }
+
+  for (const n of used) {
+    const host = span.querySelector('.tslot-' + n);
+    if (!host) continue;                       // KaTeX dropped it; leave the gap
+    const inp = slotFor(n, slots, ctx, asSelect);
+    inp.classList.add('in-math');
+    host.appendChild(inp);
+  }
+  return span;
 }
 
 function SelectSlot(s, ctx) {
@@ -111,8 +164,7 @@ export function Compute(a, ctx) {
 }
 
 /* ── fill: slots sitting inside a sentence ─────────────────────── */
-// template carries ⟨0⟩ ⟨1⟩ … markers; the sentence is the question, so the
-// slot must sit in the prose rather than under it.
+// template carries ⟨0⟩ ⟨1⟩ … markers; the slot sits in the prose, not under it.
 export function Fill(a, ctx) {
   const box = div('a-fill');
   box.appendChild(templateInto(div('a-line a-prose'), a.template || '⟨0⟩', a.slots, ctx));
@@ -121,8 +173,7 @@ export function Fill(a, ctx) {
 }
 
 /* ── select: a choice made inside a sentence ───────────────────── */
-// distinct from a real MCQ — it is a word chosen mid-clause, and it reads
-// wrongly if promoted to a lettered option list.
+// a word chosen mid-clause, not a lettered option list.
 export function Select(a, ctx) {
   const box = div('a-fill');
   box.appendChild(templateInto(div('a-line a-prose'), a.template || '⟨0⟩', a.slots, ctx, true));
@@ -131,8 +182,8 @@ export function Select(a, ctx) {
 }
 
 /* ── choice: options that are text, math, or whole figures ─────── */
-// An option is a block list, so a figure option costs nothing extra — the
-// same renderer draws it. Figure options are laid out as a grid, text as rows.
+// An option is a block list, so the same renderer draws a figure option.
+// Figure options are laid out as a grid, text as rows.
 export function Choice(a, ctx) {
   const name = nextId();
   const figure = (a.options || []).some((o) => Array.isArray(o) && o.some((b) => b.t !== 'text' && b.t !== 'math'));
@@ -150,7 +201,7 @@ export function Choice(a, ctx) {
     lab.appendChild(div('a-key', String.fromCharCode(65 + i)));
     const body = div('a-optbody');
     // an option may be a bare block list, or {blocks, slots} when the option
-    // itself contains an input box — the publisher mixes the two freely
+    // itself contains an input box
     const blocks = Array.isArray(o) ? o : (o && o.blocks) || [{ t: 'text', v: String(o) }];
     const slots = (o && o.slots) || [];
     blocks.forEach((b) => {

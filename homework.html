@@ -4,7 +4,7 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <title>MATH 120E — homework</title>
 <link rel=stylesheet href="vendor/katex/katex.min.css">
-<link rel=stylesheet href="styles.css?v=6">
+<link rel=stylesheet href="styles.css?v=13">
 <body>
 <div id=rail></div>
 <div id=read><div id=doc></div></div>
@@ -13,14 +13,14 @@
 <script defer src="vendor/katex/katex.min.js"></script>
 <script type=module>
 import { renderBlocks } from './js/blocks.js?v=3';
-import { renderAnswer } from './js/answers.js?v=3';
+import { renderAnswer } from './js/answers.js?v=5';
 
 const ready = () => new Promise(r => window.katex ? r() : addEventListener('load', r));
 await ready();
 
 const d = await (await fetch('data/course.json', {cache:'no-store'})).json();
-// Practice questions written for this course. The assignments themselves are
-// in MyLab; these cover the same skills, objective by objective.
+// Practice questions written for this course. The assignments are in MyLab;
+// these cover the same objectives.
 let Q = {};
 for (const f of ['q_a','q_b','q_c']) {
   try { Object.assign(Q, await (await fetch('data/' + f + '.json', {cache:'no-store'})).json()); }
@@ -52,10 +52,8 @@ rail.innerHTML = '<div class=mast><a href="index.html">math 120e</a>' +
   }).join('');
 
 /* ── one section, one question at a time ─────────────────────────
-   The objectives sit at the top as a map and exactly one question shows
-   beneath, stepped with prev/next. The objective a question serves lights up
-   as you move, so stepping through a section teaches its structure rather than
-   hiding it. */
+   The objectives sit at the top and one question shows beneath, stepped with
+   prev/next. The objective a question serves is highlighted as you move. */
 let cur = null, at = 0, qs = [];
 
 function renderSection(id, idx) {
@@ -87,7 +85,7 @@ function renderSection(id, idx) {
     '</div><div id=stage></div>' +
     '<h2>the assignment</h2><div class=note><p>Your ' + assigned +
       ' assigned problems for this section are in MyLab. The practice above ' +
-      'covers the same objectives; it is not the assignment and is not graded.</p></div>';
+      'covers the same objectives. It is not the assignment and is not graded.</p></div>';
 
   document.getElementById('objmap').addEventListener('click', e => {
     const t = e.target.closest('.omap'); if (!t) return;
@@ -113,7 +111,7 @@ function paint() {
 
   if (!qs.length) {
     stage.innerHTML = '<div class=note><p>Practice for this section has not been ' +
-      'written yet. The objectives above are what it will cover.</p></div>';
+      'written yet.</p></div>';
     marg.innerHTML = '';
     return;
   }
@@ -142,8 +140,6 @@ function paint() {
     body.innerHTML = '<div class=a-unknown>could not render this question</div>';
   }
 
-  // the reasoning is pulled, never resident: seeing it before trying costs the
-  // attempt, which is the only part that teaches anything
   const why = document.createElement('div');
   why.className = 'why';
   why.hidden = true;

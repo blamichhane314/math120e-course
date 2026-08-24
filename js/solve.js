@@ -2,8 +2,8 @@
 //
 // Each step is a complete expression, written out by hand, with the clickable
 // pieces marked. Each mark says what it becomes. The next step is likewise
-// written out in full. The tool therefore cannot disagree with the author,
-// because it computes nothing — it substitutes and advances.
+// written out in full. Nothing is computed here; marks are substituted and the
+// step advances.
 //
 // Authoring format, per problem:
 //

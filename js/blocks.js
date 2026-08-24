@@ -1,9 +1,8 @@
 // blocks.js — content renderers. Data in, DOM out, no state.
 //
-// Every figure is GENERATED from its numbers rather than transcribed from the
-// page. That is the point: MyLab re-randomises on export, so a figure derived
-// from its data survives a re-download while a picture does not. It also means
-// a figure can never disagree with the problem it belongs to.
+// Every figure is generated from its numbers rather than transcribed. MyLab
+// re-randomises on export, so a figure derived from its data survives a
+// re-download while a picture does not.
 
 const NS = 'http://www.w3.org/2000/svg';
 const el = (t, a = {}, kids = []) => {
@@ -20,11 +19,9 @@ export const tex = (s, display = false) => {
   } catch { return '<code>' + esc(s) + '</code>'; }   // leave the source visible on failure
 };
 
-/** The ONE rule for a string that may mix prose and math: escape it, then
- *  render anything between dollars. Every place text can appear uses this —
- *  a stem, a label, a note, a table cell, an option. Sniffing for backslashes
- *  and handing the whole string to KaTeX is what produced red error text where
- *  a label happened to contain an expression. */
+/** For any string that may mix prose and math: escape it, then render
+ *  anything between dollars. Every place text can appear uses this: a stem, a
+ *  label, a note, a table cell, an option. */
 export const inline = (s) => {
   // Order matters and is easy to get backwards: split out the math FIRST, then
   // escape only the prose between the spans. Escaping first turns a `<` inside
@@ -92,7 +89,7 @@ export function Table(b) {
     const tr = document.createElement('tr');
     r.forEach((c, i) => {
       const td = document.createElement('td');
-      // an unknown is a dash, never plausible filler
+      // an unknown cell renders as a dash
       td.innerHTML = (c === null || c === undefined || c === '')
         ? '<span class="none">&mdash;</span>'
         : inline(c);

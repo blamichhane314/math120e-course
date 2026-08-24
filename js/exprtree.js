@@ -3,10 +3,9 @@
 // The order-of-operations tool cannot work on a string: you cannot point at
 // part of a string, and you cannot replace it with its value. It needs a tree.
 //
-// Precedence lives in the SHAPE of the tree, not in a rules table. That matters
-// downstream: the set of operations a learner may perform right now is exactly
-// "every node whose arguments are already values", which falls out of the
-// structure and therefore cannot disagree with the mathematics.
+// Precedence lives in the shape of the tree, not in a rules table. The set of
+// operations available at any moment is every node whose arguments are already
+// values, which falls out of the structure.
 //
 // Scope is deliberately the subset chapter 1 actually uses:
 //   \frac \sqrt \cdot \div \left \right, ^ , unary -, parentheses, numbers.
@@ -132,10 +131,9 @@ export function parse(src) {
 
 
 /* ── exact values ──────────────────────────────────────────────────
-   This course is exact arithmetic. Showing a learner 0.037037 where the
-   value is 1/27 is both wrong and unteachable: continuing from the printed
-   number drifts. Values are therefore carried as rationals wherever they
-   stay rational, and only fall back to a float when a root is genuinely
+   This course is exact arithmetic, and continuing from a printed 0.037037
+   where the value is 1/27 drifts. Values are carried as rationals wherever
+   they stay rational, and fall back to a float only when a root is
    irrational. */
 const gcd = (a, b) => { a = Math.abs(a); b = Math.abs(b); while (b) { [a, b] = [b, a % b]; } return a || 1; };
 
@@ -266,10 +264,8 @@ export function evaluate(n) {
 export const isValue = (n) =>
   n.t === 'num' || (n.t === 'neg' && n.a.t === 'num');
 
-/** Operations the learner may perform right now: every node whose arguments
- *  are already values. Independence within a level falls straight out — two
- *  powers on opposite sides of a sum are both ready, and neither waits for
- *  the other. This is the whole rule; there is no precedence table. */
+/** Operations available now: every node whose arguments are already values.
+ *  Two powers on opposite sides of a sum are both ready; neither waits. */
 export function ready(n, acc = []) {
   if (isValue(n)) return acc;
   const kids = ['a', 'b', 'idx'].map((k) => n[k]).filter(Boolean);

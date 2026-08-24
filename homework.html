@@ -4,7 +4,7 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <title>MATH 120E — homework</title>
 <link rel=stylesheet href="vendor/katex/katex.min.css">
-<link rel=stylesheet href="styles.css?v=3">
+<link rel=stylesheet href="styles.css?v=6">
 <body>
 <div id=rail></div>
 <div id=read><div id=doc></div></div>
@@ -27,6 +27,7 @@ for (const f of ['q_a','q_b','q_c']) {
   catch {}
 }
 
+document.body.classList.add('no-margin');
 const rail = document.getElementById('rail');
 const doc  = document.getElementById('doc');
 const marg = document.getElementById('margin');
@@ -50,39 +51,48 @@ rail.innerHTML = '<div class=mast><a href="index.html">math 120e</a>' +
         esc(s.title.toLowerCase()) + '</span></a>').join('');
   }).join('');
 
-/* ── one section, one problem at a time ──────────────────────────
-   A section is thirty problems and a wall of them is read by nobody, so the
-   objectives sit at the top as a map and exactly one problem shows beneath,
-   stepped with prev/next. The objective a problem serves lights up as you
-   move, which means stepping teaches the structure rather than hiding it. */
-let cur = null, at = 0;
+/* ── one section, one question at a time ─────────────────────────
+   The objectives sit at the top as a map and exactly one question shows
+   beneath, stepped with prev/next. The objective a question serves lights up
+   as you move, so stepping through a section teaches its structure rather than
+   hiding it. */
+let cur = null, at = 0, qs = [];
 
 function renderSection(id, idx) {
   const s = byId[id]; if (!s) return;
-  cur = s; at = Math.max(0, Math.min(idx | 0, s.problems.length - 1));
+  cur = s;
+  qs = (Q[s.id] || []).slice().sort((x, y) =>
+    String(x.obj).localeCompare(String(y.obj), undefined, {numeric:true}) ||
+    String(x.id).localeCompare(String(y.id), undefined, {numeric:true}));
+  at = Math.max(0, Math.min(idx | 0, Math.max(qs.length - 1, 0)));
   rail.querySelectorAll('a.sec').forEach(a => a.classList.toggle('on', a.dataset.id === id));
 
   const K = s.objectives.length;
-  const counts = s.objectives.map(() => 0);
-  s.problems.forEach(p => (p.objs || []).forEach(j => { if (j < K) counts[j]++; }));
+  const counts = s.objectives.map((_, j) =>
+    qs.filter(q => q.obj === s.id + '/O' + (j + 1)).length);
+  const assigned = s.problems.length;
 
   doc.innerHTML =
     '<h1><span class=num>' + s.id + '</span>' + esc(s.title) + '</h1>' +
     '<div class=meta>' + esc((s.week || '').toLowerCase()) +
       (s.dates ? ' · ' + esc(s.dates.toLowerCase()) : '') +
       ' · ' + (s.track === 'E' ? 'remedial' : 'math 120') +
-      ' · ' + s.problems.length + ' problems</div>' +
+      ' · ' + qs.length + ' practice question' + (qs.length === 1 ? '' : 's') +
+      '</div>' +
     '<h2>objectives</h2><div id=objmap>' +
       s.objectives.map((o, j) =>
         '<div class=omap data-o="' + j + '"><span class=oi>O' + (j + 1) + '</span>' +
         '<span class=ot>' + esc(o) + '</span>' +
         '<span class=oc>' + (counts[j] || '&mdash;') + '</span></div>').join('') +
-    '</div><div id=stage></div>';
+    '</div><div id=stage></div>' +
+    '<h2>the assignment</h2><div class=note><p>Your ' + assigned +
+      ' assigned problems for this section are in MyLab. The practice above ' +
+      'covers the same objectives; it is not the assignment and is not graded.</p></div>';
 
   document.getElementById('objmap').addEventListener('click', e => {
     const t = e.target.closest('.omap'); if (!t) return;
     const j = +t.getAttribute('data-o');
-    const i = s.problems.findIndex(p => (p.objs || []).includes(j));
+    const i = qs.findIndex(q => q.obj === s.id + '/O' + (j + 1));
     if (i >= 0) step(i);
   });
   paint();
@@ -91,63 +101,64 @@ function renderSection(id, idx) {
 }
 
 function step(i) {
-  const n = cur.problems.length;
-  at = (i + n) % n;
+  if (!qs.length) return;
+  at = (i + qs.length) % qs.length;
   paint();
   location.replace('#/' + cur.id + '/' + (at + 1));
 }
 
 function paint() {
-  const s = cur, p = s.problems[at];
+  const s = cur;
   const stage = document.getElementById('stage'); if (!stage) return;
 
+  if (!qs.length) {
+    stage.innerHTML = '<div class=note><p>Practice for this section has not been ' +
+      'written yet. The objectives above are what it will cover.</p></div>';
+    marg.innerHTML = '';
+    return;
+  }
+
+  const q = qs[at];
   stage.innerHTML =
     '<div class=stepper>' +
       '<button class=sbtn id=sprev>&lsaquo;&nbsp;prev</button>' +
-      '<span class=spos>' + (at + 1) + ' <i>/</i> ' + s.problems.length + '</span>' +
+      '<span class=spos>' + (at + 1) + ' <i>/</i> ' + qs.length + '</span>' +
       '<button class=sbtn id=snext>next&nbsp;&rsaquo;</button>' +
+      '<button class=sbtn id=sshow>show the reasoning</button>' +
     '</div><div class=rows><div class=prob id=card></div></div>';
 
   const card = document.getElementById('card');
   card.innerHTML =
-    '<div class=ptop><span class=pid>' + esc(p.pid) + '</span>' +
-    '<span class=stem>' + esc(p.kind || '') + '</span>' +
-    (p.structure || []).filter(x => x !== 'math' && x !== 'none')
-      .map(x => '<span class=kind>' + esc(FIG[x] || x) + '</span>').join('') +
+    '<div class=ptop><span class=pid>' + esc(q.obj) + '</span>' +
+    '<span class=stem>' + esc(q.kind || '') + '</span>' +
+    (q.level === 'stretch' ? '<span class=kind>stretch</span>' : '') +
     '</div><div class=pbody id=pb></div>';
 
   const body = document.getElementById('pb');
-  if (p.stem && p.stem.length) {
-    try {
-      renderBlocks(p.stem, body);
-      if (p.answer) body.appendChild(renderAnswer(p.answer, { onChange() {} }));
-    } catch (e) {
-      body.innerHTML = '<div class=a-unknown>could not render this problem</div>';
-    }
-  } else {
-    body.innerHTML = '<div class=pr-thin>this section is not converted yet</div>';
+  try {
+    if (q.stem && q.stem.length) renderBlocks(q.stem, body);
+    if (q.answer) body.appendChild(renderAnswer(q.answer, { onChange() {} }));
+  } catch (e) {
+    body.innerHTML = '<div class=a-unknown>could not render this question</div>';
   }
 
-  if (p.clipped) {
-    const c = document.createElement('div');
-    c.className = 'clip';
-    c.innerHTML = '<span class=t>clipped in source</span>' +
-      esc(p.note || 'content runs off the right page margin');
-    card.appendChild(c);
-  }
+  // the reasoning is pulled, never resident: seeing it before trying costs the
+  // attempt, which is the only part that teaches anything
+  const why = document.createElement('div');
+  why.className = 'why';
+  why.hidden = true;
+  why.innerHTML = '<span class=t>reasoning</span>' + esc(q.why || '') +
+    (q.key !== undefined ? '<span class=k>answer: ' + esc(q.key) + '</span>' : '');
+  card.appendChild(why);
+  document.getElementById('sshow').onclick = () => { why.hidden = !why.hidden; };
 
   document.getElementById('sprev').onclick = () => step(at - 1);
   document.getElementById('snext').onclick = () => step(at + 1);
 
+  const j = parseInt(String(q.obj).split('/O')[1], 10) - 1;
   document.querySelectorAll('.omap').forEach(n =>
-    n.classList.toggle('on', (p.objs || []).includes(+n.getAttribute('data-o'))));
-
-  const others = p.objs || [];
-  marg.innerHTML = others.length > 1
-    ? '<div class=mk><span class=kind>also serves</span><div class=body>' +
-      others.map(j => '<b>O' + (j + 1) + '</b> &middot; ' + esc(s.objectives[j] || ''))
-        .join('<br>') + '</div></div>'
-    : '';
+    n.classList.toggle('on', +n.getAttribute('data-o') === j));
+  marg.innerHTML = '';
 }
 
 addEventListener('keydown', e => {
@@ -162,7 +173,7 @@ function route() {
   const [id, n] = h.split('/');
   const want = n ? parseInt(n, 10) - 1 : 0;
   if (cur && cur.id === id) {
-    if (want !== at) { at = Math.max(0, Math.min(want, cur.problems.length - 1)); paint(); }
+    if (want !== at) { at = Math.max(0, Math.min(want, Math.max(qs.length - 1, 0))); paint(); }
     return;
   }
   renderSection(id, want || 0);

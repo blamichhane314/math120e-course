@@ -1,0 +1,705 @@
+{
+  "1.6": [
+    {
+      "id": "1.6/O1/q1",
+      "obj": "1.6/O1",
+      "level": "core",
+      "kind": "compute",
+      "stem": [
+        {"t":"text","v":"Solve for $x$."},
+        {"t":"math","tex":"5x-8=3x+10","display":true}
+      ],
+      "answer": {"kind":"compute","slots":[{"label":"x =","size":5}],"note":"type an integer"},
+      "key": "9",
+      "why": "subtracting $3x$ from both sides leaves $2x-8=10$, and adding 8 then dividing by 2 isolates $x$"
+    },
+    {
+      "id": "1.6/O1/q2",
+      "obj": "1.6/O1",
+      "level": "core",
+      "kind": "choice",
+      "stem": [
+        {"t":"text","v":"Solve for $x$."},
+        {"t":"math","tex":"6x-(4x-5)=13","display":true},
+        {"t":"text","v":"Choose the correct answer below."}
+      ],
+      "answer": {
+        "kind": "choice",
+        "options": [
+          [{"t":"text","v":"$x = 9$"}],
+          [{"t":"text","v":"$x = 4$"}],
+          [{"t":"text","v":"$x = 6$"}],
+          [{"t":"text","v":"$x = -4$"}]
+        ],
+        "multi": false
+      },
+      "key": "1",
+      "why": "the minus sign in front of the bracket applies to both terms, so the left side is $2x+5$, and $2x=8$",
+      "diag": {
+        "0": "sign lost across a subtracted bracket: writes $6x-4x-5$ and solves $2x=18$",
+        "2": "undoes the multiplication by subtracting: from $2x=8$ writes $x=8-2$",
+        "3": "moves the constant the wrong way: solves $2x=5-13$"
+      }
+    },
+    {
+      "id": "1.6/O1/q3",
+      "obj": "1.6/O1",
+      "level": "core",
+      "kind": "multipart",
+      "stem": [
+        {"t":"text","v":"Solve each equation for $x$."}
+      ],
+      "answer": {
+        "kind": "multipart",
+        "parts": [
+          {
+            "label": "(a)",
+            "stem": [{"t":"math","tex":"8-3x=23","display":true}],
+            "answer": {"kind":"compute","slots":[{"label":"x =","size":5}],"note":null},
+            "key": "-5",
+            "why": "subtracting 8 from both sides gives $-3x=15$, and dividing by $-3$ gives a negative solution"
+          },
+          {
+            "label": "(b)",
+            "stem": [{"t":"math","tex":"2(x+7)=3x-1","display":true}],
+            "answer": {"kind":"compute","slots":[{"label":"x =","size":5}],"note":null},
+            "key": "15",
+            "why": "distributing gives $2x+14=3x-1$, and collecting the variable on the right gives $15=x$"
+          }
+        ]
+      },
+      "key": "-5; 15",
+      "why": "each equation is undone by applying the same operation to both sides until $x$ stands alone"
+    },
+    {
+      "id": "1.6/O1/q4",
+      "obj": "1.6/O1",
+      "level": "stretch",
+      "kind": "compute",
+      "stem": [
+        {"t":"text","v":"Simplify each side, then solve for $x$."},
+        {"t":"math","tex":"5x-2(x+4)=3^{2}+2\\cdot 5","display":true}
+      ],
+      "answer": {"kind":"compute","slots":[{"label":"x =","size":5}],"note":"type an integer"},
+      "key": "9",
+      "why": "the right side is $9+10=19$ by order of operations, and the left side simplifies to $3x-8$, so $3x=27$"
+    },
+
+    {
+      "id": "1.6/O2/q1",
+      "obj": "1.6/O2",
+      "level": "core",
+      "kind": "compute",
+      "stem": [
+        {"t":"text","v":"Solve for $x$."},
+        {"t":"math","tex":"\\frac{x}{3}+\\frac{x}{4}=7","display":true}
+      ],
+      "answer": {"kind":"compute","slots":[{"label":"x =","size":5}],"note":"type an integer"},
+      "key": "12",
+      "why": "multiplying every term by the common denominator 12 turns the equation into $4x+3x=84$"
+    },
+    {
+      "id": "1.6/O2/q2",
+      "obj": "1.6/O2",
+      "level": "core",
+      "kind": "choice",
+      "stem": [
+        {"t":"text","v":"Solve for $x$."},
+        {"t":"math","tex":"\\frac{2x-1}{5}=\\frac{x+4}{3}","display":true},
+        {"t":"text","v":"Choose the correct answer below."}
+      ],
+      "answer": {
+        "kind": "choice",
+        "options": [
+          [{"t":"text","v":"$x = 5$"}],
+          [{"t":"text","v":"$x = 17$"}],
+          [{"t":"text","v":"$x = 21$"}],
+          [{"t":"text","v":"$x = 23$"}]
+        ],
+        "multi": false
+      },
+      "key": "3",
+      "why": "multiplying both sides by 15 gives $3(2x-1)=5(x+4)$, so $6x-3=5x+20$ and $x=23$",
+      "diag": {
+        "0": "cancels the denominators without multiplying either side, solving $2x-1=x+4$",
+        "1": "moves the $-3$ as if it were $+3$, solving $6x-5x=20-3$",
+        "2": "the fraction bar does not group: multiplies only the first term, using $3\\cdot 2x-1=5x+20$"
+      }
+    },
+    {
+      "id": "1.6/O2/q3",
+      "obj": "1.6/O2",
+      "level": "core",
+      "kind": "fill",
+      "stem": [
+        {"t":"text","v":"Clear the fractions, then solve."},
+        {"t":"math","tex":"\\frac{x}{2}-\\frac{x-4}{3}=1","display":true}
+      ],
+      "answer": {
+        "kind": "fill",
+        "template": "Multiply every term by ⟨0⟩ to clear the fractions. Then $x =$ ⟨1⟩.",
+        "slots": [{"size":4},{"size":4}],
+        "note": "the first box is the least common denominator"
+      },
+      "key": "6, -2",
+      "why": "multiplying by 6 gives $3x-2(x-4)=6$, and the bracket is subtracted as a whole, so the left side is $x+8$"
+    },
+    {
+      "id": "1.6/O2/q4",
+      "obj": "1.6/O2",
+      "level": "stretch",
+      "kind": "compute",
+      "stem": [
+        {"t":"text","v":"Solve for $x$."},
+        {"t":"math","tex":"\\frac{3}{4}(x-2)=\\frac{1}{2}(x+6)","display":true}
+      ],
+      "answer": {"kind":"compute","slots":[{"label":"x =","size":5}],"note":"type an integer"},
+      "key": "18",
+      "why": "multiplying both sides by 4 gives $3(x-2)=2(x+6)$, and distributing leaves $3x-6=2x+12$"
+    },
+
+    {
+      "id": "1.6/O3/q1",
+      "obj": "1.6/O3",
+      "level": "core",
+      "kind": "fill",
+      "stem": [
+        {"t":"text","v":"The simple interest formula is shown below. Solve it for $r$."},
+        {"t":"math","tex":"I=Prt","display":true}
+      ],
+      "answer": {
+        "kind": "fill",
+        "template": "$r =$ ⟨0⟩",
+        "slots": [{"size":10,"numeric":false}],
+        "note": "write your answer with / for division, and parentheses where they are needed"
+      },
+      "key": "I/(Pt)",
+      "why": "$r$ is multiplied by $P$ and by $t$, so dividing both sides by the whole product $Pt$ isolates it"
+    },
+    {
+      "id": "1.6/O3/q2",
+      "obj": "1.6/O3",
+      "level": "core",
+      "kind": "fill",
+      "stem": [
+        {"t":"text","v":"Solve for $y$."},
+        {"t":"math","tex":"4x+2y=10","display":true}
+      ],
+      "answer": {
+        "kind": "fill",
+        "template": "$y =$ ⟨0⟩",
+        "slots": [{"size":10,"numeric":false}],
+        "note": "give your answer with no fractions remaining"
+      },
+      "key": "5-2x",
+      "why": "subtracting $4x$ gives $2y=10-4x$, and dividing every term of the right side by 2 gives $5-2x$"
+    },
+    {
+      "id": "1.6/O3/q3",
+      "obj": "1.6/O3",
+      "level": "core",
+      "kind": "choice",
+      "stem": [
+        {"t":"text","v":"The perimeter of a rectangle of length $l$ and width $w$ is given below."},
+        {"t":"math","tex":"P=2l+2w","display":true},
+        {"t":"text","v":"Which is the formula solved for $w$?"}
+      ],
+      "answer": {
+        "kind": "choice",
+        "options": [
+          [{"t":"math","tex":"w=\\frac{P}{2}-2l","display":false}],
+          [{"t":"math","tex":"w=P-l","display":false}],
+          [{"t":"math","tex":"w=\\frac{P-2l}{2}","display":false}],
+          [{"t":"math","tex":"w=\\frac{P+2l}{2}","display":false}]
+        ],
+        "multi": false
+      },
+      "key": "2",
+      "why": "subtracting $2l$ leaves $2w=P-2l$, and the whole of that right side is then divided by 2",
+      "diag": {
+        "0": "the fraction bar does not group: divides only $P$ by 2 and leaves $2l$ undivided",
+        "1": "the fraction bar does not group: divides only the $2l$ term, giving $P-l$",
+        "3": "adds $2l$ to both sides instead of subtracting it"
+      }
+    },
+    {
+      "id": "1.6/O3/q4",
+      "obj": "1.6/O3",
+      "level": "stretch",
+      "kind": "fill",
+      "stem": [
+        {"t":"text","v":"A selling price $S$ is the cost $C$ plus a markup of $m$ times the cost."},
+        {"t":"math","tex":"S=C+Cm","display":true},
+        {"t":"text","v":"Solve for $C$."}
+      ],
+      "answer": {
+        "kind": "fill",
+        "template": "$C =$ ⟨0⟩",
+        "slots": [{"size":10,"numeric":false}],
+        "note": "write your answer with / for division, and parentheses where they are needed"
+      },
+      "key": "S/(1+m)",
+      "why": "$C$ appears in both terms, so factoring gives $S=C(1+m)$ and dividing by $1+m$ isolates it"
+    },
+
+    {
+      "id": "1.6/O4/q1",
+      "obj": "1.6/O4",
+      "level": "core",
+      "kind": "fill",
+      "stem": [
+        {"t":"text","v":"The sum of three consecutive integers is 84. Find the integers."}
+      ],
+      "answer": {
+        "kind": "fill",
+        "template": "The integers are ⟨0⟩, ⟨1⟩, and ⟨2⟩.",
+        "slots": [{"size":4},{"size":4},{"size":4}],
+        "note": "smallest first"
+      },
+      "key": "27, 28, 29",
+      "why": "calling the smallest $n$ makes the sum $3n+3$, so $3n=81$"
+    },
+    {
+      "id": "1.6/O4/q2",
+      "obj": "1.6/O4",
+      "level": "core",
+      "kind": "compute",
+      "stem": [
+        {"t":"text","v":"A phone plan charges 20 dollars per month plus 15 cents per minute of calls. One month's bill was 38 dollars. How many minutes of calls were made?"}
+      ],
+      "answer": {"kind":"compute","slots":[{"size":6,"unit":"minutes"}],"note":null},
+      "key": "120",
+      "why": "the bill is $20+0.15m$, so $0.15m=18$"
+    },
+    {
+      "id": "1.6/O4/q3",
+      "obj": "1.6/O4",
+      "level": "core",
+      "kind": "choice",
+      "stem": [
+        {"t":"text","v":"The length of a rectangle is 3 cm more than twice its width. Its perimeter is 36 cm. What is the width?"},
+        {"t":"text","v":"Choose the correct answer below."}
+      ],
+      "answer": {
+        "kind": "choice",
+        "options": [
+          [{"t":"text","v":"11 cm"}],
+          [{"t":"text","v":"5 cm"}],
+          [{"t":"text","v":"6 cm"}],
+          [{"t":"text","v":"13 cm"}]
+        ],
+        "multi": false
+      },
+      "key": "1",
+      "why": "with width $w$ the length is $2w+3$, so the perimeter is $2w+2(2w+3)=6w+6=36$",
+      "diag": {
+        "0": "uses length plus width as the perimeter, solving $w+(2w+3)=36$",
+        "2": "divides before subtracting, reading $6w+6=36$ as $6w=36$",
+        "3": "solves correctly but reports the length $2w+3$ instead of the width"
+      }
+    },
+    {
+      "id": "1.6/O4/q4",
+      "obj": "1.6/O4",
+      "level": "stretch",
+      "kind": "compute",
+      "stem": [
+        {"t":"text","v":"A rental car costs 45 dollars per day plus 20 cents per mile. A three-day rental came to 181 dollars. How many miles were driven?"}
+      ],
+      "answer": {"kind":"compute","slots":[{"size":6,"unit":"miles"}],"note":null},
+      "key": "230",
+      "why": "the three days account for 135 dollars, so $0.20m=46$"
+    }
+  ],
+
+  "1.7": [
+    {
+      "id": "1.7/O1/q1",
+      "obj": "1.7/O1",
+      "level": "core",
+      "kind": "fill",
+      "stem": [
+        {"t":"text","v":"Solve by factoring."},
+        {"t":"math","tex":"x^{2}+2x-15=0","display":true}
+      ],
+      "answer": {
+        "kind": "fill",
+        "template": "$x =$ ⟨0⟩ or $x =$ ⟨1⟩",
+        "slots": [{"size":5},{"size":5}],
+        "note": "smaller solution first"
+      },
+      "key": "-5, 3",
+      "why": "two numbers multiplying to $-15$ and adding to 2 are 5 and $-3$, so $(x+5)(x-3)=0$"
+    },
+    {
+      "id": "1.7/O1/q2",
+      "obj": "1.7/O1",
+      "level": "core",
+      "kind": "choice",
+      "stem": [
+        {"t":"text","v":"Solve by factoring."},
+        {"t":"math","tex":"x^{2}=5x+24","display":true},
+        {"t":"text","v":"Choose the correct answer below."}
+      ],
+      "answer": {
+        "kind": "choice",
+        "options": [
+          [{"t":"text","v":"$x = -8$ or $x = 3$"}],
+          [{"t":"text","v":"$x = -3$ or $x = 8$"}],
+          [{"t":"text","v":"$x = 24$ or $x = 29$"}],
+          [{"t":"text","v":"There is no solution."}]
+        ],
+        "multi": false
+      },
+      "key": "1",
+      "why": "writing the equation as $x^{2}-5x-24=0$ factors as $(x-8)(x+3)=0$, and each factor is set to zero",
+      "diag": {
+        "0": "reads each root straight off its factor without changing sign, taking $-8$ from $(x-8)$ and 3 from $(x+3)$",
+        "2": "applies the zero-product rule to a side that is not zero, setting $x=24$ and $x-5=24$",
+        "3": "carries the 24 across without changing its sign, gets $x^{2}-5x+24$, and finds it does not factor"
+      }
+    },
+    {
+      "id": "1.7/O1/q3",
+      "obj": "1.7/O1",
+      "level": "core",
+      "kind": "multipart",
+      "stem": [
+        {"t":"text","v":"Solve each equation by factoring."}
+      ],
+      "answer": {
+        "kind": "multipart",
+        "parts": [
+          {
+            "label": "(a)",
+            "stem": [{"t":"math","tex":"3x^{2}=12x","display":true}],
+            "answer": {
+              "kind": "fill",
+              "template": "$x =$ ⟨0⟩ or $x =$ ⟨1⟩",
+              "slots": [{"size":5},{"size":5}],
+              "note": "smaller solution first"
+            },
+            "key": "0, 4",
+            "why": "collecting on one side gives $3x(x-4)=0$; dividing by $x$ instead would discard the solution $x=0$"
+          },
+          {
+            "label": "(b)",
+            "stem": [{"t":"math","tex":"4x^{2}-25=0","display":true}],
+            "answer": {
+              "kind": "fill",
+              "template": "$x =$ ⟨0⟩ or $x =$ ⟨1⟩",
+              "slots": [{"size":6},{"size":6}],
+              "note": "smaller solution first; write a fraction as a/b"
+            },
+            "key": "-5/2, 5/2",
+            "why": "this is a difference of squares, $(2x-5)(2x+5)=0$"
+          }
+        ]
+      },
+      "key": "0, 4; -5/2, 5/2",
+      "why": "each equation is put in the form (product) $=0$ first, because the zero-product rule needs a zero on one side"
+    },
+    {
+      "id": "1.7/O1/q4",
+      "obj": "1.7/O1",
+      "level": "stretch",
+      "kind": "compute",
+      "stem": [
+        {"t":"text","v":"A rectangular garden is 3 m longer than it is wide, and its area is 40 square metres. How wide is it?"}
+      ],
+      "answer": {"kind":"compute","slots":[{"label":"width =","size":5,"unit":"m"}],"note":null},
+      "key": "5",
+      "why": "$w(w+3)=40$ gives $w^{2}+3w-40=0$, so $(w+8)(w-5)=0$; the root $-8$ is discarded because a width cannot be negative"
+    },
+
+    {
+      "id": "1.7/O2/q1",
+      "obj": "1.7/O2",
+      "level": "core",
+      "kind": "fill",
+      "stem": [
+        {"t":"text","v":"Solve using the quadratic formula."},
+        {"t":"math","tex":"2x^{2}+5x-3=0","display":true}
+      ],
+      "answer": {
+        "kind": "fill",
+        "template": "$x =$ ⟨0⟩ or $x =$ ⟨1⟩",
+        "slots": [{"size":6},{"size":6}],
+        "note": "smaller solution first; write a fraction as a/b"
+      },
+      "key": "-3, 1/2",
+      "why": "with $a=2$, $b=5$, $c=-3$ the discriminant is $25+24=49$, so $x=\\frac{-5\\pm 7}{4}$"
+    },
+    {
+      "id": "1.7/O2/q2",
+      "obj": "1.7/O2",
+      "level": "core",
+      "kind": "fill",
+      "stem": [
+        {"t":"text","v":"Solve using the quadratic formula."},
+        {"t":"math","tex":"3x^{2}-5x+1=0","display":true},
+        {"t":"text","v":"The solutions can be written in the form below. Give $a$, $b$ and $c$."},
+        {"t":"math","tex":"x=\\frac{a\\pm\\sqrt{b}}{c}","display":true}
+      ],
+      "answer": {
+        "kind": "fill",
+        "template": "$a =$ ⟨0⟩, $b =$ ⟨1⟩, $c =$ ⟨2⟩",
+        "slots": [{"size":4},{"size":4},{"size":4}],
+        "note": "the square root here is not a whole number, and the fraction does not reduce"
+      },
+      "key": "5, 13, 6",
+      "why": "the discriminant is $25-12=13$, which is not a perfect square, so the exact solutions keep the radical"
+    },
+    {
+      "id": "1.7/O2/q3",
+      "obj": "1.7/O2",
+      "level": "core",
+      "kind": "choice",
+      "stem": [
+        {"t":"text","v":"Solve using the quadratic formula."},
+        {"t":"math","tex":"x^{2}+6x+4=0","display":true},
+        {"t":"text","v":"Choose the correct answer below."}
+      ],
+      "answer": {
+        "kind": "choice",
+        "options": [
+          [{"t":"text","v":"$x = 3 \\pm \\sqrt{5}$"}],
+          [{"t":"text","v":"$x = -3 \\pm \\sqrt{13}$"}],
+          [{"t":"text","v":"$x = -3 \\pm \\sqrt{5}$"}],
+          [{"t":"text","v":"$x = -6 \\pm \\sqrt{5}$"}]
+        ],
+        "multi": false
+      },
+      "key": "2",
+      "why": "the discriminant is $36-16=20$, so $x=\\frac{-6\\pm\\sqrt{20}}{2}=\\frac{-6\\pm 2\\sqrt{5}}{2}$, and both terms carry the division by 2",
+      "diag": {
+        "0": "uses $b$ rather than $-b$ in the numerator",
+        "1": "adds $4ac$ instead of subtracting it, using $36+16=52$",
+        "3": "the fraction bar does not group: divides only the radical part by 2 and leaves $-6$ whole"
+      }
+    },
+    {
+      "id": "1.7/O2/q4",
+      "obj": "1.7/O2",
+      "level": "stretch",
+      "kind": "fill",
+      "stem": [
+        {"t":"text","v":"Put the equation in standard form, then solve using the quadratic formula."},
+        {"t":"math","tex":"2x^{2}=4x+3","display":true},
+        {"t":"text","v":"Write the solutions in the form below, fully simplified."},
+        {"t":"math","tex":"x=\\frac{a\\pm\\sqrt{b}}{c}","display":true}
+      ],
+      "answer": {
+        "kind": "fill",
+        "template": "$a =$ ⟨0⟩, $b =$ ⟨1⟩, $c =$ ⟨2⟩",
+        "slots": [{"size":4},{"size":4},{"size":4}],
+        "note": "simplify the radical and reduce the fraction first"
+      },
+      "key": "2, 10, 2",
+      "why": "standard form is $2x^{2}-4x-3=0$, giving $\\frac{4\\pm\\sqrt{40}}{4}$; since $\\sqrt{40}=2\\sqrt{10}$, every term shares a factor of 2"
+    }
+  ],
+
+  "2.4": [
+    {
+      "id": "2.4/O1/q1",
+      "obj": "2.4/O1",
+      "level": "core",
+      "kind": "choice",
+      "stem": [
+        {"t":"text","v":"Solve the inequality and choose the graph of its solution set."},
+        {"t":"math","tex":"4x-4<8","display":true}
+      ],
+      "answer": {
+        "kind": "choice",
+        "options": [
+          [{"t":"numberline","min":-2,"max":8,"step":1,"intervals":[{"from":null,"to":3,"openTo":true}]}],
+          [{"t":"numberline","min":-2,"max":8,"step":1,"intervals":[{"from":null,"to":3,"openTo":false}]}],
+          [{"t":"numberline","min":-2,"max":8,"step":1,"intervals":[{"from":3,"to":null,"openFrom":true}]}],
+          [{"t":"numberline","min":-2,"max":8,"step":1,"intervals":[{"from":null,"to":1,"openTo":true}]}]
+        ],
+        "multi": false
+      },
+      "key": "0",
+      "why": "adding 4 gives $4x<12$, so $x<3$, and a strict inequality is drawn with a hollow endpoint",
+      "diag": {
+        "1": "an endpoint included that a strict inequality excludes",
+        "2": "shades the wrong side of the endpoint",
+        "3": "subtracts 4 from both sides instead of adding, solving $4x<4$"
+      }
+    },
+    {
+      "id": "2.4/O1/q2",
+      "obj": "2.4/O1",
+      "level": "core",
+      "kind": "choice",
+      "stem": [
+        {"t":"text","v":"Solve the inequality and choose the graph of its solution set."},
+        {"t":"math","tex":"-3x+2>14","display":true}
+      ],
+      "answer": {
+        "kind": "choice",
+        "options": [
+          [{"t":"numberline","min":-8,"max":8,"step":2,"intervals":[{"from":-4,"to":null,"openFrom":true}]}],
+          [{"t":"numberline","min":-8,"max":8,"step":2,"intervals":[{"from":null,"to":-4,"openTo":true}]}],
+          [{"t":"numberline","min":-8,"max":8,"step":2,"intervals":[{"from":4,"to":null,"openFrom":true}]}],
+          [{"t":"numberline","min":-8,"max":8,"step":2,"intervals":[{"from":null,"to":4,"openTo":true}]}]
+        ],
+        "multi": false
+      },
+      "key": "1",
+      "why": "subtracting 2 gives $-3x>12$, and dividing by $-3$ reverses the inequality, giving $x<-4$",
+      "diag": {
+        "0": "the inequality is not flipped when dividing by a negative number",
+        "2": "the inequality is not flipped and the sign of the quotient is dropped",
+        "3": "drops the sign when dividing 12 by $-3$"
+      }
+    },
+    {
+      "id": "2.4/O1/q3",
+      "obj": "2.4/O1",
+      "level": "core",
+      "kind": "compute",
+      "stem": [
+        {"t":"text","v":"Solve the inequality."},
+        {"t":"math","tex":"8-3x\\ge 23","display":true}
+      ],
+      "answer": {
+        "kind": "compute",
+        "slots": [{"size":10,"numeric":false}],
+        "note": "write the solution as an inequality in $x$, using <= or >= if you need them"
+      },
+      "key": "x <= -5",
+      "why": "subtracting 8 gives $-3x\\ge 15$, and dividing by $-3$ turns $\\ge$ into $\\le$"
+    },
+    {
+      "id": "2.4/O1/q4",
+      "obj": "2.4/O1",
+      "level": "stretch",
+      "kind": "fill",
+      "stem": [
+        {"t":"text","v":"Dana scored 78 and 84 on her first two tests. She wants the average of her three test scores to be at least 85."}
+      ],
+      "answer": {
+        "kind": "fill",
+        "template": "She needs at least ⟨0⟩ points on the third test.",
+        "slots": [{"size":5}],
+        "note": null
+      },
+      "key": "93",
+      "why": "$\\frac{78+84+x}{3}\\ge 85$ becomes $162+x\\ge 255$, so $x\\ge 93$"
+    },
+
+    {
+      "id": "2.4/O2/q1",
+      "obj": "2.4/O2",
+      "level": "core",
+      "kind": "choice",
+      "stem": [
+        {"t":"text","v":"Write the inequality shown by the graph."},
+        {"t":"numberline","min":-6,"max":6,"step":2,"intervals":[{"from":-2,"to":null,"openFrom":false}]},
+        {"t":"text","v":"Choose the correct answer below."}
+      ],
+      "answer": {
+        "kind": "choice",
+        "options": [
+          [{"t":"text","v":"$x > -2$"}],
+          [{"t":"text","v":"$x \\ge -2$"}],
+          [{"t":"text","v":"$x \\le -2$"}],
+          [{"t":"text","v":"$x \\ge 2$"}]
+        ],
+        "multi": false
+      },
+      "key": "1",
+      "why": "the shading runs to the right of $-2$, and the solid endpoint means $-2$ itself belongs to the solution set",
+      "diag": {
+        "0": "reads a solid endpoint as if it were hollow, excluding a value the graph includes",
+        "2": "reads the direction of the shading backwards",
+        "3": "reads the endpoint as 2 rather than $-2$"
+      }
+    },
+    {
+      "id": "2.4/O2/q2",
+      "obj": "2.4/O2",
+      "level": "core",
+      "kind": "compute",
+      "stem": [
+        {"t":"text","v":"Write the inequality shown by the graph."},
+        {"t":"numberline","min":-5,"max":5,"step":1,"intervals":[{"from":null,"to":3,"openTo":true}]}
+      ],
+      "answer": {
+        "kind": "compute",
+        "slots": [{"size":10,"numeric":false}],
+        "note": "write an inequality in $x$, using <= or >= if you need them"
+      },
+      "key": "x < 3",
+      "why": "the hollow endpoint at 3 excludes 3 itself, and the shading covers everything below it"
+    },
+    {
+      "id": "2.4/O2/q3",
+      "obj": "2.4/O2",
+      "level": "core",
+      "kind": "fill",
+      "stem": [
+        {"t":"text","v":"Write the inequality shown by the graph."},
+        {"t":"numberline","min":-8,"max":8,"step":2,"intervals":[{"from":-4,"to":null,"openFrom":true}]}
+      ],
+      "answer": {
+        "kind": "fill",
+        "template": "$x$ ⟨0⟩ ⟨1⟩",
+        "slots": [{"size":4,"numeric":false},{"size":4}],
+        "note": "put the symbol in the first box and the endpoint in the second"
+      },
+      "key": ">, -4",
+      "why": "the ray points right from $-4$ and the endpoint is hollow, so $-4$ is a boundary the solution set does not reach"
+    },
+    {
+      "id": "2.4/O2/q4",
+      "obj": "2.4/O2",
+      "level": "stretch",
+      "kind": "multipart",
+      "stem": [
+        {"t":"text","v":"A solution set is graphed below."},
+        {"t":"numberline","min":-5,"max":5,"step":1,"intervals":[{"from":-1,"to":null,"openFrom":true}]}
+      ],
+      "answer": {
+        "kind": "multipart",
+        "parts": [
+          {
+            "label": "(a)",
+            "stem": [{"t":"text","v":"Write the inequality shown."}],
+            "answer": {
+              "kind": "compute",
+              "slots": [{"size":10,"numeric":false}],
+              "note": "write an inequality in $x$"
+            },
+            "key": "x > -1",
+            "why": "the endpoint is hollow and the shading runs to the right"
+          },
+          {
+            "label": "(b)",
+            "stem": [{"t":"text","v":"Which of these numbers belong to the solution set? Select all that apply."}],
+            "answer": {
+              "kind": "choice",
+              "options": [
+                [{"t":"text","v":"$-2$"}],
+                [{"t":"text","v":"$-1$"}],
+                [{"t":"text","v":"$-0.5$"}],
+                [{"t":"text","v":"$0$"}]
+              ],
+              "multi": true
+            },
+            "key": "2, 3",
+            "why": "a number belongs when it is strictly greater than $-1$, and $-0.5$ lies between $-1$ and 0",
+            "diag": {
+              "0": "$-2$ lies to the left of $-1$, on the unshaded side",
+              "1": "an endpoint included that a strict inequality excludes"
+            }
+          }
+        ]
+      },
+      "key": "x > -1; 2, 3",
+      "why": "the graph fixes both the boundary and whether the boundary itself is a solution"
+    }
+  ]
+}

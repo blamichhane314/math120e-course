@@ -634,3 +634,62 @@ footer{margin-top:calc(var(--s)*6);padding-top:calc(var(--s)*2);
   color:var(--ink-faint)}
 .exlede{font-size:13px;color:var(--ink-faint);margin-bottom:calc(var(--s)*1.5);
   max-width:52ch}
+.why{margin-top:calc(var(--s)*1.75);padding-left:calc(var(--s)*1.5);
+  border-left:1px solid var(--accent-soft);font-size:13px;color:var(--ink-soft);
+  line-height:1.55}
+.why .t{display:block;font:9px var(--mono);letter-spacing:.16em;
+  color:var(--ink-faint);margin-bottom:4px}
+.why .k{display:block;margin-top:6px;font:11px var(--mono);color:var(--accent)}
+
+/* ══ use the screen ══════════════════════════════════════════════
+   These are working pages, not prose. A 36rem measure is right for reading
+   paragraphs and wrong for a question you are solving: it leaves two thirds of
+   a laptop screen empty and shrinks the mathematics to footnote size. Type
+   goes up, the column goes away, and on a wide screen the objectives sit
+   beside the question instead of pushing it down the page. */
+body{font-size:17.5px}
+#read{padding:calc(var(--s)*5) calc(var(--s)*6) calc(var(--s)*16)}
+#doc{max-width:none}
+h1{font-size:32px}
+.lede{font-size:17px;max-width:52ch}
+.meta{font-size:11px}
+
+/* the objectives map: across, not down */
+#objmap{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:0 calc(var(--s)*3);margin-bottom:calc(var(--s)*3)}
+.omap{padding:7px 0}
+.omap .ot{font-size:15px}
+
+/* the question itself, at a size you can actually work with */
+.prob{padding:calc(var(--s)*3) calc(var(--s)*3.5)}
+.prob .pbody{font-size:18px}
+.b-text{font-size:18px;line-height:1.5}
+.b-math{margin:calc(var(--s)*2) 0;font-size:20px}
+.b-math .katex{font-size:1.18em}
+.pbody .katex{font-size:1.06em}
+.a-line{margin:calc(var(--s)*1.5) 0}
+.a-prose{font-size:18px;line-height:2.2}
+.a-in{font-size:17px;padding:4px 9px;min-width:64px}
+.opt .v{font-size:17px}
+.opt{padding:8px 11px}
+.a-part{padding:calc(var(--s)*1.5) 0}
+.a-pbody{font-size:17px}
+.why{font-size:15px;margin-top:calc(var(--s)*2.5)}
+.sbtn{font-size:10.5px;padding:8px 14px}
+.spos{font-size:12.5px}
+.stepper{gap:calc(var(--s)*2.5);margin-bottom:calc(var(--s)*2.5)}
+
+/* wide screens: the map beside the work, not above it */
+@media (min-width:1500px){
+  #doc{display:grid;grid-template-columns:minmax(0,22rem) minmax(0,1fr);
+    gap:0 calc(var(--s)*7);align-items:start}
+  #doc h1,#doc .meta{grid-column:1/-1}
+  #doc h2:first-of-type,#objmap{grid-column:1}
+  #objmap{grid-template-columns:1fr}
+  #stage{grid-column:2;grid-row:3/span 4}
+  #doc h2:nth-of-type(2),#doc .note{grid-column:1}
+}
+/* the margin column earns its place only where marks accrue; on a page that
+   never writes to it, it is 17rem of nothing between the work and the edge */
+body.no-margin{grid-template-columns:var(--rail) minmax(0,1fr) 0}
+body.no-margin #margin{display:none}

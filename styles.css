@@ -942,7 +942,7 @@ h2 .kn-c{float:right;font:9.5px/1.9 var(--mono);letter-spacing:.1em;
    small mono labels and statements, 7:1 for body text. The previous
    --ink-faint was 2.30:1 against paper and carried every label on the site,
    which is why the type read as faint rather than quiet. */
-:root, :root[data-theme="paper"]{
+:root[data-theme="paper"]{
   --paper:#f4f0e6; --paper-lift:#faf7f0; --deep:#e7e1d3; --rail-paper:#efe9db;
   --ink:#231f1a; --ink-soft:#5c554a; --ink-faint:#6f685b;
   --line:rgba(35,31,26,.16); --line-soft:rgba(35,31,26,.09);
@@ -966,7 +966,7 @@ h2 .kn-c{float:right;font:9.5px/1.9 var(--mono);letter-spacing:.1em;
   --accent-tint:rgba(122,59,50,.10);
   --glow:#f5f7f2; --shade:rgba(29,35,32,.30);
 }
-:root[data-theme="ink"]{
+:root, :root[data-theme="ink"]{
   --paper:#1b1e22; --paper-lift:#23272c; --deep:#141619; --rail-paper:#171a1e;
   --ink:#e8e6e1; --ink-soft:#b3b0a9; --ink-faint:#948f86;
   --line:rgba(255,255,255,.16); --line-soft:rgba(255,255,255,.09);

@@ -13,7 +13,7 @@ export const THEMES = [
 const KEY = 'm120.theme';
 
 export function current() {
-  try { return localStorage.getItem(KEY) || 'paper'; } catch { return 'paper'; }
+  try { return localStorage.getItem(KEY) || 'ink'; } catch { return 'ink'; }
 }
 
 export function apply(id) {

@@ -1016,3 +1016,33 @@ body::before{background:radial-gradient(120% 90% at 50% 0%,
 #theme button[aria-pressed=true]{box-shadow:0 0 0 2px var(--paper),0 0 0 3.5px var(--accent)}
 #theme button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 @media (max-width:820px){ #theme{position:static;width:auto} }
+
+/* ── the objective view, at reading size ─────────────────────────
+   The columns are wider than they were, so the type that names an objective
+   no longer has to be small enough to fit a third of a squeezed page. */
+.gr-t{font-size:15px;line-height:1.5}
+.gr-id{font-size:11px;letter-spacing:.08em}
+.gr-head{font-size:11px;letter-spacing:.16em}
+.gr-count{font-size:11px}
+.gr-sec{font-size:11px;letter-spacing:.1em}
+.gr-focus .gr-t{font-size:21px;line-height:1.32}
+.gr-focus .gr-id{font-size:12px}
+.gr-meta{font-size:11px}
+.gr-none{font-size:14px}
+.gr-filter{font-size:11px;padding:8px 13px}
+.gr-why{font-size:15px;line-height:1.55}
+.gr-n{padding-top:calc(var(--s)*.9);padding-bottom:calc(var(--s)*.9)}
+.gr-mark{width:8px;height:8px}
+
+@media (min-width:1250px){
+  .gr-t{font-size:16.5px}
+  .gr-focus .gr-t{font-size:25px}
+  .gr-id{font-size:11.5px}
+  .gr-head,.gr-count,.gr-sec{font-size:11.5px}
+  .gr-why{font-size:16px}
+  .gr-none{font-size:15px}
+}
+@media (min-width:1600px){
+  .gr-t{font-size:17.5px}
+  .gr-focus .gr-t{font-size:28px}
+}

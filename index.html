@@ -3,12 +3,63 @@
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <title>MATH 120E</title>
-<link rel=stylesheet href="styles.css?v=13">
+<link rel=stylesheet href="styles.css?v=15">
 <body>
 <div id=rail></div>
 <div id=read><div id=doc>
   <h1><span class=num>math 120e &middot; fall 2026</span>Fundamentals of College Mathematics</h1>
-  <h2>start here</h2>
+  <h2>course information</h2>
+  <dl class=info>
+    <dt>Instructor</dt><dd>Bishal Lamichhane</dd>
+    <dt>Email</dt><dd><a href="mailto:blamichhane@unr.edu">blamichhane@unr.edu</a></dd>
+    <dt>Office</dt><dd>Sarah H. Fleischmann Building, Room 100F</dd>
+    <dt>Office hours</dt><dd>Tuesday and Thursday, 12:00&ndash;1:30 pm</dd>
+    <dt>Class</dt><dd>Monday through Thursday, 11:00&ndash;11:50 am, PSAC 114
+      <span class=sub>Section 1005</span></dd>
+    <dt>Textbook</dt><dd><i>Mathematics with Applications</i>, 13th edition.
+      Lial, Hungerford, Holcomb and Mullins.
+      <span class=sub>MyLab access is required and includes the eText. It can be
+      bought through MyLab or as an access kit from the UNR bookstore.</span></dd>
+    <dt>Calculator</dt><dd>A scientific calculator is required at every class.
+      Graphing calculators are not permitted on exams.</dd>
+    <dt>Final exam</dt><dd>Day and time to be announced.</dd>
+  </dl>
+
+  <h2>where things are</h2>
+  <dl class=info>
+    <dt>MyLab</dt><dd>Homework and grades. One assignment for each section
+      covered in class. The MyLab gradebook is the official gradebook for the
+      course.
+      <span class=sub>Course ID <code>lamichhane88187</code> &middot;
+      <a href="https://www.pearson.com/en-us/higher-education/products-services/mylab.html">mylab</a></span></dd>
+    <dt>WebCampus</dt><dd>Class notes and other course material.
+      <span class=sub><a href="https://unr.instructure.com/">unr.instructure.com</a></span></dd>
+    <dt>This site</dt><dd>The objectives for each section, how they connect, and
+      practice questions written for them. Nothing here is graded and none of it
+      is the assignment.</dd>
+  </dl>
+
+  <h2>grading</h2>
+  <div class=tables>
+    <table class=gt><caption>overall score</caption><tbody>
+      <tr><td>Homework</td><td>20%</td></tr>
+      <tr><td>Quizzes</td><td>10%</td></tr>
+      <tr><td>Four midterm exams</td><td>50%</td></tr>
+      <tr><td>Comprehensive final</td><td>20%</td></tr>
+    </tbody></table>
+    <table class=gt><caption>letter grade</caption><tbody>
+      <tr><td>A</td><td>90%</td></tr>
+      <tr><td>B</td><td>80%</td></tr>
+      <tr><td>C</td><td>70%</td></tr>
+      <tr><td>D</td><td>60%</td></tr>
+      <tr><td>F</td><td>below 60%</td></tr>
+    </tbody></table>
+  </div>
+  <p class=fine>Each midterm is worth 12.5%. A D&minus; or better is required to
+  pass and earn credit. The Math 20 corequisite is passed with 60% or better on
+  Exam 1, or with a D&minus; or better in Math 120E.</p>
+
+  <h2>on this site</h2>
   <div class=cards>
     <a class=card href="connections.html">
       <span class=ct>Connections</span>
@@ -17,18 +68,35 @@
       <span class=cm id=m-conn></span>
     </a>
     <a class=card href="homework.html">
-      <span class=ct>Homework map</span>
-      <span class=cd>What each assignment covers, and which objective every
-      problem serves.</span>
+      <span class=ct>Sections and practice</span>
+      <span class=cd>The objectives for each section, with practice questions
+      written for them, one at a time.</span>
       <span class=cm id=m-hw></span>
     </a>
     <a class=card href="https://blamichhane314.github.io/math120e-diagnostic/">
       <span class=ct>First-day diagnostic</span>
-      <span class=cd>Eight questions, about five minutes, anonymous. Not graded.
-      It tells me what to spend the first two weeks on.</span>
-      <span class=cm>8 questions &middot; no sign-in</span>
+      <span class=cd>Covers the ground of Exam 1. Not graded, no sign-in.</span>
+      <span class=cm>24 questions</span>
     </a>
   </div>
+
+  <h2>help outside class</h2>
+  <dl class=info>
+    <dt>Math Center</dt><dd>Free walk-in tutoring. Pennington Student
+      Achievement Center, Suite 300. 775-784-4433.
+      <span class=sub><a href="https://www.unr.edu/university-math-center">unr.edu/university-math-center</a></span></dd>
+    <dt>Tutoring Center</dt><dd>775-784-6801.
+      <span class=sub><a href="https://www.unr.edu/tutoring">unr.edu/tutoring</a></span></dd>
+    <dt>Writing &amp; Speaking</dt><dd>775-784-6030.
+      <span class=sub><a href="https://www.unr.edu/writing-speaking-center">unr.edu/writing-speaking-center</a></span></dd>
+    <dt>MyLab support</dt><dd>Pearson provides technical support for MyLab.
+      Check that your browser allows third-party cookies first, then use the
+      Browser Check link on the MyLab course home page.
+      <span class=sub><a href="https://support.pearson.com/getsupport">support.pearson.com/getsupport</a></span></dd>
+    <dt>Disability Resource Center</dt><dd>Students needing accommodations should
+      speak with me or the DRC as early as possible. Pennington Achievement
+      Center, Suite 230.</dd>
+  </dl>
 
   <h2>the term</h2>
   <div id=sched></div>
@@ -40,9 +108,16 @@
 <script type=module>
 const d = await (await fetch('data/course.json', {cache:'no-store'})).json();
 const nObj = d.sections.reduce((a,s)=>a+s.objectives.length,0);
-const nPr  = d.sections.reduce((a,s)=>a+s.problems.length,0);
+let nQ = 0, nQSec = 0;
+for (const f of ['q_a','q_b','q_c']) {
+  try {
+    const j = await (await fetch('data/' + f + '.json', {cache:'no-store'})).json();
+    for (const k of Object.keys(j)) { nQSec++; nQ += j[k].length; }
+  } catch {}
+}
 document.getElementById('m-conn').textContent = nObj + ' objectives';
-document.getElementById('m-hw').textContent = d.sections.length + ' sections · ' + nPr + ' problems';
+document.getElementById('m-hw').textContent =
+  d.sections.length + ' sections · ' + nQ + ' practice questions';
 
 const EXAM = {'Week 4':'Exam 1 · 1.1–1.7, 2.4','Week 7':'Exam 2 · 2.1–4.4',
   'Week 10':'Exam 3 · 5.1–8.3','Week 13':'Exam 4 · 8.4–9.4','Week 16':'Final exam'};
@@ -62,8 +137,8 @@ document.getElementById('sched').innerHTML = d.schedule.map(w => {
 }).join('');
 
 document.getElementById('foot').innerHTML =
-  'Problem text lives in MyLab, not here. This site holds the objectives and ' +
-  'the schedule.';
+  'Homework problems are in MyLab, not here. The instructor reserves the right ' +
+  'to make changes to the schedule as needed.';
 </script>
 </body>
 </html>

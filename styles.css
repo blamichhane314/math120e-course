@@ -761,3 +761,41 @@ body.no-margin #margin{display:none}
 /* With nothing hovered the caption is an accent rule with no text beside it,
    which reads as a stray mark. */
 .ch-cap:empty{min-height:0;border-left:0;padding-left:0}
+
+/* ── syllabus information ─────────────────────────────────────────
+   Label and value, the way a syllabus sets them out. */
+.info{display:grid;grid-template-columns:minmax(7rem,11rem) minmax(0,1fr);
+  gap:calc(var(--s)*1.5) calc(var(--s)*3.5);
+  margin:calc(var(--s)*2) 0 calc(var(--s)*5);max-width:54rem}
+.info dt{font:9.5px/1.9 var(--mono);letter-spacing:.14em;text-transform:uppercase;
+  color:var(--ink-faint);padding-top:4px}
+.info dd{font-size:15.5px;line-height:1.55}
+.info dd i{font-style:italic}
+.info dd code{font:13px var(--mono);background:var(--paper-lift);
+  padding:1px 5px;border-radius:2px}
+.info .sub{display:block;margin-top:3px;font-size:13.5px;line-height:1.5;
+  color:var(--ink-soft)}
+.info a{color:var(--accent);text-decoration:none;
+  border-bottom:1px solid var(--line)}
+.info a:hover{border-bottom-color:var(--accent)}
+@media (max-width:640px){
+  .info{grid-template-columns:1fr;gap:calc(var(--s)*.5) 0}
+  .info dd{margin-bottom:calc(var(--s)*1.75)}
+}
+
+.tables{display:flex;flex-wrap:wrap;gap:calc(var(--s)*7);
+  margin:calc(var(--s)*2) 0 calc(var(--s)*2)}
+.gt{border-collapse:collapse;min-width:15rem}
+.gt caption{font:9.5px/1.9 var(--mono);letter-spacing:.14em;
+  text-transform:uppercase;color:var(--ink-faint);text-align:left;
+  padding-bottom:calc(var(--s)*.5)}
+.gt td{padding:5px 0;border-bottom:1px solid var(--line-soft);font-size:15px}
+.gt td+td{text-align:right;padding-left:calc(var(--s)*4);
+  font:13px var(--mono);color:var(--ink-soft)}
+.gt tr:last-child td{border-bottom:0}
+.fine{font-size:13.5px;line-height:1.6;color:var(--ink-soft);max-width:44rem;
+  margin-bottom:calc(var(--s)*5)}
+
+/* Three destinations, so three columns once there is room for them; auto-fit
+   alone leaves a 2 + 1 break at the widths this page is read at. */
+@media (min-width:900px){ .cards{grid-template-columns:repeat(3,minmax(0,1fr))} }

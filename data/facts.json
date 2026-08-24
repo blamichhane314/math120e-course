@@ -1,0 +1,386 @@
+{
+ "1.1/O1": [
+  {
+   "name": "Commutative",
+   "statement": "$a+b=b+a$   and   $ab=ba$",
+   "note": "The order of two terms or two factors may be swapped."
+  },
+  {
+   "name": "Associative",
+   "statement": "$(a+b)+c=a+(b+c)$   and   $(ab)c=a(bc)$",
+   "note": "The grouping may be changed. Order is not."
+  },
+  {
+   "name": "Distributive",
+   "statement": "$a(b+c)=ab+ac$",
+   "note": "The only property that connects multiplication to addition. Factoring is this read right to left."
+  },
+  {
+   "name": "Identity",
+   "statement": "$a+0=a$   and   $a\\cdot 1=a$"
+  },
+  {
+   "name": "Inverse",
+   "statement": "$a+(-a)=0$   and   $a\\cdot\\tfrac{1}{a}=1$, $a\\ne 0$"
+  }
+ ],
+ "1.1/O2": [
+  {
+   "name": "Substitution",
+   "statement": "Replace each variable with its value, then evaluate."
+  },
+  {
+   "name": "Negatives go in parentheses",
+   "statement": "If $x=-3$ then $x^{2}=(-3)^{2}=9$, not $-9$.",
+   "note": "Substituting without parentheses is the most common way this goes wrong."
+  }
+ ],
+ "1.1/O3": [
+  {
+   "name": "The order",
+   "statement": "Parentheses, then exponents, then $\\times$ and $\\div$ left to right, then $+$ and $-$ left to right."
+  },
+  {
+   "name": "What counts as grouping",
+   "statement": "Parentheses, the fraction bar, and the radical all group.",
+   "note": "Everything above a fraction bar is divided by everything below it."
+  },
+  {
+   "name": "The exponent binds tighter than the minus",
+   "statement": "$-9^{2}=-81$   but   $(-9)^{2}=81$",
+   "note": "This one survives into calculus if it is not fixed here."
+  }
+ ],
+ "1.1/O4": [
+  {
+   "name": "Order on the number line",
+   "statement": "$a<b$ means $a$ lies to the left of $b$."
+  },
+  {
+   "name": "The symbols",
+   "statement": "$<$, $\\le$, $>$, $\\ge$, $\\ne$"
+  },
+  {
+   "name": "Comparing across forms",
+   "statement": "Write both numbers in one form first: $\\tfrac{3}{8}=0.375$, so $\\tfrac{3}{8}<0.4$."
+  }
+ ],
+ "1.1/O5": [
+  {
+   "name": "Interval notation",
+   "statement": "$(a,b)$ excludes both ends, $[a,b]$ includes both, $[a,b)$ includes only the left."
+  },
+  {
+   "name": "Infinity is never included",
+   "statement": "$(2,\\infty)$ — always a parenthesis on $\\infty$."
+  },
+  {
+   "name": "On the graph",
+   "statement": "A hollow dot excludes the endpoint, a solid dot includes it."
+  }
+ ],
+ "1.2/O1": [
+  {
+   "name": "Base and exponent",
+   "statement": "$a^{n}$ is $a$ used as a factor $n$ times. $a$ is the base, $n$ the exponent."
+  },
+  {
+   "name": "Where the minus sits",
+   "statement": "$(-2)^{4}=16$   but   $-2^{4}=-16$",
+   "note": "In the second, only the 2 is raised."
+  },
+  {
+   "name": "Sign of a power of a negative",
+   "statement": "An even power is positive, an odd power is negative."
+  }
+ ],
+ "1.2/O2": [
+  {
+   "name": "Product rule",
+   "statement": "$a^{m}\\cdot a^{n}=a^{m+n}$",
+   "note": "Same base: add the exponents."
+  },
+  {
+   "name": "Quotient rule",
+   "statement": "$\\dfrac{a^{m}}{a^{n}}=a^{m-n}$"
+  },
+  {
+   "name": "Power rule",
+   "statement": "$(a^{m})^{n}=a^{mn}$",
+   "note": "A power of a power multiplies."
+  },
+  {
+   "name": "Power of a product",
+   "statement": "$(ab)^{n}=a^{n}b^{n}$",
+   "note": "The exponent reaches every factor — and only factors."
+  },
+  {
+   "name": "Power of a quotient",
+   "statement": "$\\left(\\dfrac{a}{b}\\right)^{n}=\\dfrac{a^{n}}{b^{n}}$"
+  },
+  {
+   "name": "Zero exponent",
+   "statement": "$a^{0}=1$ for $a\\ne 0$"
+  }
+ ],
+ "1.2/O3": [
+  {
+   "name": "The vocabulary",
+   "statement": "term, coefficient, degree of a term, degree of the polynomial, leading coefficient"
+  },
+  {
+   "name": "Degree",
+   "statement": "The degree of a polynomial is the highest degree among its terms."
+  },
+  {
+   "name": "Leading coefficient",
+   "statement": "In $-4x^{3}+7x^{2}-x+9$ the degree is 3 and the leading coefficient is $-4$.",
+   "note": "The sign belongs to the coefficient."
+  },
+  {
+   "name": "Standard form",
+   "statement": "Written with the degrees descending."
+  },
+  {
+   "name": "By number of terms",
+   "statement": "one term monomial, two binomial, three trinomial"
+  }
+ ],
+ "1.2/O4": [
+  {
+   "name": "Like terms",
+   "statement": "Same variable raised to the same exponent: $5x^{2}$ and $2x^{2}$ are like, $5x^{2}$ and $3x$ are not."
+  },
+  {
+   "name": "Adding",
+   "statement": "Add the coefficients of like terms; the exponent does not change."
+  },
+  {
+   "name": "Subtracting",
+   "statement": "$-(2x^{2}+4x-1)=-2x^{2}-4x+1$",
+   "note": "The minus reaches every term inside the bracket, including the last."
+  }
+ ],
+ "1.2/O5": [
+  {
+   "name": "Distribute term by term",
+   "statement": "Every term of the first factor multiplies every term of the second."
+  },
+  {
+   "name": "Two binomials (FOIL)",
+   "statement": "$(x+3)(x-5)=x^{2}-5x+3x-15=x^{2}-2x-15$",
+   "note": "The two middle terms are the ones most often lost."
+  },
+  {
+   "name": "Square of a sum",
+   "statement": "$(a+b)^{2}=a^{2}+2ab+b^{2}$",
+   "note": "Not $a^{2}+b^{2}$. The middle term is the whole point."
+  },
+  {
+   "name": "Square of a difference",
+   "statement": "$(a-b)^{2}=a^{2}-2ab+b^{2}$"
+  },
+  {
+   "name": "Difference of squares",
+   "statement": "$(a+b)(a-b)=a^{2}-b^{2}$",
+   "note": "The only product of two binomials with no middle term."
+  }
+ ],
+ "1.2/O6": [
+  {
+   "name": "Building the polynomial",
+   "statement": "Turn the described quantity into an expression, then evaluate it at the stated value."
+  },
+  {
+   "name": "Profit",
+   "statement": "$P=R-C$ — profit is revenue minus cost."
+  }
+ ],
+ "1.3/O1": [
+  {
+   "name": "What the GCF is",
+   "statement": "The greatest common factor of the coefficients, times the lowest power of each variable common to every term."
+  },
+  {
+   "name": "Worked",
+   "statement": "$12x^{3}-18x^{2}=6x^{2}(2x-3)$",
+   "note": "$6$ divides 12 and 18; $x^{2}$ is the lowest power present."
+  },
+  {
+   "name": "Factoring is distributing backwards",
+   "statement": "Check by multiplying out — you must get back what you started with."
+  },
+  {
+   "name": "Completely",
+   "statement": "Nothing common may remain inside the bracket.",
+   "note": "$6x(2x^{2}-3x)$ is correct and not complete."
+  }
+ ],
+ "1.3/O2": [
+  {
+   "name": "The pattern",
+   "statement": "$x^{2}+bx+c=(x+p)(x+q)$ where $pq=c$ and $p+q=b$.",
+   "note": "Both conditions, not just the product."
+  },
+  {
+   "name": "Worked",
+   "statement": "$x^{2}+7x+12=(x+3)(x+4)$",
+   "note": "$3\\cdot 4=12$ and $3+4=7$."
+  },
+  {
+   "name": "Reading the signs",
+   "statement": "$c>0$: $p$ and $q$ share the sign of $b$.  $c<0$: they have opposite signs."
+  }
+ ],
+ "1.3/O3": [
+  {
+   "name": "Product and sum",
+   "statement": "Find two numbers with product $ac$ and sum $b$."
+  },
+  {
+   "name": "Split and group",
+   "statement": "$2x^{2}+7x+3$: $ac=6$, and $6=6\\cdot 1$ with $6+1=7$. Split: $2x^{2}+6x+x+3=2x(x+3)+1(x+3)=(2x+1)(x+3)$."
+  },
+  {
+   "name": "Always check",
+   "statement": "Expand the answer. $(2x+3)(x+1)$ gives $2x^{2}+5x+3$, not $2x^{2}+7x+3$.",
+   "note": "The right numbers in the wrong places is the usual error."
+  }
+ ],
+ "1.4/O1": [
+  {
+   "name": "Factor first",
+   "statement": "Factor the numerator and the denominator completely, then cancel."
+  },
+  {
+   "name": "Only factors cancel",
+   "statement": "$\\dfrac{3x+6}{3}=x+2$, not $x+6$.",
+   "note": "The bar groups the whole numerator; a 3 cannot be cancelled against one term of it."
+  },
+  {
+   "name": "Restrictions",
+   "statement": "The denominator may never be zero; exclude the values that make it so."
+  }
+ ],
+ "1.4/O2": [
+  {
+   "name": "Multiplying",
+   "statement": "Factor everything, cancel across the fraction bar, then multiply what is left."
+  },
+  {
+   "name": "Dividing",
+   "statement": "$\\dfrac{A}{B}\\div\\dfrac{C}{D}=\\dfrac{A}{B}\\cdot\\dfrac{D}{C}$",
+   "note": "Multiply by the reciprocal."
+  }
+ ],
+ "1.5/O1": [
+  {
+   "name": "Negative exponent",
+   "statement": "$a^{-n}=\\dfrac{1}{a^{n}}$, $a\\ne 0$",
+   "note": "A negative exponent means a reciprocal, not a negative answer: $2^{-3}=\\tfrac{1}{8}$."
+  },
+  {
+   "name": "The rules still hold",
+   "statement": "Product, quotient and power rules work for negative integers too."
+  },
+  {
+   "name": "Flipping a fraction",
+   "statement": "$\\left(\\dfrac{a}{b}\\right)^{-n}=\\left(\\dfrac{b}{a}\\right)^{n}$"
+  }
+ ],
+ "1.5/O2": [
+  {
+   "name": "Root as an exponent",
+   "statement": "$a^{1/n}=\\sqrt[n]{a}$"
+  },
+  {
+   "name": "General form",
+   "statement": "$a^{m/n}=\\left(\\sqrt[n]{a}\\right)^{m}=\\sqrt[n]{a^{m}}$",
+   "note": "Take the root first — the numbers stay small."
+  },
+  {
+   "name": "Worked",
+   "statement": "$27^{2/3}=\\left(\\sqrt[3]{27}\\right)^{2}=3^{2}=9$"
+  }
+ ],
+ "1.6/O1": [
+  {
+   "name": "Addition property",
+   "statement": "Adding the same quantity to both sides keeps the equation true."
+  },
+  {
+   "name": "Multiplication property",
+   "statement": "Multiplying both sides by the same non-zero quantity keeps it true."
+  },
+  {
+   "name": "The goal",
+   "statement": "Collect the variable on one side and the numbers on the other, then divide by the coefficient."
+  },
+  {
+   "name": "Check",
+   "statement": "Substitute the answer back into the original equation."
+  }
+ ],
+ "1.6/O2": [
+  {
+   "name": "Clear the fractions",
+   "statement": "Multiply both sides by the LCD of every denominator.",
+   "note": "Every term, including the ones that are not fractions."
+  },
+  {
+   "name": "Worked",
+   "statement": "$\\dfrac{x}{3}+\\dfrac{1}{2}=\\dfrac{5}{6}$ times 6 gives $2x+3=5$, so $x=1$."
+  }
+ ],
+ "1.6/O3": [
+  {
+   "name": "Same properties",
+   "statement": "Treat the other letters as if they were numbers."
+  },
+  {
+   "name": "When the target appears twice",
+   "statement": "Collect its terms on one side and factor it out, then divide by the bracket."
+  }
+ ],
+ "1.6/O4": [
+  {
+   "name": "The method",
+   "statement": "Name the unknown, write the equation the words describe, solve it, then read the answer back against the question."
+  }
+ ],
+ "1.7/O1": [
+  {
+   "name": "Standard form first",
+   "statement": "$ax^{2}+bx+c=0$ — everything on one side, zero on the other."
+  },
+  {
+   "name": "Zero-product property",
+   "statement": "If $AB=0$ then $A=0$ or $B=0$.",
+   "note": "This is why the equation must equal zero before you factor."
+  },
+  {
+   "name": "Worked",
+   "statement": "$x^{2}-5x+6=0$ gives $(x-2)(x-3)=0$, so $x=2$ or $x=3$.",
+   "note": "The roots are the opposites of the numbers in the brackets."
+  }
+ ],
+ "1.7/O2": [
+  {
+   "name": "The formula",
+   "statement": "$x=\\dfrac{-b\\pm\\sqrt{b^{2}-4ac}}{2a}$"
+  },
+  {
+   "name": "Reading a, b, c",
+   "statement": "From $2x^{2}-3x-5=0$: $a=2$, $b=-3$, $c=-5$.",
+   "note": "The signs belong to the coefficients."
+  },
+  {
+   "name": "Discriminant",
+   "statement": "$b^{2}-4ac$ positive gives two real solutions, zero gives one, negative gives none."
+  },
+  {
+   "name": "It always works",
+   "statement": "The formula solves any quadratic, including those that do not factor."
+  }
+ ]
+}

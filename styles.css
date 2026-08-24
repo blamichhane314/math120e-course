@@ -686,7 +686,7 @@ h1{font-size:32px}
    into a two-column grid that auto-placed headings into one column and their
    own content into the other. Keep it behind body.hw. */
 @media (min-width:1500px){
-  body.hw #doc{display:grid;grid-template-columns:minmax(0,22rem) minmax(0,1fr);
+  body.hw #doc{display:grid;grid-template-columns:minmax(0,31rem) minmax(0,1fr);
     gap:0 calc(var(--s)*7);align-items:start}
   body.hw #doc h1,body.hw #doc .meta{grid-column:1/-1}
   body.hw #doc h2:first-of-type,body.hw #objmap{grid-column:1}
@@ -900,3 +900,43 @@ body.with-margin #margin{display:block}
   .gr.none-back{grid-template-columns:minmax(0,.55fr) minmax(0,1fr) minmax(0,1.5fr)}
   .gr.none-fwd{grid-template-columns:minmax(0,1.5fr) minmax(0,1fr) minmax(0,.55fr)}
 }
+
+/* ── what a section asks you to know ─────────────────────────────
+   Name, statement, and where it earns one, the reason it is worth saying.
+   Sits under the objectives, in the same column, so the practice beside it
+   is read against a list of what the practice is for. */
+h2 .kn-c{float:right;font:9.5px/1.9 var(--mono);letter-spacing:.1em;
+  color:var(--ink-faint)}
+#know{margin-bottom:calc(var(--s)*4)}
+.kn-obj{margin-bottom:calc(var(--s)*3)}
+.kn-h{display:flex;gap:calc(var(--s)*1.25);align-items:baseline;
+  padding-bottom:calc(var(--s)*.75);margin-bottom:calc(var(--s)*1.25);
+  border-bottom:1px solid var(--line);font-size:14.5px;color:var(--ink)}
+.kn-i{font:9.5px var(--mono);letter-spacing:.1em;color:var(--ink-faint);
+  min-width:1.6rem}
+.kn-f{padding:calc(var(--s)*.75) 0 calc(var(--s)*.75) calc(var(--s)*2);
+  border-left:1px solid var(--line-soft);margin-bottom:calc(var(--s)*.75)}
+.kn-f:hover{border-left-color:var(--accent-soft)}
+.kn-n{font-size:13.5px;color:var(--ink);margin-bottom:2px}
+.kn-s{font-size:15px;color:var(--ink-soft);line-height:1.6}
+.kn-s .katex{font-size:1.04em}
+.kn-note{margin-top:3px;font-size:13px;line-height:1.5;color:var(--ink-faint)}
+@media (min-width:1100px){
+  .kn-h{font-size:15.5px}
+  .kn-n{font-size:14.5px}
+  .kn-s{font-size:16px}
+  .kn-note{font-size:14px}
+}
+
+/* foldable, because a student who has read it wants it out of the way */
+#know{margin-bottom:calc(var(--s)*4)}
+#know > summary{list-style:none;cursor:pointer;display:flex;align-items:baseline;
+  gap:calc(var(--s));font:11px/1.6 var(--mono);letter-spacing:.2em;
+  color:var(--ink-faint);margin:calc(var(--s)*5) 0 calc(var(--s)*2);
+  padding-bottom:calc(var(--s)*.75);border-bottom:1px solid var(--line)}
+#know > summary::-webkit-details-marker{display:none}
+#know > summary::before{content:"–";font-family:var(--mono);color:var(--ink-faint)}
+#know:not([open]) > summary::before{content:"+"}
+#know > summary:hover{color:var(--accent)}
+#know .kn-c{margin-left:auto;letter-spacing:.1em}
+#know .kn-obj:first-of-type{margin-top:calc(var(--s))}

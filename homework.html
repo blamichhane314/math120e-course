@@ -4,7 +4,7 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <title>MATH 120E — homework</title>
 <link rel=stylesheet href="vendor/katex/katex.min.css">
-<link rel=stylesheet href="styles.css?v=22">
+<link rel=stylesheet href="styles.css?v=24">
 <body class=hw>
 <div id=rail></div>
 <div id=read><div id=doc></div></div>
@@ -12,7 +12,7 @@
 
 <script defer src="vendor/katex/katex.min.js"></script>
 <script type=module>
-import { renderBlocks } from './js/blocks.js?v=3';
+import { renderBlocks, inline } from './js/blocks.js?v=4';
 import { renderAnswer } from './js/answers.js?v=5';
 
 const ready = () => new Promise(r => window.katex ? r() : addEventListener('load', r));
@@ -26,6 +26,10 @@ for (const f of ['q_a','q_b','q_c']) {
   try { Object.assign(Q, await (await fetch('data/' + f + '.json', {cache:'no-store'})).json()); }
   catch {}
 }
+// The named rules an objective asks a student to know. Written for chapter 1;
+// a section with no entry simply shows nothing.
+let FACTS = {};
+try { FACTS = await (await fetch('data/facts.json', {cache:'no-store'})).json(); } catch {}
 
 document.body.classList.add('no-margin');
 const rail = document.getElementById('rail');
@@ -82,7 +86,7 @@ function renderSection(id, idx) {
         '<div class=omap data-o="' + j + '"><span class=oi>O' + (j + 1) + '</span>' +
         '<span class=ot>' + esc(o) + '</span>' +
         '<span class=oc>' + (counts[j] || '&mdash;') + '</span></div>').join('') +
-    '</div><div id=stage></div>' +
+    '</div>' + knowBlock(s) + '<div id=stage></div>' +
     '<h2>the assignment</h2><div class=note><p>Your ' + assigned +
       ' assigned problems for this section are in MyLab. The practice above ' +
       'covers the same objectives. It is not the assignment and is not graded.</p></div>';
@@ -96,6 +100,32 @@ function renderSection(id, idx) {
   paint();
   document.title = 'math 120e · ' + s.id + ' ' + s.title;
   document.getElementById('read').scrollTop = 0;
+}
+
+/* ── what the section asks you to know ─────────────────────────────
+   An inventory, not notes: the named properties, rules and formulas, each
+   with its statement, under the objective that needs it. It is what a student
+   can look at before the first problem and know what is coming. */
+function knowBlock(s) {
+  const rows = s.objectives.map((o, j) => {
+    const items = FACTS[s.id + '/O' + (j + 1)];
+    if (!items || !items.length) return '';
+    return '<div class=kn-obj>' +
+      '<div class=kn-h><span class=kn-i>O' + (j + 1) + '</span>' + esc(o) + '</div>' +
+      items.map((f) =>
+        '<div class=kn-f>' +
+          '<div class=kn-n>' + inline(f.name) + '</div>' +
+          '<div class=kn-s>' + inline(f.statement) + '</div>' +
+          (f.note ? '<div class=kn-note>' + inline(f.note) + '</div>' : '') +
+        '</div>').join('') +
+      '</div>';
+  }).join('');
+  if (!rows) return '';
+  const n = s.objectives.reduce((a, _, j) =>
+    a + ((FACTS[s.id + '/O' + (j + 1)] || []).length), 0);
+  return '<details id=know open>' +
+    '<summary><span class=kn-t>what you need to know</span>' +
+    '<span class=kn-c>' + n + '</span></summary>' + rows + '</details>';
 }
 
 function step(i) {

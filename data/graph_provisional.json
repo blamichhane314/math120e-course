@@ -1,0 +1,5487 @@
+{
+ "nodes": [
+  {
+   "id": "1.1/O1",
+   "section": "1.1",
+   "sectionTitle": "The Real Numbers",
+   "idx": 0,
+   "text": "Identify properties of real numbers",
+   "track": "E",
+   "week": "Week 1",
+   "problems": 6
+  },
+  {
+   "id": "1.1/O2",
+   "section": "1.1",
+   "sectionTitle": "The Real Numbers",
+   "idx": 1,
+   "text": "Evaluate algebraic expressions",
+   "track": "E",
+   "week": "Week 1",
+   "problems": 6
+  },
+  {
+   "id": "1.1/O3",
+   "section": "1.1",
+   "sectionTitle": "The Real Numbers",
+   "idx": 2,
+   "text": "Evaluate expressions using the order of operations",
+   "track": "E",
+   "week": "Week 1",
+   "problems": 9
+  },
+  {
+   "id": "1.1/O4",
+   "section": "1.1",
+   "sectionTitle": "The Real Numbers",
+   "idx": 3,
+   "text": "Compare real numbers (basic inequalities)",
+   "track": "E",
+   "week": "Week 1",
+   "problems": 5
+  },
+  {
+   "id": "1.1/O5",
+   "section": "1.1",
+   "sectionTitle": "The Real Numbers",
+   "idx": 4,
+   "text": "Graph intervals on a number line",
+   "track": "E",
+   "week": "Week 1",
+   "problems": 6
+  },
+  {
+   "id": "1.2/O1",
+   "section": "1.2",
+   "sectionTitle": "Polynomials",
+   "idx": 0,
+   "text": "Evaluate Exponential Expressions",
+   "track": "E",
+   "week": "Week 1",
+   "problems": 9
+  },
+  {
+   "id": "1.2/O2",
+   "section": "1.2",
+   "sectionTitle": "Polynomials",
+   "idx": 1,
+   "text": "Perform operations on exponential expressions",
+   "track": "E",
+   "week": "Week 1",
+   "problems": 5
+  },
+  {
+   "id": "1.2/O3",
+   "section": "1.2",
+   "sectionTitle": "Polynomials",
+   "idx": 2,
+   "text": "Identify characteristics of polynomials",
+   "track": "E",
+   "week": "Week 1",
+   "problems": 7
+  },
+  {
+   "id": "1.2/O4",
+   "section": "1.2",
+   "sectionTitle": "Polynomials",
+   "idx": 3,
+   "text": "Add or subtract polynomials",
+   "track": "E",
+   "week": "Week 1",
+   "problems": 6
+  },
+  {
+   "id": "1.2/O5",
+   "section": "1.2",
+   "sectionTitle": "Polynomials",
+   "idx": 4,
+   "text": "Multiply polynomials",
+   "track": "E",
+   "week": "Week 1",
+   "problems": 13
+  },
+  {
+   "id": "1.2/O6",
+   "section": "1.2",
+   "sectionTitle": "Polynomials",
+   "idx": 5,
+   "text": "Solve applications involving polynomials",
+   "track": "E",
+   "week": "Week 1",
+   "problems": 4
+  },
+  {
+   "id": "1.3/O1",
+   "section": "1.3",
+   "sectionTitle": "Factoring",
+   "idx": 0,
+   "text": "Factor out the greatest common factor",
+   "track": "E",
+   "week": "Week 1",
+   "problems": 16
+  },
+  {
+   "id": "1.3/O2",
+   "section": "1.3",
+   "sectionTitle": "Factoring",
+   "idx": 1,
+   "text": "Factor quadratics with a leading coefficient of 1",
+   "track": "E",
+   "week": "Week 1",
+   "problems": 10
+  },
+  {
+   "id": "1.3/O3",
+   "section": "1.3",
+   "sectionTitle": "Factoring",
+   "idx": 2,
+   "text": "Factor quadratics where the leading coefficient is not 1",
+   "track": "E",
+   "week": "Week 1",
+   "problems": 4
+  },
+  {
+   "id": "1.4/O1",
+   "section": "1.4",
+   "sectionTitle": "Rational Expressions",
+   "idx": 0,
+   "text": "Write a rational expression in lowest terms",
+   "track": "E",
+   "week": "Week 2",
+   "problems": 11
+  },
+  {
+   "id": "1.4/O2",
+   "section": "1.4",
+   "sectionTitle": "Rational Expressions",
+   "idx": 1,
+   "text": "Multiply and divide rational expressions",
+   "track": "E",
+   "week": "Week 2",
+   "problems": 6
+  },
+  {
+   "id": "1.5/O1",
+   "section": "1.5",
+   "sectionTitle": "Exponents and Radicals",
+   "idx": 0,
+   "text": "Simplify expressions with integer exponents",
+   "track": "E",
+   "week": "Week 2",
+   "problems": 17
+  },
+  {
+   "id": "1.5/O2",
+   "section": "1.5",
+   "sectionTitle": "Exponents and Radicals",
+   "idx": 1,
+   "text": "Simplify expressions with rational exponents",
+   "track": "E",
+   "week": "Week 2",
+   "problems": 16
+  },
+  {
+   "id": "1.6/O1",
+   "section": "1.6",
+   "sectionTitle": "First-Degree Equations",
+   "idx": 0,
+   "text": "Solve first-degree equations using properties of equality",
+   "track": "E",
+   "week": "Week 2",
+   "problems": 10
+  },
+  {
+   "id": "1.6/O2",
+   "section": "1.6",
+   "sectionTitle": "First-Degree Equations",
+   "idx": 1,
+   "text": "Solve first-degree equations involving fractions",
+   "track": "E",
+   "week": "Week 2",
+   "problems": 9
+  },
+  {
+   "id": "1.6/O3",
+   "section": "1.6",
+   "sectionTitle": "First-Degree Equations",
+   "idx": 2,
+   "text": "Solve first-degree equations and formulas for a specified variable",
+   "track": "E",
+   "week": "Week 2",
+   "problems": 12
+  },
+  {
+   "id": "1.6/O4",
+   "section": "1.6",
+   "sectionTitle": "First-Degree Equations",
+   "idx": 3,
+   "text": "Solve applications involving first-degree equations",
+   "track": "E",
+   "week": "Week 2",
+   "problems": 11
+  },
+  {
+   "id": "1.7/O1",
+   "section": "1.7",
+   "sectionTitle": "Quadratic Equations",
+   "idx": 0,
+   "text": "Solve quadratic equations by factoring",
+   "track": "E",
+   "week": "Week 3",
+   "problems": 10
+  },
+  {
+   "id": "1.7/O2",
+   "section": "1.7",
+   "sectionTitle": "Quadratic Equations",
+   "idx": 1,
+   "text": "Solve quadratic equations using the quadratic formula",
+   "track": "E",
+   "week": "Week 3",
+   "problems": 7
+  },
+  {
+   "id": "2.1/O1",
+   "section": "2.1",
+   "sectionTitle": "Graphs",
+   "idx": 0,
+   "text": "Identify the quadrant in which a point lies",
+   "track": "120",
+   "week": "Week 4",
+   "problems": 2
+  },
+  {
+   "id": "2.1/O2",
+   "section": "2.1",
+   "sectionTitle": "Graphs",
+   "idx": 1,
+   "text": "Determine whether an ordered pair is a solution to an equation",
+   "track": "120",
+   "week": "Week 4",
+   "problems": 1
+  },
+  {
+   "id": "2.1/O3",
+   "section": "2.1",
+   "sectionTitle": "Graphs",
+   "idx": 2,
+   "text": "Graph equations",
+   "track": "120",
+   "week": "Week 4",
+   "problems": 6
+  },
+  {
+   "id": "2.1/O4",
+   "section": "2.1",
+   "sectionTitle": "Graphs",
+   "idx": 3,
+   "text": "Find all of the x- and y- intercepts from a given graph",
+   "track": "120",
+   "week": "Week 4",
+   "problems": 9
+  },
+  {
+   "id": "2.1/O5",
+   "section": "2.1",
+   "sectionTitle": "Graphs",
+   "idx": 4,
+   "text": "Find the x- and y-intercepts from a given equation",
+   "track": "120",
+   "week": "Week 4",
+   "problems": 1
+  },
+  {
+   "id": "2.2/O1",
+   "section": "2.2",
+   "sectionTitle": "Equations of Lines",
+   "idx": 0,
+   "text": "Find the slope of a line given two points",
+   "track": "120",
+   "week": "Week 4",
+   "problems": 3
+  },
+  {
+   "id": "2.2/O2",
+   "section": "2.2",
+   "sectionTitle": "Equations of Lines",
+   "idx": 1,
+   "text": "Find the equation of a line given its slope and y-intercept",
+   "track": "120",
+   "week": "Week 4",
+   "problems": 9
+  },
+  {
+   "id": "2.2/O3",
+   "section": "2.2",
+   "sectionTitle": "Equations of Lines",
+   "idx": 2,
+   "text": "Find the slope and y-intercept of a line given its equation",
+   "track": "120",
+   "week": "Week 4",
+   "problems": 10
+  },
+  {
+   "id": "2.2/O4",
+   "section": "2.2",
+   "sectionTitle": "Equations of Lines",
+   "idx": 3,
+   "text": "Graph a line using intercepts",
+   "track": "120",
+   "week": "Week 4",
+   "problems": 4
+  },
+  {
+   "id": "2.2/O5",
+   "section": "2.2",
+   "sectionTitle": "Equations of Lines",
+   "idx": 4,
+   "text": "Determine whether a pair of lines is parallel, perpendicular, or neither",
+   "track": "120",
+   "week": "Week 4",
+   "problems": 4
+  },
+  {
+   "id": "2.2/O6",
+   "section": "2.2",
+   "sectionTitle": "Equations of Lines",
+   "idx": 5,
+   "text": "Find the equation of a line satisfying given conditions",
+   "track": "120",
+   "week": "Week 4",
+   "problems": 5
+  },
+  {
+   "id": "2.3/O1",
+   "section": "2.3",
+   "sectionTitle": "Linear Models",
+   "idx": 0,
+   "text": "Use linear equations to convert between temperature units",
+   "track": "120",
+   "week": "Week 5",
+   "problems": 2
+  },
+  {
+   "id": "2.3/O2",
+   "section": "2.3",
+   "sectionTitle": "Linear Models",
+   "idx": 1,
+   "text": "Make predictions from a linear model obtained by using two data points.",
+   "track": "120",
+   "week": "Week 5",
+   "problems": 2
+  },
+  {
+   "id": "2.4/O1",
+   "section": "2.4",
+   "sectionTitle": "Linear Inequalities",
+   "idx": 0,
+   "text": "Solve linear inequalities and graph the solutions.",
+   "track": "E",
+   "week": "Week 3",
+   "problems": 5
+  },
+  {
+   "id": "2.4/O2",
+   "section": "2.4",
+   "sectionTitle": "Linear Inequalities",
+   "idx": 1,
+   "text": "Write an inequality to describe the graph of a solution set.",
+   "track": "E",
+   "week": "Week 3",
+   "problems": 7
+  },
+  {
+   "id": "3.1/O1",
+   "section": "3.1",
+   "sectionTitle": "Functions",
+   "idx": 0,
+   "text": "Evaluate functions for algebraic values",
+   "track": "120",
+   "week": "Week 5",
+   "problems": 2
+  },
+  {
+   "id": "3.1/O2",
+   "section": "3.1",
+   "sectionTitle": "Functions",
+   "idx": 1,
+   "text": "Evaluate functions for numerical values",
+   "track": "120",
+   "week": "Week 5",
+   "problems": 1
+  },
+  {
+   "id": "3.1/O3",
+   "section": "3.1",
+   "sectionTitle": "Functions",
+   "idx": 2,
+   "text": "Find the domain of functions",
+   "track": "120",
+   "week": "Week 5",
+   "problems": 6
+  },
+  {
+   "id": "3.1/O4",
+   "section": "3.1",
+   "sectionTitle": "Functions",
+   "idx": 3,
+   "text": "Solve applications involving functions",
+   "track": "120",
+   "week": "Week 5",
+   "problems": 3
+  },
+  {
+   "id": "4.1/O1",
+   "section": "4.1",
+   "sectionTitle": "Exponential Functions",
+   "idx": 0,
+   "text": "Classify functions as linear, quadratic, or exponential",
+   "track": "120",
+   "week": "Week 5",
+   "problems": 5
+  },
+  {
+   "id": "4.1/O2",
+   "section": "4.1",
+   "sectionTitle": "Exponential Functions",
+   "idx": 1,
+   "text": "Describe the shape of the graphs of exponential functions",
+   "track": "120",
+   "week": "Week 5",
+   "problems": 3
+  },
+  {
+   "id": "4.1/O3",
+   "section": "4.1",
+   "sectionTitle": "Exponential Functions",
+   "idx": 2,
+   "text": "Graph exponential functions",
+   "track": "120",
+   "week": "Week 5",
+   "problems": 9
+  },
+  {
+   "id": "4.1/O4",
+   "section": "4.1",
+   "sectionTitle": "Exponential Functions",
+   "idx": 3,
+   "text": "Determine a value or an equation for an exponential function given certain conditions",
+   "track": "120",
+   "week": "Week 5",
+   "problems": 3
+  },
+  {
+   "id": "4.2/O1",
+   "section": "4.2",
+   "sectionTitle": "Applications of Exponential Functions",
+   "idx": 0,
+   "text": "Solve applications involving the evaluation and graphing of exponential functions",
+   "track": "120",
+   "week": "Week 6",
+   "problems": 3
+  },
+  {
+   "id": "4.2/O2",
+   "section": "4.2",
+   "sectionTitle": "Applications of Exponential Functions",
+   "idx": 1,
+   "text": "Solve applications involving logistic functions.",
+   "track": "120",
+   "week": "Week 6",
+   "problems": 2
+  },
+  {
+   "id": "4.3/O1",
+   "section": "4.3",
+   "sectionTitle": "Logarithmic Functions",
+   "idx": 0,
+   "text": "Convert between logarithmic and exponential notation",
+   "track": "120",
+   "week": "Week 6",
+   "problems": 4
+  },
+  {
+   "id": "4.3/O2",
+   "section": "4.3",
+   "sectionTitle": "Logarithmic Functions",
+   "idx": 1,
+   "text": "Evaluate logarithms without a calculator",
+   "track": "120",
+   "week": "Week 6",
+   "problems": 6
+  },
+  {
+   "id": "4.3/O3",
+   "section": "4.3",
+   "sectionTitle": "Logarithmic Functions",
+   "idx": 2,
+   "text": "Use the properties of logarithms to rewrite logarithmic expressions",
+   "track": "120",
+   "week": "Week 6",
+   "problems": 4
+  },
+  {
+   "id": "4.3/O4",
+   "section": "4.3",
+   "sectionTitle": "Logarithmic Functions",
+   "idx": 3,
+   "text": "Evaluate logarithms using the change of base theorem",
+   "track": "120",
+   "week": "Week 6",
+   "problems": 4
+  },
+  {
+   "id": "4.4/O1",
+   "section": "4.4",
+   "sectionTitle": "Logarithmic & Exponential Equations",
+   "idx": 0,
+   "text": "Solve logarithmic equations for a numerical value",
+   "track": "120",
+   "week": "Week 6",
+   "problems": 6
+  },
+  {
+   "id": "4.4/O2",
+   "section": "4.4",
+   "sectionTitle": "Logarithmic & Exponential Equations",
+   "idx": 1,
+   "text": "Solve exponential equations for a numerical value",
+   "track": "120",
+   "week": "Week 6",
+   "problems": 7
+  },
+  {
+   "id": "4.4/O3",
+   "section": "4.4",
+   "sectionTitle": "Logarithmic & Exponential Equations",
+   "idx": 2,
+   "text": "Solve applications involving logarithmic and exponential equations",
+   "track": "120",
+   "week": "Week 6",
+   "problems": 6
+  },
+  {
+   "id": "5.1/O1",
+   "section": "5.1",
+   "sectionTitle": "Simple and Compound Interest",
+   "idx": 0,
+   "text": "Calculate simple interest",
+   "track": "120",
+   "week": "Week 7",
+   "problems": 5
+  },
+  {
+   "id": "5.1/O2",
+   "section": "5.1",
+   "sectionTitle": "Simple and Compound Interest",
+   "idx": 1,
+   "text": "Find compound amounts and compound interest",
+   "track": "120",
+   "week": "Week 7",
+   "problems": 4
+  },
+  {
+   "id": "5.1/O3",
+   "section": "5.1",
+   "sectionTitle": "Simple and Compound Interest",
+   "idx": 2,
+   "text": "Find interest rates",
+   "track": "120",
+   "week": "Week 7",
+   "problems": 5
+  },
+  {
+   "id": "5.1/O4",
+   "section": "5.1",
+   "sectionTitle": "Simple and Compound Interest",
+   "idx": 3,
+   "text": "Find present values",
+   "track": "120",
+   "week": "Week 7",
+   "problems": 4
+  },
+  {
+   "id": "5.1/O5",
+   "section": "5.1",
+   "sectionTitle": "Simple and Compound Interest",
+   "idx": 4,
+   "text": "Calculate previous prices due to inflation",
+   "track": "120",
+   "week": "Week 7",
+   "problems": 1
+  },
+  {
+   "id": "5.1/O6",
+   "section": "5.1",
+   "sectionTitle": "Simple and Compound Interest",
+   "idx": 5,
+   "text": "Solve applications involving compound interest",
+   "track": "120",
+   "week": "Week 7",
+   "problems": 0
+  },
+  {
+   "id": "5.1/O7",
+   "section": "5.1",
+   "sectionTitle": "Simple and Compound Interest",
+   "idx": 6,
+   "text": "Calculate present values of future amounts",
+   "track": "120",
+   "week": "Week 7",
+   "problems": 2
+  },
+  {
+   "id": "5.2/O1",
+   "section": "5.2",
+   "sectionTitle": "Annuities, Future Value, and Sinking Funds",
+   "idx": 0,
+   "text": "Calculate future values of annuities",
+   "track": "120",
+   "week": "Week 8",
+   "problems": 4
+  },
+  {
+   "id": "5.2/O2",
+   "section": "5.2",
+   "sectionTitle": "Annuities, Future Value, and Sinking Funds",
+   "idx": 1,
+   "text": "Find periodic payment amounts",
+   "track": "120",
+   "week": "Week 8",
+   "problems": 14
+  },
+  {
+   "id": "5.2/O3",
+   "section": "5.2",
+   "sectionTitle": "Annuities, Future Value, and Sinking Funds",
+   "idx": 2,
+   "text": "Solve applications involving annuities, future values, and sinking funds",
+   "track": "120",
+   "week": "Week 8",
+   "problems": 3
+  },
+  {
+   "id": "5.3/O1",
+   "section": "5.3",
+   "sectionTitle": "Consumer Loans and Amortization",
+   "idx": 0,
+   "text": "Find amortization payments",
+   "track": "120",
+   "week": "Week 8",
+   "problems": 8
+  },
+  {
+   "id": "5.3/O2",
+   "section": "5.3",
+   "sectionTitle": "Consumer Loans and Amortization",
+   "idx": 1,
+   "text": "Find monthly payments and estimate remaining balances",
+   "track": "120",
+   "week": "Week 8",
+   "problems": 4
+  },
+  {
+   "id": "5.3/O3",
+   "section": "5.3",
+   "sectionTitle": "Consumer Loans and Amortization",
+   "idx": 2,
+   "text": "Interpret amortization tables",
+   "track": "120",
+   "week": "Week 8",
+   "problems": 3
+  },
+  {
+   "id": "5.3/O4",
+   "section": "5.3",
+   "sectionTitle": "Consumer Loans and Amortization",
+   "idx": 3,
+   "text": "Solve applications involving consumer loans and amortization",
+   "track": "120",
+   "week": "Week 8",
+   "problems": 1
+  },
+  {
+   "id": "8.1/O1",
+   "section": "8.1",
+   "sectionTitle": "Sets",
+   "idx": 0,
+   "text": "Identify elements of sets, equivalent sets, and set-builder notation",
+   "track": "120",
+   "week": "Week 9",
+   "problems": 3
+  },
+  {
+   "id": "8.1/O2",
+   "section": "8.1",
+   "sectionTitle": "Sets",
+   "idx": 1,
+   "text": "Identify subsets and the number of subsets",
+   "track": "120",
+   "week": "Week 9",
+   "problems": 5
+  },
+  {
+   "id": "8.1/O3",
+   "section": "8.1",
+   "sectionTitle": "Sets",
+   "idx": 2,
+   "text": "Find the complement of a set",
+   "track": "120",
+   "week": "Week 9",
+   "problems": 4
+  },
+  {
+   "id": "8.1/O4",
+   "section": "8.1",
+   "sectionTitle": "Sets",
+   "idx": 3,
+   "text": "Identify whether a set represents a union or intersection of two sets",
+   "track": "120",
+   "week": "Week 9",
+   "problems": 2
+  },
+  {
+   "id": "8.1/O5",
+   "section": "8.1",
+   "sectionTitle": "Sets",
+   "idx": 4,
+   "text": "Use set operations to identify the elements of a set",
+   "track": "120",
+   "week": "Week 9",
+   "problems": 3
+  },
+  {
+   "id": "8.1/O6",
+   "section": "8.1",
+   "sectionTitle": "Sets",
+   "idx": 5,
+   "text": "Solve applications involving sets",
+   "track": "120",
+   "week": "Week 9",
+   "problems": 3
+  },
+  {
+   "id": "8.2/O1",
+   "section": "8.2",
+   "sectionTitle": "Applications of Venn Diagrams",
+   "idx": 0,
+   "text": "Sketch a Venn diagram to represent complements, unions, or intersections of sets",
+   "track": "120",
+   "week": "Week 9",
+   "problems": 5
+  },
+  {
+   "id": "8.2/O2",
+   "section": "8.2",
+   "sectionTitle": "Applications of Venn Diagrams",
+   "idx": 1,
+   "text": "Solve applications involving Venn diagrams and the number of elements in a set",
+   "track": "120",
+   "week": "Week 9",
+   "problems": 9
+  },
+  {
+   "id": "8.2/O3",
+   "section": "8.2",
+   "sectionTitle": "Applications of Venn Diagrams",
+   "idx": 2,
+   "text": "Solve applications involving contingency tables",
+   "track": "120",
+   "week": "Week 9",
+   "problems": 2
+  },
+  {
+   "id": "8.2/O4",
+   "section": "8.2",
+   "sectionTitle": "Applications of Venn Diagrams",
+   "idx": 3,
+   "text": "Use union rule or a Venn diagram to find the number of elements in a set",
+   "track": "120",
+   "week": "Week 9",
+   "problems": 5
+  },
+  {
+   "id": "8.3/O1",
+   "section": "8.3",
+   "sectionTitle": "Introduction to Probability",
+   "idx": 0,
+   "text": "Vocabulary and concepts of probability",
+   "track": "120",
+   "week": "Week 9",
+   "problems": 1
+  },
+  {
+   "id": "8.3/O2",
+   "section": "8.3",
+   "sectionTitle": "Introduction to Probability",
+   "idx": 1,
+   "text": "Write sample spaces and/or events",
+   "track": "120",
+   "week": "Week 9",
+   "problems": 4
+  },
+  {
+   "id": "8.3/O3",
+   "section": "8.3",
+   "sectionTitle": "Introduction to Probability",
+   "idx": 2,
+   "text": "Identify disjoint events",
+   "track": "120",
+   "week": "Week 9",
+   "problems": 4
+  },
+  {
+   "id": "8.3/O4",
+   "section": "8.3",
+   "sectionTitle": "Introduction to Probability",
+   "idx": 3,
+   "text": "Calculate the probability of an event.",
+   "track": "120",
+   "week": "Week 9",
+   "problems": 5
+  },
+  {
+   "id": "8.3/O5",
+   "section": "8.3",
+   "sectionTitle": "Introduction to Probability",
+   "idx": 4,
+   "text": "Solve applications that involve finding probabilities",
+   "track": "120",
+   "week": "Week 9",
+   "problems": 4
+  },
+  {
+   "id": "8.3/O6",
+   "section": "8.3",
+   "sectionTitle": "Introduction to Probability",
+   "idx": 5,
+   "text": "Determine whether probability assignments are possible",
+   "track": "120",
+   "week": "Week 9",
+   "problems": 4
+  },
+  {
+   "id": "8.4/O1",
+   "section": "8.4",
+   "sectionTitle": "Basic Concepts of Probability",
+   "idx": 0,
+   "text": "Find probabilities of complex events",
+   "track": "120",
+   "week": "Week 10",
+   "problems": 5
+  },
+  {
+   "id": "8.4/O2",
+   "section": "8.4",
+   "sectionTitle": "Basic Concepts of Probability",
+   "idx": 1,
+   "text": "Use Venn diagrams to find probabilities",
+   "track": "120",
+   "week": "Week 10",
+   "problems": 6
+  },
+  {
+   "id": "8.4/O3",
+   "section": "8.4",
+   "sectionTitle": "Basic Concepts of Probability",
+   "idx": 2,
+   "text": "Calculate odds",
+   "track": "120",
+   "week": "Week 10",
+   "problems": 7
+  },
+  {
+   "id": "8.4/O4",
+   "section": "8.4",
+   "sectionTitle": "Basic Concepts of Probability",
+   "idx": 3,
+   "text": "Convert between probability and odds",
+   "track": "120",
+   "week": "Week 10",
+   "problems": 4
+  },
+  {
+   "id": "8.4/O5",
+   "section": "8.4",
+   "sectionTitle": "Basic Concepts of Probability",
+   "idx": 4,
+   "text": "Solve applications involving finding probability from empirical data",
+   "track": "120",
+   "week": "Week 10",
+   "problems": 4
+  },
+  {
+   "id": "8.5/O1",
+   "section": "8.5",
+   "sectionTitle": "Conditional Probability & Independent Events",
+   "idx": 0,
+   "text": "Calculate conditional probabilities",
+   "track": "120",
+   "week": "Week 10",
+   "problems": 3
+  },
+  {
+   "id": "8.5/O2",
+   "section": "8.5",
+   "sectionTitle": "Conditional Probability & Independent Events",
+   "idx": 1,
+   "text": "Explain concepts involving conditional probability and independent events.",
+   "track": "120",
+   "week": "Week 10",
+   "problems": 6
+  },
+  {
+   "id": "8.5/O3",
+   "section": "8.5",
+   "sectionTitle": "Conditional Probability & Independent Events",
+   "idx": 2,
+   "text": "Use the Addition Rule and the Product Rule to calculate probabilities.",
+   "track": "120",
+   "week": "Week 10",
+   "problems": 3
+  },
+  {
+   "id": "8.5/O4",
+   "section": "8.5",
+   "sectionTitle": "Conditional Probability & Independent Events",
+   "idx": 3,
+   "text": "Solve applications involving conditional probability and independent events.",
+   "track": "120",
+   "week": "Week 10",
+   "problems": 4
+  },
+  {
+   "id": "9.1/O1",
+   "section": "9.1",
+   "sectionTitle": "Probability Distributions & Expected Value",
+   "idx": 0,
+   "text": "Construct a probability distribution",
+   "track": "120",
+   "week": "Week 11",
+   "problems": 3
+  },
+  {
+   "id": "9.1/O2",
+   "section": "9.1",
+   "sectionTitle": "Probability Distributions & Expected Value",
+   "idx": 1,
+   "text": "Draw a histogram and shade the indicated probabilities",
+   "track": "120",
+   "week": "Week 11",
+   "problems": 1
+  },
+  {
+   "id": "9.1/O3",
+   "section": "9.1",
+   "sectionTitle": "Probability Distributions & Expected Value",
+   "idx": 2,
+   "text": "Find the expected value for a random variable",
+   "track": "120",
+   "week": "Week 11",
+   "problems": 4
+  },
+  {
+   "id": "9.1/O4",
+   "section": "9.1",
+   "sectionTitle": "Probability Distributions & Expected Value",
+   "idx": 3,
+   "text": "Solve applications involving expected value",
+   "track": "120",
+   "week": "Week 11",
+   "problems": 2
+  },
+  {
+   "id": "9.2/O1",
+   "section": "9.2",
+   "sectionTitle": "The Multiplication Principle, Permutations, and Combinations",
+   "idx": 0,
+   "text": "Evaluate factorials, permutations, and combinations",
+   "track": "120",
+   "week": "Week 11",
+   "problems": 5
+  },
+  {
+   "id": "9.2/O2",
+   "section": "9.2",
+   "sectionTitle": "The Multiplication Principle, Permutations, and Combinations",
+   "idx": 1,
+   "text": "Describe and compare factorials, permutations, and combinations, and how they can be found",
+   "track": "120",
+   "week": "Week 11",
+   "problems": 1
+  },
+  {
+   "id": "9.2/O3",
+   "section": "9.2",
+   "sectionTitle": "The Multiplication Principle, Permutations, and Combinations",
+   "idx": 2,
+   "text": "Solve applications involving the multiplication principle",
+   "track": "120",
+   "week": "Week 11",
+   "problems": 4
+  },
+  {
+   "id": "9.2/O4",
+   "section": "9.2",
+   "sectionTitle": "The Multiplication Principle, Permutations, and Combinations",
+   "idx": 3,
+   "text": "Solve applications involving permutations",
+   "track": "120",
+   "week": "Week 11",
+   "problems": 4
+  },
+  {
+   "id": "9.2/O5",
+   "section": "9.2",
+   "sectionTitle": "The Multiplication Principle, Permutations, and Combinations",
+   "idx": 4,
+   "text": "Solve applications involving combinations",
+   "track": "120",
+   "week": "Week 11",
+   "problems": 2
+  },
+  {
+   "id": "9.2/O6",
+   "section": "9.2",
+   "sectionTitle": "The Multiplication Principle, Permutations, and Combinations",
+   "idx": 5,
+   "text": "Solve applications involving the multiplication principle, permutations, and/or combinations",
+   "track": "120",
+   "week": "Week 11",
+   "problems": 4
+  },
+  {
+   "id": "9.3/O1",
+   "section": "9.3",
+   "sectionTitle": "Applications of Counting",
+   "idx": 0,
+   "text": "Solve applications involving probability that use counting, permutations, and combinations",
+   "track": "120",
+   "week": "Week 12",
+   "problems": 7
+  },
+  {
+   "id": "9.4/O1",
+   "section": "9.4",
+   "sectionTitle": "Binomial Probability",
+   "idx": 0,
+   "text": "Solve applications involving binomial probabilities.",
+   "track": "120",
+   "week": "Week 12",
+   "problems": 3
+  },
+  {
+   "id": "10.1/O1",
+   "section": "10.1",
+   "sectionTitle": "Frequency Distributions",
+   "idx": 0,
+   "text": "Solve applications involving frequency distributions and histograms",
+   "track": "120",
+   "week": "Week 13",
+   "problems": 3
+  },
+  {
+   "id": "10.1/O2",
+   "section": "10.1",
+   "sectionTitle": "Frequency Distributions",
+   "idx": 1,
+   "text": "Solve applications involving stem-and-leaf plots",
+   "track": "120",
+   "week": "Week 13",
+   "problems": 4
+  },
+  {
+   "id": "10.2/O1",
+   "section": "10.2",
+   "sectionTitle": "Measures of Center",
+   "idx": 0,
+   "text": "Find the mean for a data set given either the data or a frequency distribution",
+   "track": "120",
+   "week": "Week 14",
+   "problems": 6
+  },
+  {
+   "id": "10.2/O2",
+   "section": "10.2",
+   "sectionTitle": "Measures of Center",
+   "idx": 1,
+   "text": "Find the median for a data set",
+   "track": "120",
+   "week": "Week 14",
+   "problems": 9
+  },
+  {
+   "id": "10.2/O3",
+   "section": "10.2",
+   "sectionTitle": "Measures of Center",
+   "idx": 2,
+   "text": "Find the mode or modes for a data set",
+   "track": "120",
+   "week": "Week 14",
+   "problems": 8
+  },
+  {
+   "id": "10.2/O4",
+   "section": "10.2",
+   "sectionTitle": "Measures of Center",
+   "idx": 3,
+   "text": "Solve applications involving modes for a data set.",
+   "track": "120",
+   "week": "Week 14",
+   "problems": 0
+  },
+  {
+   "id": "10.2/O5",
+   "section": "10.2",
+   "sectionTitle": "Measures of Center",
+   "idx": 4,
+   "text": "Solve applications involving shapes of distributions and multiple measures of center.",
+   "track": "120",
+   "week": "Week 14",
+   "problems": 2
+  },
+  {
+   "id": "10.3/O1",
+   "section": "10.3",
+   "sectionTitle": "Measures of Variation",
+   "idx": 0,
+   "text": "Calculate the range and standard deviation for a non-grouped data set",
+   "track": "120",
+   "week": "Week 15",
+   "problems": 7
+  },
+  {
+   "id": "10.3/O2",
+   "section": "10.3",
+   "sectionTitle": "Measures of Variation",
+   "idx": 1,
+   "text": "Solve applications involving the mean and standard deviations for non-grouped data",
+   "track": "120",
+   "week": "Week 15",
+   "problems": 3
+  },
+  {
+   "id": "10.4/O1",
+   "section": "10.4",
+   "sectionTitle": "Normal Distributions",
+   "idx": 0,
+   "text": "Find the percentage of area under a portion of the normal curve",
+   "track": "120",
+   "week": "Week 15",
+   "problems": 5
+  },
+  {
+   "id": "10.4/O2",
+   "section": "10.4",
+   "sectionTitle": "Normal Distributions",
+   "idx": 1,
+   "text": "Find z-scores satisfying certain conditions",
+   "track": "120",
+   "week": "Week 15",
+   "problems": 3
+  },
+  {
+   "id": "10.4/O3",
+   "section": "10.4",
+   "sectionTitle": "Normal Distributions",
+   "idx": 2,
+   "text": "Solve applications involving normal distributions",
+   "track": "120",
+   "week": "Week 15",
+   "problems": 3
+  }
+ ],
+ "edges": [
+  {
+   "from": "1.1/O1",
+   "to": "1.2/O5",
+   "type": "prepares",
+   "why": "Multiplying polynomials is repeated application of the distributive property, so a student who has not named it treats FOIL as a memorized pattern and stalls on a binomial times a trinomial.",
+   "by": "sender"
+  },
+  {
+   "from": "1.1/O1",
+   "to": "1.3/O1",
+   "type": "prepares",
+   "why": "Factoring out a greatest common factor is the distributive property read right to left, and without that identification the two operations look like unrelated tricks.",
+   "by": "sender"
+  },
+  {
+   "from": "1.1/O1",
+   "to": "1.6/O1",
+   "type": "prepares",
+   "why": "The addition and multiplication properties of equality used to solve are the real-number properties applied to both sides, so the solving steps otherwise stay memorized moves with no justification.",
+   "by": "sender"
+  },
+  {
+   "from": "1.1/O1",
+   "to": "8.1/O2",
+   "type": "prepares",
+   "why": "'Every integer is a rational number' is the first subset relation a student meets, so the formal subset definition later reads as a generalization rather than as brand-new notation.",
+   "by": "sender"
+  },
+  {
+   "from": "1.1/O2",
+   "to": "1.2/O6",
+   "type": "requires",
+   "why": "The cost and revenue applications ask for the value of a polynomial at a stated production level, which is substitution into an algebraic expression.",
+   "by": "sender"
+  },
+  {
+   "from": "1.1/O2",
+   "to": "2.1/O2",
+   "type": "requires",
+   "why": "Deciding whether an ordered pair solves an equation is substituting the x- and y-values and evaluating both sides.",
+   "by": "sender"
+  },
+  {
+   "from": "1.1/O2",
+   "to": "3.1/O2",
+   "type": "requires",
+   "why": "Evaluating f(x) at a number is exactly substituting that number for the variable, including the negative-value cases that produce the standard sign errors.",
+   "by": "sender"
+  },
+  {
+   "from": "1.1/O3",
+   "to": "1.7/O2",
+   "type": "requires",
+   "why": "Evaluating (-b +/- sqrt(b^2-4ac))/(2a) demands squaring before multiplying and dividing the entire numerator by 2a; mis-ordering yields a wrong root, not merely a slower one.",
+   "by": "sender"
+  },
+  {
+   "from": "1.1/O3",
+   "to": "5.1/O2",
+   "type": "requires",
+   "why": "A = P(1 + r/n)^(nt) comes out wrong unless the parenthesis is evaluated first, then the exponent, then the multiplication by P.",
+   "by": "sender"
+  },
+  {
+   "from": "1.1/O3",
+   "to": "10.3/O1",
+   "type": "prepares",
+   "why": "The standard-deviation formula is a nested expression (square the deviations, sum, divide, then take the root) and order errors are the dominant failure in computing it by hand.",
+   "by": "sender"
+  },
+  {
+   "from": "1.1/O4",
+   "to": "1.1/O5",
+   "type": "requires",
+   "why": "An interval such as (-4,-1) cannot be placed on a number line without knowing which of two negative numbers is smaller.",
+   "by": "sender"
+  },
+  {
+   "from": "1.1/O4",
+   "to": "2.4/O1",
+   "type": "requires",
+   "why": "Solving an inequality means tracking which side is larger at every step, including the reversal when both sides are multiplied or divided by a negative.",
+   "by": "sender"
+  },
+  {
+   "from": "1.1/O4",
+   "to": "10.2/O2",
+   "type": "prepares",
+   "why": "The median cannot be located until the data values are put in increasing order, which is the ordering skill practiced here on mixed fractions, decimals, and negatives.",
+   "by": "sender"
+  },
+  {
+   "from": "1.1/O5",
+   "to": "2.4/O1",
+   "type": "requires",
+   "why": "The 'graph the solution' half of every problem in 2.4 is this skill: open versus closed endpoint and which direction to shade.",
+   "by": "sender"
+  },
+  {
+   "from": "1.1/O5",
+   "to": "2.4/O2",
+   "type": "requires",
+   "why": "Writing an inequality or interval notation from a pictured solution set is reading a number-line graph backwards, so it is unreachable without having drawn them.",
+   "by": "sender"
+  },
+  {
+   "from": "1.1/O5",
+   "to": "3.1/O3",
+   "type": "prepares",
+   "why": "Domains are reported in interval notation such as (-inf,3) U (3,inf), which is first encountered here and is otherwise a second new idea on top of exclusion values.",
+   "by": "sender"
+  },
+  {
+   "from": "1.1/O4",
+   "to": "1.1/O5",
+   "type": "requires",
+   "why": "Positioning endpoints and choosing the shading direction presupposes knowing the order relation between the two endpoint values.",
+   "by": "receiver"
+  },
+  {
+   "from": "1.2/O1",
+   "to": "1.2/O2",
+   "type": "prepares",
+   "why": "The product, quotient, and power rules are only meaningful once a^n is understood as repeated multiplication of a specific base.",
+   "by": "sender"
+  },
+  {
+   "from": "1.2/O1",
+   "to": "4.1/O3",
+   "type": "requires",
+   "why": "Plotting y = a^x means computing the exponential at several x-values, including the negative ones that produce the fractional left tail.",
+   "by": "sender"
+  },
+  {
+   "from": "1.2/O1",
+   "to": "4.3/O2",
+   "type": "prepares",
+   "why": "Evaluating log_2 8 without a calculator is answering '2 to what power gives 8', so fluency with powers of small bases is what makes the question answerable mentally.",
+   "by": "sender"
+  },
+  {
+   "from": "1.2/O1",
+   "to": "5.1/O2",
+   "type": "requires",
+   "why": "Finding a compound amount is the calculator evaluation of (1 + i)^n practiced here, now with awkward decimal bases and large exponents.",
+   "by": "sender"
+  },
+  {
+   "from": "1.1/O3",
+   "to": "1.2/O1",
+   "type": "prepares",
+   "why": "The convention separating -2^4 from (-2)^4 is an order-of-operations rule, and it is the single most common error in evaluating powers.",
+   "by": "receiver"
+  },
+  {
+   "from": "1.2/O2",
+   "to": "1.2/O5",
+   "type": "requires",
+   "why": "Multiplying terms such as (3x^2)(4x^3) requires adding exponents, so the distribution cannot be carried out without the product rule.",
+   "by": "sender"
+  },
+  {
+   "from": "1.2/O2",
+   "to": "1.5/O1",
+   "type": "requires",
+   "why": "Simplifying with integer exponents is these same product, quotient, and power rules extended to zero and negative exponents.",
+   "by": "sender"
+  },
+  {
+   "from": "1.2/O2",
+   "to": "4.3/O3",
+   "type": "prepares",
+   "why": "The logarithm properties are the exponent rules rewritten, so a student fluent with a^m * a^n = a^(m+n) sees why log(xy) = log x + log y instead of memorizing three unrelated formulas.",
+   "by": "sender"
+  },
+  {
+   "from": "1.2/O1",
+   "to": "1.2/O2",
+   "type": "prepares",
+   "why": "The rules are derived by writing out the repeated multiplication, which is only convincing to a student who already reads a^n that way.",
+   "by": "receiver"
+  },
+  {
+   "from": "1.2/O3",
+   "to": "1.2/O4",
+   "type": "prepares",
+   "why": "Like terms are defined by matching variable powers and answers are requested in descending powers, both of which are the degree-and-coefficient vocabulary named here.",
+   "by": "sender"
+  },
+  {
+   "from": "1.2/O3",
+   "to": "1.3/O2",
+   "type": "prepares",
+   "why": "The search rule for factoring x^2 + bx + c is stated entirely in terms of the constant term and the middle coefficient, so a student who cannot name those parts cannot follow the method.",
+   "by": "sender"
+  },
+  {
+   "from": "1.2/O3",
+   "to": "1.7/O2",
+   "type": "requires",
+   "why": "The quadratic formula cannot be applied without first writing the equation in standard form and reading off a, b, and c in the correct positions.",
+   "by": "sender"
+  },
+  {
+   "from": "1.2/O3",
+   "to": "4.1/O1",
+   "type": "prepares",
+   "why": "Classifying a function as linear or quadratic is a degree judgment, and separating both from exponential is noticing that the variable has moved into the exponent rather than the base.",
+   "by": "sender"
+  },
+  {
+   "from": "1.2/O4",
+   "to": "1.2/O6",
+   "type": "requires",
+   "why": "Profit equals revenue minus cost is a subtraction of two polynomials, including distributing the minus sign across the cost expression.",
+   "by": "sender"
+  },
+  {
+   "from": "1.2/O4",
+   "to": "1.6/O1",
+   "type": "requires",
+   "why": "Solving 5x + 3 - 2x = 12 starts by combining like terms on each side; without that the equation never reduces to the form ax = b.",
+   "by": "sender"
+  },
+  {
+   "from": "1.2/O4",
+   "to": "1.7/O1",
+   "type": "requires",
+   "why": "Factoring cannot begin until every term is moved to one side and combined into a single standard-form quadratic.",
+   "by": "sender"
+  },
+  {
+   "from": "1.1/O1",
+   "to": "1.2/O4",
+   "type": "prepares",
+   "why": "Subtracting a polynomial is distributing -1 across a parenthesis, the distributive property in its most error-prone form.",
+   "by": "receiver"
+  },
+  {
+   "from": "1.2/O3",
+   "to": "1.2/O4",
+   "type": "prepares",
+   "why": "Deciding which terms may be combined is exactly deciding which terms share a variable and degree.",
+   "by": "receiver"
+  },
+  {
+   "from": "1.2/O5",
+   "to": "1.2/O6",
+   "type": "prepares",
+   "why": "Revenue and cost models are built by multiplying a per-unit price by a quantity expression before any subtraction happens.",
+   "by": "sender"
+  },
+  {
+   "from": "1.2/O5",
+   "to": "1.3/O2",
+   "type": "requires",
+   "why": "Factoring x^2 + 7x + 12 is undoing the product (x+3)(x+4); both the search for the pair and the check of the answer are statements about how that product expands.",
+   "by": "sender"
+  },
+  {
+   "from": "1.2/O5",
+   "to": "1.3/O3",
+   "type": "requires",
+   "why": "The ac and grouping methods rest on knowing how (ax+b)(cx+d) expands, since that is where the split of the middle term comes from.",
+   "by": "sender"
+  },
+  {
+   "from": "1.1/O1",
+   "to": "1.2/O5",
+   "type": "prepares",
+   "why": "Every step of the expansion is the distributive property, so naming it is what generalizes FOIL beyond two binomials.",
+   "by": "receiver"
+  },
+  {
+   "from": "1.2/O2",
+   "to": "1.2/O5",
+   "type": "requires",
+   "why": "Each partial product requires adding exponents on the variable factors.",
+   "by": "receiver"
+  },
+  {
+   "from": "1.2/O4",
+   "to": "1.2/O5",
+   "type": "requires",
+   "why": "The product is not finished until the like middle terms produced by the distribution are collected.",
+   "by": "receiver"
+  },
+  {
+   "from": "1.2/O6",
+   "to": "1.6/O4",
+   "type": "prepares",
+   "why": "The translate-a-situation-into-an-expression step is identical; the only new demand is that the expression is then set equal to something and solved.",
+   "by": "sender"
+  },
+  {
+   "from": "1.2/O6",
+   "to": "3.1/O4",
+   "type": "prepares",
+   "why": "The fixed-cost-plus-unit-cost revenue and profit problems reappear in 3.1 written in function notation, so a student who met them as polynomials faces only the new notation.",
+   "by": "sender"
+  },
+  {
+   "from": "1.1/O2",
+   "to": "1.2/O6",
+   "type": "requires",
+   "why": "Answering 'what is the cost of producing 300 units' is substituting into and evaluating the cost polynomial.",
+   "by": "receiver"
+  },
+  {
+   "from": "1.2/O4",
+   "to": "1.2/O6",
+   "type": "requires",
+   "why": "Forming profit from revenue and cost is a polynomial subtraction.",
+   "by": "receiver"
+  },
+  {
+   "from": "1.2/O5",
+   "to": "1.2/O6",
+   "type": "prepares",
+   "why": "Building a revenue expression as price times quantity is a polynomial product.",
+   "by": "receiver"
+  },
+  {
+   "from": "1.3/O1",
+   "to": "1.3/O2",
+   "type": "prepares",
+   "why": "'Factor completely' problems require the common monomial to come out first, otherwise the trinomial left behind is not one the leading-coefficient-1 method applies to.",
+   "by": "sender"
+  },
+  {
+   "from": "1.3/O1",
+   "to": "1.3/O3",
+   "type": "requires",
+   "why": "Factoring by grouping is repeated GCF extraction: pull the common factor out of each pair, then out of the two resulting terms.",
+   "by": "sender"
+  },
+  {
+   "from": "1.3/O1",
+   "to": "1.4/O1",
+   "type": "requires",
+   "why": "Nothing can be cancelled until numerator and denominator are written as products, and pulling out the common monomial factor is the first step in doing so.",
+   "by": "sender"
+  },
+  {
+   "from": "1.3/O1",
+   "to": "1.7/O1",
+   "type": "requires",
+   "why": "Equations such as 4x^2 + 10x = 0 are solved entirely by GCF factoring followed by the zero-product property.",
+   "by": "sender"
+  },
+  {
+   "from": "1.1/O1",
+   "to": "1.3/O1",
+   "type": "prepares",
+   "why": "Pulling out a common factor is the distributive property run backwards, and the check is redistributing.",
+   "by": "receiver"
+  },
+  {
+   "from": "1.2/O2",
+   "to": "1.3/O1",
+   "type": "prepares",
+   "why": "Choosing the greatest common power of the variable is comparing exponents and using the quotient rule to see what is left inside the parentheses.",
+   "by": "receiver"
+  },
+  {
+   "from": "1.3/O2",
+   "to": "1.4/O1",
+   "type": "requires",
+   "why": "Reducing (x^2+5x+6)/(x^2-9) is impossible until both the trinomial and the difference of squares are rewritten as products.",
+   "by": "sender"
+  },
+  {
+   "from": "1.3/O2",
+   "to": "1.3/O3",
+   "type": "prepares",
+   "why": "The ac and grouping method extends the same 'two numbers with a given product and a given sum' search to the case where a is not 1.",
+   "by": "sender"
+  },
+  {
+   "from": "1.3/O2",
+   "to": "1.7/O1",
+   "type": "requires",
+   "why": "The zero-product property has nothing to be applied to until the quadratic has been written as a product of two binomials.",
+   "by": "sender"
+  },
+  {
+   "from": "1.3/O2",
+   "to": "3.1/O3",
+   "type": "prepares",
+   "why": "The excluded values of a rational function are the zeros of its denominator, which are found by factoring that denominator.",
+   "by": "sender"
+  },
+  {
+   "from": "1.2/O5",
+   "to": "1.3/O2",
+   "type": "requires",
+   "why": "The factored answer is validated by expanding it, and the middle-term condition being searched for is a fact about that expansion.",
+   "by": "receiver"
+  },
+  {
+   "from": "1.2/O3",
+   "to": "1.3/O2",
+   "type": "prepares",
+   "why": "The method is phrased in terms of the constant term and the middle coefficient of a degree-2 polynomial.",
+   "by": "receiver"
+  },
+  {
+   "from": "1.3/O3",
+   "to": "1.4/O1",
+   "type": "requires",
+   "why": "Rational expressions in 1.4 carry numerators and denominators with a leading coefficient other than 1, which must be factored before any cancelling is legal.",
+   "by": "sender"
+  },
+  {
+   "from": "1.3/O3",
+   "to": "1.7/O1",
+   "type": "requires",
+   "why": "Equations such as 6x^2 + x - 12 = 0 can only be solved by factoring if the leading-coefficient-not-1 case is handled.",
+   "by": "sender"
+  },
+  {
+   "from": "1.3/O3",
+   "to": "1.7/O2",
+   "type": "prepares",
+   "why": "Meeting non-monic trinomials that resist every factor pair is what makes the quadratic formula a needed tool rather than an arbitrary formula to memorize.",
+   "by": "sender"
+  },
+  {
+   "from": "1.3/O1",
+   "to": "1.3/O3",
+   "type": "requires",
+   "why": "Grouping is GCF extraction applied to each pair of terms, and any overall common factor must be removed before the ac search gives the right pair.",
+   "by": "receiver"
+  },
+  {
+   "from": "1.3/O2",
+   "to": "1.3/O3",
+   "type": "prepares",
+   "why": "The product-and-sum search is the same one, so students who own the monic case only have to absorb the extra split-and-group step.",
+   "by": "receiver"
+  },
+  {
+   "from": "1.4/O1",
+   "to": "1.4/O2",
+   "type": "requires",
+   "why": "Every product or quotient must be reported in lowest terms, and the cancelling is the same common-factor cancellation now done across two fractions.",
+   "by": "sender"
+  },
+  {
+   "from": "1.4/O1",
+   "to": "3.1/O3",
+   "type": "prepares",
+   "why": "The standing instruction to assume the denominator is nonzero is the domain restriction of a rational function, met before the word domain is introduced.",
+   "by": "sender"
+  },
+  {
+   "from": "1.3/O1",
+   "to": "1.4/O1",
+   "type": "requires",
+   "why": "A quotient like (6a-6)/(33a+132) cannot be reduced until the common monomial factor is pulled out of each part.",
+   "by": "receiver"
+  },
+  {
+   "from": "1.3/O2",
+   "to": "1.4/O1",
+   "type": "requires",
+   "why": "Quadratic numerators and denominators must be factored into binomials before any factor can be cancelled.",
+   "by": "receiver"
+  },
+  {
+   "from": "1.3/O3",
+   "to": "1.4/O1",
+   "type": "requires",
+   "why": "Reductions involving a leading coefficient other than 1 stall completely if only the monic factoring method is available.",
+   "by": "receiver"
+  },
+  {
+   "from": "1.4/O1",
+   "to": "1.4/O2",
+   "type": "requires",
+   "why": "The answer to every multiplication or division must be written in lowest terms, so reducing is the closing step of each problem.",
+   "by": "receiver"
+  },
+  {
+   "from": "1.3/O2",
+   "to": "1.4/O2",
+   "type": "requires",
+   "why": "Dividing (12a+48)/(4a-44) by (a^2-16)/(a^2-3a-88) only collapses if every quadratic is factored before the invert-and-multiply step.",
+   "by": "receiver"
+  },
+  {
+   "from": "1.5/O1",
+   "to": "1.5/O2",
+   "type": "requires",
+   "why": "rational exponents are defined precisely so the integer-exponent rules keep holding, so x^(1/2)\u00b7x^(3/2) cannot be simplified without the product rule for integer exponents.",
+   "by": "sender"
+  },
+  {
+   "from": "1.5/O1",
+   "to": "4.1/O3",
+   "type": "requires",
+   "why": "the left half of the graph of y = a^x is the set of points a^(-n) = 1/a^n, so without negative exponents a student can plot only x >= 0.",
+   "by": "sender"
+  },
+  {
+   "from": "1.5/O1",
+   "to": "4.3/O1",
+   "type": "requires",
+   "why": "converting log_5(1/125) = -3 into 5^(-3) = 1/125 is impossible without knowing that a negative exponent means a reciprocal.",
+   "by": "sender"
+  },
+  {
+   "from": "1.5/O1",
+   "to": "4.3/O3",
+   "type": "prepares",
+   "why": "log(xy) = log x + log y and log(x^n) = n log x are the product and power rules read backwards, and students who never saw exponent rules as one system memorize the log rules as four unrelated facts.",
+   "by": "sender"
+  },
+  {
+   "from": "1.5/O1",
+   "to": "4.4/O2",
+   "type": "requires",
+   "why": "solving 3^(...) = 81 'without using logarithms' means rewriting 81 as 3^4 and equating exponents, which cannot be done without fluency in rewriting numbers as powers of a common base.",
+   "by": "sender"
+  },
+  {
+   "from": "1.2/O2",
+   "to": "1.5/O1",
+   "type": "requires",
+   "why": "the product, quotient and power rules for positive integer exponents are exactly the rules being extended to zero and negative exponents; without them there is nothing to extend.",
+   "by": "receiver"
+  },
+  {
+   "from": "1.2/O1",
+   "to": "1.5/O1",
+   "type": "prepares",
+   "why": "knowing concretely that 2^5 = 32 is what makes 2^(-5) = 1/32 read as a definition that preserves the pattern instead of an arbitrary rule.",
+   "by": "receiver"
+  },
+  {
+   "from": "1.4/O1",
+   "to": "1.5/O1",
+   "type": "prepares",
+   "why": "cancelling common factors to reduce x^5/x^2 is the quotient rule performed by hand, and meeting it first keeps 'subtract the exponents' from looking like a trick.",
+   "by": "receiver"
+  },
+  {
+   "from": "1.5/O2",
+   "to": "1.7/O2",
+   "type": "requires",
+   "why": "the exact solutions demanded by the quadratic formula problems require simplifying sqrt(b^2 - 4ac) by pulling perfect-square factors out of the radical.",
+   "by": "sender"
+  },
+  {
+   "from": "1.5/O2",
+   "to": "4.1/O4",
+   "type": "requires",
+   "why": "recovering a from f(x) = a^x given f(2) = 16 means taking a square root of both sides, and the general 'find the rule through this point' problem needs an nth root.",
+   "by": "sender"
+  },
+  {
+   "from": "1.5/O2",
+   "to": "5.1/O3",
+   "type": "requires",
+   "why": "finding the rate from $7000 accumulating to $7564 in 8 years requires r = (A/P)^(1/8) - 1, an eighth root; no amount of arithmetic recovers r without rational exponents.",
+   "by": "sender"
+  },
+  {
+   "from": "1.5/O1",
+   "to": "1.5/O2",
+   "type": "requires",
+   "why": "a^(m/n) is defined so that the integer-exponent rules still apply, so simplifying (x^(2/3))^6 or x^(1/2)\u00b7x^(-3/2) is the integer rules applied to fractional exponents.",
+   "by": "receiver"
+  },
+  {
+   "from": "1.2/O1",
+   "to": "1.5/O2",
+   "type": "prepares",
+   "why": "a student who can already see 32 as 2^5 and 81 as 3^4 reads 32^(1/5) and 81^(3/4) off directly instead of guessing.",
+   "by": "receiver"
+  },
+  {
+   "from": "1.6/O1",
+   "to": "1.6/O3",
+   "type": "requires",
+   "why": "solving A = P + Prt for t is the same isolation sequence performed with letters in place of numbers, so without the numerical version there is no procedure to generalize.",
+   "by": "sender"
+  },
+  {
+   "from": "1.6/O1",
+   "to": "1.7/O1",
+   "type": "requires",
+   "why": "the zero-factor property converts a factored quadratic into two first-degree equations, x + 5 = 0 and x - 9 = 0, which must then be solved.",
+   "by": "sender"
+  },
+  {
+   "from": "1.6/O1",
+   "to": "2.1/O5",
+   "type": "requires",
+   "why": "finding the intercepts of 2x + 3y = 24 without graphing is substituting y = 0 and solving the resulting first-degree equation 2x = 24, and again for x = 0.",
+   "by": "sender"
+  },
+  {
+   "from": "1.6/O1",
+   "to": "2.4/O1",
+   "type": "requires",
+   "why": "solving -5p + 3 <= 23 is the identical isolation algorithm with one added sign rule; a student who cannot isolate p in an equation cannot isolate it in an inequality.",
+   "by": "sender"
+  },
+  {
+   "from": "1.6/O1",
+   "to": "4.4/O2",
+   "type": "requires",
+   "why": "once both sides are written to a common base the problem collapses to a first-degree equation in the exponent, which is where the fractional answers like -4/3 come from.",
+   "by": "sender"
+  },
+  {
+   "from": "1.2/O4",
+   "to": "1.6/O1",
+   "type": "requires",
+   "why": "an equation with terms on both sides cannot be reduced to ax = b without collapsing 3x + 2 - 5x into -2x + 2, which is adding and subtracting polynomials.",
+   "by": "receiver"
+  },
+  {
+   "from": "1.1/O1",
+   "to": "1.6/O1",
+   "type": "prepares",
+   "why": "clearing the parentheses in 4(2x - 3) = 5x + 1 is an application of the distributive property, and students who cannot name it distribute over only the first term.",
+   "by": "receiver"
+  },
+  {
+   "from": "1.1/O3",
+   "to": "1.6/O1",
+   "type": "prepares",
+   "why": "isolating the variable is undoing the order of operations in reverse, so a student who cannot state the order in which an expression was built cannot choose which step to undo first.",
+   "by": "receiver"
+  },
+  {
+   "from": "1.1/O2",
+   "to": "1.6/O1",
+   "type": "prepares",
+   "why": "the check that every one of these problems demands is substituting the candidate back and evaluating the expression on each side.",
+   "by": "receiver"
+  },
+  {
+   "from": "1.6/O2",
+   "to": "4.4/O1",
+   "type": "requires",
+   "why": "ln(7x + 10) - ln x = ln 8 becomes (7x + 10)/x = 8, a rational equation whose denominator must be cleared before x can be isolated.",
+   "by": "sender"
+  },
+  {
+   "from": "1.6/O2",
+   "to": "2.3/O1",
+   "type": "prepares",
+   "why": "converting a Fahrenheit reading to Celsius means undoing the fractional coefficient in F = (9/5)C + 32, and students who have not cleared fractions in an equation stall at that step.",
+   "by": "sender"
+  },
+  {
+   "from": "1.6/O2",
+   "to": "2.2/O6",
+   "type": "prepares",
+   "why": "point-slope form with a fractional slope, y + 9 = (2/3)(x - 7), must have the fraction distributed and cleared before it can be reported in slope-intercept form.",
+   "by": "sender"
+  },
+  {
+   "from": "1.6/O1",
+   "to": "1.6/O2",
+   "type": "requires",
+   "why": "after multiplying through by the LCD what remains is an ordinary first-degree equation, so this objective is one extra opening move on top of that one.",
+   "by": "receiver"
+  },
+  {
+   "from": "1.4/O2",
+   "to": "1.6/O2",
+   "type": "prepares",
+   "why": "multiplying each term by the LCD and cancelling is exactly multiplication of rational expressions, so a student fluent there sees why the denominators vanish rather than erasing them by rote.",
+   "by": "receiver"
+  },
+  {
+   "from": "1.6/O3",
+   "to": "2.2/O3",
+   "type": "requires",
+   "why": "reading the slope and y-intercept off 2x = 3y + 9 requires first solving the equation for y, which is solving for a specified variable.",
+   "by": "sender"
+  },
+  {
+   "from": "1.6/O3",
+   "to": "2.3/O1",
+   "type": "requires",
+   "why": "the conversion problems give one temperature formula and ask for the other unit, which is literally solving F = (9/5)C + 32 for C.",
+   "by": "sender"
+  },
+  {
+   "from": "1.6/O3",
+   "to": "5.1/O3",
+   "type": "requires",
+   "why": "finding an interest rate means solving A = P(1 + r)^n for r, i.e. undoing the operations wrapped around r in a formula full of other letters.",
+   "by": "sender"
+  },
+  {
+   "from": "1.6/O3",
+   "to": "5.1/O4",
+   "type": "prepares",
+   "why": "present value is the compound-amount formula solved for P, and a student who cannot make that rearrangement has to memorize it as a second unrelated formula.",
+   "by": "sender"
+  },
+  {
+   "from": "1.6/O3",
+   "to": "5.2/O2",
+   "type": "prepares",
+   "why": "the sinking-fund payment formula is the future-value-of-an-annuity formula solved for R, so the two collapse into one idea only for students who can rearrange a formula.",
+   "by": "sender"
+  },
+  {
+   "from": "1.6/O1",
+   "to": "1.6/O3",
+   "type": "requires",
+   "why": "the moves are identical - add the same thing to both sides, divide both sides by the coefficient - only with a letter rather than a number as the coefficient.",
+   "by": "receiver"
+  },
+  {
+   "from": "1.1/O2",
+   "to": "1.6/O3",
+   "type": "prepares",
+   "why": "evaluating expressions in several letters builds the habit of treating a letter as a stand-in for a number, which is what allows P and r to be handled as constants while t is isolated.",
+   "by": "receiver"
+  },
+  {
+   "from": "1.6/O4",
+   "to": "2.3/O2",
+   "type": "requires",
+   "why": "making a prediction from a linear model is substituting into, or solving, the model equation, which is exactly the federal-debt and health-expenditure problems in a new setting.",
+   "by": "sender"
+  },
+  {
+   "from": "1.6/O4",
+   "to": "3.1/O4",
+   "type": "prepares",
+   "why": "writing the cost, revenue and profit rules for the pretzel factory is the same word-to-expression translation, now dressed in function notation.",
+   "by": "sender"
+  },
+  {
+   "from": "1.6/O1",
+   "to": "1.6/O4",
+   "type": "requires",
+   "why": "every one of these problems ends with an equation such as 0.111x + 1.514 = 4 that has to be solved for x.",
+   "by": "receiver"
+  },
+  {
+   "from": "1.1/O2",
+   "to": "1.6/O4",
+   "type": "requires",
+   "why": "the other half of each problem is the reverse direction, substituting x = 15 into the model and evaluating the expression.",
+   "by": "receiver"
+  },
+  {
+   "from": "1.2/O6",
+   "to": "1.6/O4",
+   "type": "prepares",
+   "why": "the translation from a described situation to a symbolic expression is first practiced on polynomial applications, and without it students can solve the equation but cannot write it down.",
+   "by": "receiver"
+  },
+  {
+   "from": "1.7/O1",
+   "to": "1.7/O2",
+   "type": "prepares",
+   "why": "both methods start by forcing the equation into standard form ax^2 + bx + c = 0, and a student who has factored first knows when to reach for the formula instead of hunting for factors that do not exist.",
+   "by": "sender"
+  },
+  {
+   "from": "1.7/O1",
+   "to": "4.4/O1",
+   "type": "requires",
+   "why": "2 ln(x - 7) = ln(x + 33) + ln 2 becomes (x - 7)^2 = 2(x + 33), a quadratic that must be solved by factoring and one of whose roots must then be rejected as extraneous.",
+   "by": "sender"
+  },
+  {
+   "from": "1.3/O1",
+   "to": "1.7/O1",
+   "type": "requires",
+   "why": "equations like c^2 + 2c = 0 are solved only by pulling out the common factor c to get c(c + 2) = 0.",
+   "by": "receiver"
+  },
+  {
+   "from": "1.3/O2",
+   "to": "1.7/O1",
+   "type": "requires",
+   "why": "the zero-factor property applies to a product, so t^2 - 13t - 90 = 0 cannot be started until the trinomial is written as (t + 5)(t - 18).",
+   "by": "receiver"
+  },
+  {
+   "from": "1.3/O3",
+   "to": "1.7/O1",
+   "type": "requires",
+   "why": "the equations with a leading coefficient other than 1, such as 4x^2 + 4x - 3 = 0, are unreachable without the harder factoring technique.",
+   "by": "receiver"
+  },
+  {
+   "from": "1.6/O1",
+   "to": "1.7/O1",
+   "type": "requires",
+   "why": "setting each factor equal to zero produces first-degree equations like 2x - 3 = 0 that still have to be solved.",
+   "by": "receiver"
+  },
+  {
+   "from": "1.5/O2",
+   "to": "1.7/O2",
+   "type": "requires",
+   "why": "the exact answers these problems demand require simplifying the radical sqrt(b^2 - 4ac), for instance turning sqrt(72) into 6*sqrt(2).",
+   "by": "receiver"
+  },
+  {
+   "from": "1.1/O3",
+   "to": "1.7/O2",
+   "type": "requires",
+   "why": "the fraction bar spans the entire numerator, so a student without a firm grip on order of operations divides only the radical by 2a and gets a wrong root every time.",
+   "by": "receiver"
+  },
+  {
+   "from": "1.7/O1",
+   "to": "1.7/O2",
+   "type": "prepares",
+   "why": "having solved by factoring first makes the formula a fallback for equations that will not factor rather than a black box replacing everything learned.",
+   "by": "receiver"
+  },
+  {
+   "from": "1.2/O1",
+   "to": "1.7/O2",
+   "type": "prepares",
+   "why": "computing b^2 when b is negative is the classic sign error here, and it is the (-5)^2 versus -5^2 distinction from evaluating exponential expressions.",
+   "by": "receiver"
+  },
+  {
+   "from": "2.4/O1",
+   "to": "2.4/O2",
+   "type": "prepares",
+   "why": "having produced solution sets like [4, infinity) by solving makes reading one off a number-line graph the inverse of a move the student has already made.",
+   "by": "sender"
+  },
+  {
+   "from": "2.4/O1",
+   "to": "3.1/O3",
+   "type": "requires",
+   "why": "the domain of f(x) = 4/sqrt(23 - x) is found by solving the inequality 23 - x > 0, so without inequality solving every radical or even-root domain problem is out of reach.",
+   "by": "sender"
+  },
+  {
+   "from": "2.4/O1",
+   "to": "4.4/O3",
+   "type": "prepares",
+   "why": "answering 'the first full year in which the delinquency rate fell below 2.5%' means deciding which side of the crossing point satisfies the condition, which is reading a solution set rather than a single root.",
+   "by": "sender"
+  },
+  {
+   "from": "1.6/O1",
+   "to": "2.4/O1",
+   "type": "requires",
+   "why": "solving 9x + 8 <= 44 is the same isolation algorithm as solving 9x + 8 = 44, with one extra rule about multiplying by a negative.",
+   "by": "receiver"
+  },
+  {
+   "from": "1.1/O4",
+   "to": "2.4/O1",
+   "type": "requires",
+   "why": "knowing what -4k <= -16 asserts about the order of two real numbers is what makes the direction reversal on dividing by -4 a consequence rather than a memorized quirk.",
+   "by": "receiver"
+  },
+  {
+   "from": "1.1/O5",
+   "to": "2.4/O1",
+   "type": "requires",
+   "why": "half of this objective is the words 'and graph the solutions', which is drawing an interval such as [4, infinity) on a number line.",
+   "by": "receiver"
+  },
+  {
+   "from": "2.4/O2",
+   "to": "3.1/O3",
+   "type": "requires",
+   "why": "every domain answer in 3.1 must be typed in interval notation, for example (-infinity, 23], so a student who cannot write an interval cannot report a domain at all.",
+   "by": "sender"
+  },
+  {
+   "from": "1.1/O5",
+   "to": "2.4/O2",
+   "type": "requires",
+   "why": "reading a graphed solution set back into symbols requires already knowing what the bracket, parenthesis and arrow on a number line mean.",
+   "by": "receiver"
+  },
+  {
+   "from": "1.1/O4",
+   "to": "2.4/O2",
+   "type": "prepares",
+   "why": "choosing between x < 3 and x > 3 for a shaded ray depends on knowing which direction on the line is 'less than', which is where real numbers were first ordered.",
+   "by": "receiver"
+  },
+  {
+   "from": "2.4/O1",
+   "to": "2.4/O2",
+   "type": "prepares",
+   "why": "solving inequalities is where the bracket-versus-parenthesis convention is used for the first time, so describing a graph afterwards is recognition rather than a new convention.",
+   "by": "receiver"
+  },
+  {
+   "from": "2.1/O1",
+   "to": "2.1/O3",
+   "type": "prepares",
+   "why": "plotting a point of a solution table is the same act as locating a point by the signs of its coordinates, so quadrant work removes the sign-placement errors that ruin a first graph",
+   "by": "sender"
+  },
+  {
+   "from": "2.1/O1",
+   "to": "2.2/O1",
+   "type": "prepares",
+   "why": "the slope formula assumes the student can read which number in (x1,y1) is the horizontal one, a habit first drilled by naming quadrants from ordered pairs",
+   "by": "sender"
+  },
+  {
+   "from": "1.1/O5",
+   "to": "2.1/O1",
+   "type": "prepares",
+   "why": "graphing intervals on a number line is the one-dimensional version of locating a value on an axis, and the coordinate plane is just two of those axes crossed",
+   "by": "receiver"
+  },
+  {
+   "from": "1.1/O4",
+   "to": "2.1/O1",
+   "type": "requires",
+   "why": "the quadrant of a point is decided entirely by whether each coordinate is greater or less than zero",
+   "by": "receiver"
+  },
+  {
+   "from": "2.1/O2",
+   "to": "2.1/O3",
+   "type": "requires",
+   "why": "graphing an equation means producing and plotting ordered pairs that satisfy it, so a student who cannot test a pair cannot generate the table",
+   "by": "sender"
+  },
+  {
+   "from": "2.1/O2",
+   "to": "2.1/O5",
+   "type": "prepares",
+   "why": "an intercept is the special solution pair with a zero coordinate, so seeing (7,15) tested against 11x-y-62=0 is what makes 'substitute 0 and solve' feel like finding a point rather than a ritual",
+   "by": "sender"
+  },
+  {
+   "from": "2.1/O2",
+   "to": "3.1/O2",
+   "type": "prepares",
+   "why": "checking that a pair satisfies an equation is function evaluation before the notation exists: input goes in, the arithmetic is done, the output is compared",
+   "by": "sender"
+  },
+  {
+   "from": "1.1/O2",
+   "to": "2.1/O2",
+   "type": "requires",
+   "why": "deciding whether (7,15) satisfies 11x-y-62=0 is exactly evaluating an algebraic expression at given values of the variables",
+   "by": "receiver"
+  },
+  {
+   "from": "1.1/O3",
+   "to": "2.1/O2",
+   "type": "prepares",
+   "why": "the substituted expression contains a product, a subtraction, and negative numbers, which is evaluated wrongly without order-of-operations discipline",
+   "by": "receiver"
+  },
+  {
+   "from": "2.1/O3",
+   "to": "2.2/O4",
+   "type": "prepares",
+   "why": "the intercept method is a shortcut on the plot-several-points method, and students who never plotted a table treat 'two points determine the line' as an unmotivated rule",
+   "by": "sender"
+  },
+  {
+   "from": "2.1/O3",
+   "to": "4.1/O3",
+   "type": "requires",
+   "why": "an exponential graph is drawn by evaluating the rule at a few x-values and plotting the resulting pairs, the identical procedure learned here on linear equations",
+   "by": "sender"
+  },
+  {
+   "from": "2.1/O2",
+   "to": "2.1/O3",
+   "type": "requires",
+   "why": "every point plotted must be verified as a solution of the equation, otherwise the student plots arbitrary pairs",
+   "by": "receiver"
+  },
+  {
+   "from": "1.6/O3",
+   "to": "2.1/O3",
+   "type": "prepares",
+   "why": "equations arrive as 5y+15x=25 and must be solved for y before a table of values can be built, which is solving a formula for a specified variable",
+   "by": "receiver"
+  },
+  {
+   "from": "2.1/O1",
+   "to": "2.1/O3",
+   "type": "prepares",
+   "why": "each table entry has to be placed correctly in the plane, and sign errors in placement come from never having practised locating points by quadrant",
+   "by": "receiver"
+  },
+  {
+   "from": "2.1/O4",
+   "to": "2.1/O5",
+   "type": "prepares",
+   "why": "seeing on a picture that intercepts are the crossings of the axes is what tells the student why the algebraic procedure sets a coordinate to zero",
+   "by": "sender"
+  },
+  {
+   "from": "2.1/O4",
+   "to": "2.2/O4",
+   "type": "prepares",
+   "why": "labelling intercepts on a sketched line presumes the student recognises what an intercept looks like on a drawn graph",
+   "by": "sender"
+  },
+  {
+   "from": "2.1/O4",
+   "to": "10.1/O1",
+   "type": "prepares",
+   "why": "reading a value off a supplied graph, as in the revenue-cost and share-price problems here, is the only earlier practice the course gives before students must extract counts from a supplied histogram",
+   "by": "sender"
+  },
+  {
+   "from": "2.1/O1",
+   "to": "2.1/O4",
+   "type": "prepares",
+   "why": "reporting an intercept as an ordered pair requires already reading positions in the plane as (x,y) pairs",
+   "by": "receiver"
+  },
+  {
+   "from": "2.1/O5",
+   "to": "2.2/O4",
+   "type": "requires",
+   "why": "graphing a line by intercepts is impossible without first computing the two intercepts from the equation",
+   "by": "sender"
+  },
+  {
+   "from": "2.1/O5",
+   "to": "2.2/O3",
+   "type": "prepares",
+   "why": "b in y=mx+b is meaningless unless the student already knows the y-intercept is the value of y when x is zero",
+   "by": "sender"
+  },
+  {
+   "from": "2.1/O5",
+   "to": "4.1/O2",
+   "type": "prepares",
+   "why": "describing an exponential graph starts by finding the second coordinate at first coordinate 0, which is a y-intercept computed from the rule",
+   "by": "sender"
+  },
+  {
+   "from": "2.1/O2",
+   "to": "2.1/O5",
+   "type": "prepares",
+   "why": "setting x=0 and solving produces a solution pair, so the substitution habit has to already read as 'making a point on the graph'",
+   "by": "receiver"
+  },
+  {
+   "from": "1.6/O1",
+   "to": "2.1/O5",
+   "type": "requires",
+   "why": "after substituting y=0 into 2x+3y=24 the remaining step is solving a first-degree equation for x",
+   "by": "receiver"
+  },
+  {
+   "from": "2.1/O4",
+   "to": "2.1/O5",
+   "type": "prepares",
+   "why": "without the graphical picture the procedure is two unmotivated substitutions and students routinely report the intercepts with the coordinates swapped",
+   "by": "receiver"
+  },
+  {
+   "from": "2.2/O1",
+   "to": "2.2/O5",
+   "type": "prepares",
+   "why": "comparing slopes for parallelism is empty unless slope is already a computed number with a meaning rather than a letter in a form",
+   "by": "sender"
+  },
+  {
+   "from": "2.2/O1",
+   "to": "2.2/O6",
+   "type": "requires",
+   "why": "when the line is specified by two points the first step is literally the two-point slope formula",
+   "by": "sender"
+  },
+  {
+   "from": "2.2/O1",
+   "to": "2.3/O2",
+   "type": "requires",
+   "why": "a linear model built from two data points is the slope of those two points used as a rate of change",
+   "by": "sender"
+  },
+  {
+   "from": "2.2/O1",
+   "to": "4.1/O1",
+   "type": "prepares",
+   "why": "classifying a table as linear is checking that the slope between successive pairs is constant, so the two-point slope computation is the test being run",
+   "by": "sender"
+  },
+  {
+   "from": "2.1/O1",
+   "to": "2.2/O1",
+   "type": "prepares",
+   "why": "the formula operates on two ordered pairs, and students who have not practised reading (x,y) pairs mix the coordinates and compute the reciprocal slope",
+   "by": "receiver"
+  },
+  {
+   "from": "1.1/O3",
+   "to": "2.2/O1",
+   "type": "prepares",
+   "why": "the numerator and denominator are differences of signed numbers, as in -2-(-7), which is where most slope errors actually occur",
+   "by": "receiver"
+  },
+  {
+   "from": "2.2/O2",
+   "to": "2.2/O3",
+   "type": "prepares",
+   "why": "extracting m and b from 3x-y=2 means recognising the target template y=mx+b, which is exactly what building the equation from m and b installs",
+   "by": "sender"
+  },
+  {
+   "from": "2.2/O2",
+   "to": "2.2/O6",
+   "type": "requires",
+   "why": "every 'satisfying given conditions' answer must be delivered in slope-intercept form, so the form has to be available first",
+   "by": "sender"
+  },
+  {
+   "from": "2.2/O2",
+   "to": "2.3/O1",
+   "type": "prepares",
+   "why": "C=(5/9)(F-32) is a line with slope 5/9 and intercept -160/9, and students who cannot see it as such treat the conversion as a memorised recipe",
+   "by": "sender"
+  },
+  {
+   "from": "2.1/O5",
+   "to": "2.2/O2",
+   "type": "prepares",
+   "why": "the b that gets written into y=mx+b is the y-intercept, a quantity that has to already mean 'the y-value where x is zero'",
+   "by": "receiver"
+  },
+  {
+   "from": "2.2/O1",
+   "to": "2.2/O2",
+   "type": "prepares",
+   "why": "writing m into the equation without having computed a slope from points leaves m as a symbol with no rate-of-change meaning",
+   "by": "receiver"
+  },
+  {
+   "from": "2.2/O3",
+   "to": "2.2/O5",
+   "type": "requires",
+   "why": "the parallel/perpendicular test compares the slopes of two lines given as equations like 4x+3y=4, which must first be converted to slope-intercept form",
+   "by": "sender"
+  },
+  {
+   "from": "2.2/O3",
+   "to": "2.3/O2",
+   "type": "prepares",
+   "why": "reading the slope of a fitted CPI line as 'index points per year' is the same interpretation practised on contextual equations such as y=5.2x+52",
+   "by": "sender"
+  },
+  {
+   "from": "2.2/O3",
+   "to": "3.1/O4",
+   "type": "prepares",
+   "why": "interpreting g(x)=587x+8851 as GDP growing 587 billion per year is the slope-and-intercept reading transferred to function notation",
+   "by": "sender"
+  },
+  {
+   "from": "1.6/O3",
+   "to": "2.2/O3",
+   "type": "requires",
+   "why": "2x=3y+9 has to be solved for y before m and b are visible, which is solving an equation for a specified variable",
+   "by": "receiver"
+  },
+  {
+   "from": "2.2/O2",
+   "to": "2.2/O3",
+   "type": "prepares",
+   "why": "the student is solving toward a template, and without having built y=mx+b themselves they do not know what shape to stop at",
+   "by": "receiver"
+  },
+  {
+   "from": "2.1/O5",
+   "to": "2.2/O4",
+   "type": "requires",
+   "why": "the two points being plotted are the intercepts, which must be computed from the equation first",
+   "by": "receiver"
+  },
+  {
+   "from": "2.1/O4",
+   "to": "2.2/O4",
+   "type": "prepares",
+   "why": "the answer must be a sketch with intercepts labelled, which presumes recognising intercepts on a drawn graph",
+   "by": "receiver"
+  },
+  {
+   "from": "2.1/O3",
+   "to": "2.2/O4",
+   "type": "prepares",
+   "why": "without the general plot-a-table method the intercept shortcut looks like a different technique instead of a faster choice of two points",
+   "by": "receiver"
+  },
+  {
+   "from": "2.2/O3",
+   "to": "2.2/O5",
+   "type": "requires",
+   "why": "both lines arrive as 6x-15y=7 style equations and the test cannot begin until each is converted to slope-intercept form",
+   "by": "receiver"
+  },
+  {
+   "from": "2.2/O1",
+   "to": "2.2/O5",
+   "type": "prepares",
+   "why": "the negative-reciprocal condition is arbitrary symbol-matching unless slope is already understood as rise over run",
+   "by": "receiver"
+  },
+  {
+   "from": "2.2/O6",
+   "to": "2.3/O2",
+   "type": "requires",
+   "why": "making a prediction requires first producing the equation of the line through the two given data points, which is this objective applied to data",
+   "by": "sender"
+  },
+  {
+   "from": "2.2/O6",
+   "to": "2.3/O1",
+   "type": "prepares",
+   "why": "the Fahrenheit-Celsius relation is the line through (32,0) and (212,100), so deriving it rather than receiving it is what makes the formula checkable",
+   "by": "sender"
+  },
+  {
+   "from": "2.2/O6",
+   "to": "4.1/O4",
+   "type": "prepares",
+   "why": "'find the rule f(x)=a^x given f(2)=16' is the same workflow of pinning down a function's parameters from stated conditions, one family up",
+   "by": "sender"
+  },
+  {
+   "from": "2.2/O1",
+   "to": "2.2/O6",
+   "type": "requires",
+   "why": "when the condition is 'through (5,2) and (3,5)' the slope must be computed from the two points before anything else",
+   "by": "receiver"
+  },
+  {
+   "from": "2.2/O2",
+   "to": "2.2/O6",
+   "type": "requires",
+   "why": "the required answer form is slope-intercept, so the student must already be able to assemble y=mx+b from a slope and an intercept",
+   "by": "receiver"
+  },
+  {
+   "from": "1.6/O1",
+   "to": "2.2/O6",
+   "type": "prepares",
+   "why": "after substituting the given point, b is found by solving a first-degree equation, and students who are shaky there abandon the substitution step",
+   "by": "receiver"
+  },
+  {
+   "from": "1.6/O3",
+   "to": "2.3/O1",
+   "type": "requires",
+   "why": "converting in the other direction means solving C=(5/9)(F-32) for F, a formula rearrangement for a specified variable",
+   "by": "receiver"
+  },
+  {
+   "from": "1.6/O2",
+   "to": "2.3/O1",
+   "type": "prepares",
+   "why": "the 5/9 and 9/5 coefficients mean every step is an equation involving fractions, and students who cannot clear them stall on the arithmetic rather than the modelling",
+   "by": "receiver"
+  },
+  {
+   "from": "2.2/O2",
+   "to": "2.3/O1",
+   "type": "prepares",
+   "why": "recognising the conversion formula as a line with a slope and an intercept turns two memorised recipes into one relationship read in two directions",
+   "by": "receiver"
+  },
+  {
+   "from": "2.3/O2",
+   "to": "3.1/O4",
+   "type": "prepares",
+   "why": "applications like the GDP function are the same act of substituting a coded year into a linear rule and reporting the predicted quantity, now dressed in function notation",
+   "by": "sender"
+  },
+  {
+   "from": "2.3/O2",
+   "to": "4.2/O1",
+   "type": "prepares",
+   "why": "exponential applications are the same predict-from-a-fitted-rule task with a multiplicative rather than additive rate, and the contrast is invisible to a student who never made a linear prediction",
+   "by": "sender"
+  },
+  {
+   "from": "2.3/O2",
+   "to": "5.1/O1",
+   "type": "prepares",
+   "why": "simple interest adds Pr dollars every year, so it is a line in t, and the linear-model reading is what later makes the break to compounding legible as a change of growth type rather than a new formula to memorise",
+   "by": "sender"
+  },
+  {
+   "from": "2.2/O1",
+   "to": "2.3/O2",
+   "type": "requires",
+   "why": "the rate of change in the model is the slope between the two given data points",
+   "by": "receiver"
+  },
+  {
+   "from": "2.2/O6",
+   "to": "2.3/O2",
+   "type": "requires",
+   "why": "the model is the equation of the line through two given points, produced exactly as in that objective",
+   "by": "receiver"
+  },
+  {
+   "from": "2.1/O2",
+   "to": "2.3/O2",
+   "type": "prepares",
+   "why": "the prediction step is substituting a coded x into the model, which is the ordered-pair substitution done without the checking",
+   "by": "receiver"
+  },
+  {
+   "from": "2.2/O3",
+   "to": "2.3/O2",
+   "type": "prepares",
+   "why": "the answer usually has to be stated as a rate in context, which requires reading m as units per unit rather than as a number",
+   "by": "receiver"
+  },
+  {
+   "from": "3.1/O1",
+   "to": "3.1/O4",
+   "type": "prepares",
+   "why": "building a profit function from a fixed cost, a unit cost, and a price is symbolic function construction, not numerical evaluation",
+   "by": "sender"
+  },
+  {
+   "from": "3.1/O1",
+   "to": "4.1/O4",
+   "type": "prepares",
+   "why": "reading f(2)=16 as a constraint on the unknown base a requires treating the argument of f as a symbol rather than as a number to be plugged in",
+   "by": "sender"
+  },
+  {
+   "from": "1.1/O2",
+   "to": "3.1/O1",
+   "type": "requires",
+   "why": "f(a+2) is the algebraic expression x^2-1 evaluated at a symbolic value, which is the substitution skill itself",
+   "by": "receiver"
+  },
+  {
+   "from": "1.2/O5",
+   "to": "3.1/O1",
+   "type": "requires",
+   "why": "evaluating f(x)=x^2-1 at x+h forces the expansion of (x+h)^2, and without polynomial multiplication the student writes x^2+h^2",
+   "by": "receiver"
+  },
+  {
+   "from": "1.2/O4",
+   "to": "3.1/O1",
+   "type": "prepares",
+   "why": "the expanded result must be collected into a simplified polynomial before it is recognisable as an answer",
+   "by": "receiver"
+  },
+  {
+   "from": "3.1/O2",
+   "to": "3.1/O4",
+   "type": "requires",
+   "why": "every function application here is answered by evaluating the given rule at a stated input",
+   "by": "sender"
+  },
+  {
+   "from": "3.1/O2",
+   "to": "4.1/O3",
+   "type": "requires",
+   "why": "the points plotted for an exponential graph are obtained by evaluating the function at chosen x-values",
+   "by": "sender"
+  },
+  {
+   "from": "3.1/O2",
+   "to": "4.2/O1",
+   "type": "requires",
+   "why": "answering 'how much natural gas in 2020' is evaluating f(t) at the coded t and nothing else",
+   "by": "sender"
+  },
+  {
+   "from": "3.1/O2",
+   "to": "4.2/O2",
+   "type": "requires",
+   "why": "a logistic value is obtained by evaluating a nested fractional-exponential rule at a given input, where mis-sequenced substitution is the dominant error",
+   "by": "sender"
+  },
+  {
+   "from": "1.1/O2",
+   "to": "3.1/O2",
+   "type": "requires",
+   "why": "f(3) is the expression 18x^2+2x evaluated at 3, so function notation adds a name but no new operation",
+   "by": "receiver"
+  },
+  {
+   "from": "1.1/O3",
+   "to": "3.1/O2",
+   "type": "requires",
+   "why": "evaluating 18x^2+2x at a negative input goes wrong without knowing that the square is applied before the coefficient",
+   "by": "receiver"
+  },
+  {
+   "from": "2.1/O2",
+   "to": "3.1/O2",
+   "type": "prepares",
+   "why": "testing whether (7,15) solves an equation already pairs an input with its output, so f(x) names a process the student has performed",
+   "by": "receiver"
+  },
+  {
+   "from": "3.1/O3",
+   "to": "4.4/O1",
+   "type": "prepares",
+   "why": "a candidate solution of a logarithmic equation must be discarded when it makes the argument nonpositive, which is the reject-inputs-outside-the-domain move learned here",
+   "by": "sender"
+  },
+  {
+   "from": "2.4/O1",
+   "to": "3.1/O3",
+   "type": "requires",
+   "why": "the domain of the fourth root of 23-x is found by solving 23-x>=0, and for the square root of -x the inequality must be divided by a negative and the symbol flipped",
+   "by": "receiver"
+  },
+  {
+   "from": "1.1/O5",
+   "to": "3.1/O3",
+   "type": "requires",
+   "why": "the answer must be written in interval notation, which is introduced when graphing intervals such as (2, infinity) on a number line",
+   "by": "receiver"
+  },
+  {
+   "from": "1.5/O2",
+   "to": "3.1/O3",
+   "type": "prepares",
+   "why": "knowing that an even-index radical has no real value for a negative radicand is what tells the student which inequality to write in the first place",
+   "by": "receiver"
+  },
+  {
+   "from": "3.1/O4",
+   "to": "4.2/O1",
+   "type": "prepares",
+   "why": "exponential applications are structurally the same word problems with the same coded-year convention, so the interpretation work is already done and only the rule changes",
+   "by": "sender"
+  },
+  {
+   "from": "3.1/O4",
+   "to": "4.4/O3",
+   "type": "prepares",
+   "why": "'in what year does revenue reach X' is this objective's contextual reading run backwards, and students who never interpreted f(x) in context cannot tell which quantity the equation is being set equal to",
+   "by": "sender"
+  },
+  {
+   "from": "3.1/O2",
+   "to": "3.1/O4",
+   "type": "requires",
+   "why": "every answer is produced by evaluating the given model at the input the question specifies",
+   "by": "receiver"
+  },
+  {
+   "from": "3.1/O1",
+   "to": "3.1/O4",
+   "type": "prepares",
+   "why": "the pretzel problem asks for a profit rule to be assembled symbolically before any number is substituted",
+   "by": "receiver"
+  },
+  {
+   "from": "1.2/O6",
+   "to": "3.1/O4",
+   "type": "prepares",
+   "why": "the cost-revenue-profit setup is the polynomial application from chapter 1 restated in function notation, so the context is familiar and only the notation is new",
+   "by": "receiver"
+  },
+  {
+   "from": "4.1/O1",
+   "to": "4.1/O2",
+   "type": "prepares",
+   "why": "knowing which family a rule belongs to is what tells a student to expect a rising-or-falling curve through (0,1) rather than a parabola or a line",
+   "by": "sender"
+  },
+  {
+   "from": "4.1/O1",
+   "to": "4.2/O1",
+   "type": "prepares",
+   "why": "a student who does not read f(t)=1716(1.035)^t as exponential computes 1716*1.035*t instead of raising the growth factor to the t",
+   "by": "sender"
+  },
+  {
+   "from": "4.1/O1",
+   "to": "5.1/O2",
+   "type": "prepares",
+   "why": "the difference between simple and compound interest is exactly the difference between a linear and an exponential rule, so classification is what makes P(1+i)^n meaningful instead of a memorized formula",
+   "by": "sender"
+  },
+  {
+   "from": "1.2/O3",
+   "to": "4.1/O1",
+   "type": "requires",
+   "why": "labeling h(x)=4x^2-3x+2 quadratic is reading the degree of a polynomial, which is what identifying characteristics of polynomials teaches",
+   "by": "receiver"
+  },
+  {
+   "from": "1.2/O1",
+   "to": "4.1/O1",
+   "type": "prepares",
+   "why": "telling 3^x from x^3 requires knowing which slot is the base and which is the exponent, the distinction practiced when evaluating exponential expressions",
+   "by": "receiver"
+  },
+  {
+   "from": "2.2/O3",
+   "to": "4.1/O1",
+   "type": "prepares",
+   "why": "the linear member of the trio is recognized by matching g(x)=3x against the y=mx+b template internalized when reading slope and intercept off an equation",
+   "by": "receiver"
+  },
+  {
+   "from": "4.1/O2",
+   "to": "4.1/O3",
+   "type": "requires",
+   "why": "choosing the correct picture of y=6^x is impossible without already knowing the curve passes through (0,1), stays above the x-axis, and rises to the right",
+   "by": "sender"
+  },
+  {
+   "from": "4.1/O2",
+   "to": "4.2/O2",
+   "type": "prepares",
+   "why": "the logistic curve's leveling-off is only recognizable as a departure if the unbounded rise of the plain exponential is already the expected shape",
+   "by": "sender"
+  },
+  {
+   "from": "4.1/O2",
+   "to": "4.3/O1",
+   "type": "prepares",
+   "why": "log_a x is well defined only because a^x is one-to-one and hits every positive value exactly once, which is what the graph's shape shows",
+   "by": "sender"
+  },
+  {
+   "from": "1.2/O1",
+   "to": "4.1/O2",
+   "type": "requires",
+   "why": "the second coordinates at x=0 and x=1 cannot be produced without knowing a^0=1 and a^1=a",
+   "by": "receiver"
+  },
+  {
+   "from": "3.1/O2",
+   "to": "4.1/O2",
+   "type": "requires",
+   "why": "finding f(0) and f(1) for f(x)=21.8^x is numerical function evaluation",
+   "by": "receiver"
+  },
+  {
+   "from": "4.1/O1",
+   "to": "4.1/O2",
+   "type": "prepares",
+   "why": "see the paired claim on 4.1/O1",
+   "by": "receiver"
+  },
+  {
+   "from": "4.1/O3",
+   "to": "4.2/O1",
+   "type": "requires",
+   "why": "the objective itself is applications involving the evaluation and graphing of exponential functions, so the graphing procedure is used directly",
+   "by": "sender"
+  },
+  {
+   "from": "4.1/O3",
+   "to": "4.1/O4",
+   "type": "prepares",
+   "why": "recovering the rule f(x)=a^x from the point (3,27) is the plotting procedure run backwards, and having plotted such curves makes the base visible as the one-step growth factor",
+   "by": "sender"
+  },
+  {
+   "from": "2.1/O3",
+   "to": "4.1/O3",
+   "type": "requires",
+   "why": "graphing y=6^x is the same build-a-table-of-ordered-pairs-and-plot procedure taught for graphing equations",
+   "by": "receiver"
+  },
+  {
+   "from": "1.5/O1",
+   "to": "4.1/O3",
+   "type": "requires",
+   "why": "the left half of the graph of y=(1/5)^x needs values at negative inputs, i.e. (1/5)^-2 = 25, which is the integer-exponent rule",
+   "by": "receiver"
+  },
+  {
+   "from": "4.1/O2",
+   "to": "4.1/O3",
+   "type": "requires",
+   "why": "see the paired claim on 4.1/O2",
+   "by": "receiver"
+  },
+  {
+   "from": "4.1/O4",
+   "to": "4.2/O1",
+   "type": "prepares",
+   "why": "reading a supplied model such as A(x)=302e^{.055x} as a starting amount times a growth factor is the same parameter-reading practiced when the parameters had to be found",
+   "by": "sender"
+  },
+  {
+   "from": "4.1/O4",
+   "to": "5.1/O3",
+   "type": "prepares",
+   "why": "finding the rate in $7000(1+i)^8 = $7564 is the same task as pinning down the base of an exponential function from one known value, solved by the same root extraction",
+   "by": "sender"
+  },
+  {
+   "from": "4.1/O4",
+   "to": "5.1/O5",
+   "type": "prepares",
+   "why": "backing out what an item cost two years ago at 1.95% inflation is the money-loses-value table model built in this objective, run backwards",
+   "by": "sender"
+  },
+  {
+   "from": "1.5/O2",
+   "to": "4.1/O4",
+   "type": "requires",
+   "why": "given f(x)=a^x with f(2)=16 the base is found as 16^(1/2), and the point (-2,64) forces a=64^(-1/2)=1/8, both rational-exponent computations",
+   "by": "receiver"
+  },
+  {
+   "from": "3.1/O1",
+   "to": "4.1/O4",
+   "type": "prepares",
+   "why": "writing f(2)=a^2 keeps a symbolic while the input is numeric, the substitution pattern practiced when evaluating functions at algebraic values",
+   "by": "receiver"
+  },
+  {
+   "from": "2.2/O6",
+   "to": "4.1/O4",
+   "type": "prepares",
+   "why": "finding the equation of a line from given conditions is the same task shape one chapter earlier -- pin the parameters of a known family down from a point -- so the exponential case is a transfer rather than a new idea",
+   "by": "receiver"
+  },
+  {
+   "from": "4.2/O1",
+   "to": "4.2/O2",
+   "type": "prepares",
+   "why": "the logistic problems are the same substitute-the-shifted-input-and-evaluate routine with the exponential buried in a denominator",
+   "by": "sender"
+  },
+  {
+   "from": "4.2/O1",
+   "to": "4.4/O3",
+   "type": "requires",
+   "why": "every application in 4.4 opens by evaluating the exponential model at a given input before any equation is solved",
+   "by": "sender"
+  },
+  {
+   "from": "4.2/O1",
+   "to": "5.1/O6",
+   "type": "prepares",
+   "why": "reading a percentage rate as a per-period multiplier applied t times is what makes the compound-interest formula meaningful instead of a template to fill",
+   "by": "sender"
+  },
+  {
+   "from": "3.1/O4",
+   "to": "4.2/O1",
+   "type": "prepares",
+   "why": "the standing trap in these problems is that t=10 corresponds to 2010, so the input must be decoded from the year before anything is computed -- exactly the applied-function reading practiced in 3.1",
+   "by": "receiver"
+  },
+  {
+   "from": "4.1/O3",
+   "to": "4.2/O1",
+   "type": "requires",
+   "why": "see the paired claim on 4.1/O3",
+   "by": "receiver"
+  },
+  {
+   "from": "4.1/O1",
+   "to": "4.2/O1",
+   "type": "prepares",
+   "why": "see the paired claim on 4.1/O1",
+   "by": "receiver"
+  },
+  {
+   "from": "4.1/O4",
+   "to": "4.2/O1",
+   "type": "prepares",
+   "why": "see the paired claim on 4.1/O4",
+   "by": "receiver"
+  },
+  {
+   "from": "1.1/O3",
+   "to": "4.2/O2",
+   "type": "requires",
+   "why": "evaluating 574.7/(1 + 31.8e^{-0.077t}) demands the exponential, then the multiplication, then the addition in the denominator, all before the division",
+   "by": "receiver"
+  },
+  {
+   "from": "1.5/O1",
+   "to": "4.2/O2",
+   "type": "prepares",
+   "why": "reading e^{-0.077t} as a decaying quantity that shrinks the denominator toward 1 is what explains the leveling-off, and that reading comes from negative exponents meaning reciprocals",
+   "by": "receiver"
+  },
+  {
+   "from": "4.2/O1",
+   "to": "4.2/O2",
+   "type": "prepares",
+   "why": "see the paired claim on 4.2/O1",
+   "by": "receiver"
+  },
+  {
+   "from": "4.1/O2",
+   "to": "4.2/O2",
+   "type": "prepares",
+   "why": "see the paired claim on 4.1/O2",
+   "by": "receiver"
+  },
+  {
+   "from": "4.3/O1",
+   "to": "4.3/O2",
+   "type": "requires",
+   "why": "log_4 256 is evaluated by asking what power of 4 gives 256, which is the exponential rewrite of the logarithmic statement",
+   "by": "sender"
+  },
+  {
+   "from": "4.3/O1",
+   "to": "4.4/O1",
+   "type": "requires",
+   "why": "log_6(2x-2)=4 becomes an algebraic equation only by rewriting it as 6^4 = 2x-2",
+   "by": "sender"
+  },
+  {
+   "from": "4.3/O1",
+   "to": "4.3/O3",
+   "type": "prepares",
+   "why": "the product, quotient, and power rules for logs are the corresponding exponent rules read through this correspondence, so students who can move between the two notations can reconstruct a rule they forget",
+   "by": "sender"
+  },
+  {
+   "from": "4.3/O1",
+   "to": "4.4/O2",
+   "type": "prepares",
+   "why": "e^{6x}=8 is finished by reading it directly as 6x = ln 8, which is the conversion rather than a separate technique",
+   "by": "sender"
+  },
+  {
+   "from": "1.2/O1",
+   "to": "4.3/O1",
+   "type": "requires",
+   "why": "log_b x = y asserts b^y = x, so the statement is unreadable without fluency in what b^y denotes, including 5^-3 = 1/125",
+   "by": "receiver"
+  },
+  {
+   "from": "4.1/O3",
+   "to": "4.3/O1",
+   "type": "prepares",
+   "why": "having plotted a^x makes 'the exponent you must put on a to reach x' a locatable point on a curve rather than an unmotivated new symbol",
+   "by": "receiver"
+  },
+  {
+   "from": "4.3/O2",
+   "to": "4.3/O4",
+   "type": "prepares",
+   "why": "knowing log_8 64 = 2 exactly is the sanity check that makes the calculator output log_8 390 = 2.869 believable rather than accepted blindly",
+   "by": "sender"
+  },
+  {
+   "from": "4.3/O2",
+   "to": "4.4/O2",
+   "type": "prepares",
+   "why": "solving 2^{6x-3}=4 without logarithms starts by recognizing 4 as 2^2, the same what-power-gives-this-number reflex",
+   "by": "sender"
+  },
+  {
+   "from": "1.5/O1",
+   "to": "4.3/O2",
+   "type": "requires",
+   "why": "log_4(1/16) = -2 cannot be seen without reading 1/16 as 4^-2, the negative-integer-exponent rule",
+   "by": "receiver"
+  },
+  {
+   "from": "4.3/O1",
+   "to": "4.3/O2",
+   "type": "requires",
+   "why": "see the paired claim on 4.3/O1",
+   "by": "receiver"
+  },
+  {
+   "from": "4.3/O3",
+   "to": "4.4/O1",
+   "type": "requires",
+   "why": "ln(7x+10) - ln x = ln 8 cannot become an algebraic equation until the left side is condensed into a single logarithm by the quotient rule",
+   "by": "sender"
+  },
+  {
+   "from": "4.3/O3",
+   "to": "4.4/O2",
+   "type": "requires",
+   "why": "taking logarithms of both sides of an exponential equation only helps because the power rule brings the unknown down out of the exponent",
+   "by": "sender"
+  },
+  {
+   "from": "1.2/O2",
+   "to": "4.3/O3",
+   "type": "prepares",
+   "why": "the log rules are the exponent rules b^m b^n = b^{m+n} restated, so prior operational fluency with exponents is what makes ln(5y/2z) = ln5 + lny - ln2 - lnz reconstructible instead of memorized",
+   "by": "receiver"
+  },
+  {
+   "from": "4.3/O1",
+   "to": "4.3/O3",
+   "type": "prepares",
+   "why": "see the paired claim on 4.3/O1",
+   "by": "receiver"
+  },
+  {
+   "from": "4.3/O4",
+   "to": "4.4/O2",
+   "type": "prepares",
+   "why": "the exact answer x = log_2 12 is turned into the required decimal only by rewriting it as ln12/ln2",
+   "by": "sender"
+  },
+  {
+   "from": "4.3/O4",
+   "to": "4.4/O3",
+   "type": "prepares",
+   "why": "the applied answers arrive as a quotient of two logarithms, the same form as the doubling function ln2/ln(1+r) evaluated here",
+   "by": "sender"
+  },
+  {
+   "from": "1.1/O3",
+   "to": "4.3/O4",
+   "type": "prepares",
+   "why": "the standing error in ln2/ln(1+r) is collapsing it to ln(2/(1+r)), which order-of-operations discipline on a quotient of two computed values prevents",
+   "by": "receiver"
+  },
+  {
+   "from": "4.3/O2",
+   "to": "4.3/O4",
+   "type": "prepares",
+   "why": "see the paired claim on 4.3/O2",
+   "by": "receiver"
+  },
+  {
+   "from": "4.3/O1",
+   "to": "4.3/O4",
+   "type": "prepares",
+   "why": "the change-of-base formula is only checkable against the definition b^y = x that the conversion supplies",
+   "by": "receiver"
+  },
+  {
+   "from": "4.4/O1",
+   "to": "4.4/O3",
+   "type": "prepares",
+   "why": "the applied problems are solved by the same strip-the-logarithm-then-solve routine, run on a model instead of a bare equation",
+   "by": "sender"
+  },
+  {
+   "from": "4.3/O3",
+   "to": "4.4/O1",
+   "type": "requires",
+   "why": "see the paired claim on 4.3/O3",
+   "by": "receiver"
+  },
+  {
+   "from": "4.3/O1",
+   "to": "4.4/O1",
+   "type": "requires",
+   "why": "see the paired claim on 4.3/O1",
+   "by": "receiver"
+  },
+  {
+   "from": "1.6/O2",
+   "to": "4.4/O1",
+   "type": "requires",
+   "why": "condensing ln(7x+10) - ln x = ln 8 leaves (7x+10)/x = 8, which must be cleared of its denominator to be solved",
+   "by": "receiver"
+  },
+  {
+   "from": "1.7/O1",
+   "to": "4.4/O1",
+   "type": "requires",
+   "why": "2ln(x-7) = ln(x+33) + ln2 reduces to x^2 - 16x - 17 = 0, which is finished by factoring into (x-17)(x+1)",
+   "by": "receiver"
+  },
+  {
+   "from": "3.1/O3",
+   "to": "4.4/O1",
+   "type": "prepares",
+   "why": "answering 'there is no solution' means rejecting a candidate that makes some logarithm's argument non-positive, which is a domain restriction of the same kind found for radical and rational functions",
+   "by": "receiver"
+  },
+  {
+   "from": "4.4/O2",
+   "to": "4.4/O3",
+   "type": "requires",
+   "why": "'the first full year revenue exceeded $209 billion' is answered only by setting 32.4e^{0.101x} = 209 and solving for x",
+   "by": "sender"
+  },
+  {
+   "from": "4.3/O3",
+   "to": "4.4/O2",
+   "type": "requires",
+   "why": "see the paired claim on 4.3/O3",
+   "by": "receiver"
+  },
+  {
+   "from": "1.2/O2",
+   "to": "4.4/O2",
+   "type": "requires",
+   "why": "the no-logarithms method rewrites 2^{6x-3} = 4 as 2^{6x-3} = 2^2 using the same-base power rules before the exponents can be equated",
+   "by": "receiver"
+  },
+  {
+   "from": "1.6/O1",
+   "to": "4.4/O2",
+   "type": "requires",
+   "why": "3e^{5x} + 7 = 6 must first be reduced to e^{5x} = -1/3 by the properties of equality, and 6x - 3 = 2 is a linear solve once the exponents match",
+   "by": "receiver"
+  },
+  {
+   "from": "4.3/O1",
+   "to": "4.4/O2",
+   "type": "prepares",
+   "why": "see the paired claim on 4.3/O1",
+   "by": "receiver"
+  },
+  {
+   "from": "4.3/O4",
+   "to": "4.4/O2",
+   "type": "prepares",
+   "why": "see the paired claim on 4.3/O4",
+   "by": "receiver"
+  },
+  {
+   "from": "4.4/O2",
+   "to": "4.4/O3",
+   "type": "requires",
+   "why": "see the paired claim on 4.4/O2",
+   "by": "receiver"
+  },
+  {
+   "from": "4.2/O1",
+   "to": "4.4/O3",
+   "type": "requires",
+   "why": "see the paired claim on 4.2/O1",
+   "by": "receiver"
+  },
+  {
+   "from": "4.4/O1",
+   "to": "4.4/O3",
+   "type": "prepares",
+   "why": "see the paired claim on 4.4/O1",
+   "by": "receiver"
+  },
+  {
+   "from": "3.1/O4",
+   "to": "4.4/O3",
+   "type": "prepares",
+   "why": "the answer x = 8.6 must be pushed to the next whole year and then decoded back into a calendar year, an applied-function interpretation step that the algebra alone does not supply",
+   "by": "receiver"
+  },
+  {
+   "from": "5.1/O1",
+   "to": "5.1/O2",
+   "type": "prepares",
+   "why": "compound interest is simple interest applied once per period and then re-applied to the new balance, so without I = Prt the factor (1 + i) is an unmotivated symbol rather than 'principal plus one period of interest'",
+   "by": "sender"
+  },
+  {
+   "from": "5.1/O1",
+   "to": "5.1/O3",
+   "type": "prepares",
+   "why": "solving I = Prt for r is the one-step rehearsal of the same isolate-the-rate move that finding a compound rate demands in exponential form",
+   "by": "sender"
+  },
+  {
+   "from": "5.1/O1",
+   "to": "5.3/O3",
+   "type": "prepares",
+   "why": "each row of an amortization table computes that period's interest as simple interest on the current outstanding balance, so a student who cannot do I = Prt cannot explain where the interest column comes from",
+   "by": "sender"
+  },
+  {
+   "from": "1.1/O2",
+   "to": "5.1/O1",
+   "type": "requires",
+   "why": "computing I = Prt is literally substituting numerical values for P, r and t into an algebraic expression and evaluating the product",
+   "by": "receiver"
+  },
+  {
+   "from": "1.6/O4",
+   "to": "5.1/O1",
+   "type": "prepares",
+   "why": "interest problems arrive as sentences, and without practice translating a word problem into an equation students cannot decide which given number is the principal and which is the rate",
+   "by": "receiver"
+  },
+  {
+   "from": "5.1/O2",
+   "to": "5.1/O3",
+   "type": "requires",
+   "why": "finding an interest rate means solving A = P(1 + i)^n for i, which is impossible without the compound amount relation itself",
+   "by": "sender"
+  },
+  {
+   "from": "5.1/O2",
+   "to": "5.1/O4",
+   "type": "requires",
+   "why": "present value is nothing but the compound amount formula solved for P, so the future-value relation must exist first",
+   "by": "sender"
+  },
+  {
+   "from": "5.1/O2",
+   "to": "5.1/O5",
+   "type": "requires",
+   "why": "reconstructing a past price runs the compound amount formula backwards with the inflation rate in place of the interest rate",
+   "by": "sender"
+  },
+  {
+   "from": "5.1/O2",
+   "to": "5.1/O6",
+   "type": "requires",
+   "why": "every compound interest application is an instance of A = P(1 + r/m)^(mt) with the periodic rate and period count read off the problem",
+   "by": "sender"
+  },
+  {
+   "from": "5.1/O2",
+   "to": "5.2/O1",
+   "type": "requires",
+   "why": "the future value of an annuity is the sum of the compound amounts of the individual deposits, and it uses the same conversion of a nominal annual rate into i = r/m and n = mt",
+   "by": "sender"
+  },
+  {
+   "from": "1.2/O1",
+   "to": "5.1/O2",
+   "type": "requires",
+   "why": "the compound amount cannot be produced without evaluating the power (1 + i)^n",
+   "by": "receiver"
+  },
+  {
+   "from": "1.1/O3",
+   "to": "5.1/O2",
+   "type": "requires",
+   "why": "a student who multiplies P by (1 + r/m) before applying the exponent gets a wrong compound amount, so the exponent-before-multiplication order of operations is load-bearing",
+   "by": "receiver"
+  },
+  {
+   "from": "4.2/O1",
+   "to": "5.1/O2",
+   "type": "prepares",
+   "why": "having already solved growth applications of the form y = a\u00b7b^x lets a student see the compound amount as exponential growth with base 1 + i rather than as an isolated formula to plug into",
+   "by": "receiver"
+  },
+  {
+   "from": "5.1/O1",
+   "to": "5.1/O2",
+   "type": "prepares",
+   "why": "compound interest is simple interest re-applied each period, so the single-period computation supplies the meaning of the (1 + i) factor",
+   "by": "receiver"
+  },
+  {
+   "from": "5.1/O3",
+   "to": "5.1/O6",
+   "type": "prepares",
+   "why": "applications that ask which of two accounts is the better deal require recovering an effective rate rather than an amount, which is the skill practised here",
+   "by": "sender"
+  },
+  {
+   "from": "5.1/O2",
+   "to": "5.1/O3",
+   "type": "requires",
+   "why": "there is no rate to find until the compound amount relation A = P(1 + i)^n is available to be solved for i",
+   "by": "receiver"
+  },
+  {
+   "from": "1.5/O2",
+   "to": "5.1/O3",
+   "type": "requires",
+   "why": "isolating i forces an nth root of A/P, which the student can only execute as the rational exponent (A/P)^(1/n)",
+   "by": "receiver"
+  },
+  {
+   "from": "1.6/O3",
+   "to": "5.1/O3",
+   "type": "prepares",
+   "why": "students who have never rearranged a formula for a specified variable memorise a separate 'rate formula' instead of recognising it as the same equation solved differently",
+   "by": "receiver"
+  },
+  {
+   "from": "5.1/O4",
+   "to": "5.1/O6",
+   "type": "prepares",
+   "why": "many compound interest applications ask what must be deposited now rather than what accumulates later, and that is present value read in context",
+   "by": "sender"
+  },
+  {
+   "from": "5.1/O4",
+   "to": "5.1/O7",
+   "type": "requires",
+   "why": "computing the present value of a stated future amount is exactly this discounting formula applied to a word problem",
+   "by": "sender"
+  },
+  {
+   "from": "5.1/O4",
+   "to": "5.3/O1",
+   "type": "prepares",
+   "why": "the amortization payment formula is derived from the statement that the loan principal equals the present value of the payment stream, and without discounting that derivation is opaque even though the formula can still be plugged into",
+   "by": "sender"
+  },
+  {
+   "from": "5.1/O2",
+   "to": "5.1/O4",
+   "type": "requires",
+   "why": "present value is the compound amount equation solved for the principal, so the compound amount relation must come first",
+   "by": "receiver"
+  },
+  {
+   "from": "1.5/O1",
+   "to": "5.1/O4",
+   "type": "requires",
+   "why": "the discount factor is written (1 + i)^(-n), and a student who does not know a^(-n) = 1/a^n cannot evaluate the standard form of the formula",
+   "by": "receiver"
+  },
+  {
+   "from": "5.1/O5",
+   "to": "5.1/O6",
+   "type": "prepares",
+   "why": "inflation problems are compound-growth applications in disguise and give a second context that stops students from tying the formula exclusively to bank accounts",
+   "by": "sender"
+  },
+  {
+   "from": "5.1/O2",
+   "to": "5.1/O5",
+   "type": "requires",
+   "why": "a previous price is recovered by dividing the current price by (1 + rate)^n, which is the compound amount relation run in reverse",
+   "by": "receiver"
+  },
+  {
+   "from": "5.1/O4",
+   "to": "5.1/O5",
+   "type": "prepares",
+   "why": "discounting a future amount back to today is structurally the same move as pricing an item backwards in time, so doing present value first prevents students from mistakenly subtracting the inflation percentage",
+   "by": "receiver"
+  },
+  {
+   "from": "5.1/O6",
+   "to": "5.2/O3",
+   "type": "prepares",
+   "why": "annuity applications require the same first step of reading the compounding frequency out of a sentence and converting it into i = r/m and n = mt",
+   "by": "sender"
+  },
+  {
+   "from": "5.1/O6",
+   "to": "5.3/O4",
+   "type": "prepares",
+   "why": "loan applications reuse the habit of deciding which quantity in the story is unknown before selecting a formula",
+   "by": "sender"
+  },
+  {
+   "from": "5.1/O2",
+   "to": "5.1/O6",
+   "type": "requires",
+   "why": "every compound interest application is an evaluation of A = P(1 + i)^n once the story has been decoded",
+   "by": "receiver"
+  },
+  {
+   "from": "4.4/O3",
+   "to": "5.1/O6",
+   "type": "prepares",
+   "why": "questions such as how long until the balance doubles require solving an exponential equation with logarithms, which is practised only in the earlier exponential-equation applications",
+   "by": "receiver"
+  },
+  {
+   "from": "1.6/O4",
+   "to": "5.1/O6",
+   "type": "prepares",
+   "why": "without prior practice turning word problems into equations students cannot identify which stated dollar figure is the principal and which is the target amount",
+   "by": "receiver"
+  },
+  {
+   "from": "5.1/O7",
+   "to": "5.3/O1",
+   "type": "prepares",
+   "why": "amortization rests on the idea that a lump sum today and a stream of future dollars can be exchanged at a rate, and that exchange idea is established here",
+   "by": "sender"
+  },
+  {
+   "from": "5.1/O4",
+   "to": "5.1/O7",
+   "type": "requires",
+   "why": "this objective is the applied form of the present value computation and cannot be done without the discounting formula",
+   "by": "receiver"
+  },
+  {
+   "from": "1.6/O4",
+   "to": "5.1/O7",
+   "type": "prepares",
+   "why": "the difficulty here is recognising that the dollar figure named in the problem is a future amount rather than a principal, which is a word-problem translation skill",
+   "by": "receiver"
+  },
+  {
+   "from": "5.2/O1",
+   "to": "5.2/O2",
+   "type": "requires",
+   "why": "the sinking fund payment is the future-value-of-an-annuity equation solved for R, so it cannot be stated without that equation",
+   "by": "sender"
+  },
+  {
+   "from": "5.2/O1",
+   "to": "5.2/O3",
+   "type": "requires",
+   "why": "every accumulation application in this section evaluates the annuity future value once the payment, periodic rate and period count are extracted",
+   "by": "sender"
+  },
+  {
+   "from": "5.2/O1",
+   "to": "5.3/O1",
+   "type": "prepares",
+   "why": "seeing that a level payment stream has a single closed-form value makes the amortization payment formula recognisable as the same construction discounted rather than accumulated",
+   "by": "sender"
+  },
+  {
+   "from": "5.1/O2",
+   "to": "5.2/O1",
+   "type": "requires",
+   "why": "the annuity future value is the sum of the compound amounts of each individual deposit and reuses the identical conversion to a periodic rate i = r/m over n = mt periods",
+   "by": "receiver"
+  },
+  {
+   "from": "1.2/O1",
+   "to": "5.2/O1",
+   "type": "requires",
+   "why": "the bracketed accumulation factor cannot be evaluated without computing the power (1 + i)^n",
+   "by": "receiver"
+  },
+  {
+   "from": "1.1/O3",
+   "to": "5.2/O1",
+   "type": "requires",
+   "why": "students who divide by i before subtracting 1 in [((1 + i)^n \u2212 1)/i] get a badly wrong future value, so grouped order of operations decides the answer",
+   "by": "receiver"
+  },
+  {
+   "from": "5.2/O2",
+   "to": "5.2/O3",
+   "type": "requires",
+   "why": "any application asking how much to set aside each period to reach a goal is this sinking fund payment computation",
+   "by": "sender"
+  },
+  {
+   "from": "5.2/O2",
+   "to": "5.3/O1",
+   "type": "prepares",
+   "why": "an amortization payment is found by the same manoeuvre of dividing a target sum by a rate factor, so having done it for accumulation makes the loan version a variant rather than a new formula",
+   "by": "sender"
+  },
+  {
+   "from": "5.2/O1",
+   "to": "5.2/O2",
+   "type": "requires",
+   "why": "the payment formula is obtained by isolating R in the future-value-of-an-annuity equation",
+   "by": "receiver"
+  },
+  {
+   "from": "1.6/O3",
+   "to": "5.2/O2",
+   "type": "prepares",
+   "why": "R sits as a coefficient multiplying the accumulation factor, and students who have rearranged formulas for a specified variable see the payment formula as one division instead of a second thing to memorise",
+   "by": "receiver"
+  },
+  {
+   "from": "5.2/O3",
+   "to": "5.3/O4",
+   "type": "prepares",
+   "why": "loan applications demand the same triage of deciding whether the unknown is the payment, the total, or the number of periods before any formula is chosen",
+   "by": "sender"
+  },
+  {
+   "from": "5.2/O1",
+   "to": "5.2/O3",
+   "type": "requires",
+   "why": "accumulation applications are evaluations of the annuity future value formula",
+   "by": "receiver"
+  },
+  {
+   "from": "5.2/O2",
+   "to": "5.2/O3",
+   "type": "requires",
+   "why": "the sinking fund half of these applications asks for the periodic deposit, which is the payment formula",
+   "by": "receiver"
+  },
+  {
+   "from": "5.1/O6",
+   "to": "5.2/O3",
+   "type": "prepares",
+   "why": "the habit of extracting compounding frequency and term from a sentence transfers directly and is otherwise the main source of wrong i and n values",
+   "by": "receiver"
+  },
+  {
+   "from": "5.3/O1",
+   "to": "5.3/O2",
+   "type": "requires",
+   "why": "the monthly payment on a consumer loan is the amortization payment computed with m = 12, so it is the same computation",
+   "by": "sender"
+  },
+  {
+   "from": "5.3/O1",
+   "to": "5.3/O3",
+   "type": "requires",
+   "why": "an amortization table cannot be built or checked without first knowing the level payment that heads every row",
+   "by": "sender"
+  },
+  {
+   "from": "5.3/O1",
+   "to": "5.3/O4",
+   "type": "requires",
+   "why": "every consumer loan application either asks for the payment or uses the payment as the input to a further question",
+   "by": "sender"
+  },
+  {
+   "from": "1.5/O1",
+   "to": "5.3/O1",
+   "type": "requires",
+   "why": "the denominator 1 \u2212 (1 + i)^(-n) contains a negative exponent, and a student who cannot read a^(-n) as 1/a^n will evaluate the payment formula incorrectly",
+   "by": "receiver"
+  },
+  {
+   "from": "5.1/O4",
+   "to": "5.3/O1",
+   "type": "prepares",
+   "why": "the formula follows from setting the loan principal equal to the present value of the payments, and without discounting a student can execute it but cannot say why a loan of a given size supports a given payment",
+   "by": "receiver"
+  },
+  {
+   "from": "5.2/O2",
+   "to": "5.3/O1",
+   "type": "prepares",
+   "why": "the sinking fund payment is the same structural move of dividing a target amount by a rate factor, so it removes most of the novelty from the amortization payment",
+   "by": "receiver"
+  },
+  {
+   "from": "5.3/O2",
+   "to": "5.3/O3",
+   "type": "prepares",
+   "why": "the balance column of an amortization table is precisely the remaining balance computed here, so estimating balances first makes the table readable rather than mysterious",
+   "by": "sender"
+  },
+  {
+   "from": "5.3/O2",
+   "to": "5.3/O4",
+   "type": "requires",
+   "why": "payoff, refinancing and equity questions are answered by the remaining balance, which is computed only here",
+   "by": "sender"
+  },
+  {
+   "from": "5.3/O1",
+   "to": "5.3/O2",
+   "type": "requires",
+   "why": "the remaining balance is defined in terms of the level payment, so the payment must be found before any balance can be estimated",
+   "by": "receiver"
+  },
+  {
+   "from": "5.1/O4",
+   "to": "5.3/O2",
+   "type": "prepares",
+   "why": "the remaining balance is the present value of the payments still outstanding, and students who have not discounted a future amount tend to subtract payments from the principal instead",
+   "by": "receiver"
+  },
+  {
+   "from": "5.3/O3",
+   "to": "5.3/O4",
+   "type": "prepares",
+   "why": "questions about total interest paid over the life of a loan are answered by reasoning about the columns of the table even when no table is printed",
+   "by": "sender"
+  },
+  {
+   "from": "5.3/O1",
+   "to": "5.3/O3",
+   "type": "requires",
+   "why": "every row of the table is generated from the level payment, so the payment computation is a precondition for interpreting the table",
+   "by": "receiver"
+  },
+  {
+   "from": "5.1/O1",
+   "to": "5.3/O3",
+   "type": "prepares",
+   "why": "the interest entry in each row is simple interest on the current balance for one period, so a student without I = Prt cannot say why the interest portion shrinks as the loan runs",
+   "by": "receiver"
+  },
+  {
+   "from": "5.3/O2",
+   "to": "5.3/O3",
+   "type": "prepares",
+   "why": "recognising the last column as the remaining balance already computed by formula is what turns the table from a list of numbers into a record of the same process",
+   "by": "receiver"
+  },
+  {
+   "from": "5.3/O1",
+   "to": "5.3/O4",
+   "type": "requires",
+   "why": "consumer loan applications begin by computing the payment that amortizes the stated principal",
+   "by": "receiver"
+  },
+  {
+   "from": "5.3/O2",
+   "to": "5.3/O4",
+   "type": "requires",
+   "why": "applications about paying a loan off early or trading in a financed item are answered with the remaining balance",
+   "by": "receiver"
+  },
+  {
+   "from": "5.3/O3",
+   "to": "5.3/O4",
+   "type": "prepares",
+   "why": "questions about how much of a payment is interest versus principal are answered by the row structure of the amortization table",
+   "by": "receiver"
+  },
+  {
+   "from": "1.6/O4",
+   "to": "5.3/O4",
+   "type": "prepares",
+   "why": "these problems are dense word problems and students without practice translating sentences into equations misidentify the down payment, the amount financed, and the term",
+   "by": "receiver"
+  },
+  {
+   "from": "8.1/O1",
+   "to": "8.1/O2",
+   "type": "requires",
+   "why": "a subset is defined by testing whether every element of one set is an element of the other, so membership must already be readable from roster or set-builder form",
+   "by": "sender"
+  },
+  {
+   "from": "8.1/O1",
+   "to": "8.1/O5",
+   "type": "requires",
+   "why": "set operations are carried out element by element, so a student who cannot list the elements a description denotes cannot produce the resulting set",
+   "by": "sender"
+  },
+  {
+   "from": "8.1/O1",
+   "to": "8.3/O2",
+   "type": "requires",
+   "why": "writing a sample space is exactly listing the elements of a set in roster form, and writing an event is describing a set by a condition",
+   "by": "sender"
+  },
+  {
+   "from": "2.4/O2",
+   "to": "8.1/O1",
+   "type": "prepares",
+   "why": "writing an inequality that describes a graphed solution set is the same act as set-builder notation, so students who never did it read {x | x > 3} as a single object rather than a membership condition",
+   "by": "receiver"
+  },
+  {
+   "from": "3.1/O3",
+   "to": "8.1/O1",
+   "type": "prepares",
+   "why": "the domain of a function is a set of numbers specified by a condition, so students arrive already used to naming a collection by the rule its members satisfy",
+   "by": "receiver"
+  },
+  {
+   "from": "8.1/O2",
+   "to": "8.3/O1",
+   "type": "prepares",
+   "why": "the definition of an event as a subset of the sample space is meaningless vocabulary unless subset already means something concrete",
+   "by": "sender"
+  },
+  {
+   "from": "8.1/O2",
+   "to": "8.3/O2",
+   "type": "requires",
+   "why": "an event must be written as a subset of the sample space, so students who cannot recognize subsets write events containing outcomes that are not in S",
+   "by": "sender"
+  },
+  {
+   "from": "8.1/O2",
+   "to": "9.2/O5",
+   "type": "prepares",
+   "why": "counting subsets of an n-element set is the first time students count selections where order does not matter, which is what a combination counts",
+   "by": "sender"
+  },
+  {
+   "from": "1.2/O1",
+   "to": "8.1/O2",
+   "type": "requires",
+   "why": "the number of subsets is 2^n, which cannot be computed without evaluating an exponential expression",
+   "by": "receiver"
+  },
+  {
+   "from": "8.1/O1",
+   "to": "8.1/O2",
+   "type": "requires",
+   "why": "deciding A is a subset of B is a series of element-membership tests, so elements must be identifiable first",
+   "by": "receiver"
+  },
+  {
+   "from": "8.1/O3",
+   "to": "8.1/O5",
+   "type": "requires",
+   "why": "complement is one of the three operations combined in expressions like (A union B)', so it must be available before compound expressions can be evaluated",
+   "by": "sender"
+  },
+  {
+   "from": "8.1/O3",
+   "to": "8.2/O1",
+   "type": "requires",
+   "why": "shading a complement is shading everything inside the universal rectangle but outside the circle, which cannot be drawn without knowing the complement is taken relative to U",
+   "by": "sender"
+  },
+  {
+   "from": "8.1/O3",
+   "to": "8.4/O1",
+   "type": "requires",
+   "why": "the complement rule P(not E) = 1 - P(E) is the set complement transferred to probability, and 'at least one' problems are unreachable without it",
+   "by": "sender"
+  },
+  {
+   "from": "8.1/O3",
+   "to": "8.4/O3",
+   "type": "prepares",
+   "why": "odds compare the favorable outcomes to the outcomes in the complement, so students who never formed a complement misread odds as a probability",
+   "by": "sender"
+  },
+  {
+   "from": "8.1/O1",
+   "to": "8.1/O3",
+   "type": "requires",
+   "why": "the complement is the set of elements of U not in A, so both the universal set and element membership must be readable first",
+   "by": "receiver"
+  },
+  {
+   "from": "8.1/O4",
+   "to": "8.1/O5",
+   "type": "requires",
+   "why": "evaluating a set expression requires first knowing whether the symbol between the sets means keep-everything or keep-only-shared, which is the union/intersection distinction itself",
+   "by": "sender"
+  },
+  {
+   "from": "8.1/O4",
+   "to": "8.2/O1",
+   "type": "requires",
+   "why": "the shaded region of a two-circle diagram is the overlap for intersection and both circles for union, so misreading the operation produces the wrong picture",
+   "by": "sender"
+  },
+  {
+   "from": "8.1/O4",
+   "to": "8.2/O3",
+   "type": "requires",
+   "why": "an interior cell of a contingency table is the intersection of a row category and a column category, and reading a cell as a union is the standard error",
+   "by": "sender"
+  },
+  {
+   "from": "8.1/O4",
+   "to": "8.3/O3",
+   "type": "requires",
+   "why": "disjoint means the intersection is empty, so the intersection must be a known object before emptiness of it can be checked",
+   "by": "sender"
+  },
+  {
+   "from": "8.1/O4",
+   "to": "8.5/O3",
+   "type": "requires",
+   "why": "the Addition Rule handles 'or' and the Product Rule handles 'and', so a student who cannot map those words to union and intersection picks the wrong rule",
+   "by": "sender"
+  },
+  {
+   "from": "8.1/O1",
+   "to": "8.1/O4",
+   "type": "requires",
+   "why": "deciding whether a described set is a union or an intersection means checking whether its elements satisfy one condition or both, which needs element membership",
+   "by": "receiver"
+  },
+  {
+   "from": "8.1/O5",
+   "to": "8.1/O6",
+   "type": "requires",
+   "why": "a set word problem ends in evaluating an expression such as (A intersect B)' and reporting its members, so the mechanics must already be automatic",
+   "by": "sender"
+  },
+  {
+   "from": "8.1/O5",
+   "to": "8.2/O2",
+   "type": "requires",
+   "why": "the count in a Venn region is the size of a specific compound set, so the region cannot be identified without evaluating that set expression",
+   "by": "sender"
+  },
+  {
+   "from": "8.1/O5",
+   "to": "8.4/O2",
+   "type": "requires",
+   "why": "finding a probability from a Venn diagram means first determining which region the compound event denotes, then reading its value",
+   "by": "sender"
+  },
+  {
+   "from": "1.1/O3",
+   "to": "8.1/O5",
+   "type": "prepares",
+   "why": "an expression like (A union B)' intersect C is evaluated innermost-parentheses-outward exactly as a numeric expression, so students without that discipline apply the complement to the wrong subexpression",
+   "by": "receiver"
+  },
+  {
+   "from": "8.1/O1",
+   "to": "8.1/O5",
+   "type": "requires",
+   "why": "the result of any set operation is reported as a list of elements, which presumes the elements of the given sets can be identified",
+   "by": "receiver"
+  },
+  {
+   "from": "8.1/O3",
+   "to": "8.1/O5",
+   "type": "requires",
+   "why": "compound expressions in this objective include complements, which cannot be evaluated without the complement operation",
+   "by": "receiver"
+  },
+  {
+   "from": "8.1/O4",
+   "to": "8.1/O5",
+   "type": "requires",
+   "why": "the operation symbol must be interpreted correctly before the elements it produces can be listed",
+   "by": "receiver"
+  },
+  {
+   "from": "8.1/O6",
+   "to": "8.2/O2",
+   "type": "prepares",
+   "why": "Venn applications are the same word problems with a picture attached, so students who already translated 'both', 'neither', and 'only' into set language spend their effort on the diagram instead of the wording",
+   "by": "sender"
+  },
+  {
+   "from": "8.1/O6",
+   "to": "8.3/O5",
+   "type": "prepares",
+   "why": "a probability application is a set application followed by a division, so the translation from sentence to set is already practiced",
+   "by": "sender"
+  },
+  {
+   "from": "1.6/O4",
+   "to": "8.1/O6",
+   "type": "prepares",
+   "why": "these are the first word problems since first-degree applications, so students who never practiced turning a sentence into a mathematical statement stall on the translation rather than the set work",
+   "by": "receiver"
+  },
+  {
+   "from": "8.1/O5",
+   "to": "8.1/O6",
+   "type": "requires",
+   "why": "the application reduces to evaluating a compound set expression once the words are translated, so the operations must already work",
+   "by": "receiver"
+  },
+  {
+   "from": "8.2/O1",
+   "to": "8.2/O2",
+   "type": "requires",
+   "why": "placing counts into a diagram requires the diagram's regions to already be understood as the compound sets they represent",
+   "by": "sender"
+  },
+  {
+   "from": "8.2/O1",
+   "to": "8.2/O3",
+   "type": "prepares",
+   "why": "a contingency table shows the same four regions as a two-circle diagram in rectangular form, so students who shaded the regions recognize the cells rather than treating the table as new",
+   "by": "sender"
+  },
+  {
+   "from": "8.2/O1",
+   "to": "8.2/O4",
+   "type": "requires",
+   "why": "the Venn method of counting works by writing a number in each shaded region, which cannot be done without knowing which region each set expression occupies",
+   "by": "sender"
+  },
+  {
+   "from": "8.2/O1",
+   "to": "8.4/O2",
+   "type": "requires",
+   "why": "this objective is literally 'use Venn diagrams to find probabilities', so the diagram must be drawable and its regions correctly identified",
+   "by": "sender"
+  },
+  {
+   "from": "8.2/O1",
+   "to": "8.5/O1",
+   "type": "prepares",
+   "why": "conditional probability is the picture of shrinking the universe to one circle, and students who have shaded regions see the denominator change instead of memorizing a formula",
+   "by": "sender"
+  },
+  {
+   "from": "8.1/O3",
+   "to": "8.2/O1",
+   "type": "requires",
+   "why": "one of the three diagrams to be drawn is the complement, which requires knowing it is measured against the universal set drawn as the rectangle",
+   "by": "receiver"
+  },
+  {
+   "from": "8.1/O4",
+   "to": "8.2/O1",
+   "type": "requires",
+   "why": "the correct shading follows entirely from whether the expression is a union or an intersection",
+   "by": "receiver"
+  },
+  {
+   "from": "8.2/O2",
+   "to": "8.4/O2",
+   "type": "requires",
+   "why": "finding a probability from a Venn diagram means filling in region counts first and then dividing by the total, so the counting step is the whole first half of the task",
+   "by": "sender"
+  },
+  {
+   "from": "8.2/O2",
+   "to": "8.4/O5",
+   "type": "prepares",
+   "why": "empirical probability from data is region counts divided by the sample size, so students who filled Venn regions already know how to get the numerator from raw survey data",
+   "by": "sender"
+  },
+  {
+   "from": "8.1/O5",
+   "to": "8.2/O2",
+   "type": "requires",
+   "why": "each number placed in the diagram is the size of a specific compound set, so the set expressions must be evaluable",
+   "by": "receiver"
+  },
+  {
+   "from": "8.1/O6",
+   "to": "8.2/O2",
+   "type": "prepares",
+   "why": "the wording of these problems is set-application wording, so prior practice with 'only', 'both', and 'neither' prevents the standard error of writing the total of a circle into its non-overlapping part",
+   "by": "receiver"
+  },
+  {
+   "from": "8.2/O1",
+   "to": "8.2/O2",
+   "type": "requires",
+   "why": "counts cannot be placed into regions whose identity as unions, intersections, or complements is not known",
+   "by": "receiver"
+  },
+  {
+   "from": "8.2/O3",
+   "to": "8.4/O5",
+   "type": "requires",
+   "why": "empirical probability problems present their data as a two-way table, so a student who cannot read a cell against its row and column totals cannot form the ratio",
+   "by": "sender"
+  },
+  {
+   "from": "8.2/O3",
+   "to": "8.5/O1",
+   "type": "prepares",
+   "why": "a conditional probability is a cell divided by its row total, so students fluent with tables see the restricted denominator directly instead of applying the formula blindly",
+   "by": "sender"
+  },
+  {
+   "from": "8.2/O3",
+   "to": "10.1/O1",
+   "type": "prepares",
+   "why": "a contingency table is a two-way frequency table, so reading category counts and totals is already familiar when one-way frequency distributions appear",
+   "by": "sender"
+  },
+  {
+   "from": "8.1/O4",
+   "to": "8.2/O3",
+   "type": "requires",
+   "why": "an interior cell counts elements satisfying both category conditions, so it must be recognized as an intersection rather than a union",
+   "by": "receiver"
+  },
+  {
+   "from": "8.2/O1",
+   "to": "8.2/O3",
+   "type": "prepares",
+   "why": "the table's cells and margins are the same regions as the shaded diagram, so students who drew them transfer the structure instead of learning a second representation cold",
+   "by": "receiver"
+  },
+  {
+   "from": "8.2/O4",
+   "to": "8.3/O4",
+   "type": "requires",
+   "why": "when the sample space is finite with equally likely outcomes, P(E) = n(E)/n(S), so both numbers are counts of set elements and the probability cannot be computed without them",
+   "by": "sender"
+  },
+  {
+   "from": "8.2/O4",
+   "to": "8.4/O1",
+   "type": "requires",
+   "why": "a complex event such as A or B is counted by the union rule before it is divided by n(S), so double counting the overlap here produces a probability greater than one",
+   "by": "sender"
+  },
+  {
+   "from": "8.2/O4",
+   "to": "8.5/O3",
+   "type": "requires",
+   "why": "the Addition Rule P(A or B) = P(A) + P(B) - P(A and B) is the union rule with every count divided by n(S), and the subtraction term is unmotivated without it",
+   "by": "sender"
+  },
+  {
+   "from": "1.6/O1",
+   "to": "8.2/O4",
+   "type": "prepares",
+   "why": "these problems usually give totals and ask for one unknown region, which is solving a first-degree equation, so students without that fluency guess at the missing number",
+   "by": "receiver"
+  },
+  {
+   "from": "8.1/O4",
+   "to": "8.2/O4",
+   "type": "requires",
+   "why": "the union rule adds the sizes of two sets and subtracts the size of their intersection, so both operations must be identifiable in the problem",
+   "by": "receiver"
+  },
+  {
+   "from": "8.2/O1",
+   "to": "8.2/O4",
+   "type": "requires",
+   "why": "the diagram method of this objective is the shading method with numbers written into the regions",
+   "by": "receiver"
+  },
+  {
+   "from": "8.3/O1",
+   "to": "8.3/O2",
+   "type": "requires",
+   "why": "a sample space is defined as the set of all outcomes of one trial of an experiment, so the words experiment, trial, and outcome must be pinned down before either can be written",
+   "by": "sender"
+  },
+  {
+   "from": "8.3/O1",
+   "to": "8.3/O4",
+   "type": "prepares",
+   "why": "students who have not separated outcome from event routinely count an event as a single outcome and produce 1/n for every probability",
+   "by": "sender"
+  },
+  {
+   "from": "8.3/O1",
+   "to": "8.3/O6",
+   "type": "requires",
+   "why": "judging an assignment impossible depends on the rules that probabilities lie between 0 and 1 and total 1 over the sample space, which are part of this vocabulary",
+   "by": "sender"
+  },
+  {
+   "from": "8.3/O1",
+   "to": "8.5/O2",
+   "type": "prepares",
+   "why": "explaining independence versus dependence is a vocabulary task, and it is unreachable if experiment, trial, and event are still fuzzy",
+   "by": "sender"
+  },
+  {
+   "from": "8.1/O1",
+   "to": "8.3/O1",
+   "type": "requires",
+   "why": "a sample space is a set and an outcome is one of its elements, so this vocabulary is set vocabulary renamed",
+   "by": "receiver"
+  },
+  {
+   "from": "8.1/O2",
+   "to": "8.3/O1",
+   "type": "prepares",
+   "why": "the definition of an event as a subset of the sample space lands as a fact rather than a definition if subset is not already meaningful",
+   "by": "receiver"
+  },
+  {
+   "from": "8.3/O2",
+   "to": "8.3/O3",
+   "type": "requires",
+   "why": "checking that two events share no outcome requires both events to be written out as sets of outcomes first",
+   "by": "sender"
+  },
+  {
+   "from": "8.3/O2",
+   "to": "8.3/O4",
+   "type": "requires",
+   "why": "the equally likely formula needs the size of the event and the size of the sample space, neither of which exists until both are written down",
+   "by": "sender"
+  },
+  {
+   "from": "8.3/O2",
+   "to": "9.1/O1",
+   "type": "requires",
+   "why": "a probability distribution lists each value of the random variable against the outcomes producing it, so the sample space must be enumerable",
+   "by": "sender"
+  },
+  {
+   "from": "8.3/O2",
+   "to": "9.2/O3",
+   "type": "prepares",
+   "why": "students who have written out the sample space of a two-stage experiment by hand see why the multiplication principle multiplies the stage counts instead of adding them",
+   "by": "sender"
+  },
+  {
+   "from": "8.1/O1",
+   "to": "8.3/O2",
+   "type": "requires",
+   "why": "writing a sample space is writing a set in roster form, so roster notation and element identification are the mechanics of the task",
+   "by": "receiver"
+  },
+  {
+   "from": "8.1/O2",
+   "to": "8.3/O2",
+   "type": "requires",
+   "why": "every event must be a subset of the sample space, and students who cannot check that relation write events containing impossible outcomes",
+   "by": "receiver"
+  },
+  {
+   "from": "8.3/O1",
+   "to": "8.3/O2",
+   "type": "requires",
+   "why": "which collection is the sample space and which is the event is decided entirely by the definitions of those terms",
+   "by": "receiver"
+  },
+  {
+   "from": "8.3/O3",
+   "to": "8.4/O1",
+   "type": "prepares",
+   "why": "complex events built with 'or' are computed by simple addition exactly when the pieces are disjoint, so recognizing disjointness tells the student which shortcut is legal",
+   "by": "sender"
+  },
+  {
+   "from": "8.3/O3",
+   "to": "8.5/O2",
+   "type": "prepares",
+   "why": "the central misconception of this course's probability strand is conflating disjoint with independent, and it forms unless disjointness was first made concrete as empty overlap",
+   "by": "sender"
+  },
+  {
+   "from": "8.3/O3",
+   "to": "8.5/O3",
+   "type": "requires",
+   "why": "the Addition Rule drops its subtraction term precisely when the events are disjoint, so misidentifying disjointness gives a wrong probability with no visible symptom",
+   "by": "sender"
+  },
+  {
+   "from": "8.1/O4",
+   "to": "8.3/O3",
+   "type": "requires",
+   "why": "disjoint is defined as having empty intersection, so intersection must be identifiable before emptiness can be tested",
+   "by": "receiver"
+  },
+  {
+   "from": "8.3/O2",
+   "to": "8.3/O3",
+   "type": "requires",
+   "why": "the test compares the outcome lists of two events, which requires those events to be written as sets",
+   "by": "receiver"
+  },
+  {
+   "from": "8.3/O4",
+   "to": "8.3/O5",
+   "type": "requires",
+   "why": "an application is this computation preceded by a translation, so the computation itself must be reliable",
+   "by": "sender"
+  },
+  {
+   "from": "8.3/O4",
+   "to": "8.3/O6",
+   "type": "prepares",
+   "why": "students who have computed several probabilities have a working sense that values live between 0 and 1 and total 1, which is what the impossibility check formalizes",
+   "by": "sender"
+  },
+  {
+   "from": "8.3/O4",
+   "to": "8.4/O1",
+   "type": "requires",
+   "why": "a complex event's probability is assembled from the probabilities of its pieces, each obtained by this calculation",
+   "by": "sender"
+  },
+  {
+   "from": "8.3/O4",
+   "to": "8.4/O4",
+   "type": "requires",
+   "why": "converting a probability to odds requires a probability to convert, and the conversion uses its numerator and denominator as favorable and total counts",
+   "by": "sender"
+  },
+  {
+   "from": "8.2/O4",
+   "to": "8.3/O4",
+   "type": "requires",
+   "why": "in the finite equally likely case this course uses, P(E) = n(E)/n(S) is a pair of set counts, so the counting technique is the calculation; the dependence disappears only for probabilities given empirically rather than counted",
+   "by": "receiver"
+  },
+  {
+   "from": "8.3/O1",
+   "to": "8.3/O4",
+   "type": "prepares",
+   "why": "without a firm outcome-versus-event distinction the numerator is taken to be 1 whenever the event is described by a single phrase",
+   "by": "receiver"
+  },
+  {
+   "from": "8.3/O2",
+   "to": "8.3/O4",
+   "type": "requires",
+   "why": "the event and the sample space must be written down before their sizes can be counted",
+   "by": "receiver"
+  },
+  {
+   "from": "8.3/O5",
+   "to": "8.5/O4",
+   "type": "prepares",
+   "why": "conditional applications are these applications with the sample space restricted, so students who can already extract the event and the total from a paragraph only have to notice the restriction",
+   "by": "sender"
+  },
+  {
+   "from": "8.3/O5",
+   "to": "9.3/O1",
+   "type": "prepares",
+   "why": "counting applications replace the hand-listed numerator and denominator with permutation and combination counts, and the surrounding setup is unchanged",
+   "by": "sender"
+  },
+  {
+   "from": "8.1/O6",
+   "to": "8.3/O5",
+   "type": "prepares",
+   "why": "the wording of these problems is set-application wording, so the translation into sets has already been practiced without the added burden of a ratio",
+   "by": "receiver"
+  },
+  {
+   "from": "8.3/O4",
+   "to": "8.3/O5",
+   "type": "requires",
+   "why": "the final step is the probability calculation, which must be secure before it is buried inside a word problem",
+   "by": "receiver"
+  },
+  {
+   "from": "8.3/O6",
+   "to": "9.1/O1",
+   "type": "requires",
+   "why": "a probability distribution is valid only if every entry is between 0 and 1 and the entries total 1, which is exactly the check performed here",
+   "by": "sender"
+  },
+  {
+   "from": "8.3/O6",
+   "to": "9.1/O3",
+   "type": "prepares",
+   "why": "expected value is a weighted average whose weights must sum to 1, and students who have checked assignments notice immediately when a table does not total 1",
+   "by": "sender"
+  },
+  {
+   "from": "1.1/O4",
+   "to": "8.3/O6",
+   "type": "prepares",
+   "why": "the test is a chain of comparisons of fractions, decimals, and percents against 0 and 1, so students weak at ordering real numbers miss that 1.2 or a negative entry is illegal",
+   "by": "receiver"
+  },
+  {
+   "from": "8.3/O1",
+   "to": "8.3/O6",
+   "type": "requires",
+   "why": "the criteria being checked are the definitional rules for a probability assignment over a sample space",
+   "by": "receiver"
+  },
+  {
+   "from": "8.3/O4",
+   "to": "8.3/O6",
+   "type": "prepares",
+   "why": "having produced probabilities by counting gives a concrete reason why the values over the whole sample space must add to 1",
+   "by": "receiver"
+  },
+  {
+   "from": "8.4/O1",
+   "to": "8.4/O3",
+   "type": "requires",
+   "why": "odds compare P(E) with P(not E), so the complement rule from complex events is what produces the second half of the ratio",
+   "by": "sender"
+  },
+  {
+   "from": "8.4/O1",
+   "to": "8.5/O3",
+   "type": "requires",
+   "why": "the Addition Rule taught in 8.5 is literally the union rule P(A or B)=P(A)+P(B)-P(A and B) practiced here",
+   "by": "sender"
+  },
+  {
+   "from": "8.4/O1",
+   "to": "9.3/O1",
+   "type": "prepares",
+   "why": "counting problems phrased 'at least one' are solved as 1 minus the probability of none, which is the complement trick from this objective",
+   "by": "sender"
+  },
+  {
+   "from": "8.4/O1",
+   "to": "9.4/O1",
+   "type": "prepares",
+   "why": "binomial questions asking for 'at least k successes' are answered by adding disjoint cases or subtracting from 1, both learned here",
+   "by": "sender"
+  },
+  {
+   "from": "8.3/O4",
+   "to": "8.4/O1",
+   "type": "requires",
+   "why": "the union and complement rules combine probabilities of the individual events, which must already be computable",
+   "by": "receiver"
+  },
+  {
+   "from": "8.1/O4",
+   "to": "8.4/O1",
+   "type": "requires",
+   "why": "a student who cannot tell whether 'A or B' names a union and 'A and B' an intersection cannot pick which probability rule applies",
+   "by": "receiver"
+  },
+  {
+   "from": "8.1/O3",
+   "to": "8.4/O1",
+   "type": "requires",
+   "why": "P(not A)=1-P(A) presupposes being able to identify the complement of a set inside the universal set",
+   "by": "receiver"
+  },
+  {
+   "from": "8.2/O4",
+   "to": "8.4/O1",
+   "type": "prepares",
+   "why": "the counting union rule n(A or B)=n(A)+n(B)-n(A and B) is the same inclusion-exclusion, so students who met it there do not double-count the overlap in probabilities",
+   "by": "receiver"
+  },
+  {
+   "from": "8.3/O3",
+   "to": "8.4/O1",
+   "type": "prepares",
+   "why": "without knowing what disjoint means, students apply the shortcut P(A)+P(B) to overlapping events and overcount",
+   "by": "receiver"
+  },
+  {
+   "from": "8.4/O2",
+   "to": "8.5/O1",
+   "type": "prepares",
+   "why": "conditional probability is visualised as restricting attention to the inside of one circle, so a student who can already read regions sees the shrunken denominator",
+   "by": "sender"
+  },
+  {
+   "from": "8.4/O2",
+   "to": "8.5/O4",
+   "type": "prepares",
+   "why": "word problems with two overlapping categories are set up fastest by filling a two-circle diagram before any rule is chosen",
+   "by": "sender"
+  },
+  {
+   "from": "8.2/O1",
+   "to": "8.4/O2",
+   "type": "requires",
+   "why": "you cannot place probabilities into regions of a diagram you cannot draw for a union, intersection, or complement",
+   "by": "receiver"
+  },
+  {
+   "from": "8.3/O4",
+   "to": "8.4/O2",
+   "type": "requires",
+   "why": "the numbers written into the regions are probabilities of events and must be computable as such",
+   "by": "receiver"
+  },
+  {
+   "from": "8.2/O2",
+   "to": "8.4/O2",
+   "type": "prepares",
+   "why": "the fill-the-intersection-first-then-work-outward procedure is identical, with probabilities standing in for element counts",
+   "by": "receiver"
+  },
+  {
+   "from": "8.1/O5",
+   "to": "8.4/O2",
+   "type": "prepares",
+   "why": "deciding which region a given outcome belongs to is exactly evaluating a compound set expression on that element",
+   "by": "receiver"
+  },
+  {
+   "from": "8.4/O3",
+   "to": "8.4/O4",
+   "type": "requires",
+   "why": "converting probability to odds and back is impossible without first being able to form the favorable-to-unfavorable ratio",
+   "by": "sender"
+  },
+  {
+   "from": "8.3/O4",
+   "to": "8.4/O3",
+   "type": "requires",
+   "why": "odds are built from the count or probability of the favorable outcomes, which this objective supplies",
+   "by": "receiver"
+  },
+  {
+   "from": "8.1/O3",
+   "to": "8.4/O3",
+   "type": "requires",
+   "why": "the second term of the ratio is the complement event, so the complement of a set must already be identifiable",
+   "by": "receiver"
+  },
+  {
+   "from": "1.4/O1",
+   "to": "8.4/O3",
+   "type": "prepares",
+   "why": "odds must be reported in lowest terms, so a student who cannot reduce 6:4 to 3:2 gives an answer that is marked wrong",
+   "by": "receiver"
+  },
+  {
+   "from": "8.4/O3",
+   "to": "8.4/O4",
+   "type": "requires",
+   "why": "the conversion starts from an odds ratio that must first be computable",
+   "by": "receiver"
+  },
+  {
+   "from": "8.3/O4",
+   "to": "8.4/O4",
+   "type": "requires",
+   "why": "going from odds a:b back to probability a/(a+b) rests on probability meaning favorable over total",
+   "by": "receiver"
+  },
+  {
+   "from": "1.6/O3",
+   "to": "8.4/O4",
+   "type": "prepares",
+   "why": "the conversion in the other direction is rearranging P/(1-P)=a/b for P, which is solving a formula for a specified variable",
+   "by": "receiver"
+  },
+  {
+   "from": "8.4/O5",
+   "to": "8.5/O1",
+   "type": "prepares",
+   "why": "a conditional probability read off a data table is an empirical probability with a row or column total as the denominator",
+   "by": "sender"
+  },
+  {
+   "from": "8.4/O5",
+   "to": "9.1/O1",
+   "type": "prepares",
+   "why": "observed relative frequencies are one of the two legitimate sources for the probabilities that fill a distribution table",
+   "by": "sender"
+  },
+  {
+   "from": "8.4/O5",
+   "to": "10.1/O1",
+   "type": "prepares",
+   "why": "the relative-frequency column of a frequency distribution is exactly the empirical probability computed here",
+   "by": "sender"
+  },
+  {
+   "from": "8.3/O4",
+   "to": "8.4/O5",
+   "type": "requires",
+   "why": "empirical probability is still favorable over total, now with observed counts in place of equally likely outcomes",
+   "by": "receiver"
+  },
+  {
+   "from": "8.2/O3",
+   "to": "8.4/O5",
+   "type": "requires",
+   "why": "empirical probability problems present the data as a two-way contingency table, which must be readable before any entry can be divided by a total",
+   "by": "receiver"
+  },
+  {
+   "from": "8.3/O1",
+   "to": "8.4/O5",
+   "type": "prepares",
+   "why": "distinguishing an empirical probability from a theoretical one depends on the experiment/trial/outcome vocabulary",
+   "by": "receiver"
+  },
+  {
+   "from": "8.5/O1",
+   "to": "8.5/O2",
+   "type": "requires",
+   "why": "independence is stated as P(A given B)=P(A), which cannot be checked or explained without computing conditional probabilities",
+   "by": "sender"
+  },
+  {
+   "from": "8.5/O1",
+   "to": "8.5/O3",
+   "type": "requires",
+   "why": "the Product Rule P(A and B)=P(B)P(A given B) is this objective's formula rearranged",
+   "by": "sender"
+  },
+  {
+   "from": "8.5/O1",
+   "to": "8.5/O4",
+   "type": "requires",
+   "why": "the applications are word problems whose entire computation is a conditional probability",
+   "by": "sender"
+  },
+  {
+   "from": "8.3/O4",
+   "to": "8.5/O1",
+   "type": "requires",
+   "why": "P(A given B) is the quotient of two ordinary probabilities and neither can be found without this",
+   "by": "receiver"
+  },
+  {
+   "from": "8.1/O4",
+   "to": "8.5/O1",
+   "type": "requires",
+   "why": "the numerator is the intersection, and students who read 'A given B' as a union compute the wrong numerator",
+   "by": "receiver"
+  },
+  {
+   "from": "8.3/O2",
+   "to": "8.5/O1",
+   "type": "requires",
+   "why": "conditioning means shrinking the sample space to B, so the sample space and event must be writable in the first place",
+   "by": "receiver"
+  },
+  {
+   "from": "8.2/O3",
+   "to": "8.5/O1",
+   "type": "prepares",
+   "why": "the standard first examples take the new denominator from a contingency table row or column total",
+   "by": "receiver"
+  },
+  {
+   "from": "1.4/O2",
+   "to": "8.5/O1",
+   "type": "prepares",
+   "why": "evaluating something like (1/6)/(1/2) requires dividing by a fraction via its reciprocal, which is where the arithmetic actually fails",
+   "by": "receiver"
+  },
+  {
+   "from": "8.5/O2",
+   "to": "8.5/O3",
+   "type": "prepares",
+   "why": "whether the Product Rule uses P(A) or P(A given B) is decided by judging independence",
+   "by": "sender"
+  },
+  {
+   "from": "8.5/O2",
+   "to": "8.5/O4",
+   "type": "requires",
+   "why": "the applications hinge on deciding from the wording whether trials are independent, e.g. drawing with or without replacement",
+   "by": "sender"
+  },
+  {
+   "from": "8.5/O2",
+   "to": "9.4/O1",
+   "type": "prepares",
+   "why": "the binomial model is only valid for independent trials with a constant success probability, and students who never separated independence from disjointness apply it to sampling without replacement",
+   "by": "sender"
+  },
+  {
+   "from": "8.5/O1",
+   "to": "8.5/O2",
+   "type": "requires",
+   "why": "every concept here is phrased in terms of conditional probability and cannot be discussed before it is computed",
+   "by": "receiver"
+  },
+  {
+   "from": "8.3/O3",
+   "to": "8.5/O2",
+   "type": "requires",
+   "why": "the central explanation is that disjoint and independent are different, which is unstatable without knowing what disjoint means",
+   "by": "receiver"
+  },
+  {
+   "from": "8.3/O1",
+   "to": "8.5/O2",
+   "type": "prepares",
+   "why": "the explanations are given in the experiment/event/outcome vocabulary established there",
+   "by": "receiver"
+  },
+  {
+   "from": "8.5/O3",
+   "to": "8.5/O4",
+   "type": "requires",
+   "why": "the applications are solved by selecting and applying one of these two rules",
+   "by": "sender"
+  },
+  {
+   "from": "8.5/O3",
+   "to": "9.1/O1",
+   "type": "prepares",
+   "why": "the probability attached to one value of a random variable is usually the sum of several disjoint outcome probabilities, which is the Addition Rule for disjoint events",
+   "by": "sender"
+  },
+  {
+   "from": "8.5/O3",
+   "to": "9.3/O1",
+   "type": "prepares",
+   "why": "multi-stage counting problems such as drawing two cards without replacement are computed as a product of a probability and a conditional probability",
+   "by": "sender"
+  },
+  {
+   "from": "8.5/O3",
+   "to": "9.4/O1",
+   "type": "requires",
+   "why": "the binomial formula is the Product Rule across independent trials multiplied by the count of equally likely disjoint arrangements, which is the Addition Rule",
+   "by": "sender"
+  },
+  {
+   "from": "8.4/O1",
+   "to": "8.5/O3",
+   "type": "requires",
+   "why": "the Addition Rule is the union rule for complex events, already established there",
+   "by": "receiver"
+  },
+  {
+   "from": "8.5/O1",
+   "to": "8.5/O3",
+   "type": "requires",
+   "why": "the general Product Rule's second factor is a conditional probability",
+   "by": "receiver"
+  },
+  {
+   "from": "8.3/O3",
+   "to": "8.5/O3",
+   "type": "prepares",
+   "why": "recognising disjointness is what tells a student the subtraction term is zero rather than forgotten",
+   "by": "receiver"
+  },
+  {
+   "from": "8.2/O4",
+   "to": "8.5/O3",
+   "type": "prepares",
+   "why": "the counting union rule gives the inclusion-exclusion pattern before it reappears with probabilities",
+   "by": "receiver"
+  },
+  {
+   "from": "8.5/O4",
+   "to": "9.3/O1",
+   "type": "prepares",
+   "why": "counting-based probability problems are the same conditional and independent-event situations with counting supplying the numerator and denominator",
+   "by": "sender"
+  },
+  {
+   "from": "8.5/O4",
+   "to": "9.4/O1",
+   "type": "prepares",
+   "why": "binomial word problems are independent-trial applications and the modelling step is the one rehearsed here",
+   "by": "sender"
+  },
+  {
+   "from": "8.5/O1",
+   "to": "8.5/O4",
+   "type": "requires",
+   "why": "the computations in these applications are conditional probabilities",
+   "by": "receiver"
+  },
+  {
+   "from": "8.5/O3",
+   "to": "8.5/O4",
+   "type": "requires",
+   "why": "the applications are solved by applying the Addition or Product Rule to the quantities extracted from the problem",
+   "by": "receiver"
+  },
+  {
+   "from": "8.5/O2",
+   "to": "8.5/O4",
+   "type": "requires",
+   "why": "choosing between the independent and the general form of the Product Rule requires judging independence from the wording",
+   "by": "receiver"
+  },
+  {
+   "from": "8.2/O3",
+   "to": "8.5/O4",
+   "type": "prepares",
+   "why": "many of these word problems arrive as a two-way table, and reading the margins is what turns the prose into numbers",
+   "by": "receiver"
+  },
+  {
+   "from": "9.1/O1",
+   "to": "9.1/O2",
+   "type": "requires",
+   "why": "the histogram's bars are the rows of the distribution table, so there is nothing to draw without it",
+   "by": "sender"
+  },
+  {
+   "from": "9.1/O1",
+   "to": "9.1/O3",
+   "type": "requires",
+   "why": "expected value is computed row by row from the completed table of values and probabilities",
+   "by": "sender"
+  },
+  {
+   "from": "9.1/O1",
+   "to": "9.4/O1",
+   "type": "prepares",
+   "why": "the binomial model is a probability distribution over the number of successes, and students who have built tables by hand recognise what the formula is producing",
+   "by": "sender"
+  },
+  {
+   "from": "9.1/O1",
+   "to": "10.1/O1",
+   "type": "prepares",
+   "why": "a frequency distribution has the same value-and-weight table structure, with counts in place of probabilities",
+   "by": "sender"
+  },
+  {
+   "from": "8.3/O2",
+   "to": "9.1/O1",
+   "type": "requires",
+   "why": "the rows of the table are the disjoint events X equals x carved out of the sample space, which must first be writable",
+   "by": "receiver"
+  },
+  {
+   "from": "8.3/O4",
+   "to": "9.1/O1",
+   "type": "requires",
+   "why": "every entry in the second column is the probability of an event and must be computable",
+   "by": "receiver"
+  },
+  {
+   "from": "8.3/O6",
+   "to": "9.1/O1",
+   "type": "requires",
+   "why": "a table is a valid distribution exactly when its entries lie between 0 and 1 and sum to 1, which is the test taught there",
+   "by": "receiver"
+  },
+  {
+   "from": "8.5/O3",
+   "to": "9.1/O1",
+   "type": "prepares",
+   "why": "collecting several outcomes into one value of X is adding probabilities of disjoint events",
+   "by": "receiver"
+  },
+  {
+   "from": "9.2/O1",
+   "to": "9.1/O1",
+   "type": "prepares",
+   "why": "counting how many outcomes give each value of X, as in the number of heads in five flips, is a combination count that this course does not teach until the same week or later",
+   "by": "receiver"
+  },
+  {
+   "from": "9.1/O2",
+   "to": "10.1/O1",
+   "type": "prepares",
+   "why": "histograms are first drawn and read here, so the axis-and-bar conventions are already in place when frequency histograms arrive",
+   "by": "sender"
+  },
+  {
+   "from": "9.1/O2",
+   "to": "10.2/O5",
+   "type": "prepares",
+   "why": "judging whether a distribution is symmetric or skewed is done by looking at the histogram shape",
+   "by": "sender"
+  },
+  {
+   "from": "9.1/O2",
+   "to": "10.4/O1",
+   "type": "prepares",
+   "why": "the idea that a probability is an area shaded under a graph is what makes area under the normal curve mean anything",
+   "by": "sender"
+  },
+  {
+   "from": "9.1/O1",
+   "to": "9.1/O2",
+   "type": "requires",
+   "why": "the bar heights are the probabilities from the distribution table",
+   "by": "receiver"
+  },
+  {
+   "from": "8.4/O1",
+   "to": "9.1/O2",
+   "type": "prepares",
+   "why": "shading several bars and adding their heights is the union of disjoint events, so the addition is not arbitrary",
+   "by": "receiver"
+  },
+  {
+   "from": "1.1/O5",
+   "to": "9.1/O2",
+   "type": "prepares",
+   "why": "shading the values of X between two bounds on a horizontal axis is graphing an interval on a number line",
+   "by": "receiver"
+  },
+  {
+   "from": "9.1/O3",
+   "to": "9.1/O4",
+   "type": "requires",
+   "why": "every application is an interpretation of a number that must first be computed",
+   "by": "sender"
+  },
+  {
+   "from": "9.1/O3",
+   "to": "10.2/O1",
+   "type": "prepares",
+   "why": "the mean from a frequency distribution is the same weighted sum with relative frequencies as the weights",
+   "by": "sender"
+  },
+  {
+   "from": "9.1/O1",
+   "to": "9.1/O3",
+   "type": "requires",
+   "why": "expected value is a sum over the rows of a probability distribution, which must exist and be valid first",
+   "by": "receiver"
+  },
+  {
+   "from": "1.1/O3",
+   "to": "9.1/O3",
+   "type": "prepares",
+   "why": "the formula is a sum of products, and students who add the values and the probabilities before multiplying get a wrong answer purely from order of operations",
+   "by": "receiver"
+  },
+  {
+   "from": "8.4/O5",
+   "to": "9.1/O3",
+   "type": "prepares",
+   "why": "reading expected value as the long-run average per trial rests on the relative-frequency meaning of probability met with empirical data",
+   "by": "receiver"
+  },
+  {
+   "from": "9.1/O3",
+   "to": "9.1/O4",
+   "type": "requires",
+   "why": "the application is a decision made from a computed expected value",
+   "by": "receiver"
+  },
+  {
+   "from": "9.1/O1",
+   "to": "9.1/O4",
+   "type": "requires",
+   "why": "the modelling step is building the table of payoffs and their probabilities from the prose",
+   "by": "receiver"
+  },
+  {
+   "from": "1.6/O1",
+   "to": "9.1/O4",
+   "type": "prepares",
+   "why": "questions like 'what entry fee makes the game fair' are solved by setting the expected value to zero and solving a first-degree equation for the unknown",
+   "by": "receiver"
+  },
+  {
+   "from": "8.4/O3",
+   "to": "9.1/O4",
+   "type": "prepares",
+   "why": "payoffs in betting problems are quoted as odds, so reading '5 to 1' as a payoff ratio is needed to fill the value column",
+   "by": "receiver"
+  },
+  {
+   "from": "9.2/O1",
+   "to": "9.2/O2",
+   "type": "requires",
+   "why": "comparing permutations with combinations, including seeing that nPr is r! times nCr, requires evaluating both",
+   "by": "sender"
+  },
+  {
+   "from": "9.2/O1",
+   "to": "9.2/O4",
+   "type": "requires",
+   "why": "a permutation application ends in an nPr evaluation",
+   "by": "sender"
+  },
+  {
+   "from": "9.2/O1",
+   "to": "9.2/O5",
+   "type": "requires",
+   "why": "a combination application ends in an nCr evaluation",
+   "by": "sender"
+  },
+  {
+   "from": "9.2/O1",
+   "to": "9.3/O1",
+   "type": "requires",
+   "why": "both the numerator and the denominator of these probabilities are permutation or combination counts",
+   "by": "sender"
+  },
+  {
+   "from": "9.2/O1",
+   "to": "9.4/O1",
+   "type": "requires",
+   "why": "the leading factor of the binomial formula is the combination nCk counting which trials are the successes",
+   "by": "sender"
+  },
+  {
+   "from": "9.2/O1",
+   "to": "9.1/O1",
+   "type": "prepares",
+   "why": "filling the probability column for a variable like the number of heads in five flips means counting outcomes with a combination, even though this section is taught alongside or after that one",
+   "by": "sender"
+  },
+  {
+   "from": "8.1/O2",
+   "to": "9.2/O1",
+   "type": "prepares",
+   "why": "counting subsets of a set is already counting combinations, so the idea arrives before the nCr notation names it",
+   "by": "receiver"
+  },
+  {
+   "from": "1.4/O1",
+   "to": "9.2/O1",
+   "type": "prepares",
+   "why": "evaluating 10!/7! by cancelling the common factors rather than expanding both factorials is reducing a quotient of products to lowest terms",
+   "by": "receiver"
+  },
+  {
+   "from": "9.2/O2",
+   "to": "9.2/O4",
+   "type": "requires",
+   "why": "the hard part of a permutation word problem is recognising that order matters, which is what this objective establishes",
+   "by": "sender"
+  },
+  {
+   "from": "9.2/O2",
+   "to": "9.2/O5",
+   "type": "requires",
+   "why": "recognising that a committee or a hand is unordered is what selects nCr over nPr",
+   "by": "sender"
+  },
+  {
+   "from": "9.2/O2",
+   "to": "9.2/O6",
+   "type": "requires",
+   "why": "mixed problems give no cue about which tool to use, so the discrimination itself is the skill being tested",
+   "by": "sender"
+  },
+  {
+   "from": "9.2/O2",
+   "to": "9.3/O1",
+   "type": "prepares",
+   "why": "using the same counting method for numerator and denominator is what keeps a counting-based probability consistent, and that choice is made here",
+   "by": "sender"
+  },
+  {
+   "from": "9.2/O1",
+   "to": "9.2/O2",
+   "type": "requires",
+   "why": "the comparison is between quantities that must be computable before they can be compared",
+   "by": "receiver"
+  },
+  {
+   "from": "8.1/O1",
+   "to": "9.2/O2",
+   "type": "prepares",
+   "why": "a set is the same set however its elements are listed, which is precisely why a combination ignores order and a permutation does not",
+   "by": "receiver"
+  },
+  {
+   "from": "8.1/O2",
+   "to": "9.2/O2",
+   "type": "prepares",
+   "why": "having counted subsets gives a concrete unordered case to contrast with arrangements",
+   "by": "receiver"
+  },
+  {
+   "from": "9.2/O3",
+   "to": "9.2/O4",
+   "type": "prepares",
+   "why": "nPr is repeated use of the multiplication principle with one fewer option at each stage, so the formula is a shortcut rather than a new rule",
+   "by": "sender"
+  },
+  {
+   "from": "9.2/O3",
+   "to": "9.2/O6",
+   "type": "requires",
+   "why": "mixed problems chain stages together, and the stages are combined by multiplying",
+   "by": "sender"
+  },
+  {
+   "from": "9.2/O3",
+   "to": "9.3/O1",
+   "type": "requires",
+   "why": "the size of the sample space in these probability problems, such as the number of possible license plates, is a multiplication-principle count",
+   "by": "sender"
+  },
+  {
+   "from": "9.2/O3",
+   "to": "9.4/O1",
+   "type": "prepares",
+   "why": "the number of possible success-failure sequences in n trials is the multiplication principle applied n times",
+   "by": "sender"
+  },
+  {
+   "from": "8.3/O2",
+   "to": "9.2/O3",
+   "type": "prepares",
+   "why": "listing a small sample space with a tree diagram is the concrete thing the multiplication principle abbreviates, so students who have listed one believe the product",
+   "by": "receiver"
+  },
+  {
+   "from": "1.2/O1",
+   "to": "9.2/O3",
+   "type": "prepares",
+   "why": "when the same number of choices repeats, the count is a power such as 10 to the fourth, so evaluating exponential expressions is the arithmetic step",
+   "by": "receiver"
+  },
+  {
+   "from": "8.1/O2",
+   "to": "9.2/O3",
+   "type": "prepares",
+   "why": "the count of 2 to the n subsets is the multiplication principle applied to an in-or-out choice for each element",
+   "by": "receiver"
+  },
+  {
+   "from": "9.2/O4",
+   "to": "9.2/O6",
+   "type": "requires",
+   "why": "the ordered stages of a mixed problem are permutation counts",
+   "by": "sender"
+  },
+  {
+   "from": "9.2/O4",
+   "to": "9.3/O1",
+   "type": "requires",
+   "why": "the probability of one particular arrangement, such as a specific finishing order, has a permutation count in its denominator",
+   "by": "sender"
+  },
+  {
+   "from": "9.2/O1",
+   "to": "9.2/O4",
+   "type": "requires",
+   "why": "the application terminates in evaluating nPr",
+   "by": "receiver"
+  },
+  {
+   "from": "9.2/O2",
+   "to": "9.2/O4",
+   "type": "requires",
+   "why": "the problem must first be classified as one where order matters",
+   "by": "receiver"
+  },
+  {
+   "from": "9.2/O3",
+   "to": "9.2/O4",
+   "type": "prepares",
+   "why": "arrangements with restrictions are handled by counting stage by stage rather than by the formula alone",
+   "by": "receiver"
+  },
+  {
+   "from": "9.2/O5",
+   "to": "9.2/O6",
+   "type": "requires",
+   "why": "the unordered stages of a mixed problem, such as choosing a subcommittee, are combination counts",
+   "by": "sender"
+  },
+  {
+   "from": "9.2/O5",
+   "to": "9.3/O1",
+   "type": "requires",
+   "why": "card-hand and committee probabilities are a combination count divided by a combination count",
+   "by": "sender"
+  },
+  {
+   "from": "9.2/O5",
+   "to": "9.4/O1",
+   "type": "requires",
+   "why": "the binomial coefficient counts which k of the n trials succeed, which is a combination application",
+   "by": "sender"
+  },
+  {
+   "from": "9.2/O1",
+   "to": "9.2/O5",
+   "type": "requires",
+   "why": "the application terminates in evaluating nCr",
+   "by": "receiver"
+  },
+  {
+   "from": "9.2/O2",
+   "to": "9.2/O5",
+   "type": "requires",
+   "why": "the problem must first be classified as one where order does not matter",
+   "by": "receiver"
+  },
+  {
+   "from": "8.1/O2",
+   "to": "9.2/O5",
+   "type": "prepares",
+   "why": "choosing r of n objects is choosing a subset of size r, an idea already met when counting subsets",
+   "by": "receiver"
+  },
+  {
+   "from": "9.2/O6",
+   "to": "9.3/O1",
+   "type": "requires",
+   "why": "counting-based probability problems are exactly these mixed counts placed over a total count",
+   "by": "sender"
+  },
+  {
+   "from": "9.2/O6",
+   "to": "9.4/O1",
+   "type": "prepares",
+   "why": "the binomial formula multiplies a combination by a chain of independent choices, the same mix-and-multiply structure",
+   "by": "sender"
+  },
+  {
+   "from": "9.2/O2",
+   "to": "9.2/O6",
+   "type": "requires",
+   "why": "a mixed problem gives no signal of which tool applies, so the discrimination between the three is the whole task",
+   "by": "receiver"
+  },
+  {
+   "from": "9.2/O3",
+   "to": "9.2/O6",
+   "type": "requires",
+   "why": "the separately counted stages are combined by multiplying",
+   "by": "receiver"
+  },
+  {
+   "from": "9.2/O4",
+   "to": "9.2/O6",
+   "type": "requires",
+   "why": "the ordered stages are permutation counts",
+   "by": "receiver"
+  },
+  {
+   "from": "9.2/O5",
+   "to": "9.2/O6",
+   "type": "requires",
+   "why": "the unordered stages are combination counts",
+   "by": "receiver"
+  },
+  {
+   "from": "9.3/O1",
+   "to": "9.4/O1",
+   "type": "requires",
+   "why": "the C(n,x) factor in the binomial formula is exactly a combination counting which x of the n trials succeed, so binomial probability is this counting-based probability specialized to repeated trials",
+   "by": "sender"
+  },
+  {
+   "from": "9.2/O1",
+   "to": "9.3/O1",
+   "type": "requires",
+   "why": "the favorable and total counts in these problems are values of P(n,r) and C(n,r), so a student who cannot evaluate them numerically cannot form the ratio at all",
+   "by": "receiver"
+  },
+  {
+   "from": "8.3/O4",
+   "to": "9.3/O1",
+   "type": "requires",
+   "why": "the entire task is the equally-likely-outcomes formula P = favorable/total with counting formulas supplying both numbers, so without that formula the counts have nothing to be plugged into",
+   "by": "receiver"
+  },
+  {
+   "from": "9.2/O6",
+   "to": "9.3/O1",
+   "type": "prepares",
+   "why": "having already decided permutation versus combination in pure counting problems leaves the student only one new decision here, which count belongs in the numerator",
+   "by": "receiver"
+  },
+  {
+   "from": "8.3/O2",
+   "to": "9.3/O1",
+   "type": "prepares",
+   "why": "listing a small sample space by hand shows what the counting formula is a shortcut for, so students do not treat the denominator as an arbitrary formula output",
+   "by": "receiver"
+  },
+  {
+   "from": "9.2/O1",
+   "to": "9.4/O1",
+   "type": "requires",
+   "why": "every binomial computation begins by evaluating C(n,x), which cannot be produced without the combination formula",
+   "by": "receiver"
+  },
+  {
+   "from": "8.5/O3",
+   "to": "9.4/O1",
+   "type": "requires",
+   "why": "the p^x q^(n-x) factor is the Product Rule for independent events applied to one specific sequence of successes and failures, so without multiplying independent probabilities the formula has no derivation and no correct use",
+   "by": "receiver"
+  },
+  {
+   "from": "9.3/O1",
+   "to": "9.4/O1",
+   "type": "prepares",
+   "why": "students who have already built probabilities out of counts read C(n,x) as the number of arrangements of successes rather than as a memorized symbol in a formula",
+   "by": "receiver"
+  },
+  {
+   "from": "1.2/O1",
+   "to": "9.4/O1",
+   "type": "prepares",
+   "why": "p^x q^(n-x) requires raising decimals between 0 and 1 to integer powers, and students who have not evaluated exponential expressions confuse the exponent with a multiplier and get probabilities greater than 1",
+   "by": "receiver"
+  },
+  {
+   "from": "10.1/O1",
+   "to": "10.2/O1",
+   "type": "requires",
+   "why": "the frequency-distribution form of the mean multiplies each value by its frequency and divides by the total frequency, which is impossible without reading a frequency table",
+   "by": "sender"
+  },
+  {
+   "from": "10.1/O1",
+   "to": "10.2/O5",
+   "type": "prepares",
+   "why": "skewness and symmetry are properties a student sees in the histogram, so without one there is no picture against which to compare mean, median, and mode",
+   "by": "sender"
+  },
+  {
+   "from": "10.1/O1",
+   "to": "10.4/O1",
+   "type": "prepares",
+   "why": "the normal curve only reads as an idealized data shape to someone who has drawn histograms of real data; otherwise the bell curve arrives as an unmotivated formula",
+   "by": "sender"
+  },
+  {
+   "from": "9.1/O2",
+   "to": "10.1/O1",
+   "type": "prepares",
+   "why": "the histogram conventions (adjacent bars over intervals, height read off the vertical axis) are already learned there, so only the meaning of the vertical axis changes from probability to count",
+   "by": "receiver"
+  },
+  {
+   "from": "8.4/O5",
+   "to": "10.1/O1",
+   "type": "prepares",
+   "why": "empirical probability was computed as a relative frequency, so students meet the frequency table as the object those probabilities came from rather than as a new kind of chart",
+   "by": "receiver"
+  },
+  {
+   "from": "10.1/O2",
+   "to": "10.2/O2",
+   "type": "prepares",
+   "why": "a stem-and-leaf plot displays the data already sorted, which is precisely the ordering step students most often skip when locating the middle value",
+   "by": "sender"
+  },
+  {
+   "from": "10.1/O2",
+   "to": "10.2/O5",
+   "type": "prepares",
+   "why": "the plot shows skew and clustering while keeping the actual data values visible, so shape claims can be checked against the numbers that produced them",
+   "by": "sender"
+  },
+  {
+   "from": "10.1/O1",
+   "to": "10.1/O2",
+   "type": "prepares",
+   "why": "a stem-and-leaf plot is a histogram that keeps the original digits, so students who have not read a histogram do not see the stems as class intervals",
+   "by": "receiver"
+  },
+  {
+   "from": "10.2/O1",
+   "to": "10.2/O5",
+   "type": "requires",
+   "why": "comparing measures of center on a skewed data set is impossible without producing the mean, the measure that moves toward the tail",
+   "by": "sender"
+  },
+  {
+   "from": "10.2/O1",
+   "to": "10.3/O1",
+   "type": "requires",
+   "why": "standard deviation is computed from the deviations x minus the mean, so the mean must be in hand before a single deviation can be written",
+   "by": "sender"
+  },
+  {
+   "from": "10.2/O1",
+   "to": "10.3/O2",
+   "type": "requires",
+   "why": "these applications report and interpret the mean alongside the standard deviation, so the mean computation is part of the task itself",
+   "by": "sender"
+  },
+  {
+   "from": "10.2/O1",
+   "to": "10.4/O3",
+   "type": "requires",
+   "why": "converting a raw value to a z-score subtracts the mean, so no normal-distribution application can be started without it",
+   "by": "sender"
+  },
+  {
+   "from": "10.1/O1",
+   "to": "10.2/O1",
+   "type": "requires",
+   "why": "the objective explicitly includes finding the mean from a frequency distribution, which cannot be done without reading frequencies off such a table",
+   "by": "receiver"
+  },
+  {
+   "from": "9.1/O3",
+   "to": "10.2/O1",
+   "type": "prepares",
+   "why": "expected value is the sum of x times P(x), the same weighted average with relative frequencies in place of counts, so the frequency-distribution mean is a recomputation of a formula the student already knows",
+   "by": "receiver"
+  },
+  {
+   "from": "1.1/O3",
+   "to": "10.2/O1",
+   "type": "prepares",
+   "why": "the fraction bar in the mean formula is a grouping symbol, and students who do not treat it that way divide only the last data value instead of the whole sum",
+   "by": "receiver"
+  },
+  {
+   "from": "10.2/O2",
+   "to": "10.2/O5",
+   "type": "requires",
+   "why": "the central claim of that objective, that the median resists the pull of a skewed tail while the mean does not, cannot be made without computing a median",
+   "by": "sender"
+  },
+  {
+   "from": "10.1/O2",
+   "to": "10.2/O2",
+   "type": "prepares",
+   "why": "the stem-and-leaf plot hands the student a sorted list, making the ordering requirement of the median visible instead of an easily forgotten first step",
+   "by": "receiver"
+  },
+  {
+   "from": "1.1/O4",
+   "to": "10.2/O2",
+   "type": "prepares",
+   "why": "ordering a data set that contains negatives or decimals is comparing real numbers, and a student who ranks -3.2 above -3.15 lands on the wrong middle value",
+   "by": "receiver"
+  },
+  {
+   "from": "10.2/O3",
+   "to": "10.2/O4",
+   "type": "requires",
+   "why": "the applications are interpretations of a mode in context, which presupposes being able to identify one, including the no-mode and bimodal cases",
+   "by": "sender"
+  },
+  {
+   "from": "10.2/O3",
+   "to": "10.2/O5",
+   "type": "requires",
+   "why": "the objective compares multiple measures of center, and the mode is one of the three being compared",
+   "by": "sender"
+  },
+  {
+   "from": "10.1/O1",
+   "to": "10.2/O3",
+   "type": "prepares",
+   "why": "the mode is the value or class with the largest frequency, which a frequency table already displays as a column to scan and a histogram as the tallest bar",
+   "by": "receiver"
+  },
+  {
+   "from": "10.2/O3",
+   "to": "10.2/O4",
+   "type": "requires",
+   "why": "an application cannot be answered without first locating the mode, including recognizing when a data set has two modes or none",
+   "by": "receiver"
+  },
+  {
+   "from": "10.2/O5",
+   "to": "10.4/O1",
+   "type": "prepares",
+   "why": "the normal curve is the symmetric single-peaked shape in which mean, median, and mode coincide, so this shape vocabulary is what makes 'normal' a description of a distribution rather than just a name for a table",
+   "by": "sender"
+  },
+  {
+   "from": "10.2/O1",
+   "to": "10.2/O5",
+   "type": "requires",
+   "why": "the mean is one of the measures being compared and is the one that shifts with the tail",
+   "by": "receiver"
+  },
+  {
+   "from": "10.2/O2",
+   "to": "10.2/O5",
+   "type": "requires",
+   "why": "the median is one of the measures being compared and supplies the contrast with the mean under skew",
+   "by": "receiver"
+  },
+  {
+   "from": "10.2/O3",
+   "to": "10.2/O5",
+   "type": "requires",
+   "why": "the mode is one of the measures being compared and is what makes a bimodal shape describable",
+   "by": "receiver"
+  },
+  {
+   "from": "10.1/O1",
+   "to": "10.2/O5",
+   "type": "prepares",
+   "why": "shape is read off a histogram, so without histogram fluency the words symmetric and skewed have no picture attached and become memorized labels",
+   "by": "receiver"
+  },
+  {
+   "from": "10.3/O1",
+   "to": "10.3/O2",
+   "type": "requires",
+   "why": "the applications interpret a standard deviation in context, which requires being able to produce one from a data set",
+   "by": "sender"
+  },
+  {
+   "from": "10.3/O1",
+   "to": "10.4/O1",
+   "type": "prepares",
+   "why": "the spread of the normal curve is measured in standard deviations, so the 68-95-99.7 landmarks are meaningless to a student for whom one standard deviation is not yet a quantity computed from data",
+   "by": "sender"
+  },
+  {
+   "from": "10.3/O1",
+   "to": "10.4/O3",
+   "type": "requires",
+   "why": "the z-score divides by the standard deviation, so an application stating a population sigma still demands knowing what that number measures and how it enters the formula",
+   "by": "sender"
+  },
+  {
+   "from": "10.2/O1",
+   "to": "10.3/O1",
+   "type": "requires",
+   "why": "every deviation is x minus the mean, so the standard deviation formula cannot be started until the mean exists",
+   "by": "receiver"
+  },
+  {
+   "from": "1.1/O3",
+   "to": "10.3/O1",
+   "type": "prepares",
+   "why": "the formula nests four operations under a radical, and students who do not square each deviation before summing, or who take the root before dividing, get a wrong standard deviation from correct data",
+   "by": "receiver"
+  },
+  {
+   "from": "10.3/O2",
+   "to": "10.4/O3",
+   "type": "prepares",
+   "why": "judging a value as unusual because it sits a couple of standard deviations from the mean is the informal version of the z-score question, so the normal model formalizes a judgment the student has already made",
+   "by": "sender"
+  },
+  {
+   "from": "10.3/O1",
+   "to": "10.3/O2",
+   "type": "requires",
+   "why": "the application cannot be interpreted without first computing the standard deviation it is about",
+   "by": "receiver"
+  },
+  {
+   "from": "10.2/O1",
+   "to": "10.3/O2",
+   "type": "requires",
+   "why": "these applications report the mean together with the standard deviation, so the mean computation is part of the answer",
+   "by": "receiver"
+  },
+  {
+   "from": "10.4/O1",
+   "to": "10.4/O2",
+   "type": "requires",
+   "why": "finding the z that cuts off a given percentage is reading the same table backwards, which is impossible without fluency in the forward direction",
+   "by": "sender"
+  },
+  {
+   "from": "10.4/O1",
+   "to": "10.4/O3",
+   "type": "requires",
+   "why": "every application ultimately asks for a proportion of the population, which is an area under a portion of the curve",
+   "by": "sender"
+  },
+  {
+   "from": "9.1/O2",
+   "to": "10.4/O1",
+   "type": "prepares",
+   "why": "shading bars of a probability histogram and adding them is the discrete rehearsal of area equals probability, so the continuous curve reads as a refinement rather than a new rule; the lookup itself is mechanical enough that a student can execute it without this, which is why it is not requires",
+   "by": "receiver"
+  },
+  {
+   "from": "9.1/O1",
+   "to": "10.4/O1",
+   "type": "prepares",
+   "why": "knowing that a distribution's probabilities sum to 1 is what makes the total area equal 1, without which subtracting from 1 to get a right-tail area is a memorized move",
+   "by": "receiver"
+  },
+  {
+   "from": "8.4/O1",
+   "to": "10.4/O1",
+   "type": "prepares",
+   "why": "area to the right and area between two values are the complement and subtraction rules applied to areas, so students who reasoned that way about events do not need new rules here",
+   "by": "receiver"
+  },
+  {
+   "from": "10.3/O1",
+   "to": "10.4/O1",
+   "type": "prepares",
+   "why": "the horizontal axis is graduated in standard deviations, so the curve is only readable to a student for whom one standard deviation is already a computed quantity",
+   "by": "receiver"
+  },
+  {
+   "from": "10.2/O5",
+   "to": "10.4/O1",
+   "type": "prepares",
+   "why": "the shape vocabulary of symmetric and single-peaked with coinciding measures of center is what identifies which real distributions the normal model may be applied to",
+   "by": "receiver"
+  },
+  {
+   "from": "10.4/O2",
+   "to": "10.4/O3",
+   "type": "requires",
+   "why": "cutoff applications such as the score needed to be in the top 5 percent start from an area and must recover the z, which is exactly this skill",
+   "by": "sender"
+  },
+  {
+   "from": "10.4/O1",
+   "to": "10.4/O2",
+   "type": "requires",
+   "why": "this is the inverse of the area lookup, so a student who cannot map z to an area has no map to invert",
+   "by": "receiver"
+  },
+  {
+   "from": "1.6/O3",
+   "to": "10.4/O2",
+   "type": "prepares",
+   "why": "turning a z back into a raw score means solving z = (x - mu)/sigma for x, which is solving a formula for a specified variable; without that students memorize x = mu + z*sigma as an unrelated second formula",
+   "by": "receiver"
+  },
+  {
+   "from": "10.4/O1",
+   "to": "10.4/O3",
+   "type": "requires",
+   "why": "the answer to every such application is a proportion read as an area under the curve",
+   "by": "receiver"
+  },
+  {
+   "from": "10.4/O2",
+   "to": "10.4/O3",
+   "type": "requires",
+   "why": "applications that ask for a cutoff value rather than a percentage must go from area back to z and then to a raw score",
+   "by": "receiver"
+  },
+  {
+   "from": "10.2/O1",
+   "to": "10.4/O3",
+   "type": "requires",
+   "why": "the z-score formula subtracts the mean, so the application cannot be set up without it",
+   "by": "receiver"
+  },
+  {
+   "from": "10.3/O1",
+   "to": "10.4/O3",
+   "type": "requires",
+   "why": "the z-score formula divides by the standard deviation, so the application cannot be set up without it",
+   "by": "receiver"
+  },
+  {
+   "from": "10.3/O2",
+   "to": "10.4/O3",
+   "type": "prepares",
+   "why": "having already described a data set by its mean and standard deviation makes the normal application a matter of attaching probabilities to a summary the student can already interpret",
+   "by": "receiver"
+  }
+ ]
+}

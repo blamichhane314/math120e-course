@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang=en>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>math 120e · connections</title>
+<link rel=stylesheet href="styles.css?v=2">
+<body>
+<div id=rail><div class=mast><a href="index.html">math 120e</a><span class=sub>connections</span></div></div>
+<div id=read><div id=doc>
+  <h1><span class=num>connections</span>How the ideas depend on each other</h1>
+  <p class=lede>One objective at a time, with what it rests on and what it leads to.
+  The whole graph is never drawn — at this size a full map is a hairball, and it
+  answers no question a learner actually has.</p>
+  <div id=views></div>
+  <div id=ch hidden></div>
+  <div id=picker></div>
+  <div id=nb></div>
+  <div id=tl hidden></div>
+</div></div>
+<div id=margin></div>
+
+<script type=module>
+import { mountGraph, buildGraph, mountMatrix, mountChapters } from './js/graph.js?v=1';
+
+const raw = await (await fetch('data/graph_provisional.json', {cache:'no-store'})).json();
+
+// Round 1 is claims, not yet reconciled. A pair claimed from BOTH ends is
+// already mutually confirmed; one claimed from a single end is provisional.
+// Merge duplicates, keeping the stronger type and marking confirmation.
+const byPair = new Map();
+for (const e of raw.edges) {
+  const k = e.from + '>' + e.to;
+  const prev = byPair.get(k);
+  if (!prev) { byPair.set(k, { ...e, ends: new Set([e.claimedBy]) }); continue; }
+  prev.ends.add(e.claimedBy);
+  if (e.type === 'requires') prev.type = 'requires';
+  if (!prev.why && e.why) prev.why = e.why;
+}
+const edges = [...byPair.values()].map(e => ({ ...e, confirmed: e.ends.size > 1 }));
+const G = buildGraph(raw.nodes, edges);
+
+const nb = document.getElementById('nb');
+
+// Objectives in course order — stepping is the primary way through, because
+// walking the sequence is itself the thing being taught. The jump list stays
+// for when you already know where you are going.
+const ORDER = raw.nodes.filter(n => G.nodes[n.id]).map(n => n.id);
+let at = 0;
+
+const picker = document.getElementById('picker');
+picker.innerHTML =
+  '<div class=stepper>' +
+    '<button class=sbtn id=gprev title="previous objective">&lsaquo;&nbsp;prev</button>' +
+    '<span class=spos id=gpos></span>' +
+    '<button class=sbtn id=gnext title="next objective">next&nbsp;&rsaquo;</button>' +
+    '<select id=gjump class=jump title="jump to an objective"></select>' +
+  '</div>';
+
+const sel = document.getElementById('gjump');
+for (const id of ORDER) {
+  const n = G.nodes[id];
+  const o = document.createElement('option');
+  o.value = id;
+  o.textContent = id + ' — ' + n.text;
+  sel.appendChild(o);
+}
+
+function show(id) {
+  const i = ORDER.indexOf(id);
+  at = i < 0 ? at : i;
+  const cur = ORDER[at];
+  sel.value = cur;
+  document.getElementById('gpos').innerHTML =
+    (at + 1) + ' <i>/</i> ' + ORDER.length;
+  mountGraph(nb, G, cur, { onFocus: show,
+    onSection: (s) => window.open('index.html#/' + s, '_blank') });
+  location.replace('#' + cur);
+}
+const step = (d) => show(ORDER[(at + d + ORDER.length) % ORDER.length]);
+
+document.getElementById('gprev').onclick = () => step(-1);
+document.getElementById('gnext').onclick = () => step(1);
+sel.addEventListener('change', () => show(sel.value));
+addEventListener('keydown', (e) => {
+  if (/input|select|textarea/i.test(e.target.tagName || '')) return;
+  if (e.key === 'ArrowRight') step(1);
+  else if (e.key === 'ArrowLeft') step(-1);
+});
+
+// the timeline is summoned, not resident
+document.getElementById('views').innerHTML =
+  '<div class=stepper>' +
+    '<button class=sbtn id=vch>chapters</button>' +
+    '<button class=sbtn id=vtl>sections</button>' +
+    '<button class="sbtn on" id=vnb>objective</button>' +
+  '</div>';
+const nbBox = document.getElementById('nb'), tlBox = document.getElementById('tl'),
+      chBox = document.getElementById('ch'), pickBox = document.getElementById('picker');
+let tlUp = false, chUp = false;
+
+function view(which) {
+  chBox.hidden = which !== 'ch';
+  tlBox.hidden = which !== 'tl';
+  nbBox.hidden = which !== 'nb';
+  pickBox.hidden = which !== 'nb';
+  for (const [id, w] of [['vch','ch'],['vtl','tl'],['vnb','nb']])
+    document.getElementById(id).classList.toggle('on', which === w);
+  if (which === 'ch' && !chUp) { mountChapters(chBox, G); chUp = true; }
+  if (which === 'tl' && !tlUp) {
+    mountMatrix(tlBox, G, { onCell: ([a]) => {
+      const first = ORDER.find((id) => G.nodes[id].section === a);
+      if (first) { view('nb'); show(first); }
+    } });
+    tlUp = true;
+  }
+}
+document.getElementById('vch').onclick = () => view('ch');
+document.getElementById('vtl').onclick = () => view('tl');
+document.getElementById('vnb').onclick = () => view('nb');
+
+show(decodeURIComponent(location.hash.slice(1)) || ORDER[0]);
+document.title = 'math 120e · connections';
+</script>
+</body>
+</html>

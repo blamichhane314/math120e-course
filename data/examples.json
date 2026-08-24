@@ -1,0 +1,544 @@
+{
+ "1.1": [
+  {
+   "pid": "1.1.1",
+   "kind": "mcq",
+   "objs": [
+    0
+   ],
+   "stem": [
+    {
+     "t": "text",
+     "v": "Indicate whether the following statement is true or false."
+    },
+    {
+     "t": "text",
+     "v": "Every integer is a rational number."
+    },
+    {
+     "t": "text",
+     "v": "Choose the correct answer below."
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "text",
+       "v": "True, because $\\frac{p}{1}=p$ for any integer p."
+      }
+     ],
+     [
+      {
+       "t": "text",
+       "v": "True, because integers include positive as well as negative counting numbers."
+      }
+     ],
+     [
+      {
+       "t": "text",
+       "v": "False, because integers cannot be written in the form $\\frac{p}{q}$, where $q \\ne 0$."
+      }
+     ],
+     [
+      {
+       "t": "text",
+       "v": "False, because integers do not include negative counting numbers."
+      }
+     ]
+    ],
+    "multi": false
+   }
+  },
+  {
+   "pid": "1.1.13",
+   "kind": "compute",
+   "objs": [
+    1
+   ],
+   "stem": [
+    {
+     "t": "text",
+     "v": "If $p=-3$ and $q=4$, evaluate $-2(p+5q)$."
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "label": "The value of $-2(p+5q)$ for $p=-3$ and $q=4$ is",
+      "size": 6,
+      "unit": null
+     }
+    ],
+    "note": null
+   }
+  }
+ ],
+ "1.2": [
+  {
+   "pid": "1.2.1",
+   "kind": "compute",
+   "objs": [
+    0
+   ],
+   "stem": [
+    {
+     "t": "text",
+     "v": "Use a calculator to approximate the number below."
+    },
+    {
+     "t": "math",
+     "tex": "11.5^{5}",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "label": "$11.5^{5}\\approx$",
+      "size": 12,
+      "unit": null
+     }
+    ],
+    "note": "Round to four decimal places as needed."
+   }
+  },
+  {
+   "pid": "1.2.13",
+   "kind": "multipart",
+   "objs": [
+    2,
+    4
+   ],
+   "stem": [
+    {
+     "t": "text",
+     "v": "List the degree of the given polynomial, its coefficients, and its constant term."
+    },
+    {
+     "t": "math",
+     "tex": "5.5x^{4}-7x^{3}+6x^{2}-4x+4.7",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "multipart",
+    "parts": [
+     {
+      "label": "(a)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "What is the degree of the the given polynomial?"
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "label": "The degree is",
+         "size": 4,
+         "unit": null
+        }
+       ],
+       "note": null
+      }
+     },
+     {
+      "label": "(b)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "List all the coefficients of the polynomial."
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "label": "The coefficients are",
+         "size": 18,
+         "unit": null
+        }
+       ],
+       "note": "Use a comma to separate answers as needed."
+      }
+     },
+     {
+      "label": "(c)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "What is the constant term of the given polynomial?"
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "label": "The constant term is",
+         "size": 6,
+         "unit": null
+        }
+       ],
+       "note": null
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "1.3": [
+  {
+   "pid": "AR.3.36",
+   "kind": "mcq",
+   "objs": [
+    0
+   ],
+   "stem": [
+    {
+     "t": "text",
+     "v": "Factor out the greatest common factor. Simplify the factors, if possible."
+    },
+    {
+     "t": "math",
+     "tex": "4a-8",
+     "display": true
+    },
+    {
+     "t": "text",
+     "v": "Select the correct choice below and fill in any answer boxes in your choice."
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "text",
+       "v": "$4a-8=$ \u27e80\u27e9 (Type your answer in factored form. Simplify your answer.)"
+      }
+     ],
+     [
+      {
+       "t": "text",
+       "v": "The expression is not factorable."
+      }
+     ]
+    ],
+    "multi": false
+   }
+  },
+  {
+   "pid": "1.3.1",
+   "kind": "compute",
+   "objs": [
+    0
+   ],
+   "stem": [
+    {
+     "t": "text",
+     "v": "Factor. (Be sure to factor out the greatest common factor.)"
+    },
+    {
+     "t": "math",
+     "tex": "2b^{2}-14b",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "label": "$2b^{2}-14b=$",
+      "size": 12,
+      "unit": null
+     }
+    ],
+    "note": "Type the factored expression. Factor completely."
+   }
+  }
+ ],
+ "1.4": [
+  {
+   "pid": "1.4.1",
+   "kind": "compute",
+   "objs": [],
+   "stem": [
+    {
+     "t": "text",
+     "v": "Simplify."
+    },
+    {
+     "t": "math",
+     "tex": "\\frac{9x^{9}}{12x^{2}}",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "label": "The simplified form is",
+      "size": 10,
+      "unit": null
+     }
+    ],
+    "note": "Use integers or fractions for any numbers in the expression."
+   }
+  },
+  {
+   "pid": "1.4.11",
+   "kind": "compute",
+   "objs": [
+    0
+   ],
+   "stem": [
+    {
+     "t": "text",
+     "v": "Write the rational expression in lowest terms."
+    },
+    {
+     "t": "math",
+     "tex": "\\frac{y^{2}-3y+2}{y^{2}+5y-6}",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "label": "$\\frac{y^{2}-3y+2}{y^{2}+5y-6}=$",
+      "size": 10,
+      "unit": null
+     }
+    ],
+    "note": "Simplify your answer."
+   }
+  }
+ ],
+ "1.5": [
+  {
+   "pid": "1.5.1",
+   "kind": "compute",
+   "objs": [
+    0
+   ],
+   "stem": [
+    {
+     "t": "text",
+     "v": "Perform the indicated operation and simplify your answer."
+    },
+    {
+     "t": "math",
+     "tex": "\\frac{7^{8}}{7^{5}}",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "label": "$\\frac{7^{8}}{7^{5}}=$",
+      "size": 8,
+      "unit": null
+     }
+    ],
+    "note": "Type an integer or a simplified fraction."
+   }
+  },
+  {
+   "pid": "1.5.19",
+   "kind": "mcq",
+   "objs": [
+    1
+   ],
+   "stem": [
+    {
+     "t": "text",
+     "v": "Evaluate the expression. Write the answer without exponents."
+    },
+    {
+     "t": "math",
+     "tex": "9^{1/2}",
+     "display": true
+    },
+    {
+     "t": "text",
+     "v": "Select the correct answer below and, if necessary, fill in the answer box to complete your choice."
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "text",
+       "v": "$9^{1/2}=$ \u27e80\u27e9 (Simplify your answer. Type an integer or a fraction.)"
+      }
+     ],
+     [
+      {
+       "t": "text",
+       "v": "The expression is not a real number."
+      }
+     ]
+    ],
+    "multi": false
+   }
+  }
+ ],
+ "1.6": [
+  {
+   "pid": "1.6.1",
+   "kind": "compute",
+   "objs": [
+    0
+   ],
+   "stem": [
+    {
+     "t": "text",
+     "v": "Solve."
+    },
+    {
+     "t": "math",
+     "tex": "5x + 8 = 18",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "label": "The solution is x =",
+      "size": 5,
+      "unit": null
+     }
+    ],
+    "note": "Type an integer or a simplified fraction."
+   }
+  },
+  {
+   "pid": "1.6.5",
+   "kind": "mcq",
+   "objs": [
+    0
+   ],
+   "stem": [
+    {
+     "t": "text",
+     "v": "Solve the following equation."
+    },
+    {
+     "t": "math",
+     "tex": "4x + 7 - 2(x + 1) = 9x + 7",
+     "display": true
+    },
+    {
+     "t": "text",
+     "v": "Select the correct choice below and, if necessary, fill in the answer box within your choice."
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "text",
+       "v": "The solution(s) is/are \u27e80\u27e9."
+      },
+      {
+       "t": "text",
+       "v": "(Type an integer or a simplified fraction. Use a comma to separate answers as needed.)"
+      }
+     ],
+     [
+      {
+       "t": "text",
+       "v": "There is no solution."
+      }
+     ]
+    ],
+    "multi": false
+   }
+  }
+ ],
+ "1.7": [
+  {
+   "pid": "1.7.1",
+   "kind": "compute",
+   "objs": [
+    0
+   ],
+   "stem": [
+    {
+     "t": "text",
+     "v": "Use factoring to solve the equation."
+    },
+    {
+     "t": "math",
+     "tex": "(a + 5)(a - 9) = 0",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "label": "The solutions are a =",
+      "size": 8,
+      "unit": null
+     }
+    ],
+    "note": "Type an integer or a simplified fraction. Use a comma to separate answers."
+   }
+  },
+  {
+   "pid": "1.7.7",
+   "kind": "mcq",
+   "objs": [
+    0
+   ],
+   "stem": [
+    {
+     "t": "text",
+     "v": "Solve the following equation by factoring."
+    },
+    {
+     "t": "math",
+     "tex": "c^{2} + 10c + 16 = 0",
+     "display": true
+    },
+    {
+     "t": "text",
+     "v": "Select the correct choice below and, if necessary, fill in the answer box within your choice."
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "text",
+       "v": "The solution(s) is/are \u27e80\u27e9."
+      },
+      {
+       "t": "text",
+       "v": "(Type an integer or a simplified fraction. Use a comma t\u2026"
+      }
+     ],
+     [
+      {
+       "t": "text",
+       "v": "There is no solution."
+      }
+     ]
+    ],
+    "multi": false
+   }
+  }
+ ]
+}

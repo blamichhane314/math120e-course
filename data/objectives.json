@@ -1,0 +1,1192 @@
+[
+ {
+  "id": "1.1/O1",
+  "section": "1.1",
+  "sectionTitle": "The Real Numbers",
+  "idx": 0,
+  "text": "Identify properties of real numbers",
+  "track": "E",
+  "week": "Week 1",
+  "problems": 6
+ },
+ {
+  "id": "1.1/O2",
+  "section": "1.1",
+  "sectionTitle": "The Real Numbers",
+  "idx": 1,
+  "text": "Evaluate algebraic expressions",
+  "track": "E",
+  "week": "Week 1",
+  "problems": 6
+ },
+ {
+  "id": "1.1/O3",
+  "section": "1.1",
+  "sectionTitle": "The Real Numbers",
+  "idx": 2,
+  "text": "Evaluate expressions using the order of operations",
+  "track": "E",
+  "week": "Week 1",
+  "problems": 9
+ },
+ {
+  "id": "1.1/O4",
+  "section": "1.1",
+  "sectionTitle": "The Real Numbers",
+  "idx": 3,
+  "text": "Compare real numbers (basic inequalities)",
+  "track": "E",
+  "week": "Week 1",
+  "problems": 5
+ },
+ {
+  "id": "1.1/O5",
+  "section": "1.1",
+  "sectionTitle": "The Real Numbers",
+  "idx": 4,
+  "text": "Graph intervals on a number line",
+  "track": "E",
+  "week": "Week 1",
+  "problems": 6
+ },
+ {
+  "id": "1.2/O1",
+  "section": "1.2",
+  "sectionTitle": "Polynomials",
+  "idx": 0,
+  "text": "Evaluate Exponential Expressions",
+  "track": "E",
+  "week": "Week 1",
+  "problems": 9
+ },
+ {
+  "id": "1.2/O2",
+  "section": "1.2",
+  "sectionTitle": "Polynomials",
+  "idx": 1,
+  "text": "Perform operations on exponential expressions",
+  "track": "E",
+  "week": "Week 1",
+  "problems": 5
+ },
+ {
+  "id": "1.2/O3",
+  "section": "1.2",
+  "sectionTitle": "Polynomials",
+  "idx": 2,
+  "text": "Identify characteristics of polynomials",
+  "track": "E",
+  "week": "Week 1",
+  "problems": 7
+ },
+ {
+  "id": "1.2/O4",
+  "section": "1.2",
+  "sectionTitle": "Polynomials",
+  "idx": 3,
+  "text": "Add or subtract polynomials",
+  "track": "E",
+  "week": "Week 1",
+  "problems": 6
+ },
+ {
+  "id": "1.2/O5",
+  "section": "1.2",
+  "sectionTitle": "Polynomials",
+  "idx": 4,
+  "text": "Multiply polynomials",
+  "track": "E",
+  "week": "Week 1",
+  "problems": 13
+ },
+ {
+  "id": "1.2/O6",
+  "section": "1.2",
+  "sectionTitle": "Polynomials",
+  "idx": 5,
+  "text": "Solve applications involving polynomials",
+  "track": "E",
+  "week": "Week 1",
+  "problems": 4
+ },
+ {
+  "id": "1.3/O1",
+  "section": "1.3",
+  "sectionTitle": "Factoring",
+  "idx": 0,
+  "text": "Factor out the greatest common factor",
+  "track": "E",
+  "week": "Week 1",
+  "problems": 16
+ },
+ {
+  "id": "1.3/O2",
+  "section": "1.3",
+  "sectionTitle": "Factoring",
+  "idx": 1,
+  "text": "Factor quadratics with a leading coefficient of 1",
+  "track": "E",
+  "week": "Week 1",
+  "problems": 10
+ },
+ {
+  "id": "1.3/O3",
+  "section": "1.3",
+  "sectionTitle": "Factoring",
+  "idx": 2,
+  "text": "Factor quadratics where the leading coefficient is not 1",
+  "track": "E",
+  "week": "Week 1",
+  "problems": 4
+ },
+ {
+  "id": "1.4/O1",
+  "section": "1.4",
+  "sectionTitle": "Rational Expressions",
+  "idx": 0,
+  "text": "Write a rational expression in lowest terms",
+  "track": "E",
+  "week": "Week 2",
+  "problems": 11
+ },
+ {
+  "id": "1.4/O2",
+  "section": "1.4",
+  "sectionTitle": "Rational Expressions",
+  "idx": 1,
+  "text": "Multiply and divide rational expressions",
+  "track": "E",
+  "week": "Week 2",
+  "problems": 6
+ },
+ {
+  "id": "1.5/O1",
+  "section": "1.5",
+  "sectionTitle": "Exponents and Radicals",
+  "idx": 0,
+  "text": "Simplify expressions with integer exponents",
+  "track": "E",
+  "week": "Week 2",
+  "problems": 17
+ },
+ {
+  "id": "1.5/O2",
+  "section": "1.5",
+  "sectionTitle": "Exponents and Radicals",
+  "idx": 1,
+  "text": "Simplify expressions with rational exponents",
+  "track": "E",
+  "week": "Week 2",
+  "problems": 16
+ },
+ {
+  "id": "1.6/O1",
+  "section": "1.6",
+  "sectionTitle": "First-Degree Equations",
+  "idx": 0,
+  "text": "Solve first-degree equations using properties of equality",
+  "track": "E",
+  "week": "Week 2",
+  "problems": 10
+ },
+ {
+  "id": "1.6/O2",
+  "section": "1.6",
+  "sectionTitle": "First-Degree Equations",
+  "idx": 1,
+  "text": "Solve first-degree equations involving fractions",
+  "track": "E",
+  "week": "Week 2",
+  "problems": 9
+ },
+ {
+  "id": "1.6/O3",
+  "section": "1.6",
+  "sectionTitle": "First-Degree Equations",
+  "idx": 2,
+  "text": "Solve first-degree equations and formulas for a specified variable",
+  "track": "E",
+  "week": "Week 2",
+  "problems": 12
+ },
+ {
+  "id": "1.6/O4",
+  "section": "1.6",
+  "sectionTitle": "First-Degree Equations",
+  "idx": 3,
+  "text": "Solve applications involving first-degree equations",
+  "track": "E",
+  "week": "Week 2",
+  "problems": 11
+ },
+ {
+  "id": "1.7/O1",
+  "section": "1.7",
+  "sectionTitle": "Quadratic Equations",
+  "idx": 0,
+  "text": "Solve quadratic equations by factoring",
+  "track": "E",
+  "week": "Week 3",
+  "problems": 10
+ },
+ {
+  "id": "1.7/O2",
+  "section": "1.7",
+  "sectionTitle": "Quadratic Equations",
+  "idx": 1,
+  "text": "Solve quadratic equations using the quadratic formula",
+  "track": "E",
+  "week": "Week 3",
+  "problems": 7
+ },
+ {
+  "id": "2.1/O1",
+  "section": "2.1",
+  "sectionTitle": "Graphs",
+  "idx": 0,
+  "text": "Identify the quadrant in which a point lies",
+  "track": "120",
+  "week": "Week 4",
+  "problems": 2
+ },
+ {
+  "id": "2.1/O2",
+  "section": "2.1",
+  "sectionTitle": "Graphs",
+  "idx": 1,
+  "text": "Determine whether an ordered pair is a solution to an equation",
+  "track": "120",
+  "week": "Week 4",
+  "problems": 1
+ },
+ {
+  "id": "2.1/O3",
+  "section": "2.1",
+  "sectionTitle": "Graphs",
+  "idx": 2,
+  "text": "Graph equations",
+  "track": "120",
+  "week": "Week 4",
+  "problems": 6
+ },
+ {
+  "id": "2.1/O4",
+  "section": "2.1",
+  "sectionTitle": "Graphs",
+  "idx": 3,
+  "text": "Find all of the x- and y- intercepts from a given graph",
+  "track": "120",
+  "week": "Week 4",
+  "problems": 9
+ },
+ {
+  "id": "2.1/O5",
+  "section": "2.1",
+  "sectionTitle": "Graphs",
+  "idx": 4,
+  "text": "Find the x- and y-intercepts from a given equation",
+  "track": "120",
+  "week": "Week 4",
+  "problems": 1
+ },
+ {
+  "id": "2.2/O1",
+  "section": "2.2",
+  "sectionTitle": "Equations of Lines",
+  "idx": 0,
+  "text": "Find the slope of a line given two points",
+  "track": "120",
+  "week": "Week 4",
+  "problems": 3
+ },
+ {
+  "id": "2.2/O2",
+  "section": "2.2",
+  "sectionTitle": "Equations of Lines",
+  "idx": 1,
+  "text": "Find the equation of a line given its slope and y-intercept",
+  "track": "120",
+  "week": "Week 4",
+  "problems": 9
+ },
+ {
+  "id": "2.2/O3",
+  "section": "2.2",
+  "sectionTitle": "Equations of Lines",
+  "idx": 2,
+  "text": "Find the slope and y-intercept of a line given its equation",
+  "track": "120",
+  "week": "Week 4",
+  "problems": 10
+ },
+ {
+  "id": "2.2/O4",
+  "section": "2.2",
+  "sectionTitle": "Equations of Lines",
+  "idx": 3,
+  "text": "Graph a line using intercepts",
+  "track": "120",
+  "week": "Week 4",
+  "problems": 4
+ },
+ {
+  "id": "2.2/O5",
+  "section": "2.2",
+  "sectionTitle": "Equations of Lines",
+  "idx": 4,
+  "text": "Determine whether a pair of lines is parallel, perpendicular, or neither",
+  "track": "120",
+  "week": "Week 4",
+  "problems": 4
+ },
+ {
+  "id": "2.2/O6",
+  "section": "2.2",
+  "sectionTitle": "Equations of Lines",
+  "idx": 5,
+  "text": "Find the equation of a line satisfying given conditions",
+  "track": "120",
+  "week": "Week 4",
+  "problems": 5
+ },
+ {
+  "id": "2.3/O1",
+  "section": "2.3",
+  "sectionTitle": "Linear Models",
+  "idx": 0,
+  "text": "Use linear equations to convert between temperature units",
+  "track": "120",
+  "week": "Week 5",
+  "problems": 2
+ },
+ {
+  "id": "2.3/O2",
+  "section": "2.3",
+  "sectionTitle": "Linear Models",
+  "idx": 1,
+  "text": "Make predictions from a linear model obtained by using two data points.",
+  "track": "120",
+  "week": "Week 5",
+  "problems": 2
+ },
+ {
+  "id": "2.4/O1",
+  "section": "2.4",
+  "sectionTitle": "Linear Inequalities",
+  "idx": 0,
+  "text": "Solve linear inequalities and graph the solutions.",
+  "track": "E",
+  "week": "Week 3",
+  "problems": 5
+ },
+ {
+  "id": "2.4/O2",
+  "section": "2.4",
+  "sectionTitle": "Linear Inequalities",
+  "idx": 1,
+  "text": "Write an inequality to describe the graph of a solution set.",
+  "track": "E",
+  "week": "Week 3",
+  "problems": 7
+ },
+ {
+  "id": "3.1/O1",
+  "section": "3.1",
+  "sectionTitle": "Functions",
+  "idx": 0,
+  "text": "Evaluate functions for algebraic values",
+  "track": "120",
+  "week": "Week 5",
+  "problems": 2
+ },
+ {
+  "id": "3.1/O2",
+  "section": "3.1",
+  "sectionTitle": "Functions",
+  "idx": 1,
+  "text": "Evaluate functions for numerical values",
+  "track": "120",
+  "week": "Week 5",
+  "problems": 1
+ },
+ {
+  "id": "3.1/O3",
+  "section": "3.1",
+  "sectionTitle": "Functions",
+  "idx": 2,
+  "text": "Find the domain of functions",
+  "track": "120",
+  "week": "Week 5",
+  "problems": 6
+ },
+ {
+  "id": "3.1/O4",
+  "section": "3.1",
+  "sectionTitle": "Functions",
+  "idx": 3,
+  "text": "Solve applications involving functions",
+  "track": "120",
+  "week": "Week 5",
+  "problems": 3
+ },
+ {
+  "id": "4.1/O1",
+  "section": "4.1",
+  "sectionTitle": "Exponential Functions",
+  "idx": 0,
+  "text": "Classify functions as linear, quadratic, or exponential",
+  "track": "120",
+  "week": "Week 5",
+  "problems": 5
+ },
+ {
+  "id": "4.1/O2",
+  "section": "4.1",
+  "sectionTitle": "Exponential Functions",
+  "idx": 1,
+  "text": "Describe the shape of the graphs of exponential functions",
+  "track": "120",
+  "week": "Week 5",
+  "problems": 3
+ },
+ {
+  "id": "4.1/O3",
+  "section": "4.1",
+  "sectionTitle": "Exponential Functions",
+  "idx": 2,
+  "text": "Graph exponential functions",
+  "track": "120",
+  "week": "Week 5",
+  "problems": 9
+ },
+ {
+  "id": "4.1/O4",
+  "section": "4.1",
+  "sectionTitle": "Exponential Functions",
+  "idx": 3,
+  "text": "Determine a value or an equation for an exponential function given certain conditions",
+  "track": "120",
+  "week": "Week 5",
+  "problems": 3
+ },
+ {
+  "id": "4.2/O1",
+  "section": "4.2",
+  "sectionTitle": "Applications of Exponential Functions",
+  "idx": 0,
+  "text": "Solve applications involving the evaluation and graphing of exponential functions",
+  "track": "120",
+  "week": "Week 6",
+  "problems": 3
+ },
+ {
+  "id": "4.2/O2",
+  "section": "4.2",
+  "sectionTitle": "Applications of Exponential Functions",
+  "idx": 1,
+  "text": "Solve applications involving logistic functions.",
+  "track": "120",
+  "week": "Week 6",
+  "problems": 2
+ },
+ {
+  "id": "4.3/O1",
+  "section": "4.3",
+  "sectionTitle": "Logarithmic Functions",
+  "idx": 0,
+  "text": "Convert between logarithmic and exponential notation",
+  "track": "120",
+  "week": "Week 6",
+  "problems": 4
+ },
+ {
+  "id": "4.3/O2",
+  "section": "4.3",
+  "sectionTitle": "Logarithmic Functions",
+  "idx": 1,
+  "text": "Evaluate logarithms without a calculator",
+  "track": "120",
+  "week": "Week 6",
+  "problems": 6
+ },
+ {
+  "id": "4.3/O3",
+  "section": "4.3",
+  "sectionTitle": "Logarithmic Functions",
+  "idx": 2,
+  "text": "Use the properties of logarithms to rewrite logarithmic expressions",
+  "track": "120",
+  "week": "Week 6",
+  "problems": 4
+ },
+ {
+  "id": "4.3/O4",
+  "section": "4.3",
+  "sectionTitle": "Logarithmic Functions",
+  "idx": 3,
+  "text": "Evaluate logarithms using the change of base theorem",
+  "track": "120",
+  "week": "Week 6",
+  "problems": 4
+ },
+ {
+  "id": "4.4/O1",
+  "section": "4.4",
+  "sectionTitle": "Logarithmic & Exponential Equations",
+  "idx": 0,
+  "text": "Solve logarithmic equations for a numerical value",
+  "track": "120",
+  "week": "Week 6",
+  "problems": 6
+ },
+ {
+  "id": "4.4/O2",
+  "section": "4.4",
+  "sectionTitle": "Logarithmic & Exponential Equations",
+  "idx": 1,
+  "text": "Solve exponential equations for a numerical value",
+  "track": "120",
+  "week": "Week 6",
+  "problems": 7
+ },
+ {
+  "id": "4.4/O3",
+  "section": "4.4",
+  "sectionTitle": "Logarithmic & Exponential Equations",
+  "idx": 2,
+  "text": "Solve applications involving logarithmic and exponential equations",
+  "track": "120",
+  "week": "Week 6",
+  "problems": 6
+ },
+ {
+  "id": "5.1/O1",
+  "section": "5.1",
+  "sectionTitle": "Simple and Compound Interest",
+  "idx": 0,
+  "text": "Calculate simple interest",
+  "track": "120",
+  "week": "Week 7",
+  "problems": 5
+ },
+ {
+  "id": "5.1/O2",
+  "section": "5.1",
+  "sectionTitle": "Simple and Compound Interest",
+  "idx": 1,
+  "text": "Find compound amounts and compound interest",
+  "track": "120",
+  "week": "Week 7",
+  "problems": 4
+ },
+ {
+  "id": "5.1/O3",
+  "section": "5.1",
+  "sectionTitle": "Simple and Compound Interest",
+  "idx": 2,
+  "text": "Find interest rates",
+  "track": "120",
+  "week": "Week 7",
+  "problems": 5
+ },
+ {
+  "id": "5.1/O4",
+  "section": "5.1",
+  "sectionTitle": "Simple and Compound Interest",
+  "idx": 3,
+  "text": "Find present values",
+  "track": "120",
+  "week": "Week 7",
+  "problems": 4
+ },
+ {
+  "id": "5.1/O5",
+  "section": "5.1",
+  "sectionTitle": "Simple and Compound Interest",
+  "idx": 4,
+  "text": "Calculate previous prices due to inflation",
+  "track": "120",
+  "week": "Week 7",
+  "problems": 1
+ },
+ {
+  "id": "5.1/O6",
+  "section": "5.1",
+  "sectionTitle": "Simple and Compound Interest",
+  "idx": 5,
+  "text": "Solve applications involving compound interest",
+  "track": "120",
+  "week": "Week 7",
+  "problems": 0
+ },
+ {
+  "id": "5.1/O7",
+  "section": "5.1",
+  "sectionTitle": "Simple and Compound Interest",
+  "idx": 6,
+  "text": "Calculate present values of future amounts",
+  "track": "120",
+  "week": "Week 7",
+  "problems": 2
+ },
+ {
+  "id": "5.2/O1",
+  "section": "5.2",
+  "sectionTitle": "Annuities, Future Value, and Sinking Funds",
+  "idx": 0,
+  "text": "Calculate future values of annuities",
+  "track": "120",
+  "week": "Week 8",
+  "problems": 4
+ },
+ {
+  "id": "5.2/O2",
+  "section": "5.2",
+  "sectionTitle": "Annuities, Future Value, and Sinking Funds",
+  "idx": 1,
+  "text": "Find periodic payment amounts",
+  "track": "120",
+  "week": "Week 8",
+  "problems": 14
+ },
+ {
+  "id": "5.2/O3",
+  "section": "5.2",
+  "sectionTitle": "Annuities, Future Value, and Sinking Funds",
+  "idx": 2,
+  "text": "Solve applications involving annuities, future values, and sinking funds",
+  "track": "120",
+  "week": "Week 8",
+  "problems": 3
+ },
+ {
+  "id": "5.3/O1",
+  "section": "5.3",
+  "sectionTitle": "Consumer Loans and Amortization",
+  "idx": 0,
+  "text": "Find amortization payments",
+  "track": "120",
+  "week": "Week 8",
+  "problems": 8
+ },
+ {
+  "id": "5.3/O2",
+  "section": "5.3",
+  "sectionTitle": "Consumer Loans and Amortization",
+  "idx": 1,
+  "text": "Find monthly payments and estimate remaining balances",
+  "track": "120",
+  "week": "Week 8",
+  "problems": 4
+ },
+ {
+  "id": "5.3/O3",
+  "section": "5.3",
+  "sectionTitle": "Consumer Loans and Amortization",
+  "idx": 2,
+  "text": "Interpret amortization tables",
+  "track": "120",
+  "week": "Week 8",
+  "problems": 3
+ },
+ {
+  "id": "5.3/O4",
+  "section": "5.3",
+  "sectionTitle": "Consumer Loans and Amortization",
+  "idx": 3,
+  "text": "Solve applications involving consumer loans and amortization",
+  "track": "120",
+  "week": "Week 8",
+  "problems": 1
+ },
+ {
+  "id": "8.1/O1",
+  "section": "8.1",
+  "sectionTitle": "Sets",
+  "idx": 0,
+  "text": "Identify elements of sets, equivalent sets, and set-builder notation",
+  "track": "120",
+  "week": "Week 9",
+  "problems": 3
+ },
+ {
+  "id": "8.1/O2",
+  "section": "8.1",
+  "sectionTitle": "Sets",
+  "idx": 1,
+  "text": "Identify subsets and the number of subsets",
+  "track": "120",
+  "week": "Week 9",
+  "problems": 5
+ },
+ {
+  "id": "8.1/O3",
+  "section": "8.1",
+  "sectionTitle": "Sets",
+  "idx": 2,
+  "text": "Find the complement of a set",
+  "track": "120",
+  "week": "Week 9",
+  "problems": 4
+ },
+ {
+  "id": "8.1/O4",
+  "section": "8.1",
+  "sectionTitle": "Sets",
+  "idx": 3,
+  "text": "Identify whether a set represents a union or intersection of two sets",
+  "track": "120",
+  "week": "Week 9",
+  "problems": 2
+ },
+ {
+  "id": "8.1/O5",
+  "section": "8.1",
+  "sectionTitle": "Sets",
+  "idx": 4,
+  "text": "Use set operations to identify the elements of a set",
+  "track": "120",
+  "week": "Week 9",
+  "problems": 3
+ },
+ {
+  "id": "8.1/O6",
+  "section": "8.1",
+  "sectionTitle": "Sets",
+  "idx": 5,
+  "text": "Solve applications involving sets",
+  "track": "120",
+  "week": "Week 9",
+  "problems": 3
+ },
+ {
+  "id": "8.2/O1",
+  "section": "8.2",
+  "sectionTitle": "Applications of Venn Diagrams",
+  "idx": 0,
+  "text": "Sketch a Venn diagram to represent complements, unions, or intersections of sets",
+  "track": "120",
+  "week": "Week 9",
+  "problems": 5
+ },
+ {
+  "id": "8.2/O2",
+  "section": "8.2",
+  "sectionTitle": "Applications of Venn Diagrams",
+  "idx": 1,
+  "text": "Solve applications involving Venn diagrams and the number of elements in a set",
+  "track": "120",
+  "week": "Week 9",
+  "problems": 9
+ },
+ {
+  "id": "8.2/O3",
+  "section": "8.2",
+  "sectionTitle": "Applications of Venn Diagrams",
+  "idx": 2,
+  "text": "Solve applications involving contingency tables",
+  "track": "120",
+  "week": "Week 9",
+  "problems": 2
+ },
+ {
+  "id": "8.2/O4",
+  "section": "8.2",
+  "sectionTitle": "Applications of Venn Diagrams",
+  "idx": 3,
+  "text": "Use union rule or a Venn diagram to find the number of elements in a set",
+  "track": "120",
+  "week": "Week 9",
+  "problems": 5
+ },
+ {
+  "id": "8.3/O1",
+  "section": "8.3",
+  "sectionTitle": "Introduction to Probability",
+  "idx": 0,
+  "text": "Vocabulary and concepts of probability",
+  "track": "120",
+  "week": "Week 9",
+  "problems": 1
+ },
+ {
+  "id": "8.3/O2",
+  "section": "8.3",
+  "sectionTitle": "Introduction to Probability",
+  "idx": 1,
+  "text": "Write sample spaces and/or events",
+  "track": "120",
+  "week": "Week 9",
+  "problems": 4
+ },
+ {
+  "id": "8.3/O3",
+  "section": "8.3",
+  "sectionTitle": "Introduction to Probability",
+  "idx": 2,
+  "text": "Identify disjoint events",
+  "track": "120",
+  "week": "Week 9",
+  "problems": 4
+ },
+ {
+  "id": "8.3/O4",
+  "section": "8.3",
+  "sectionTitle": "Introduction to Probability",
+  "idx": 3,
+  "text": "Calculate the probability of an event.",
+  "track": "120",
+  "week": "Week 9",
+  "problems": 5
+ },
+ {
+  "id": "8.3/O5",
+  "section": "8.3",
+  "sectionTitle": "Introduction to Probability",
+  "idx": 4,
+  "text": "Solve applications that involve finding probabilities",
+  "track": "120",
+  "week": "Week 9",
+  "problems": 4
+ },
+ {
+  "id": "8.3/O6",
+  "section": "8.3",
+  "sectionTitle": "Introduction to Probability",
+  "idx": 5,
+  "text": "Determine whether probability assignments are possible",
+  "track": "120",
+  "week": "Week 9",
+  "problems": 4
+ },
+ {
+  "id": "8.4/O1",
+  "section": "8.4",
+  "sectionTitle": "Basic Concepts of Probability",
+  "idx": 0,
+  "text": "Find probabilities of complex events",
+  "track": "120",
+  "week": "Week 10",
+  "problems": 5
+ },
+ {
+  "id": "8.4/O2",
+  "section": "8.4",
+  "sectionTitle": "Basic Concepts of Probability",
+  "idx": 1,
+  "text": "Use Venn diagrams to find probabilities",
+  "track": "120",
+  "week": "Week 10",
+  "problems": 6
+ },
+ {
+  "id": "8.4/O3",
+  "section": "8.4",
+  "sectionTitle": "Basic Concepts of Probability",
+  "idx": 2,
+  "text": "Calculate odds",
+  "track": "120",
+  "week": "Week 10",
+  "problems": 7
+ },
+ {
+  "id": "8.4/O4",
+  "section": "8.4",
+  "sectionTitle": "Basic Concepts of Probability",
+  "idx": 3,
+  "text": "Convert between probability and odds",
+  "track": "120",
+  "week": "Week 10",
+  "problems": 4
+ },
+ {
+  "id": "8.4/O5",
+  "section": "8.4",
+  "sectionTitle": "Basic Concepts of Probability",
+  "idx": 4,
+  "text": "Solve applications involving finding probability from empirical data",
+  "track": "120",
+  "week": "Week 10",
+  "problems": 4
+ },
+ {
+  "id": "8.5/O1",
+  "section": "8.5",
+  "sectionTitle": "Conditional Probability & Independent Events",
+  "idx": 0,
+  "text": "Calculate conditional probabilities",
+  "track": "120",
+  "week": "Week 10",
+  "problems": 3
+ },
+ {
+  "id": "8.5/O2",
+  "section": "8.5",
+  "sectionTitle": "Conditional Probability & Independent Events",
+  "idx": 1,
+  "text": "Explain concepts involving conditional probability and independent events.",
+  "track": "120",
+  "week": "Week 10",
+  "problems": 6
+ },
+ {
+  "id": "8.5/O3",
+  "section": "8.5",
+  "sectionTitle": "Conditional Probability & Independent Events",
+  "idx": 2,
+  "text": "Use the Addition Rule and the Product Rule to calculate probabilities.",
+  "track": "120",
+  "week": "Week 10",
+  "problems": 3
+ },
+ {
+  "id": "8.5/O4",
+  "section": "8.5",
+  "sectionTitle": "Conditional Probability & Independent Events",
+  "idx": 3,
+  "text": "Solve applications involving conditional probability and independent events.",
+  "track": "120",
+  "week": "Week 10",
+  "problems": 4
+ },
+ {
+  "id": "9.1/O1",
+  "section": "9.1",
+  "sectionTitle": "Probability Distributions & Expected Value",
+  "idx": 0,
+  "text": "Construct a probability distribution",
+  "track": "120",
+  "week": "Week 11",
+  "problems": 3
+ },
+ {
+  "id": "9.1/O2",
+  "section": "9.1",
+  "sectionTitle": "Probability Distributions & Expected Value",
+  "idx": 1,
+  "text": "Draw a histogram and shade the indicated probabilities",
+  "track": "120",
+  "week": "Week 11",
+  "problems": 1
+ },
+ {
+  "id": "9.1/O3",
+  "section": "9.1",
+  "sectionTitle": "Probability Distributions & Expected Value",
+  "idx": 2,
+  "text": "Find the expected value for a random variable",
+  "track": "120",
+  "week": "Week 11",
+  "problems": 4
+ },
+ {
+  "id": "9.1/O4",
+  "section": "9.1",
+  "sectionTitle": "Probability Distributions & Expected Value",
+  "idx": 3,
+  "text": "Solve applications involving expected value",
+  "track": "120",
+  "week": "Week 11",
+  "problems": 2
+ },
+ {
+  "id": "9.2/O1",
+  "section": "9.2",
+  "sectionTitle": "The Multiplication Principle, Permutations, and Combinations",
+  "idx": 0,
+  "text": "Evaluate factorials, permutations, and combinations",
+  "track": "120",
+  "week": "Week 11",
+  "problems": 5
+ },
+ {
+  "id": "9.2/O2",
+  "section": "9.2",
+  "sectionTitle": "The Multiplication Principle, Permutations, and Combinations",
+  "idx": 1,
+  "text": "Describe and compare factorials, permutations, and combinations, and how they can be found",
+  "track": "120",
+  "week": "Week 11",
+  "problems": 1
+ },
+ {
+  "id": "9.2/O3",
+  "section": "9.2",
+  "sectionTitle": "The Multiplication Principle, Permutations, and Combinations",
+  "idx": 2,
+  "text": "Solve applications involving the multiplication principle",
+  "track": "120",
+  "week": "Week 11",
+  "problems": 4
+ },
+ {
+  "id": "9.2/O4",
+  "section": "9.2",
+  "sectionTitle": "The Multiplication Principle, Permutations, and Combinations",
+  "idx": 3,
+  "text": "Solve applications involving permutations",
+  "track": "120",
+  "week": "Week 11",
+  "problems": 4
+ },
+ {
+  "id": "9.2/O5",
+  "section": "9.2",
+  "sectionTitle": "The Multiplication Principle, Permutations, and Combinations",
+  "idx": 4,
+  "text": "Solve applications involving combinations",
+  "track": "120",
+  "week": "Week 11",
+  "problems": 2
+ },
+ {
+  "id": "9.2/O6",
+  "section": "9.2",
+  "sectionTitle": "The Multiplication Principle, Permutations, and Combinations",
+  "idx": 5,
+  "text": "Solve applications involving the multiplication principle, permutations, and/or combinations",
+  "track": "120",
+  "week": "Week 11",
+  "problems": 4
+ },
+ {
+  "id": "9.3/O1",
+  "section": "9.3",
+  "sectionTitle": "Applications of Counting",
+  "idx": 0,
+  "text": "Solve applications involving probability that use counting, permutations, and combinations",
+  "track": "120",
+  "week": "Week 12",
+  "problems": 7
+ },
+ {
+  "id": "9.4/O1",
+  "section": "9.4",
+  "sectionTitle": "Binomial Probability",
+  "idx": 0,
+  "text": "Solve applications involving binomial probabilities.",
+  "track": "120",
+  "week": "Week 12",
+  "problems": 3
+ },
+ {
+  "id": "10.1/O1",
+  "section": "10.1",
+  "sectionTitle": "Frequency Distributions",
+  "idx": 0,
+  "text": "Solve applications involving frequency distributions and histograms",
+  "track": "120",
+  "week": "Week 13",
+  "problems": 3
+ },
+ {
+  "id": "10.1/O2",
+  "section": "10.1",
+  "sectionTitle": "Frequency Distributions",
+  "idx": 1,
+  "text": "Solve applications involving stem-and-leaf plots",
+  "track": "120",
+  "week": "Week 13",
+  "problems": 4
+ },
+ {
+  "id": "10.2/O1",
+  "section": "10.2",
+  "sectionTitle": "Measures of Center",
+  "idx": 0,
+  "text": "Find the mean for a data set given either the data or a frequency distribution",
+  "track": "120",
+  "week": "Week 14",
+  "problems": 6
+ },
+ {
+  "id": "10.2/O2",
+  "section": "10.2",
+  "sectionTitle": "Measures of Center",
+  "idx": 1,
+  "text": "Find the median for a data set",
+  "track": "120",
+  "week": "Week 14",
+  "problems": 9
+ },
+ {
+  "id": "10.2/O3",
+  "section": "10.2",
+  "sectionTitle": "Measures of Center",
+  "idx": 2,
+  "text": "Find the mode or modes for a data set",
+  "track": "120",
+  "week": "Week 14",
+  "problems": 8
+ },
+ {
+  "id": "10.2/O4",
+  "section": "10.2",
+  "sectionTitle": "Measures of Center",
+  "idx": 3,
+  "text": "Solve applications involving modes for a data set.",
+  "track": "120",
+  "week": "Week 14",
+  "problems": 0
+ },
+ {
+  "id": "10.2/O5",
+  "section": "10.2",
+  "sectionTitle": "Measures of Center",
+  "idx": 4,
+  "text": "Solve applications involving shapes of distributions and multiple measures of center.",
+  "track": "120",
+  "week": "Week 14",
+  "problems": 2
+ },
+ {
+  "id": "10.3/O1",
+  "section": "10.3",
+  "sectionTitle": "Measures of Variation",
+  "idx": 0,
+  "text": "Calculate the range and standard deviation for a non-grouped data set",
+  "track": "120",
+  "week": "Week 15",
+  "problems": 7
+ },
+ {
+  "id": "10.3/O2",
+  "section": "10.3",
+  "sectionTitle": "Measures of Variation",
+  "idx": 1,
+  "text": "Solve applications involving the mean and standard deviations for non-grouped data",
+  "track": "120",
+  "week": "Week 15",
+  "problems": 3
+ },
+ {
+  "id": "10.4/O1",
+  "section": "10.4",
+  "sectionTitle": "Normal Distributions",
+  "idx": 0,
+  "text": "Find the percentage of area under a portion of the normal curve",
+  "track": "120",
+  "week": "Week 15",
+  "problems": 5
+ },
+ {
+  "id": "10.4/O2",
+  "section": "10.4",
+  "sectionTitle": "Normal Distributions",
+  "idx": 1,
+  "text": "Find z-scores satisfying certain conditions",
+  "track": "120",
+  "week": "Week 15",
+  "problems": 3
+ },
+ {
+  "id": "10.4/O3",
+  "section": "10.4",
+  "sectionTitle": "Normal Distributions",
+  "idx": 2,
+  "text": "Solve applications involving normal distributions",
+  "track": "120",
+  "week": "Week 15",
+  "problems": 3
+ }
+]

@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang=en>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>MATH 120E — homework map</title>
+<link rel=stylesheet href="vendor/katex/katex.min.css">
+<link rel=stylesheet href="styles.css?v=2">
+<body>
+<div id=rail></div>
+<div id=read><div id=doc>
+  <h1><span class=num>homework</span>What each assignment covers</h1>
+  <p class=lede>Which objective every problem serves, and how evenly the work is
+  spread across them. The problems themselves are in MyLab; this is the map, not
+  the territory.</p>
+  <div id=body></div>
+</div></div>
+<div id=margin></div>
+
+<script defer src="vendor/katex/katex.min.js"></script>
+<script type=module>
+import { renderBlocks } from './js/blocks.js?v=1';
+import { renderAnswer } from './js/answers.js?v=1';
+
+const ready = () => new Promise(r => window.katex ? r() : addEventListener('load', r));
+await ready();
+const EX = await (await fetch('data/examples.json', {cache:'no-store'})).json();
+const d = await (await fetch('data/course.json', {cache:'no-store'})).json();
+const rail = document.getElementById('rail');
+const byId = Object.fromEntries(d.sections.map(s=>[s.id,s]));
+const EXAM = {'Week 4':'exam 1','Week 7':'exam 2','Week 10':'exam 3',
+              'Week 13':'exam 4','Week 16':'final'};
+
+rail.innerHTML = '<div class=mast><a href="index.html">math 120e</a>' +
+  '<span class=sub>homework map</span></div>' +
+  d.schedule.map(w => {
+    const secs = d.sections.filter(s => s.week === w.week);
+    if (!secs.length && !EXAM[w.week]) return '';
+    return '<div class=wk><span>' + w.week.toLowerCase() + '</span></div>' +
+      (EXAM[w.week] ? '<div class=mark>' + EXAM[w.week] + '</div>' : '') +
+      secs.map(s => '<a class=sec href="#' + s.id + '" data-id="' + s.id + '">' +
+        '<span class=n>' + s.id + '</span><span class=t>' +
+        s.title.toLowerCase() + '</span></a>').join('');
+  }).join('');
+
+const KIND = {compute:'compute', mcq:'multiple choice', fill:'fill in',
+  select:'choose a word', multipart:'multi-part', interpret:'interpret'};
+const FIG = {graph:'graph', venn:'venn diagram', histogram:'histogram',
+  numberline:'number line', table:'table', plane:'coordinate plane'};
+
+function show(id) {
+  const s = byId[id]; if (!s) return;
+  rail.querySelectorAll('a.sec').forEach(a =>
+    a.classList.toggle('on', a.dataset.id === id));
+
+  const K = s.objectives.length;
+  const buckets = s.objectives.map(()=>[]), un = [];
+  s.problems.forEach(p => {
+    (p.objs && p.objs.length) ? p.objs.forEach(j => { if (j<K) buckets[j].push(p); })
+                              : un.push(p);
+  });
+  const kinds = {}, figs = {};
+  s.problems.forEach(p => {
+    if (p.kind) kinds[p.kind] = (kinds[p.kind]||0)+1;
+    (p.structure||[]).forEach(x => { if (x!=='math' && x!=='none') figs[x]=(figs[x]||0)+1; });
+  });
+  const shared = s.problems.filter(p => (p.objs||[]).length > 1).length;
+
+  document.getElementById('body').innerHTML =
+    '<h1><span class=num>' + s.id + '</span>' + s.title + '</h1>' +
+    '<div class=meta>' + (s.week||'').toLowerCase() +
+      (s.dates ? ' · ' + s.dates.toLowerCase() : '') +
+      ' · ' + (s.track==='E' ? 'remedial' : 'math 120') +
+      ' · ' + s.problems.length + ' problems</div>' +
+
+    '<h2>objectives</h2>' +
+    buckets.map((b,j) =>
+      '<div class="obj' + (b.length?'':' none') + '"><div class=otop>' +
+      '<span class=oi>O' + (j+1) + '</span>' +
+      '<span class=ot>' + s.objectives[j] + '</span>' +
+      '<span class=oc>' + (b.length || '&mdash;') + '</span></div>' +
+      (b.length ? '<div class=chips>' + b.map(p =>
+        '<span class="p' + ((p.objs||[]).length>1 ? ' sh' : '') + '">' + p.pid + '</span>'
+      ).join('') + '</div>' : '') + '</div>').join('') +
+
+    (un.length ? '<h2>not matched</h2><div class=note><p>' + un.length +
+      ' problem' + (un.length>1?'s':'') + ' here could not be matched to any listed ' +
+      'objective. Either the objective list is incomplete for this section, or the ' +
+      'wording differs enough that the match was not established.</p></div>' : '') +
+
+    '<h2>shape of the work</h2><div class=note>' +
+    '<p>' + Object.entries(kinds).map(([k,v]) => v + ' ' + (KIND[k]||k)).join(' · ') + '</p>' +
+    (Object.keys(figs).length
+      ? '<p>' + Object.entries(figs).map(([k,v]) => v + ' with a ' + (FIG[k]||k)).join(' · ') + '</p>'
+      : '') +
+    (shared ? '<p>' + shared + ' problem' + (shared>1?'s':'') +
+      ' serve more than one objective, so they appear in more than one list above.</p>' : '') +
+    '<p class=src>Problem numbers match MyLab, where the full assignment lives.</p>' +
+    '</div>' +
+    ((EX[s.id]||[]).length
+      ? '<h2>a couple of examples</h2>' +
+        '<p class=exlede>Two problems from this assignment, to show what it asks. ' +
+        'The rest are in MyLab.</p><div id=ex></div>'
+      : '');
+
+  const host = document.getElementById('ex');
+  if (host) (EX[s.id]||[]).forEach(p => {
+    const card = document.createElement('div');
+    card.className = 'prob';
+    card.innerHTML = '<div class=ptop><span class=pid>' + p.pid + '</span>' +
+      '<span class=stem>' + (p.kind||'') + '</span>' +
+      (p.objs||[]).map(j => '<span class=kind>O' + (j+1) + '</span>').join('') + '</div>';
+    const body = document.createElement('div');
+    body.className = 'pbody';
+    try {
+      if (p.stem && p.stem.length) renderBlocks(p.stem, body);
+      if (p.answer) body.appendChild(renderAnswer(p.answer, { onChange(){} }));
+    } catch (e) {
+      body.textContent = 'could not render this example';
+    }
+    card.appendChild(body);
+    host.appendChild(card);
+  });
+
+  document.title = 'math 120e · ' + s.id + ' ' + s.title;
+  document.getElementById('read').scrollTop = 0;
+}
+
+const go = () => show(decodeURIComponent(location.hash.slice(1)) || d.sections[0].id);
+addEventListener('hashchange', go); go();
+</script>
+</body>
+</html>

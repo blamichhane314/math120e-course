@@ -1,0 +1,8597 @@
+{
+ "sections": [
+  {
+   "id": "1.1",
+   "title": "The Real Numbers",
+   "track": "E",
+   "week": "Week 1",
+   "dates": "Aug 24 \u2013 Aug 28",
+   "objectives": [
+    "Identify properties of real numbers",
+    "Evaluate algebraic expressions",
+    "Evaluate expressions using the order of operations",
+    "Compare real numbers (basic inequalities)",
+    "Graph intervals on a number line"
+   ],
+   "problems": [
+    {
+     "n": 1,
+     "pid": "1.1.1",
+     "objs": [
+      0
+     ],
+     "conf": "low",
+     "page": 1,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 2,
+     "pid": "1.1.5",
+     "objs": [
+      0
+     ],
+     "conf": "low",
+     "page": 1,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 3,
+     "pid": "1.1.6",
+     "objs": [
+      0
+     ],
+     "conf": "low",
+     "page": 1,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 4,
+     "pid": "1.1.7",
+     "objs": [
+      0
+     ],
+     "conf": "low",
+     "page": 1,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 5,
+     "pid": "1.1.8",
+     "objs": [
+      0
+     ],
+     "conf": "low",
+     "page": 2,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 6,
+     "pid": "1.1.9",
+     "objs": [
+      0
+     ],
+     "conf": "low",
+     "page": 2,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false,
+     "clip_status": "inferred",
+     "resolved": true
+    },
+    {
+     "n": 7,
+     "pid": "1.1.13",
+     "objs": [
+      1
+     ],
+     "conf": "medium",
+     "page": 2,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 8,
+     "pid": "1.1.15",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 9,
+     "pid": "1.1.21",
+     "objs": [
+      1
+     ],
+     "conf": "low",
+     "page": 2,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 10,
+     "pid": "1.1.23",
+     "objs": [
+      1
+     ],
+     "conf": "low",
+     "page": 2,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 11,
+     "pid": "1.1.25",
+     "objs": [
+      1
+     ],
+     "conf": "low",
+     "page": 3,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 12,
+     "pid": "1.1.27",
+     "objs": [
+      2
+     ],
+     "conf": "high",
+     "page": 3,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 13,
+     "pid": "1.1.28",
+     "objs": [
+      2
+     ],
+     "conf": "high",
+     "page": 3,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 14,
+     "pid": "AR.1.74",
+     "objs": [
+      2
+     ],
+     "conf": "low",
+     "page": 3,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 15,
+     "pid": "AR.1.75",
+     "objs": [
+      2
+     ],
+     "conf": "low",
+     "page": 3,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 16,
+     "pid": "AR.1.77",
+     "objs": [
+      2
+     ],
+     "conf": "low",
+     "page": 3,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 17,
+     "pid": "AR.1.79",
+     "objs": [
+      2
+     ],
+     "conf": "low",
+     "page": 3,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 18,
+     "pid": "AR.1.83",
+     "objs": [
+      2
+     ],
+     "conf": "low",
+     "page": 4,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 19,
+     "pid": "AR.1.85",
+     "objs": [
+      1,
+      2
+     ],
+     "conf": "medium",
+     "page": 4,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 20,
+     "pid": "1.1.29",
+     "objs": [
+      2,
+      3
+     ],
+     "conf": "medium",
+     "page": 4,
+     "flag": null,
+     "kind": "select",
+     "structure": [
+      "math",
+      "table"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 21,
+     "pid": "1.1.31",
+     "objs": [
+      3
+     ],
+     "conf": "low",
+     "page": 4,
+     "flag": null,
+     "kind": "fill",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 22,
+     "pid": "1.1.32",
+     "objs": [
+      3
+     ],
+     "conf": "low",
+     "page": 5,
+     "flag": null,
+     "kind": "fill",
+     "structure": [
+      "none"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 23,
+     "pid": "1.1.33",
+     "objs": [
+      3
+     ],
+     "conf": "low",
+     "page": 5,
+     "flag": null,
+     "kind": "fill",
+     "structure": [
+      "none"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 24,
+     "pid": "1.1.35",
+     "objs": [
+      3
+     ],
+     "conf": "low",
+     "page": 5,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 25,
+     "pid": "1.1.37",
+     "objs": [
+      4
+     ],
+     "conf": "low",
+     "page": 5,
+     "flag": null,
+     "kind": "select",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 26,
+     "pid": "1.1.39",
+     "objs": [
+      4
+     ],
+     "conf": "low",
+     "page": 5,
+     "flag": null,
+     "kind": "select",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 27,
+     "pid": "1.1.41",
+     "objs": [
+      4
+     ],
+     "conf": "low",
+     "page": 6,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math",
+      "table"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 28,
+     "pid": "1.1.45",
+     "objs": [
+      4
+     ],
+     "conf": "high",
+     "page": 6,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math",
+      "numberline"
+     ],
+     "auto_ok": false,
+     "clipped": true,
+     "clip_status": "unrecoverable"
+    },
+    {
+     "n": 29,
+     "pid": "1.1.47",
+     "objs": [
+      4
+     ],
+     "conf": "high",
+     "page": 6,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math",
+      "numberline"
+     ],
+     "auto_ok": false,
+     "clipped": true,
+     "clip_status": "unrecoverable"
+    },
+    {
+     "n": 30,
+     "pid": "1.1.49",
+     "objs": [
+      4
+     ],
+     "conf": "high",
+     "page": 6,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math",
+      "numberline"
+     ],
+     "auto_ok": false,
+     "clipped": true
+    }
+   ],
+   "declared": null,
+   "tier": "full"
+  },
+  {
+   "id": "1.2",
+   "title": "Polynomials",
+   "track": "E",
+   "week": "Week 1",
+   "dates": "Aug 24 \u2013 Aug 28",
+   "objectives": [
+    "Evaluate Exponential Expressions",
+    "Perform operations on exponential expressions",
+    "Identify characteristics of polynomials",
+    "Add or subtract polynomials",
+    "Multiply polynomials",
+    "Solve applications involving polynomials"
+   ],
+   "problems": [
+    {
+     "n": 1,
+     "pid": "1.2.1",
+     "objs": [
+      0
+     ],
+     "conf": "low",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 2,
+     "pid": "1.2.3",
+     "objs": [
+      0
+     ],
+     "conf": "low",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 3,
+     "pid": "1.2.7",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 4,
+     "pid": "1.2.9",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 5,
+     "pid": "1.2.11",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 6,
+     "pid": "AR.11.6",
+     "objs": [
+      0
+     ],
+     "conf": "low",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 7,
+     "pid": "AR.11.7",
+     "objs": [
+      0,
+      1
+     ],
+     "conf": "medium",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 8,
+     "pid": "AR.11.8",
+     "objs": [
+      0,
+      1
+     ],
+     "conf": "medium",
+     "page": 2,
+     "flag": "review",
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 9,
+     "pid": "AR.11.9",
+     "objs": [
+      0,
+      1
+     ],
+     "conf": "medium",
+     "page": 2,
+     "flag": "review",
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 10,
+     "pid": "AR.11.10",
+     "objs": [
+      1
+     ],
+     "conf": "low",
+     "page": 2,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 11,
+     "pid": "1.2.13",
+     "objs": [
+      2,
+      4
+     ],
+     "conf": "medium",
+     "page": 2,
+     "flag": null,
+     "kind": "multipart",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 12,
+     "pid": "1.2.15",
+     "objs": [
+      2,
+      4
+     ],
+     "conf": "medium",
+     "page": 2,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 13,
+     "pid": "1.2.17",
+     "objs": [
+      3
+     ],
+     "conf": "medium",
+     "page": 3,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 14,
+     "pid": "1.2.20",
+     "objs": [
+      3
+     ],
+     "conf": "medium",
+     "page": 3,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 15,
+     "pid": "1.2.21",
+     "objs": [
+      3
+     ],
+     "conf": "medium",
+     "page": 3,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 16,
+     "pid": "1.2.22",
+     "objs": [
+      2
+     ],
+     "conf": "low",
+     "page": 3,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 17,
+     "pid": "AR.3.11",
+     "objs": [
+      2
+     ],
+     "conf": "low",
+     "page": 3,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 18,
+     "pid": "AR.3.12",
+     "objs": [
+      2
+     ],
+     "conf": "low",
+     "page": 4,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 19,
+     "pid": "AR.3.13",
+     "objs": [
+      2
+     ],
+     "conf": "low",
+     "page": 4,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 20,
+     "pid": "AR.3.14",
+     "objs": [
+      2
+     ],
+     "conf": "low",
+     "page": 4,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 21,
+     "pid": "AR.3.15",
+     "objs": [
+      3
+     ],
+     "conf": "medium",
+     "page": 4,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 22,
+     "pid": "AR.3.16",
+     "objs": [
+      3
+     ],
+     "conf": "medium",
+     "page": 4,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 23,
+     "pid": "1.2.23",
+     "objs": [
+      4
+     ],
+     "conf": "medium",
+     "page": 4,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 24,
+     "pid": "1.2.24",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 5,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 25,
+     "pid": "1.2.27",
+     "objs": [
+      4
+     ],
+     "conf": "medium",
+     "page": 5,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 26,
+     "pid": "1.2.29",
+     "objs": [
+      3
+     ],
+     "conf": "low",
+     "page": 5,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 27,
+     "pid": "1.2.30",
+     "objs": [
+      4
+     ],
+     "conf": "medium",
+     "page": 5,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 28,
+     "pid": "1.2.31",
+     "objs": [
+      4
+     ],
+     "conf": "low",
+     "page": 5,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 29,
+     "pid": "AR.3.23",
+     "objs": [
+      4
+     ],
+     "conf": "medium",
+     "page": 5,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 30,
+     "pid": "AR.3.24",
+     "objs": [
+      4
+     ],
+     "conf": "low",
+     "page": 6,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 31,
+     "pid": "AR.3.25",
+     "objs": [
+      4
+     ],
+     "conf": "medium",
+     "page": 6,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 32,
+     "pid": "AR.3.26",
+     "objs": [
+      4
+     ],
+     "conf": "medium",
+     "page": 6,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 33,
+     "pid": "AR.3.27",
+     "objs": [
+      5
+     ],
+     "conf": "low",
+     "page": 6,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 34,
+     "pid": "AR.3.29",
+     "objs": [
+      4
+     ],
+     "conf": "medium",
+     "page": 6,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 35,
+     "pid": "AR.3.32",
+     "objs": [
+      5
+     ],
+     "conf": "low",
+     "page": 6,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 36,
+     "pid": "AR.3.33",
+     "objs": [
+      4
+     ],
+     "conf": "medium",
+     "page": 7,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 37,
+     "pid": "AR.3.34",
+     "objs": [
+      4
+     ],
+     "conf": "medium",
+     "page": 7,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 38,
+     "pid": "1.2.39-BE",
+     "objs": [
+      5
+     ],
+     "conf": "low",
+     "page": 7,
+     "flag": null,
+     "kind": "multipart",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": true,
+     "clip_status": "partial"
+    },
+    {
+     "n": 39,
+     "pid": "1.2.41-BE",
+     "objs": [
+      5
+     ],
+     "conf": "low",
+     "page": 8,
+     "flag": "review",
+     "kind": "multipart",
+     "structure": [
+      "math",
+      "histogram"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    }
+   ],
+   "declared": null,
+   "tier": "full"
+  },
+  {
+   "id": "1.3",
+   "title": "Factoring",
+   "track": "E",
+   "week": "Week 1",
+   "dates": "Aug 24 \u2013 Aug 28",
+   "objectives": [
+    "Factor out the greatest common factor",
+    "Factor quadratics with a leading coefficient of 1",
+    "Factor quadratics where the leading coefficient is not 1"
+   ],
+   "problems": [
+    {
+     "n": 1,
+     "pid": "AR.3.36",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 2,
+     "pid": "AR.3.37",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 3,
+     "pid": "AR.3.38",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 4,
+     "pid": "1.3.1",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 5,
+     "pid": "1.3.3",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 6,
+     "pid": "1.3.5",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 7,
+     "pid": "AR.3.46",
+     "objs": [
+      0
+     ],
+     "conf": "medium",
+     "page": 2,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 8,
+     "pid": "AR.3.47",
+     "objs": [
+      0,
+      1
+     ],
+     "conf": "medium",
+     "page": 2,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 9,
+     "pid": "AR.3.48",
+     "objs": [
+      0,
+      1
+     ],
+     "conf": "medium",
+     "page": 2,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 10,
+     "pid": "1.3.11",
+     "objs": [
+      0,
+      1
+     ],
+     "conf": "medium",
+     "page": 2,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 11,
+     "pid": "1.3.13",
+     "objs": [
+      1
+     ],
+     "conf": "medium",
+     "page": 3,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 12,
+     "pid": "1.3.15",
+     "objs": [
+      1
+     ],
+     "conf": "medium",
+     "page": 3,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 13,
+     "pid": "1.3.17",
+     "objs": [
+      1
+     ],
+     "conf": "medium",
+     "page": 3,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 14,
+     "pid": "1.3.19",
+     "objs": [
+      1
+     ],
+     "conf": "medium",
+     "page": 3,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 15,
+     "pid": "1.3.21",
+     "objs": [
+      1
+     ],
+     "conf": "medium",
+     "page": 4,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 16,
+     "pid": "1.3.23",
+     "objs": [
+      1,
+      2
+     ],
+     "conf": "medium",
+     "page": 4,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 17,
+     "pid": "1.3.25",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 4,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 18,
+     "pid": "1.3.27",
+     "objs": [
+      1,
+      2
+     ],
+     "conf": "medium",
+     "page": 4,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 19,
+     "pid": "1.3.33",
+     "objs": [
+      2
+     ],
+     "conf": "medium",
+     "page": 5,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 20,
+     "pid": "1.3.37",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 5,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 21,
+     "pid": "1.3.38",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 5,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 22,
+     "pid": "1.3.39",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 5,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 23,
+     "pid": "1.3.47",
+     "objs": [
+      2
+     ],
+     "conf": "medium",
+     "page": 6,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 24,
+     "pid": "1.3.51",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 6,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 25,
+     "pid": "1.3.61",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 6,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    }
+   ],
+   "declared": null,
+   "tier": "full"
+  },
+  {
+   "id": "1.4",
+   "title": "Rational Expressions",
+   "track": "E",
+   "week": "Week 2",
+   "dates": "Aug 31 \u2013 Sep 4",
+   "objectives": [
+    "Write a rational expression in lowest terms",
+    "Multiply and divide rational expressions"
+   ],
+   "problems": [
+    {
+     "n": 1,
+     "pid": "1.4.1",
+     "objs": [],
+     "conf": "none",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 2,
+     "pid": "1.4.2",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 3,
+     "pid": "1.4.3",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 4,
+     "pid": "1.4.4",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 5,
+     "pid": "1.4.5",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 6,
+     "pid": "1.4.7",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 7,
+     "pid": "1.4.9",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 8,
+     "pid": "1.4.11",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": "review",
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 9,
+     "pid": "1.4.13",
+     "objs": [
+      1
+     ],
+     "conf": "low",
+     "page": 2,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 10,
+     "pid": "1.4.15",
+     "objs": [
+      0,
+      1
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 11,
+     "pid": "1.4.17",
+     "objs": [
+      0,
+      1
+     ],
+     "conf": "high",
+     "page": 3,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 12,
+     "pid": "1.4.21",
+     "objs": [
+      0,
+      1
+     ],
+     "conf": "high",
+     "page": 3,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 13,
+     "pid": "1.4.23",
+     "objs": [
+      1
+     ],
+     "conf": "medium",
+     "page": 3,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 14,
+     "pid": "1.4.24",
+     "objs": [
+      0,
+      1
+     ],
+     "conf": "medium",
+     "page": 3,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 15,
+     "pid": "1.4.25",
+     "objs": [],
+     "conf": "none",
+     "page": 3,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    }
+   ],
+   "declared": null,
+   "tier": "full"
+  },
+  {
+   "id": "1.5",
+   "title": "Exponents and Radicals",
+   "track": "E",
+   "week": "Week 2",
+   "dates": "Aug 31 \u2013 Sep 4",
+   "objectives": [
+    "Simplify expressions with integer exponents",
+    "Simplify expressions with rational exponents"
+   ],
+   "problems": [
+    {
+     "n": 1,
+     "pid": "1.5.1",
+     "objs": [
+      0
+     ],
+     "conf": "medium",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 2,
+     "pid": "1.5.3",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 3,
+     "pid": "1.5.4",
+     "objs": [
+      0
+     ],
+     "conf": "medium",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 4,
+     "pid": "1.5.5",
+     "objs": [
+      0
+     ],
+     "conf": "medium",
+     "page": 1,
+     "flag": "review",
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 5,
+     "pid": "1.5.9",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 6,
+     "pid": "1.5.10",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 7,
+     "pid": "1.5.11",
+     "objs": [
+      0
+     ],
+     "conf": "medium",
+     "page": 2,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 8,
+     "pid": "1.5.12",
+     "objs": [
+      0
+     ],
+     "conf": "medium",
+     "page": 2,
+     "flag": "review",
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 9,
+     "pid": "1.5.13",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 10,
+     "pid": "1.5.14",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": "review",
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 11,
+     "pid": "1.5.15",
+     "objs": [
+      0
+     ],
+     "conf": "medium",
+     "page": 2,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 12,
+     "pid": "1.5.16",
+     "objs": [
+      0
+     ],
+     "conf": "medium",
+     "page": 2,
+     "flag": "review",
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 13,
+     "pid": "1.5.28",
+     "objs": [
+      0
+     ],
+     "conf": "medium",
+     "page": 3,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 14,
+     "pid": "1.5.29",
+     "objs": [
+      0,
+      1
+     ],
+     "conf": "medium",
+     "page": 3,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 15,
+     "pid": "1.5.31",
+     "objs": [
+      0,
+      1
+     ],
+     "conf": "high",
+     "page": 3,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 16,
+     "pid": "1.5.33",
+     "objs": [
+      0,
+      1
+     ],
+     "conf": "high",
+     "page": 3,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 17,
+     "pid": "1.5.37",
+     "objs": [
+      0,
+      1
+     ],
+     "conf": "high",
+     "page": 3,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 18,
+     "pid": "1.5.38",
+     "objs": [
+      1
+     ],
+     "conf": "medium",
+     "page": 4,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 19,
+     "pid": "1.5.19",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 4,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 20,
+     "pid": "1.5.22",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 4,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 21,
+     "pid": "1.5.23",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 4,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 22,
+     "pid": "1.5.25",
+     "objs": [
+      1
+     ],
+     "conf": "low",
+     "page": 5,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 23,
+     "pid": "1.5.39",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 5,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 24,
+     "pid": "1.5.61",
+     "objs": [
+      1
+     ],
+     "conf": "low",
+     "page": 5,
+     "flag": "review",
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 25,
+     "pid": "1.5.63",
+     "objs": [
+      1
+     ],
+     "conf": "low",
+     "page": 5,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 26,
+     "pid": "1.5.64",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 5,
+     "flag": "review",
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 27,
+     "pid": "1.5.65",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 6,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 28,
+     "pid": "1.5.67",
+     "objs": [
+      1
+     ],
+     "conf": "medium",
+     "page": 6,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 29,
+     "pid": "1.5.83-BE",
+     "objs": [],
+     "conf": "none",
+     "page": 6,
+     "flag": null,
+     "kind": "multipart",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 30,
+     "pid": "AR.2.20",
+     "objs": [
+      1
+     ],
+     "conf": "medium",
+     "page": 6,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    }
+   ],
+   "declared": null,
+   "tier": "full"
+  },
+  {
+   "id": "1.6",
+   "title": "First-Degree Equations",
+   "track": "E",
+   "week": "Week 2",
+   "dates": "Aug 31 \u2013 Sep 4",
+   "objectives": [
+    "Solve first-degree equations using properties of equality",
+    "Solve first-degree equations involving fractions",
+    "Solve first-degree equations and formulas for a specified variable",
+    "Solve applications involving first-degree equations"
+   ],
+   "problems": [
+    {
+     "n": 1,
+     "pid": "1.6.1",
+     "objs": [
+      0
+     ],
+     "conf": "medium",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 2,
+     "pid": "1.6.2",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 3,
+     "pid": "1.6.3",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 4,
+     "pid": "1.6.5",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 5,
+     "pid": "1.6.6",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 6,
+     "pid": "1.6.11",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 7,
+     "pid": "1.6.13",
+     "objs": [
+      0,
+      1
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 8,
+     "pid": "1.6.15",
+     "objs": [
+      0,
+      1
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 9,
+     "pid": "1.6.23",
+     "objs": [
+      0,
+      1
+     ],
+     "conf": "medium",
+     "page": 2,
+     "flag": null,
+     "kind": "fill",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 10,
+     "pid": "1.6.25",
+     "objs": [
+      0,
+      1
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "fill",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 11,
+     "pid": "1.6.27",
+     "objs": [
+      1
+     ],
+     "conf": "medium",
+     "page": 2,
+     "flag": null,
+     "kind": "fill",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 12,
+     "pid": "1.6.28",
+     "objs": [
+      1
+     ],
+     "conf": "medium",
+     "page": 3,
+     "flag": null,
+     "kind": "fill",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 13,
+     "pid": "1.6.29",
+     "objs": [
+      2
+     ],
+     "conf": "high",
+     "page": 3,
+     "flag": "review",
+     "kind": "fill",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 14,
+     "pid": "1.6.31",
+     "objs": [
+      2
+     ],
+     "conf": "high",
+     "page": 3,
+     "flag": null,
+     "kind": "fill",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 15,
+     "pid": "1.6.32",
+     "objs": [
+      1,
+      2
+     ],
+     "conf": "medium",
+     "page": 3,
+     "flag": null,
+     "kind": "fill",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 16,
+     "pid": "1.6.39-PS",
+     "objs": [
+      2
+     ],
+     "conf": "low",
+     "page": 3,
+     "flag": null,
+     "kind": "fill",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 17,
+     "pid": "1.6.43-BE",
+     "objs": [
+      1,
+      2
+     ],
+     "conf": "medium",
+     "page": 3,
+     "flag": null,
+     "kind": "multipart",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 18,
+     "pid": "1.6.45-BE",
+     "objs": [
+      1,
+      2
+     ],
+     "conf": "medium",
+     "page": 4,
+     "flag": null,
+     "kind": "multipart",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 19,
+     "pid": "1.6.49-BE",
+     "objs": [
+      2
+     ],
+     "conf": "low",
+     "page": 4,
+     "flag": null,
+     "kind": "multipart",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 20,
+     "pid": "1.6.55-BE",
+     "objs": [
+      2
+     ],
+     "conf": "low",
+     "page": 4,
+     "flag": null,
+     "kind": "multipart",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 21,
+     "pid": "AR.5.22",
+     "objs": [
+      2,
+      3
+     ],
+     "conf": "high",
+     "page": 4,
+     "flag": null,
+     "kind": "fill",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 22,
+     "pid": "AR.5.24",
+     "objs": [
+      2,
+      3
+     ],
+     "conf": "high",
+     "page": 4,
+     "flag": null,
+     "kind": "fill",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 23,
+     "pid": "AR.5.25",
+     "objs": [
+      2,
+      3
+     ],
+     "conf": "high",
+     "page": 5,
+     "flag": null,
+     "kind": "fill",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 24,
+     "pid": "AR.5.28",
+     "objs": [
+      2,
+      3
+     ],
+     "conf": "medium",
+     "page": 5,
+     "flag": null,
+     "kind": "fill",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 25,
+     "pid": "AR.5.29",
+     "objs": [
+      3
+     ],
+     "conf": "high",
+     "page": 5,
+     "flag": null,
+     "kind": "fill",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 26,
+     "pid": "AR.5.30",
+     "objs": [
+      3
+     ],
+     "conf": "high",
+     "page": 5,
+     "flag": null,
+     "kind": "fill",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 27,
+     "pid": "AR.5.31",
+     "objs": [
+      3
+     ],
+     "conf": "high",
+     "page": 5,
+     "flag": null,
+     "kind": "fill",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 28,
+     "pid": "AR.5.32",
+     "objs": [
+      3
+     ],
+     "conf": "high",
+     "page": 5,
+     "flag": null,
+     "kind": "fill",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 29,
+     "pid": "AR.5.37",
+     "objs": [
+      3
+     ],
+     "conf": "high",
+     "page": 5,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 30,
+     "pid": "AR.5.40",
+     "objs": [
+      3
+     ],
+     "conf": "high",
+     "page": 6,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 31,
+     "pid": "AR.5.43",
+     "objs": [
+      3
+     ],
+     "conf": "high",
+     "page": 6,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    }
+   ],
+   "declared": null,
+   "tier": "full"
+  },
+  {
+   "id": "1.7",
+   "title": "Quadratic Equations",
+   "track": "E",
+   "week": "Week 3",
+   "dates": "Sep 7 \u2013 Sep 11",
+   "objectives": [
+    "Solve quadratic equations by factoring",
+    "Solve quadratic equations using the quadratic formula"
+   ],
+   "problems": [
+    {
+     "n": 1,
+     "pid": "1.7.1",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 2,
+     "pid": "1.7.2",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 3,
+     "pid": "1.7.3",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 4,
+     "pid": "1.7.4",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 5,
+     "pid": "1.7.5",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 6,
+     "pid": "1.7.6",
+     "objs": [
+      0
+     ],
+     "conf": "medium",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 7,
+     "pid": "1.7.7",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": true
+    },
+    {
+     "n": 8,
+     "pid": "1.7.8",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 9,
+     "pid": "1.7.9",
+     "objs": [
+      0,
+      1
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 10,
+     "pid": "1.7.11",
+     "objs": [
+      0,
+      1
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": true,
+     "clipped": false
+    },
+    {
+     "n": 11,
+     "pid": "1.7.26",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "multipart",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 12,
+     "pid": "1.7.27",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 3,
+     "flag": null,
+     "kind": "multipart",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": true
+    },
+    {
+     "n": 13,
+     "pid": "AR.6.44",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 3,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": false
+    },
+    {
+     "n": 14,
+     "pid": "AR.6.45",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 3,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": true
+    },
+    {
+     "n": 15,
+     "pid": "AR.6.46",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 4,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ],
+     "auto_ok": false,
+     "clipped": true
+    }
+   ],
+   "declared": null,
+   "tier": "full"
+  },
+  {
+   "id": "2.1",
+   "title": "Graphs",
+   "track": "120",
+   "week": "Week 4",
+   "dates": "Sep 14 \u2013 Sep 18",
+   "objectives": [
+    "Identify the quadrant in which a point lies",
+    "Determine whether an ordered pair is a solution to an equation",
+    "Graph equations",
+    "Find all of the x- and y- intercepts from a given graph",
+    "Find the x- and y-intercepts from a given equation"
+   ],
+   "problems": [
+    {
+     "n": 1,
+     "pid": "2.1.1",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 2,
+     "pid": "2.1.1",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 3,
+     "pid": "2.1.3",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "fill-in",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 4,
+     "pid": "2.1.7",
+     "objs": [
+      2
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": "review",
+     "kind": "compute",
+     "structure": [
+      "math",
+      "graph"
+     ]
+    },
+    {
+     "n": 5,
+     "pid": "2.1.9",
+     "objs": [
+      2
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": "review",
+     "kind": "compute",
+     "structure": [
+      "math",
+      "graph"
+     ]
+    },
+    {
+     "n": 6,
+     "pid": "2.1.12",
+     "objs": [
+      2
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": "review",
+     "kind": "compute",
+     "structure": [
+      "math",
+      "graph"
+     ]
+    },
+    {
+     "n": 7,
+     "pid": "2.1.14",
+     "objs": [
+      3
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": "review",
+     "kind": "fill-in",
+     "structure": [
+      "graph"
+     ]
+    },
+    {
+     "n": 8,
+     "pid": "2.1.15",
+     "objs": [
+      3
+     ],
+     "conf": "high",
+     "page": 3,
+     "flag": "review",
+     "kind": "fill-in",
+     "structure": [
+      "graph"
+     ]
+    },
+    {
+     "n": 9,
+     "pid": "2.1.17",
+     "objs": [
+      2,
+      3,
+      4
+     ],
+     "conf": "high",
+     "page": 3,
+     "flag": null,
+     "kind": "fill-in",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 10,
+     "pid": "2.1.19",
+     "objs": [
+      3
+     ],
+     "conf": "high",
+     "page": 3,
+     "flag": null,
+     "kind": "fill-in",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 11,
+     "pid": "2.1.39-BE",
+     "objs": [
+      3
+     ],
+     "conf": "low",
+     "page": 4,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "table",
+      "graph"
+     ]
+    },
+    {
+     "n": 12,
+     "pid": "2.1.45-BE",
+     "objs": [
+      3
+     ],
+     "conf": "high",
+     "page": 4,
+     "flag": null,
+     "kind": "interpret",
+     "structure": [
+      "graph"
+     ]
+    },
+    {
+     "n": 13,
+     "pid": "2.1.47-BE",
+     "objs": [
+      3
+     ],
+     "conf": "high",
+     "page": 4,
+     "flag": null,
+     "kind": "interpret",
+     "structure": [
+      "graph"
+     ]
+    },
+    {
+     "n": 14,
+     "pid": "2.1.51-BE",
+     "objs": [
+      2,
+      3
+     ],
+     "conf": "medium",
+     "page": 5,
+     "flag": "review",
+     "kind": "interpret",
+     "structure": [
+      "graph"
+     ]
+    },
+    {
+     "n": 15,
+     "pid": "2.1.55-BE",
+     "objs": [
+      2,
+      3
+     ],
+     "conf": "medium",
+     "page": 5,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "graph"
+     ]
+    }
+   ],
+   "declared": 14,
+   "tier": "type-only"
+  },
+  {
+   "id": "2.2",
+   "title": "Equations of Lines",
+   "track": "120",
+   "week": "Week 4",
+   "dates": "Sep 14 \u2013 Sep 18",
+   "objectives": [
+    "Find the slope of a line given two points",
+    "Find the equation of a line given its slope and y-intercept",
+    "Find the slope and y-intercept of a line given its equation",
+    "Graph a line using intercepts",
+    "Determine whether a pair of lines is parallel, perpendicular, or neither",
+    "Find the equation of a line satisfying given conditions"
+   ],
+   "problems": [
+    {
+     "n": 1,
+     "pid": "2.2.3",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 2,
+     "pid": "2.2.4",
+     "objs": [
+      0,
+      1
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 3,
+     "pid": "2.2.8",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 4,
+     "pid": "2.2.9",
+     "objs": [
+      1,
+      2
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "fill-in",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 5,
+     "pid": "2.2.13",
+     "objs": [
+      1,
+      2
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ],
+     "clipped": true,
+     "clip_status": "partial"
+    },
+    {
+     "n": 6,
+     "pid": "2.2.15",
+     "objs": [
+      1,
+      2
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "fill-in",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 7,
+     "pid": "2.2.17",
+     "objs": [
+      1,
+      2
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "fill-in",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 8,
+     "pid": "2.2.29",
+     "objs": [
+      2,
+      3
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": "review",
+     "kind": "compute",
+     "structure": [
+      "math",
+      "graph"
+     ]
+    },
+    {
+     "n": 9,
+     "pid": "2.2.31",
+     "objs": [
+      2,
+      3
+     ],
+     "conf": "high",
+     "page": 3,
+     "flag": "review",
+     "kind": "compute",
+     "structure": [
+      "math",
+      "graph"
+     ]
+    },
+    {
+     "n": 10,
+     "pid": "2.2.33-Setup & Solve",
+     "objs": [
+      4
+     ],
+     "conf": "high",
+     "page": 3,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ],
+     "clipped": true,
+     "clip_status": "inferred"
+    },
+    {
+     "n": 11,
+     "pid": "2.2.35",
+     "objs": [
+      4
+     ],
+     "conf": "high",
+     "page": 4,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 12,
+     "pid": "2.2.37",
+     "objs": [
+      4
+     ],
+     "conf": "high",
+     "page": 4,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 13,
+     "pid": "2.2.41",
+     "objs": [
+      1,
+      2
+     ],
+     "conf": "high",
+     "page": 4,
+     "flag": null,
+     "kind": "fill-in",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 14,
+     "pid": "2.2.45",
+     "objs": [
+      1,
+      2,
+      3
+     ],
+     "conf": "high",
+     "page": 4,
+     "flag": null,
+     "kind": "fill-in",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 15,
+     "pid": "2.2.47",
+     "objs": [
+      1,
+      2
+     ],
+     "conf": "high",
+     "page": 4,
+     "flag": null,
+     "kind": "fill-in",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 16,
+     "pid": "2.2.51",
+     "objs": [
+      1,
+      2
+     ],
+     "conf": "high",
+     "page": 5,
+     "flag": null,
+     "kind": "fill-in",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 17,
+     "pid": "2.2.63-BE",
+     "objs": [
+      3,
+      4,
+      5
+     ],
+     "conf": "medium",
+     "page": 5,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 18,
+     "pid": "2.2.67-BE",
+     "objs": [
+      5
+     ],
+     "conf": "low",
+     "page": 5,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 19,
+     "pid": "2.2.71-BE",
+     "objs": [
+      5
+     ],
+     "conf": "medium",
+     "page": 5,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 20,
+     "pid": "2.2.73-BE",
+     "objs": [
+      5
+     ],
+     "conf": "medium",
+     "page": 5,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 21,
+     "pid": "2.2.77-BE",
+     "objs": [
+      5
+     ],
+     "conf": "low",
+     "page": 6,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math"
+     ]
+    }
+   ],
+   "declared": 29,
+   "tier": "type-only"
+  },
+  {
+   "id": "2.3",
+   "title": "Linear Models",
+   "track": "120",
+   "week": "Week 5",
+   "dates": "Sep 21 \u2013 Sep 25",
+   "objectives": [
+    "Use linear equations to convert between temperature units",
+    "Make predictions from a linear model obtained by using two data points."
+   ],
+   "problems": [
+    {
+     "n": 1,
+     "pid": "2.3.2-PS",
+     "objs": [],
+     "conf": "none",
+     "page": 1,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 2,
+     "pid": "2.3.3-PS",
+     "objs": [
+      0
+     ],
+     "conf": "medium",
+     "page": 1,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 3,
+     "pid": "2.3.5-BE",
+     "objs": [
+      0
+     ],
+     "conf": "low",
+     "page": 1,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 4,
+     "pid": "2.3.5-BE",
+     "objs": [
+      1
+     ],
+     "conf": "low",
+     "page": 1,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 5,
+     "pid": "2.3.7-BE",
+     "objs": [
+      1
+     ],
+     "conf": "low",
+     "page": 2,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 6,
+     "pid": "2.3.7-BE",
+     "objs": [],
+     "conf": "none",
+     "page": 2,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math"
+     ]
+    }
+   ],
+   "declared": 6,
+   "tier": "type-only"
+  },
+  {
+   "id": "2.4",
+   "title": "Linear Inequalities",
+   "track": "E",
+   "week": "Week 3",
+   "dates": "Sep 7 \u2013 Sep 11",
+   "objectives": [
+    "Solve linear inequalities and graph the solutions.",
+    "Write an inequality to describe the graph of a solution set."
+   ],
+   "problems": [
+    {
+     "n": 1,
+     "pid": "2.4.1",
+     "objs": [
+      0,
+      1
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "none"
+     ],
+     "clipped": true,
+     "clip_status": "partial"
+    },
+    {
+     "n": 2,
+     "pid": "2.4.3",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math",
+      "numberline"
+     ],
+     "clipped": true,
+     "clip_status": "unrecoverable"
+    },
+    {
+     "n": 3,
+     "pid": "2.4.5",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math",
+      "numberline"
+     ],
+     "clipped": true,
+     "clip_status": "partial"
+    },
+    {
+     "n": 4,
+     "pid": "2.4.7",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math",
+      "numberline"
+     ],
+     "clipped": true,
+     "clip_status": "partial"
+    },
+    {
+     "n": 5,
+     "pid": "2.4.9",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math",
+      "numberline"
+     ],
+     "clipped": true,
+     "clip_status": "partial"
+    },
+    {
+     "n": 6,
+     "pid": "2.4.11",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math",
+      "numberline"
+     ],
+     "clipped": true,
+     "clip_status": "partial"
+    },
+    {
+     "n": 7,
+     "pid": "2.4.13",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math",
+      "numberline"
+     ]
+    },
+    {
+     "n": 8,
+     "pid": "2.4.15",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math",
+      "numberline"
+     ],
+     "clipped": true,
+     "clip_status": "partial"
+    },
+    {
+     "n": 9,
+     "pid": "2.4.27",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 3,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "numberline"
+     ]
+    },
+    {
+     "n": 10,
+     "pid": "2.4.29",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 3,
+     "flag": null,
+     "kind": "fill-in",
+     "structure": [
+      "numberline"
+     ]
+    },
+    {
+     "n": 11,
+     "pid": "2.4.30",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 3,
+     "flag": null,
+     "kind": "fill-in",
+     "structure": [
+      "numberline"
+     ]
+    }
+   ],
+   "declared": null,
+   "tier": "type-only"
+  },
+  {
+   "id": "3.1",
+   "title": "Functions",
+   "track": "120",
+   "week": "Week 5",
+   "dates": "Sep 21 \u2013 Sep 25",
+   "objectives": [
+    "Evaluate functions for algebraic values",
+    "Evaluate functions for numerical values",
+    "Find the domain of functions",
+    "Solve applications involving functions"
+   ],
+   "problems": [
+    {
+     "n": 1,
+     "pid": "3.1.45",
+     "objs": [
+      2
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 2,
+     "pid": "3.1.49",
+     "objs": [
+      0,
+      2
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 3,
+     "pid": "3.1.33",
+     "objs": [
+      0,
+      1
+     ],
+     "conf": "medium",
+     "page": 2,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 4,
+     "pid": "3.1.35",
+     "objs": [
+      2
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 5,
+     "pid": "3.1.15",
+     "objs": [
+      2
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "fill-in",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 6,
+     "pid": "3.1.19",
+     "objs": [
+      2
+     ],
+     "conf": "high",
+     "page": 3,
+     "flag": null,
+     "kind": "fill-in",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 7,
+     "pid": "3.1.21",
+     "objs": [
+      2
+     ],
+     "conf": "high",
+     "page": 3,
+     "flag": null,
+     "kind": "fill-in",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 8,
+     "pid": "3.1.57-BE",
+     "objs": [
+      3
+     ],
+     "conf": "low",
+     "page": 3,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 9,
+     "pid": "3.1.59-BE",
+     "objs": [
+      3
+     ],
+     "conf": "medium",
+     "page": 4,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 10,
+     "pid": "3.1.67-BE",
+     "objs": [
+      3
+     ],
+     "conf": "low",
+     "page": 5,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math"
+     ]
+    }
+   ],
+   "declared": 14,
+   "tier": "type-only"
+  },
+  {
+   "id": "4.1",
+   "title": "Exponential Functions",
+   "track": "120",
+   "week": "Week 5",
+   "dates": "Sep 21 \u2013 Sep 25",
+   "objectives": [
+    "Classify functions as linear, quadratic, or exponential",
+    "Describe the shape of the graphs of exponential functions",
+    "Graph exponential functions",
+    "Determine a value or an equation for an exponential function given certain conditions"
+   ],
+   "problems": [
+    {
+     "n": 1,
+     "pid": "4.1.1",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 2,
+     "pid": "4.1.2",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 3,
+     "pid": "4.1.3",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 4,
+     "pid": "4.1.5",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 5,
+     "pid": "4.1.6",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 6,
+     "pid": "4.1.7",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math",
+      "table"
+     ]
+    },
+    {
+     "n": 7,
+     "pid": "4.1.8",
+     "objs": [
+      1,
+      2
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 8,
+     "pid": "4.1.9",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math",
+      "table"
+     ]
+    },
+    {
+     "n": 9,
+     "pid": "4.1.10",
+     "objs": [
+      2
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 10,
+     "pid": "4.1.13",
+     "objs": [
+      2
+     ],
+     "conf": "medium",
+     "page": 3,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math",
+      "graph"
+     ],
+     "clipped": true,
+     "clip_status": "partial"
+    },
+    {
+     "n": 11,
+     "pid": "4.1.17",
+     "objs": [
+      2
+     ],
+     "conf": "medium",
+     "page": 3,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math",
+      "graph"
+     ],
+     "clipped": true,
+     "clip_status": "partial"
+    },
+    {
+     "n": 12,
+     "pid": "4.1.29",
+     "objs": [
+      2
+     ],
+     "conf": "low",
+     "page": 3,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 13,
+     "pid": "4.1.30",
+     "objs": [
+      2
+     ],
+     "conf": "high",
+     "page": 3,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 14,
+     "pid": "4.1.19",
+     "objs": [
+      2
+     ],
+     "conf": "high",
+     "page": 4,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math",
+      "graph"
+     ],
+     "clipped": true,
+     "clip_status": "partial"
+    },
+    {
+     "n": 15,
+     "pid": "4.1.37-BE",
+     "objs": [
+      3
+     ],
+     "conf": "medium",
+     "page": 4,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math",
+      "table"
+     ]
+    },
+    {
+     "n": 16,
+     "pid": "4.1.39-BE",
+     "objs": [
+      2,
+      3
+     ],
+     "conf": "medium",
+     "page": 5,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 17,
+     "pid": "4.1.51-BE",
+     "objs": [
+      2,
+      3
+     ],
+     "conf": "medium",
+     "page": 6,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math"
+     ]
+    }
+   ],
+   "declared": 16,
+   "tier": "type-only"
+  },
+  {
+   "id": "4.2",
+   "title": "Applications of Exponential Functions",
+   "track": "120",
+   "week": "Week 6",
+   "dates": "Sep 28 \u2013 Oct 2",
+   "objectives": [
+    "Solve applications involving the evaluation and graphing of exponential functions",
+    "Solve applications involving logistic functions."
+   ],
+   "problems": [
+    {
+     "n": 1,
+     "pid": "4.2.3-BE",
+     "objs": [
+      0
+     ],
+     "conf": "medium",
+     "page": 1,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 2,
+     "pid": "4.2.3-BE",
+     "objs": [
+      0
+     ],
+     "conf": "medium",
+     "page": 1,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 3,
+     "pid": "4.2.4-BE",
+     "objs": [
+      0,
+      1
+     ],
+     "conf": "medium",
+     "page": 1,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 4,
+     "pid": "4.2.4-BE",
+     "objs": [
+      1
+     ],
+     "conf": "medium",
+     "page": 1,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 5,
+     "pid": "4.2.17-BE",
+     "objs": [],
+     "conf": "none",
+     "page": 2,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math"
+     ]
+    }
+   ],
+   "declared": 4,
+   "tier": "type-only"
+  },
+  {
+   "id": "4.3",
+   "title": "Logarithmic Functions",
+   "track": "120",
+   "week": "Week 6",
+   "dates": "Sep 28 \u2013 Oct 2",
+   "objectives": [
+    "Convert between logarithmic and exponential notation",
+    "Evaluate logarithms without a calculator",
+    "Use the properties of logarithms to rewrite logarithmic expressions",
+    "Evaluate logarithms using the change of base theorem"
+   ],
+   "problems": [
+    {
+     "n": 1,
+     "pid": "4.3.6",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "fill-in",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 2,
+     "pid": "4.3.7",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "fill-in",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 3,
+     "pid": "4.3.10",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "fill-in",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 4,
+     "pid": "4.3.11",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "fill-in",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 5,
+     "pid": "4.3.13",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 6,
+     "pid": "4.3.15",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 7,
+     "pid": "4.3.19",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 8,
+     "pid": "4.3.22",
+     "objs": [
+      1
+     ],
+     "conf": "medium",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 9,
+     "pid": "4.3.25",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 10,
+     "pid": "4.3.27",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 11,
+     "pid": "4.3.30",
+     "objs": [
+      2
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 12,
+     "pid": "4.3.34",
+     "objs": [
+      2
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 13,
+     "pid": "4.3.38",
+     "objs": [
+      2
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 14,
+     "pid": "4.3.40",
+     "objs": [
+      2
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 15,
+     "pid": "4.3.47",
+     "objs": [
+      3
+     ],
+     "conf": "medium",
+     "page": 3,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 16,
+     "pid": "4.3.49",
+     "objs": [
+      3
+     ],
+     "conf": "medium",
+     "page": 3,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 17,
+     "pid": "4.3.61-BE",
+     "objs": [
+      3
+     ],
+     "conf": "low",
+     "page": 3,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 18,
+     "pid": "4.3.63-BE",
+     "objs": [
+      3
+     ],
+     "conf": "low",
+     "page": 4,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math",
+      "graph"
+     ]
+    }
+   ],
+   "declared": 16,
+   "tier": "type-only"
+  },
+  {
+   "id": "4.4",
+   "title": "Logarithmic & Exponential Equations",
+   "track": "120",
+   "week": "Week 6",
+   "dates": "Sep 28 \u2013 Oct 2",
+   "objectives": [
+    "Solve logarithmic equations for a numerical value",
+    "Solve exponential equations for a numerical value",
+    "Solve applications involving logarithmic and exponential equations"
+   ],
+   "problems": [
+    {
+     "n": 1,
+     "pid": "4.4.1",
+     "objs": [
+      0
+     ],
+     "conf": "medium",
+     "page": 1,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 2,
+     "pid": "4.4.3-Setup & Solve",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 3,
+     "pid": "4.4.3",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 4,
+     "pid": "4.4.5",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 5,
+     "pid": "4.4.7",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 6,
+     "pid": "4.4.9",
+     "objs": [
+      0,
+      1
+     ],
+     "conf": "medium",
+     "page": 2,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 7,
+     "pid": "4.4.23",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "fill-in",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 8,
+     "pid": "4.4.23",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "fill-in",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 9,
+     "pid": "4.4.23",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "fill-in",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 10,
+     "pid": "4.4.25",
+     "objs": [
+      1,
+      2
+     ],
+     "conf": "high",
+     "page": 3,
+     "flag": null,
+     "kind": "fill-in",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 11,
+     "pid": "4.4.25",
+     "objs": [
+      1,
+      2
+     ],
+     "conf": "high",
+     "page": 3,
+     "flag": null,
+     "kind": "fill-in",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 12,
+     "pid": "4.4.37",
+     "objs": [
+      1,
+      2
+     ],
+     "conf": "high",
+     "page": 3,
+     "flag": null,
+     "kind": "fill-in",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 13,
+     "pid": "4.4.39",
+     "objs": [
+      2
+     ],
+     "conf": "high",
+     "page": 3,
+     "flag": null,
+     "kind": "fill-in",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 14,
+     "pid": "4.4.71-BE",
+     "objs": [
+      2
+     ],
+     "conf": "low",
+     "page": 3,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 15,
+     "pid": "4.4.74-BE",
+     "objs": [
+      2
+     ],
+     "conf": "low",
+     "page": 3,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    }
+   ],
+   "declared": 15,
+   "tier": "type-only"
+  },
+  {
+   "id": "5.1",
+   "title": "Simple and Compound Interest",
+   "track": "120",
+   "week": "Week 7",
+   "dates": "Oct 5 \u2013 Oct 9",
+   "objectives": [
+    "Calculate simple interest",
+    "Find compound amounts and compound interest",
+    "Find interest rates",
+    "Find present values",
+    "Calculate previous prices due to inflation",
+    "Solve applications involving compound interest",
+    "Calculate present values of future amounts"
+   ],
+   "problems": [
+    {
+     "n": 1,
+     "pid": "5.1.#1",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 2,
+     "pid": "5.1.#2",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 3,
+     "pid": "5.1.#3",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 4,
+     "pid": "5.1.#4",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 5,
+     "pid": "5.1.#5",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 6,
+     "pid": "5.1.#6",
+     "objs": [
+      1,
+      2
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 7,
+     "pid": "5.1.#7",
+     "objs": [
+      2
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 8,
+     "pid": "5.1.#8",
+     "objs": [
+      2
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 9,
+     "pid": "5.1.#9",
+     "objs": [
+      3
+     ],
+     "conf": "high",
+     "page": 3,
+     "flag": "review",
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 10,
+     "pid": "5.1.#10",
+     "objs": [
+      3
+     ],
+     "conf": "high",
+     "page": 3,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 11,
+     "pid": "5.1.#11",
+     "objs": [
+      3
+     ],
+     "conf": "high",
+     "page": 3,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 12,
+     "pid": "5.1.#12",
+     "objs": [
+      2,
+      4
+     ],
+     "conf": "medium",
+     "page": 3,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 13,
+     "pid": "5.1.#13",
+     "objs": [
+      3,
+      6
+     ],
+     "conf": "medium",
+     "page": 4,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 14,
+     "pid": "5.1.#14",
+     "objs": [
+      0,
+      2
+     ],
+     "conf": "high",
+     "page": 4,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 15,
+     "pid": "5.1.#15",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 4,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 16,
+     "pid": "5.1.#16",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 4,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 17,
+     "pid": "5.1.#17",
+     "objs": [
+      6
+     ],
+     "conf": "high",
+     "page": 4,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    }
+   ],
+   "declared": 17,
+   "tier": "type-only"
+  },
+  {
+   "id": "5.2",
+   "title": "Annuities, Future Value, and Sinking Funds",
+   "track": "120",
+   "week": "Week 8",
+   "dates": "Oct 12 \u2013 Oct 16",
+   "objectives": [
+    "Calculate future values of annuities",
+    "Find periodic payment amounts",
+    "Solve applications involving annuities, future values, and sinking funds"
+   ],
+   "problems": [
+    {
+     "n": 1,
+     "pid": "5.2.3",
+     "objs": [
+      0,
+      1
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 2,
+     "pid": "5.2.3",
+     "objs": [
+      0,
+      1
+     ],
+     "conf": "medium",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 3,
+     "pid": "5.2.5",
+     "objs": [
+      0,
+      1
+     ],
+     "conf": "medium",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 4,
+     "pid": "5.2.7",
+     "objs": [
+      0,
+      1
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 5,
+     "pid": "5.2.7",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 6,
+     "pid": "5.2.14",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 7,
+     "pid": "5.2.14",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 8,
+     "pid": "5.2.15",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 9,
+     "pid": "5.2.31",
+     "objs": [
+      1
+     ],
+     "conf": "low",
+     "page": 2,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 10,
+     "pid": "5.2.33",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 11,
+     "pid": "5.2.34",
+     "objs": [
+      1
+     ],
+     "conf": "medium",
+     "page": 2,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 12,
+     "pid": "5.2.35",
+     "objs": [
+      1
+     ],
+     "conf": "medium",
+     "page": 2,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 13,
+     "pid": "5.2.41",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 3,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 14,
+     "pid": "5.2.43",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 3,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 15,
+     "pid": "5.2.45-BE",
+     "objs": [
+      2
+     ],
+     "conf": "low",
+     "page": 3,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 16,
+     "pid": "5.2.55-BE",
+     "objs": [
+      2
+     ],
+     "conf": "low",
+     "page": 3,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 17,
+     "pid": "5.2.55-BE",
+     "objs": [
+      2
+     ],
+     "conf": "low",
+     "page": 3,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    }
+   ],
+   "declared": 17,
+   "tier": "type-only"
+  },
+  {
+   "id": "5.3",
+   "title": "Consumer Loans and Amortization",
+   "track": "120",
+   "week": "Week 8",
+   "dates": "Oct 12 \u2013 Oct 16",
+   "objectives": [
+    "Find amortization payments",
+    "Find monthly payments and estimate remaining balances",
+    "Interpret amortization tables",
+    "Solve applications involving consumer loans and amortization"
+   ],
+   "problems": [
+    {
+     "n": 1,
+     "pid": "5.3.1",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 2,
+     "pid": "5.3.3",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 3,
+     "pid": "5.3.7",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 4,
+     "pid": "5.3.19",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 5,
+     "pid": "5.3.21",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 6,
+     "pid": "5.3.23",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 7,
+     "pid": "5.3.29",
+     "objs": [
+      0,
+      2
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "table"
+     ]
+    },
+    {
+     "n": 8,
+     "pid": "5.3.30",
+     "objs": [
+      0,
+      2
+     ],
+     "conf": "medium",
+     "page": 3,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "table"
+     ]
+    },
+    {
+     "n": 9,
+     "pid": "5.3.31",
+     "objs": [
+      2,
+      3
+     ],
+     "conf": "medium",
+     "page": 4,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "table"
+     ]
+    },
+    {
+     "n": 10,
+     "pid": "5.3.33-BE",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 4,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math",
+      "table"
+     ]
+    },
+    {
+     "n": 11,
+     "pid": "5.3.38-BE",
+     "objs": [
+      0,
+      1
+     ],
+     "conf": "high",
+     "page": 4,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 12,
+     "pid": "5.3.41-BE",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 5,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    }
+   ],
+   "declared": 12,
+   "tier": "type-only"
+  },
+  {
+   "id": "8.1",
+   "title": "Sets",
+   "track": "120",
+   "week": "Week 9",
+   "dates": "Oct 19 \u2013 Oct 23",
+   "objectives": [
+    "Identify elements of sets, equivalent sets, and set-builder notation",
+    "Identify subsets and the number of subsets",
+    "Find the complement of a set",
+    "Identify whether a set represents a union or intersection of two sets",
+    "Use set operations to identify the elements of a set",
+    "Solve applications involving sets"
+   ],
+   "problems": [
+    {
+     "n": 1,
+     "pid": "8.1.1",
+     "objs": [
+      0
+     ],
+     "conf": "low",
+     "page": 1,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 2,
+     "pid": "8.1.3",
+     "objs": [
+      0
+     ],
+     "conf": "low",
+     "page": 1,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 3,
+     "pid": "8.1.9",
+     "objs": [
+      0
+     ],
+     "conf": "low",
+     "page": 1,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 4,
+     "pid": "8.1.13",
+     "objs": [
+      1
+     ],
+     "conf": "low",
+     "page": 1,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 5,
+     "pid": "8.1.15",
+     "objs": [
+      1
+     ],
+     "conf": "low",
+     "page": 2,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 6,
+     "pid": "8.1.17",
+     "objs": [
+      1
+     ],
+     "conf": "low",
+     "page": 2,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 7,
+     "pid": "8.1.19",
+     "objs": [
+      1
+     ],
+     "conf": "low",
+     "page": 2,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 8,
+     "pid": "8.1.21",
+     "objs": [
+      1,
+      2
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "fill-in",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 9,
+     "pid": "8.1.25",
+     "objs": [
+      2
+     ],
+     "conf": "high",
+     "page": 3,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 10,
+     "pid": "8.1.28",
+     "objs": [
+      2
+     ],
+     "conf": "low",
+     "page": 3,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 11,
+     "pid": "8.1.29",
+     "objs": [
+      3
+     ],
+     "conf": "low",
+     "page": 3,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 12,
+     "pid": "8.1.37",
+     "objs": [
+      2
+     ],
+     "conf": "high",
+     "page": 3,
+     "flag": null,
+     "kind": "fill-in",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 13,
+     "pid": "8.1.38",
+     "objs": [
+      3
+     ],
+     "conf": "low",
+     "page": 3,
+     "flag": null,
+     "kind": "fill-in",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 14,
+     "pid": "8.1.39",
+     "objs": [
+      4
+     ],
+     "conf": "low",
+     "page": 4,
+     "flag": null,
+     "kind": "fill-in",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 15,
+     "pid": "8.1.41",
+     "objs": [
+      4
+     ],
+     "conf": "low",
+     "page": 4,
+     "flag": null,
+     "kind": "fill-in",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 16,
+     "pid": "8.1.44",
+     "objs": [
+      5
+     ],
+     "conf": "low",
+     "page": 4,
+     "flag": null,
+     "kind": "fill-in",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 17,
+     "pid": "8.1.45",
+     "objs": [
+      5
+     ],
+     "conf": "low",
+     "page": 4,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 18,
+     "pid": "8.1.47",
+     "objs": [
+      5
+     ],
+     "conf": "low",
+     "page": 4,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 19,
+     "pid": "8.1.55-GI",
+     "objs": [
+      4
+     ],
+     "conf": "medium",
+     "page": 5,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ]
+    }
+   ],
+   "declared": 19,
+   "tier": "type-only"
+  },
+  {
+   "id": "8.2",
+   "title": "Applications of Venn Diagrams",
+   "track": "120",
+   "week": "Week 9",
+   "dates": "Oct 19 \u2013 Oct 23",
+   "objectives": [
+    "Sketch a Venn diagram to represent complements, unions, or intersections of sets",
+    "Solve applications involving Venn diagrams and the number of elements in a set",
+    "Solve applications involving contingency tables",
+    "Use union rule or a Venn diagram to find the number of elements in a set"
+   ],
+   "problems": [
+    {
+     "n": 1,
+     "pid": "8.2.1",
+     "objs": [
+      0,
+      1
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": "review",
+     "kind": "interpret",
+     "structure": [
+      "venn",
+      "math"
+     ]
+    },
+    {
+     "n": 2,
+     "pid": "8.2.1",
+     "objs": [
+      0,
+      1
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": "review",
+     "kind": "interpret",
+     "structure": [
+      "venn",
+      "math"
+     ]
+    },
+    {
+     "n": 3,
+     "pid": "8.2.3",
+     "objs": [
+      0,
+      1
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": "review",
+     "kind": "interpret",
+     "structure": [
+      "venn",
+      "math"
+     ]
+    },
+    {
+     "n": 4,
+     "pid": "8.2.5",
+     "objs": [
+      0,
+      1
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "interpret",
+     "structure": [
+      "venn",
+      "math"
+     ]
+    },
+    {
+     "n": 5,
+     "pid": "8.2.7",
+     "objs": [
+      0,
+      1
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "venn",
+      "math"
+     ],
+     "clipped": true,
+     "clip_status": "inferred"
+    },
+    {
+     "n": 6,
+     "pid": "8.2.11",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 3,
+     "flag": "review",
+     "kind": "interpret",
+     "structure": [
+      "venn",
+      "math"
+     ]
+    },
+    {
+     "n": 7,
+     "pid": "8.2.13",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 3,
+     "flag": null,
+     "kind": "interpret",
+     "structure": [
+      "venn",
+      "math"
+     ]
+    },
+    {
+     "n": 8,
+     "pid": "8.2.17-SS",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 4,
+     "flag": "review",
+     "kind": "fill-in",
+     "structure": [
+      "venn"
+     ]
+    },
+    {
+     "n": 9,
+     "pid": "8.2.19-BE",
+     "objs": [
+      1,
+      2
+     ],
+     "conf": "medium",
+     "page": 4,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "none"
+     ]
+    },
+    {
+     "n": 10,
+     "pid": "8.2.27-SS",
+     "objs": [
+      2
+     ],
+     "conf": "medium",
+     "page": 5,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "table",
+      "math"
+     ]
+    },
+    {
+     "n": 11,
+     "pid": "8.2.34",
+     "objs": [
+      3
+     ],
+     "conf": "high",
+     "page": 5,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 12,
+     "pid": "8.2.35",
+     "objs": [
+      3
+     ],
+     "conf": "high",
+     "page": 5,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "venn",
+      "math"
+     ]
+    },
+    {
+     "n": 13,
+     "pid": "8.2.37",
+     "objs": [
+      3
+     ],
+     "conf": "high",
+     "page": 5,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 14,
+     "pid": "8.2.40",
+     "objs": [
+      3
+     ],
+     "conf": "medium",
+     "page": 6,
+     "flag": "review",
+     "kind": "fill-in",
+     "structure": [
+      "venn",
+      "math"
+     ],
+     "clipped": true,
+     "clip_status": "inferred"
+    },
+    {
+     "n": 15,
+     "pid": "8.2.41",
+     "objs": [
+      3
+     ],
+     "conf": "medium",
+     "page": 6,
+     "flag": "review",
+     "kind": "fill-in",
+     "structure": [
+      "venn",
+      "math"
+     ],
+     "clipped": true,
+     "clip_status": "inferred"
+    }
+   ],
+   "declared": 15,
+   "tier": "type-only"
+  },
+  {
+   "id": "8.3",
+   "title": "Introduction to Probability",
+   "track": "120",
+   "week": "Week 9",
+   "dates": "Oct 19 \u2013 Oct 23",
+   "objectives": [
+    "Vocabulary and concepts of probability",
+    "Write sample spaces and/or events",
+    "Identify disjoint events",
+    "Calculate the probability of an event.",
+    "Solve applications that involve finding probabilities",
+    "Determine whether probability assignments are possible"
+   ],
+   "problems": [
+    {
+     "n": 1,
+     "pid": "8.3.1",
+     "objs": [
+      0
+     ],
+     "conf": "low",
+     "page": 1,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "none"
+     ]
+    },
+    {
+     "n": 2,
+     "pid": "8.3.3",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "none"
+     ]
+    },
+    {
+     "n": 3,
+     "pid": "8.3.5",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "none"
+     ]
+    },
+    {
+     "n": 4,
+     "pid": "8.3.8",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "none"
+     ]
+    },
+    {
+     "n": 5,
+     "pid": "8.3.11",
+     "objs": [
+      2
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "none"
+     ]
+    },
+    {
+     "n": 6,
+     "pid": "8.3.14",
+     "objs": [
+      2
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "none"
+     ]
+    },
+    {
+     "n": 7,
+     "pid": "8.3.15",
+     "objs": [
+      2
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "none"
+     ]
+    },
+    {
+     "n": 8,
+     "pid": "8.3.19",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 3,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "none"
+     ]
+    },
+    {
+     "n": 9,
+     "pid": "8.3.21",
+     "objs": [
+      2
+     ],
+     "conf": "low",
+     "page": 3,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math"
+     ],
+     "clipped": true,
+     "clip_status": "partial"
+    },
+    {
+     "n": 10,
+     "pid": "8.3.25",
+     "objs": [
+      3
+     ],
+     "conf": "medium",
+     "page": 4,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "none"
+     ]
+    },
+    {
+     "n": 11,
+     "pid": "8.3.26-Setup & Solve",
+     "objs": [
+      3
+     ],
+     "conf": "medium",
+     "page": 4,
+     "flag": "review",
+     "kind": "multi-part",
+     "structure": [
+      "none"
+     ],
+     "clipped": true,
+     "clip_status": "inferred"
+    },
+    {
+     "n": 12,
+     "pid": "8.3.26",
+     "objs": [
+      3,
+      4
+     ],
+     "conf": "medium",
+     "page": 4,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "none"
+     ]
+    },
+    {
+     "n": 13,
+     "pid": "8.3.27-Setup & Solve",
+     "objs": [
+      3,
+      4,
+      5
+     ],
+     "conf": "medium",
+     "page": 4,
+     "flag": "review",
+     "kind": "multi-part",
+     "structure": [
+      "none"
+     ],
+     "clipped": true,
+     "clip_status": "inferred"
+    },
+    {
+     "n": 14,
+     "pid": "8.3.27",
+     "objs": [
+      3,
+      4,
+      5
+     ],
+     "conf": "medium",
+     "page": 4,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 15,
+     "pid": "8.3.31",
+     "objs": [
+      4
+     ],
+     "conf": "medium",
+     "page": 5,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "none"
+     ]
+    },
+    {
+     "n": 16,
+     "pid": "8.3.37-SS",
+     "objs": [
+      5
+     ],
+     "conf": "low",
+     "page": 5,
+     "flag": "review",
+     "kind": "compute",
+     "structure": [
+      "table"
+     ]
+    },
+    {
+     "n": 17,
+     "pid": "8.3.49",
+     "objs": [
+      5
+     ],
+     "conf": "high",
+     "page": 5,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "table",
+      "math"
+     ]
+    }
+   ],
+   "declared": 17,
+   "tier": "type-only"
+  },
+  {
+   "id": "8.4",
+   "title": "Basic Concepts of Probability",
+   "track": "120",
+   "week": "Week 10",
+   "dates": "Oct 26 \u2013 Oct 30",
+   "objectives": [
+    "Find probabilities of complex events",
+    "Use Venn diagrams to find probabilities",
+    "Calculate odds",
+    "Convert between probability and odds",
+    "Solve applications involving finding probability from empirical data"
+   ],
+   "problems": [
+    {
+     "n": 1,
+     "pid": "8.4.3-Setup & Solve",
+     "objs": [
+      0
+     ],
+     "conf": "low",
+     "page": 1,
+     "flag": null,
+     "kind": "fill-in",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 2,
+     "pid": "8.4.1",
+     "objs": [
+      0
+     ],
+     "conf": "low",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 3,
+     "pid": "8.4.5-Setup & Solve",
+     "objs": [
+      0
+     ],
+     "conf": "low",
+     "page": 1,
+     "flag": null,
+     "kind": "fill-in",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 4,
+     "pid": "8.4.5",
+     "objs": [
+      0
+     ],
+     "conf": "low",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 5,
+     "pid": "8.4.9",
+     "objs": [
+      1
+     ],
+     "conf": "low",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 6,
+     "pid": "8.4.11-Setup & Solve",
+     "objs": [
+      0,
+      1
+     ],
+     "conf": "medium",
+     "page": 2,
+     "flag": "review",
+     "kind": "multi-part",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 7,
+     "pid": "8.4.11",
+     "objs": [
+      1
+     ],
+     "conf": "medium",
+     "page": 2,
+     "flag": "review",
+     "kind": "multi-part",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 8,
+     "pid": "8.4.15-Setup & Solve",
+     "objs": [
+      1
+     ],
+     "conf": "low",
+     "page": 3,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 9,
+     "pid": "8.4.15",
+     "objs": [
+      2
+     ],
+     "conf": "low",
+     "page": 3,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 10,
+     "pid": "8.4.18-Setup & Solve",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 4,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math",
+      "venn"
+     ]
+    },
+    {
+     "n": 11,
+     "pid": "8.4.17",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 4,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math",
+      "venn"
+     ]
+    },
+    {
+     "n": 12,
+     "pid": "8.4.23",
+     "objs": [
+      2
+     ],
+     "conf": "medium",
+     "page": 4,
+     "flag": null,
+     "kind": "fill-in",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 13,
+     "pid": "8.4.25",
+     "objs": [
+      2
+     ],
+     "conf": "medium",
+     "page": 5,
+     "flag": null,
+     "kind": "fill-in",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 14,
+     "pid": "8.4.26",
+     "objs": [
+      2
+     ],
+     "conf": "medium",
+     "page": 5,
+     "flag": null,
+     "kind": "fill-in",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 15,
+     "pid": "8.4.27",
+     "objs": [
+      2,
+      3
+     ],
+     "conf": "medium",
+     "page": 5,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 16,
+     "pid": "8.4.28",
+     "objs": [
+      2,
+      3
+     ],
+     "conf": "medium",
+     "page": 5,
+     "flag": null,
+     "kind": "fill-in",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 17,
+     "pid": "8.4.30",
+     "objs": [
+      2,
+      3
+     ],
+     "conf": "medium",
+     "page": 5,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ],
+     "clipped": true,
+     "clip_status": "unrecoverable"
+    },
+    {
+     "n": 18,
+     "pid": "8.4.33-SS",
+     "objs": [
+      4
+     ],
+     "conf": "low",
+     "page": 6,
+     "flag": "review",
+     "kind": "fill-in",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 19,
+     "pid": "8.4.35-BE",
+     "objs": [
+      3,
+      4
+     ],
+     "conf": "high",
+     "page": 6,
+     "flag": null,
+     "kind": "fill-in",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 20,
+     "pid": "8.4.39-SS",
+     "objs": [
+      4
+     ],
+     "conf": "high",
+     "page": 6,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math",
+      "table"
+     ]
+    },
+    {
+     "n": 21,
+     "pid": "8.4.41-BE",
+     "objs": [
+      4
+     ],
+     "conf": "low",
+     "page": 7,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math",
+      "table"
+     ]
+    }
+   ],
+   "declared": 21,
+   "tier": "type-only"
+  },
+  {
+   "id": "8.5",
+   "title": "Conditional Probability & Independent Events",
+   "track": "120",
+   "week": "Week 10",
+   "dates": "Oct 26 \u2013 Oct 30",
+   "objectives": [
+    "Calculate conditional probabilities",
+    "Explain concepts involving conditional probability and independent events.",
+    "Use the Addition Rule and the Product Rule to calculate probabilities.",
+    "Solve applications involving conditional probability and independent events."
+   ],
+   "problems": [
+    {
+     "n": 1,
+     "pid": "8.5.1",
+     "objs": [
+      0
+     ],
+     "conf": "low",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 2,
+     "pid": "8.5.3",
+     "objs": [
+      0
+     ],
+     "conf": "low",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 3,
+     "pid": "8.5.4",
+     "objs": [
+      0
+     ],
+     "conf": "low",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 4,
+     "pid": "8.5.6",
+     "objs": [
+      1
+     ],
+     "conf": "medium",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 5,
+     "pid": "8.5.8",
+     "objs": [
+      1
+     ],
+     "conf": "medium",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 6,
+     "pid": "8.5.9",
+     "objs": [
+      1
+     ],
+     "conf": "medium",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 7,
+     "pid": "8.5.13",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "none"
+     ]
+    },
+    {
+     "n": 8,
+     "pid": "8.5.14",
+     "objs": [
+      1
+     ],
+     "conf": "low",
+     "page": 1,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ],
+     "clipped": true,
+     "clip_status": "partial"
+    },
+    {
+     "n": 9,
+     "pid": "8.5.17",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "none"
+     ]
+    },
+    {
+     "n": 10,
+     "pid": "8.5.20",
+     "objs": [
+      2
+     ],
+     "conf": "low",
+     "page": 2,
+     "flag": "review",
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 11,
+     "pid": "8.5.20",
+     "objs": [
+      2
+     ],
+     "conf": "low",
+     "page": 2,
+     "flag": "review",
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 12,
+     "pid": "8.5.29-BE",
+     "objs": [
+      2
+     ],
+     "conf": "low",
+     "page": 2,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math",
+      "table"
+     ]
+    },
+    {
+     "n": 13,
+     "pid": "8.5.31-BE",
+     "objs": [
+      3
+     ],
+     "conf": "low",
+     "page": 2,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math",
+      "table"
+     ]
+    },
+    {
+     "n": 14,
+     "pid": "8.5.33-BE",
+     "objs": [
+      3
+     ],
+     "conf": "low",
+     "page": 3,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math",
+      "table"
+     ]
+    },
+    {
+     "n": 15,
+     "pid": "8.5.45-GI",
+     "objs": [
+      3
+     ],
+     "conf": "medium",
+     "page": 3,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 16,
+     "pid": "8.5.47-SS",
+     "objs": [
+      3
+     ],
+     "conf": "low",
+     "page": 3,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math",
+      "table"
+     ]
+    }
+   ],
+   "declared": 16,
+   "tier": "type-only"
+  },
+  {
+   "id": "9.1",
+   "title": "Probability Distributions & Expected Value",
+   "track": "120",
+   "week": "Week 11",
+   "dates": "Nov 2 \u2013 Nov 6",
+   "objectives": [
+    "Construct a probability distribution",
+    "Draw a histogram and shade the indicated probabilities",
+    "Find the expected value for a random variable",
+    "Solve applications involving expected value"
+   ],
+   "problems": [
+    {
+     "n": 1,
+     "pid": "9.1.1",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "fill-in",
+     "structure": [
+      "math",
+      "table"
+     ]
+    },
+    {
+     "n": 2,
+     "pid": "9.1.5",
+     "objs": [
+      0,
+      1
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math",
+      "histogram"
+     ],
+     "clipped": true,
+     "clip_status": "partial"
+    },
+    {
+     "n": 3,
+     "pid": "9.1.7",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math",
+      "table",
+      "histogram"
+     ],
+     "clipped": true,
+     "clip_status": "partial"
+    },
+    {
+     "n": 4,
+     "pid": "9.1.9",
+     "objs": [
+      2
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math",
+      "table"
+     ]
+    },
+    {
+     "n": 5,
+     "pid": "9.1.11",
+     "objs": [
+      2
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math",
+      "table"
+     ]
+    },
+    {
+     "n": 6,
+     "pid": "9.1.13",
+     "objs": [
+      2
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math",
+      "histogram"
+     ]
+    },
+    {
+     "n": 7,
+     "pid": "9.1.17-GI",
+     "objs": [
+      3
+     ],
+     "conf": "low",
+     "page": 2,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 8,
+     "pid": "9.1.19-GI",
+     "objs": [
+      2,
+      3
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    }
+   ],
+   "declared": 8,
+   "tier": "type-only"
+  },
+  {
+   "id": "9.2",
+   "title": "The Multiplication Principle, Permutations, and Combinations",
+   "track": "120",
+   "week": "Week 11",
+   "dates": "Nov 2 \u2013 Nov 6",
+   "objectives": [
+    "Evaluate factorials, permutations, and combinations",
+    "Describe and compare factorials, permutations, and combinations, and how they can be found",
+    "Solve applications involving the multiplication principle",
+    "Solve applications involving permutations",
+    "Solve applications involving combinations",
+    "Solve applications involving the multiplication principle, permutations, and/or combinations"
+   ],
+   "problems": [
+    {
+     "n": 1,
+     "pid": "9.2.1",
+     "objs": [
+      0
+     ],
+     "conf": "medium",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 2,
+     "pid": "9.2.2",
+     "objs": [
+      0
+     ],
+     "conf": "low",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 3,
+     "pid": "9.2.3",
+     "objs": [
+      0
+     ],
+     "conf": "medium",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 4,
+     "pid": "9.2.5",
+     "objs": [
+      0
+     ],
+     "conf": "medium",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 5,
+     "pid": "9.2.7",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 6,
+     "pid": "9.2.22",
+     "objs": [
+      1
+     ],
+     "conf": "low",
+     "page": 1,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 7,
+     "pid": "9.2.23-BE",
+     "objs": [
+      2
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 8,
+     "pid": "9.2.24-BE",
+     "objs": [
+      2
+     ],
+     "conf": "low",
+     "page": 2,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 9,
+     "pid": "9.2.25-BE",
+     "objs": [
+      2
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 10,
+     "pid": "9.2.28-GI",
+     "objs": [
+      2
+     ],
+     "conf": "low",
+     "page": 2,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 11,
+     "pid": "9.2.39-GI",
+     "objs": [
+      3
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "fill-in",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 12,
+     "pid": "9.2.40-GI",
+     "objs": [
+      3
+     ],
+     "conf": "high",
+     "page": 3,
+     "flag": null,
+     "kind": "fill-in",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 13,
+     "pid": "9.2.42-BE",
+     "objs": [
+      3
+     ],
+     "conf": "low",
+     "page": 3,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 14,
+     "pid": "9.2.43-SS",
+     "objs": [
+      3
+     ],
+     "conf": "high",
+     "page": 3,
+     "flag": null,
+     "kind": "fill-in",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 15,
+     "pid": "9.2.47-SS",
+     "objs": [
+      4
+     ],
+     "conf": "low",
+     "page": 3,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 16,
+     "pid": "9.2.48-SS",
+     "objs": [
+      4
+     ],
+     "conf": "low",
+     "page": 3,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 17,
+     "pid": "9.2.49-SS",
+     "objs": [
+      5
+     ],
+     "conf": "low",
+     "page": 3,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 18,
+     "pid": "9.2.57-BE",
+     "objs": [
+      5
+     ],
+     "conf": "low",
+     "page": 4,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 19,
+     "pid": "9.2.59-GI",
+     "objs": [
+      5
+     ],
+     "conf": "low",
+     "page": 4,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 20,
+     "pid": "9.2.65-GI",
+     "objs": [
+      5
+     ],
+     "conf": "low",
+     "page": 4,
+     "flag": "review",
+     "kind": "multi-part",
+     "structure": [
+      "math"
+     ]
+    }
+   ],
+   "declared": 20,
+   "tier": "type-only"
+  },
+  {
+   "id": "9.3",
+   "title": "Applications of Counting",
+   "track": "120",
+   "week": "Week 12",
+   "dates": "Nov 9 \u2013 Nov 13",
+   "objectives": [
+    "Solve applications involving probability that use counting, permutations, and combinations"
+   ],
+   "problems": [
+    {
+     "n": 1,
+     "pid": "9.3.3-BE",
+     "objs": [
+      0
+     ],
+     "conf": "medium",
+     "page": 1,
+     "flag": null,
+     "kind": "fill-in",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 2,
+     "pid": "9.3.5-BE",
+     "objs": [
+      0
+     ],
+     "conf": "medium",
+     "page": 1,
+     "flag": null,
+     "kind": "fill-in",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 3,
+     "pid": "9.3.7-GI",
+     "objs": [
+      0
+     ],
+     "conf": "low",
+     "page": 1,
+     "flag": null,
+     "kind": "fill-in",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 4,
+     "pid": "9.3.13-GI",
+     "objs": [
+      0
+     ],
+     "conf": "low",
+     "page": 1,
+     "flag": null,
+     "kind": "fill-in",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 5,
+     "pid": "9.3.14-GI",
+     "objs": [
+      0
+     ],
+     "conf": "medium",
+     "page": 1,
+     "flag": null,
+     "kind": "fill-in",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 6,
+     "pid": "9.3.23-PS",
+     "objs": [
+      0
+     ],
+     "conf": "medium",
+     "page": 1,
+     "flag": null,
+     "kind": "fill-in",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 7,
+     "pid": "9.3.25-GI",
+     "objs": [
+      0
+     ],
+     "conf": "medium",
+     "page": 2,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math"
+     ]
+    }
+   ],
+   "declared": 7,
+   "tier": "type-only"
+  },
+  {
+   "id": "9.4",
+   "title": "Binomial Probability",
+   "track": "120",
+   "week": "Week 12",
+   "dates": "Nov 9 \u2013 Nov 13",
+   "objectives": [
+    "Solve applications involving binomial probabilities."
+   ],
+   "problems": [
+    {
+     "n": 1,
+     "pid": "9.4.1-SS",
+     "objs": [],
+     "conf": "none",
+     "page": 1,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 2,
+     "pid": "9.4.3-SS",
+     "objs": [],
+     "conf": "none",
+     "page": 1,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 3,
+     "pid": "9.4.5-SS",
+     "objs": [
+      0
+     ],
+     "conf": "low",
+     "page": 1,
+     "flag": null,
+     "kind": "fill-in",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 4,
+     "pid": "9.4.13-GI",
+     "objs": [
+      0
+     ],
+     "conf": "low",
+     "page": 1,
+     "flag": null,
+     "kind": "fill-in",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 5,
+     "pid": "9.4.15-GI",
+     "objs": [
+      0
+     ],
+     "conf": "low",
+     "page": 1,
+     "flag": null,
+     "kind": "fill-in",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 6,
+     "pid": "9.4.23-SS",
+     "objs": [],
+     "conf": "none",
+     "page": 2,
+     "flag": null,
+     "kind": "fill-in",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 7,
+     "pid": "9.4.31-LS",
+     "objs": [],
+     "conf": "none",
+     "page": 2,
+     "flag": null,
+     "kind": "fill-in",
+     "structure": [
+      "math"
+     ]
+    }
+   ],
+   "declared": 7,
+   "tier": "type-only"
+  },
+  {
+   "id": "10.1",
+   "title": "Frequency Distributions",
+   "track": "120",
+   "week": "Week 13",
+   "dates": "Nov 16 \u2013 Nov 20",
+   "objectives": [
+    "Solve applications involving frequency distributions and histograms",
+    "Solve applications involving stem-and-leaf plots"
+   ],
+   "problems": [
+    {
+     "n": 1,
+     "pid": "10.1.1-BE",
+     "objs": [],
+     "conf": "none",
+     "page": 1,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "table",
+      "histogram",
+      "math"
+     ],
+     "clipped": true,
+     "clip_status": "partial"
+    },
+    {
+     "n": 2,
+     "pid": "10.1.3-BE",
+     "objs": [
+      0
+     ],
+     "conf": "low",
+     "page": 1,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "table",
+      "histogram",
+      "math"
+     ],
+     "clipped": true,
+     "clip_status": "partial"
+    },
+    {
+     "n": 3,
+     "pid": "10.1.7-BE",
+     "objs": [
+      0
+     ],
+     "conf": "low",
+     "page": 2,
+     "flag": "review",
+     "kind": "multi-part",
+     "structure": [
+      "table",
+      "histogram",
+      "math"
+     ]
+    },
+    {
+     "n": 4,
+     "pid": "10.1.11-BE",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": "review",
+     "kind": "mcq",
+     "structure": [
+      "table",
+      "math"
+     ]
+    },
+    {
+     "n": 5,
+     "pid": "10.1.13-BE",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 3,
+     "flag": "review",
+     "kind": "mcq",
+     "structure": [
+      "table",
+      "math"
+     ]
+    },
+    {
+     "n": 6,
+     "pid": "10.1.23-LS",
+     "objs": [
+      1
+     ],
+     "conf": "low",
+     "page": 3,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "histogram"
+     ]
+    },
+    {
+     "n": 7,
+     "pid": "10.1.25-BE",
+     "objs": [
+      1
+     ],
+     "conf": "low",
+     "page": 3,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "histogram"
+     ]
+    },
+    {
+     "n": 8,
+     "pid": "10.1.26-BE",
+     "objs": [
+      0
+     ],
+     "conf": "medium",
+     "page": 4,
+     "flag": "review",
+     "kind": "multi-part",
+     "structure": [
+      "histogram"
+     ]
+    }
+   ],
+   "declared": 8,
+   "tier": "type-only"
+  },
+  {
+   "id": "10.2",
+   "title": "Measures of Center",
+   "track": "120",
+   "week": "Week 14",
+   "dates": "Nov 23 \u2013 Nov 27",
+   "objectives": [
+    "Find the mean for a data set given either the data or a frequency distribution",
+    "Find the median for a data set",
+    "Find the mode or modes for a data set",
+    "Solve applications involving modes for a data set.",
+    "Solve applications involving shapes of distributions and multiple measures of center."
+   ],
+   "problems": [
+    {
+     "n": 1,
+     "pid": "10.2.1",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 2,
+     "pid": "10.2.3",
+     "objs": [
+      0,
+      1
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 3,
+     "pid": "10.2.5",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 4,
+     "pid": "10.2.5",
+     "objs": [
+      0,
+      1
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 5,
+     "pid": "10.2.6",
+     "objs": [
+      0,
+      1
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "table"
+     ]
+    },
+    {
+     "n": 6,
+     "pid": "10.2.6",
+     "objs": [
+      0,
+      1
+     ],
+     "conf": "medium",
+     "page": 2,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "table"
+     ]
+    },
+    {
+     "n": 7,
+     "pid": "10.2.10",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 8,
+     "pid": "10.2.11",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 9,
+     "pid": "10.2.12",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 10,
+     "pid": "10.2.13",
+     "objs": [
+      1,
+      2
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 11,
+     "pid": "10.2.13",
+     "objs": [
+      1,
+      2
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 12,
+     "pid": "10.2.15",
+     "objs": [
+      2
+     ],
+     "conf": "high",
+     "page": 3,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 13,
+     "pid": "10.2.15",
+     "objs": [
+      2
+     ],
+     "conf": "high",
+     "page": 3,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 14,
+     "pid": "10.2.17-LS",
+     "objs": [
+      2
+     ],
+     "conf": "high",
+     "page": 3,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 15,
+     "pid": "10.2.17-LS",
+     "objs": [
+      2
+     ],
+     "conf": "high",
+     "page": 3,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 16,
+     "pid": "10.2.19-GI",
+     "objs": [
+      2
+     ],
+     "conf": "high",
+     "page": 4,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 17,
+     "pid": "10.2.19-GI",
+     "objs": [
+      2
+     ],
+     "conf": "high",
+     "page": 4,
+     "flag": null,
+     "kind": "mcq",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 18,
+     "pid": "10.2.25-BE",
+     "objs": [
+      4
+     ],
+     "conf": "low",
+     "page": 4,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 19,
+     "pid": "10.2.26-BE",
+     "objs": [
+      4
+     ],
+     "conf": "low",
+     "page": 4,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "table",
+      "math"
+     ]
+    }
+   ],
+   "declared": 19,
+   "tier": "type-only"
+  },
+  {
+   "id": "10.3",
+   "title": "Measures of Variation",
+   "track": "120",
+   "week": "Week 15",
+   "dates": "Nov 30 \u2013 Dec 4",
+   "objectives": [
+    "Calculate the range and standard deviation for a non-grouped data set",
+    "Solve applications involving the mean and standard deviations for non-grouped data"
+   ],
+   "problems": [
+    {
+     "n": 1,
+     "pid": "10.3.3",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 2,
+     "pid": "10.3.3",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 3,
+     "pid": "10.3.4",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 4,
+     "pid": "10.3.4",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 5,
+     "pid": "10.3.5",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 6,
+     "pid": "10.3.7",
+     "objs": [
+      0,
+      1
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 7,
+     "pid": "10.3.9",
+     "objs": [
+      0,
+      1
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math"
+     ]
+    },
+    {
+     "n": 8,
+     "pid": "10.3.14-BE",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 2,
+     "flag": null,
+     "kind": "multi-part",
+     "structure": [
+      "math"
+     ]
+    }
+   ],
+   "declared": 8,
+   "tier": "type-only"
+  },
+  {
+   "id": "10.4",
+   "title": "Normal Distributions",
+   "track": "120",
+   "week": "Week 15",
+   "dates": "Nov 30 \u2013 Dec 4",
+   "objectives": [
+    "Find the percentage of area under a portion of the normal curve",
+    "Find z-scores satisfying certain conditions",
+    "Solve applications involving normal distributions"
+   ],
+   "problems": [
+    {
+     "n": 1,
+     "pid": "10.4.5",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 1,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math",
+      "table"
+     ]
+    },
+    {
+     "n": 2,
+     "pid": "10.4.7",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 5,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math",
+      "table"
+     ]
+    },
+    {
+     "n": 3,
+     "pid": "10.4.9",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 9,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math",
+      "table"
+     ]
+    },
+    {
+     "n": 4,
+     "pid": "10.4.11",
+     "objs": [
+      0
+     ],
+     "conf": "high",
+     "page": 13,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math",
+      "table"
+     ]
+    },
+    {
+     "n": 5,
+     "pid": "10.4.13",
+     "objs": [
+      0,
+      1
+     ],
+     "conf": "high",
+     "page": 17,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math",
+      "table"
+     ]
+    },
+    {
+     "n": 6,
+     "pid": "10.4.15",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 21,
+     "flag": null,
+     "kind": "fill-in",
+     "structure": [
+      "math",
+      "table"
+     ]
+    },
+    {
+     "n": 7,
+     "pid": "10.4.17",
+     "objs": [
+      1
+     ],
+     "conf": "high",
+     "page": 25,
+     "flag": null,
+     "kind": "fill-in",
+     "structure": [
+      "math",
+      "table"
+     ]
+    },
+    {
+     "n": 8,
+     "pid": "10.4.22-BE",
+     "objs": [
+      2
+     ],
+     "conf": "low",
+     "page": 29,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math",
+      "table"
+     ]
+    },
+    {
+     "n": 9,
+     "pid": "10.4.23-BE",
+     "objs": [
+      2
+     ],
+     "conf": "high",
+     "page": 33,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math",
+      "table"
+     ]
+    },
+    {
+     "n": 10,
+     "pid": "10.4.29-BE",
+     "objs": [
+      2
+     ],
+     "conf": "medium",
+     "page": 37,
+     "flag": null,
+     "kind": "compute",
+     "structure": [
+      "math",
+      "table"
+     ]
+    }
+   ],
+   "declared": 10,
+   "tier": "type-only"
+  }
+ ],
+ "schedule": [
+  {
+   "week": "Week 1",
+   "dates": "Aug 24 \u2013 Aug 28",
+   "items": [
+    "Introduction & Syllabus",
+    "1.1 The Real Numbers",
+    "1.2 Polynomials",
+    "1.3 Factoring"
+   ]
+  },
+  {
+   "week": "Week 2",
+   "dates": "Aug 31 \u2013 Sep 4",
+   "items": [
+    "1.4 Rational Expressions",
+    "1.5 Exponents and Radicals",
+    "1.6 First-Degree Equations"
+   ]
+  },
+  {
+   "week": "Week 3",
+   "dates": "Sep 7 \u2013 Sep 11",
+   "items": [
+    "(9/7 Labor Day)",
+    "1.7 Quadratic Equations",
+    "2.4 Linear Inequalities"
+   ]
+  },
+  {
+   "week": "Week 4",
+   "dates": "Sep 14 \u2013 Sep 18",
+   "items": [
+    "Review for Exam 1",
+    "Exam 1 (1.1 \u2013 1.7, 2.4)",
+    "2.1 Graphs",
+    "2.2 Equations of Lines"
+   ]
+  },
+  {
+   "week": "Week 5",
+   "dates": "Sep 21 \u2013 Sep 25",
+   "items": [
+    "2.3 Linear Models",
+    "3.1 Functions",
+    "4.1 Exponential Functions"
+   ]
+  },
+  {
+   "week": "Week 6",
+   "dates": "Sep 28 \u2013 Oct 2",
+   "items": [
+    "4.2 Applications of Exponential Functions",
+    "4.3 Logarithmic Functions",
+    "4.4 Logarithmic and Exponential Equations"
+   ]
+  },
+  {
+   "week": "Week 7",
+   "dates": "Oct 5 \u2013 Oct 9",
+   "items": [
+    "Review for Exam 2",
+    "Exam 2 (2.1 \u2013 4.4)",
+    "5.1 Simple and Compound Interest"
+   ]
+  },
+  {
+   "week": "Week 8",
+   "dates": "Oct 12 \u2013 Oct 16",
+   "items": [
+    "5.2 Annuities, Future Value, and Sinking Funds",
+    "5.3 Consumer Loans and Amortization"
+   ]
+  },
+  {
+   "week": "Week 9",
+   "dates": "Oct 19 \u2013 Oct 23",
+   "items": [
+    "8.1 Sets",
+    "8.2 Applications of Venn Diagrams",
+    "8.3 Introduction to Probability"
+   ]
+  },
+  {
+   "week": "Week 10",
+   "dates": "Oct 26 \u2013 Oct 30",
+   "items": [
+    "(10/30 Nevada Day)",
+    "Review for Exam 3",
+    "Exam 3 (5.1 \u2013 8.3)",
+    "8.4 Basic Concepts of Probability",
+    "8.5 Conditional Probability and Independent Events"
+   ]
+  },
+  {
+   "week": "Week 11",
+   "dates": "Nov 2 \u2013 Nov 6",
+   "items": [
+    "9.1 Probability Distributions & Expected Value",
+    "9.2 The Multiplication Principle, Permutations, and Combinations"
+   ]
+  },
+  {
+   "week": "Week 12",
+   "dates": "Nov 9 \u2013 Nov 13",
+   "items": [
+    "(11/11 Veteran\u2019s Day)",
+    "9.3 Application of Counting Principles",
+    "9.4 Binomial Probability"
+   ]
+  },
+  {
+   "week": "Week 13",
+   "dates": "Nov 16 \u2013 Nov 20",
+   "items": [
+    "Review for Exam 4",
+    "Exam 4 (8.4 \u2013 9.4)",
+    "10.1 Frequency Distributions"
+   ]
+  },
+  {
+   "week": "Week 14",
+   "dates": "Nov 23 \u2013 Nov 27",
+   "items": [
+    "(11/26-27 Thanksgiving)",
+    "10.2 Measures of Center"
+   ]
+  },
+  {
+   "week": "Week 15",
+   "dates": "Nov 30 \u2013 Dec 4",
+   "items": [
+    "10.3 Measures of Variation",
+    "10.4 Normal Distributions"
+   ]
+  },
+  {
+   "week": "Week 16",
+   "dates": "Dec 7 \u2013 Dec 11",
+   "items": [
+    "Review for Final Exam",
+    "Wednesday is Prep Day",
+    "Final Exam Day and Time:"
+   ]
+  }
+ ]
+}

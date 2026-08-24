@@ -13,8 +13,8 @@
 
 <script defer src="vendor/katex/katex.min.js"></script>
 <script type=module>
-import { renderBlocks, inline } from './js/blocks.js?v=4';
-import { renderAnswer } from './js/answers.js?v=5';
+import { renderBlocks, inline } from './js/blocks.js?v=5';
+import { renderAnswer } from './js/answers.js?v=6';
 
 const ready = () => new Promise(r => window.katex ? r() : addEventListener('load', r));
 await ready();
@@ -124,7 +124,7 @@ function knowBlock(s) {
   if (!rows) return '';
   const n = s.objectives.reduce((a, _, j) =>
     a + ((FACTS[s.id + '/O' + (j + 1)] || []).length), 0);
-  return '<details id=know open>' +
+  return '<details id=know>' +
     '<summary><span class=kn-t>what you need to know</span>' +
     '<span class=kn-c>' + n + '</span></summary>' + rows + '</details>';
 }
@@ -174,8 +174,8 @@ function paint() {
   const why = document.createElement('div');
   why.className = 'why';
   why.hidden = true;
-  why.innerHTML = '<span class=t>reasoning</span>' + esc(q.why || '') +
-    (q.key !== undefined ? '<span class=k>answer: ' + esc(q.key) + '</span>' : '');
+  why.innerHTML = '<span class=t>reasoning</span>' + inline(q.why || '') +
+    (q.key !== undefined ? '<span class=k>answer: ' + inline(String(q.key)) + '</span>' : '');
   card.appendChild(why);
   document.getElementById('sshow').onclick = () => { why.hidden = !why.hidden; };
 

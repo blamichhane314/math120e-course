@@ -190,8 +190,9 @@ export function mountGraph(host, G, focus, opts = {}) {
   // hovering a node shows the reason for its edge
   const reveal = (b) => {
     if (!b || why.classList.contains('pinned')) return;
-    why.textContent = b.getAttribute('data-why');
-    why.hidden = !b.getAttribute('data-why');
+    const w = b.getAttribute('data-why');
+    why.textContent = w || '';
+    why.hidden = !w;
   };
   host.addEventListener('mouseover', (e) => reveal(e.target.closest('.gr-n')));
   // Tab walks the list, so the reason has to follow the keyboard as well as

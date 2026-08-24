@@ -8,7 +8,8 @@
 // requirement, dotted for a soft ordering. The reason an edge exists is shown
 // on hover, not at rest.
 
-import { inline, tex } from './blocks.js?v=4';
+import { inline, tex, renderBlocks } from './blocks.js?v=5';
+import { renderAnswer } from './answers.js?v=6';
 
 const esc = (s) => String(s ?? '').replace(/[&<>]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
 
@@ -87,6 +88,8 @@ export function mountGraph(host, G, focus, opts = {}) {
 
   // An empty side should not hold a third of the screen open.
   const shape = (!L.length ? ' none-back' : '') + (!R.length ? ' none-fwd' : '');
+  const mine = (opts.practice || {})[focus] || [];
+  const nPractice = mine.length;
   const anySoft = [...L, ...R].some((e) => e.type !== 'requires');
 
   host.innerHTML =
@@ -97,15 +100,82 @@ export function mountGraph(host, G, focus, opts = {}) {
         '<div class="gr-focus">' +
           '<span class="gr-id">' + esc(focus) + '</span>' +
           '<span class="gr-t">' + esc(node.text) + '</span>' +
-          '<span class="gr-meta">' + node.problems + ' problem' +
-            (node.problems === 1 ? '' : 's') + '</span>' +
+          '<span class="gr-meta">' + node.problems + ' assigned in MyLab</span>' +
         '</div>' +
+        (nPractice ? '<button class="gr-practice">' + nPractice +
+          ' practice question' + (nPractice === 1 ? '' : 's') + '</button>' : '') +
         (anySoft ? '<button class="gr-filter" aria-pressed="false">requirements only</button>' : '') +
         '<div class="gr-ex" hidden></div>' +
       '</div>' +
       '<div class="gr-col gr-fwd">' + column(R, 'fwd') + '</div>' +
     '</div>' +
     '<div class="gr-why" hidden></div>';
+
+  /* A read-only look at the practice for this objective, over the page rather
+     than instead of it: you are checking what the problems are like without
+     losing your place in the graph. Nothing here is answerable — the inputs
+     are rendered so the shape of the question is honest, then made inert. */
+  const pracBtn = host.querySelector('.gr-practice');
+  if (pracBtn) pracBtn.addEventListener('click', () => openSheet(mine, node, focus));
+
+  function openSheet(list, n, id) {
+    const prev = document.activeElement;
+    const back = document.createElement('div');
+    back.className = 'sheet-back';
+    back.innerHTML =
+      '<div class="sheet" role="dialog" aria-modal="true" aria-label="Practice for ' + esc(id) + '">' +
+        '<div class="sheet-h">' +
+          '<div><span class="sheet-id">' + esc(id) + '</span>' +
+          '<span class="sheet-t">' + esc(n.text) + '</span></div>' +
+          '<button class="sheet-x" aria-label="Close">close</button>' +
+        '</div>' +
+        '<div class="sheet-note">' + list.length + ' practice question' +
+          (list.length === 1 ? '' : 's') +
+          ' &middot; shown to read, not to answer</div>' +
+        '<div class="sheet-body"></div>' +
+      '</div>';
+    const body = back.querySelector('.sheet-body');
+
+    list.forEach((q, i) => {
+      const card = document.createElement('div');
+      card.className = 'sheet-q';
+      card.innerHTML = '<div class="sheet-n">' + String(i + 1).padStart(2, '0') +
+        (q.level === 'stretch' ? '<span class="sheet-lv">stretch</span>' : '') + '</div>';
+      const inner = document.createElement('div');
+      inner.className = 'sheet-qb';
+      try {
+        if (q.stem && q.stem.length) renderBlocks(q.stem, inner);
+        if (q.answer) {
+          const a = renderAnswer(q.answer, { onChange() {} });
+          a.classList.add('inert');
+          inner.appendChild(a);
+        }
+      } catch (err) {
+        inner.innerHTML = '<div class="sheet-fail">could not render this question</div>';
+      }
+      // read-only: the shape stays, the interaction does not
+      inner.querySelectorAll('input,select,textarea,button').forEach((el) => {
+        el.disabled = true; el.tabIndex = -1;
+      });
+      card.appendChild(inner);
+      body.appendChild(card);
+    });
+
+    const close = () => {
+      back.remove();
+      removeEventListener('keydown', onKey);
+      // back to whatever opened it; body is not a useful place to land
+      const to = (prev && prev.focus && prev !== document.body) ? prev : pracBtn;
+      if (to && to.focus) to.focus();
+    };
+    const onKey = (e) => { if (e.key === 'Escape') { e.stopPropagation(); close(); } };
+    back.addEventListener('click', (e) => {
+      if (e.target === back || e.target.closest('.sheet-x')) close();
+    });
+    addEventListener('keydown', onKey);
+    document.body.appendChild(back);
+    back.querySelector('.sheet-x').focus();
+  }
 
   const grid = host.querySelector('.gr');
   const filter = host.querySelector('.gr-filter');

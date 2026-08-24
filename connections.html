@@ -4,7 +4,7 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <title>math 120e · connections</title>
 <link rel=stylesheet href="vendor/katex/katex.min.css">
-<link rel=stylesheet href="styles.css?v=29">
+<link rel=stylesheet href="styles.css?v=30">
 <script>try{document.documentElement.dataset.theme=localStorage.getItem("m120.theme")||"ink"}catch(e){}</script>
 <body class=no-rail>
 <div id=read><div id=doc>
@@ -20,13 +20,25 @@
 
 <script defer src="vendor/katex/katex.min.js"></script>
 <script type=module>
-import { mountGraph, buildGraph, mountMatrix, mountChapters } from './js/graph.js?v=26';
+import { mountGraph, buildGraph, mountMatrix, mountChapters } from './js/graph.js?v=28';
 
 const raw = await (await fetch('data/graph_provisional.json', {cache:'no-store'})).json();
 
 // worked examples for a pair, where one has been written
 let BRIDGES = {};
 try { BRIDGES = await (await fetch('data/bridges.json', {cache:'no-store'})).json(); } catch {}
+
+// the practice written for each objective, grouped by objective id
+const PRACTICE = {};
+for (const f of ['q_a','q_b','q_c']) {
+  try {
+    const j = await (await fetch('data/' + f + '.json', {cache:'no-store'})).json();
+    for (const sec of Object.keys(j)) for (const q of j[sec]) (PRACTICE[q.obj] ||= []).push(q);
+  } catch {}
+}
+for (const k of Object.keys(PRACTICE)) {
+  PRACTICE[k].sort((a, b) => String(a.id).localeCompare(String(b.id), undefined, {numeric:true}));
+}
 
 // tex() needs KaTeX present before the first render
 await new Promise((r) => (window.katex ? r() : addEventListener('load', r)));
@@ -77,7 +89,7 @@ function show(id) {
   sel.value = cur;
   document.getElementById('gpos').innerHTML =
     (at + 1) + ' <i>/</i> ' + ORDER.length;
-  mountGraph(nb, G, cur, { bridges: BRIDGES, onFocus: show,
+  mountGraph(nb, G, cur, { bridges: BRIDGES, practice: PRACTICE, onFocus: show,
     onSection: (s) => window.open('index.html#/' + s, '_blank') });
   location.replace('#' + cur);
 }

@@ -1086,3 +1086,54 @@ body::before{background:radial-gradient(120% 90% at 50% 0%,
 .gr-n.sel{background:var(--accent-tint)}
 .gr-n.sel .gr-t{color:var(--ink)}
 .gr-n.sel .gr-id{color:var(--accent)}
+
+/* ── the practice sheet ──────────────────────────────────────────
+   Over the page, not instead of it: you are checking what the problems look
+   like without losing your place in the graph. */
+.gr-practice{margin-top:calc(var(--s)*1.5);font:11px var(--mono);
+  letter-spacing:.12em;background:none;border:1px solid var(--line);
+  color:var(--ink-soft);padding:8px 13px;border-radius:2px;cursor:pointer;
+  transition:color .14s var(--ease),border-color .14s var(--ease)}
+.gr-practice:hover{color:var(--accent);border-color:var(--accent)}
+
+.sheet-back{position:fixed;inset:0;z-index:80;display:flex;
+  align-items:center;justify-content:center;padding:calc(var(--s)*4);
+  background:color-mix(in srgb, var(--paper) 55%, transparent);
+  backdrop-filter:blur(7px) saturate(.85);
+  -webkit-backdrop-filter:blur(7px) saturate(.85);
+  animation:sheet-in .16s var(--ease)}
+@supports not (backdrop-filter: blur(1px)){
+  .sheet-back{background:color-mix(in srgb, var(--paper) 88%, transparent)}
+}
+@keyframes sheet-in{from{opacity:0}to{opacity:1}}
+
+.sheet{width:min(56rem,100%);max-height:100%;overflow-y:auto;
+  background:var(--paper-lift);border:1px solid var(--line);border-radius:4px;
+  box-shadow:0 30px 70px -30px var(--shade),0 2px 8px -4px var(--shade);
+  padding:calc(var(--s)*3.5) calc(var(--s)*4) calc(var(--s)*4)}
+.sheet-h{display:flex;align-items:flex-start;gap:calc(var(--s)*2);
+  padding-bottom:calc(var(--s)*1.5);border-bottom:1px solid var(--line)}
+.sheet-id{display:block;font:11px/1.7 var(--mono);letter-spacing:.12em;
+  color:var(--accent)}
+.sheet-t{display:block;font-size:20px;line-height:1.32;color:var(--ink);
+  margin-top:2px}
+.sheet-x{margin-left:auto;flex:none;font:10px var(--mono);letter-spacing:.14em;
+  background:none;border:1px solid var(--line);color:var(--ink-soft);
+  padding:7px 11px;border-radius:2px;cursor:pointer}
+.sheet-x:hover{color:var(--accent);border-color:var(--accent)}
+.sheet-note{margin-top:calc(var(--s)*1.25);font:10px var(--mono);
+  letter-spacing:.14em;color:var(--ink-faint)}
+
+.sheet-q{display:grid;grid-template-columns:2.6rem minmax(0,1fr);
+  gap:0 calc(var(--s)*1.5);padding:calc(var(--s)*2.5) 0;
+  border-bottom:1px solid var(--line-soft)}
+.sheet-q:last-child{border-bottom:0;padding-bottom:0}
+.sheet-n{font:10px/2 var(--mono);color:var(--ink-faint)}
+.sheet-lv{display:block;margin-top:3px;font-size:8.5px;letter-spacing:.1em;
+  color:var(--accent-soft)}
+.sheet-qb{min-width:0;font-size:16px;line-height:1.6}
+.sheet-fail{font-size:14px;color:var(--accent)}
+
+/* the answer keeps its shape so the question reads honestly, and does nothing */
+.sheet-qb .inert{opacity:.72;pointer-events:none}
+.sheet-qb .inert input,.sheet-qb .inert select{cursor:default}

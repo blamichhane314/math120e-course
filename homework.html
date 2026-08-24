@@ -4,7 +4,8 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <title>MATH 120E — homework</title>
 <link rel=stylesheet href="vendor/katex/katex.min.css">
-<link rel=stylesheet href="styles.css?v=24">
+<link rel=stylesheet href="styles.css?v=25">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem("m120.theme")||"paper"}catch(e){}</script>
 <body class=hw>
 <div id=rail></div>
 <div id=read><div id=doc></div></div>
@@ -206,6 +207,10 @@ function route() {
 }
 addEventListener('hashchange', route);
 route();
+</script>
+<script type=module>
+import { mountThemes } from './js/theme.js?v=1';
+mountThemes();
 </script>
 </body>
 </html>

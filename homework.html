@@ -19,8 +19,13 @@ const ready = () => new Promise(r => window.katex ? r() : addEventListener('load
 await ready();
 
 const d = await (await fetch('data/course.json', {cache:'no-store'})).json();
-let SOL = {};
-try { SOL = await (await fetch('data/solutions.json', {cache:'no-store'})).json(); } catch {}
+// Practice questions written for this course. The assignments themselves are
+// in MyLab; these cover the same skills, objective by objective.
+let Q = {};
+for (const f of ['q_a','q_b','q_c']) {
+  try { Object.assign(Q, await (await fetch('data/' + f + '.json', {cache:'no-store'})).json()); }
+  catch {}
+}
 
 const rail = document.getElementById('rail');
 const doc  = document.getElementById('doc');

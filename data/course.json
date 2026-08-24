@@ -25,54 +25,7 @@
      "kind": "mcq",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Indicate whether the following statement is true or false."
-      },
-      {
-       "t": "text",
-       "v": "Every integer is a rational number."
-      },
-      {
-       "t": "text",
-       "v": "Choose the correct answer below."
-      }
-     ],
-     "answer": {
-      "kind": "choice",
-      "options": [
-       [
-        {
-         "t": "text",
-         "v": "True, because $\\frac{p}{1}=p$ for any integer p."
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "True, because integers include positive as well as negative counting numbers."
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "False, because integers cannot be written in the form $\\frac{p}{q}$, where $q \\ne 0$."
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "False, because integers do not include negative counting numbers."
-        }
-       ]
-      ],
-      "multi": false
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 2,
@@ -86,55 +39,7 @@
      "kind": "mcq",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Name the property illustrated by the true statement."
-      },
-      {
-       "t": "math",
-       "tex": "-9(y+8)=-9\\cdot y+(-9)\\cdot 8",
-       "display": true
-      },
-      {
-       "t": "text",
-       "v": "Choose the correct answer below."
-      }
-     ],
-     "answer": {
-      "kind": "choice",
-      "options": [
-       [
-        {
-         "t": "text",
-         "v": "associative property of multiplication"
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "distributive property"
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "commutative property of multiplication"
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "associative property of addition"
-        }
-       ]
-      ],
-      "multi": false
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 3,
@@ -148,63 +53,7 @@
      "kind": "mcq",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Select the property that is illustrated by the given equation."
-      },
-      {
-       "t": "math",
-       "tex": "5+(-1)=(-1)+5",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "choice",
-      "options": [
-       [
-        {
-         "t": "text",
-         "v": "Inverse property of addition"
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "Distributive property of addition"
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "Identity property of addition"
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "Associative property of addition"
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "Commutative property of addition"
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "None of the above"
-        }
-       ]
-      ],
-      "multi": false
-     },
-     "note": "Options are printed without letter labels.",
-     "clipped": false
+     ]
     },
     {
      "n": 4,
@@ -218,55 +67,7 @@
      "kind": "mcq",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Name the property illustrated."
-      },
-      {
-       "t": "math",
-       "tex": "0+13=13",
-       "display": true
-      },
-      {
-       "t": "text",
-       "v": "Choose the correct answer below."
-      }
-     ],
-     "answer": {
-      "kind": "choice",
-      "options": [
-       [
-        {
-         "t": "text",
-         "v": "commutative property of addition"
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "identity property of addition"
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "associative property of addition"
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "inverse property of addition"
-        }
-       ]
-      ],
-      "multi": false
-     },
-     "note": "Options are printed without letter labels.",
-     "clipped": false
+     ]
     },
     {
      "n": 5,
@@ -280,51 +81,7 @@
      "kind": "mcq",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Choose the property that justifies the following statement."
-      },
-      {
-       "t": "math",
-       "tex": "\\frac{1}{14}\\cdot 14=1",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "choice",
-      "options": [
-       [
-        {
-         "t": "text",
-         "v": "commutative property of multiplication"
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "distributive property of multiplication over addition"
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "identity property of multiplication"
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "inverse property of multiplication"
-        }
-       ]
-      ],
-      "multi": false
-     },
-     "note": "Options are printed without letter labels.",
-     "clipped": false
+     ]
     },
     {
      "n": 6,
@@ -338,64 +95,7 @@
      "kind": "mcq",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "clipped": false,
-     "clip_status": "inferred",
-     "stem": [
-      {
-       "t": "text",
-       "v": "Determine which property is illustrated by the given equation."
-      },
-      {
-       "t": "math",
-       "tex": "6+(7+5)=(6+7)+5",
-       "display": true
-      },
-      {
-       "t": "text",
-       "v": "Choose the correct property below."
-      }
-     ],
-     "answer": {
-      "kind": "choice",
-      "options": [
-       [
-        {
-         "t": "text",
-         "v": "Commutative Property of Addition"
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "Associative Property of Addition"
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "Inverse Property of Addition"
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "Inverse Property of Multiplication"
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "Distributive Property of Multiplication over Addition"
-        }
-       ]
-      ],
-      "multi": false
-     },
-     "note": null,
-     "resolved": true,
-     "override": "owner review: only five options exist; F-J were empty placeholders held for a clipped second column, and the clipping note is no longer relevant"
+     ]
     },
     {
      "n": 7,
@@ -409,27 +109,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "If $p=-3$ and $q=4$, evaluate $-2(p+5q)$."
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "The value of $-2(p+5q)$ for $p=-3$ and $q=4$ is",
-        "size": 6,
-        "unit": null
-       }
-      ],
-      "note": null
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 8,
@@ -443,32 +123,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Evaluate the expression if $p=-2$, $q=6$, and $r=-8$."
-      },
-      {
-       "t": "math",
-       "tex": "\\frac{q+r}{q+p}",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$\\frac{q+r}{q+p}=$",
-        "size": 6,
-        "unit": null
-       }
-      ],
-      "note": "Type an integer or a simplified fraction."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 9,
@@ -482,32 +137,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Simplify."
-      },
-      {
-       "t": "math",
-       "tex": "10-3\\cdot 7-14",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$10-3\\cdot 7-14=$",
-        "size": 6,
-        "unit": null
-       }
-      ],
-      "note": null
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 10,
@@ -521,32 +151,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Simplify."
-      },
-      {
-       "t": "math",
-       "tex": "2+3\\cdot(9-4)",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "The answer is",
-        "size": 6,
-        "unit": null
-       }
-      ],
-      "note": null
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 11,
@@ -560,32 +165,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Simplify."
-      },
-      {
-       "t": "math",
-       "tex": "5-(-4)+2^{3}",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "The answer is",
-        "size": 6,
-        "unit": null
-       }
-      ],
-      "note": null
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 12,
@@ -599,32 +179,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Evaluate the expression using the order of operations."
-      },
-      {
-       "t": "math",
-       "tex": "\\frac{1(4)+\\frac{7}{(-2)}+\\frac{-(1)}{\\left(-\\sqrt{4}\\right)}}{\\sqrt{25}-1}",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "The answer is",
-        "size": 6,
-        "unit": null
-       }
-      ],
-      "note": "Type an integer or a decimal. Round to the nearest hundredth as needed."
-     },
-     "note": "Three-level stacked fraction: the whole sum 1(4) + 7/(-2) + -(1)/(-sqrt 4) sits over the single denominator sqrt(25) - 1.",
-     "clipped": false
+     ]
     },
     {
      "n": 13,
@@ -638,32 +193,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Evaluate the expression using the order of operations."
-      },
-      {
-       "t": "math",
-       "tex": "\\frac{8^{2}-(4)\\sqrt{49}}{\\sqrt{8^{2}+17}}",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "The answer is",
-        "size": 6,
-        "unit": null
-       }
-      ],
-      "note": "Type an integer or a decimal. Round to one decimal place as needed."
-     },
-     "note": "The denominator radical covers the whole expression 8^2 + 17.",
-     "clipped": false
+     ]
     },
     {
      "n": 14,
@@ -677,32 +207,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Simplify."
-      },
-      {
-       "t": "math",
-       "tex": "(16+2)^{2}-(5-3)^{2}",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$(16+2)^{2}-(5-3)^{2}=$",
-        "size": 6,
-        "unit": null
-       }
-      ],
-      "note": null
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 15,
@@ -716,32 +221,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Simplify."
-      },
-      {
-       "t": "math",
-       "tex": "9^{3}\\div 81-9",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$9^{3}\\div 81-9=$",
-        "size": 6,
-        "unit": null
-       }
-      ],
-      "note": null
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 16,
@@ -755,32 +235,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Simplify."
-      },
-      {
-       "t": "math",
-       "tex": "10^{3}-10\\cdot 4-(4+3\\cdot 4)",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$10^{3}-10\\cdot 4-(4+3\\cdot 4)=$",
-        "size": 6,
-        "unit": null
-       }
-      ],
-      "note": "Simplify your answer."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 17,
@@ -794,32 +249,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Simplify."
-      },
-      {
-       "t": "math",
-       "tex": "[27-(25+3)\\div 7]-[54\\div(7-4)]",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$[27-(25+3)\\div 7]-[54\\div(7-4)]=$",
-        "size": 6,
-        "unit": null
-       }
-      ],
-      "note": null
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 18,
@@ -833,32 +263,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Calculate."
-      },
-      {
-       "t": "math",
-       "tex": "3\\cdot 2-4\\cdot 3^{2}+7(4-1)",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$3\\cdot 2-4\\cdot 3^{2}+7(4-1)=$",
-        "size": 6,
-        "unit": null
-       }
-      ],
-      "note": null
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 19,
@@ -873,32 +278,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Simplify the expression."
-      },
-      {
-       "t": "math",
-       "tex": "\\frac{9(9-2)^{3}-3\\cdot 6+8\\cdot 2}{8^{2}+3^{2}}",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$\\frac{9(9-2)^{3}-3\\cdot 6+8\\cdot 2}{8^{2}+3^{2}}=$",
-        "size": 8,
-        "unit": null
-       }
-      ],
-      "note": "Round to the nearest thousandth."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 20,
@@ -914,117 +294,7 @@
      "structure": [
       "math",
       "table"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Use a calculator to help list the given numbers in order from smallest to largest."
-      },
-      {
-       "t": "math",
-       "tex": "\\frac{88}{25},\\ \\frac{2442}{648},\\ \\sqrt{11},\\ 2.230,\\ \\sqrt{4},\\ \\frac{738}{243}",
-       "display": true
-      },
-      {
-       "t": "text",
-       "v": "Order the given numbers from smallest to largest. Ordinal ranking 1 corresponds to the smallest number and ordinal ranking 6 corresponds to the largest number."
-      },
-      {
-       "t": "table",
-       "flavour": "reference",
-       "caption": null,
-       "cols": [
-        "Ordinal Ranking",
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "6"
-       ],
-       "rows": [
-        [
-         "Number",
-         "(1)",
-         "(2)",
-         "(3)",
-         "(4)",
-         "(5)",
-         "(6)"
-        ]
-       ],
-       "numeric": false
-      }
-     ],
-     "answer": {
-      "kind": "select",
-      "template": "Ranking 1: \u27e80\u27e9 \u00b7 Ranking 2: \u27e81\u27e9 \u00b7 Ranking 3: \u27e82\u27e9 \u00b7 Ranking 4: \u27e83\u27e9 \u00b7 Ranking 5: \u27e84\u27e9 \u00b7 Ranking 6: \u27e85\u27e9",
-      "slots": [
-       {
-        "options": [
-         "$\\frac{88}{25}$",
-         "$\\frac{738}{243}$",
-         "$\\frac{2442}{648}$",
-         "$2.230$",
-         "$\\sqrt{11}$",
-         "$\\sqrt{4}$"
-        ]
-       },
-       {
-        "options": [
-         "$\\frac{738}{243}$",
-         "$\\sqrt{4}$",
-         "$\\sqrt{11}$",
-         "$\\frac{88}{25}$",
-         "$2.230$",
-         "$\\frac{2442}{648}$"
-        ]
-       },
-       {
-        "options": [
-         "$\\sqrt{11}$",
-         "$\\sqrt{4}$",
-         "$\\frac{2442}{648}$",
-         "$2.230$",
-         "$\\frac{738}{243}$",
-         "$\\frac{88}{25}$"
-        ]
-       },
-       {
-        "options": [
-         "$\\sqrt{4}$",
-         "$\\frac{738}{243}$",
-         "$\\frac{88}{25}$",
-         "$\\sqrt{11}$",
-         "$2.230$",
-         "$\\frac{2442}{648}$"
-        ]
-       },
-       {
-        "options": [
-         "$\\frac{88}{25}$",
-         "$\\frac{738}{243}$",
-         "$\\frac{2442}{648}$",
-         "$\\sqrt{4}$",
-         "$2.230$",
-         "$\\sqrt{11}$"
-        ]
-       },
-       {
-        "options": [
-         "$\\frac{738}{243}$",
-         "$\\frac{88}{25}$",
-         "$\\sqrt{11}$",
-         "$2.230$",
-         "$\\frac{2442}{648}$",
-         "$\\sqrt{4}$"
-        ]
-       }
-      ]
-     },
-     "note": "Each of the six ordinal positions has its own radio list of the same six numbers, printed in a different order per position; options are recorded in printed reading order (row by row, left column then right).",
-     "clipped": false
+     ]
     },
     {
      "n": 21,
@@ -1038,30 +308,7 @@
      "kind": "fill",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Express the following statement in symbols, using $<$, $>$, $\\le$, or $\\ge$."
-      },
-      {
-       "t": "text",
-       "v": "12 is less than 17.4"
-      }
-     ],
-     "answer": {
-      "kind": "fill",
-      "template": "In symbols, this statement is \u27e80\u27e9.",
-      "slots": [
-       {
-        "size": 10
-       }
-      ],
-      "note": "Type an inequality."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 22,
@@ -1075,30 +322,7 @@
      "kind": "fill",
      "structure": [
       "none"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Use an inequality symbol to write the statement."
-      },
-      {
-       "t": "text",
-       "v": "14 is greater than 10"
-      }
-     ],
-     "answer": {
-      "kind": "fill",
-      "template": "In symbols, this statement is \u27e80\u27e9.",
-      "slots": [
-       {
-        "size": 10
-       }
-      ],
-      "note": null
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 23,
@@ -1112,30 +336,7 @@
      "kind": "fill",
      "structure": [
       "none"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Use an inequality symbol to write the statement."
-      },
-      {
-       "t": "text",
-       "v": "6 is greater than x."
-      }
-     ],
-     "answer": {
-      "kind": "fill",
-      "template": "In symbols, this statement is \u27e80\u27e9.",
-      "slots": [
-       {
-        "size": 10
-       }
-      ],
-      "note": null
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 24,
@@ -1149,58 +350,7 @@
      "kind": "mcq",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Express the following statement in symbols, using $<$, $>$, $\\le$, or $\\ge$."
-      },
-      {
-       "t": "text",
-       "v": "z is at least 2.4."
-      },
-      {
-       "t": "text",
-       "v": "Determine the correct symbolic form for the given statement. Choose the correct answer."
-      }
-     ],
-     "answer": {
-      "kind": "choice",
-      "options": [
-       [
-        {
-         "t": "math",
-         "tex": "z>2.4",
-         "display": false
-        }
-       ],
-       [
-        {
-         "t": "math",
-         "tex": "z\\le 2.4",
-         "display": false
-        }
-       ],
-       [
-        {
-         "t": "math",
-         "tex": "z\\ge 2.4",
-         "display": false
-        }
-       ],
-       [
-        {
-         "t": "math",
-         "tex": "z<2.4",
-         "display": false
-        }
-       ]
-      ],
-      "multi": false
-     },
-     "note": "Options are printed without letter labels.",
-     "clipped": false
+     ]
     },
     {
      "n": 25,
@@ -1214,33 +364,7 @@
      "kind": "select",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Use either $<$ or $>$ to make this a true statement."
-      },
-      {
-       "t": "math",
-       "tex": "-8\\ \\square\\ -14",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "select",
-      "template": "$-8$ \u27e80\u27e9 $-14$",
-      "slots": [
-       {
-        "options": [
-         "<",
-         ">"
-        ]
-       }
-      ]
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 26,
@@ -1254,34 +378,7 @@
      "kind": "select",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Replace the question mark by $<$, $>$, or $=$, whichever is correct."
-      },
-      {
-       "t": "math",
-       "tex": "\\frac{3}{5}\\ ?\\ 0.6",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "select",
-      "template": "$\\frac{3}{5}$ \u27e80\u27e9 $0.6$",
-      "slots": [
-       {
-        "options": [
-         "<",
-         ">",
-         "="
-        ]
-       }
-      ]
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 27,
@@ -1296,66 +393,7 @@
      "structure": [
       "math",
       "table"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Fill in the blank so as to produce two equivalent statements."
-      },
-      {
-       "t": "table",
-       "flavour": "reference",
-       "caption": null,
-       "cols": [
-        "Arithmetic Statement",
-        "Geometric Statement"
-       ],
-       "rows": [
-        [
-         "$a \\le b$",
-         ""
-        ]
-       ],
-       "numeric": false
-      },
-      {
-       "t": "text",
-       "v": "Find the correct equivalent geometric statement for the given arithmetic statement. Choose the correct answer."
-      }
-     ],
-     "answer": {
-      "kind": "choice",
-      "options": [
-       [
-        {
-         "t": "text",
-         "v": "a lies to the left of b or the same point as b."
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "a lies to the right of b or is equal to b."
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "a lies to the left of b."
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "a lies to the right of b."
-        }
-       ]
-      ],
-      "multi": false
-     },
-     "note": "The Geometric Statement cell is printed as a blank rule to be filled in.",
-     "clipped": false
+     ]
     },
     {
      "n": 28,
@@ -1370,70 +408,7 @@
      "structure": [
       "math",
       "numberline"
-     ],
-     "auto_ok": false,
-     "clipped": true,
-     "clip_status": "unrecoverable",
-     "stem": [
-      {
-       "t": "text",
-       "v": "Graph the following interval on a number line."
-      },
-      {
-       "t": "math",
-       "tex": "(-4,-1)",
-       "display": true
-      },
-      {
-       "t": "text",
-       "v": "Choose the correct graph below."
-      }
-     ],
-     "answer": {
-      "kind": "choice",
-      "options": [
-       [
-        {
-         "t": "numberline",
-         "min": -8,
-         "max": 8,
-         "step": 2,
-         "intervals": [
-          {
-           "from": -4,
-           "to": -1,
-           "openFrom": false,
-           "openTo": false
-          }
-         ],
-         "points": []
-        }
-       ],
-       [],
-       [
-        {
-         "t": "numberline",
-         "min": -8,
-         "max": 8,
-         "step": 2,
-         "intervals": [],
-         "points": [
-          {
-           "x": -4,
-           "open": true
-          },
-          {
-           "x": -1,
-           "open": true
-          }
-         ]
-        }
-       ],
-       []
-      ],
-      "multi": false
-     },
-     "note": "Four lettered options A-D print in a 2x2 grid, but only the left-hand graphs (A and C) fit on the page; the graphs for B and D run off the right page margin and are not rendered at all, so options 2 and 4 are recorded empty. Option C shows only endpoint markers at -4 and -1 (each drawn as a superimposed ')(' pair) with no shaded segment."
+     ]
     },
     {
      "n": 29,
@@ -1448,76 +423,7 @@
      "structure": [
       "math",
       "numberline"
-     ],
-     "auto_ok": false,
-     "clipped": true,
-     "clip_status": "unrecoverable",
-     "stem": [
-      {
-       "t": "text",
-       "v": "Graph the following interval on a number line."
-      },
-      {
-       "t": "math",
-       "tex": "(-6,-1)",
-       "display": true
-      },
-      {
-       "t": "text",
-       "v": "Choose the correct graph below."
-      }
-     ],
-     "answer": {
-      "kind": "choice",
-      "options": [
-       [
-        {
-         "t": "numberline",
-         "min": -8,
-         "max": 8,
-         "step": 2,
-         "intervals": [
-          {
-           "from": null,
-           "to": -6,
-           "openFrom": false,
-           "openTo": true
-          },
-          {
-           "from": -1,
-           "to": null,
-           "openFrom": true,
-           "openTo": false
-          }
-         ],
-         "points": []
-        }
-       ],
-       [],
-       [
-        {
-         "t": "numberline",
-         "min": -8,
-         "max": 8,
-         "step": 2,
-         "intervals": [],
-         "points": [
-          {
-           "x": -6,
-           "open": true
-          },
-          {
-           "x": -1,
-           "open": true
-          }
-         ]
-        }
-       ],
-       []
-      ],
-      "multi": false
-     },
-     "note": "Option A is the complement, two open rays: (-inf, -6) union (-1, inf); 'from': null denotes the ray running to negative infinity. Options B and D run off the right page margin and are not rendered, so they are recorded empty. Option C shows only endpoint markers at -6 and -1 with no shaded segment."
+     ]
     },
     {
      "n": 30,
@@ -1532,62 +438,7 @@
      "structure": [
       "math",
       "numberline"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Graph the interval $(-3,\\infty)$ on a number line."
-      },
-      {
-       "t": "text",
-       "v": "Choose the correct answer below."
-      }
-     ],
-     "answer": {
-      "kind": "choice",
-      "options": [
-       [
-        {
-         "t": "numberline",
-         "min": -5,
-         "max": -1,
-         "step": 1,
-         "intervals": [
-          {
-           "from": null,
-           "to": -3,
-           "openFrom": false,
-           "openTo": false
-          }
-         ],
-         "points": []
-        }
-       ],
-       [],
-       [
-        {
-         "t": "numberline",
-         "min": -5,
-         "max": -1,
-         "step": 1,
-         "intervals": [
-          {
-           "from": -3,
-           "to": null,
-           "openFrom": false,
-           "openTo": false
-          }
-         ],
-         "points": []
-        }
-       ],
-       []
-      ],
-      "multi": false
-     },
-     "note": "Axis is labelled -5 to -1 in steps of 1 with arrowheads at both ends. Option A is the closed left ray (-inf, -3]; option C is the closed right ray [-3, inf). Options B and D run off the right page margin and are not rendered, so they are recorded empty.",
-     "clipped": true
+     ]
     }
    ],
    "file": "Hw1_1",
@@ -1623,32 +474,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Use a calculator to approximate the number below."
-      },
-      {
-       "t": "math",
-       "tex": "11.5^{5}",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$11.5^{5}\\approx$",
-        "size": 12,
-        "unit": null
-       }
-      ],
-      "note": "Round to four decimal places as needed."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 2,
@@ -1662,32 +488,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Use a calculator to approximate the number below."
-      },
-      {
-       "t": "math",
-       "tex": "\\left(-\\frac{17}{7}\\right)^{8}",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$\\left(-\\frac{17}{7}\\right)^{8}\\approx$",
-        "size": 12,
-        "unit": null
-       }
-      ],
-      "note": "Round to five decimal places as needed."
-     },
-     "note": "The exponent 8 is attached to the parenthesised fraction, not to 17 or to 7.",
-     "clipped": false
+     ]
     },
     {
      "n": 3,
@@ -1701,32 +502,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Simplify the given expression below. Leave the answer in exponential notation."
-      },
-      {
-       "t": "math",
-       "tex": "5^{9}\\cdot 5^{7}",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$5^{9}\\cdot 5^{7}=$",
-        "size": 8,
-        "unit": null
-       }
-      ],
-      "note": "Type exponential notation with positive exponents."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 4,
@@ -1740,32 +516,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Simplify the given expression below. Leave the answer in exponential notation."
-      },
-      {
-       "t": "math",
-       "tex": "(-4)^{5}\\cdot(-4)^{3}",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$(-4)^{5}\\cdot(-4)^{3}=$",
-        "size": 8,
-        "unit": null
-       }
-      ],
-      "note": "Type exponential notation with positive exponents."
-     },
-     "note": "The base is the parenthesised -4 in both factors.",
-     "clipped": false
+     ]
     },
     {
      "n": 5,
@@ -1779,32 +530,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Simplify the given expression below. Leave the answer in exponential notation."
-      },
-      {
-       "t": "math",
-       "tex": "\\left[(6t)^{4}\\right]^{2}",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$\\left[(6t)^{4}\\right]^{2}=$",
-        "size": 8,
-        "unit": null
-       }
-      ],
-      "note": "Type your answer using exponential notation."
-     },
-     "note": "Nested exponent: the inner base (6t) carries exponent 4 and the whole bracket carries an outer exponent 2.",
-     "clipped": false
+     ]
     },
     {
      "n": 6,
@@ -1818,32 +544,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Simplify."
-      },
-      {
-       "t": "math",
-       "tex": "b^{4}\\cdot b^{6}\\cdot b^{7}",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$b^{4}\\cdot b^{6}\\cdot b^{7}=$",
-        "size": 8,
-        "unit": null
-       }
-      ],
-      "note": null
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 7,
@@ -1858,32 +559,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Simplify the expression."
-      },
-      {
-       "t": "math",
-       "tex": "\\left(-8x^{2}y^{6}\\right)\\left(8x^{6}y^{2}\\right)",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$\\left(-8x^{2}y^{6}\\right)\\left(8x^{6}y^{2}\\right)=$",
-        "size": 12,
-        "unit": null
-       }
-      ],
-      "note": "Simplify your answer."
-     },
-     "note": "This is a product of two parenthesised monomials, not a subtraction.",
-     "clipped": false
+     ]
     },
     {
      "n": 8,
@@ -1898,32 +574,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Simplify the expression so that no negative exponents appear in the final result. Assume that all variables represent nonzero real numbers."
-      },
-      {
-       "t": "math",
-       "tex": "7k^{4}(-9k)\\left(2k^{-6}\\right)^{0}",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$7k^{4}(-9k)\\left(2k^{-6}\\right)^{0}=$",
-        "size": 12,
-        "unit": null
-       }
-      ],
-      "note": "Simplify your answer. Type exponential notation with positive exponents."
-     },
-     "note": "Three factors multiplied; the third factor is the parenthesised 2k^-6 raised to the outer power 0.",
-     "clipped": false
+     ]
     },
     {
      "n": 9,
@@ -1938,32 +589,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Simplify the expression so that no negative exponents appear in the final result. Assume that all variables represent nonzero real numbers."
-      },
-      {
-       "t": "math",
-       "tex": "\\frac{(9uv)v^{3}}{45u^{3}v^{6}}",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$\\frac{(9uv)v^{3}}{45u^{3}v^{6}}=$",
-        "size": 12,
-        "unit": null
-       }
-      ],
-      "note": "Simplify your answer. Type exponential notation with positive exponents."
-     },
-     "note": "Numerator is the parenthesised 9uv times v^3.",
-     "clipped": false
+     ]
     },
     {
      "n": 10,
@@ -1977,32 +603,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Simplify."
-      },
-      {
-       "t": "math",
-       "tex": "\\left(\\frac{2}{3}\\right)^{-4}",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$\\left(\\frac{2}{3}\\right)^{-4}=$",
-        "size": 8,
-        "unit": null
-       }
-      ],
-      "note": "Simplify your answer. Type a fraction or mixed number."
-     },
-     "note": "The exponent -4 applies to the whole parenthesised fraction.",
-     "clipped": false
+     ]
     },
     {
      "n": 11,
@@ -2017,86 +618,7 @@
      "kind": "multipart",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "List the degree of the given polynomial, its coefficients, and its constant term."
-      },
-      {
-       "t": "math",
-       "tex": "5.5x^{4}-7x^{3}+6x^{2}-4x+4.7",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "multipart",
-      "parts": [
-       {
-        "label": "(a)",
-        "stem": [
-         {
-          "t": "text",
-          "v": "What is the degree of the the given polynomial?"
-         }
-        ],
-        "answer": {
-         "kind": "compute",
-         "slots": [
-          {
-           "label": "The degree is",
-           "size": 4,
-           "unit": null
-          }
-         ],
-         "note": null
-        }
-       },
-       {
-        "label": "(b)",
-        "stem": [
-         {
-          "t": "text",
-          "v": "List all the coefficients of the polynomial."
-         }
-        ],
-        "answer": {
-         "kind": "compute",
-         "slots": [
-          {
-           "label": "The coefficients are",
-           "size": 18,
-           "unit": null
-          }
-         ],
-         "note": "Use a comma to separate answers as needed."
-        }
-       },
-       {
-        "label": "(c)",
-        "stem": [
-         {
-          "t": "text",
-          "v": "What is the constant term of the given polynomial?"
-         }
-        ],
-        "answer": {
-         "kind": "compute",
-         "slots": [
-          {
-           "label": "The constant term is",
-           "size": 6,
-           "unit": null
-          }
-         ],
-         "note": null
-        }
-       }
-      ]
-     },
-     "note": "The three sub-questions are printed without part labels; (a)/(b)/(c) were added for structure. The doubled word 'the the' in part (a) is as printed.",
-     "clipped": false
+     ]
     },
     {
      "n": 12,
@@ -2111,32 +633,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Give the degree of the polynomial."
-      },
-      {
-       "t": "math",
-       "tex": "-9+3x+3x^{3}-2x^{4}",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "The degree of $-9+3x+3x^{3}-2x^{4}$ is",
-        "size": 4,
-        "unit": null
-       }
-      ],
-      "note": null
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 13,
@@ -2150,32 +647,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Add."
-      },
-      {
-       "t": "math",
-       "tex": "\\left(7x^{3}-6x^{2}+8x\\right)+\\left(7x^{3}+9x^{2}-14x\\right)",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$\\left(7x^{3}-6x^{2}+8x\\right)+\\left(7x^{3}+9x^{2}-14x\\right)=$",
-        "size": 18,
-        "unit": null
-       }
-      ],
-      "note": "Simplify your answer."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 14,
@@ -2189,32 +661,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Subtract."
-      },
-      {
-       "t": "math",
-       "tex": "\\left(8y^{2}-9y+5\\right)-\\left(3y^{2}-9y+7\\right)",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$\\left(8y^{2}-9y+5\\right)-\\left(3y^{2}-9y+7\\right)=$",
-        "size": 18,
-        "unit": null
-       }
-      ],
-      "note": "Simplify your answer. Do not factor."
-     },
-     "note": "Sign-changing parentheses: the minus distributes over the whole second trinomial.",
-     "clipped": false
+     ]
     },
     {
      "n": 15,
@@ -2228,32 +675,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Subtract."
-      },
-      {
-       "t": "math",
-       "tex": "\\left(6x^{3}-2x^{2}+7x-7\\right)-\\left(8x^{3}-5x^{2}+3\\right)",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$\\left(6x^{3}-2x^{2}+7x-7\\right)-\\left(8x^{3}-5x^{2}+3\\right)=$",
-        "size": 20,
-        "unit": null
-       }
-      ],
-      "note": "Simplify your answer."
-     },
-     "note": "Sign-changing parentheses: the minus distributes over the whole second polynomial.",
-     "clipped": false
+     ]
     },
     {
      "n": 16,
@@ -2267,32 +689,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Simplify."
-      },
-      {
-       "t": "math",
-       "tex": "\\left(5y^{3}-5y^{2}+3y+1\\right)-\\left(-4y^{3}+10y+9\\right)",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$\\left(5y^{3}-5y^{2}+3y+1\\right)-\\left(-4y^{3}+10y+9\\right)=$",
-        "size": 20,
-        "unit": null
-       }
-      ],
-      "note": "Do not factor."
-     },
-     "note": "Sign-changing parentheses; the subtracted polynomial itself begins with -4y^3.",
-     "clipped": false
+     ]
     },
     {
      "n": 17,
@@ -2306,43 +703,7 @@
      "kind": "mcq",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Combine like terms, if possible. Write the result with descending powers."
-      },
-      {
-       "t": "math",
-       "tex": "-5z^{5}+6z^{5}",
-       "display": true
-      },
-      {
-       "t": "text",
-       "v": "Select the correct choice below and, fill in the answer box to complete your choice."
-      }
-     ],
-     "answer": {
-      "kind": "choice",
-      "options": [
-       [
-        {
-         "t": "text",
-         "v": "The polynomial cannot be simplified. The polynomial written in descending powers is \u27e80\u27e9."
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "The polynomial can be simplified. $-5z^{5}+6z^{5}=$ \u27e80\u27e9."
-        }
-       ]
-      ],
-      "multi": false
-     },
-     "note": "Each lettered choice carries its own fill-in answer box, marked \u27e80\u27e9 within the option text.",
-     "clipped": false
+     ]
     },
     {
      "n": 18,
@@ -2356,43 +717,7 @@
      "kind": "mcq",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Combine like terms, if possible. Write the result with descending powers."
-      },
-      {
-       "t": "math",
-       "tex": "-9x^{6}+6x^{6}-8x^{6}",
-       "display": true
-      },
-      {
-       "t": "text",
-       "v": "Select the correct choice below and fill in the answer box to complete your choice."
-      }
-     ],
-     "answer": {
-      "kind": "choice",
-      "options": [
-       [
-        {
-         "t": "text",
-         "v": "The polynomial cannot be simplified. The polynomial written in descending powers is \u27e80\u27e9."
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "The polynomial can be simplified. $-9x^{6}+6x^{6}-8x^{6}=$ \u27e80\u27e9."
-        }
-       ]
-      ],
-      "multi": false
-     },
-     "note": "Each lettered choice carries its own fill-in answer box, marked \u27e80\u27e9 within the option text.",
-     "clipped": false
+     ]
     },
     {
      "n": 19,
@@ -2406,27 +731,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Combine the terms of $r-r+r-r+r+r$."
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$r-r+r-r+r+r=$",
-        "size": 6,
-        "unit": null
-       }
-      ],
-      "note": null
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 20,
@@ -2440,32 +745,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Combine terms. Arrange your answer in descending order."
-      },
-      {
-       "t": "math",
-       "tex": "8b^{5}+b^{2}-b^{3}-5b^{5}-4b^{2}",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "The answer is",
-        "size": 18,
-        "unit": null
-       }
-      ],
-      "note": "Type in descending order."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 21,
@@ -2479,32 +759,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Add."
-      },
-      {
-       "t": "math",
-       "tex": "\\left(8x^{2}-7x+27\\right)+\\left(3x^{2}+9x-85\\right)",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "The answer is",
-        "size": 18,
-        "unit": null
-       }
-      ],
-      "note": "Simplify your answer."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 22,
@@ -2518,32 +773,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Add."
-      },
-      {
-       "t": "math",
-       "tex": "\\left(6w^{8}-7w^{3}+4w^{2}+5\\right)+\\left(4w^{7}+2w^{3}-8w\\right)",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "The sum is",
-        "size": 24,
-        "unit": null
-       }
-      ],
-      "note": "Simplify your answer."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 23,
@@ -2557,32 +787,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Multiply."
-      },
-      {
-       "t": "math",
-       "tex": "-7x\\left(2x^{2}-5x+8\\right)",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "The product is",
-        "size": 18,
-        "unit": null
-       }
-      ],
-      "note": "Simplify your answer."
-     },
-     "note": "This is the monomial -7x multiplying the parenthesised trinomial, not a subtraction.",
-     "clipped": false
+     ]
     },
     {
      "n": 24,
@@ -2596,32 +801,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Perform the indicated operations."
-      },
-      {
-       "t": "math",
-       "tex": "6x\\left(2x^{2}-8x+7\\right)",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "The answer is",
-        "size": 18,
-        "unit": null
-       }
-      ],
-      "note": "Simplify your answer. Do not factor."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 25,
@@ -2635,32 +815,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Multiply."
-      },
-      {
-       "t": "math",
-       "tex": "(4s-1)(5s+3)",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$(4s-1)(5s+3)=$",
-        "size": 14,
-        "unit": null
-       }
-      ],
-      "note": "Simplify your answer."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 26,
@@ -2674,32 +829,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Find the product."
-      },
-      {
-       "t": "math",
-       "tex": "(9a+3)(7a+2)",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$(9a+3)(7a+2)=$",
-        "size": 14,
-        "unit": null
-       }
-      ],
-      "note": "Simplify your answer."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 27,
@@ -2713,32 +843,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Multiply."
-      },
-      {
-       "t": "math",
-       "tex": "(3a-5t)(3a+4t)",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$(3a-5t)(3a+4t)=$",
-        "size": 14,
-        "unit": null
-       }
-      ],
-      "note": "Simplify your answer. Do not factor."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 28,
@@ -2752,32 +857,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Find the product."
-      },
-      {
-       "t": "math",
-       "tex": "(8x+y)(7x-y)",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$(8x+y)(7x-y)=$",
-        "size": 14,
-        "unit": null
-       }
-      ],
-      "note": "Simplify your answer."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 29,
@@ -2791,32 +871,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Multiply."
-      },
-      {
-       "t": "math",
-       "tex": "\\left(-5e^{3}\\right)\\left(9e^{5}\\right)",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$\\left(-5e^{3}\\right)\\left(9e^{5}\\right)=$",
-        "size": 10,
-        "unit": null
-       }
-      ],
-      "note": null
-     },
-     "note": "The variable is printed as an italic e (a variable, not Euler's number).",
-     "clipped": false
+     ]
     },
     {
      "n": 30,
@@ -2830,32 +885,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Find the product."
-      },
-      {
-       "t": "math",
-       "tex": "\\left(2x^{5}y\\right)\\left(-3x^{5}y^{7}\\right)",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$\\left(2x^{5}y\\right)\\left(-3x^{5}y^{7}\\right)=$",
-        "size": 12,
-        "unit": null
-       }
-      ],
-      "note": "Simplify your answer."
-     },
-     "note": "Product of two parenthesised monomials, not a subtraction.",
-     "clipped": false
+     ]
     },
     {
      "n": 31,
@@ -2869,32 +899,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Multiply."
-      },
-      {
-       "t": "math",
-       "tex": "(4x+8)(4x+6)",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$(4x+8)(4x+6)=$",
-        "size": 14,
-        "unit": null
-       }
-      ],
-      "note": "Simplify your answer."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 32,
@@ -2908,32 +913,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Multiply."
-      },
-      {
-       "t": "math",
-       "tex": "(3v-4g)(3v+3g)",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$(3v-4g)(3v+3g)=$",
-        "size": 14,
-        "unit": null
-       }
-      ],
-      "note": "Simplify your answer. Do not factor."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 33,
@@ -2947,32 +927,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Find the product."
-      },
-      {
-       "t": "math",
-       "tex": "2y^{4}(5y+4)(y-4)",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$2y^{4}(5y+4)(y-4)=$",
-        "size": 18,
-        "unit": null
-       }
-      ],
-      "note": "Simplify your answer."
-     },
-     "note": "Three factors multiplied: the monomial 2y^4 and two binomials.",
-     "clipped": false
+     ]
     },
     {
      "n": 34,
@@ -2986,32 +941,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Multiply."
-      },
-      {
-       "t": "math",
-       "tex": "(2r+5)(2r-5)",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$(2r+5)(2r-5)=$",
-        "size": 12,
-        "unit": null
-       }
-      ],
-      "note": "Simplify your answer."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 35,
@@ -3025,32 +955,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Find the product."
-      },
-      {
-       "t": "math",
-       "tex": "\\left(5x^{5}+1\\right)\\left(5x^{5}-1\\right)",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "The answer is",
-        "size": 14,
-        "unit": null
-       }
-      ],
-      "note": "Simplify your answer."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 36,
@@ -3064,32 +969,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Multiply."
-      },
-      {
-       "t": "math",
-       "tex": "(n+3)^{2}",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$(n+3)^{2}=$",
-        "size": 12,
-        "unit": null
-       }
-      ],
-      "note": "Simplify your answer."
-     },
-     "note": "The exponent 2 applies to the whole binomial.",
-     "clipped": false
+     ]
     },
     {
      "n": 37,
@@ -3103,32 +983,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Multiply."
-      },
-      {
-       "t": "math",
-       "tex": "(4x+5)^{2}",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$(4x+5)^{2}=$",
-        "size": 12,
-        "unit": null
-       }
-      ],
-      "note": "Simplify your answer."
-     },
-     "note": "The exponent 2 applies to the whole binomial.",
-     "clipped": false
+     ]
     },
     {
      "n": 38,
@@ -3142,115 +997,7 @@
      "kind": "multipart",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "clipped": true,
-     "clip_status": "partial",
-     "stem": [
-      {
-       "t": "text",
-       "v": "A salon sells its cologne wholesale for \\$9.75 per bottle. The variable costs of producing x hundred bottles is $-3x^{2}+485x-325$ dollars, and the fixed costs for manufacturing are \\$16,000. Find expressions for the revenue, cost, and profit from selling x hundred items."
-      }
-     ],
-     "answer": {
-      "kind": "multipart",
-      "parts": [
-       {
-        "label": "(a)",
-        "stem": [
-         {
-          "t": "text",
-          "v": "Which expression represents revenue?"
-         }
-        ],
-        "answer": {
-         "kind": "choice",
-         "options": [
-          [
-           {
-            "t": "math",
-            "tex": "R=9750x",
-            "display": false
-           }
-          ],
-          [],
-          [
-           {
-            "t": "math",
-            "tex": "R=975x",
-            "display": false
-           }
-          ],
-          []
-         ],
-         "multi": false
-        }
-       },
-       {
-        "label": "(b)",
-        "stem": [
-         {
-          "t": "text",
-          "v": "Which expression represents cost?"
-         }
-        ],
-        "answer": {
-         "kind": "choice",
-         "options": [
-          [
-           {
-            "t": "math",
-            "tex": "C=-3x^{2}-485x-15{,}675",
-            "display": false
-           }
-          ],
-          [],
-          [
-           {
-            "t": "math",
-            "tex": "C=-3x^{2}+485x+16{,}000",
-            "display": false
-           }
-          ],
-          []
-         ],
-         "multi": false
-        }
-       },
-       {
-        "label": "(c)",
-        "stem": [
-         {
-          "t": "text",
-          "v": "Which expression represents profit?"
-         }
-        ],
-        "answer": {
-         "kind": "choice",
-         "options": [
-          [
-           {
-            "t": "math",
-            "tex": "P=-3x^{2}-490x-15{,}675",
-            "display": false
-           }
-          ],
-          [],
-          [
-           {
-            "t": "math",
-            "tex": "P=3x^{2}+490x-15{,}675",
-            "display": false
-           }
-          ],
-          []
-         ],
-         "multi": false
-        }
-       }
-      ]
-     },
-     "note": "Each of the three sub-questions prints options A-D in two columns; the B and D columns run off the right page margin and only the letters 'B.' and 'D.' are visible, so those options are recorded empty in all three parts. The sub-questions are printed without (a)/(b)/(c) labels; labels added for structure."
+     ]
     },
     {
      "n": 39,
@@ -3265,146 +1012,7 @@
      "structure": [
       "math",
       "histogram"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "The accompanying bar graph shows the net earnings (in millions of dollars) for a certain company. The polynomial $6.87x^{3}-195.2x^{2}+1931x-5931$ gives a good approximation of the company's net earnings in year x, where $x=7$ corresponds to 2007, and so on ($7 \\le x \\le 16$)."
-      },
-      {
-       "t": "histogram",
-       "bins": [
-        {
-         "label": "'07",
-         "value": 544,
-         "on": false
-        },
-        {
-         "label": "'08",
-         "value": 309,
-         "on": false
-        },
-        {
-         "label": "'09",
-         "value": 364,
-         "on": false
-        },
-        {
-         "label": "'10",
-         "value": 956,
-         "on": false
-        },
-        {
-         "label": "'11",
-         "value": 1280,
-         "on": false
-        },
-        {
-         "label": "'12",
-         "value": 1379,
-         "on": false
-        },
-        {
-         "label": "'13",
-         "value": 12,
-         "on": false
-        },
-        {
-         "label": "'14",
-         "value": 2019,
-         "on": false
-        },
-        {
-         "label": "'15",
-         "value": 2779,
-         "on": false
-        },
-        {
-         "label": "'16",
-         "value": 2920,
-         "on": false
-        }
-       ],
-       "xlabel": null,
-       "ylabel": "Net Earnings ($ millions)"
-      },
-      {
-       "t": "text",
-       "v": "(a) Use the bar graph to determine the net earnings in 2015."
-      },
-      {
-       "t": "text",
-       "v": "(b) Use the polynomial to determine the net earnings in 2015."
-      }
-     ],
-     "answer": {
-      "kind": "multipart",
-      "parts": [
-       {
-        "label": "(a)",
-        "stem": [
-         {
-          "t": "text",
-          "v": "Use the bar graph to determine the net earnings in 2015."
-         }
-        ],
-        "answer": {
-         "kind": "compute",
-         "slots": [
-          {
-           "label": "The net earnings are \\$",
-           "size": 8,
-           "unit": "million"
-          }
-         ],
-         "note": "Round to the nearest integer as needed."
-        }
-       },
-       {
-        "label": "(b)",
-        "stem": [
-         {
-          "t": "text",
-          "v": "Which x-value corresponds to 2015?"
-         }
-        ],
-        "answer": {
-         "kind": "compute",
-         "slots": [
-          {
-           "label": "$x=$",
-           "size": 4,
-           "unit": null
-          }
-         ],
-         "note": "Type a whole number."
-        }
-       },
-       {
-        "label": "(b, continued)",
-        "stem": [
-         {
-          "t": "text",
-          "v": "Use the polynomial to determine the net earnings in 2015."
-         }
-        ],
-        "answer": {
-         "kind": "compute",
-         "slots": [
-          {
-           "label": "The net earnings are \\$",
-           "size": 8,
-           "unit": "million"
-          }
-         ],
-         "note": "Round to the nearest integer as needed."
-        }
-       }
-      ]
-     },
-     "note": "Bar values are printed above each bar and were read directly; the y axis runs 0 to 3500 in steps of 500. The '13 bar is labelled 12 and is drawn at essentially zero height, which is the printed value, not a misreading. The x axis has no separate label, only the year tick labels '07 through '16. The third answer box is printed as an unlabelled continuation of part (b).",
-     "clipped": false
+     ]
     }
    ],
    "file": "1.2 Polynomials.pdf",
@@ -3437,43 +1045,7 @@
      "kind": "mcq",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Factor out the greatest common factor. Simplify the factors, if possible."
-      },
-      {
-       "t": "math",
-       "tex": "4a-8",
-       "display": true
-      },
-      {
-       "t": "text",
-       "v": "Select the correct choice below and fill in any answer boxes in your choice."
-      }
-     ],
-     "answer": {
-      "kind": "choice",
-      "options": [
-       [
-        {
-         "t": "text",
-         "v": "$4a-8=$ \u27e80\u27e9 (Type your answer in factored form. Simplify your answer.)"
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "The expression is not factorable."
-        }
-       ]
-      ],
-      "multi": false
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 2,
@@ -3487,43 +1059,7 @@
      "kind": "mcq",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Factor out the greatest common factor. Simplify the factors, if possible."
-      },
-      {
-       "t": "math",
-       "tex": "8s^{5}+4s",
-       "display": true
-      },
-      {
-       "t": "text",
-       "v": "Select the correct choice below and fill in any answer boxes in your choice."
-      }
-     ],
-     "answer": {
-      "kind": "choice",
-      "options": [
-       [
-        {
-         "t": "text",
-         "v": "$8s^{5}+4s=$ \u27e80\u27e9 (Type your answer in factored form. Simplify your answer.)"
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "The expression is not factorable."
-        }
-       ]
-      ],
-      "multi": false
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 3,
@@ -3537,43 +1073,7 @@
      "kind": "mcq",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Factor out the greatest negative common factor for the expression."
-      },
-      {
-       "t": "math",
-       "tex": "-4m^{2}n^{3}-32m^{2}n^{2}",
-       "display": true
-      },
-      {
-       "t": "text",
-       "v": "Select the correct choice below and, if necessary, fill in any answer boxes to complete your choice."
-      }
-     ],
-     "answer": {
-      "kind": "choice",
-      "options": [
-       [
-        {
-         "t": "text",
-         "v": "$-4m^{2}n^{3}-32m^{2}n^{2}=$ \u27e80\u27e9 (Factor completely.)"
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "There is no common factor other than 1."
-        }
-       ]
-      ],
-      "multi": false
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 4,
@@ -3587,32 +1087,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Factor. (Be sure to factor out the greatest common factor.)"
-      },
-      {
-       "t": "math",
-       "tex": "2b^{2}-14b",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$2b^{2}-14b=$",
-        "size": 12,
-        "unit": null
-       }
-      ],
-      "note": "Type the factored expression. Factor completely."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 5,
@@ -3626,32 +1101,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Factor out the greatest common factor in the given polynomial."
-      },
-      {
-       "t": "math",
-       "tex": "x^{8}-5x^{7}-5x^{6}",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$x^{8}-5x^{7}-5x^{6}=$",
-        "size": 14,
-        "unit": null
-       }
-      ],
-      "note": "Simplify your answer. Type your answer in factored form."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 6,
@@ -3665,32 +1115,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Factor out the greatest common factor."
-      },
-      {
-       "t": "math",
-       "tex": "4x^{3}-16x^{2}+8x",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$4x^{3}-16x^{2}+8x=$",
-        "size": 14,
-        "unit": null
-       }
-      ],
-      "note": "Type your answer in factored form."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 7,
@@ -3704,32 +1129,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Factor by grouping."
-      },
-      {
-       "t": "math",
-       "tex": "r^{2}-15tw+3wr-5tr",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$r^{2}-15tw+3wr-5tr=$",
-        "size": 14,
-        "unit": null
-       }
-      ],
-      "note": null
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 8,
@@ -3744,59 +1144,7 @@
      "kind": "mcq",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Factor by grouping."
-      },
-      {
-       "t": "math",
-       "tex": "8ab+56bc+a+7c",
-       "display": true
-      },
-      {
-       "t": "text",
-       "v": "Choose the correct answer below."
-      }
-     ],
-     "answer": {
-      "kind": "choice",
-      "options": [
-       [
-        {
-         "t": "math",
-         "tex": "(8a+7b)(c+1)",
-         "display": false
-        }
-       ],
-       [
-        {
-         "t": "math",
-         "tex": "(a+1)(8b+7c)",
-         "display": false
-        }
-       ],
-       [
-        {
-         "t": "math",
-         "tex": "(a+7c)(8b+1)",
-         "display": false
-        }
-       ],
-       [
-        {
-         "t": "math",
-         "tex": "(a+8b)(7c+1)",
-         "display": false
-        }
-       ]
-      ],
-      "multi": false
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 9,
@@ -3811,32 +1159,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Factor by grouping."
-      },
-      {
-       "t": "math",
-       "tex": "x^{3}+9x^{2}+8x+72",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$x^{3}+9x^{2}+8x+72=$",
-        "size": 14,
-        "unit": null
-       }
-      ],
-      "note": null
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 10,
@@ -3851,43 +1174,7 @@
      "kind": "mcq",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Factor the polynomial."
-      },
-      {
-       "t": "math",
-       "tex": "x^{2}+5x+6",
-       "display": true
-      },
-      {
-       "t": "text",
-       "v": "Select the correct choice below and fill in any answer boxes in your choice."
-      }
-     ],
-     "answer": {
-      "kind": "choice",
-      "options": [
-       [
-        {
-         "t": "text",
-         "v": "$x^{2}+5x+6=$ \u27e80\u27e9"
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "The polynomial is not factorable."
-        }
-       ]
-      ],
-      "multi": false
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 11,
@@ -3901,43 +1188,7 @@
      "kind": "mcq",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Factor the polynomial."
-      },
-      {
-       "t": "math",
-       "tex": "x^{2}+7x+10",
-       "display": true
-      },
-      {
-       "t": "text",
-       "v": "Select the correct choice below and fill in any answer boxes in your choice."
-      }
-     ],
-     "answer": {
-      "kind": "choice",
-      "options": [
-       [
-        {
-         "t": "text",
-         "v": "$x^{2}+7x+10=$ \u27e80\u27e9"
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "The polynomial is not factorable."
-        }
-       ]
-      ],
-      "multi": false
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 12,
@@ -3951,43 +1202,7 @@
      "kind": "mcq",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Factor the polynomial."
-      },
-      {
-       "t": "math",
-       "tex": "s^{2}+s-42",
-       "display": true
-      },
-      {
-       "t": "text",
-       "v": "Select the correct choice below and, if necessary, fill in the answer box to complete your choice."
-      }
-     ],
-     "answer": {
-      "kind": "choice",
-      "options": [
-       [
-        {
-         "t": "text",
-         "v": "$s^{2}+s-42=$ \u27e80\u27e9"
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "The polynomial cannot be factored."
-        }
-       ]
-      ],
-      "multi": false
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 13,
@@ -4001,43 +1216,7 @@
      "kind": "mcq",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Factor the polynomial."
-      },
-      {
-       "t": "math",
-       "tex": "s^{2}+2s-63",
-       "display": true
-      },
-      {
-       "t": "text",
-       "v": "Select the correct choice below and, if necessary, fill in the answer box to complete your choice."
-      }
-     ],
-     "answer": {
-      "kind": "choice",
-      "options": [
-       [
-        {
-         "t": "text",
-         "v": "$s^{2}+2s-63=$ \u27e80\u27e9 (Type your answer in factored form. Simplify your answer.)"
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "The polynomial is not factorable."
-        }
-       ]
-      ],
-      "multi": false
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 14,
@@ -4051,43 +1230,7 @@
      "kind": "mcq",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Factor the polynomial."
-      },
-      {
-       "t": "math",
-       "tex": "s^{2}-3s-40",
-       "display": true
-      },
-      {
-       "t": "text",
-       "v": "Select the correct choice below and, if necessary, fill in the answer box within your choice."
-      }
-     ],
-     "answer": {
-      "kind": "choice",
-      "options": [
-       [
-        {
-         "t": "text",
-         "v": "The answer is \u27e80\u27e9. (Factor completely.)"
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "The polynomial is not factorable."
-        }
-       ]
-      ],
-      "multi": false
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 15,
@@ -4101,43 +1244,7 @@
      "kind": "mcq",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Factor the polynomial."
-      },
-      {
-       "t": "math",
-       "tex": "t^{2}-9t+8",
-       "display": true
-      },
-      {
-       "t": "text",
-       "v": "Select the correct choice below and, if necessary, fill in the answer box within your choice."
-      }
-     ],
-     "answer": {
-      "kind": "choice",
-      "options": [
-       [
-        {
-         "t": "text",
-         "v": "The answer is \u27e80\u27e9. (Factor completely.)"
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "The polynomial is not factorable."
-        }
-       ]
-      ],
-      "multi": false
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 16,
@@ -4152,43 +1259,7 @@
      "kind": "mcq",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Factor the polynomial."
-      },
-      {
-       "t": "math",
-       "tex": "x^{2}+10x+24",
-       "display": true
-      },
-      {
-       "t": "text",
-       "v": "Select the correct choice below and fill in any answer boxes in your choice."
-      }
-     ],
-     "answer": {
-      "kind": "choice",
-      "options": [
-       [
-        {
-         "t": "text",
-         "v": "$x^{2}+10x+24=$ \u27e80\u27e9"
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "The polynomial is not factorable."
-        }
-       ]
-      ],
-      "multi": false
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 17,
@@ -4202,43 +1273,7 @@
      "kind": "mcq",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Factor the polynomial. If the polynomial cannot be factored, write prime. Factor out the greatest common factor as necessary."
-      },
-      {
-       "t": "math",
-       "tex": "2s^{2}+9s+10",
-       "display": true
-      },
-      {
-       "t": "text",
-       "v": "Select the correct choice below and fill in any answer boxes within your choice."
-      }
-     ],
-     "answer": {
-      "kind": "choice",
-      "options": [
-       [
-        {
-         "t": "text",
-         "v": "$2s^{2}+9s+10=$ \u27e80\u27e9 (Type your answer in factored form.)"
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "The polynomial is prime."
-        }
-       ]
-      ],
-      "multi": false
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 18,
@@ -4253,43 +1288,7 @@
      "kind": "mcq",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Factor the polynomial."
-      },
-      {
-       "t": "math",
-       "tex": "16u^{2}-90u+11",
-       "display": true
-      },
-      {
-       "t": "text",
-       "v": "Select the correct choice below and, if necessary, fill in the answer box to complete your choice."
-      }
-     ],
-     "answer": {
-      "kind": "choice",
-      "options": [
-       [
-        {
-         "t": "text",
-         "v": "$16u^{2}-90u+11=$ \u27e80\u27e9"
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "The polynomial cannot be factored."
-        }
-       ]
-      ],
-      "multi": false
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 19,
@@ -4303,43 +1302,7 @@
      "kind": "mcq",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Factor the polynomial."
-      },
-      {
-       "t": "math",
-       "tex": "20s^{2}+13s-15",
-       "display": true
-      },
-      {
-       "t": "text",
-       "v": "Select the correct choice below and, if necessary, fill in the answer box to complete your choice."
-      }
-     ],
-     "answer": {
-      "kind": "choice",
-      "options": [
-       [
-        {
-         "t": "text",
-         "v": "$20s^{2}+13s-15=$ \u27e80\u27e9"
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "The polynomial cannot be factored."
-        }
-       ]
-      ],
-      "multi": false
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 20,
@@ -4353,43 +1316,7 @@
      "kind": "mcq",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Factor the polynomial completely. Factor out the greatest common factor as necessary."
-      },
-      {
-       "t": "math",
-       "tex": "5x^{2}+7x-6",
-       "display": true
-      },
-      {
-       "t": "text",
-       "v": "Select the correct choice below and, if necessary, fill in the answer box to complete your choice."
-      }
-     ],
-     "answer": {
-      "kind": "choice",
-      "options": [
-       [
-        {
-         "t": "text",
-         "v": "$5x^{2}+7x-6=$ \u27e80\u27e9 (Factor completely.)"
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "The polynomial cannot be factored."
-        }
-       ]
-      ],
-      "multi": false
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 21,
@@ -4403,43 +1330,7 @@
      "kind": "mcq",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Factor the polynomial completely. Factor out the greatest common factor as necessary."
-      },
-      {
-       "t": "math",
-       "tex": "3x^{2}+9x-54",
-       "display": true
-      },
-      {
-       "t": "text",
-       "v": "Select the correct choice below and fill in any answer boxes within your choice."
-      }
-     ],
-     "answer": {
-      "kind": "choice",
-      "options": [
-       [
-        {
-         "t": "text",
-         "v": "$3x^{2}+9x-54=$ \u27e80\u27e9"
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "The polynomial is not factorable."
-        }
-       ]
-      ],
-      "multi": false
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 22,
@@ -4453,43 +1344,7 @@
      "kind": "mcq",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Factor the polynomial completely. Factor out the greatest common factor as necessary."
-      },
-      {
-       "t": "math",
-       "tex": "s^{2}-36",
-       "display": true
-      },
-      {
-       "t": "text",
-       "v": "Select the correct choice below and, if necessary, fill in the answer box to complete your choice."
-      }
-     ],
-     "answer": {
-      "kind": "choice",
-      "options": [
-       [
-        {
-         "t": "text",
-         "v": "$s^{2}-36=$ \u27e80\u27e9"
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "The polynomial is not factorable."
-        }
-       ]
-      ],
-      "multi": false
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 23,
@@ -4503,43 +1358,7 @@
      "kind": "mcq",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Factor the expression completely."
-      },
-      {
-       "t": "math",
-       "tex": "9x^{2}+6x+1",
-       "display": true
-      },
-      {
-       "t": "text",
-       "v": "Select the correct choice below and, if necessary, fill in the answer box to complete your choice."
-      }
-     ],
-     "answer": {
-      "kind": "choice",
-      "options": [
-       [
-        {
-         "t": "text",
-         "v": "$9x^{2}+6x+1=$ \u27e80\u27e9"
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "The expression cannot be factored."
-        }
-       ]
-      ],
-      "multi": false
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 24,
@@ -4553,43 +1372,7 @@
      "kind": "mcq",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Factor the polynomial completely. Factor out the greatest common factor as necessary."
-      },
-      {
-       "t": "math",
-       "tex": "4a^{2}-25b^{2}",
-       "display": true
-      },
-      {
-       "t": "text",
-       "v": "Select the correct choice below and fill in any answer boxes within your choice."
-      }
-     ],
-     "answer": {
-      "kind": "choice",
-      "options": [
-       [
-        {
-         "t": "text",
-         "v": "$4a^{2}-25b^{2}=$ \u27e80\u27e9"
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "The polynomial cannot be factored."
-        }
-       ]
-      ],
-      "multi": false
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 25,
@@ -4603,43 +1386,7 @@
      "kind": "mcq",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Factor out the greatest common factor as necessary."
-      },
-      {
-       "t": "math",
-       "tex": "81r^{2}-64",
-       "display": true
-      },
-      {
-       "t": "text",
-       "v": "Select the correct choice below and, if necessary, fill in the answer box to complete your choice."
-      }
-     ],
-     "answer": {
-      "kind": "choice",
-      "options": [
-       [
-        {
-         "t": "text",
-         "v": "$81r^{2}-64=$ \u27e80\u27e9"
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "The polynomial cannot be factored."
-        }
-       ]
-      ],
-      "multi": false
-     },
-     "note": null,
-     "clipped": false
+     ]
     }
    ],
    "file": "1.3 Factoring.pdf",
@@ -4669,32 +1416,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Simplify."
-      },
-      {
-       "t": "math",
-       "tex": "\\frac{9x^{9}}{12x^{2}}",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "The simplified form is",
-        "size": 10,
-        "unit": null
-       }
-      ],
-      "note": "Use integers or fractions for any numbers in the expression."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 2,
@@ -4708,32 +1430,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Write the given expression in lowest terms. Factor as necessary."
-      },
-      {
-       "t": "math",
-       "tex": "\\frac{7x^{2}}{21x^{8}}",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$\\frac{7x^{2}}{21x^{8}}=$",
-        "size": 10,
-        "unit": null
-       }
-      ],
-      "note": "Simplify your answer. Use integers or fractions for any numbers in the expression."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 3,
@@ -4747,32 +1444,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Simplify the given rational expression. (Assume that the denominator in each case is nonzero.)"
-      },
-      {
-       "t": "math",
-       "tex": "\\frac{9r^{4}}{24r^{10}}",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$\\frac{9r^{4}}{24r^{10}}=$",
-        "size": 10,
-        "unit": null
-       }
-      ],
-      "note": "Simplify your answer. Use positive exponents only."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 4,
@@ -4786,32 +1458,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Write the rational expression in lowest terms."
-      },
-      {
-       "t": "math",
-       "tex": "\\frac{27y^{5}}{30y^{3}}",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "In lowest terms, the expression is",
-        "size": 10,
-        "unit": null
-       }
-      ],
-      "note": "Simplify your answer. Use integers or fractions for any numbers in the expression."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 5,
@@ -4825,32 +1472,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Write the rational expression in lowest terms."
-      },
-      {
-       "t": "math",
-       "tex": "\\frac{6x-30}{8x-40}",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$\\frac{6x-30}{8x-40}=$",
-        "size": 10,
-        "unit": null
-       }
-      ],
-      "note": "Type an integer or a fraction."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 6,
@@ -4864,32 +1486,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Write in lowest terms."
-      },
-      {
-       "t": "math",
-       "tex": "\\frac{4(y+7)}{(y+7)(y+5)}",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "The simplified rational expression is",
-        "size": 10,
-        "unit": null
-       }
-      ],
-      "note": null
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 7,
@@ -4903,32 +1500,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Write the given expression in lowest terms. Factor as necessary."
-      },
-      {
-       "t": "math",
-       "tex": "\\frac{9z^{2}-63z}{27z^{3}}",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "The expression in lowest terms is",
-        "size": 10,
-        "unit": null
-       }
-      ],
-      "note": null
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 8,
@@ -4942,32 +1514,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Write the rational expression in lowest terms."
-      },
-      {
-       "t": "math",
-       "tex": "\\frac{y^{2}-3y+2}{y^{2}+5y-6}",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$\\frac{y^{2}-3y+2}{y^{2}+5y-6}=$",
-        "size": 10,
-        "unit": null
-       }
-      ],
-      "note": "Simplify your answer."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 9,
@@ -4981,32 +1528,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Simplify."
-      },
-      {
-       "t": "math",
-       "tex": "\\frac{z^{2}-20z+100}{z^{2}-100}",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$\\frac{z^{2}-20z+100}{z^{2}-100}=$",
-        "size": 10,
-        "unit": null
-       }
-      ],
-      "note": null
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 10,
@@ -5021,32 +1543,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Multiply the following rational expressions. Write the answer in lowest terms."
-      },
-      {
-       "t": "math",
-       "tex": "\\frac{6x}{5}\\cdot\\frac{10}{33x^{2}}",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$\\frac{6x}{5}\\cdot\\frac{10}{33x^{2}}=$",
-        "size": 10,
-        "unit": null
-       }
-      ],
-      "note": "Simplify your answer. Use integers or fractions for any numbers in the expression."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 11,
@@ -5061,32 +1558,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Divide as indicated. Write the answer in lowest terms."
-      },
-      {
-       "t": "math",
-       "tex": "\\frac{7x}{9}\\div\\frac{14x^{3}}{54y}",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$\\frac{7x}{9}\\div\\frac{14x^{3}}{54y}=$",
-        "size": 10,
-        "unit": null
-       }
-      ],
-      "note": "Simplify your answer. Use integers or fractions for any numbers in the expression."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 12,
@@ -5101,32 +1573,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Divide the following rational expressions. Write the answer in lowest terms."
-      },
-      {
-       "t": "math",
-       "tex": "\\frac{5x-15}{35}\\div\\frac{7x-21}{5}",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$\\frac{5x-15}{35}\\div\\frac{7x-21}{5}=$",
-        "size": 10,
-        "unit": null
-       }
-      ],
-      "note": "Simplify your answer. Use integers or fractions for any numbers in the expression."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 13,
@@ -5140,32 +1587,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Multiply."
-      },
-      {
-       "t": "math",
-       "tex": "\\frac{7x-14}{5x+10}\\cdot\\frac{4x+8}{10x-20}",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$\\frac{7x-14}{5x+10}\\cdot\\frac{4x+8}{10x-20}=$",
-        "size": 10,
-        "unit": null
-       }
-      ],
-      "note": "Type an integer or a fraction. Simplify your answer."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 14,
@@ -5180,32 +1602,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Divide the following. Express the quotient in lowest terms."
-      },
-      {
-       "t": "math",
-       "tex": "\\frac{6a-6}{33a+132}\\div\\frac{8a-8}{7a+28}",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$\\frac{6a-6}{33a+132}\\div\\frac{8a-8}{7a+28}=$",
-        "size": 10,
-        "unit": null
-       }
-      ],
-      "note": "Type an integer or a simplified fraction."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 15,
@@ -5217,32 +1614,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Perform the indicated operation."
-      },
-      {
-       "t": "math",
-       "tex": "\\frac{12a+48}{4a-44}\\div\\frac{a^{2}-16}{a^{2}-3a-88}",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$\\frac{12a+48}{4a-44}\\div\\frac{a^{2}-16}{a^{2}-3a-88}=$",
-        "size": 10,
-        "unit": null
-       }
-      ],
-      "note": "Simplify your answer."
-     },
-     "note": null,
-     "clipped": false
+     ]
     }
    ],
    "file": "Hw_1.4",
@@ -5274,32 +1646,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Perform the indicated operation and simplify your answer."
-      },
-      {
-       "t": "math",
-       "tex": "\\frac{7^{8}}{7^{5}}",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$\\frac{7^{8}}{7^{5}}=$",
-        "size": 8,
-        "unit": null
-       }
-      ],
-      "note": "Type an integer or a simplified fraction."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 2,
@@ -5313,32 +1660,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Use the power rules for exponents to simplify the expression."
-      },
-      {
-       "t": "math",
-       "tex": "(2c)^{3}",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$(2c)^{3}=$",
-        "size": 8,
-        "unit": null
-       }
-      ],
-      "note": "Simplify your answer. Type positive exponents."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 3,
@@ -5352,32 +1674,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Simplify."
-      },
-      {
-       "t": "math",
-       "tex": "(-6p)^{4}",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$(-6p)^{4}=$",
-        "size": 8,
-        "unit": null
-       }
-      ],
-      "note": "Simplify your answer."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 4,
@@ -5391,32 +1688,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Compute the following and simplify your answer."
-      },
-      {
-       "t": "math",
-       "tex": "\\left(\\frac{5}{x}\\right)^{4}",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "After simplifying, $\\left(\\frac{5}{x}\\right)^{4}=$",
-        "size": 8,
-        "unit": null
-       }
-      ],
-      "note": "Type exponential notation with positive exponents."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 5,
@@ -5430,32 +1702,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Write the expression with positive exponents only. Then simplify, if possible."
-      },
-      {
-       "t": "math",
-       "tex": "15^{-1}",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$15^{-1}=$",
-        "size": 8,
-        "unit": null
-       }
-      ],
-      "note": "Type an integer or a simplified fraction."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 6,
@@ -5469,32 +1716,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Write the expression with positive exponents only. Then simplify, if possible."
-      },
-      {
-       "t": "math",
-       "tex": "8^{-3}",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$8^{-3}=$",
-        "size": 8,
-        "unit": null
-       }
-      ],
-      "note": "Simplify your answer. Type an integer or a fraction."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 7,
@@ -5508,32 +1730,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Evaluate this expression."
-      },
-      {
-       "t": "math",
-       "tex": "-9^{-2}",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$-9^{-2}=$",
-        "size": 8,
-        "unit": null
-       }
-      ],
-      "note": "Simplify your answer. Type an integer or a fraction."
-     },
-     "note": "The minus sign is outside the power: the page prints -9 raised to -2, not (-9) raised to -2.",
-     "clipped": false
+     ]
     },
     {
      "n": 8,
@@ -5547,32 +1744,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Evaluate this expression."
-      },
-      {
-       "t": "math",
-       "tex": "-9^{-2}",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$-9^{-2}=$",
-        "size": 8,
-        "unit": null
-       }
-      ],
-      "note": "Simplify your answer. Type an integer or a fraction."
-     },
-     "note": "Printed identically to problem 7 but carries a distinct publisher ID (1.5.12 vs 1.5.11).",
-     "clipped": false
+     ]
     },
     {
      "n": 9,
@@ -5586,32 +1758,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Write the expression with only positive exponents. Assume all variables represent non-zero numbers."
-      },
-      {
-       "t": "math",
-       "tex": "(-n)^{-7}",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$(-n)^{-7}=$",
-        "size": 8,
-        "unit": null
-       }
-      ],
-      "note": "Simplify your answer. Type in exponential form. Type positive exponents."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 10,
@@ -5625,32 +1772,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Evaluate the expression. Give your answer without exponents."
-      },
-      {
-       "t": "math",
-       "tex": "\\left(\\frac{1}{7}\\right)^{-2}",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$\\left(\\frac{1}{7}\\right)^{-2}=$",
-        "size": 8,
-        "unit": null
-       }
-      ],
-      "note": "Simplify your answer. Type an integer or a fraction."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 11,
@@ -5664,32 +1786,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Simplify."
-      },
-      {
-       "t": "math",
-       "tex": "\\left(\\frac{3}{5}\\right)^{-3}",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$\\left(\\frac{3}{5}\\right)^{-3}=$",
-        "size": 8,
-        "unit": null
-       }
-      ],
-      "note": "Simplify your answer. Type a fraction or mixed number."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 12,
@@ -5703,32 +1800,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Simplify."
-      },
-      {
-       "t": "math",
-       "tex": "\\left(\\frac{f^{6}}{g^{2}}\\right)^{-5}",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$\\left(\\frac{f^{6}}{g^{2}}\\right)^{-5}=$",
-        "size": 8,
-        "unit": null
-       }
-      ],
-      "note": "Simplify your answer. Use positive exponents only."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 13,
@@ -5742,32 +1814,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Simplify."
-      },
-      {
-       "t": "math",
-       "tex": "\\frac{4^{-5}}{4^{-3}}",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$\\frac{4^{-5}}{4^{-3}}=$",
-        "size": 8,
-        "unit": null
-       }
-      ],
-      "note": "Type an integer or a fraction."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 14,
@@ -5782,32 +1829,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Simplify."
-      },
-      {
-       "t": "math",
-       "tex": "3^{-3}\\cdot 3^{6}",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$3^{-3}\\cdot 3^{6}=$",
-        "size": 8,
-        "unit": null
-       }
-      ],
-      "note": null
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 15,
@@ -5822,32 +1844,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Simplify the expression. Write the answer using only positive exponents."
-      },
-      {
-       "t": "math",
-       "tex": "\\frac{5^{4}\\cdot 5^{-7}}{5^{-9}}",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$\\frac{5^{4}\\cdot 5^{-7}}{5^{-9}}=$",
-        "size": 8,
-        "unit": null
-       }
-      ],
-      "note": "Type exponential notation with positive exponents."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 16,
@@ -5862,32 +1859,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Simplify the expression. Write the result using positive exponents only. Assume that all bases are not equal to 0."
-      },
-      {
-       "t": "math",
-       "tex": "\\frac{x^{4}x^{6}}{x^{8}}",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$\\frac{x^{4}x^{6}}{x^{8}}=$",
-        "size": 8,
-        "unit": null
-       }
-      ],
-      "note": null
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 17,
@@ -5902,32 +1874,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Simplify. Assume all variables represent positive real numbers. Write answers with only positive exponents."
-      },
-      {
-       "t": "math",
-       "tex": "\\left(m^{-7}p^{8}\\right)^{-8}",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$\\left(m^{-7}p^{8}\\right)^{-8}=$",
-        "size": 8,
-        "unit": null
-       }
-      ],
-      "note": "Type exponential notation with positive exponents."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 18,
@@ -5941,32 +1888,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Simplify."
-      },
-      {
-       "t": "math",
-       "tex": "\\left(2x^{3}y^{-4}\\right)^{-2}",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$\\left(2x^{3}y^{-4}\\right)^{-2}=$",
-        "size": 8,
-        "unit": null
-       }
-      ],
-      "note": "Simplify your answer. Use integers or fractions for any numbers in the expression. Use positive exponents only."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 19,
@@ -5980,43 +1902,7 @@
      "kind": "mcq",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Evaluate the expression. Write the answer without exponents."
-      },
-      {
-       "t": "math",
-       "tex": "9^{1/2}",
-       "display": true
-      },
-      {
-       "t": "text",
-       "v": "Select the correct answer below and, if necessary, fill in the answer box to complete your choice."
-      }
-     ],
-     "answer": {
-      "kind": "choice",
-      "options": [
-       [
-        {
-         "t": "text",
-         "v": "$9^{1/2}=$ \u27e80\u27e9 (Simplify your answer. Type an integer or a fraction.)"
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "The expression is not a real number."
-        }
-       ]
-      ],
-      "multi": false
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 20,
@@ -6030,43 +1916,7 @@
      "kind": "mcq",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Evaluate the expression. Write the answer without exponents."
-      },
-      {
-       "t": "math",
-       "tex": "81^{3/2}",
-       "display": true
-      },
-      {
-       "t": "text",
-       "v": "Select the correct answer below and, if necessary, fill in the answer box to complete your choice."
-      }
-     ],
-     "answer": {
-      "kind": "choice",
-      "options": [
-       [
-        {
-         "t": "text",
-         "v": "$81^{3/2}=$ \u27e80\u27e9 (Simplify your answer. Type an integer or a fraction.)"
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "The expression is not a real number."
-        }
-       ]
-      ],
-      "multi": false
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 21,
@@ -6080,43 +1930,7 @@
      "kind": "mcq",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Evaluate the expression. Write the answer without exponents."
-      },
-      {
-       "t": "math",
-       "tex": "-729^{4/3}",
-       "display": true
-      },
-      {
-       "t": "text",
-       "v": "Select the correct answer below and, if necessary, fill in the answer box to complete your choice."
-      }
-     ],
-     "answer": {
-      "kind": "choice",
-      "options": [
-       [
-        {
-         "t": "text",
-         "v": "$-729^{4/3}=$ \u27e80\u27e9 (Simplify your answer. Type an integer or a fraction.)"
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "The expression is not a real number."
-        }
-       ]
-      ],
-      "multi": false
-     },
-     "note": "The minus sign is outside the power: the page prints -729 raised to 4/3, not (-729) raised to 4/3.",
-     "clipped": false
+     ]
     },
     {
      "n": 22,
@@ -6130,43 +1944,7 @@
      "kind": "mcq",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Evaluate the exponential."
-      },
-      {
-       "t": "math",
-       "tex": "\\left(\\frac{8}{343}\\right)^{-\\frac{2}{3}}",
-       "display": true
-      },
-      {
-       "t": "text",
-       "v": "Select the correct choice below and, if necessary, fill in the answer box to complete your choice."
-      }
-     ],
-     "answer": {
-      "kind": "choice",
-      "options": [
-       [
-        {
-         "t": "text",
-         "v": "$\\left(\\frac{8}{343}\\right)^{-\\frac{2}{3}}=$ \u27e80\u27e9 (Type an integer or a simplified fraction.)"
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "The answer is not a real number."
-        }
-       ]
-      ],
-      "multi": false
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 23,
@@ -6180,32 +1958,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Simplify the expression so that no negative exponents appear in the final result. Assume all variables represent nonzero real numbers."
-      },
-      {
-       "t": "math",
-       "tex": "\\left(8a^{-3}\\right)^{2}\\left(a^{3}\\right)^{-3}",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$\\left(8a^{-3}\\right)^{2}\\left(a^{3}\\right)^{-3}=$",
-        "size": 8,
-        "unit": null
-       }
-      ],
-      "note": "Simplify your answer. Use positive exponents only."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 24,
@@ -6219,43 +1972,7 @@
      "kind": "mcq",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Find the root."
-      },
-      {
-       "t": "math",
-       "tex": "\\sqrt[3]{64}",
-       "display": true
-      },
-      {
-       "t": "text",
-       "v": "Select the correct choice below and, if necessary, fill in the answer box within your choice."
-      }
-     ],
-     "answer": {
-      "kind": "choice",
-      "options": [
-       [
-        {
-         "t": "text",
-         "v": "$\\sqrt[3]{64}=$ \u27e80\u27e9"
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "The root is not a real number."
-        }
-       ]
-      ],
-      "multi": false
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 25,
@@ -6269,43 +1986,7 @@
      "kind": "mcq",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Find the following."
-      },
-      {
-       "t": "math",
-       "tex": "\\sqrt[4]{4096}",
-       "display": true
-      },
-      {
-       "t": "text",
-       "v": "Select the correct choice below and, if necessary, fill in the answer box to complete your choice."
-      }
-     ],
-     "answer": {
-      "kind": "choice",
-      "options": [
-       [
-        {
-         "t": "text",
-         "v": "The answer is \u27e80\u27e9."
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "The root is not a real number."
-        }
-       ]
-      ],
-      "multi": false
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 26,
@@ -6319,32 +2000,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Simplify the following expression by removing as many factors as possible from under the radical."
-      },
-      {
-       "t": "math",
-       "tex": "\\sqrt[5]{-243}",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$\\sqrt[5]{-243}=$",
-        "size": 8,
-        "unit": null
-       }
-      ],
-      "note": "Simplify your answer."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 27,
@@ -6358,32 +2014,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Simplify the expression by removing as many factors as possible from under the radical."
-      },
-      {
-       "t": "math",
-       "tex": "\\sqrt{27}\\cdot\\sqrt{3}",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "$\\sqrt{27}\\cdot\\sqrt{3}=$",
-        "size": 8,
-        "unit": null
-       }
-      ],
-      "note": "Simplify your answer."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 28,
@@ -6397,43 +2028,7 @@
      "kind": "mcq",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Simplify."
-      },
-      {
-       "t": "math",
-       "tex": "\\sqrt{49-16}",
-       "display": true
-      },
-      {
-       "t": "text",
-       "v": "Select the correct choice and, if necessary, fill in the answer box within your choice."
-      }
-     ],
-     "answer": {
-      "kind": "choice",
-      "options": [
-       [
-        {
-         "t": "text",
-         "v": "$\\sqrt{49-16}=$ \u27e80\u27e9 (Simplify your answer. Type an exact answer, using radicals as needed.)"
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "The expression cannot be simplified."
-        }
-       ]
-      ],
-      "multi": false
-     },
-     "note": "Both 49 and 16 sit under a single radical bar on the page.",
-     "clipped": false
+     ]
     },
     {
      "n": 29,
@@ -6445,90 +2040,7 @@
      "kind": "multipart",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "The theory of economic lot size shows the numbers of units to order to minimize total cost is"
-      },
-      {
-       "t": "math",
-       "tex": "x=\\sqrt{\\frac{kM}{f}}",
-       "display": true
-      },
-      {
-       "t": "text",
-       "v": "where k is the cost to store one unit for one year, f is the (constant) setup cost to manufacture the product, and M is the total number of units produced annually. Find x for the following values of f, k, and M."
-      }
-     ],
-     "answer": {
-      "kind": "multipart",
-      "parts": [
-       {
-        "label": "(a)",
-        "stem": [
-         {
-          "t": "text",
-          "v": "$k=1$, $f=500$, $M=200{,}000$"
-         }
-        ],
-        "answer": {
-         "kind": "compute",
-         "slots": [
-          {
-           "label": "$x=$",
-           "size": 8,
-           "unit": null
-          }
-         ],
-         "note": "Round to the nearest whole number as needed."
-        }
-       },
-       {
-        "label": "(b)",
-        "stem": [
-         {
-          "t": "text",
-          "v": "$k=5$, $f=10$, $M=27{,}400$"
-         }
-        ],
-        "answer": {
-         "kind": "compute",
-         "slots": [
-          {
-           "label": "$x=$",
-           "size": 8,
-           "unit": null
-          }
-         ],
-         "note": "Round to the nearest whole number as needed."
-        }
-       },
-       {
-        "label": "(c)",
-        "stem": [
-         {
-          "t": "text",
-          "v": "$k=1$, $f=5$, $M=27{,}500$"
-         }
-        ],
-        "answer": {
-         "kind": "compute",
-         "slots": [
-          {
-           "label": "$x=$",
-           "size": 8,
-           "unit": null
-          }
-         ],
-         "note": "Round to the nearest whole number as needed."
-        }
-       }
-      ]
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 30,
@@ -6542,59 +2054,7 @@
      "kind": "mcq",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Simplify."
-      },
-      {
-       "t": "math",
-       "tex": "343^{4/3}",
-       "display": true
-      },
-      {
-       "t": "text",
-       "v": "Which term represents the simplified form of $343^{4/3}$?"
-      }
-     ],
-     "answer": {
-      "kind": "choice",
-      "options": [
-       [
-        {
-         "t": "math",
-         "tex": "\\sqrt[3]{343^{4}}",
-         "display": false
-        }
-       ],
-       [
-        {
-         "t": "math",
-         "tex": "\\sqrt[4]{343^{3}}",
-         "display": false
-        }
-       ],
-       [
-        {
-         "t": "math",
-         "tex": "2401",
-         "display": false
-        }
-       ],
-       [
-        {
-         "t": "math",
-         "tex": "\\frac{1372}{3}",
-         "display": false
-        }
-       ]
-      ],
-      "multi": false
-     },
-     "note": null,
-     "clipped": false
+     ]
     }
    ],
    "file": "HW 1.5 Exponents and Radicals.pdf",
@@ -6628,32 +2088,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Solve."
-      },
-      {
-       "t": "math",
-       "tex": "5x + 8 = 18",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "The solution is x =",
-        "size": 5,
-        "unit": null
-       }
-      ],
-      "note": "Type an integer or a simplified fraction."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 2,
@@ -6667,32 +2102,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Solve the equation."
-      },
-      {
-       "t": "math",
-       "tex": "14 - 4y = -6",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "y =",
-        "size": 5,
-        "unit": null
-       }
-      ],
-      "note": "Simplify your answer."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 3,
@@ -6706,32 +2116,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Solve the equation."
-      },
-      {
-       "t": "math",
-       "tex": "0.3x - 0.5 = 0.2x + 6",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "x =",
-        "size": 5,
-        "unit": null
-       }
-      ],
-      "note": null
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 4,
@@ -6745,47 +2130,7 @@
      "kind": "mcq",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Solve the following equation."
-      },
-      {
-       "t": "math",
-       "tex": "4x + 7 - 2(x + 1) = 9x + 7",
-       "display": true
-      },
-      {
-       "t": "text",
-       "v": "Select the correct choice below and, if necessary, fill in the answer box within your choice."
-      }
-     ],
-     "answer": {
-      "kind": "choice",
-      "options": [
-       [
-        {
-         "t": "text",
-         "v": "The solution(s) is/are \u27e80\u27e9."
-        },
-        {
-         "t": "text",
-         "v": "(Type an integer or a simplified fraction. Use a comma to separate answers as needed.)"
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "There is no solution."
-        }
-       ]
-      ],
-      "multi": false
-     },
-     "note": "Option A carries one fill-in box, marked \u27e80\u27e9.",
-     "clipped": false
+     ]
     },
     {
      "n": 5,
@@ -6799,32 +2144,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Solve the equation."
-      },
-      {
-       "t": "math",
-       "tex": "3(k - 3) - 7 = 3k - (2k - 3)",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "k =",
-        "size": 5,
-        "unit": null
-       }
-      ],
-      "note": "Type an integer or a simplified fraction."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 6,
@@ -6838,32 +2158,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Solve the equation."
-      },
-      {
-       "t": "math",
-       "tex": "\\frac{13y}{20} - 4 = 7 - \\frac{5y}{4}",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "y =",
-        "size": 5,
-        "unit": null
-       }
-      ],
-      "note": null
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 7,
@@ -6878,47 +2173,7 @@
      "kind": "mcq",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Solve the equation."
-      },
-      {
-       "t": "math",
-       "tex": "\\frac{d}{4} - \\frac{1}{d} = \\frac{8d + 9}{32}",
-       "display": true
-      },
-      {
-       "t": "text",
-       "v": "Select the correct choice and, if necessary, fill in the answer box to complete your choice."
-      }
-     ],
-     "answer": {
-      "kind": "choice",
-      "options": [
-       [
-        {
-         "t": "text",
-         "v": "The solution(s) is/are d = \u27e80\u27e9."
-        },
-        {
-         "t": "text",
-         "v": "(Type an integer or a simplified fraction. Use a comma to separate answers as needed.)"
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "There is no solution."
-        }
-       ]
-      ],
-      "multi": false
-     },
-     "note": "Three separate fractions on the equation line; option A carries one fill-in box.",
-     "clipped": false
+     ]
     },
     {
      "n": 8,
@@ -6933,47 +2188,7 @@
      "kind": "mcq",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Solve the equation."
-      },
-      {
-       "t": "math",
-       "tex": "\\frac{2}{y - 3} - \\frac{9}{4y + 9} + \\frac{3}{y - 3} = 0",
-       "display": true
-      },
-      {
-       "t": "text",
-       "v": "Select the correct choice and, if necessary, fill in the answer box to complete your choice."
-      }
-     ],
-     "answer": {
-      "kind": "choice",
-      "options": [
-       [
-        {
-         "t": "text",
-         "v": "The solution(s) is/are y = \u27e80\u27e9."
-        },
-        {
-         "t": "text",
-         "v": "(Simplify your answer. Type an exact answer, using radicals as needed. Use a comma to separate answers as needed.)"
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "There is no solution."
-        }
-       ]
-      ],
-      "multi": false
-     },
-     "note": "The first and third fractions genuinely share the denominator y - 3; verified at 200 dpi.",
-     "clipped": false
+     ]
     },
     {
      "n": 9,
@@ -6988,31 +2203,7 @@
      "kind": "fill",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Solve for x."
-      },
-      {
-       "t": "math",
-       "tex": "4(a + x) = b - a + 2x",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "fill",
-      "template": "x = \u27e80\u27e9",
-      "slots": [
-       {
-        "size": 10
-       }
-      ],
-      "note": "Simplify your answer."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 10,
@@ -7027,31 +2218,7 @@
      "kind": "fill",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Solve the equation for x."
-      },
-      {
-       "t": "math",
-       "tex": "5(b - x) = 2b + ax",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "fill",
-      "template": "x = \u27e80\u27e9",
-      "slots": [
-       {
-        "size": 10
-       }
-      ],
-      "note": "Simplify your answer."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 11,
@@ -7065,31 +2232,7 @@
      "kind": "fill",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Solve."
-      },
-      {
-       "t": "math",
-       "tex": "D = WQ, \\text{ for } Q",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "fill",
-      "template": "Q = \u27e80\u27e9",
-      "slots": [
-       {
-        "size": 8
-       }
-      ],
-      "note": null
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 12,
@@ -7103,31 +2246,7 @@
      "kind": "fill",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Solve."
-      },
-      {
-       "t": "math",
-       "tex": "a = gmb, \\text{ for } b",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "fill",
-      "template": "The solution is b = \u27e80\u27e9.",
-      "slots": [
-       {
-        "size": 8
-       }
-      ],
-      "note": "Use integers or fractions for any numbers in the expression. Simplify your answer."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 13,
@@ -7141,31 +2260,7 @@
      "kind": "fill",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Solve the formula for the specified variable."
-      },
-      {
-       "t": "math",
-       "tex": "A = B + Bcd \\text{ for } c",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "fill",
-      "template": "c = \u27e80\u27e9",
-      "slots": [
-       {
-        "size": 10
-       }
-      ],
-      "note": null
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 14,
@@ -7179,31 +2274,7 @@
      "kind": "fill",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Solve the following formula for the specified variable."
-      },
-      {
-       "t": "math",
-       "tex": "B = \\frac{1}{2}h(r + z) \\text{ for } r",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "fill",
-      "template": "r = \u27e80\u27e9",
-      "slots": [
-       {
-        "size": 10
-       }
-      ],
-      "note": "Simplify your answer."
-     },
-     "note": "The coefficient one half is a standalone fraction multiplying h(r + z); it is part of the equation, not a separate term.",
-     "clipped": false
+     ]
     },
     {
      "n": 15,
@@ -7218,34 +2289,7 @@
      "kind": "fill",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Solve for j."
-      },
-      {
-       "t": "math",
-       "tex": "B = \\frac{7}{3}(j - 41)",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "fill",
-      "template": "The solution is j = \u27e80\u27e9 B + \u27e81\u27e9.",
-      "slots": [
-       {
-        "size": 5
-       },
-       {
-        "size": 5
-       }
-      ],
-      "note": "Simplify your answers. Type integers or fractions."
-     },
-     "note": "Two answer boxes: a coefficient on B and a constant term.",
-     "clipped": false
+     ]
     },
     {
      "n": 16,
@@ -7259,30 +2303,7 @@
      "kind": "fill",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "The equation $C = \\frac{5}{9}(F - 32)$ gives the Celsius temperature C corresponding to the Fahrenheit temperature F."
-      },
-      {
-       "t": "text",
-       "v": "Find the Fahrenheit temperature equivalent to 65\u00b0C."
-      }
-     ],
-     "answer": {
-      "kind": "fill",
-      "template": "The Fahrenheit temperature equivalent to 65\u00b0C is \u27e80\u27e9 \u00b0F.",
-      "slots": [
-       {
-        "size": 6
-       }
-      ],
-      "note": "Simplify your answer. Type an integer or a decimal."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 17,
@@ -7297,64 +2318,7 @@
      "kind": "multipart",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "The gross federal debt y of a certain country (in trillions of dollars) in year x can be approximated by the following equation, where x is the number of years after 2000."
-      },
-      {
-       "t": "math",
-       "tex": "y = 1.09x + 2.27",
-       "display": true
-      },
-      {
-       "t": "text",
-       "v": "Find the federal debt in the year 2010."
-      }
-     ],
-     "answer": {
-      "kind": "multipart",
-      "parts": [
-       {
-        "label": null,
-        "stem": [
-         {
-          "t": "text",
-          "v": "What is the value of x?"
-         }
-        ],
-        "answer": {
-         "kind": "compute",
-         "slots": [
-          {
-           "label": "x =",
-           "size": 5,
-           "unit": null
-          }
-         ],
-         "note": null
-        }
-       },
-       {
-        "label": null,
-        "stem": [],
-        "answer": {
-         "kind": "fill",
-         "template": "In 2010, the federal debt was \u27e80\u27e9 trillion dollars.",
-         "slots": [
-          {
-           "size": 7
-          }
-         ],
-         "note": "Type an integer or a decimal."
-        }
-       }
-      ]
-     },
-     "note": "Parts are printed unlabelled (no (a)/(b) markers).",
-     "clipped": false
+     ]
     },
     {
      "n": 18,
@@ -7369,64 +2333,7 @@
      "kind": "multipart",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "The gross federal debt y (in trillions of dollars) for a certain country in year x is approximated by the following equation, where x is the number of years after 2000."
-      },
-      {
-       "t": "math",
-       "tex": "y = 1.17x + 1.34",
-       "display": true
-      },
-      {
-       "t": "text",
-       "v": "Assuming the trend continues, in what year will the federal debt be $35.27 trillion?"
-      }
-     ],
-     "answer": {
-      "kind": "multipart",
-      "parts": [
-       {
-        "label": null,
-        "stem": [
-         {
-          "t": "text",
-          "v": "What is the value of y?"
-         }
-        ],
-        "answer": {
-         "kind": "compute",
-         "slots": [
-          {
-           "label": "y =",
-           "size": 6,
-           "unit": null
-          }
-         ],
-         "note": "Type an integer or a decimal."
-        }
-       },
-       {
-        "label": null,
-        "stem": [],
-        "answer": {
-         "kind": "fill",
-         "template": "In the year \u27e80\u27e9, the gross federal debt will be $35.27 trillion.",
-         "slots": [
-          {
-           "size": 6
-          }
-         ],
-         "note": null
-        }
-       }
-      ]
-     },
-     "note": "Parts are printed unlabelled.",
-     "clipped": false
+     ]
     },
     {
      "n": 19,
@@ -7440,55 +2347,7 @@
      "kind": "multipart",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "The total health care expenditures E in a certain country (in trillions of dollars) can be approximated by $E = 0.109x + 1.514$, where x is the number of years after 2000. Assuming the trend continues, determine the year in which health care expenditures are $3.040 trillion."
-      }
-     ],
-     "answer": {
-      "kind": "multipart",
-      "parts": [
-       {
-        "label": null,
-        "stem": [
-         {
-          "t": "text",
-          "v": "What is the value of E?"
-         }
-        ],
-        "answer": {
-         "kind": "compute",
-         "slots": [
-          {
-           "label": "E =",
-           "size": 6,
-           "unit": null
-          }
-         ],
-         "note": "Type an integer or a decimal."
-        }
-       },
-       {
-        "label": null,
-        "stem": [],
-        "answer": {
-         "kind": "fill",
-         "template": "In the year \u27e80\u27e9, health care expenditures are $3.040 trillion.",
-         "slots": [
-          {
-           "size": 6
-          }
-         ],
-         "note": null
-        }
-       }
-      ]
-     },
-     "note": "The model equation is set inline in the paragraph, not on its own line.",
-     "clipped": false
+     ]
     },
     {
      "n": 20,
@@ -7502,64 +2361,7 @@
      "kind": "multipart",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "The amount y (in billions of dollars) of income taken in by a certain country's social security administration for old-age and survivor's insurance in year x can be approximated by the equation below."
-      },
-      {
-       "t": "math",
-       "tex": "111.6(x - 2010) = 5y - 2500.5",
-       "display": true
-      },
-      {
-       "t": "text",
-       "v": "Assuming the trend continues, find the year in which 767.94 billion dollars will be taken in."
-      }
-     ],
-     "answer": {
-      "kind": "multipart",
-      "parts": [
-       {
-        "label": null,
-        "stem": [
-         {
-          "t": "text",
-          "v": "What is the value of y?"
-         }
-        ],
-        "answer": {
-         "kind": "compute",
-         "slots": [
-          {
-           "label": "y =",
-           "size": 7,
-           "unit": null
-          }
-         ],
-         "note": "Type an integer or a decimal. Do not include the $ symbol in your answer."
-        }
-       },
-       {
-        "label": null,
-        "stem": [],
-        "answer": {
-         "kind": "fill",
-         "template": "In the year \u27e80\u27e9, 767.94 billion dollars will be taken in.",
-         "slots": [
-          {
-           "size": 6
-          }
-         ],
-         "note": null
-        }
-       }
-      ]
-     },
-     "note": "Parts are printed unlabelled.",
-     "clipped": false
+     ]
     },
     {
      "n": 21,
@@ -7574,31 +2376,7 @@
      "kind": "fill",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Solve the equation, and check the solution."
-      },
-      {
-       "t": "math",
-       "tex": "r + 2 = 5",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "fill",
-      "template": "The solution set is { \u27e80\u27e9 }.",
-      "slots": [
-       {
-        "size": 6
-       }
-      ],
-      "note": "Type an integer or a fraction."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 22,
@@ -7613,31 +2391,7 @@
      "kind": "fill",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Solve the equation, and check the solution."
-      },
-      {
-       "t": "math",
-       "tex": "\\frac{5}{4}r - 9 = \\frac{1}{4}r",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "fill",
-      "template": "The solution set is { \u27e80\u27e9 }.",
-      "slots": [
-       {
-        "size": 6
-       }
-      ],
-      "note": "Type an integer or a fraction."
-     },
-     "note": "Both five fourths and one fourth are standalone fractional coefficients on r; neither is a separate term.",
-     "clipped": false
+     ]
     },
     {
      "n": 23,
@@ -7652,31 +2406,7 @@
      "kind": "fill",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Solve the equation, and check the solution."
-      },
-      {
-       "t": "math",
-       "tex": "4.6x - 4 = 3.6x",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "fill",
-      "template": "The solution set is { \u27e80\u27e9 }.",
-      "slots": [
-       {
-        "size": 6
-       }
-      ],
-      "note": null
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 24,
@@ -7691,31 +2421,7 @@
      "kind": "fill",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Solve for x. Don't forget to perform a check."
-      },
-      {
-       "t": "math",
-       "tex": "-7x = -56",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "fill",
-      "template": "The solution set is { \u27e80\u27e9 }.",
-      "slots": [
-       {
-        "size": 6
-       }
-      ],
-      "note": null
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 25,
@@ -7729,31 +2435,7 @@
      "kind": "fill",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Solve the equation below, and check the solution."
-      },
-      {
-       "t": "math",
-       "tex": "6s = -12",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "fill",
-      "template": "The solution set is { \u27e80\u27e9 }.",
-      "slots": [
-       {
-        "size": 6
-       }
-      ],
-      "note": null
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 26,
@@ -7767,31 +2449,7 @@
      "kind": "fill",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Solve the following equation. Check your solution."
-      },
-      {
-       "t": "math",
-       "tex": "5m = 0",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "fill",
-      "template": "The solution set is { \u27e80\u27e9 }.",
-      "slots": [
-       {
-        "size": 6
-       }
-      ],
-      "note": null
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 27,
@@ -7805,31 +2463,7 @@
      "kind": "fill",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Solve the equation below, and check the solution."
-      },
-      {
-       "t": "math",
-       "tex": "-m = 70",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "fill",
-      "template": "The solution set is { \u27e80\u27e9 }.",
-      "slots": [
-       {
-        "size": 6
-       }
-      ],
-      "note": null
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 28,
@@ -7843,31 +2477,7 @@
      "kind": "fill",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Solve the equation below, and check the solution."
-      },
-      {
-       "t": "math",
-       "tex": "0.7x = 35",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "fill",
-      "template": "The solution set is { \u27e80\u27e9 }.",
-      "slots": [
-       {
-        "size": 6
-       }
-      ],
-      "note": null
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 29,
@@ -7881,53 +2491,7 @@
      "kind": "mcq",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Solve the following equation."
-      },
-      {
-       "t": "math",
-       "tex": "x + 5 = -(4x + 4)",
-       "display": true
-      },
-      {
-       "t": "text",
-       "v": "Select the correct choice below and, if necessary, fill in the answer box to complete your choice."
-      }
-     ],
-     "answer": {
-      "kind": "choice",
-      "options": [
-       [
-        {
-         "t": "text",
-         "v": "The solution is \u27e80\u27e9."
-        },
-        {
-         "t": "text",
-         "v": "(Simplify your answer.)"
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "The solution is all real numbers."
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "There is no solution."
-        }
-       ]
-      ],
-      "multi": false
-     },
-     "note": "The leading minus sign distributes over the whole parenthesised binomial on the right.",
-     "clipped": false
+     ]
     },
     {
      "n": 30,
@@ -7941,53 +2505,7 @@
      "kind": "mcq",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Solve the following equation, and check the solution."
-      },
-      {
-       "t": "math",
-       "tex": "-2(3s - 2) - 4 = -3(4s + 6) - 3",
-       "display": true
-      },
-      {
-       "t": "text",
-       "v": "Select the correct choice below and, if necessary, fill in the answer box to complete your choice."
-      }
-     ],
-     "answer": {
-      "kind": "choice",
-      "options": [
-       [
-        {
-         "t": "text",
-         "v": "The solution is \u27e80\u27e9."
-        },
-        {
-         "t": "text",
-         "v": "(Type an integer or a simplified fraction.)"
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "The solution is all real numbers."
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "There is no solution."
-        }
-       ]
-      ],
-      "multi": false
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 31,
@@ -8001,49 +2519,7 @@
      "kind": "mcq",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Solve the following equation, and check the solution."
-      },
-      {
-       "t": "math",
-       "tex": "5(t - 4) + 3t = 4(2t + 3) - 9",
-       "display": true
-      },
-      {
-       "t": "text",
-       "v": "Select the correct choice below and, if necessary, fill in the answer box to complete your answer."
-      }
-     ],
-     "answer": {
-      "kind": "choice",
-      "options": [
-       [
-        {
-         "t": "text",
-         "v": "The solution is \u27e80\u27e9."
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "The solution is all real numbers."
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "There is no solution."
-        }
-       ]
-      ],
-      "multi": false
-     },
-     "note": null,
-     "clipped": false
+     ]
     }
    ],
    "file": "Hw 1.6 First-Degree Equations.pdf",
@@ -8075,32 +2551,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Use factoring to solve the equation."
-      },
-      {
-       "t": "math",
-       "tex": "(a + 5)(a - 9) = 0",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "The solutions are a =",
-        "size": 8,
-        "unit": null
-       }
-      ],
-      "note": "Type an integer or a simplified fraction. Use a comma to separate answers."
-     },
-     "note": "One box takes both roots as a comma-separated list.",
-     "clipped": false
+     ]
     },
     {
      "n": 2,
@@ -8114,32 +2565,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Solve the equation."
-      },
-      {
-       "t": "math",
-       "tex": "(y - 3)(y - 6) = 0",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "y =",
-        "size": 8,
-        "unit": null
-       }
-      ],
-      "note": "Use a comma to separate answers as needed."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 3,
@@ -8153,32 +2579,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Use factoring to solve the equation."
-      },
-      {
-       "t": "math",
-       "tex": "r(r + 3) = 0",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "The solution is r =",
-        "size": 8,
-        "unit": null
-       }
-      ],
-      "note": "Use a comma to separate answers as needed."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 4,
@@ -8192,32 +2593,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Use factoring to solve the equation."
-      },
-      {
-       "t": "math",
-       "tex": "x^{2} - 9x = 0",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "The solution(s) is/are x =",
-        "size": 8,
-        "unit": null
-       }
-      ],
-      "note": "Use a comma to separate answers as needed."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 5,
@@ -8231,32 +2607,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Solve the equation."
-      },
-      {
-       "t": "math",
-       "tex": "3x^{2} = 18x",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "x =",
-        "size": 8,
-        "unit": null
-       }
-      ],
-      "note": "Use a comma to separate answers as needed."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 6,
@@ -8270,32 +2621,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Solve."
-      },
-      {
-       "t": "math",
-       "tex": "r^{2} - 16 = 0",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "The solution is r =",
-        "size": 8,
-        "unit": null
-       }
-      ],
-      "note": "Type an integer or a simplified fraction. Use a comma to separate answers as needed."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 7,
@@ -8309,47 +2635,7 @@
      "kind": "mcq",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Solve the following equation by factoring."
-      },
-      {
-       "t": "math",
-       "tex": "c^{2} + 10c + 16 = 0",
-       "display": true
-      },
-      {
-       "t": "text",
-       "v": "Select the correct choice below and, if necessary, fill in the answer box within your choice."
-      }
-     ],
-     "answer": {
-      "kind": "choice",
-      "options": [
-       [
-        {
-         "t": "text",
-         "v": "The solution(s) is/are \u27e80\u27e9."
-        },
-        {
-         "t": "text",
-         "v": "(Type an integer or a simplified fraction. Use a comma t\u2026"
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "There is no solution."
-        }
-       ]
-      ],
-      "multi": false
-     },
-     "note": "Option A's instruction line runs off the right page margin; visible text stops at \"Use a comma t\" and the remainder is cut.",
-     "clipped": true
+     ]
     },
     {
      "n": 8,
@@ -8363,32 +2649,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Use factoring to solve the equation."
-      },
-      {
-       "t": "math",
-       "tex": "v^{2} - 6v - 7 = 0",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "The solution(s) is/are v =",
-        "size": 8,
-        "unit": null
-       }
-      ],
-      "note": "Type an integer or a fraction. Use a comma to separate answers as needed."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 9,
@@ -8403,32 +2664,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Use factoring to solve the equation."
-      },
-      {
-       "t": "math",
-       "tex": "4s^{2} = 17s + 15",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "The solution is s =",
-        "size": 8,
-        "unit": null
-       }
-      ],
-      "note": "Type an integer or a simplified fraction. Use a comma to separate answers as needed."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 10,
@@ -8443,32 +2679,7 @@
      "kind": "compute",
      "structure": [
       "math"
-     ],
-     "auto_ok": true,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Use factoring to solve the equation."
-      },
-      {
-       "t": "math",
-       "tex": "12x^{2} + 5x - 25 = 0",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "compute",
-      "slots": [
-       {
-        "label": "The solution(s) is/are x =",
-        "size": 8,
-        "unit": null
-       }
-      ],
-      "note": "Simplify your answer. Use a comma to separate answers as needed."
-     },
-     "note": null,
-     "clipped": false
+     ]
     },
     {
      "n": 11,
@@ -8482,104 +2693,7 @@
      "kind": "multipart",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Use the quadratic formula to solve the equation. If the solutions involve square roots, give both the exact and approximate solutions."
-      },
-      {
-       "t": "math",
-       "tex": "3x^{2} - 7x - 5 = 0",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "multipart",
-      "parts": [
-       {
-        "label": null,
-        "stem": [
-         {
-          "t": "text",
-          "v": "What are the exact solutions? Select the correct choice below and, if necessary, fill in the answer box to complete your choice."
-         }
-        ],
-        "answer": {
-         "kind": "choice",
-         "options": [
-          [
-           {
-            "t": "text",
-            "v": "The solution(s) do(es) not involve(s) square roots. The solution(s) is/are x = \u27e80\u27e9."
-           },
-           {
-            "t": "text",
-            "v": "(Simplify your answer. Use a comma to separate answers as needed.)"
-           }
-          ],
-          [
-           {
-            "t": "text",
-            "v": "The solution(s) involve(s) square roots. The solution(s) is/are x = \u27e80\u27e9 , \u27e81\u27e9."
-           },
-           {
-            "t": "text",
-            "v": "(Type an exact answer, using radicals as needed. Use a comma to separate answers as needed.)"
-           }
-          ],
-          [
-           {
-            "t": "text",
-            "v": "There are no real solutions."
-           }
-          ]
-         ],
-         "multi": false
-        }
-       },
-       {
-        "label": null,
-        "stem": [
-         {
-          "t": "text",
-          "v": "What are the approximate solutions? Select the correct choice below and, if necessary, fill in the answer box to complete your choice."
-         }
-        ],
-        "answer": {
-         "kind": "choice",
-         "options": [
-          [
-           {
-            "t": "text",
-            "v": "The exact solution(s) involve(s) square roots. The approximate solution(s) is/are x = \u27e80\u27e9."
-           },
-           {
-            "t": "text",
-            "v": "(Round to three decimal places as needed. Use a comma to separate answers as needed.)"
-           }
-          ],
-          [
-           {
-            "t": "text",
-            "v": "The solution(s) do(es) not involve(s) square roots, so there is no approximate solution."
-           }
-          ],
-          [
-           {
-            "t": "text",
-            "v": "There are no real solutions."
-           }
-          ]
-         ],
-         "multi": false
-        }
-       }
-      ]
-     },
-     "note": "Option B of the exact-solutions part takes two roots, each a radical over a denominator, so it is given two slots. Parts are printed unlabelled.",
-     "clipped": false
+     ]
     },
     {
      "n": 12,
@@ -8593,104 +2707,7 @@
      "kind": "multipart",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Use the quadratic formula to solve the following equation. If the solutions involve square roots, give both the exact and approximate solutions."
-      },
-      {
-       "t": "math",
-       "tex": "2m^{2} + 2m = 7",
-       "display": true
-      }
-     ],
-     "answer": {
-      "kind": "multipart",
-      "parts": [
-       {
-        "label": null,
-        "stem": [
-         {
-          "t": "text",
-          "v": "What are the exact solutions? Select the correct choice below and, if necessary, fill in the answer box to complete your choice."
-         }
-        ],
-        "answer": {
-         "kind": "choice",
-         "options": [
-          [
-           {
-            "t": "text",
-            "v": "The solution(s) involve(s) square roots. The real solution(s) is/are m = \u27e80\u27e9 , \u27e81\u27e9."
-           },
-           {
-            "t": "text",
-            "v": "(Simplify your answer. Type an exact answer, using radicals as needed. Use integers or fractions for any numbers in th\u2026"
-           }
-          ],
-          [
-           {
-            "t": "text",
-            "v": "The solution(s) does not/do not involve square roots. The solution(s) is/are m = \u27e80\u27e9."
-           },
-           {
-            "t": "text",
-            "v": "(Simplify your answer. Use a comma to separate answers as needed.)"
-           }
-          ],
-          [
-           {
-            "t": "text",
-            "v": "There are no real solutions."
-           }
-          ]
-         ],
-         "multi": false
-        }
-       },
-       {
-        "label": null,
-        "stem": [
-         {
-          "t": "text",
-          "v": "What are the approximate solutions? Select the correct choice below and, if necessary, fill in the answer box to complete your choice."
-         }
-        ],
-        "answer": {
-         "kind": "choice",
-         "options": [
-          [
-           {
-            "t": "text",
-            "v": "The exact solution involves a square root. The approximate solution(s) is/are m = \u27e80\u27e9."
-           },
-           {
-            "t": "text",
-            "v": "(Round to three decimal places as needed. Use a comma to separate answers as needed.)"
-           }
-          ],
-          [
-           {
-            "t": "text",
-            "v": "The solution(s) does/do not involve a radical."
-           }
-          ],
-          [
-           {
-            "t": "text",
-            "v": "There are no real solutions."
-           }
-          ]
-         ],
-         "multi": false
-        }
-       }
-      ]
-     },
-     "note": "Option A of the exact-solutions part takes two radical roots, so it is given two slots. Its instruction line runs off the right page margin, cut after \"Use integers or fractions for any numbers in th\".",
-     "clipped": true
+     ]
     },
     {
      "n": 13,
@@ -8704,47 +2721,7 @@
      "kind": "mcq",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Solve for x by using the quadratic formula."
-      },
-      {
-       "t": "math",
-       "tex": "4x^{2} - 12x + 9 = 0",
-       "display": true
-      },
-      {
-       "t": "text",
-       "v": "Select the correct choice below and, if necessary, fill in the answer box to complete your choice."
-      }
-     ],
-     "answer": {
-      "kind": "choice",
-      "options": [
-       [
-        {
-         "t": "text",
-         "v": "The solution set is { \u27e80\u27e9 }."
-        },
-        {
-         "t": "text",
-         "v": "(Simplify your answer. Type an exact answer, using radicals as needed. Use a comma to separate answers as needed.)"
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "There is no real solution."
-        }
-       ]
-      ],
-      "multi": false
-     },
-     "note": "The instruction line reaches the right margin but is complete.",
-     "clipped": false
+     ]
     },
     {
      "n": 14,
@@ -8758,47 +2735,7 @@
      "kind": "mcq",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Solve by using the quadratic formula."
-      },
-      {
-       "t": "math",
-       "tex": "3p^{2} = -10p - 3",
-       "display": true
-      },
-      {
-       "t": "text",
-       "v": "Select the correct choice below and, if necessary, fill in the answer box to complete your choice."
-      }
-     ],
-     "answer": {
-      "kind": "choice",
-      "options": [
-       [
-        {
-         "t": "text",
-         "v": "The solution set is { \u27e80\u27e9 }."
-        },
-        {
-         "t": "text",
-         "v": "(Simplify your answer. Type an exact answer, using rad\u2026 as needed.)"
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "There is no real solution."
-        }
-       ]
-      ],
-      "multi": false
-     },
-     "note": "Option A's instruction wraps to two lines and the first line runs off the right page margin: text is cut after \"using rad\" and resumes at \"as needed.)\" on the next line.",
-     "clipped": true
+     ]
     },
     {
      "n": 15,
@@ -8812,47 +2749,7 @@
      "kind": "mcq",
      "structure": [
       "math"
-     ],
-     "auto_ok": false,
-     "stem": [
-      {
-       "t": "text",
-       "v": "Use the quadratic formula to solve the equation."
-      },
-      {
-       "t": "math",
-       "tex": "4x^{2} = 11x",
-       "display": true
-      },
-      {
-       "t": "text",
-       "v": "Select the correct choice below and, if necessary, fill in the answer box to complete your choice."
-      }
-     ],
-     "answer": {
-      "kind": "choice",
-      "options": [
-       [
-        {
-         "t": "text",
-         "v": "The solution set is { \u27e80\u27e9 }."
-        },
-        {
-         "t": "text",
-         "v": "(Simplify your answer. Type an exact answer, using rad\u2026 as needed.)"
-        }
-       ],
-       [
-        {
-         "t": "text",
-         "v": "There is no real solution."
-        }
-       ]
-      ],
-      "multi": false
-     },
-     "note": "Option A's instruction wraps to two lines and the first line runs off the right page margin: text is cut after \"using rad\" and resumes at \"as needed.)\" on the next line.",
-     "clipped": true
+     ]
     }
    ],
    "file": "HW 1.7 Quadratic Equations.pdf",
@@ -9186,9 +3083,7 @@
      "kind": "mcq",
      "structure": [
       "math"
-     ],
-     "clipped": true,
-     "clip_status": "partial"
+     ]
     },
     {
      "n": 6,
@@ -9264,9 +3159,7 @@
      "kind": "mcq",
      "structure": [
       "math"
-     ],
-     "clipped": true,
-     "clip_status": "inferred"
+     ]
     },
     {
      "n": 11,
@@ -9558,9 +3451,7 @@
      "kind": "mcq",
      "structure": [
       "none"
-     ],
-     "clipped": true,
-     "clip_status": "partial"
+     ]
     },
     {
      "n": 2,
@@ -9575,9 +3466,7 @@
      "structure": [
       "math",
       "numberline"
-     ],
-     "clipped": true,
-     "clip_status": "unrecoverable"
+     ]
     },
     {
      "n": 3,
@@ -9592,9 +3481,7 @@
      "structure": [
       "math",
       "numberline"
-     ],
-     "clipped": true,
-     "clip_status": "partial"
+     ]
     },
     {
      "n": 4,
@@ -9609,9 +3496,7 @@
      "structure": [
       "math",
       "numberline"
-     ],
-     "clipped": true,
-     "clip_status": "partial"
+     ]
     },
     {
      "n": 5,
@@ -9626,9 +3511,7 @@
      "structure": [
       "math",
       "numberline"
-     ],
-     "clipped": true,
-     "clip_status": "partial"
+     ]
     },
     {
      "n": 6,
@@ -9643,9 +3526,7 @@
      "structure": [
       "math",
       "numberline"
-     ],
-     "clipped": true,
-     "clip_status": "partial"
+     ]
     },
     {
      "n": 7,
@@ -9675,9 +3556,7 @@
      "structure": [
       "math",
       "numberline"
-     ],
-     "clipped": true,
-     "clip_status": "partial"
+     ]
     },
     {
      "n": 9,
@@ -10045,9 +3924,7 @@
      "structure": [
       "math",
       "graph"
-     ],
-     "clipped": true,
-     "clip_status": "partial"
+     ]
     },
     {
      "n": 11,
@@ -10062,9 +3939,7 @@
      "structure": [
       "math",
       "graph"
-     ],
-     "clipped": true,
-     "clip_status": "partial"
+     ]
     },
     {
      "n": 12,
@@ -10107,9 +3982,7 @@
      "structure": [
       "math",
       "graph"
-     ],
-     "clipped": true,
-     "clip_status": "partial"
+     ]
     },
     {
      "n": 15,
@@ -11855,9 +5728,7 @@
      "structure": [
       "venn",
       "math"
-     ],
-     "clipped": true,
-     "clip_status": "inferred"
+     ]
     },
     {
      "n": 6,
@@ -11989,9 +5860,7 @@
      "structure": [
       "venn",
       "math"
-     ],
-     "clipped": true,
-     "clip_status": "inferred"
+     ]
     },
     {
      "n": 15,
@@ -12006,9 +5875,7 @@
      "structure": [
       "venn",
       "math"
-     ],
-     "clipped": true,
-     "clip_status": "inferred"
+     ]
     }
    ],
    "file": "HW 8.2 Applications of Venn Diagrams.pdf",
@@ -12156,9 +6023,7 @@
      "kind": "multi-part",
      "structure": [
       "math"
-     ],
-     "clipped": true,
-     "clip_status": "partial"
+     ]
     },
     {
      "n": 10,
@@ -12186,9 +6051,7 @@
      "kind": "multi-part",
      "structure": [
       "none"
-     ],
-     "clipped": true,
-     "clip_status": "inferred"
+     ]
     },
     {
      "n": 12,
@@ -12219,9 +6082,7 @@
      "kind": "multi-part",
      "structure": [
       "none"
-     ],
-     "clipped": true,
-     "clip_status": "inferred"
+     ]
     },
     {
      "n": 14,
@@ -12545,9 +6406,7 @@
      "kind": "mcq",
      "structure": [
       "math"
-     ],
-     "clipped": true,
-     "clip_status": "unrecoverable"
+     ]
     },
     {
      "n": 18,
@@ -12738,9 +6597,7 @@
      "kind": "mcq",
      "structure": [
       "math"
-     ],
-     "clipped": true,
-     "clip_status": "partial"
+     ]
     },
     {
      "n": 9,
@@ -12907,9 +6764,7 @@
      "structure": [
       "math",
       "histogram"
-     ],
-     "clipped": true,
-     "clip_status": "partial"
+     ]
     },
     {
      "n": 3,
@@ -12925,9 +6780,7 @@
       "math",
       "table",
       "histogram"
-     ],
-     "clipped": true,
-     "clip_status": "partial"
+     ]
     },
     {
      "n": 4,
@@ -13557,9 +7410,7 @@
       "table",
       "histogram",
       "math"
-     ],
-     "clipped": true,
-     "clip_status": "partial"
+     ]
     },
     {
      "n": 2,
@@ -13575,9 +7426,7 @@
       "table",
       "histogram",
       "math"
-     ],
-     "clipped": true,
-     "clip_status": "partial"
+     ]
     },
     {
      "n": 3,

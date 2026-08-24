@@ -9,20 +9,19 @@ somewhere to sit.
 - `index.html` — the term at a glance, and the way in to everything else
 - `connections.html` — the objective graph at three scales: whole course by
   chapter, section by section, or one objective and its immediate neighbours
-- `homework.html` — what each assignment covers, which objective every problem
-  serves, and two worked examples per section
+- `homework.html` — every problem, one at a time, with the objectives it serves
 - the first-day diagnostic lives in its own repository
 
-## What is and is not here
+## Why this repository is private
 
-`data/course.json` carries the *structure* of the assignments: section,
-objective, problem number, what kind of answer it takes, whether it involves a
-table or a graph. It does not carry the problems themselves.
+It carries the converted assignments in full. Those are the publisher's
+exercises, so the site is served privately to the class rather than published
+openly — the repository is private and Cloudflare Pages serves it behind Access,
+which gates by email for roughly a class-sized group.
 
-`data/examples.json` holds two problems per section of chapter 1 — fourteen in
-all, under three percent of the assignment set — so students can see what a
-section asks before they open it. The rest are in MyLab, which is where the
-assignments live.
+Apply Access to the site itself. Never put it in front of an API path a page
+posts to: a browser posting in the background has no session and would be
+redirected to a sign-in screen.
 
 ## Building it
 

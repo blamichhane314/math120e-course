@@ -1,0 +1,58 @@
+{
+  "_note": "Hand-authored solution steps, keyed by section|position. Each step is the complete expression as it stands, with clickable pieces marked \\C{id}{...} and each id saying what it becomes. Nothing is derived: the player substitutes and advances. A value that would sit against a digit is authored WITH its parentheses.",
+
+  "1.1|12": {
+    "pid": "1.1.27",
+    "steps": [
+      { "tex": "\\frac{\\C{a}{1(4)}+\\frac{7}{(-2)}+\\frac{\\C{b}{-(1)}}{\\left(-\\C{c}{\\sqrt{4}}\\right)}}{\\C{d}{\\sqrt{25}}-1}",
+        "clicks": {
+          "a": { "to": "4",  "kind": "mul.implicit" },
+          "b": { "to": "-1", "kind": "paren.drop" },
+          "c": { "to": "2",  "kind": "sqrt.square" },
+          "d": { "to": "5",  "kind": "sqrt.square" } } },
+
+      { "tex": "\\frac{4+\\C{a}{\\frac{7}{(-2)}}+\\C{b}{\\frac{-1}{(-2)}}}{\\C{c}{5-1}}",
+        "clicks": {
+          "a": { "to": "-\\frac{7}{2}", "kind": "frac.divide" },
+          "b": { "to": "\\frac{1}{2}",  "kind": "frac.negative" },
+          "c": { "to": "4",             "kind": "sub.plain" } } },
+
+      { "tex": "\\frac{\\C{a}{4-\\frac{7}{2}}+\\frac{1}{2}}{4}",
+        "clicks": {
+          "a": { "to": "\\frac{1}{2}", "kind": "sub.plain" } } },
+
+      { "tex": "\\frac{\\C{a}{\\frac{1}{2}+\\frac{1}{2}}}{4}",
+        "clicks": {
+          "a": { "to": "1", "kind": "add.fractions" } } },
+
+      { "tex": "\\frac{1}{4}", "clicks": {} }
+    ]
+  },
+
+  "1.1|13": {
+    "pid": "1.1.28",
+    "steps": [
+      { "tex": "\\frac{\\C{a}{8^{2}}-(4)\\C{b}{\\sqrt{49}}}{\\sqrt{\\C{c}{8^{2}}+17}}",
+        "clicks": {
+          "a": { "to": "64",  "kind": "pow.plain" },
+          "b": { "to": "(7)", "kind": "sqrt.square" },
+          "c": { "to": "64",  "kind": "pow.plain" } } },
+
+      { "tex": "\\frac{64-\\C{a}{(4)(7)}}{\\sqrt{\\C{b}{64+17}}}",
+        "clicks": {
+          "a": { "to": "28", "kind": "mul.implicit" },
+          "b": { "to": "81", "kind": "add.plain" } } },
+
+      { "tex": "\\frac{\\C{a}{64-28}}{\\C{b}{\\sqrt{81}}}",
+        "clicks": {
+          "a": { "to": "36", "kind": "sub.plain" },
+          "b": { "to": "9",  "kind": "sqrt.square" } } },
+
+      { "tex": "\\C{a}{\\frac{36}{9}}",
+        "clicks": {
+          "a": { "to": "4", "kind": "frac.divide" } } },
+
+      { "tex": "4", "clicks": {} }
+    ]
+  }
+}

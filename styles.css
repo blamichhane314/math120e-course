@@ -130,7 +130,20 @@ a.src:hover{color:var(--accent);border-bottom-color:var(--accent)}
 .note b{color:var(--ink);font-weight:500}
 
 @media (max-width:1180px){body{grid-template-columns:var(--rail) minmax(0,1fr)}
-  #margin{display:none}}
+  #margin{display:none}
+/* The rail is navigation. On a page that has none to show it is 15rem of
+   ground held open beside the work, so those pages drop it and the reading
+   column takes the screen. */
+body.no-rail{grid-template-columns:minmax(0,1fr)}
+body.no-rail #rail{display:none}
+body.no-rail #theme{left:calc(var(--s)*2);bottom:calc(var(--s)*2);width:auto;
+  border-radius:99px;border:1px solid var(--line);background:var(--paper-lift);
+  padding:7px 10px;box-shadow:0 6px 18px -10px var(--shade)}
+.home{display:inline-flex;align-items:baseline;gap:calc(var(--s));
+  font:10px/1.6 var(--mono);letter-spacing:.18em;color:var(--ink-faint);
+  text-decoration:none;margin-bottom:calc(var(--s)*2)}
+.home:hover{color:var(--accent)}
+.home::before{content:"\2190"}}
 @media (max-width:880px){:root{--rail:11rem}
   #read{padding:calc(var(--s)*5) calc(var(--s)*3) calc(var(--s)*14)}h1{font-size:23px}}
 @media (max-width:620px){body{display:block;height:auto;overflow:auto}
@@ -693,6 +706,19 @@ h1{font-size:32px}
 /* the margin column earns its place only where marks accrue; on a page that
    never writes to it, it is 17rem of nothing between the work and the edge */
 #margin{display:none}
+/* The rail is navigation. On a page that has none to show it is 15rem of
+   ground held open beside the work, so those pages drop it and the reading
+   column takes the screen. */
+body.no-rail{grid-template-columns:minmax(0,1fr)}
+body.no-rail #rail{display:none}
+body.no-rail #theme{left:calc(var(--s)*2);bottom:calc(var(--s)*2);width:auto;
+  border-radius:99px;border:1px solid var(--line);background:var(--paper-lift);
+  padding:7px 10px;box-shadow:0 6px 18px -10px var(--shade)}
+.home{display:inline-flex;align-items:baseline;gap:calc(var(--s));
+  font:10px/1.6 var(--mono);letter-spacing:.18em;color:var(--ink-faint);
+  text-decoration:none;margin-bottom:calc(var(--s)*2)}
+.home:hover{color:var(--accent)}
+.home::before{content:"\2190"}
 body.with-margin{grid-template-columns:var(--rail) minmax(0,1fr) var(--margin-w)}
 body.with-margin #margin{display:block}
 

@@ -38,11 +38,29 @@ export function mountGraph(host, G, focus, opts = {}) {
   const cell = (e) => {
     const n = G.nodes[e.other];
     if (!n) return '';
-    return '<button class="gr-n" data-id="' + esc(e.other) + '" data-type="' + esc(e.type) + '"' +
+    const hard = e.type === 'requires';
+    return '<button class="gr-n' + (hard ? ' hard' : '') + '"' +
+      ' data-id="' + esc(e.other) + '" data-type="' + esc(e.type) + '"' +
       ' data-why="' + esc(e.why || '') + '">' +
-      '<span class="gr-id">' + esc(e.other) + '</span>' +
+      '<span class="gr-mark"></span>' +
       '<span class="gr-t">' + esc(n.text) + '</span>' +
+      '<span class="gr-id">' + esc(e.other) + '</span>' +
       '</button>';
+  };
+
+  // Fourteen names in a flat list is fourteen things to read before any of them
+  // means anything. Grouped under their section they read as three or four
+  // places in the course instead.
+  const secKey = (id) => { const [a, b] = String(id).split('.').map(Number); return a * 1000 + (b || 0); };
+  const groups = (list) => {
+    const by = new Map();
+    for (const e of list) {
+      const n = G.nodes[e.other];
+      if (!n) continue;
+      if (!by.has(n.section)) by.set(n.section, { title: n.sectionTitle || '', items: [] });
+      by.get(n.section).items.push(e);
+    }
+    return [...by.entries()].sort((x, y) => secKey(x[0]) - secKey(y[0]));
   };
 
   const emptyNote = (which) => '<div class="gr-none">' +
@@ -50,12 +68,28 @@ export function mountGraph(host, G, focus, opts = {}) {
       ? 'nothing in this course comes before it'
       : 'nothing later in this course uses it') + '</div>';
 
+  const column = (list, dir) => {
+    const hard = list.filter((e) => e.type === 'requires').length;
+    return '<div class="gr-head">' + (dir === 'back' ? 'rests on' : 'leads to') +
+        '<span class="gr-count">' + list.length +
+        (hard ? ' · ' + hard + ' required' : '') + '</span></div>' +
+      (list.length
+        ? groups(list).map(([sec, g]) =>
+            '<div class="gr-grp">' +
+              '<div class="gr-sec">' + esc(sec) +
+              (g.title ? ' &middot; ' + esc(g.title.toLowerCase()) : '') + '</div>' +
+              g.items.slice().sort(order).map(cell).join('') +
+            '</div>').join('')
+        : emptyNote(dir));
+  };
+
+  // An empty side should not hold a third of the screen open.
+  const shape = (!L.length ? ' none-back' : '') + (!R.length ? ' none-fwd' : '');
+  const anySoft = [...L, ...R].some((e) => e.type !== 'requires');
+
   host.innerHTML =
-    '<div class="gr">' +
-      '<div class="gr-col gr-back">' +
-        '<div class="gr-head">rests on</div>' +
-        (L.length ? L.map(cell).join('') : emptyNote('back')) +
-      '</div>' +
+    '<div class="gr' + shape + '">' +
+      '<div class="gr-col gr-back">' + column(L, 'back') + '</div>' +
       '<div class="gr-col gr-here">' +
         '<div class="gr-head">' + esc(node.section) + ' &middot; ' + esc(node.week || '') + '</div>' +
         '<div class="gr-focus">' +
@@ -64,24 +98,32 @@ export function mountGraph(host, G, focus, opts = {}) {
           '<span class="gr-meta">' + node.problems + ' problem' +
             (node.problems === 1 ? '' : 's') + '</span>' +
         '</div>' +
+        (anySoft ? '<button class="gr-filter" aria-pressed="false">requirements only</button>' : '') +
       '</div>' +
-      '<div class="gr-col gr-fwd">' +
-        '<div class="gr-head">leads to</div>' +
-        (R.length ? R.map(cell).join('') : emptyNote('fwd')) +
-      '</div>' +
+      '<div class="gr-col gr-fwd">' + column(R, 'fwd') + '</div>' +
     '</div>' +
     '<div class="gr-why" hidden></div>';
+
+  const grid = host.querySelector('.gr');
+  const filter = host.querySelector('.gr-filter');
+  if (filter) filter.addEventListener('click', () => {
+    const on = grid.classList.toggle('hard-only');
+    filter.setAttribute('aria-pressed', String(on));
+    filter.textContent = on ? 'show all relations' : 'requirements only';
+  });
 
   const why = host.querySelector('.gr-why');
 
   // hovering a node shows the reason for its edge
-  host.addEventListener('mouseover', (e) => {
-    const b = e.target.closest('.gr-n');
-    if (!b) return;
-    if (why.classList.contains('pinned')) return;
+  const reveal = (b) => {
+    if (!b || why.classList.contains('pinned')) return;
     why.textContent = b.getAttribute('data-why');
     why.hidden = !b.getAttribute('data-why');
-  });
+  };
+  host.addEventListener('mouseover', (e) => reveal(e.target.closest('.gr-n')));
+  // Tab walks the list, so the reason has to follow the keyboard as well as
+  // the cursor; otherwise the list is unreadable without a mouse.
+  host.addEventListener('focusin', (e) => reveal(e.target.closest('.gr-n')));
   host.addEventListener('mouseout', (e) => {
     if (!e.target.closest('.gr-n')) return;
     if (why.classList.contains('pinned')) return;   // pinned stays until replaced

@@ -10,7 +10,8 @@
     "Evaluate algebraic expressions",
     "Evaluate expressions using the order of operations",
     "Compare real numbers (basic inequalities)",
-    "Graph intervals on a number line"
+    "Graph intervals on a number line",
+    "Evaluate absolute value expressions"
    ],
    "problems": [
     {
@@ -443,7 +444,7 @@
    ],
    "file": "Hw1_1",
    "week": "Week 1",
-   "dates": "Aug 24 \u2013 Aug 28",
+   "dates": "Aug 24 – Aug 28",
    "pages": 6,
    "reexported": true,
    "tier": "full"
@@ -1017,7 +1018,7 @@
    ],
    "file": "1.2 Polynomials.pdf",
    "week": "Week 1",
-   "dates": "Aug 24 \u2013 Aug 28",
+   "dates": "Aug 24 – Aug 28",
    "pages": 8,
    "reexported": true,
    "tier": "full"
@@ -1391,7 +1392,7 @@
    ],
    "file": "1.3 Factoring.pdf",
    "week": "Week 1",
-   "dates": "Aug 24 \u2013 Aug 28",
+   "dates": "Aug 24 – Aug 28",
    "pages": 6,
    "reexported": true,
    "tier": "full"
@@ -1619,7 +1620,7 @@
    ],
    "file": "Hw_1.4",
    "week": "Week 2",
-   "dates": "Aug 31 \u2013 Sep 4",
+   "dates": "Aug 31 – Sep 4",
    "pages": 3,
    "reexported": true,
    "tier": "full"
@@ -2059,7 +2060,7 @@
    ],
    "file": "HW 1.5 Exponents and Radicals.pdf",
    "week": "Week 2",
-   "dates": "Aug 31 \u2013 Sep 4",
+   "dates": "Aug 31 – Sep 4",
    "pages": 6,
    "reexported": true,
    "tier": "full"
@@ -2524,7 +2525,7 @@
    ],
    "file": "Hw 1.6 First-Degree Equations.pdf",
    "week": "Week 2",
-   "dates": "Aug 31 \u2013 Sep 4",
+   "dates": "Aug 31 – Sep 4",
    "pages": 6,
    "reexported": true,
    "tier": "full"
@@ -2754,7 +2755,7 @@
    ],
    "file": "HW 1.7 Quadratic Equations.pdf",
    "week": "Week 3",
-   "dates": "Sep 7 \u2013 Sep 11",
+   "dates": "Sep 7 – Sep 11",
    "pages": 4,
    "reexported": true,
    "tier": "full"
@@ -2993,7 +2994,7 @@
    ],
    "file": "HW 2.1 Graphs.pdf",
    "week": "Week 4",
-   "dates": "Sep 14 \u2013 Sep 18",
+   "dates": "Sep 14 – Sep 18",
    "pages": 5,
    "reexported": true,
    "tier": "type-only"
@@ -3325,7 +3326,7 @@
    ],
    "file": "Hw 2.2 Equations of Lines.pdf",
    "week": "Week 4",
-   "dates": "Sep 14 \u2013 Sep 18",
+   "dates": "Sep 14 – Sep 18",
    "pages": 6,
    "reexported": false,
    "tier": "type-only"
@@ -3423,7 +3424,7 @@
    ],
    "file": "HW 2.3 Linear Models.pdf",
    "week": "Week 5",
-   "dates": "Sep 21 \u2013 Sep 25",
+   "dates": "Sep 21 – Sep 25",
    "pages": 2,
    "reexported": false,
    "tier": "type-only"
@@ -3603,7 +3604,7 @@
    ],
    "file": "HW 2.4 Linear Inequalities.pdf",
    "week": "Week 3",
-   "dates": "Sep 7 \u2013 Sep 11",
+   "dates": "Sep 7 – Sep 11",
    "pages": 3,
    "reexported": false,
    "tier": "type-only"
@@ -3765,7 +3766,7 @@
    ],
    "file": "HW 3.1 Functions.pdf",
    "week": "Week 5",
-   "dates": "Sep 21 \u2013 Sep 25",
+   "dates": "Sep 21 – Sep 25",
    "pages": 5,
    "reexported": false,
    "tier": "type-only"
@@ -4032,7 +4033,7 @@
    ],
    "file": "HW 4.1 Exponential Functions.pdf",
    "week": "Week 5",
-   "dates": "Sep 21 \u2013 Sep 25",
+   "dates": "Sep 21 – Sep 25",
    "pages": 6,
    "reexported": false,
    "tier": "type-only"
@@ -4119,7 +4120,7 @@
    ],
    "file": "Hw 4.2 Applications of Exponential Functions.pdf",
    "week": "Week 6",
-   "dates": "Sep 28 \u2013 Oct 2",
+   "dates": "Sep 28 – Oct 2",
    "pages": 2,
    "reexported": false,
    "tier": "type-only"
@@ -4392,7 +4393,7 @@
    ],
    "file": "HW 4.3 Logarithmic Functions.pdf",
    "week": "Week 6",
-   "dates": "Sep 28 \u2013 Oct 2",
+   "dates": "Sep 28 – Oct 2",
    "pages": 4,
    "reexported": false,
    "tier": "type-only"
@@ -4625,7 +4626,7 @@
    ],
    "file": "HW 4.4 Logarithmic and Exponential Equations.pdf",
    "week": "Week 6",
-   "dates": "Sep 28 \u2013 Oct 2",
+   "dates": "Sep 28 – Oct 2",
    "pages": 3,
    "reexported": false,
    "tier": "type-only"
@@ -4890,7 +4891,7 @@
    ],
    "file": "Hw 5.1 Simple and Compound Interest.pdf",
    "week": "Week 7",
-   "dates": "Oct 5 \u2013 Oct 9",
+   "dates": "Oct 5 – Oct 9",
    "pages": 4,
    "reexported": false,
    "tier": "type-only"
@@ -5151,7 +5152,7 @@
    ],
    "file": "Hw 5.2 Annuities, Future Value, and Sinking Funds.pdf",
    "week": "Week 8",
-   "dates": "Oct 12 \u2013 Oct 16",
+   "dates": "Oct 12 – Oct 16",
    "pages": 3,
    "reexported": false,
    "tier": "type-only"
@@ -5344,7 +5345,7 @@
    ],
    "file": "Hw 5.3 Consumer Loans and Amortization.pdf",
    "week": "Week 8",
-   "dates": "Oct 12 \u2013 Oct 16",
+   "dates": "Oct 12 – Oct 16",
    "pages": 5,
    "reexported": false,
    "tier": "type-only"
@@ -5633,7 +5634,7 @@
    ],
    "file": "Hw 8.1 Sets.pdf",
    "week": "Week 9",
-   "dates": "Oct 19 \u2013 Oct 23",
+   "dates": "Oct 19 – Oct 23",
    "pages": 5,
    "reexported": false,
    "tier": "type-only"
@@ -5880,7 +5881,7 @@
    ],
    "file": "HW 8.2 Applications of Venn Diagrams.pdf",
    "week": "Week 9",
-   "dates": "Oct 19 \u2013 Oct 23",
+   "dates": "Oct 19 – Oct 23",
    "pages": 6,
    "reexported": false,
    "tier": "type-only"
@@ -6146,7 +6147,7 @@
    ],
    "file": "HW 8.3 Introduction to Probability.pdf",
    "week": "Week 9",
-   "dates": "Oct 19 \u2013 Oct 23",
+   "dates": "Oct 19 – Oct 23",
    "pages": 5,
    "reexported": false,
    "tier": "type-only"
@@ -6470,7 +6471,7 @@
    ],
    "file": "HW 8.4 Basic Concepts of Probability.pdf",
    "week": "Week 10",
-   "dates": "Oct 26 \u2013 Oct 30",
+   "dates": "Oct 26 – Oct 30",
    "pages": 7,
    "reexported": false,
    "tier": "type-only"
@@ -6718,7 +6719,7 @@
    ],
    "file": "Hw 8.5 Conditional Probability & Independent Events.pdf",
    "week": "Week 10",
-   "dates": "Oct 26 \u2013 Oct 30",
+   "dates": "Oct 26 – Oct 30",
    "pages": 3,
    "reexported": false,
    "tier": "type-only"
@@ -6859,7 +6860,7 @@
    ],
    "file": "HW 9.1 Probability Distributions & Expected Value.pdf",
    "week": "Week 11",
-   "dates": "Nov 2 \u2013 Nov 6",
+   "dates": "Nov 2 – Nov 6",
    "pages": 2,
    "reexported": false,
    "tier": "type-only"
@@ -7161,7 +7162,7 @@
    ],
    "file": "Hw 9.2 The Multiplication Principle, Permutations, and Combinations.pdf",
    "week": "Week 11",
-   "dates": "Nov 2 \u2013 Nov 6",
+   "dates": "Nov 2 – Nov 6",
    "pages": 4,
    "reexported": false,
    "tier": "type-only"
@@ -7276,7 +7277,7 @@
    ],
    "file": "Hw 9.3 Applications of Counting.pdf",
    "week": "Week 12",
-   "dates": "Nov 9 \u2013 Nov 13",
+   "dates": "Nov 9 – Nov 13",
    "pages": 2,
    "reexported": false,
    "tier": "type-only"
@@ -7383,7 +7384,7 @@
    ],
    "file": "Hw 9.4 Binomial Probability.pdf",
    "week": "Week 12",
-   "dates": "Nov 9 \u2013 Nov 13",
+   "dates": "Nov 9 – Nov 13",
    "pages": 2,
    "reexported": false,
    "tier": "type-only"
@@ -7519,7 +7520,7 @@
    ],
    "file": "Hw 10.1 Frequency Distributions.pdf",
    "week": "Week 13",
-   "dates": "Nov 16 \u2013 Nov 20",
+   "dates": "Nov 16 – Nov 20",
    "pages": 4,
    "reexported": false,
    "tier": "type-only"
@@ -7813,7 +7814,7 @@
    ],
    "file": "Hw 10.2 Measures of Center.pdf",
    "week": "Week 14",
-   "dates": "Nov 23 \u2013 Nov 27",
+   "dates": "Nov 23 – Nov 27",
    "pages": 4,
    "reexported": false,
    "tier": "type-only"
@@ -7945,7 +7946,7 @@
    ],
    "file": "HW 10.3 Measures of Variation.pdf",
    "week": "Week 15",
-   "dates": "Nov 30 \u2013 Dec 4",
+   "dates": "Nov 30 – Dec 4",
    "pages": 2,
    "reexported": false,
    "tier": "type-only"
@@ -8115,7 +8116,7 @@
    ],
    "file": "Hw 10.4 Normal Distributions.pdf",
    "week": "Week 15",
-   "dates": "Nov 30 \u2013 Dec 4",
+   "dates": "Nov 30 – Dec 4",
    "pages": 40,
    "reexported": false,
    "tier": "type-only"
@@ -8125,7 +8126,7 @@
  "schedule": [
   {
    "week": "Week 1",
-   "dates": "Aug 24 \u2013 Aug 28",
+   "dates": "Aug 24 – Aug 28",
    "items": [
     "Introduction & Syllabus",
     "1.1 The Real Numbers",
@@ -8135,7 +8136,7 @@
   },
   {
    "week": "Week 2",
-   "dates": "Aug 31 \u2013 Sep 4",
+   "dates": "Aug 31 – Sep 4",
    "items": [
     "1.4 Rational Expressions",
     "1.5 Exponents and Radicals",
@@ -8144,7 +8145,7 @@
   },
   {
    "week": "Week 3",
-   "dates": "Sep 7 \u2013 Sep 11",
+   "dates": "Sep 7 – Sep 11",
    "items": [
     "(9/7 Labor Day)",
     "1.7 Quadratic Equations",
@@ -8153,17 +8154,17 @@
   },
   {
    "week": "Week 4",
-   "dates": "Sep 14 \u2013 Sep 18",
+   "dates": "Sep 14 – Sep 18",
    "items": [
     "Review for Exam 1",
-    "Exam 1 (1.1 \u2013 1.7, 2.4)",
+    "Exam 1 (1.1 – 1.7, 2.4)",
     "2.1 Graphs",
     "2.2 Equations of Lines"
    ]
   },
   {
    "week": "Week 5",
-   "dates": "Sep 21 \u2013 Sep 25",
+   "dates": "Sep 21 – Sep 25",
    "items": [
     "2.3 Linear Models",
     "3.1 Functions",
@@ -8172,7 +8173,7 @@
   },
   {
    "week": "Week 6",
-   "dates": "Sep 28 \u2013 Oct 2",
+   "dates": "Sep 28 – Oct 2",
    "items": [
     "4.2 Applications of Exponential Functions",
     "4.3 Logarithmic Functions",
@@ -8181,16 +8182,16 @@
   },
   {
    "week": "Week 7",
-   "dates": "Oct 5 \u2013 Oct 9",
+   "dates": "Oct 5 – Oct 9",
    "items": [
     "Review for Exam 2",
-    "Exam 2 (2.1 \u2013 4.4)",
+    "Exam 2 (2.1 – 4.4)",
     "5.1 Simple and Compound Interest"
    ]
   },
   {
    "week": "Week 8",
-   "dates": "Oct 12 \u2013 Oct 16",
+   "dates": "Oct 12 – Oct 16",
    "items": [
     "5.2 Annuities, Future Value, and Sinking Funds",
     "5.3 Consumer Loans and Amortization"
@@ -8198,7 +8199,7 @@
   },
   {
    "week": "Week 9",
-   "dates": "Oct 19 \u2013 Oct 23",
+   "dates": "Oct 19 – Oct 23",
    "items": [
     "8.1 Sets",
     "8.2 Applications of Venn Diagrams",
@@ -8207,18 +8208,18 @@
   },
   {
    "week": "Week 10",
-   "dates": "Oct 26 \u2013 Oct 30",
+   "dates": "Oct 26 – Oct 30",
    "items": [
     "(10/30 Nevada Day)",
     "Review for Exam 3",
-    "Exam 3 (5.1 \u2013 8.3)",
+    "Exam 3 (5.1 – 8.3)",
     "8.4 Basic Concepts of Probability",
     "8.5 Conditional Probability and Independent Events"
    ]
   },
   {
    "week": "Week 11",
-   "dates": "Nov 2 \u2013 Nov 6",
+   "dates": "Nov 2 – Nov 6",
    "items": [
     "9.1 Probability Distributions & Expected Value",
     "9.2 The Multiplication Principle, Permutations, and Combinations"
@@ -8226,25 +8227,25 @@
   },
   {
    "week": "Week 12",
-   "dates": "Nov 9 \u2013 Nov 13",
+   "dates": "Nov 9 – Nov 13",
    "items": [
-    "(11/11 Veteran\u2019s Day)",
+    "(11/11 Veteran’s Day)",
     "9.3 Application of Counting Principles",
     "9.4 Binomial Probability"
    ]
   },
   {
    "week": "Week 13",
-   "dates": "Nov 16 \u2013 Nov 20",
+   "dates": "Nov 16 – Nov 20",
    "items": [
     "Review for Exam 4",
-    "Exam 4 (8.4 \u2013 9.4)",
+    "Exam 4 (8.4 – 9.4)",
     "10.1 Frequency Distributions"
    ]
   },
   {
    "week": "Week 14",
-   "dates": "Nov 23 \u2013 Nov 27",
+   "dates": "Nov 23 – Nov 27",
    "items": [
     "(11/26-27 Thanksgiving)",
     "10.2 Measures of Center"
@@ -8252,7 +8253,7 @@
   },
   {
    "week": "Week 15",
-   "dates": "Nov 30 \u2013 Dec 4",
+   "dates": "Nov 30 – Dec 4",
    "items": [
     "10.3 Measures of Variation",
     "10.4 Normal Distributions"
@@ -8260,7 +8261,7 @@
   },
   {
    "week": "Week 16",
-   "dates": "Dec 7 \u2013 Dec 11",
+   "dates": "Dec 7 – Dec 11",
    "items": [
     "Review for Final Exam",
     "Wednesday is Prep Day",

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang=en>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>MATH 120E — interactive resources</title>
+<link rel=stylesheet href="vendor/katex/katex.min.css">
+<link rel=stylesheet href="styles.css?v=36">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem("m120.theme")||"ink"}catch(e){}</script>
+<body class=no-rail>
+<div id=read><div id=doc>
+  <h1><span class=num><a href="index.html">math 120e</a> &middot; interactive</span>Interactive resources</h1>
+  <div class=meta id=meta></div>
+
+  <h2>Working an expression one step at a time</h2>
+  <div class=note><p>Every operation available at the current level must be
+  cleared before the expression settles, because those operations are
+  independent of one another. <b>Click through</b> works the expression
+  yourself; <b>watch</b> runs the same steps.</p></div>
+
+  <div id=groups></div>
+
+  <footer id=foot></footer>
+</div></div>
+<div id=margin></div>
+
+<script defer src="vendor/katex/katex.min.js"></script>
+<script type=module>
+import { mountSolve } from './js/solve.js?v=5';
+
+const ready = () => new Promise(r => window.katex ? r() : addEventListener('load', r));
+await ready();
+
+const SOL = await (await fetch('data/solutions.json', {cache:'no-store'})).json();
+const chains = (ids) => ids.flatMap(k => [].concat(SOL[k] || [])).filter(Boolean);
+
+/* Grouped by the objective the work belongs to, in the objectives' own
+   wording. The two sticky-sign chains sit with the order of operations rather
+   than with comparison, because what they show is which base an exponent
+   takes, not which of two numbers is larger. */
+const GROUPS = [
+  { id: 'o2', title: 'Evaluate algebraic expressions',
+    sec: '§1.1 objective 2',
+    ids: ['1.1/O2/q1', '1.1/O2/q2', '1.1/O2/q3', '1.1/O2/q4'] },
+  { id: 'o3', title: 'Evaluate expressions using the order of operations',
+    sec: '§1.1 objective 3',
+    ids: ['1.1/O3/q1', '1.1/O3/q2', '1.1/O4/q4', '1.1/O3/q3', '1.1/O3/q4',
+          '1.1|13', '1.1|12'] },
+  { id: 'o6', title: 'Evaluate absolute value expressions',
+    sec: '§1.1 objective 6',
+    ids: ['1.1/O6/q1', '1.1/O6/q3', '1.1/O6/q4'] },
+];
+
+const host = document.getElementById('groups');
+let total = 0;
+
+for (const g of GROUPS) {
+  const set = chains(g.ids);
+  if (!set.length) continue;
+  total += set.length;
+  const wrap = document.createElement('section');
+  wrap.className = 'toolgroup';
+  wrap.innerHTML = '<h3>' + g.title + '<span class=tg-sec>' + g.sec + '</span></h3>' +
+    '<div class=pr-tool></div>';
+  host.appendChild(wrap);
+  mountSolve(wrap.querySelector('.pr-tool'), { click: set, watch: set },
+    { mode: 'click' });
+}
+
+document.getElementById('meta').textContent =
+  GROUPS.length + ' objectives · ' + total + ' worked expressions';
+document.getElementById('foot').innerHTML =
+  'Every step here is written out by hand rather than computed, so what is ' +
+  'shown is a worked solution and not a derivation.';
+</script>
+<script type=module>
+import { mountThemes } from './js/theme.js?v=2';
+mountThemes();
+</script>
+</body>
+</html>

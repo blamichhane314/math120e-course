@@ -1,1299 +1,1299 @@
 {
-  "1.3": [
+ "1.3": [
+  {
+   "id": "1.3/O1/q1",
+   "obj": "1.3/O1",
+   "level": "core",
+   "kind": "compute",
+   "stem": [
     {
-      "id": "1.3/O1/q1",
-      "obj": "1.3/O1",
-      "level": "core",
-      "kind": "compute",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Factor out the greatest common factor."
-        },
-        {
-          "t": "math",
-          "tex": "12x^{3}+18x^{2}",
-          "display": true
-        }
-      ],
-      "answer": {
-        "kind": "compute",
-        "slots": [
-          {
-            "size": 16
-          }
-        ],
-        "note": "write the answer as a product, like $6x(x+2)$"
-      },
-      "key": "6x^{2}(2x+3)",
-      "why": "The largest number dividing 12 and 18 is 6, and the largest power of $x$ in both terms is $x^{2}$, so $6x^{2}$ comes out of each term."
+     "t": "text",
+     "v": "Factor out the greatest common factor."
     },
     {
-      "id": "1.3/O1/q2",
-      "obj": "1.3/O1",
-      "level": "core",
-      "kind": "choice",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Factor out the greatest common factor."
-        },
-        {
-          "t": "math",
-          "tex": "15a^{4}b-25a^{2}b^{3}",
-          "display": true
-        },
-        {
-          "t": "text",
-          "v": "Choose the correct factorization."
-        }
-      ],
-      "answer": {
-        "kind": "choice",
-        "multi": false,
-        "options": [
-          [
-            {
-              "t": "math",
-              "tex": "5ab(3a^{3}-5ab^{2})",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "5a^{2}b(3a^{2}-5b^{2})",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "5a^{2}b(3a^{2}-5b^{3})",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "5a^{2}b^{3}(3a^{2}-5)",
-              "display": false
-            }
-          ]
-        ]
-      },
-      "key": "1",
-      "diag": {
-        "0": "stops at a common factor instead of the greatest one: $5ab$ divides both terms, but $a$ can still come out of each",
-        "2": "subtracts the exponents on $a$ but copies $b^{3}$ across unchanged",
-        "3": "takes $b^{3}$ out even though the first term has only one $b$"
-      },
-      "why": "The greatest common factor uses the smallest power of each letter present in every term, so $a^{2}$ and $b^{1}$, with the number $5$."
-    },
-    {
-      "id": "1.3/O1/q3",
-      "obj": "1.3/O1",
-      "level": "core",
-      "kind": "fill",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Factor out the greatest common factor."
-        },
-        {
-          "t": "math",
-          "tex": "7x^{2}+7x",
-          "display": true
-        }
-      ],
-      "answer": {
-        "kind": "fill",
-        "template": "The greatest common factor is ⟨0⟩, and the factor left over is ⟨1⟩.",
-        "slots": [
-          {
-            "size": 6
-          },
-          {
-            "size": 8
-          }
-        ]
-      },
-      "key": "7x; x+1",
-      "why": "Dividing $7x$ into $7x$ leaves $1$, not nothing, so the second factor is $x+1$."
-    },
-    {
-      "id": "1.3/O1/q4",
-      "obj": "1.3/O1",
-      "level": "stretch",
-      "kind": "multipart",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Factor completely. The common factor is not always a monomial, and it is sometimes negative."
-        }
-      ],
-      "answer": {
-        "kind": "multipart",
-        "parts": [
-          {
-            "label": "(a)",
-            "stem": [
-              {
-                "t": "text",
-                "v": "Factor out the negative greatest common factor."
-              },
-              {
-                "t": "math",
-                "tex": "-6m^{3}-9m^{2}",
-                "display": true
-              }
-            ],
-            "answer": {
-              "kind": "compute",
-              "slots": [
-                {
-                  "size": 16
-                }
-              ],
-              "note": "the leading factor should be negative"
-            }
-          },
-          {
-            "label": "(b)",
-            "stem": [
-              {
-                "t": "text",
-                "v": "Here the common factor is a whole binomial."
-              },
-              {
-                "t": "math",
-                "tex": "5x(2x+1)-3(2x+1)",
-                "display": true
-              }
-            ],
-            "answer": {
-              "kind": "compute",
-              "slots": [
-                {
-                  "size": 16
-                }
-              ],
-              "note": "write the answer as a product"
-            }
-          }
-        ]
-      },
-      "key": "(a) -3m^{2}(2m+3); (b) (2x+1)(5x-3)",
-      "why": "In (a) taking out $-3m^{2}$ flips the sign of each term inside; in (b) the repeated block $(2x+1)$ plays exactly the role a common monomial would, leaving $5x-3$ behind."
-    },
-    {
-      "id": "1.3/O2/q1",
-      "obj": "1.3/O2",
-      "level": "core",
-      "kind": "compute",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Factor."
-        },
-        {
-          "t": "math",
-          "tex": "x^{2}+9x+20",
-          "display": true
-        }
-      ],
-      "answer": {
-        "kind": "compute",
-        "slots": [
-          {
-            "size": 16
-          }
-        ],
-        "note": "write the answer as a product of two binomials"
-      },
-      "key": "(x+4)(x+5)",
-      "why": "Two integers whose product is $20$ and whose sum is $9$ are $4$ and $5$."
-    },
-    {
-      "id": "1.3/O2/q2",
-      "obj": "1.3/O2",
-      "level": "core",
-      "kind": "choice",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Factor."
-        },
-        {
-          "t": "math",
-          "tex": "x^{2}-3x-28",
-          "display": true
-        },
-        {
-          "t": "text",
-          "v": "Choose the correct factorization."
-        }
-      ],
-      "answer": {
-        "kind": "choice",
-        "multi": false,
-        "options": [
-          [
-            {
-              "t": "math",
-              "tex": "(x+7)(x-4)",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "(x-7)(x+4)",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "(x-14)(x+2)",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "(x-28)(x+1)",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "text",
-              "v": "Not factorable over the integers."
-            }
-          ]
-        ]
-      },
-      "key": "1",
-      "diag": {
-        "0": "picks the right pair $7$ and $4$ but attaches the signs the wrong way round, giving a middle term of $+3x$",
-        "2": "checks only that the product is $-28$; the middle term comes out $-12x$",
-        "3": "checks only that the product is $-28$; the middle term comes out $-27x$",
-        "4": "gives up after the pair $-7,4$ is not spotted, though it exists"
-      },
-      "why": "The pair must multiply to $-28$ and add to $-3$; that is $-7$ and $4$, and expanding confirms the middle term."
-    },
-    {
-      "id": "1.3/O2/q3",
-      "obj": "1.3/O2",
-      "level": "core",
-      "kind": "choice",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Factor, if possible."
-        },
-        {
-          "t": "math",
-          "tex": "x^{2}+3x+5",
-          "display": true
-        },
-        {
-          "t": "text",
-          "v": "Choose the correct answer."
-        }
-      ],
-      "answer": {
-        "kind": "choice",
-        "multi": false,
-        "options": [
-          [
-            {
-              "t": "math",
-              "tex": "(x+1)(x+5)",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "(x+5)(x-2)",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "(x+3)(x+5)",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "text",
-              "v": "Not factorable over the integers."
-            }
-          ]
-        ]
-      },
-      "key": "3",
-      "diag": {
-        "0": "takes the only positive factor pair of $5$ without checking the middle term, which comes out $+6x$",
-        "1": "matches the middle term $+3x$ but the product is $-10$, not $+5$",
-        "2": "reads the two numbers $3$ and $5$ straight out of the expression"
-      },
-      "why": "The only integer pairs multiplying to $5$ are $1,5$ and $-1,-5$, which add to $6$ and $-6$, so no pair gives $3$."
-    },
-    {
-      "id": "1.3/O2/q4",
-      "obj": "1.3/O2",
-      "level": "stretch",
-      "kind": "multipart",
-      "stem": [
-        {
-          "t": "math",
-          "tex": "2x^{3}-2x^{2}-24x",
-          "display": true
-        }
-      ],
-      "answer": {
-        "kind": "multipart",
-        "parts": [
-          {
-            "label": "(a)",
-            "stem": [
-              {
-                "t": "text",
-                "v": "Factor completely. Take out the greatest common factor first."
-              }
-            ],
-            "answer": {
-              "kind": "compute",
-              "slots": [
-                {
-                  "size": 20
-                }
-              ],
-              "note": "there are three factors"
-            }
-          },
-          {
-            "label": "(b)",
-            "stem": [
-              {
-                "t": "text",
-                "v": "Use the factored form to evaluate the expression at $x=5$."
-              }
-            ],
-            "answer": {
-              "kind": "compute",
-              "slots": [
-                {
-                  "size": 6
-                }
-              ],
-              "note": "type an integer"
-            }
-          }
-        ]
-      },
-      "key": "(a) 2x(x-4)(x+3); (b) 80",
-      "why": "Removing $2x$ leaves $x^{2}-x-12$, which needs the pair $-4$ and $3$; substituting $x=5$ into $2(5)(1)(8)$ is quicker than cubing."
-    },
-    {
-      "id": "1.3/O3/q1",
-      "obj": "1.3/O3",
-      "level": "core",
-      "kind": "compute",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Factor."
-        },
-        {
-          "t": "math",
-          "tex": "2x^{2}+7x+3",
-          "display": true
-        }
-      ],
-      "answer": {
-        "kind": "compute",
-        "slots": [
-          {
-            "size": 16
-          }
-        ],
-        "note": "write the answer as a product of two binomials"
-      },
-      "key": "(2x+1)(x+3)",
-      "why": "The $2$ can only split as $2x$ and $x$, and the $3$ as $1$ and $3$; pairing $2x$ with $3$ and $x$ with $1$ gives the middle term $6x+x=7x$."
-    },
-    {
-      "id": "1.3/O3/q2",
-      "obj": "1.3/O3",
-      "level": "core",
-      "kind": "choice",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Factor."
-        },
-        {
-          "t": "math",
-          "tex": "6x^{2}-7x-3",
-          "display": true
-        },
-        {
-          "t": "text",
-          "v": "Choose the correct factorization."
-        }
-      ],
-      "answer": {
-        "kind": "choice",
-        "multi": false,
-        "options": [
-          [
-            {
-              "t": "math",
-              "tex": "(2x+3)(3x-1)",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "(2x-3)(3x+1)",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "(6x+1)(x-3)",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "(3x-3)(2x+1)",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "text",
-              "v": "Not factorable over the integers."
-            }
-          ]
-        ]
-      },
-      "key": "1",
-      "diag": {
-        "0": "the right numbers with the signs exchanged, so the middle term comes out $+7x$",
-        "2": "the outer numbers multiply to $6$ and the inner ones to $-3$, but the middle term is $-17x$",
-        "3": "a split that gives a middle term of $-3x$, and it also leaves a common factor of $3$ inside",
-        "4": "gives up although a split exists"
-      },
-      "why": "With the leading coefficient $6$ you need the outer and inner products to add to $-7x$: $(2x)(1)+(-3)(3x)=2x-9x=-7x$."
-    },
-    {
-      "id": "1.3/O3/q3",
-      "obj": "1.3/O3",
-      "level": "core",
-      "kind": "fill",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Complete the factorization."
-        },
-        {
-          "t": "math",
-          "tex": "3x^{2}+11x+6",
-          "display": true
-        }
-      ],
-      "answer": {
-        "kind": "fill",
-        "template": "$3x^{2}+11x+6=(3x+$ ⟨0⟩ $)(x+$ ⟨1⟩ $)$",
-        "slots": [
-          {
-            "size": 4
-          },
-          {
-            "size": 4
-          }
-        ]
-      },
-      "key": "2; 3",
-      "why": "The two missing numbers multiply to $6$, and the middle term $3x\\cdot 3+2\\cdot x=11x$ decides which goes where."
-    },
-    {
-      "id": "1.3/O3/q4",
-      "obj": "1.3/O3",
-      "level": "stretch",
-      "kind": "compute",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Factor completely. Look for a common factor before splitting the quadratic."
-        },
-        {
-          "t": "math",
-          "tex": "12x^{3}+2x^{2}-4x",
-          "display": true
-        }
-      ],
-      "answer": {
-        "kind": "compute",
-        "slots": [
-          {
-            "size": 22
-          }
-        ],
-        "note": "there are three factors"
-      },
-      "key": "2x(3x+2)(2x-1)",
-      "why": "Taking out $2x$ leaves $6x^{2}+x-2$, whose split $(3x+2)(2x-1)$ gives the middle term $-3x+4x=x$."
+     "t": "math",
+     "tex": "12x^{3}+18x^{2}",
+     "display": true
     }
-  ],
-  "1.4": [
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "size": 16
+     }
+    ],
+    "note": "write the answer as a product, like $6x(x+2)$"
+   },
+   "key": "6x^{2}(2x+3)",
+   "why": "The largest number dividing 12 and 18 is 6, and the largest power of $x$ in both terms is $x^{2}$, so $6x^{2}$ comes out of each term."
+  },
+  {
+   "id": "1.3/O1/q2",
+   "obj": "1.3/O1",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
     {
-      "id": "1.4/O1/q1",
-      "obj": "1.4/O1",
-      "level": "core",
-      "kind": "compute",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Write the rational expression in lowest terms."
-        },
-        {
-          "t": "math",
-          "tex": "\\frac{x^{2}-9}{x^{2}+7x+12}",
-          "display": true
-        }
-      ],
-      "answer": {
-        "kind": "compute",
-        "slots": [
-          {
-            "size": 14
-          }
-        ],
-        "note": "write the answer as a single fraction, like $(x-1)/(x+2)$"
-      },
-      "key": "(x-3)/(x+4)",
-      "why": "Both parts factor first: $(x-3)(x+3)$ over $(x+3)(x+4)$, and only the whole factor $(x+3)$ may be divided out."
+     "t": "text",
+     "v": "Factor out the greatest common factor."
     },
     {
-      "id": "1.4/O1/q2",
-      "obj": "1.4/O1",
-      "level": "core",
-      "kind": "choice",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Write the expression in lowest terms."
-        },
-        {
-          "t": "math",
-          "tex": "\\frac{x^{2}+5x}{x^{2}-25}",
-          "display": true
-        },
-        {
-          "t": "text",
-          "v": "Choose the correct answer."
-        }
-      ],
-      "answer": {
-        "kind": "choice",
-        "multi": false,
-        "options": [
-          [
-            {
-              "t": "math",
-              "tex": "-\\frac{x}{5}",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "\\frac{x}{x+5}",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "\\frac{x}{x-5}",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "\\frac{1}{x-5}",
-              "display": false
-            }
-          ]
-        ]
-      },
-      "key": "2",
-      "diag": {
-        "0": "cancels the $x^{2}$ terms across the sums, leaving $5x$ over $-25$; only factors may be divided out, never terms",
-        "1": "factors $x^{2}-25$ as $(x+5)^{2}$ instead of $(x-5)(x+5)$",
-        "3": "divides out the surviving $x$ against the $x$ in $x-5$, which is a term of that binomial, not a factor of it"
-      },
-      "why": "Factoring gives $x(x+5)$ over $(x-5)(x+5)$; the shared factor $(x+5)$ leaves $x$ upstairs and $x-5$ downstairs."
+     "t": "math",
+     "tex": "15a^{4}b-25a^{2}b^{3}",
+     "display": true
     },
     {
-      "id": "1.4/O1/q3",
-      "obj": "1.4/O1",
-      "level": "core",
-      "kind": "multipart",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Write each expression in lowest terms."
-        }
-      ],
-      "answer": {
-        "kind": "multipart",
-        "parts": [
-          {
-            "label": "(a)",
-            "stem": [
-              {
-                "t": "math",
-                "tex": "\\frac{5x^{3}}{15x^{5}}",
-                "display": true
-              }
-            ],
-            "answer": {
-              "kind": "compute",
-              "slots": [
-                {
-                  "size": 10
-                }
-              ],
-              "note": "no negative exponents"
-            }
-          },
-          {
-            "label": "(b)",
-            "stem": [
-              {
-                "t": "math",
-                "tex": "\\frac{x^{2}-x-6}{x^{2}-9}",
-                "display": true
-              }
-            ],
-            "answer": {
-              "kind": "compute",
-              "slots": [
-                {
-                  "size": 12
-                }
-              ],
-              "note": "write the answer as a single fraction"
-            }
-          }
-        ]
-      },
-      "key": "(a) 1/(3x^{2}); (b) (x+2)/(x+3)",
-      "why": "In (a) the shared factor is $5x^{3}$; in (b) both parts share $(x-3)$ once the numerator is factored as $(x-3)(x+2)$."
-    },
-    {
-      "id": "1.4/O1/q4",
-      "obj": "1.4/O1",
-      "level": "stretch",
-      "kind": "choice",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Write the expression in lowest terms."
-        },
-        {
-          "t": "math",
-          "tex": "\\frac{4-x^{2}}{x^{2}+x-6}",
-          "display": true
-        },
-        {
-          "t": "text",
-          "v": "Choose the correct answer."
-        }
-      ],
-      "answer": {
-        "kind": "choice",
-        "multi": false,
-        "options": [
-          [
-            {
-              "t": "math",
-              "tex": "\\frac{4}{x-6}",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "\\frac{x+2}{x+3}",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "-\\frac{x+2}{x+3}",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "text",
-              "v": "The expression is already in lowest terms."
-            }
-          ]
-        ]
-      },
-      "key": "2",
-      "diag": {
-        "0": "cancels the $x^{2}$ terms across the sums, leaving $4$ over $x-6$",
-        "1": "treats $2-x$ and $x-2$ as the same factor, losing the factor of $-1$",
-        "3": "does not recognise $4-x^{2}$ as a difference of squares, so no common factor is found"
-      },
-      "why": "$4-x^{2}=-(x-2)(x+2)$ and $x^{2}+x-6=(x+3)(x-2)$, so dividing out $(x-2)$ leaves the minus sign behind."
-    },
-    {
-      "id": "1.4/O2/q1",
-      "obj": "1.4/O2",
-      "level": "core",
-      "kind": "compute",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Multiply and write the result in lowest terms."
-        },
-        {
-          "t": "math",
-          "tex": "\\frac{x+3}{x-2}\\cdot\\frac{x^{2}-4}{x^{2}-9}",
-          "display": true
-        }
-      ],
-      "answer": {
-        "kind": "compute",
-        "slots": [
-          {
-            "size": 14
-          }
-        ],
-        "note": "write the answer as a single fraction"
-      },
-      "key": "(x+2)/(x-3)",
-      "why": "Factor everything before multiplying: $(x-2)$ and $(x+3)$ each appear once above and once below, so both divide out."
-    },
-    {
-      "id": "1.4/O2/q2",
-      "obj": "1.4/O2",
-      "level": "core",
-      "kind": "choice",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Divide and write the result in lowest terms."
-        },
-        {
-          "t": "math",
-          "tex": "\\frac{x^{2}-9}{x+2}\\div\\frac{x+3}{x^{2}-4}",
-          "display": true
-        },
-        {
-          "t": "text",
-          "v": "Choose the correct answer."
-        }
-      ],
-      "answer": {
-        "kind": "choice",
-        "multi": false,
-        "options": [
-          [
-            {
-              "t": "math",
-              "tex": "\\frac{(x-3)(x+3)^{2}}{(x+2)^{2}(x-2)}",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "(x-3)(x-2)",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "\\frac{36}{(x+2)(x+3)}",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "\\frac{1}{(x-3)(x-2)}",
-              "display": false
-            }
-          ]
-        ]
-      },
-      "key": "1",
-      "diag": {
-        "0": "multiplies by the second fraction instead of by its reciprocal",
-        "2": "cancels the $x^{2}$ terms across the sums first, turning the problem into $\\frac{-9}{x+2}\\div\\frac{x+3}{-4}$",
-        "3": "turns the first fraction upside down instead of the second, which inverts the whole answer"
-      },
-      "why": "Flip the divisor, then factor: $(x-3)(x+3)$ over $(x+2)$ times $(x-2)(x+2)$ over $(x+3)$ leaves $(x-3)(x-2)$."
-    },
-    {
-      "id": "1.4/O2/q3",
-      "obj": "1.4/O2",
-      "level": "core",
-      "kind": "fill",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Multiply and write the result in lowest terms."
-        },
-        {
-          "t": "math",
-          "tex": "\\frac{x^{2}+2x}{x-5}\\cdot\\frac{x-5}{x}",
-          "display": true
-        }
-      ],
-      "answer": {
-        "kind": "fill",
-        "template": "The product in lowest terms is $x+$ ⟨0⟩.",
-        "slots": [
-          {
-            "size": 4
-          }
-        ]
-      },
-      "key": "2",
-      "why": "The numerator factors as $x(x+2)$, so the $x$ and the $(x-5)$ both divide out."
-    },
-    {
-      "id": "1.4/O2/q4",
-      "obj": "1.4/O2",
-      "level": "stretch",
-      "kind": "compute",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Divide and write the result in lowest terms. One numerator needs a quadratic whose leading coefficient is not $1$."
-        },
-        {
-          "t": "math",
-          "tex": "\\frac{2x^{2}+5x-3}{x^{2}-9}\\div\\frac{2x-1}{x^{2}+3x}",
-          "display": true
-        }
-      ],
-      "answer": {
-        "kind": "compute",
-        "slots": [
-          {
-            "size": 16
-          }
-        ],
-        "note": "write the answer as a single fraction"
-      },
-      "key": "x(x+3)/(x-3)",
-      "why": "$2x^{2}+5x-3=(2x-1)(x+3)$, so after flipping the divisor the factors $(2x-1)$ and one $(x+3)$ divide out, leaving $x(x+3)$ over $x-3$."
+     "t": "text",
+     "v": "Choose the correct factorization."
     }
-  ],
-  "1.5": [
+   ],
+   "answer": {
+    "kind": "choice",
+    "multi": false,
+    "options": [
+     [
+      {
+       "t": "math",
+       "tex": "5ab(3a^{3}-5ab^{2})",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "5a^{2}b(3a^{2}-5b^{2})",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "5a^{2}b(3a^{2}-5b^{3})",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "5a^{2}b^{3}(3a^{2}-5)",
+       "display": false
+      }
+     ]
+    ]
+   },
+   "key": "1",
+   "diag": {
+    "0": "stops at a common factor instead of the greatest one: $5ab$ divides both terms, but $a$ can still come out of each",
+    "2": "subtracts the exponents on $a$ but copies $b^{3}$ across unchanged",
+    "3": "takes $b^{3}$ out even though the first term has only one $b$"
+   },
+   "why": "The greatest common factor uses the smallest power of each letter present in every term, so $a^{2}$ and $b^{1}$, with the number $5$."
+  },
+  {
+   "id": "1.3/O1/q3",
+   "obj": "1.3/O1",
+   "level": "core",
+   "kind": "fill",
+   "stem": [
     {
-      "id": "1.5/O1/q1",
-      "obj": "1.5/O1",
-      "level": "core",
-      "kind": "multipart",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Evaluate each expression. Read carefully: a minus sign inside the parentheses is part of the base, and one outside is not."
-        }
-      ],
-      "answer": {
-        "kind": "multipart",
-        "parts": [
-          {
-            "label": "(a)",
-            "stem": [
-              {
-                "t": "math",
-                "tex": "(-4)^{0}",
-                "display": false
-              }
-            ],
-            "answer": {
-              "kind": "compute",
-              "slots": [
-                {
-                  "size": 5
-                }
-              ],
-              "note": "type an integer"
-            }
-          },
-          {
-            "label": "(b)",
-            "stem": [
-              {
-                "t": "math",
-                "tex": "-4^{0}",
-                "display": false
-              }
-            ],
-            "answer": {
-              "kind": "compute",
-              "slots": [
-                {
-                  "size": 5
-                }
-              ],
-              "note": "type an integer"
-            }
-          },
-          {
-            "label": "(c)",
-            "stem": [
-              {
-                "t": "math",
-                "tex": "2^{-3}",
-                "display": false
-              }
-            ],
-            "answer": {
-              "kind": "compute",
-              "slots": [
-                {
-                  "size": 6
-                }
-              ],
-              "note": "type a fraction, like $1/5$"
-            }
-          }
-        ]
-      },
-      "key": "(a) 1; (b) -1; (c) 1/8",
-      "why": "In (a) the base is $-4$ and any non-zero base to the power $0$ is $1$; in (b) only $4$ is raised to the power, and the minus is applied afterwards; in (c) a negative exponent means the reciprocal, $1/2^{3}$."
+     "t": "text",
+     "v": "Factor out the greatest common factor."
     },
     {
-      "id": "1.5/O1/q2",
-      "obj": "1.5/O1",
-      "level": "core",
-      "kind": "choice",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Simplify. Write the answer with positive exponents only."
-        },
-        {
-          "t": "math",
-          "tex": "\\left(2x^{3}\\right)^{-2}",
-          "display": true
-        },
-        {
-          "t": "text",
-          "v": "Choose the correct answer."
-        }
-      ],
-      "answer": {
-        "kind": "choice",
-        "multi": false,
-        "options": [
-          [
-            {
-              "t": "math",
-              "tex": "\\frac{1}{2x^{6}}",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "\\frac{1}{4x^{5}}",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "\\frac{1}{4x^{6}}",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "-4x^{6}",
-              "display": false
-            }
-          ]
-        ]
-      },
-      "key": "2",
-      "diag": {
-        "0": "applies the outside exponent to $x^{3}$ but not to the coefficient $2$",
-        "1": "adds the exponents $3$ and $2$ instead of multiplying them",
-        "3": "reads the negative exponent as a minus sign on the answer rather than as a reciprocal"
-      },
-      "why": "Everything inside the parentheses is raised to the $-2$: $2^{-2}$ gives $\\frac{1}{4}$ and $x^{3\\cdot(-2)}=x^{-6}$ moves to the denominator."
-    },
-    {
-      "id": "1.5/O1/q3",
-      "obj": "1.5/O1",
-      "level": "core",
-      "kind": "compute",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Simplify. Write the answer with positive exponents only."
-        },
-        {
-          "t": "math",
-          "tex": "\\frac{12a^{5}b^{-2}}{4a^{-1}b^{3}}",
-          "display": true
-        }
-      ],
-      "answer": {
-        "kind": "compute",
-        "slots": [
-          {
-            "size": 14
-          }
-        ],
-        "note": "write the answer as a single fraction"
-      },
-      "key": "3a^{6}/b^{5}",
-      "why": "Divide the coefficients and subtract exponents: $5-(-1)=6$ for $a$, and $-2-3=-5$ for $b$, so $b^{5}$ ends up in the denominator."
-    },
-    {
-      "id": "1.5/O1/q4",
-      "obj": "1.5/O1",
-      "level": "stretch",
-      "kind": "compute",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Simplify inside the parentheses first, then apply the outside exponent. Write the answer with positive exponents only."
-        },
-        {
-          "t": "math",
-          "tex": "\\left(\\frac{2x^{-1}y^{2}}{4x^{3}y^{-2}}\\right)^{-2}",
-          "display": true
-        }
-      ],
-      "answer": {
-        "kind": "compute",
-        "slots": [
-          {
-            "size": 14
-          }
-        ],
-        "note": "write the answer as a single fraction"
-      },
-      "key": "4x^{8}/y^{8}",
-      "why": "Inside, the expression is $\\frac{1}{2} x^{-4}y^{4}$; raising it to $-2$ squares the reciprocal of each part, giving $4x^{8}y^{-8}$."
-    },
-    {
-      "id": "1.5/O2/q1",
-      "obj": "1.5/O2",
-      "level": "core",
-      "kind": "multipart",
-      "stem": [
-        {
-          "t": "text",
-          "v": "A rational exponent records a root: the denominator is the index of the root and the numerator is the power."
-        }
-      ],
-      "answer": {
-        "kind": "multipart",
-        "parts": [
-          {
-            "label": "(a)",
-            "stem": [
-              {
-                "t": "text",
-                "v": "Rewrite using a rational exponent."
-              },
-              {
-                "t": "math",
-                "tex": "\\sqrt[3]{x^{2}}",
-                "display": false
-              }
-            ],
-            "answer": {
-              "kind": "fill",
-              "template": "It equals $x$ raised to the power ⟨0⟩.",
-              "slots": [
-                {
-                  "size": 5
-                }
-              ],
-              "note": "type a fraction, like $3/5$"
-            }
-          },
-          {
-            "label": "(b)",
-            "stem": [
-              {
-                "t": "text",
-                "v": "Rewrite in radical form."
-              },
-              {
-                "t": "math",
-                "tex": "7^{3/4}",
-                "display": false
-              }
-            ],
-            "answer": {
-              "kind": "fill",
-              "template": "It equals the ⟨0⟩th root of $7$ raised to the power ⟨1⟩.",
-              "slots": [
-                {
-                  "size": 4
-                },
-                {
-                  "size": 4
-                }
-              ]
-            }
-          }
-        ]
-      },
-      "key": "(a) 2/3; (b) 4th root, power 3",
-      "why": "The index of the radical becomes the denominator of the exponent, and the power under the radical becomes the numerator."
-    },
-    {
-      "id": "1.5/O2/q2",
-      "obj": "1.5/O2",
-      "level": "core",
-      "kind": "compute",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Evaluate each expression. An odd root of a negative number is a real number."
-        }
-      ],
-      "answer": {
-        "kind": "compute",
-        "slots": [
-          {
-            "label": "$16^{3/4}$",
-            "size": 6
-          },
-          {
-            "label": "$(-27)^{1/3}$",
-            "size": 6
-          }
-        ],
-        "note": "type integers"
-      },
-      "key": "8; -3",
-      "why": "Take the root first: the fourth root of $16$ is $2$ and $2^{3}=8$, while the cube root of $-27$ is $-3$ because $(-3)^{3}=-27$."
-    },
-    {
-      "id": "1.5/O2/q3",
-      "obj": "1.5/O2",
-      "level": "core",
-      "kind": "choice",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Evaluate."
-        },
-        {
-          "t": "math",
-          "tex": "64^{-2/3}",
-          "display": true
-        },
-        {
-          "t": "text",
-          "v": "Choose the correct answer."
-        }
-      ],
-      "answer": {
-        "kind": "choice",
-        "multi": false,
-        "options": [
-          [
-            {
-              "t": "math",
-              "tex": "-16",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "\\frac{1}{4}",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "\\frac{1}{16}",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "\\frac{1}{512}",
-              "display": false
-            }
-          ]
-        ]
-      },
-      "key": "2",
-      "diag": {
-        "0": "reads the negative exponent as a minus sign on the answer instead of as a reciprocal",
-        "1": "takes the cube root but never applies the power $2$",
-        "3": "swaps the numerator and the denominator of the exponent, computing $\\sqrt{64^{3}}$"
-      },
-      "why": "The negative sign inverts, the $3$ takes the cube root, and the $2$ squares: $1/(4^{2})=1/16$."
-    },
-    {
-      "id": "1.5/O2/q4",
-      "obj": "1.5/O2",
-      "level": "stretch",
-      "kind": "fill",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Rewrite the radical as a rational exponent, then use the rules for exponents."
-        },
-        {
-          "t": "math",
-          "tex": "\\frac{\\sqrt[3]{x^{2}}\\cdot x^{1/3}}{x^{-1}}",
-          "display": true
-        }
-      ],
-      "answer": {
-        "kind": "fill",
-        "template": "The expression simplifies to $x$ raised to the power ⟨0⟩.",
-        "slots": [
-          {
-            "size": 4
-          }
-        ]
-      },
-      "key": "2",
-      "why": "The radical is $x^{2/3}$, so the numerator is $x^{2/3+1/3}=x^{1}$, and dividing by $x^{-1}$ adds another $1$ to the exponent."
+     "t": "math",
+     "tex": "7x^{2}+7x",
+     "display": true
     }
-  ]
+   ],
+   "answer": {
+    "kind": "fill",
+    "template": "The greatest common factor is ⟨0⟩, and the factor left over is ⟨1⟩.",
+    "slots": [
+     {
+      "size": 6
+     },
+     {
+      "size": 8
+     }
+    ]
+   },
+   "key": "7x; x+1",
+   "why": "Dividing $7x$ into $7x$ leaves $1$, not nothing, so the second factor is $x+1$."
+  },
+  {
+   "id": "1.3/O1/q4",
+   "obj": "1.3/O1",
+   "level": "stretch",
+   "kind": "multipart",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Factor completely. The common factor is not always a monomial, and it is sometimes negative."
+    }
+   ],
+   "answer": {
+    "kind": "multipart",
+    "parts": [
+     {
+      "label": "(a)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Factor out the negative greatest common factor."
+       },
+       {
+        "t": "math",
+        "tex": "-6m^{3}-9m^{2}",
+        "display": true
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 16
+        }
+       ],
+       "note": "the leading factor should be negative"
+      }
+     },
+     {
+      "label": "(b)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Here the common factor is a whole binomial."
+       },
+       {
+        "t": "math",
+        "tex": "5x(2x+1)-3(2x+1)",
+        "display": true
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 16
+        }
+       ],
+       "note": "write the answer as a product"
+      }
+     }
+    ]
+   },
+   "key": "(a) -3m^{2}(2m+3); (b) (2x+1)(5x-3)",
+   "why": "In (a) taking out $-3m^{2}$ flips the sign of each term inside; in (b) $(2x+1)$ is a common factor of both terms, so it comes out and leaves $5x-3$ behind."
+  },
+  {
+   "id": "1.3/O2/q1",
+   "obj": "1.3/O2",
+   "level": "core",
+   "kind": "compute",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Factor."
+    },
+    {
+     "t": "math",
+     "tex": "x^{2}+9x+20",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "size": 16
+     }
+    ],
+    "note": "write the answer as a product of two binomials"
+   },
+   "key": "(x+4)(x+5)",
+   "why": "Two integers whose product is $20$ and whose sum is $9$ are $4$ and $5$."
+  },
+  {
+   "id": "1.3/O2/q2",
+   "obj": "1.3/O2",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Factor."
+    },
+    {
+     "t": "math",
+     "tex": "x^{2}-3x-28",
+     "display": true
+    },
+    {
+     "t": "text",
+     "v": "Choose the correct factorization."
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "multi": false,
+    "options": [
+     [
+      {
+       "t": "math",
+       "tex": "(x+7)(x-4)",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "(x-7)(x+4)",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "(x-14)(x+2)",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "(x-28)(x+1)",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "text",
+       "v": "Not factorable over the integers."
+      }
+     ]
+    ]
+   },
+   "key": "1",
+   "diag": {
+    "0": "picks the right pair $7$ and $4$ but attaches the signs the wrong way round, giving a middle term of $+3x$",
+    "2": "checks only that the product is $-28$; the middle term comes out $-12x$",
+    "3": "checks only that the product is $-28$; the middle term comes out $-27x$",
+    "4": "reports no factorization, but $-7$ and $4$ multiply to $-28$ and add to $-3$"
+   },
+   "why": "The pair must multiply to $-28$ and add to $-3$; that is $-7$ and $4$, and expanding confirms the middle term."
+  },
+  {
+   "id": "1.3/O2/q3",
+   "obj": "1.3/O2",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Factor, if possible."
+    },
+    {
+     "t": "math",
+     "tex": "x^{2}+3x+5",
+     "display": true
+    },
+    {
+     "t": "text",
+     "v": "Choose the correct answer."
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "multi": false,
+    "options": [
+     [
+      {
+       "t": "math",
+       "tex": "(x+1)(x+5)",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "(x+5)(x-2)",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "(x+3)(x+5)",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "text",
+       "v": "Not factorable over the integers."
+      }
+     ]
+    ]
+   },
+   "key": "3",
+   "diag": {
+    "0": "takes the only positive factor pair of $5$ without checking the middle term, which comes out $+6x$",
+    "1": "matches the middle term $+3x$ but the product is $-10$, not $+5$",
+    "2": "reads the two numbers $3$ and $5$ straight out of the expression"
+   },
+   "why": "The only integer pairs multiplying to $5$ are $1,5$ and $-1,-5$, which add to $6$ and $-6$, so no pair gives $3$."
+  },
+  {
+   "id": "1.3/O2/q4",
+   "obj": "1.3/O2",
+   "level": "stretch",
+   "kind": "multipart",
+   "stem": [
+    {
+     "t": "math",
+     "tex": "2x^{3}-2x^{2}-24x",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "multipart",
+    "parts": [
+     {
+      "label": "(a)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Factor completely. Take out the greatest common factor first."
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 20
+        }
+       ],
+       "note": "there are three factors"
+      }
+     },
+     {
+      "label": "(b)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Use the factored form to evaluate the expression at $x=5$."
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 6
+        }
+       ],
+       "note": "type an integer"
+      }
+     }
+    ]
+   },
+   "key": "(a) 2x(x-4)(x+3); (b) 80",
+   "why": "Removing $2x$ leaves $x^{2}-x-12$, which needs the pair $-4$ and $3$; substituting $x=5$ into $2(5)(1)(8)$ is quicker than cubing."
+  },
+  {
+   "id": "1.3/O3/q1",
+   "obj": "1.3/O3",
+   "level": "core",
+   "kind": "compute",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Factor."
+    },
+    {
+     "t": "math",
+     "tex": "2x^{2}+7x+3",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "size": 16
+     }
+    ],
+    "note": "write the answer as a product of two binomials"
+   },
+   "key": "(2x+1)(x+3)",
+   "why": "The $2$ can only split as $2x$ and $x$, and the $3$ as $1$ and $3$; pairing $2x$ with $3$ and $x$ with $1$ gives the middle term $6x+x=7x$."
+  },
+  {
+   "id": "1.3/O3/q2",
+   "obj": "1.3/O3",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Factor."
+    },
+    {
+     "t": "math",
+     "tex": "6x^{2}-7x-3",
+     "display": true
+    },
+    {
+     "t": "text",
+     "v": "Choose the correct factorization."
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "multi": false,
+    "options": [
+     [
+      {
+       "t": "math",
+       "tex": "(2x+3)(3x-1)",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "(2x-3)(3x+1)",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "(6x+1)(x-3)",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "(3x-3)(2x+1)",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "text",
+       "v": "Not factorable over the integers."
+      }
+     ]
+    ]
+   },
+   "key": "1",
+   "diag": {
+    "0": "the right numbers with the signs exchanged, so the middle term comes out $+7x$",
+    "2": "the outer numbers multiply to $6$ and the inner ones to $-3$, but the middle term is $-17x$",
+    "3": "a split that gives a middle term of $-3x$, and it also leaves a common factor of $3$ inside",
+    "4": "reports no factorization, but a split exists"
+   },
+   "why": "With the leading coefficient $6$ the outer and inner products must add to $-7x$: $(2x)(1)+(-3)(3x)=2x-9x=-7x$."
+  },
+  {
+   "id": "1.3/O3/q3",
+   "obj": "1.3/O3",
+   "level": "core",
+   "kind": "fill",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Complete the factorization."
+    },
+    {
+     "t": "math",
+     "tex": "3x^{2}+11x+6",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "fill",
+    "template": "$3x^{2}+11x+6=(3x+$ ⟨0⟩ $)(x+$ ⟨1⟩ $)$",
+    "slots": [
+     {
+      "size": 4
+     },
+     {
+      "size": 4
+     }
+    ]
+   },
+   "key": "2; 3",
+   "why": "The two missing numbers multiply to $6$, and the middle term $3x\\cdot 3+2\\cdot x=11x$ decides which goes where."
+  },
+  {
+   "id": "1.3/O3/q4",
+   "obj": "1.3/O3",
+   "level": "stretch",
+   "kind": "compute",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Factor completely. Look for a common factor before splitting the quadratic."
+    },
+    {
+     "t": "math",
+     "tex": "12x^{3}+2x^{2}-4x",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "size": 22
+     }
+    ],
+    "note": "there are three factors"
+   },
+   "key": "2x(3x+2)(2x-1)",
+   "why": "Taking out $2x$ leaves $6x^{2}+x-2$, whose split $(3x+2)(2x-1)$ gives the middle term $-3x+4x=x$."
+  }
+ ],
+ "1.4": [
+  {
+   "id": "1.4/O1/q1",
+   "obj": "1.4/O1",
+   "level": "core",
+   "kind": "compute",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Write the rational expression in lowest terms."
+    },
+    {
+     "t": "math",
+     "tex": "\\frac{x^{2}-9}{x^{2}+7x+12}",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "size": 14
+     }
+    ],
+    "note": "write the answer as a single fraction, like $(x-1)/(x+2)$"
+   },
+   "key": "(x-3)/(x+4)",
+   "why": "Both parts factor first: $(x-3)(x+3)$ over $(x+3)(x+4)$, and only the whole factor $(x+3)$ may be divided out."
+  },
+  {
+   "id": "1.4/O1/q2",
+   "obj": "1.4/O1",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Write the expression in lowest terms."
+    },
+    {
+     "t": "math",
+     "tex": "\\frac{x^{2}+5x}{x^{2}-25}",
+     "display": true
+    },
+    {
+     "t": "text",
+     "v": "Choose the correct answer."
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "multi": false,
+    "options": [
+     [
+      {
+       "t": "math",
+       "tex": "-\\frac{x}{5}",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "\\frac{x}{x+5}",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "\\frac{x}{x-5}",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "\\frac{1}{x-5}",
+       "display": false
+      }
+     ]
+    ]
+   },
+   "key": "2",
+   "diag": {
+    "0": "cancels the $x^{2}$ terms across the sums, leaving $5x$ over $-25$; only factors may be divided out, never terms",
+    "1": "factors $x^{2}-25$ as $(x+5)^{2}$ instead of $(x-5)(x+5)$",
+    "3": "divides out the surviving $x$ against the $x$ in $x-5$, which is a term of that binomial, not a factor of it"
+   },
+   "why": "Factoring gives $x(x+5)$ over $(x-5)(x+5)$; the shared factor $(x+5)$ leaves $x$ upstairs and $x-5$ downstairs."
+  },
+  {
+   "id": "1.4/O1/q3",
+   "obj": "1.4/O1",
+   "level": "core",
+   "kind": "multipart",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Write each expression in lowest terms."
+    }
+   ],
+   "answer": {
+    "kind": "multipart",
+    "parts": [
+     {
+      "label": "(a)",
+      "stem": [
+       {
+        "t": "math",
+        "tex": "\\frac{5x^{3}}{15x^{5}}",
+        "display": true
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 10
+        }
+       ],
+       "note": "no negative exponents"
+      }
+     },
+     {
+      "label": "(b)",
+      "stem": [
+       {
+        "t": "math",
+        "tex": "\\frac{x^{2}-x-6}{x^{2}-9}",
+        "display": true
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 12
+        }
+       ],
+       "note": "write the answer as a single fraction"
+      }
+     }
+    ]
+   },
+   "key": "(a) 1/(3x^{2}); (b) (x+2)/(x+3)",
+   "why": "In (a) the shared factor is $5x^{3}$; in (b) both parts share $(x-3)$ once the numerator is factored as $(x-3)(x+2)$."
+  },
+  {
+   "id": "1.4/O1/q4",
+   "obj": "1.4/O1",
+   "level": "stretch",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Write the expression in lowest terms."
+    },
+    {
+     "t": "math",
+     "tex": "\\frac{4-x^{2}}{x^{2}+x-6}",
+     "display": true
+    },
+    {
+     "t": "text",
+     "v": "Choose the correct answer."
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "multi": false,
+    "options": [
+     [
+      {
+       "t": "math",
+       "tex": "\\frac{4}{x-6}",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "\\frac{x+2}{x+3}",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "-\\frac{x+2}{x+3}",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "text",
+       "v": "The expression is already in lowest terms."
+      }
+     ]
+    ]
+   },
+   "key": "2",
+   "diag": {
+    "0": "cancels the $x^{2}$ terms across the sums, leaving $4$ over $x-6$",
+    "1": "treats $2-x$ and $x-2$ as the same factor, losing the factor of $-1$",
+    "3": "does not recognise $4-x^{2}$ as a difference of squares, so no common factor is found"
+   },
+   "why": "$4-x^{2}=-(x-2)(x+2)$ and $x^{2}+x-6=(x+3)(x-2)$, so dividing out $(x-2)$ leaves the minus sign behind."
+  },
+  {
+   "id": "1.4/O2/q1",
+   "obj": "1.4/O2",
+   "level": "core",
+   "kind": "compute",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Multiply and write the result in lowest terms."
+    },
+    {
+     "t": "math",
+     "tex": "\\frac{x+3}{x-2}\\cdot\\frac{x^{2}-4}{x^{2}-9}",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "size": 14
+     }
+    ],
+    "note": "write the answer as a single fraction"
+   },
+   "key": "(x+2)/(x-3)",
+   "why": "Factor everything before multiplying: $(x-2)$ and $(x+3)$ each appear once above and once below, so both divide out."
+  },
+  {
+   "id": "1.4/O2/q2",
+   "obj": "1.4/O2",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Divide and write the result in lowest terms."
+    },
+    {
+     "t": "math",
+     "tex": "\\frac{x^{2}-9}{x+2}\\div\\frac{x+3}{x^{2}-4}",
+     "display": true
+    },
+    {
+     "t": "text",
+     "v": "Choose the correct answer."
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "multi": false,
+    "options": [
+     [
+      {
+       "t": "math",
+       "tex": "\\frac{(x-3)(x+3)^{2}}{(x+2)^{2}(x-2)}",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "(x-3)(x-2)",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "\\frac{36}{(x+2)(x+3)}",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "\\frac{1}{(x-3)(x-2)}",
+       "display": false
+      }
+     ]
+    ]
+   },
+   "key": "1",
+   "diag": {
+    "0": "multiplies by the second fraction instead of by its reciprocal",
+    "2": "cancels the $x^{2}$ terms across the sums first, turning the problem into $\\frac{-9}{x+2}\\div\\frac{x+3}{-4}$",
+    "3": "turns the first fraction upside down instead of the second, which inverts the whole answer"
+   },
+   "why": "Flip the divisor, then factor: $(x-3)(x+3)$ over $(x+2)$ times $(x-2)(x+2)$ over $(x+3)$ leaves $(x-3)(x-2)$."
+  },
+  {
+   "id": "1.4/O2/q3",
+   "obj": "1.4/O2",
+   "level": "core",
+   "kind": "fill",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Multiply and write the result in lowest terms."
+    },
+    {
+     "t": "math",
+     "tex": "\\frac{x^{2}+2x}{x-5}\\cdot\\frac{x-5}{x}",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "fill",
+    "template": "The product in lowest terms is $x+$ ⟨0⟩.",
+    "slots": [
+     {
+      "size": 4
+     }
+    ]
+   },
+   "key": "2",
+   "why": "The numerator factors as $x(x+2)$, so the $x$ and the $(x-5)$ both divide out."
+  },
+  {
+   "id": "1.4/O2/q4",
+   "obj": "1.4/O2",
+   "level": "stretch",
+   "kind": "compute",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Divide and write the result in lowest terms. One numerator needs a quadratic whose leading coefficient is not $1$."
+    },
+    {
+     "t": "math",
+     "tex": "\\frac{2x^{2}+5x-3}{x^{2}-9}\\div\\frac{2x-1}{x^{2}+3x}",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "size": 16
+     }
+    ],
+    "note": "write the answer as a single fraction"
+   },
+   "key": "x(x+3)/(x-3)",
+   "why": "$2x^{2}+5x-3=(2x-1)(x+3)$, so after flipping the divisor the factors $(2x-1)$ and one $(x+3)$ divide out, leaving $x(x+3)$ over $x-3$."
+  }
+ ],
+ "1.5": [
+  {
+   "id": "1.5/O1/q1",
+   "obj": "1.5/O1",
+   "level": "core",
+   "kind": "multipart",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Evaluate each expression. Read carefully: a minus sign inside the parentheses is part of the base, and one outside is not."
+    }
+   ],
+   "answer": {
+    "kind": "multipart",
+    "parts": [
+     {
+      "label": "(a)",
+      "stem": [
+       {
+        "t": "math",
+        "tex": "(-4)^{0}",
+        "display": false
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 5
+        }
+       ],
+       "note": "type an integer"
+      }
+     },
+     {
+      "label": "(b)",
+      "stem": [
+       {
+        "t": "math",
+        "tex": "-4^{0}",
+        "display": false
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 5
+        }
+       ],
+       "note": "type an integer"
+      }
+     },
+     {
+      "label": "(c)",
+      "stem": [
+       {
+        "t": "math",
+        "tex": "2^{-3}",
+        "display": false
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 6
+        }
+       ],
+       "note": "type a fraction, like $1/5$"
+      }
+     }
+    ]
+   },
+   "key": "(a) 1; (b) -1; (c) 1/8",
+   "why": "In (a) the base is $-4$ and any non-zero base to the power $0$ is $1$; in (b) only $4$ is raised to the power, and the minus is applied afterwards; in (c) a negative exponent means the reciprocal, $1/2^{3}$."
+  },
+  {
+   "id": "1.5/O1/q2",
+   "obj": "1.5/O1",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Simplify. Write the answer with positive exponents only."
+    },
+    {
+     "t": "math",
+     "tex": "\\left(2x^{3}\\right)^{-2}",
+     "display": true
+    },
+    {
+     "t": "text",
+     "v": "Choose the correct answer."
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "multi": false,
+    "options": [
+     [
+      {
+       "t": "math",
+       "tex": "\\frac{1}{2x^{6}}",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "\\frac{1}{4x^{5}}",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "\\frac{1}{4x^{6}}",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "-4x^{6}",
+       "display": false
+      }
+     ]
+    ]
+   },
+   "key": "2",
+   "diag": {
+    "0": "applies the outside exponent to $x^{3}$ but not to the coefficient $2$",
+    "1": "adds the exponents $3$ and $2$ instead of multiplying them",
+    "3": "reads the negative exponent as a minus sign on the answer rather than as a reciprocal"
+   },
+   "why": "Everything inside the parentheses is raised to the $-2$: $2^{-2}$ gives $\\frac{1}{4}$ and $x^{3\\cdot(-2)}=x^{-6}$ moves to the denominator."
+  },
+  {
+   "id": "1.5/O1/q3",
+   "obj": "1.5/O1",
+   "level": "core",
+   "kind": "compute",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Simplify. Write the answer with positive exponents only."
+    },
+    {
+     "t": "math",
+     "tex": "\\frac{12a^{5}b^{-2}}{4a^{-1}b^{3}}",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "size": 14
+     }
+    ],
+    "note": "write the answer as a single fraction"
+   },
+   "key": "3a^{6}/b^{5}",
+   "why": "Divide the coefficients and subtract exponents: $5-(-1)=6$ for $a$, and $-2-3=-5$ for $b$, so $b^{5}$ ends up in the denominator."
+  },
+  {
+   "id": "1.5/O1/q4",
+   "obj": "1.5/O1",
+   "level": "stretch",
+   "kind": "compute",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Simplify inside the parentheses first, then apply the outside exponent. Write the answer with positive exponents only."
+    },
+    {
+     "t": "math",
+     "tex": "\\left(\\frac{2x^{-1}y^{2}}{4x^{3}y^{-2}}\\right)^{-2}",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "size": 14
+     }
+    ],
+    "note": "write the answer as a single fraction"
+   },
+   "key": "4x^{8}/y^{8}",
+   "why": "Inside, the expression is $\\frac{1}{2} x^{-4}y^{4}$; raising it to $-2$ squares the reciprocal of each part, giving $4x^{8}y^{-8}$."
+  },
+  {
+   "id": "1.5/O2/q1",
+   "obj": "1.5/O2",
+   "level": "core",
+   "kind": "multipart",
+   "stem": [
+    {
+     "t": "text",
+     "v": "A rational exponent records a root: the denominator is the index of the root and the numerator is the power."
+    }
+   ],
+   "answer": {
+    "kind": "multipart",
+    "parts": [
+     {
+      "label": "(a)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Rewrite using a rational exponent."
+       },
+       {
+        "t": "math",
+        "tex": "\\sqrt[3]{x^{2}}",
+        "display": false
+       }
+      ],
+      "answer": {
+       "kind": "fill",
+       "template": "It equals $x$ raised to the power ⟨0⟩.",
+       "slots": [
+        {
+         "size": 5
+        }
+       ],
+       "note": "type a fraction, like $3/5$"
+      }
+     },
+     {
+      "label": "(b)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Rewrite in radical form."
+       },
+       {
+        "t": "math",
+        "tex": "7^{3/4}",
+        "display": false
+       }
+      ],
+      "answer": {
+       "kind": "fill",
+       "template": "It equals the ⟨0⟩th root of $7$ raised to the power ⟨1⟩.",
+       "slots": [
+        {
+         "size": 4
+        },
+        {
+         "size": 4
+        }
+       ]
+      }
+     }
+    ]
+   },
+   "key": "(a) 2/3; (b) 4th root, power 3",
+   "why": "The index of the radical becomes the denominator of the exponent, and the power under the radical becomes the numerator."
+  },
+  {
+   "id": "1.5/O2/q2",
+   "obj": "1.5/O2",
+   "level": "core",
+   "kind": "compute",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Evaluate each expression. An odd root of a negative number is a real number."
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "label": "$16^{3/4}$",
+      "size": 6
+     },
+     {
+      "label": "$(-27)^{1/3}$",
+      "size": 6
+     }
+    ],
+    "note": "type integers"
+   },
+   "key": "8; -3",
+   "why": "Take the root first: the fourth root of $16$ is $2$ and $2^{3}=8$, while the cube root of $-27$ is $-3$ because $(-3)^{3}=-27$."
+  },
+  {
+   "id": "1.5/O2/q3",
+   "obj": "1.5/O2",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Evaluate."
+    },
+    {
+     "t": "math",
+     "tex": "64^{-2/3}",
+     "display": true
+    },
+    {
+     "t": "text",
+     "v": "Choose the correct answer."
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "multi": false,
+    "options": [
+     [
+      {
+       "t": "math",
+       "tex": "-16",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "\\frac{1}{4}",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "\\frac{1}{16}",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "\\frac{1}{512}",
+       "display": false
+      }
+     ]
+    ]
+   },
+   "key": "2",
+   "diag": {
+    "0": "reads the negative exponent as a minus sign on the answer instead of as a reciprocal",
+    "1": "takes the cube root but never applies the power $2$",
+    "3": "swaps the numerator and the denominator of the exponent, computing $\\sqrt{64^{3}}$"
+   },
+   "why": "The negative sign inverts, the $3$ takes the cube root, and the $2$ squares: $1/(4^{2})=1/16$."
+  },
+  {
+   "id": "1.5/O2/q4",
+   "obj": "1.5/O2",
+   "level": "stretch",
+   "kind": "fill",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Rewrite the radical as a rational exponent, then use the rules for exponents."
+    },
+    {
+     "t": "math",
+     "tex": "\\frac{\\sqrt[3]{x^{2}}\\cdot x^{1/3}}{x^{-1}}",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "fill",
+    "template": "The expression simplifies to $x$ raised to the power ⟨0⟩.",
+    "slots": [
+     {
+      "size": 4
+     }
+    ]
+   },
+   "key": "2",
+   "why": "The radical is $x^{2/3}$, so the numerator is $x^{2/3+1/3}=x^{1}$, and dividing by $x^{-1}$ adds another $1$ to the exponent."
+  }
+ ]
 }

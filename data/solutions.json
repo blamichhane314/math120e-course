@@ -1,8 +1,230 @@
 {
-  "_note": "Hand-authored solution steps, keyed by section|position. Each step is the complete expression as it stands, with clickable pieces marked \\C{id}{...} and each id saying what it becomes. Nothing is derived: the player substitutes and advances. A value that would sit against a digit is authored WITH its parentheses.",
+  "_note": "Hand-authored solution steps. Nothing here is derived. Each step is the complete expression as it stands, with clickable pieces marked \\C{id}{...} and each id saying what it becomes; the player substitutes and advances. A value that would sit against a digit is authored WITH its parentheses. Keys are practice-question ids; a question with parts holds a list, one chain per part. The two 1.1|nn keys are older homework problems kept as extra examples. _watch groups, by objective, the examples the watch mode offers there.",
+
+  "_watch": {
+    "1.1/O2": ["1.1/O2/q1", "1.1/O2/q2", "1.1/O2/q3", "1.1/O2/q4"],
+    "1.1/O3": ["1.1/O3/q1", "1.1/O3/q2", "1.1/O3/q3", "1.1/O3/q4", "1.1|13", "1.1|12"],
+    "1.1/O4": ["1.1/O4/q4"],
+    "1.1/O6": ["1.1/O6/q1", "1.1/O6/q3", "1.1/O6/q4"]
+  },
+
+  "1.1/O2/q1": {
+    "label": "3x − 7",
+    "given": ["x = -2"],
+    "steps": [
+      { "tex": "3\\C{a}{x}-7",
+        "clicks": { "a": { "to": "(-2)", "kind": "eval.substitute" } } },
+      { "tex": "\\C{a}{3(-2)}-7",
+        "clicks": { "a": { "to": "-6", "kind": "mul.implicit" } } },
+      { "tex": "\\C{a}{-6-7}",
+        "clicks": { "a": { "to": "-13", "kind": "sub.plain" } } },
+      { "tex": "-13", "clicks": {} }
+    ]
+  },
+
+  "1.1/O2/q2": {
+    "label": "x² − 4y",
+    "given": ["x = -3", "y = 2"],
+    "steps": [
+      { "tex": "\\C{a}{x}^{2}-4\\C{b}{y}",
+        "clicks": {
+          "a": { "to": "(-3)", "kind": "eval.substitute" },
+          "b": { "to": "(2)",  "kind": "eval.substitute" } } },
+      { "tex": "\\C{a}{(-3)^{2}}-\\C{b}{4(2)}",
+        "clicks": {
+          "a": { "to": "9", "kind": "pow.negative-base" },
+          "b": { "to": "8", "kind": "mul.implicit" } } },
+      { "tex": "\\C{a}{9-8}",
+        "clicks": { "a": { "to": "1", "kind": "sub.plain" } } },
+      { "tex": "1", "clicks": {} }
+    ]
+  },
+
+  "1.1/O2/q3": {
+    "label": "(a − b) / 2",
+    "given": ["a = 6", "b = -4"],
+    "steps": [
+      { "tex": "\\frac{\\C{a}{a}-\\C{b}{b}}{2}",
+        "clicks": {
+          "a": { "to": "6",    "kind": "eval.substitute" },
+          "b": { "to": "(-4)", "kind": "eval.substitute" } } },
+      { "tex": "\\frac{\\C{a}{6-(-4)}}{2}",
+        "clicks": { "a": { "to": "10", "kind": "sub.negative" } } },
+      { "tex": "\\C{a}{\\frac{10}{2}}",
+        "clicks": { "a": { "to": "5", "kind": "frac.divide" } } },
+      { "tex": "5", "clicks": {} }
+    ]
+  },
+
+  "1.1/O2/q4": [
+    { "label": "b²−4ac  (a)",
+      "given": ["a = 2", "b = -6", "c = 4"],
+      "steps": [
+        { "tex": "\\C{p}{b}^{2}-4\\C{q}{a}\\C{r}{c}",
+          "clicks": {
+            "p": { "to": "(-6)", "kind": "eval.substitute" },
+            "q": { "to": "(2)",  "kind": "eval.substitute" },
+            "r": { "to": "(4)",  "kind": "eval.substitute" } } },
+        { "tex": "\\C{p}{(-6)^{2}}-\\C{q}{4(2)(4)}",
+          "clicks": {
+            "p": { "to": "36", "kind": "pow.negative-base" },
+            "q": { "to": "32", "kind": "mul.implicit" } } },
+        { "tex": "\\C{p}{36-32}",
+          "clicks": { "p": { "to": "4", "kind": "sub.plain" } } },
+        { "tex": "4", "clicks": {} }
+      ] },
+    { "label": "b²−4ac  (b)",
+      "given": ["a = 1", "b = 2", "c = 5"],
+      "steps": [
+        { "tex": "\\C{p}{b}^{2}-4\\C{q}{a}\\C{r}{c}",
+          "clicks": {
+            "p": { "to": "(2)", "kind": "eval.substitute" },
+            "q": { "to": "(1)", "kind": "eval.substitute" },
+            "r": { "to": "(5)", "kind": "eval.substitute" } } },
+        { "tex": "\\C{p}{(2)^{2}}-\\C{q}{4(1)(5)}",
+          "clicks": {
+            "p": { "to": "4",  "kind": "pow.plain" },
+            "q": { "to": "20", "kind": "mul.implicit" } } },
+        { "tex": "\\C{p}{4-20}",
+          "clicks": { "p": { "to": "-16", "kind": "sub.plain" } } },
+        { "tex": "-16", "clicks": {} }
+      ] }
+  ],
+
+  "1.1/O3/q1": {
+    "label": "powers first",
+    "steps": [
+      { "tex": "20-4\\cdot\\C{a}{3^{2}}",
+        "clicks": { "a": { "to": "9", "kind": "pow.plain" } } },
+      { "tex": "20-\\C{a}{4\\cdot 9}",
+        "clicks": { "a": { "to": "36", "kind": "mul.plain" } } },
+      { "tex": "\\C{a}{20-36}",
+        "clicks": { "a": { "to": "-16", "kind": "sub.plain" } } },
+      { "tex": "-16", "clicks": {} }
+    ]
+  },
+
+  "1.1/O3/q2": {
+    "label": "a minus outside",
+    "steps": [
+      { "tex": "-\\C{a}{3^{4}}",
+        "clicks": { "a": { "to": "81", "kind": "pow.minus-outside" } } },
+      { "tex": "-81", "clicks": {} }
+    ]
+  },
+
+  "1.1/O3/q3": {
+    "label": "a fraction bar",
+    "steps": [
+      { "tex": "\\frac{5+\\C{a}{3\\cdot 5}}{\\C{b}{2^{3}}-4}",
+        "clicks": {
+          "a": { "to": "15", "kind": "mul.plain" },
+          "b": { "to": "8",  "kind": "pow.plain" } } },
+      { "tex": "\\frac{\\C{a}{5+15}}{\\C{b}{8-4}}",
+        "clicks": {
+          "a": { "to": "20", "kind": "add.plain" },
+          "b": { "to": "4",  "kind": "sub.plain" } } },
+      { "tex": "\\C{a}{\\frac{20}{4}}",
+        "clicks": { "a": { "to": "5", "kind": "frac.divide" } } },
+      { "tex": "5", "clicks": {} }
+    ]
+  },
+
+  "1.1/O3/q4": {
+    "label": "brackets inside",
+    "steps": [
+      { "tex": "\\frac{2\\left[9-\\C{a}{(3-7)}\\right]}{-\\C{b}{2^{2}}+17}",
+        "clicks": {
+          "a": { "to": "(-4)", "kind": "sub.plain" },
+          "b": { "to": "4",    "kind": "pow.minus-outside" } } },
+      { "tex": "\\frac{2\\left[\\C{a}{9-(-4)}\\right]}{\\C{b}{-4+17}}",
+        "clicks": {
+          "a": { "to": "13", "kind": "sub.negative" },
+          "b": { "to": "13", "kind": "add.plain" } } },
+      { "tex": "\\frac{\\C{a}{2\\left[13\\right]}}{13}",
+        "clicks": { "a": { "to": "26", "kind": "mul.implicit" } } },
+      { "tex": "\\C{a}{\\frac{26}{13}}",
+        "clicks": { "a": { "to": "2", "kind": "frac.divide" } } },
+      { "tex": "2", "clicks": {} }
+    ]
+  },
+
+  "1.1/O4/q4": [
+    { "label": "−3²",
+      "steps": [
+        { "tex": "-\\C{a}{3^{2}}",
+          "clicks": { "a": { "to": "9", "kind": "pow.minus-outside" } } },
+        { "tex": "-9", "clicks": {} }
+      ] },
+    { "label": "(−3)²",
+      "steps": [
+        { "tex": "\\C{a}{(-3)^{2}}",
+          "clicks": { "a": { "to": "9", "kind": "pow.negative-base" } } },
+        { "tex": "9", "clicks": {} }
+      ] }
+  ],
+
+  "1.1/O6/q1": {
+    "label": "|3 − 7|",
+    "steps": [
+      { "tex": "\\left|\\C{a}{3-7}\\right|",
+        "clicks": { "a": { "to": "-4", "kind": "sub.plain" } } },
+      { "tex": "\\C{a}{\\left|-4\\right|}",
+        "clicks": { "a": { "to": "4", "kind": "abs.value" } } },
+      { "tex": "4", "clicks": {} }
+    ]
+  },
+
+  "1.1/O6/q3": {
+    "label": "−|−5| + |−2|",
+    "steps": [
+      { "tex": "-\\C{a}{\\left|-5\\right|}+\\C{b}{\\left|-2\\right|}",
+        "clicks": {
+          "a": { "to": "5", "kind": "abs.value" },
+          "b": { "to": "2", "kind": "abs.value" } } },
+      { "tex": "\\C{a}{-5+2}",
+        "clicks": { "a": { "to": "-3", "kind": "add.plain" } } },
+      { "tex": "-3", "clicks": {} }
+    ]
+  },
+
+  "1.1/O6/q4": {
+    "label": "distance",
+    "steps": [
+      { "tex": "\\left|\\C{a}{-3-4}\\right|",
+        "clicks": { "a": { "to": "-7", "kind": "sub.plain" } } },
+      { "tex": "\\C{a}{\\left|-7\\right|}",
+        "clicks": { "a": { "to": "7", "kind": "abs.value" } } },
+      { "tex": "7", "clicks": {} }
+    ]
+  },
+
+  "1.1|13": {
+    "pid": "1.1.28",
+    "label": "roots",
+    "steps": [
+      { "tex": "\\frac{\\C{a}{8^{2}}-(4)\\C{b}{\\sqrt{49}}}{\\sqrt{\\C{c}{8^{2}}+17}}",
+        "clicks": {
+          "a": { "to": "64",  "kind": "pow.plain" },
+          "b": { "to": "(7)", "kind": "sqrt.square" },
+          "c": { "to": "64",  "kind": "pow.plain" } } },
+      { "tex": "\\frac{64-\\C{a}{(4)(7)}}{\\sqrt{\\C{b}{64+17}}}",
+        "clicks": {
+          "a": { "to": "28", "kind": "mul.implicit" },
+          "b": { "to": "81", "kind": "add.plain" } } },
+      { "tex": "\\frac{\\C{a}{64-28}}{\\C{b}{\\sqrt{81}}}",
+        "clicks": {
+          "a": { "to": "36", "kind": "sub.plain" },
+          "b": { "to": "9",  "kind": "sqrt.square" } } },
+      { "tex": "\\C{a}{\\frac{36}{9}}",
+        "clicks": { "a": { "to": "4", "kind": "frac.divide" } } },
+      { "tex": "4", "clicks": {} }
+    ]
+  },
 
   "1.1|12": {
     "pid": "1.1.27",
+    "label": "several fractions",
     "steps": [
       { "tex": "\\frac{\\C{a}{1(4)}+\\frac{7}{(-2)}+\\frac{\\C{b}{-(1)}}{\\left(-\\C{c}{\\sqrt{4}}\\right)}}{\\C{d}{\\sqrt{25}}-1}",
         "clicks": {
@@ -10,49 +232,17 @@
           "b": { "to": "-1", "kind": "paren.drop" },
           "c": { "to": "2",  "kind": "sqrt.square" },
           "d": { "to": "5",  "kind": "sqrt.square" } } },
-
-      { "tex": "\\frac{4+\\C{a}{\\frac{7}{(-2)}}+\\C{b}{\\frac{-1}{(-2)}}}{\\C{c}{5-1}}",
+      { "tex": "\\frac{4\\C{a}{+\\frac{7}{(-2)}}+\\C{b}{\\frac{-1}{(-2)}}}{\\C{c}{5-1}}",
         "clicks": {
-          "a": { "to": "-\\frac{7}{2}", "kind": "frac.divide" },
+          "a": { "to": "-\\frac{7}{2}", "kind": "frac.divide",
+                 "tip": "Seven divided by negative two is negative. Adding a negative is the same as subtracting, so the plus becomes a minus." },
           "b": { "to": "\\frac{1}{2}",  "kind": "frac.negative" },
           "c": { "to": "4",             "kind": "sub.plain" } } },
-
       { "tex": "\\frac{\\C{a}{4-\\frac{7}{2}}+\\frac{1}{2}}{4}",
-        "clicks": {
-          "a": { "to": "\\frac{1}{2}", "kind": "sub.plain" } } },
-
+        "clicks": { "a": { "to": "\\frac{1}{2}", "kind": "sub.plain" } } },
       { "tex": "\\frac{\\C{a}{\\frac{1}{2}+\\frac{1}{2}}}{4}",
-        "clicks": {
-          "a": { "to": "1", "kind": "add.fractions" } } },
-
+        "clicks": { "a": { "to": "1", "kind": "add.fractions" } } },
       { "tex": "\\frac{1}{4}", "clicks": {} }
-    ]
-  },
-
-  "1.1|13": {
-    "pid": "1.1.28",
-    "steps": [
-      { "tex": "\\frac{\\C{a}{8^{2}}-(4)\\C{b}{\\sqrt{49}}}{\\sqrt{\\C{c}{8^{2}}+17}}",
-        "clicks": {
-          "a": { "to": "64",  "kind": "pow.plain" },
-          "b": { "to": "(7)", "kind": "sqrt.square" },
-          "c": { "to": "64",  "kind": "pow.plain" } } },
-
-      { "tex": "\\frac{64-\\C{a}{(4)(7)}}{\\sqrt{\\C{b}{64+17}}}",
-        "clicks": {
-          "a": { "to": "28", "kind": "mul.implicit" },
-          "b": { "to": "81", "kind": "add.plain" } } },
-
-      { "tex": "\\frac{\\C{a}{64-28}}{\\C{b}{\\sqrt{81}}}",
-        "clicks": {
-          "a": { "to": "36", "kind": "sub.plain" },
-          "b": { "to": "9",  "kind": "sqrt.square" } } },
-
-      { "tex": "\\C{a}{\\frac{36}{9}}",
-        "clicks": {
-          "a": { "to": "4", "kind": "frac.divide" } } },
-
-      { "tex": "4", "clicks": {} }
     ]
   }
 }

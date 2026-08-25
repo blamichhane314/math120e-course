@@ -388,15 +388,73 @@ a.pgref:hover{color:var(--accent);border-bottom-color:var(--accent)}
    Not a hue per precedence level — that would be a permanent category
    legend, which is the thing the colour rule exists to prevent, and it
    would need explaining. This teaches itself on the first click.        */
+/* one tool, one objective, on the interactive-resources page */
+.toolgroup{margin:calc(var(--s)*4) 0}
+.toolgroup h3{display:flex;align-items:baseline;justify-content:space-between;
+  gap:calc(var(--s)*2);font-size:15px;font-weight:500;color:var(--ink);
+  padding-bottom:calc(var(--s));margin-bottom:calc(var(--s)*1.5);
+  border-bottom:1px solid var(--line-soft)}
+.tg-sec{font:9px/1 var(--mono);letter-spacing:.16em;color:var(--ink-faint);
+  white-space:nowrap}
+
+/* mode switch and example picker share one quiet strip above the stage */
+.oo-head{display:flex;align-items:center;justify-content:space-between;
+  gap:calc(var(--s)*2);flex-wrap:wrap;margin-bottom:calc(var(--s)*1.25)}
+.oo-modes{display:flex;gap:0;border:1px solid var(--line);border-radius:2px;
+  overflow:hidden}
+.oo-mode{font:9px/1 var(--mono);letter-spacing:.14em;background:none;border:0;
+  color:var(--ink-faint);padding:6px 11px;cursor:pointer;
+  transition:color .14s var(--ease),background .14s var(--ease)}
+.oo-mode+.oo-mode{border-left:1px solid var(--line)}
+.oo-mode:hover{color:var(--ink-soft)}
+.oo-mode.on{color:var(--accent);
+  background:color-mix(in srgb,var(--accent) 11%,transparent)}
+.oo-pickers{display:flex;align-items:center;gap:5px}
+.oo-plabel{font:8.5px/1 var(--mono);letter-spacing:.16em;color:var(--ink-faint);
+  margin-right:2px}
+.oo-pick{font:9px/1 var(--mono);background:none;border:1px solid var(--line);
+  color:var(--ink-faint);padding:5px 8px;border-radius:2px;cursor:pointer;
+  transition:color .14s var(--ease),border-color .14s var(--ease)}
+.oo-pick:hover{color:var(--ink-soft)}
+.oo-pick.on{color:var(--accent);border-color:var(--accent-soft)}
+
 .oo-stage{display:grid;grid-template-columns:minmax(0,1fr) 220px;
   gap:calc(var(--s)*2.5);align-items:start;
   background:var(--paper-lift);border:1px solid var(--line-soft);
   border-radius:3px;padding:calc(var(--s)*2)}
 .oo-bar{grid-column:1/-1;font:9px/1.7 var(--mono);letter-spacing:.18em;
   color:var(--ink-faint)}
-.oo-expr{font-size:17px;overflow-x:auto;padding:calc(var(--s)*1.5) 0;
-  transition:opacity .18s var(--ease)}
-.oo-expr.oo-reflow{opacity:.55}
+/* what the letters stand for, before any of them is replaced */
+.oo-given{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:baseline;
+  gap:calc(var(--s)*2.5);font-size:14px;color:var(--ink-soft);
+  padding-top:calc(var(--s)*.75)}
+.oo-given:empty{display:none}
+.oo-gv{border-radius:2px;padding:1px 3px}
+.oo-gv.oo-cite{animation:ooland .5s var(--ease)}
+
+.oo-expr{position:relative;font-size:17px;overflow-x:auto;
+  padding:calc(var(--s)*1.5) 0}
+/* A mark the pointer is over. KaTeX's boxes make :hover unreliable on
+   fractions and radicals (see markAt in solve.js), so the class is set from
+   the same geometry the click uses, and the cursor is set on the container
+   rather than the mark for the same reason. */
+.oo-expr.oo-pointing{cursor:pointer}
+
+/* the outgoing form of a replaced piece rides here, over the incoming one */
+.oo-ghosts{position:absolute;inset:0;pointer-events:none;overflow:visible}
+.oo-ghost{position:absolute;display:inline-block;color:var(--ink-soft);
+  transform-origin:50% 60%;will-change:transform,opacity}
+
+/* transport, watch mode only */
+.oo-transport{display:flex;gap:6px;margin-top:calc(var(--s)*1.25)}
+.oo-transport:empty{display:none}
+.oo-t{font:9px/1 var(--mono);letter-spacing:.14em;background:none;
+  border:1px solid var(--line);color:var(--ink-faint);padding:6px 11px;
+  border-radius:2px;cursor:pointer;min-width:76px;
+  transition:color .14s var(--ease),border-color .14s var(--ease)}
+.oo-t:hover{color:var(--accent);border-color:var(--accent-soft)}
+/* in watch mode nothing is the student's to press, so nothing invites it */
+.oo-root.is-watch .oo-c{cursor:default}
 
 /* a node the learner may act on */
 .oo-node{border-radius:2px;padding:1px 2px;transition:background .14s var(--ease),
@@ -405,10 +463,13 @@ a.pgref:hover{color:var(--accent);border-bottom-color:var(--accent)}
   box-shadow:0 0 0 1px color-mix(in srgb,var(--accent) 34%,transparent)}
 .oo-live:hover{background:color-mix(in srgb,var(--accent) 26%,transparent)}
 .oo-cleared{background:none;box-shadow:none;color:var(--ink)}
-.oo-just{animation:ooland .42s var(--ease)}
+/* the flash a substituted piece lands with. Background only — the FLIP that
+   slides the rest of the expression is already animating transform on this
+   same element, and two owners of one property is a fight, not an effect. */
+.oo-land{animation:ooland .5s var(--ease)}
 @keyframes ooland{
-  0%{background:color-mix(in srgb,var(--accent) 42%,transparent);transform:scale(1.06)}
-  100%{background:none;transform:scale(1)} }
+  from{background:color-mix(in srgb,var(--accent) 42%,transparent)}
+  to{background:none} }
 
 /* a wrong reach fails visibly: the operation shudders and the argument that
    is still an expression — the actual reason — lights up instead */
@@ -439,7 +500,8 @@ a.pgref:hover{color:var(--accent);border-bottom-color:var(--accent)}
   box-shadow .14s var(--ease)}
 .oo-c.oo-live{cursor:pointer;background:color-mix(in srgb,var(--accent) 15%,transparent);
   box-shadow:0 0 0 1px color-mix(in srgb,var(--accent) 34%,transparent)}
-.oo-c.oo-live:hover{background:color-mix(in srgb,var(--accent) 26%,transparent)}
+.oo-c.oo-live:hover,
+.oo-c.oo-live.oo-hover{background:color-mix(in srgb,var(--accent) 26%,transparent)}
 .oo-c.oo-cleared{background:none;box-shadow:none}
 
 /* ══ neighbourhood view ══════════════════════════════════════════
@@ -1137,3 +1199,125 @@ body::before{background:radial-gradient(120% 90% at 50% 0%,
 /* the answer keeps its shape so the question reads honestly, and does nothing */
 .sheet-qb .inert{opacity:.72;pointer-events:none}
 .sheet-qb .inert input,.sheet-qb .inert select{cursor:default}
+
+/* ══ reflection prototype ═══════════════════════════════════════ */
+.rf-lede{font-size:16px;line-height:1.6;color:var(--ink-soft);max-width:56ch;
+  margin-bottom:calc(var(--s)*5)}
+.rf-card{position:relative;border:1px solid var(--line);border-radius:3px;
+  background:var(--paper-lift);padding:calc(var(--s)*3) calc(var(--s)*3.5);
+  margin-bottom:calc(var(--s)*3);max-width:62rem}
+.rf-num{position:absolute;left:calc(var(--s)*-4);top:calc(var(--s)*3);
+  font:10px var(--mono);color:var(--ink-faint)}
+@media (max-width:900px){.rf-num{position:static;margin-bottom:4px}}
+.rf-tag{display:flex;gap:calc(var(--s)*1.5);align-items:baseline;flex-wrap:wrap;
+  font:9.5px/1.8 var(--mono);letter-spacing:.14em;color:var(--ink-faint);
+  padding-bottom:calc(var(--s)*1.25);border-bottom:1px solid var(--line-soft);
+  margin-bottom:calc(var(--s)*2)}
+.rf-kind{color:var(--accent)}
+.rf-obj{margin-left:auto}
+.rf-stem{font-size:17px;line-height:1.6;margin-bottom:calc(var(--s)*1.5)}
+.rf-ask{font-size:16px;color:var(--ink);margin:calc(var(--s)*1.5) 0}
+.rf-note{font-size:13.5px;color:var(--ink-soft);margin-bottom:calc(var(--s)*1.5)}
+
+/* the claim, and the gate it opens */
+.rf-rate{margin:calc(var(--s)*1.5) 0 calc(var(--s)*2)}
+.rf-rate-q{font:9.5px var(--mono);letter-spacing:.14em;color:var(--ink-faint);
+  margin-bottom:calc(var(--s))}
+.rf-rate-row{display:flex;gap:calc(var(--s));flex-wrap:wrap}
+.rf-claim{font-size:13px;background:none;border:1px solid var(--line);
+  color:var(--ink-soft);padding:7px 12px;border-radius:2px;cursor:pointer;
+  transition:color .14s var(--ease),border-color .14s var(--ease)}
+.rf-claim:hover{color:var(--accent);border-color:var(--accent-soft)}
+.rf-claim.on{color:var(--accent);border-color:var(--accent);background:var(--accent-tint)}
+.rf-veil{font:9.5px var(--mono);letter-spacing:.12em;color:var(--ink-faint);
+  padding:calc(var(--s)*1.5) 0}
+.rf-gate .rf-opts,.rf-gate .rf-grid-t{display:none}
+.rf-gate.open .rf-opts,.rf-gate.open .rf-grid-t{display:block}
+.rf-gate.open .rf-grid-t{display:table}
+.rf-gate.open .rf-veil{display:none}
+
+.rf-opts{margin-top:calc(var(--s))}
+.rf-opt{display:flex;gap:calc(var(--s)*1.25);align-items:baseline;
+  padding:8px 10px;border:1px solid transparent;border-radius:2px;cursor:pointer}
+.rf-opt:hover{background:var(--paper)}
+.rf-opt:has(input:checked){border-color:var(--accent);background:var(--accent-tint)}
+.rf-opt input{accent-color:var(--accent)}
+.rf-k{font:10px var(--mono);color:var(--ink-faint);min-width:14px}
+.rf-v{font-size:16px}
+
+.rf-said{margin-top:calc(var(--s)*2);padding:calc(var(--s)*1.5) calc(var(--s)*2);
+  border-left:2px solid var(--accent);background:var(--paper);
+  font-size:14.5px;line-height:1.6;color:var(--ink-soft)}
+.rf-said.ok{border-left-color:var(--accent-soft)}
+.rf-said div+div{margin-top:6px}
+.rf-point{margin-top:calc(var(--s));font-size:14px;color:var(--ink-faint);
+  line-height:1.6}
+
+/* method grid */
+.rf-grid-t{border-collapse:collapse;margin-top:calc(var(--s))}
+.rf-grid-t th{font:9.5px var(--mono);letter-spacing:.12em;color:var(--ink-faint);
+  font-weight:400;padding:0 calc(var(--s)*2) calc(var(--s)) ;text-align:center}
+.rf-grid-t td{padding:9px calc(var(--s)*2);text-align:center;
+  border-top:1px solid var(--line-soft)}
+.rf-rowq{text-align:left!important;font-size:16px}
+.rf-grid-t input{accent-color:var(--accent)}
+
+/* figures */
+.rf-fig{margin:calc(var(--s)*2) 0}
+.rf-plot{display:block;width:100%;max-width:34rem;height:auto}
+.rf-grid{stroke:var(--line-soft);stroke-width:.5}
+.rf-axis{stroke:var(--ink-faint);stroke-width:1}
+.rf-curve{fill:none;stroke:var(--accent);stroke-width:2}
+.rf-root{fill:var(--accent)}
+.rf-rootlab{fill:var(--ink-soft);font:10px var(--mono);text-anchor:middle}
+.rf-ctl{display:flex;align-items:center;gap:calc(var(--s)*1.5);
+  margin-top:calc(var(--s))}
+.rf-ctl-l{font:11px var(--mono);color:var(--ink-faint);min-width:1.2rem}
+.rf-ctl input[type=range]{flex:1;max-width:22rem;accent-color:var(--accent)}
+.rf-ctl-v{font:12px var(--mono);color:var(--ink-soft);min-width:8rem}
+.rf-disc{margin-left:calc(var(--s));color:var(--ink-faint)}
+.rf-form{margin-top:calc(var(--s))}
+.rf-eq{margin-top:calc(var(--s)*1.5);font-size:18px}
+.rf-fac{margin-left:calc(var(--s));color:var(--accent)}
+.rf-after{margin-top:calc(var(--s)*2);padding-top:calc(var(--s)*2);
+  border-top:1px solid var(--line-soft)}
+
+/* tell, contrast, ladder */
+.rf-tell-t{font:9.5px var(--mono);letter-spacing:.16em;color:var(--accent);
+  margin-bottom:calc(var(--s))}
+.rf-tell-b{font-size:17px;line-height:1.65}
+.rf-contrast{display:grid;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));
+  gap:calc(var(--s)*3);margin:calc(var(--s)*1.5) 0}
+.rf-side{padding-left:calc(var(--s)*2);border-left:2px solid var(--line)}
+.rf-side-x{font-size:24px}
+.rf-side-v{font-size:18px;color:var(--accent);margin-top:6px}
+.rf-side-l{font-size:13.5px;color:var(--ink-soft);margin-top:6px;line-height:1.5}
+.rf-part{display:flex;gap:calc(var(--s)*1.5);margin-bottom:calc(var(--s)*2)}
+.rf-part-l{font:11px var(--mono);color:var(--ink-faint);padding-top:3px}
+.rf-part-b{flex:1;font-size:16px}
+.rf-slots{display:flex;gap:calc(var(--s));align-items:center;margin-top:calc(var(--s))}
+.rf-in{font:14px var(--mono);color:var(--ink);background:var(--paper);
+  border:0;border-bottom:1px solid var(--ink-faint);padding:4px 6px}
+.rf-in:focus{outline:0;border-bottom-color:var(--accent)}
+.rf-reveal{font:9.5px var(--mono);letter-spacing:.12em;background:none;
+  border:1px solid var(--line);color:var(--ink-soft);padding:5px 9px;
+  border-radius:2px;cursor:pointer}
+.rf-reveal:hover{color:var(--accent);border-color:var(--accent)}
+.rf-ans{font:14px var(--mono);color:var(--accent)}
+
+/* the 2x2 */
+.rf-tally{margin-top:calc(var(--s)*6);padding-top:calc(var(--s)*3);
+  border-top:1px solid var(--line);max-width:62rem}
+.rf-2x2{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));
+  gap:calc(var(--s)*2);margin-top:calc(var(--s)*2)}
+.rf-cell{padding:calc(var(--s)*2);border:1px solid var(--line);border-radius:3px;
+  background:var(--paper-lift)}
+.rf-cell.over{border-color:var(--accent);background:var(--accent-tint)}
+.rf-cell-n{display:block;font:28px/1 var(--mono);color:var(--ink)}
+.rf-cell.over .rf-cell-n{color:var(--accent)}
+.rf-cell-l{display:block;font:9.5px var(--mono);letter-spacing:.14em;
+  color:var(--ink-faint);margin-top:6px}
+.rf-cell-f{display:block;font-size:12.5px;color:var(--ink-soft);margin-top:8px;
+  line-height:1.5}
+.rf-tally-note{margin-top:calc(var(--s)*2);font:10px var(--mono);
+  letter-spacing:.1em;color:var(--ink-faint)}

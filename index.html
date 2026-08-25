@@ -3,7 +3,7 @@
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <title>MATH 120E</title>
-<link rel=stylesheet href="styles.css?v=30">
+<link rel=stylesheet href="styles.css?v=36">
 <script>try{document.documentElement.dataset.theme=localStorage.getItem("m120.theme")||"ink"}catch(e){}</script>
 <body class=no-rail>
 <div id=read><div id=doc>
@@ -86,6 +86,16 @@
     </a>
   </div>
 
+  <h2>interactive resources</h2>
+  <div class=cards>
+    <a class=card href="tools.html">
+      <span class=ct>Working an expression step by step</span>
+      <span class=cd>An expression worked one operation at a time, either by
+      clicking each one yourself or by watching the steps run.</span>
+      <span class=cm id=m-tools></span>
+    </a>
+  </div>
+
   <h2>help outside class</h2>
   <dl class="info wide">
     <dt>Math Center</dt><dd>Free walk-in tutoring. Pennington Student
@@ -124,6 +134,14 @@ for (const f of ['q_a','q_b','q_c']) {
 document.getElementById('m-conn').textContent = nObj + ' objectives';
 document.getElementById('m-hw').textContent =
   d.sections.length + ' sections · ' + nQ + ' practice questions';
+
+try {
+  const sol = await (await fetch('data/solutions.json', {cache:'no-store'})).json();
+  const n = Object.entries(sol)
+    .filter(([k]) => !k.startsWith('_'))
+    .reduce((a, [, v]) => a + [].concat(v).length, 0);
+  document.getElementById('m-tools').textContent = n + ' worked expressions';
+} catch {}
 
 const EXAM = {'Week 4':'Exam 1 · 1.1–1.7, 2.4','Week 7':'Exam 2 · 2.1–4.4',
   'Week 10':'Exam 3 · 5.1–8.3','Week 13':'Exam 4 · 8.4–9.4','Week 16':'Final exam'};

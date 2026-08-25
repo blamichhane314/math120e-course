@@ -4,7 +4,7 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <title>MATH 120E — homework</title>
 <link rel=stylesheet href="vendor/katex/katex.min.css">
-<link rel=stylesheet href="styles.css?v=30">
+<link rel=stylesheet href="styles.css?v=36">
 <script>try{document.documentElement.dataset.theme=localStorage.getItem("m120.theme")||"ink"}catch(e){}</script>
 <body class=hw>
 <div id=rail></div>
@@ -15,6 +15,7 @@
 <script type=module>
 import { renderBlocks, inline } from './js/blocks.js?v=5';
 import { renderAnswer } from './js/answers.js?v=6';
+import { mountSolve } from './js/solve.js?v=5';
 
 const ready = () => new Promise(r => window.katex ? r() : addEventListener('load', r));
 await ready();
@@ -31,6 +32,14 @@ for (const f of ['q_a','q_b','q_c']) {
 // a section with no entry simply shows nothing.
 let FACTS = {};
 try { FACTS = await (await fetch('data/facts.json', {cache:'no-store'})).json(); } catch {}
+// Hand-authored solution steps for the order-of-operations tool. A question
+// with no entry simply does not offer it.
+let SOL = {};
+try { SOL = await (await fetch('data/solutions.json', {cache:'no-store'})).json(); } catch {}
+// Watching is grouped by objective: the examples worth seeing beside a
+// question are the other ways the same skill lands, not the whole section.
+const watchFor = (obj) =>
+  ((SOL._watch || {})[obj] || []).flatMap(k => [].concat(SOL[k] || [])).filter(Boolean);
 
 document.body.classList.add('no-margin');
 const rail = document.getElementById('rail');
@@ -79,7 +88,7 @@ function renderSection(id, idx) {
     '<h1><span class=num>' + s.id + '</span>' + esc(s.title) + '</h1>' +
     '<div class=meta>' + esc((s.week || '').toLowerCase()) +
       (s.dates ? ' · ' + esc(s.dates.toLowerCase()) : '') +
-      ' · ' + (s.track === 'E' ? 'remedial' : 'math 120') +
+      ' · ' + (s.track === 'E' ? 'math 120e' : 'math 120') +
       ' · ' + qs.length + ' practice question' + (qs.length === 1 ? '' : 's') +
       '</div>' +
     '<h2>objectives</h2><div id=objmap>' +
@@ -178,6 +187,18 @@ function paint() {
     (q.key !== undefined ? '<span class=k>answer: ' + inline(String(q.key)) + '</span>' : '');
   card.appendChild(why);
   document.getElementById('sshow').onclick = () => { why.hidden = !why.hidden; };
+
+  // The order-of-operations tool, where this question has authored steps.
+  // Clicking works this question; watching runs the whole set of examples.
+  const own = SOL[q.id];
+  if (own) {
+    const tool = document.createElement('div');
+    tool.className = 'pr-tool';
+    card.appendChild(tool);
+    try {
+      mountSolve(tool, { click: own, watch: watchFor(q.obj) }, { mode: 'click' });
+    } catch (e) { tool.remove(); }
+  }
 
   document.getElementById('sprev').onclick = () => step(at - 1);
   document.getElementById('snext').onclick = () => step(at + 1);

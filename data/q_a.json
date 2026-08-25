@@ -1,2042 +1,2222 @@
 {
-  "1.1": [
+ "1.1": [
+  {
+   "id": "1.1/O1/q1",
+   "obj": "1.1/O1",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
     {
-      "id": "1.1/O1/q1",
-      "obj": "1.1/O1",
-      "level": "core",
-      "kind": "choice",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Name the property that makes this statement true."
-        },
-        {
-          "t": "math",
-          "tex": "7+(3+5)=(7+3)+5",
-          "display": true
-        }
-      ],
-      "answer": {
-        "kind": "choice",
-        "options": [
-          [
-            {
-              "t": "text",
-              "v": "Commutative property of addition"
-            }
-          ],
-          [
-            {
-              "t": "text",
-              "v": "Associative property of addition"
-            }
-          ],
-          [
-            {
-              "t": "text",
-              "v": "Distributive property"
-            }
-          ],
-          [
-            {
-              "t": "text",
-              "v": "Additive identity property"
-            }
-          ]
-        ],
-        "multi": false
-      },
-      "key": "1",
-      "diag": {
-        "0": "sees two additions and reaches for the other addition property; the order of the numbers never changed, only the grouping",
-        "2": "no multiplication appears, so nothing is being distributed over a sum",
-        "3": "the identity property is about adding zero, and no zero appears here"
-      },
-      "why": "Only the parentheses moved, so the same three numbers were regrouped rather than reordered."
+     "t": "text",
+     "v": "Name the property that makes this statement true."
     },
     {
-      "id": "1.1/O1/q2",
-      "obj": "1.1/O1",
-      "level": "core",
-      "kind": "select",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Complete the sentence naming the property shown."
-        },
-        {
-          "t": "math",
-          "tex": "5\\cdot(2+t)=5\\cdot 2+5\\cdot t",
-          "display": true
-        }
-      ],
-      "answer": {
-        "kind": "select",
-        "template": "This is the ⟨0⟩ property.",
-        "slots": [
-          {
-            "options": [
-              "commutative",
-              "associative",
-              "distributive",
-              "identity"
-            ]
-          }
-        ]
-      },
-      "key": "distributive",
-      "why": "A single factor outside a sum is spread across each term of that sum."
-    },
-    {
-      "id": "1.1/O1/q3",
-      "obj": "1.1/O1",
-      "level": "core",
-      "kind": "fill",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Fill in each blank so that the statement is true."
-        }
-      ],
-      "answer": {
-        "kind": "fill",
-        "template": "$12+⟨0⟩=0$ and $12\\cdot ⟨1⟩=1$",
-        "slots": [
-          {
-            "size": 5
-          },
-          {
-            "size": 5,
-            "numeric": false
-          }
-        ],
-        "note": "the second blank is a fraction; type it as 1/12"
-      },
-      "key": "-12, 1/12",
-      "why": "The additive inverse undoes a number to reach 0; the multiplicative inverse is its reciprocal, which reaches 1."
-    },
-    {
-      "id": "1.1/O1/q4",
-      "obj": "1.1/O1",
-      "level": "stretch",
-      "kind": "multipart",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Addition of real numbers is commutative. This question asks whether subtraction is too."
-        }
-      ],
-      "answer": {
-        "kind": "multipart",
-        "parts": [
-          {
-            "label": "(a)",
-            "stem": [
-              {
-                "t": "text",
-                "v": "Evaluate each difference."
-              }
-            ],
-            "answer": {
-              "kind": "compute",
-              "slots": [
-                {
-                  "label": "$9-4$",
-                  "size": 5
-                },
-                {
-                  "label": "$4-9$",
-                  "size": 5
-                }
-              ]
-            }
-          },
-          {
-            "label": "(b)",
-            "stem": [
-              {
-                "t": "text",
-                "v": "Is subtraction of real numbers commutative?"
-              }
-            ],
-            "answer": {
-              "kind": "choice",
-              "options": [
-                [
-                  {
-                    "t": "text",
-                    "v": "Yes"
-                  }
-                ],
-                [
-                  {
-                    "t": "text",
-                    "v": "No"
-                  }
-                ]
-              ],
-              "multi": false
-            }
-          }
-        ]
-      },
-      "key": "5, -5; No",
-      "why": "A property has to hold for every pair of numbers, and one pair giving two different answers is enough to rule it out."
-    },
-    {
-      "id": "1.1/O2/q1",
-      "obj": "1.1/O2",
-      "level": "core",
-      "kind": "compute",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Evaluate the expression when $x=-2$."
-        },
-        {
-          "t": "math",
-          "tex": "3x-7",
-          "display": true
-        }
-      ],
-      "answer": {
-        "kind": "compute",
-        "slots": [
-          {
-            "size": 5
-          }
-        ],
-        "note": "type an integer"
-      },
-      "key": "-13",
-      "why": "Substituting gives $3(-2)-7$, and the product $-6$ is formed before the subtraction."
-    },
-    {
-      "id": "1.1/O2/q2",
-      "obj": "1.1/O2",
-      "level": "core",
-      "kind": "fill",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Evaluate the expression when $x=-3$ and $y=2$."
-        },
-        {
-          "t": "math",
-          "tex": "x^{2}-4y",
-          "display": true
-        }
-      ],
-      "answer": {
-        "kind": "fill",
-        "template": "$x^{2}-4y=⟨0⟩$",
-        "slots": [
-          {
-            "size": 5
-          }
-        ],
-        "note": "substitute each variable inside parentheses"
-      },
-      "key": "1",
-      "why": "Written as $(-3)^{2}-4(2)$ the square applies to the whole $-3$, giving $9-8$."
-    },
-    {
-      "id": "1.1/O2/q3",
-      "obj": "1.1/O2",
-      "level": "core",
-      "kind": "choice",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Evaluate the expression when $a=6$ and $b=-4$."
-        },
-        {
-          "t": "math",
-          "tex": "\\frac{a-b}{2}",
-          "display": true
-        }
-      ],
-      "answer": {
-        "kind": "choice",
-        "options": [
-          [
-            {
-              "t": "math",
-              "tex": "1",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "5",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "8",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "10",
-              "display": false
-            }
-          ]
-        ],
-        "multi": false
-      },
-      "key": "1",
-      "diag": {
-        "0": "subtracts 4 rather than subtracting $-4$, so the double negative is lost",
-        "2": "the fraction bar does not group: only $b$ gets divided by 2, leaving $6-\\frac{-4}{2}$",
-        "3": "stops at the numerator $6-(-4)=10$ and never divides"
-      },
-      "why": "The bar groups the whole numerator, so $6-(-4)=10$ is formed first and then halved."
-    },
-    {
-      "id": "1.1/O2/q4",
-      "obj": "1.1/O2",
-      "level": "stretch",
-      "kind": "multipart",
-      "stem": [
-        {
-          "t": "text",
-          "v": "The expression below appears inside the quadratic formula. Evaluate it for each set of values."
-        },
-        {
-          "t": "math",
-          "tex": "b^{2}-4ac",
-          "display": true
-        }
-      ],
-      "answer": {
-        "kind": "multipart",
-        "parts": [
-          {
-            "label": "(a)",
-            "stem": [
-              {
-                "t": "text",
-                "v": "$a=2$, $b=-6$, $c=4$"
-              }
-            ],
-            "answer": {
-              "kind": "compute",
-              "slots": [
-                {
-                  "size": 5
-                }
-              ],
-              "note": "type an integer"
-            }
-          },
-          {
-            "label": "(b)",
-            "stem": [
-              {
-                "t": "text",
-                "v": "$a=1$, $b=2$, $c=5$"
-              }
-            ],
-            "answer": {
-              "kind": "compute",
-              "slots": [
-                {
-                  "size": 5
-                }
-              ],
-              "note": "type an integer"
-            }
-          }
-        ]
-      },
-      "key": "4; -16",
-      "why": "Substituting $b=-6$ inside parentheses makes $(-6)^{2}=36$, and in part (b) subtracting $20$ from $4$ leaves a negative value."
-    },
-    {
-      "id": "1.1/O3/q1",
-      "obj": "1.1/O3",
-      "level": "core",
-      "kind": "compute",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Simplify."
-        },
-        {
-          "t": "math",
-          "tex": "20-4\\cdot 3^{2}",
-          "display": true
-        }
-      ],
-      "answer": {
-        "kind": "compute",
-        "slots": [
-          {
-            "size": 5
-          }
-        ],
-        "note": "type an integer"
-      },
-      "key": "-16",
-      "why": "The exponent acts first, then the multiplication $4\\cdot 9$, and the subtraction happens last."
-    },
-    {
-      "id": "1.1/O3/q2",
-      "obj": "1.1/O3",
-      "level": "core",
-      "kind": "choice",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Simplify."
-        },
-        {
-          "t": "math",
-          "tex": "-3^{4}",
-          "display": true
-        }
-      ],
-      "answer": {
-        "kind": "choice",
-        "options": [
-          [
-            {
-              "t": "math",
-              "tex": "-81",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "-12",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "12",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "81",
-              "display": false
-            }
-          ]
-        ],
-        "multi": false
-      },
-      "key": "0",
-      "diag": {
-        "1": "multiplies the base by the exponent instead of using 3 as a factor four times",
-        "2": "both errors at once: multiplies $3\\cdot 4$ and also takes the minus into the base",
-        "3": "sticky sign: reads $-3^{4}$ as $(-3)^{4}$, attaching the minus to the base"
-      },
-      "why": "Without parentheses the exponent applies only to 3, and the minus is applied to the result at the end."
-    },
-    {
-      "id": "1.1/O3/q3",
-      "obj": "1.1/O3",
-      "level": "core",
-      "kind": "fill",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Simplify."
-        },
-        {
-          "t": "math",
-          "tex": "\\frac{5+3\\cdot 5}{2^{3}-4}",
-          "display": true
-        }
-      ],
-      "answer": {
-        "kind": "fill",
-        "template": "The value is ⟨0⟩.",
-        "slots": [
-          {
-            "size": 5
-          }
-        ],
-        "note": "type an integer"
-      },
-      "key": "5",
-      "why": "A fraction bar groups, so the numerator and the denominator are each simplified in full before dividing."
-    },
-    {
-      "id": "1.1/O3/q4",
-      "obj": "1.1/O3",
-      "level": "stretch",
-      "kind": "compute",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Simplify."
-        },
-        {
-          "t": "math",
-          "tex": "\\frac{2\\left[9-(3-7)\\right]}{-2^{2}+17}",
-          "display": true
-        }
-      ],
-      "answer": {
-        "kind": "compute",
-        "slots": [
-          {
-            "size": 5
-          }
-        ],
-        "note": "type an integer"
-      },
-      "key": "2",
-      "why": "Work the innermost bracket outward in the numerator; in the denominator the exponent applies only to 2, so that term is $-4$."
-    },
-    {
-      "id": "1.1/O4/q1",
-      "obj": "1.1/O4",
-      "level": "core",
-      "kind": "select",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Choose the symbol that makes the statement true."
-        }
-      ],
-      "answer": {
-        "kind": "select",
-        "template": "$-7$ ⟨0⟩ $-3$",
-        "slots": [
-          {
-            "options": [
-              "<",
-              ">",
-              "="
-            ]
-          }
-        ]
-      },
-      "key": "<",
-      "why": "On the number line $-7$ lies further left than $-3$, and further left always means smaller."
-    },
-    {
-      "id": "1.1/O4/q2",
-      "obj": "1.1/O4",
-      "level": "core",
-      "kind": "choice",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Which statement is true?"
-        }
-      ],
-      "answer": {
-        "kind": "choice",
-        "options": [
-          [
-            {
-              "t": "math",
-              "tex": "-9 > -2",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "-\\frac{3}{4} > -\\frac{2}{3}",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "-\\frac{3}{4} < -\\frac{2}{3}",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "-5 < -8",
-              "display": false
-            }
-          ]
-        ],
-        "multi": false
-      },
-      "key": "2",
-      "diag": {
-        "0": "compares sizes and ignores the signs: 9 is bigger than 2, but $-9$ is smaller than $-2$",
-        "1": "same size-only comparison in fraction form, since $\\frac{3}{4}$ exceeds $\\frac{2}{3}$",
-        "3": "reads the number line right to left, so the further-left number is called larger"
-      },
-      "why": "As decimals the two fractions are $-0.75$ and about $-0.67$, and $-0.75$ sits further left."
-    },
-    {
-      "id": "1.1/O4/q3",
-      "obj": "1.1/O4",
-      "level": "core",
-      "kind": "fill",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Arrange these four numbers from least to greatest."
-        },
-        {
-          "t": "math",
-          "tex": "-2.5,\\quad \\frac{5}{2},\\quad -\\frac{7}{3},\\quad 2",
-          "display": true
-        }
-      ],
-      "answer": {
-        "kind": "fill",
-        "template": "⟨0⟩ $<$ ⟨1⟩ $<$ ⟨2⟩ $<$ ⟨3⟩",
-        "slots": [
-          {
-            "size": 6,
-            "numeric": false
-          },
-          {
-            "size": 6,
-            "numeric": false
-          },
-          {
-            "size": 6,
-            "numeric": false
-          },
-          {
-            "size": 6,
-            "numeric": false
-          }
-        ],
-        "note": "write each number in the form it was given, e.g. 5/2"
-      },
-      "key": "-2.5, -7/3, 2, 5/2",
-      "why": "In decimal form the values are $-2.5$, $2.5$, about $-2.33$ and $2$, and the two negatives come first."
-    },
-    {
-      "id": "1.1/O4/q4",
-      "obj": "1.1/O4",
-      "level": "stretch",
-      "kind": "multipart",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Evaluate the two expressions, then compare them."
-        }
-      ],
-      "answer": {
-        "kind": "multipart",
-        "parts": [
-          {
-            "label": "(a)",
-            "stem": [
-              {
-                "t": "math",
-                "tex": "-3^{2}\\quad\\text{and}\\quad(-3)^{2}",
-                "display": true
-              }
-            ],
-            "answer": {
-              "kind": "compute",
-              "slots": [
-                {
-                  "label": "$-3^{2}$",
-                  "size": 5
-                },
-                {
-                  "label": "$(-3)^{2}$",
-                  "size": 5
-                }
-              ]
-            }
-          },
-          {
-            "label": "(b)",
-            "stem": [
-              {
-                "t": "text",
-                "v": "Choose the symbol that makes the comparison true."
-              }
-            ],
-            "answer": {
-              "kind": "select",
-              "template": "$-3^{2}$ ⟨0⟩ $(-3)^{2}$",
-              "slots": [
-                {
-                  "options": [
-                    "<",
-                    ">",
-                    "="
-                  ]
-                }
-              ]
-            }
-          }
-        ]
-      },
-      "key": "-9, 9; <",
-      "why": "The parentheses decide the base, so one expression lands left of zero and the other right of it."
-    },
-    {
-      "id": "1.1/O5/q1",
-      "obj": "1.1/O5",
-      "level": "core",
-      "kind": "choice",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Which graph shows all real numbers $x$ with $x>-2$?"
-        }
-      ],
-      "answer": {
-        "kind": "choice",
-        "options": [
-          [
-            {
-              "t": "numberline",
-              "min": -6,
-              "max": 6,
-              "step": 2,
-              "intervals": [
-                {
-                  "from": -2,
-                  "to": null,
-                  "openFrom": false
-                }
-              ]
-            }
-          ],
-          [
-            {
-              "t": "numberline",
-              "min": -6,
-              "max": 6,
-              "step": 2,
-              "intervals": [
-                {
-                  "from": null,
-                  "to": -2,
-                  "openTo": true
-                }
-              ]
-            }
-          ],
-          [
-            {
-              "t": "numberline",
-              "min": -6,
-              "max": 6,
-              "step": 2,
-              "intervals": [
-                {
-                  "from": -2,
-                  "to": null,
-                  "openFrom": true
-                }
-              ]
-            }
-          ],
-          [
-            {
-              "t": "numberline",
-              "min": -6,
-              "max": 6,
-              "step": 2,
-              "intervals": [
-                {
-                  "from": null,
-                  "to": -2,
-                  "openTo": false
-                }
-              ]
-            }
-          ]
-        ],
-        "multi": false
-      },
-      "key": "2",
-      "diag": {
-        "0": "includes the endpoint that a strict inequality excludes, so $-2$ is drawn as solid",
-        "1": "shades to the left, reading $x>-2$ as though $-2$ were the larger side",
-        "3": "both errors: the wrong side of $-2$, with the endpoint filled in as well"
-      },
-      "why": "A strict inequality leaves the endpoint hollow, and $x>-2$ names the numbers to the right of $-2$."
-    },
-    {
-      "id": "1.1/O5/q2",
-      "obj": "1.1/O5",
-      "level": "core",
-      "kind": "compute",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Write the graphed set in interval notation."
-        },
-        {
-          "t": "numberline",
-          "min": -5,
-          "max": 6,
-          "step": 1,
-          "intervals": [
-            {
-              "from": -1,
-              "to": 4,
-              "openFrom": false,
-              "openTo": true
-            }
-          ]
-        }
-      ],
-      "answer": {
-        "kind": "compute",
-        "slots": [
-          {
-            "size": 10,
-            "numeric": false
-          }
-        ],
-        "note": "use interval notation, e.g. [2,7)"
-      },
-      "key": "[-1,4)",
-      "why": "A solid endpoint is included and takes a square bracket; a hollow one is excluded and takes a parenthesis."
-    },
-    {
-      "id": "1.1/O5/q3",
-      "obj": "1.1/O5",
-      "level": "core",
-      "kind": "choice",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Which interval matches the graph?"
-        },
-        {
-          "t": "numberline",
-          "min": -4,
-          "max": 6,
-          "step": 1,
-          "intervals": [
-            {
-              "from": null,
-              "to": 3,
-              "openTo": false
-            }
-          ]
-        }
-      ],
-      "answer": {
-        "kind": "choice",
-        "options": [
-          [
-            {
-              "t": "math",
-              "tex": "(-\\infty,3)",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "(-\\infty,3]",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "[3,\\infty)",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "(3,\\infty)",
-              "display": false
-            }
-          ]
-        ],
-        "multi": false
-      },
-      "key": "1",
-      "diag": {
-        "0": "excludes an endpoint the solid dot includes",
-        "2": "reads the arrow as pointing right when the shading runs left from 3",
-        "3": "wrong direction and a hollow endpoint as well"
-      },
-      "why": "The shading runs left without end and stops at a solid 3, so 3 is included and the other side is unbounded."
-    },
-    {
-      "id": "1.1/O5/q4",
-      "obj": "1.1/O5",
-      "level": "stretch",
-      "kind": "multipart",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Use the graph below."
-        },
-        {
-          "t": "numberline",
-          "min": -5,
-          "max": 5,
-          "step": 1,
-          "intervals": [
-            {
-              "from": -2,
-              "to": 3,
-              "openFrom": false,
-              "openTo": false
-            }
-          ]
-        }
-      ],
-      "answer": {
-        "kind": "multipart",
-        "parts": [
-          {
-            "label": "(a)",
-            "stem": [
-              {
-                "t": "text",
-                "v": "Write the graphed set in interval notation."
-              }
-            ],
-            "answer": {
-              "kind": "compute",
-              "slots": [
-                {
-                  "size": 10,
-                  "numeric": false
-                }
-              ],
-              "note": "use interval notation"
-            }
-          },
-          {
-            "label": "(b)",
-            "stem": [
-              {
-                "t": "text",
-                "v": "How many integers belong to this set?"
-              }
-            ],
-            "answer": {
-              "kind": "compute",
-              "slots": [
-                {
-                  "size": 5
-                }
-              ],
-              "note": "type a whole number"
-            }
-          }
-        ]
-      },
-      "key": "[-2,3]; 6",
-      "why": "Both endpoints are solid, so both are counted, and the integers listed are $-2,-1,0,1,2,3$."
+     "t": "math",
+     "tex": "7+(3+5)=(7+3)+5",
+     "display": true
     }
-  ],
-  "1.2": [
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "text",
+       "v": "Commutative property of addition"
+      }
+     ],
+     [
+      {
+       "t": "text",
+       "v": "Associative property of addition"
+      }
+     ],
+     [
+      {
+       "t": "text",
+       "v": "Distributive property"
+      }
+     ],
+     [
+      {
+       "t": "text",
+       "v": "Additive identity property"
+      }
+     ]
+    ],
+    "multi": false
+   },
+   "key": "1",
+   "diag": {
+    "0": "the order of the numbers never changed, only the grouping",
+    "2": "no multiplication appears, so nothing is being distributed over a sum",
+    "3": "the identity property is about adding zero, and no zero appears here"
+   },
+   "why": "Only the parentheses moved, so the same three numbers were regrouped rather than reordered."
+  },
+  {
+   "id": "1.1/O1/q2",
+   "obj": "1.1/O1",
+   "level": "core",
+   "kind": "select",
+   "stem": [
     {
-      "id": "1.2/O1/q1",
-      "obj": "1.2/O1",
-      "level": "core",
-      "kind": "compute",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Evaluate each expression. Notice where the parentheses are."
-        }
-      ],
-      "answer": {
-        "kind": "compute",
-        "slots": [
-          {
-            "label": "$(-4)^{2}$",
-            "size": 5
-          },
-          {
-            "label": "$-4^{2}$",
-            "size": 5
-          }
-        ],
-        "note": "type an integer in each box"
-      },
-      "key": "16, -16",
-      "why": "Parentheses make $-4$ the base, while without them the base is 4 and the minus is applied afterwards."
+     "t": "text",
+     "v": "Complete the sentence naming the property shown."
     },
     {
-      "id": "1.2/O1/q2",
-      "obj": "1.2/O1",
-      "level": "core",
-      "kind": "choice",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Evaluate."
-        },
-        {
-          "t": "math",
-          "tex": "\\left(-\\frac{2}{3}\\right)^{3}",
-          "display": true
-        }
-      ],
-      "answer": {
-        "kind": "choice",
-        "options": [
-          [
-            {
-              "t": "math",
-              "tex": "-\\frac{8}{27}",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "-\\frac{2}{27}",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "-\\frac{6}{9}",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "\\frac{8}{27}",
-              "display": false
-            }
-          ]
-        ],
-        "multi": false
-      },
-      "key": "0",
-      "diag": {
-        "1": "applies the exponent to the denominator only and leaves the numerator alone",
-        "2": "multiplies numerator and denominator by 3 instead of using each as a factor three times",
-        "3": "assumes any power of a negative number comes out positive; that holds for even exponents, not odd ones"
-      },
-      "why": "The whole fraction is the base, so both parts are cubed, and an odd number of negative factors stays negative."
-    },
-    {
-      "id": "1.2/O1/q3",
-      "obj": "1.2/O1",
-      "level": "core",
-      "kind": "fill",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Evaluate each power of $-1$."
-        }
-      ],
-      "answer": {
-        "kind": "fill",
-        "template": "$(-1)^{7}=⟨0⟩$ and $(-1)^{8}=⟨1⟩$",
-        "slots": [
-          {
-            "size": 4
-          },
-          {
-            "size": 4
-          }
-        ]
-      },
-      "key": "-1, 1",
-      "why": "Negative factors cancel in pairs, so an even exponent gives 1 and an odd exponent leaves one factor of $-1$ over."
-    },
-    {
-      "id": "1.2/O1/q4",
-      "obj": "1.2/O1",
-      "level": "stretch",
-      "kind": "compute",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Simplify."
-        },
-        {
-          "t": "math",
-          "tex": "-3^{2}+(-3)^{2}-2(-1)^{5}",
-          "display": true
-        }
-      ],
-      "answer": {
-        "kind": "compute",
-        "slots": [
-          {
-            "size": 5
-          }
-        ],
-        "note": "type an integer"
-      },
-      "key": "2",
-      "why": "The first two terms are $-9$ and $9$ and cancel, and $(-1)^{5}=-1$ turns the last term into $+2$."
-    },
-    {
-      "id": "1.2/O2/q1",
-      "obj": "1.2/O2",
-      "level": "core",
-      "kind": "fill",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Fill in each exponent."
-        }
-      ],
-      "answer": {
-        "kind": "fill",
-        "template": "$x^{5}\\cdot x^{3}=x^{⟨0⟩}$ and $\\dfrac{x^{9}}{x^{4}}=x^{⟨1⟩}$",
-        "slots": [
-          {
-            "size": 4
-          },
-          {
-            "size": 4
-          }
-        ]
-      },
-      "key": "8, 5",
-      "why": "Multiplying powers of the same base pools the factors, so exponents add; dividing cancels factors, so they subtract."
-    },
-    {
-      "id": "1.2/O2/q2",
-      "obj": "1.2/O2",
-      "level": "core",
-      "kind": "choice",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Simplify."
-        },
-        {
-          "t": "math",
-          "tex": "\\left(-2x^{3}\\right)^{4}",
-          "display": true
-        }
-      ],
-      "answer": {
-        "kind": "choice",
-        "options": [
-          [
-            {
-              "t": "math",
-              "tex": "16x^{12}",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "-16x^{12}",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "16x^{7}",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "-8x^{12}",
-              "display": false
-            }
-          ]
-        ],
-        "multi": false
-      },
-      "key": "0",
-      "diag": {
-        "1": "raises $x^{3}$ but carries the minus along untouched, as though it sat outside the parentheses",
-        "2": "adds the exponents $3+4$ instead of multiplying them",
-        "3": "multiplies the coefficient by the exponent, $-2\\cdot 4$, rather than raising it"
-      },
-      "why": "The minus is inside the parentheses, so $-2$ is a factor four times and an even count of negatives is positive."
-    },
-    {
-      "id": "1.2/O2/q3",
-      "obj": "1.2/O2",
-      "level": "core",
-      "kind": "choice",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Simplify."
-        },
-        {
-          "t": "math",
-          "tex": "-\\left(3y^{2}\\right)^{4}",
-          "display": true
-        }
-      ],
-      "answer": {
-        "kind": "choice",
-        "options": [
-          [
-            {
-              "t": "math",
-              "tex": "81y^{8}",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "-12y^{8}",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "-81y^{6}",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "-81y^{8}",
-              "display": false
-            }
-          ]
-        ],
-        "multi": false
-      },
-      "key": "3",
-      "diag": {
-        "0": "sticky sign: pulls the minus inside the parentheses, where the even exponent then cancels it",
-        "1": "multiplies the coefficient by the exponent, $3\\cdot 4$, instead of raising it",
-        "2": "adds the exponents $2+4$ instead of multiplying them"
-      },
-      "why": "The minus sits outside the parentheses, so it is never raised to the fourth power and simply survives to the end."
-    },
-    {
-      "id": "1.2/O2/q4",
-      "obj": "1.2/O2",
-      "level": "stretch",
-      "kind": "compute",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Simplify."
-        },
-        {
-          "t": "math",
-          "tex": "\\frac{\\left(-2a^{3}b\\right)^{3}}{4a^{5}b}",
-          "display": true
-        }
-      ],
-      "answer": {
-        "kind": "compute",
-        "slots": [
-          {
-            "size": 12,
-            "numeric": false
-          }
-        ],
-        "note": "write powers with ^, e.g. 3a^2b"
-      },
-      "key": "-2a^4b^2",
-      "why": "Raise every factor inside the parentheses first, giving $-8a^{9}b^{3}$, then subtract exponents against the denominator."
-    },
-    {
-      "id": "1.2/O3/q1",
-      "obj": "1.2/O3",
-      "level": "core",
-      "kind": "fill",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Consider the polynomial below."
-        },
-        {
-          "t": "math",
-          "tex": "-4x^{3}+7x-2x^{5}+9",
-          "display": true
-        }
-      ],
-      "answer": {
-        "kind": "fill",
-        "template": "Degree: ⟨0⟩  Leading coefficient: ⟨1⟩  Constant term: ⟨2⟩",
-        "slots": [
-          {
-            "size": 4
-          },
-          {
-            "size": 5
-          },
-          {
-            "size": 5
-          }
-        ]
-      },
-      "key": "5, -2, 9",
-      "why": "Degree and leading coefficient come from the highest-power term, which here is written last rather than first."
-    },
-    {
-      "id": "1.2/O3/q2",
-      "obj": "1.2/O3",
-      "level": "core",
-      "kind": "choice",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Which expression is a polynomial?"
-        }
-      ],
-      "answer": {
-        "kind": "choice",
-        "options": [
-          [
-            {
-              "t": "math",
-              "tex": "3x^{2}-\\frac{5}{x}+1",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "\\sqrt{x}+4x",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "7x^{4}-x+2",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "x^{-3}+2x",
-              "display": false
-            }
-          ]
-        ],
-        "multi": false
-      },
-      "key": "2",
-      "diag": {
-        "0": "a variable in a denominator is a negative power, which a polynomial term may not have",
-        "1": "a square root of the variable is the power $\\frac{1}{2}$, which is not a whole number",
-        "3": "an exponent of $-3$ is not a whole number, so the term is not a polynomial term"
-      },
-      "why": "Every term of a polynomial is a number times a whole-number power of the variable."
-    },
-    {
-      "id": "1.2/O3/q3",
-      "obj": "1.2/O3",
-      "level": "core",
-      "kind": "fill",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Describe the polynomial below."
-        },
-        {
-          "t": "math",
-          "tex": "8x^{3}-2x",
-          "display": true
-        }
-      ],
-      "answer": {
-        "kind": "fill",
-        "template": "It is a ⟨0⟩ of degree ⟨1⟩.",
-        "slots": [
-          {
-            "options": [
-              "monomial",
-              "binomial",
-              "trinomial"
-            ]
-          },
-          {
-            "size": 4
-          }
-        ]
-      },
-      "key": "binomial, 3",
-      "why": "The name counts the terms and the degree reports the highest exponent, so the two are read off separately."
-    },
-    {
-      "id": "1.2/O3/q4",
-      "obj": "1.2/O3",
-      "level": "stretch",
-      "kind": "multipart",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Consider the polynomial below."
-        },
-        {
-          "t": "math",
-          "tex": "6-x^{2}+4x^{4}-x",
-          "display": true
-        }
-      ],
-      "answer": {
-        "kind": "multipart",
-        "parts": [
-          {
-            "label": "(a)",
-            "stem": [
-              {
-                "t": "text",
-                "v": "Rewrite it in descending order of degree."
-              }
-            ],
-            "answer": {
-              "kind": "compute",
-              "slots": [
-                {
-                  "size": 22,
-                  "numeric": false
-                }
-              ],
-              "note": "write powers with ^, e.g. 2x^3-x+5"
-            }
-          },
-          {
-            "label": "(b)",
-            "stem": [
-              {
-                "t": "text",
-                "v": "State the degree and the leading coefficient."
-              }
-            ],
-            "answer": {
-              "kind": "fill",
-              "template": "Degree: ⟨0⟩  Leading coefficient: ⟨1⟩",
-              "slots": [
-                {
-                  "size": 4
-                },
-                {
-                  "size": 5
-                }
-              ]
-            }
-          }
-        ]
-      },
-      "key": "4x^4-x^2-x+6; 4, 4",
-      "why": "Reordering the terms by exponent moves the fourth-degree term to the front, and only then is the leading coefficient visible."
-    },
-    {
-      "id": "1.2/O4/q1",
-      "obj": "1.2/O4",
-      "level": "core",
-      "kind": "compute",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Add and simplify."
-        },
-        {
-          "t": "math",
-          "tex": "\\left(3x^{2}-5x+2\\right)+\\left(x^{2}+8x-7\\right)",
-          "display": true
-        }
-      ],
-      "answer": {
-        "kind": "compute",
-        "slots": [
-          {
-            "size": 20,
-            "numeric": false
-          }
-        ],
-        "note": "write powers with ^, e.g. 4x^2+3x-5"
-      },
-      "key": "4x^2+3x-5",
-      "why": "Adding brackets leaves every sign as it stands, so like terms are collected one power at a time."
-    },
-    {
-      "id": "1.2/O4/q2",
-      "obj": "1.2/O4",
-      "level": "core",
-      "kind": "choice",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Subtract and simplify."
-        },
-        {
-          "t": "math",
-          "tex": "\\left(6y^{2}-3y+4\\right)-\\left(2y^{2}+5y-9\\right)",
-          "display": true
-        }
-      ],
-      "answer": {
-        "kind": "choice",
-        "options": [
-          [
-            {
-              "t": "math",
-              "tex": "4y^{2}+2y-5",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "4y^{2}-8y+13",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "4y^{2}-8y-5",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "8y^{2}-8y+13",
-              "display": false
-            }
-          ]
-        ],
-        "multi": false
-      },
-      "key": "1",
-      "diag": {
-        "0": "sign lost across the subtracted bracket: only the first term is subtracted and the rest are copied down unchanged",
-        "2": "handles the middle term but leaves $-9$ alone, computing $4-9$ instead of $4-(-9)$",
-        "3": "adds the leading terms, $6+2$, instead of subtracting them"
-      },
-      "why": "Subtracting a bracket reverses the sign of every term inside it, including the $-9$, which becomes $+9$."
-    },
-    {
-      "id": "1.2/O4/q3",
-      "obj": "1.2/O4",
-      "level": "core",
-      "kind": "choice",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Simplify by combining like terms."
-        },
-        {
-          "t": "math",
-          "tex": "4x^{2}+3x-x^{2}+5x",
-          "display": true
-        }
-      ],
-      "answer": {
-        "kind": "choice",
-        "options": [
-          [
-            {
-              "t": "math",
-              "tex": "3x^{2}-2x",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "3x^{2}+8x",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "11x^{2}",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "11x^{3}",
-              "display": false
-            }
-          ]
-        ],
-        "multi": false
-      },
-      "key": "1",
-      "diag": {
-        "0": "carries the minus in front of $x^{2}$ forward onto the next term as well, turning $+5x$ into $-5x$",
-        "2": "conjoins unlike terms: adds 3 and 8 as though $x^{2}$ and $x$ could be pooled",
-        "3": "conjoins and also multiplies the powers, as if combining terms multiplied them"
-      },
-      "why": "Only terms with the same power can be pooled, so the answer keeps two separate terms rather than collapsing to one."
-    },
-    {
-      "id": "1.2/O4/q4",
-      "obj": "1.2/O4",
-      "level": "stretch",
-      "kind": "compute",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Simplify."
-        },
-        {
-          "t": "math",
-          "tex": "\\left(5a^{3}-2a+7\\right)-\\left(a^{3}+4a^{2}-2a\\right)-\\left(3a^{2}-1\\right)",
-          "display": true
-        }
-      ],
-      "answer": {
-        "kind": "compute",
-        "slots": [
-          {
-            "size": 20,
-            "numeric": false
-          }
-        ],
-        "note": "write powers with ^, e.g. 2a^3-a^2+6"
-      },
-      "key": "4a^3-7a^2+8",
-      "why": "Both brackets are subtracted, so every term inside each one changes sign; the $a$-terms then cancel completely."
-    },
-    {
-      "id": "1.2/O5/q1",
-      "obj": "1.2/O5",
-      "level": "core",
-      "kind": "multipart",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Multiply."
-        }
-      ],
-      "answer": {
-        "kind": "multipart",
-        "parts": [
-          {
-            "label": "(a)",
-            "stem": [
-              {
-                "t": "math",
-                "tex": "2x(x-7)",
-                "display": true
-              }
-            ],
-            "answer": {
-              "kind": "compute",
-              "slots": [
-                {
-                  "size": 16,
-                  "numeric": false
-                }
-              ],
-              "note": "write powers with ^"
-            }
-          },
-          {
-            "label": "(b)",
-            "stem": [
-              {
-                "t": "math",
-                "tex": "-5x\\left(3x^{2}+x\\right)",
-                "display": true
-              }
-            ],
-            "answer": {
-              "kind": "compute",
-              "slots": [
-                {
-                  "size": 16,
-                  "numeric": false
-                }
-              ],
-              "note": "write powers with ^"
-            }
-          }
-        ]
-      },
-      "key": "2x^2-14x; -15x^3-5x^2",
-      "why": "The outside factor multiplies every term inside, and in part (b) its minus sign reaches both terms."
-    },
-    {
-      "id": "1.2/O5/q2",
-      "obj": "1.2/O5",
-      "level": "core",
-      "kind": "choice",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Multiply."
-        },
-        {
-          "t": "math",
-          "tex": "(2x-5)(3x+4)",
-          "display": true
-        }
-      ],
-      "answer": {
-        "kind": "choice",
-        "options": [
-          [
-            {
-              "t": "math",
-              "tex": "6x^{2}-20",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "6x^{2}-7x-20",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "6x^{2}+7x-20",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "6x^{2}-23x-20",
-              "display": false
-            }
-          ]
-        ],
-        "multi": false
-      },
-      "key": "1",
-      "diag": {
-        "0": "multiplies first term by first term and last by last only, skipping the two cross products",
-        "2": "gets both cross terms but attaches the minus to the wrong one, adding $15x-8x$",
-        "3": "makes both cross terms negative, adding $-15x-8x$"
-      },
-      "why": "Each term of the first bracket multiplies each term of the second, and the cross products $+8x$ and $-15x$ combine to $-7x$."
-    },
-    {
-      "id": "1.2/O5/q3",
-      "obj": "1.2/O5",
-      "level": "core",
-      "kind": "choice",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Expand."
-        },
-        {
-          "t": "math",
-          "tex": "(x+6)^{2}",
-          "display": true
-        }
-      ],
-      "answer": {
-        "kind": "choice",
-        "options": [
-          [
-            {
-              "t": "math",
-              "tex": "x^{2}+36",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "x^{2}+6x+36",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "x^{2}+12x+36",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "x^{2}+12x+12",
-              "display": false
-            }
-          ]
-        ],
-        "multi": false
-      },
-      "key": "2",
-      "diag": {
-        "0": "distributes the exponent over the sum, squaring each term separately",
-        "1": "counts the cross product once instead of twice",
-        "3": "doubles the 6 in the last term instead of squaring it"
-      },
-      "why": "The square means $(x+6)(x+6)$, which produces the cross product $6x$ twice."
-    },
-    {
-      "id": "1.2/O5/q4",
-      "obj": "1.2/O5",
-      "level": "stretch",
-      "kind": "compute",
-      "stem": [
-        {
-          "t": "text",
-          "v": "Multiply and write the result in descending order."
-        },
-        {
-          "t": "math",
-          "tex": "(x-2)\\left(x^{2}+3x-1\\right)",
-          "display": true
-        }
-      ],
-      "answer": {
-        "kind": "compute",
-        "slots": [
-          {
-            "size": 22,
-            "numeric": false
-          }
-        ],
-        "note": "write powers with ^, e.g. x^3+x^2-7x+2"
-      },
-      "key": "x^3+x^2-7x+2",
-      "why": "Each of the two terms multiplies all three terms of the trinomial, and the $-2$ carries its sign into all three products."
-    },
-    {
-      "id": "1.2/O6/q1",
-      "obj": "1.2/O6",
-      "level": "core",
-      "kind": "multipart",
-      "stem": [
-        {
-          "t": "text",
-          "v": "A rectangle has length $x+5$ metres and width $x-2$ metres."
-        }
-      ],
-      "answer": {
-        "kind": "multipart",
-        "parts": [
-          {
-            "label": "(a)",
-            "stem": [
-              {
-                "t": "text",
-                "v": "Write a polynomial for its area."
-              }
-            ],
-            "answer": {
-              "kind": "compute",
-              "slots": [
-                {
-                  "size": 20,
-                  "numeric": false
-                }
-              ],
-              "note": "write powers with ^"
-            }
-          },
-          {
-            "label": "(b)",
-            "stem": [
-              {
-                "t": "text",
-                "v": "Find the area when $x=6$."
-              }
-            ],
-            "answer": {
-              "kind": "compute",
-              "slots": [
-                {
-                  "size": 6,
-                  "unit": "m²"
-                }
-              ]
-            }
-          }
-        ]
-      },
-      "key": "x^2+3x-10; 44",
-      "why": "Area is length times width, and evaluating the resulting polynomial at $x=6$ matches multiplying $11$ by $4$ directly."
-    },
-    {
-      "id": "1.2/O6/q2",
-      "obj": "1.2/O6",
-      "level": "core",
-      "kind": "compute",
-      "stem": [
-        {
-          "t": "text",
-          "v": "A shop's monthly profit, in dollars, $t$ months after opening is given by the polynomial below."
-        },
-        {
-          "t": "math",
-          "tex": "-2t^{2}+40t",
-          "display": true
-        },
-        {
-          "t": "text",
-          "v": "Find the profit in month $t=5$."
-        }
-      ],
-      "answer": {
-        "kind": "compute",
-        "slots": [
-          {
-            "size": 8,
-            "unit": "dollars"
-          }
-        ]
-      },
-      "key": "150",
-      "why": "Substituting $t=5$ squares first, so the expression becomes $-2(25)+200$."
-    },
-    {
-      "id": "1.2/O6/q3",
-      "obj": "1.2/O6",
-      "level": "core",
-      "kind": "choice",
-      "stem": [
-        {
-          "t": "text",
-          "v": "A triangle has sides of length $2x+1$, $3x-4$ and $x+9$. Which polynomial gives its perimeter?"
-        }
-      ],
-      "answer": {
-        "kind": "choice",
-        "options": [
-          [
-            {
-              "t": "math",
-              "tex": "6x+6",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "6x+14",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "6x^{3}+6",
-              "display": false
-            }
-          ],
-          [
-            {
-              "t": "math",
-              "tex": "12x+12",
-              "display": false
-            }
-          ]
-        ],
-        "multi": false
-      },
-      "key": "0",
-      "diag": {
-        "1": "adds 4 rather than subtracting it, so the constants total $1+4+9$",
-        "2": "multiplies the $x$-terms instead of adding them, giving $2x\\cdot 3x\\cdot x$",
-        "3": "applies the rectangle rule $2l+2w$ and doubles a sum that is already the full perimeter"
-      },
-      "why": "Perimeter is the sum of the three sides, so the $x$-terms are collected and the constants are collected."
-    },
-    {
-      "id": "1.2/O6/q4",
-      "obj": "1.2/O6",
-      "level": "stretch",
-      "kind": "multipart",
-      "stem": [
-        {
-          "t": "text",
-          "v": "A rectangular yard measures $x+8$ feet by $x+3$ feet. A square patio $x$ feet on each side sits inside it."
-        }
-      ],
-      "answer": {
-        "kind": "multipart",
-        "parts": [
-          {
-            "label": "(a)",
-            "stem": [
-              {
-                "t": "text",
-                "v": "Write a polynomial for the area of the yard."
-              }
-            ],
-            "answer": {
-              "kind": "compute",
-              "slots": [
-                {
-                  "size": 20,
-                  "numeric": false
-                }
-              ],
-              "note": "write powers with ^"
-            }
-          },
-          {
-            "label": "(b)",
-            "stem": [
-              {
-                "t": "text",
-                "v": "Write a polynomial for the area not covered by the patio."
-              }
-            ],
-            "answer": {
-              "kind": "compute",
-              "slots": [
-                {
-                  "size": 20,
-                  "numeric": false
-                }
-              ]
-            }
-          },
-          {
-            "label": "(c)",
-            "stem": [
-              {
-                "t": "text",
-                "v": "Find that uncovered area when $x=10$."
-              }
-            ],
-            "answer": {
-              "kind": "compute",
-              "slots": [
-                {
-                  "size": 8,
-                  "unit": "ft²"
-                }
-              ]
-            }
-          }
-        ]
-      },
-      "key": "x^2+11x+24; 11x+24; 134",
-      "why": "Subtracting the patio's $x^{2}$ removes the squared term entirely, leaving a first-degree polynomial."
+     "t": "math",
+     "tex": "5\\cdot(2+t)=5\\cdot 2+5\\cdot t",
+     "display": true
     }
-  ]
+   ],
+   "answer": {
+    "kind": "select",
+    "template": "This is the ⟨0⟩ property.",
+    "slots": [
+     {
+      "options": [
+       "commutative",
+       "associative",
+       "distributive",
+       "identity"
+      ]
+     }
+    ]
+   },
+   "key": "distributive",
+   "why": "A single factor outside a sum is spread across each term of that sum."
+  },
+  {
+   "id": "1.1/O1/q3",
+   "obj": "1.1/O1",
+   "level": "core",
+   "kind": "fill",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Fill in each blank so that the statement is true."
+    }
+   ],
+   "answer": {
+    "kind": "fill",
+    "template": "$12+⟨0⟩=0$ and $12\\cdot ⟨1⟩=1$",
+    "slots": [
+     {
+      "size": 5
+     },
+     {
+      "size": 5,
+      "numeric": false
+     }
+    ],
+    "note": "the second blank is a fraction; type it as 1/12"
+   },
+   "key": "-12, 1/12",
+   "why": "The additive inverse undoes a number to reach 0; the multiplicative inverse is its reciprocal, which reaches 1."
+  },
+  {
+   "id": "1.1/O1/q4",
+   "obj": "1.1/O1",
+   "level": "stretch",
+   "kind": "multipart",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Addition of real numbers is commutative. This question asks whether subtraction is too."
+    }
+   ],
+   "answer": {
+    "kind": "multipart",
+    "parts": [
+     {
+      "label": "(a)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Evaluate each difference."
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "label": "$9-4$",
+         "size": 5
+        },
+        {
+         "label": "$4-9$",
+         "size": 5
+        }
+       ]
+      }
+     },
+     {
+      "label": "(b)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Is subtraction of real numbers commutative?"
+       }
+      ],
+      "answer": {
+       "kind": "choice",
+       "options": [
+        [
+         {
+          "t": "text",
+          "v": "Yes"
+         }
+        ],
+        [
+         {
+          "t": "text",
+          "v": "No"
+         }
+        ]
+       ],
+       "multi": false
+      }
+     }
+    ]
+   },
+   "key": "5, -5; No",
+   "why": "A property has to hold for every pair of numbers, and one pair giving two different answers is enough to rule it out."
+  },
+  {
+   "id": "1.1/O2/q1",
+   "obj": "1.1/O2",
+   "level": "core",
+   "kind": "compute",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Evaluate the expression when $x=-2$."
+    },
+    {
+     "t": "math",
+     "tex": "3x-7",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "size": 5
+     }
+    ],
+    "note": "type an integer"
+   },
+   "key": "-13",
+   "why": "Substituting gives $3(-2)-7$, and the product $-6$ is formed before the subtraction."
+  },
+  {
+   "id": "1.1/O2/q2",
+   "obj": "1.1/O2",
+   "level": "core",
+   "kind": "fill",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Evaluate the expression when $x=-3$ and $y=2$."
+    },
+    {
+     "t": "math",
+     "tex": "x^{2}-4y",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "fill",
+    "template": "$x^{2}-4y=⟨0⟩$",
+    "slots": [
+     {
+      "size": 5
+     }
+    ],
+    "note": "substitute each variable inside parentheses"
+   },
+   "key": "1",
+   "why": "Written as $(-3)^{2}-4(2)$ the square applies to the whole $-3$, giving $9-8$."
+  },
+  {
+   "id": "1.1/O2/q3",
+   "obj": "1.1/O2",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Evaluate the expression when $a=6$ and $b=-4$."
+    },
+    {
+     "t": "math",
+     "tex": "\\frac{a-b}{2}",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "math",
+       "tex": "1",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "5",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "8",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "10",
+       "display": false
+      }
+     ]
+    ],
+    "multi": false
+   },
+   "key": "1",
+   "diag": {
+    "0": "subtracts 4 rather than subtracting $-4$, so the double negative is lost",
+    "2": "the fraction bar does not group: only $b$ gets divided by 2, leaving $6-\\frac{-4}{2}$",
+    "3": "stops at the numerator $6-(-4)=10$ and never divides"
+   },
+   "why": "The bar groups the whole numerator, so $6-(-4)=10$ is formed first and then halved."
+  },
+  {
+   "id": "1.1/O2/q4",
+   "obj": "1.1/O2",
+   "level": "stretch",
+   "kind": "multipart",
+   "stem": [
+    {
+     "t": "text",
+     "v": "The expression below appears inside the quadratic formula. Evaluate it for each set of values."
+    },
+    {
+     "t": "math",
+     "tex": "b^{2}-4ac",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "multipart",
+    "parts": [
+     {
+      "label": "(a)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "$a=2$, $b=-6$, $c=4$"
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 5
+        }
+       ],
+       "note": "type an integer"
+      }
+     },
+     {
+      "label": "(b)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "$a=1$, $b=2$, $c=5$"
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 5
+        }
+       ],
+       "note": "type an integer"
+      }
+     }
+    ]
+   },
+   "key": "4; -16",
+   "why": "Substituting $b=-6$ inside parentheses makes $(-6)^{2}=36$, and in part (b) subtracting $20$ from $4$ leaves a negative value."
+  },
+  {
+   "id": "1.1/O3/q1",
+   "obj": "1.1/O3",
+   "level": "core",
+   "kind": "compute",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Simplify."
+    },
+    {
+     "t": "math",
+     "tex": "20-4\\cdot 3^{2}",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "size": 5
+     }
+    ],
+    "note": "type an integer"
+   },
+   "key": "-16",
+   "why": "The exponent acts first, then the multiplication $4\\cdot 9$, and the subtraction happens last."
+  },
+  {
+   "id": "1.1/O3/q2",
+   "obj": "1.1/O3",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Simplify."
+    },
+    {
+     "t": "math",
+     "tex": "-3^{4}",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "math",
+       "tex": "-81",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "-12",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "12",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "81",
+       "display": false
+      }
+     ]
+    ],
+    "multi": false
+   },
+   "key": "0",
+   "diag": {
+    "1": "multiplies the base by the exponent instead of using 3 as a factor four times",
+    "2": "both errors at once: multiplies $3\\cdot 4$ and also takes the minus into the base",
+    "3": "reads $-3^{4}$ as $(-3)^{4}$, attaching the minus to the base"
+   },
+   "why": "Without parentheses the exponent applies only to 3, and the minus is applied to the result at the end."
+  },
+  {
+   "id": "1.1/O3/q3",
+   "obj": "1.1/O3",
+   "level": "core",
+   "kind": "fill",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Simplify."
+    },
+    {
+     "t": "math",
+     "tex": "\\frac{5+3\\cdot 5}{2^{3}-4}",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "fill",
+    "template": "The value is ⟨0⟩.",
+    "slots": [
+     {
+      "size": 5
+     }
+    ],
+    "note": "type an integer"
+   },
+   "key": "5",
+   "why": "A fraction bar groups, so the numerator and the denominator are each simplified in full before dividing."
+  },
+  {
+   "id": "1.1/O3/q4",
+   "obj": "1.1/O3",
+   "level": "stretch",
+   "kind": "compute",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Simplify."
+    },
+    {
+     "t": "math",
+     "tex": "\\frac{2\\left[9-(3-7)\\right]}{-2^{2}+17}",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "size": 5
+     }
+    ],
+    "note": "type an integer"
+   },
+   "key": "2",
+   "why": "Work the innermost bracket outward in the numerator; in the denominator the exponent applies only to 2, so that term is $-4$."
+  },
+  {
+   "id": "1.1/O4/q1",
+   "obj": "1.1/O4",
+   "level": "core",
+   "kind": "select",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Choose the symbol that makes the statement true."
+    }
+   ],
+   "answer": {
+    "kind": "select",
+    "template": "$-7$ ⟨0⟩ $-3$",
+    "slots": [
+     {
+      "options": [
+       "<",
+       ">",
+       "="
+      ]
+     }
+    ]
+   },
+   "key": "<",
+   "why": "On the number line $-7$ lies further left than $-3$, and further left always means smaller."
+  },
+  {
+   "id": "1.1/O4/q2",
+   "obj": "1.1/O4",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Which statement is true?"
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "math",
+       "tex": "-9 > -2",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "-\\frac{3}{4} > -\\frac{2}{3}",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "-\\frac{3}{4} < -\\frac{2}{3}",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "-5 < -8",
+       "display": false
+      }
+     ]
+    ],
+    "multi": false
+   },
+   "key": "2",
+   "diag": {
+    "0": "compares sizes and ignores the signs: 9 is bigger than 2, but $-9$ is smaller than $-2$",
+    "1": "same size-only comparison in fraction form, since $\\frac{3}{4}$ exceeds $\\frac{2}{3}$",
+    "3": "reads the number line right to left, so the further-left number is called larger"
+   },
+   "why": "As decimals the two fractions are $-0.75$ and about $-0.67$, and $-0.75$ sits further left."
+  },
+  {
+   "id": "1.1/O4/q3",
+   "obj": "1.1/O4",
+   "level": "core",
+   "kind": "fill",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Arrange these four numbers from least to greatest."
+    },
+    {
+     "t": "math",
+     "tex": "-2.5,\\quad \\frac{5}{2},\\quad -\\frac{7}{3},\\quad 2",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "fill",
+    "template": "⟨0⟩ $<$ ⟨1⟩ $<$ ⟨2⟩ $<$ ⟨3⟩",
+    "slots": [
+     {
+      "size": 6,
+      "numeric": false
+     },
+     {
+      "size": 6,
+      "numeric": false
+     },
+     {
+      "size": 6,
+      "numeric": false
+     },
+     {
+      "size": 6,
+      "numeric": false
+     }
+    ],
+    "note": "write each number in the form it was given, e.g. 5/2"
+   },
+   "key": "-2.5, -7/3, 2, 5/2",
+   "why": "In decimal form the values are $-2.5$, $2.5$, about $-2.33$ and $2$, and the two negatives come first."
+  },
+  {
+   "id": "1.1/O4/q4",
+   "obj": "1.1/O4",
+   "level": "stretch",
+   "kind": "multipart",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Evaluate the two expressions, then compare them."
+    }
+   ],
+   "answer": {
+    "kind": "multipart",
+    "parts": [
+     {
+      "label": "(a)",
+      "stem": [
+       {
+        "t": "math",
+        "tex": "-3^{2}\\quad\\text{and}\\quad(-3)^{2}",
+        "display": true
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "label": "$-3^{2}$",
+         "size": 5
+        },
+        {
+         "label": "$(-3)^{2}$",
+         "size": 5
+        }
+       ]
+      }
+     },
+     {
+      "label": "(b)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Choose the symbol that makes the comparison true."
+       }
+      ],
+      "answer": {
+       "kind": "select",
+       "template": "$-3^{2}$ ⟨0⟩ $(-3)^{2}$",
+       "slots": [
+        {
+         "options": [
+          "<",
+          ">",
+          "="
+         ]
+        }
+       ]
+      }
+     }
+    ]
+   },
+   "key": "-9, 9; <",
+   "why": "The parentheses decide the base, so one expression lands left of zero and the other right of it."
+  },
+  {
+   "id": "1.1/O5/q1",
+   "obj": "1.1/O5",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Which graph shows all real numbers $x$ with $x>-2$?"
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "numberline",
+       "min": -6,
+       "max": 6,
+       "step": 2,
+       "intervals": [
+        {
+         "from": -2,
+         "to": null,
+         "openFrom": false
+        }
+       ]
+      }
+     ],
+     [
+      {
+       "t": "numberline",
+       "min": -6,
+       "max": 6,
+       "step": 2,
+       "intervals": [
+        {
+         "from": null,
+         "to": -2,
+         "openTo": true
+        }
+       ]
+      }
+     ],
+     [
+      {
+       "t": "numberline",
+       "min": -6,
+       "max": 6,
+       "step": 2,
+       "intervals": [
+        {
+         "from": -2,
+         "to": null,
+         "openFrom": true
+        }
+       ]
+      }
+     ],
+     [
+      {
+       "t": "numberline",
+       "min": -6,
+       "max": 6,
+       "step": 2,
+       "intervals": [
+        {
+         "from": null,
+         "to": -2,
+         "openTo": false
+        }
+       ]
+      }
+     ]
+    ],
+    "multi": false
+   },
+   "key": "2",
+   "diag": {
+    "0": "includes the endpoint that a strict inequality excludes, so $-2$ is drawn as solid",
+    "1": "shades to the left, reading $x>-2$ as though $-2$ were the larger side",
+    "3": "both errors: the wrong side of $-2$, with the endpoint filled in as well"
+   },
+   "why": "A strict inequality leaves the endpoint hollow, and $x>-2$ names the numbers to the right of $-2$."
+  },
+  {
+   "id": "1.1/O5/q2",
+   "obj": "1.1/O5",
+   "level": "core",
+   "kind": "compute",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Write the graphed set in interval notation."
+    },
+    {
+     "t": "numberline",
+     "min": -5,
+     "max": 6,
+     "step": 1,
+     "intervals": [
+      {
+       "from": -1,
+       "to": 4,
+       "openFrom": false,
+       "openTo": true
+      }
+     ]
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "size": 10,
+      "numeric": false
+     }
+    ],
+    "note": "use interval notation, e.g. [2,7)"
+   },
+   "key": "[-1,4)",
+   "why": "A solid endpoint is included and takes a square bracket; a hollow one is excluded and takes a parenthesis."
+  },
+  {
+   "id": "1.1/O5/q3",
+   "obj": "1.1/O5",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Which interval matches the graph?"
+    },
+    {
+     "t": "numberline",
+     "min": -4,
+     "max": 6,
+     "step": 1,
+     "intervals": [
+      {
+       "from": null,
+       "to": 3,
+       "openTo": false
+      }
+     ]
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "math",
+       "tex": "(-\\infty,3)",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "(-\\infty,3]",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "[3,\\infty)",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "(3,\\infty)",
+       "display": false
+      }
+     ]
+    ],
+    "multi": false
+   },
+   "key": "1",
+   "diag": {
+    "0": "excludes an endpoint the solid dot includes",
+    "2": "reads the arrow as pointing right when the shading runs left from 3",
+    "3": "wrong direction and a hollow endpoint as well"
+   },
+   "why": "The shading runs left without end and stops at a solid 3, so 3 is included and the other side is unbounded."
+  },
+  {
+   "id": "1.1/O5/q4",
+   "obj": "1.1/O5",
+   "level": "stretch",
+   "kind": "multipart",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Use the graph below."
+    },
+    {
+     "t": "numberline",
+     "min": -5,
+     "max": 5,
+     "step": 1,
+     "intervals": [
+      {
+       "from": -2,
+       "to": 3,
+       "openFrom": false,
+       "openTo": false
+      }
+     ]
+    }
+   ],
+   "answer": {
+    "kind": "multipart",
+    "parts": [
+     {
+      "label": "(a)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Write the graphed set in interval notation."
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 10,
+         "numeric": false
+        }
+       ],
+       "note": "use interval notation"
+      }
+     },
+     {
+      "label": "(b)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "How many integers belong to this set?"
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 5
+        }
+       ],
+       "note": "type a whole number"
+      }
+     }
+    ]
+   },
+   "key": "[-2,3]; 6",
+   "why": "Both endpoints are solid, so both are counted, and the integers listed are $-2,-1,0,1,2,3$."
+  },
+  {
+   "id": "1.1/O6/q1",
+   "obj": "1.1/O6",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Evaluate."
+    },
+    {
+     "t": "math",
+     "tex": "|3-7|",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "math",
+       "tex": "4"
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "-4"
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "10"
+      }
+     ],
+     [
+      {
+       "t": "text",
+       "v": "Undefined, because $3-7$ is negative"
+      }
+     ]
+    ],
+    "multi": false
+   },
+   "key": "0",
+   "diag": {
+    "1": "evaluates inside correctly, then ignores the bars",
+    "2": "applies the bars to each number first and adds: $|3|+|7|$",
+    "3": "drops the bars: reports $3-7=-4$ instead of $|-4|$"
+   },
+   "why": "The bars group, so $3-7=-4$ is formed first and then measured: $|-4|=4$."
+  },
+  {
+   "id": "1.1/O6/q2",
+   "obj": "1.1/O6",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Which is true for <em>every</em> real number $a$?"
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "math",
+       "tex": "|-a|=|a|"
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "|a|=a"
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "-|a|=|-a|"
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "|a|>0"
+      }
+     ]
+    ],
+    "multi": false
+   },
+   "key": "0",
+   "diag": {
+    "1": "true only when $a\\ge 0$",
+    "2": "the left side is never positive and the right side never negative; they agree only at 0",
+    "3": "$|0|=0$, so the correct statement is $|a|\\ge 0$"
+   },
+   "why": "Negating a number does not change its distance from zero, so $|-a|=|a|$ always."
+  },
+  {
+   "id": "1.1/O6/q3",
+   "obj": "1.1/O6",
+   "level": "core",
+   "kind": "compute",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Evaluate."
+    },
+    {
+     "t": "math",
+     "tex": "-|-5|+|-2|",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "size": 5
+     }
+    ],
+    "note": "type an integer"
+   },
+   "key": "-3",
+   "why": "$|-5|=5$ and $|-2|=2$, so this is $-5+2$. The first minus is outside the bars and is applied after them."
+  },
+  {
+   "id": "1.1/O6/q4",
+   "obj": "1.1/O6",
+   "level": "stretch",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "How far apart are $-3$ and $4$ on the number line?"
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "math",
+       "tex": "7"
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "1"
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "-7"
+      }
+     ],
+     [
+      {
+       "t": "text",
+       "v": "You must know which is larger first"
+      }
+     ]
+    ],
+    "multi": false
+   },
+   "key": "0",
+   "diag": {
+    "1": "adds the two numbers instead of measuring between them",
+    "2": "computes $-3-4$ and keeps the sign; a distance cannot be negative",
+    "3": "$|a-b|=|b-a|$, so the order does not matter"
+   },
+   "why": "$|-3-4|=|-7|=7$, and subtracting the other way gives $|4-(-3)|=7$ as well."
+  }
+ ],
+ "1.2": [
+  {
+   "id": "1.2/O1/q1",
+   "obj": "1.2/O1",
+   "level": "core",
+   "kind": "compute",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Evaluate each expression. Notice where the parentheses are."
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "label": "$(-4)^{2}$",
+      "size": 5
+     },
+     {
+      "label": "$-4^{2}$",
+      "size": 5
+     }
+    ],
+    "note": "type an integer in each box"
+   },
+   "key": "16, -16",
+   "why": "Parentheses make $-4$ the base, while without them the base is 4 and the minus is applied afterwards."
+  },
+  {
+   "id": "1.2/O1/q2",
+   "obj": "1.2/O1",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Evaluate."
+    },
+    {
+     "t": "math",
+     "tex": "\\left(-\\frac{2}{3}\\right)^{3}",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "math",
+       "tex": "-\\frac{8}{27}",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "-\\frac{2}{27}",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "-\\frac{6}{9}",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "\\frac{8}{27}",
+       "display": false
+      }
+     ]
+    ],
+    "multi": false
+   },
+   "key": "0",
+   "diag": {
+    "1": "applies the exponent to the denominator only and leaves the numerator alone",
+    "2": "multiplies numerator and denominator by 3 instead of using each as a factor three times",
+    "3": "assumes any power of a negative number comes out positive; that holds for even exponents, not odd ones"
+   },
+   "why": "The whole fraction is the base, so both parts are cubed, and an odd number of negative factors stays negative."
+  },
+  {
+   "id": "1.2/O1/q3",
+   "obj": "1.2/O1",
+   "level": "core",
+   "kind": "fill",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Evaluate each power of $-1$."
+    }
+   ],
+   "answer": {
+    "kind": "fill",
+    "template": "$(-1)^{7}=⟨0⟩$ and $(-1)^{8}=⟨1⟩$",
+    "slots": [
+     {
+      "size": 4
+     },
+     {
+      "size": 4
+     }
+    ]
+   },
+   "key": "-1, 1",
+   "why": "Negative factors cancel in pairs, so an even exponent gives 1 and an odd exponent leaves one factor of $-1$ over."
+  },
+  {
+   "id": "1.2/O1/q4",
+   "obj": "1.2/O1",
+   "level": "stretch",
+   "kind": "compute",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Simplify."
+    },
+    {
+     "t": "math",
+     "tex": "-3^{2}+(-3)^{2}-2(-1)^{5}",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "size": 5
+     }
+    ],
+    "note": "type an integer"
+   },
+   "key": "2",
+   "why": "The first two terms are $-9$ and $9$ and cancel, and $(-1)^{5}=-1$ turns the last term into $+2$."
+  },
+  {
+   "id": "1.2/O2/q1",
+   "obj": "1.2/O2",
+   "level": "core",
+   "kind": "fill",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Fill in each exponent."
+    }
+   ],
+   "answer": {
+    "kind": "fill",
+    "template": "$x^{5}\\cdot x^{3}=x^{⟨0⟩}$ and $\\dfrac{x^{9}}{x^{4}}=x^{⟨1⟩}$",
+    "slots": [
+     {
+      "size": 4
+     },
+     {
+      "size": 4
+     }
+    ]
+   },
+   "key": "8, 5",
+   "why": "Multiplying powers of the same base multiplies the factors together, so exponents add; dividing cancels factors, so they subtract."
+  },
+  {
+   "id": "1.2/O2/q2",
+   "obj": "1.2/O2",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Simplify."
+    },
+    {
+     "t": "math",
+     "tex": "\\left(-2x^{3}\\right)^{4}",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "math",
+       "tex": "16x^{12}",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "-16x^{12}",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "16x^{7}",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "-8x^{12}",
+       "display": false
+      }
+     ]
+    ],
+    "multi": false
+   },
+   "key": "0",
+   "diag": {
+    "1": "raises $x^{3}$ but carries the minus along untouched, as though it sat outside the parentheses",
+    "2": "adds the exponents $3+4$ instead of multiplying them",
+    "3": "multiplies the coefficient by the exponent, $-2\\cdot 4$, rather than raising it"
+   },
+   "why": "The minus is inside the parentheses, so $-2$ is a factor four times and an even count of negatives is positive."
+  },
+  {
+   "id": "1.2/O2/q3",
+   "obj": "1.2/O2",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Simplify."
+    },
+    {
+     "t": "math",
+     "tex": "-\\left(3y^{2}\\right)^{4}",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "math",
+       "tex": "81y^{8}",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "-12y^{8}",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "-81y^{6}",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "-81y^{8}",
+       "display": false
+      }
+     ]
+    ],
+    "multi": false
+   },
+   "key": "3",
+   "diag": {
+    "0": "pulls the minus inside the parentheses, where the even exponent then cancels it",
+    "1": "multiplies the coefficient by the exponent, $3\\cdot 4$, instead of raising it",
+    "2": "adds the exponents $2+4$ instead of multiplying them"
+   },
+   "why": "The minus sits outside the parentheses, so it is never raised to the fourth power ; only $3x^{2}$ is raised to the fourth power."
+  },
+  {
+   "id": "1.2/O2/q4",
+   "obj": "1.2/O2",
+   "level": "stretch",
+   "kind": "compute",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Simplify."
+    },
+    {
+     "t": "math",
+     "tex": "\\frac{\\left(-2a^{3}b\\right)^{3}}{4a^{5}b}",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "size": 12,
+      "numeric": false
+     }
+    ],
+    "note": "write powers with ^, e.g. 3a^2b"
+   },
+   "key": "-2a^4b^2",
+   "why": "Raise every factor inside the parentheses first, giving $-8a^{9}b^{3}$, then subtract exponents against the denominator."
+  },
+  {
+   "id": "1.2/O3/q1",
+   "obj": "1.2/O3",
+   "level": "core",
+   "kind": "fill",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Consider the polynomial below."
+    },
+    {
+     "t": "math",
+     "tex": "-4x^{3}+7x-2x^{5}+9",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "fill",
+    "template": "Degree: ⟨0⟩  Leading coefficient: ⟨1⟩  Constant term: ⟨2⟩",
+    "slots": [
+     {
+      "size": 4
+     },
+     {
+      "size": 5
+     },
+     {
+      "size": 5
+     }
+    ]
+   },
+   "key": "5, -2, 9",
+   "why": "Degree and leading coefficient come from the highest-power term, which here is written last rather than first."
+  },
+  {
+   "id": "1.2/O3/q2",
+   "obj": "1.2/O3",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Which expression is a polynomial?"
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "math",
+       "tex": "3x^{2}-\\frac{5}{x}+1",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "\\sqrt{x}+4x",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "7x^{4}-x+2",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "x^{-3}+2x",
+       "display": false
+      }
+     ]
+    ],
+    "multi": false
+   },
+   "key": "2",
+   "diag": {
+    "0": "a variable in a denominator is a negative power, which a polynomial term may not have",
+    "1": "a square root of the variable is the power $\\frac{1}{2}$, which is not a whole number",
+    "3": "an exponent of $-3$ is not a whole number, so the term is not a polynomial term"
+   },
+   "why": "Every term of a polynomial is a number times a whole-number power of the variable."
+  },
+  {
+   "id": "1.2/O3/q3",
+   "obj": "1.2/O3",
+   "level": "core",
+   "kind": "fill",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Describe the polynomial below."
+    },
+    {
+     "t": "math",
+     "tex": "8x^{3}-2x",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "fill",
+    "template": "It is a ⟨0⟩ of degree ⟨1⟩.",
+    "slots": [
+     {
+      "options": [
+       "monomial",
+       "binomial",
+       "trinomial"
+      ]
+     },
+     {
+      "size": 4
+     }
+    ]
+   },
+   "key": "binomial, 3",
+   "why": "The name counts the terms and the degree reports the highest exponent, so the two are read off separately."
+  },
+  {
+   "id": "1.2/O3/q4",
+   "obj": "1.2/O3",
+   "level": "stretch",
+   "kind": "multipart",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Consider the polynomial below."
+    },
+    {
+     "t": "math",
+     "tex": "6-x^{2}+4x^{4}-x",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "multipart",
+    "parts": [
+     {
+      "label": "(a)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Rewrite it in descending order of degree."
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 22,
+         "numeric": false
+        }
+       ],
+       "note": "write powers with ^, e.g. 2x^3-x+5"
+      }
+     },
+     {
+      "label": "(b)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "State the degree and the leading coefficient."
+       }
+      ],
+      "answer": {
+       "kind": "fill",
+       "template": "Degree: ⟨0⟩  Leading coefficient: ⟨1⟩",
+       "slots": [
+        {
+         "size": 4
+        },
+        {
+         "size": 5
+        }
+       ]
+      }
+     }
+    ]
+   },
+   "key": "4x^4-x^2-x+6; 4, 4",
+   "why": "Reordering the terms by exponent moves the fourth-degree term to the front, and only then is the leading coefficient visible."
+  },
+  {
+   "id": "1.2/O4/q1",
+   "obj": "1.2/O4",
+   "level": "core",
+   "kind": "compute",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Add and simplify."
+    },
+    {
+     "t": "math",
+     "tex": "\\left(3x^{2}-5x+2\\right)+\\left(x^{2}+8x-7\\right)",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "size": 20,
+      "numeric": false
+     }
+    ],
+    "note": "write powers with ^, e.g. 4x^2+3x-5"
+   },
+   "key": "4x^2+3x-5",
+   "why": "Adding brackets leaves every sign as it stands, so like terms are collected one power at a time."
+  },
+  {
+   "id": "1.2/O4/q2",
+   "obj": "1.2/O4",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Subtract and simplify."
+    },
+    {
+     "t": "math",
+     "tex": "\\left(6y^{2}-3y+4\\right)-\\left(2y^{2}+5y-9\\right)",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "math",
+       "tex": "4y^{2}+2y-5",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "4y^{2}-8y+13",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "4y^{2}-8y-5",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "8y^{2}-8y+13",
+       "display": false
+      }
+     ]
+    ],
+    "multi": false
+   },
+   "key": "1",
+   "diag": {
+    "0": "sign lost across the subtracted bracket: only the first term is subtracted and the rest are copied down unchanged",
+    "2": "handles the middle term but leaves $-9$ alone, computing $4-9$ instead of $4-(-9)$",
+    "3": "adds the leading terms, $6+2$, instead of subtracting them"
+   },
+   "why": "Subtracting a bracket reverses the sign of every term inside it, including the $-9$, which becomes $+9$."
+  },
+  {
+   "id": "1.2/O4/q3",
+   "obj": "1.2/O4",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Simplify by combining like terms."
+    },
+    {
+     "t": "math",
+     "tex": "4x^{2}+3x-x^{2}+5x",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "math",
+       "tex": "3x^{2}-2x",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "3x^{2}+8x",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "11x^{2}",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "11x^{3}",
+       "display": false
+      }
+     ]
+    ],
+    "multi": false
+   },
+   "key": "1",
+   "diag": {
+    "0": "carries the minus in front of $x^{2}$ forward onto the next term as well, turning $+5x$ into $-5x$",
+    "2": "combines unlike terms: adds 3 and 8 as though $x^{2}$ and $x$ could be pooled",
+    "3": "combines unlike terms and multiplies the powers as well"
+   },
+   "why": "Only terms with the same power are like terms, so the answer keeps two separate terms."
+  },
+  {
+   "id": "1.2/O4/q4",
+   "obj": "1.2/O4",
+   "level": "stretch",
+   "kind": "compute",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Simplify."
+    },
+    {
+     "t": "math",
+     "tex": "\\left(5a^{3}-2a+7\\right)-\\left(a^{3}+4a^{2}-2a\\right)-\\left(3a^{2}-1\\right)",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "size": 20,
+      "numeric": false
+     }
+    ],
+    "note": "write powers with ^, e.g. 2a^3-a^2+6"
+   },
+   "key": "4a^3-7a^2+8",
+   "why": "Both brackets are subtracted, so every term inside each one changes sign; the $a$-terms then cancel completely."
+  },
+  {
+   "id": "1.2/O5/q1",
+   "obj": "1.2/O5",
+   "level": "core",
+   "kind": "multipart",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Multiply."
+    }
+   ],
+   "answer": {
+    "kind": "multipart",
+    "parts": [
+     {
+      "label": "(a)",
+      "stem": [
+       {
+        "t": "math",
+        "tex": "2x(x-7)",
+        "display": true
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 16,
+         "numeric": false
+        }
+       ],
+       "note": "write powers with ^"
+      }
+     },
+     {
+      "label": "(b)",
+      "stem": [
+       {
+        "t": "math",
+        "tex": "-5x\\left(3x^{2}+x\\right)",
+        "display": true
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 16,
+         "numeric": false
+        }
+       ],
+       "note": "write powers with ^"
+      }
+     }
+    ]
+   },
+   "key": "2x^2-14x; -15x^3-5x^2",
+   "why": "The outside factor multiplies every term inside, and in part (b) its minus sign reaches both terms."
+  },
+  {
+   "id": "1.2/O5/q2",
+   "obj": "1.2/O5",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Multiply."
+    },
+    {
+     "t": "math",
+     "tex": "(2x-5)(3x+4)",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "math",
+       "tex": "6x^{2}-20",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "6x^{2}-7x-20",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "6x^{2}+7x-20",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "6x^{2}-23x-20",
+       "display": false
+      }
+     ]
+    ],
+    "multi": false
+   },
+   "key": "1",
+   "diag": {
+    "0": "multiplies first term by first term and last by last only, skipping the two cross products",
+    "2": "gets both cross terms but attaches the minus to the wrong one, adding $15x-8x$",
+    "3": "makes both cross terms negative, adding $-15x-8x$"
+   },
+   "why": "Each term of the first bracket multiplies each term of the second, and the cross products $+8x$ and $-15x$ combine to $-7x$."
+  },
+  {
+   "id": "1.2/O5/q3",
+   "obj": "1.2/O5",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Expand."
+    },
+    {
+     "t": "math",
+     "tex": "(x+6)^{2}",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "math",
+       "tex": "x^{2}+36",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "x^{2}+6x+36",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "x^{2}+12x+36",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "x^{2}+12x+12",
+       "display": false
+      }
+     ]
+    ],
+    "multi": false
+   },
+   "key": "2",
+   "diag": {
+    "0": "distributes the exponent over the sum, squaring each term separately",
+    "1": "counts the cross product once instead of twice",
+    "3": "doubles the 6 in the last term instead of squaring it"
+   },
+   "why": "The square means $(x+6)(x+6)$, which produces the cross product $6x$ twice."
+  },
+  {
+   "id": "1.2/O5/q4",
+   "obj": "1.2/O5",
+   "level": "stretch",
+   "kind": "compute",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Multiply and write the result in descending order."
+    },
+    {
+     "t": "math",
+     "tex": "(x-2)\\left(x^{2}+3x-1\\right)",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "size": 22,
+      "numeric": false
+     }
+    ],
+    "note": "write powers with ^, e.g. x^3+x^2-7x+2"
+   },
+   "key": "x^3+x^2-7x+2",
+   "why": "Each of the two terms multiplies all three terms of the trinomial, and the $-2$ carries its sign into all three products."
+  },
+  {
+   "id": "1.2/O6/q1",
+   "obj": "1.2/O6",
+   "level": "core",
+   "kind": "multipart",
+   "stem": [
+    {
+     "t": "text",
+     "v": "A rectangle has length $x+5$ metres and width $x-2$ metres."
+    }
+   ],
+   "answer": {
+    "kind": "multipart",
+    "parts": [
+     {
+      "label": "(a)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Write a polynomial for its area."
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 20,
+         "numeric": false
+        }
+       ],
+       "note": "write powers with ^"
+      }
+     },
+     {
+      "label": "(b)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Find the area when $x=6$."
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 6,
+         "unit": "m²"
+        }
+       ]
+      }
+     }
+    ]
+   },
+   "key": "x^2+3x-10; 44",
+   "why": "Area is length times width, and evaluating the resulting polynomial at $x=6$ matches multiplying $11$ by $4$ directly."
+  },
+  {
+   "id": "1.2/O6/q2",
+   "obj": "1.2/O6",
+   "level": "core",
+   "kind": "compute",
+   "stem": [
+    {
+     "t": "text",
+     "v": "A shop's monthly profit, in dollars, $t$ months after opening is given by the polynomial below."
+    },
+    {
+     "t": "math",
+     "tex": "-2t^{2}+40t",
+     "display": true
+    },
+    {
+     "t": "text",
+     "v": "Find the profit in month $t=5$."
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "size": 8,
+      "unit": "dollars"
+     }
+    ]
+   },
+   "key": "150",
+   "why": "Substituting $t=5$ squares first, so the expression becomes $-2(25)+200$."
+  },
+  {
+   "id": "1.2/O6/q3",
+   "obj": "1.2/O6",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "A triangle has sides of length $2x+1$, $3x-4$ and $x+9$. Which polynomial gives its perimeter?"
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "math",
+       "tex": "6x+6",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "6x+14",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "6x^{3}+6",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "12x+12",
+       "display": false
+      }
+     ]
+    ],
+    "multi": false
+   },
+   "key": "0",
+   "diag": {
+    "1": "adds 4 rather than subtracting it, so the constants total $1+4+9$",
+    "2": "multiplies the $x$-terms instead of adding them, giving $2x\\cdot 3x\\cdot x$",
+    "3": "applies the rectangle rule $2l+2w$ and doubles a sum that is already the full perimeter"
+   },
+   "why": "Perimeter is the sum of the three sides, so the $x$-terms are collected and the constants are collected."
+  },
+  {
+   "id": "1.2/O6/q4",
+   "obj": "1.2/O6",
+   "level": "stretch",
+   "kind": "multipart",
+   "stem": [
+    {
+     "t": "text",
+     "v": "A rectangular yard measures $x+8$ feet by $x+3$ feet. A square patio $x$ feet on each side sits inside it."
+    }
+   ],
+   "answer": {
+    "kind": "multipart",
+    "parts": [
+     {
+      "label": "(a)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Write a polynomial for the area of the yard."
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 20,
+         "numeric": false
+        }
+       ],
+       "note": "write powers with ^"
+      }
+     },
+     {
+      "label": "(b)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Write a polynomial for the area not covered by the patio."
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 20,
+         "numeric": false
+        }
+       ]
+      }
+     },
+     {
+      "label": "(c)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Find that uncovered area when $x=10$."
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 8,
+         "unit": "ft²"
+        }
+       ]
+      }
+     }
+    ]
+   },
+   "key": "x^2+11x+24; 11x+24; 134",
+   "why": "Subtracting the patio's $x^{2}$ removes the squared term entirely, leaving a first-degree polynomial."
+  }
+ ]
 }

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang=en>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>math 120e · reflection</title>
+<script>try{document.documentElement.dataset.theme=localStorage.getItem("m120.theme")||"ink"}catch(e){}</script>
+<link rel=stylesheet href="vendor/katex/katex.min.css">
+<link rel=stylesheet href="styles.css?v=36">
+<body class=no-rail>
+<div id=read><div id=doc>
+  <a class=home href="index.html">math 120e</a>
+  <h1><span class=num>reflection &middot; prototype</span>Quadratics</h1>
+  <p class=rf-lede>Questions on roots, factored form, the discriminant and the
+  quadratic formula.</p>
+  <div id=blocks></div>
+  <div id=tally class=rf-tally hidden></div>
+</div></div>
+
+<script defer src="vendor/katex/katex.min.js"></script>
+<script type=module>
+import { renderBlock, CLAIMS } from './js/reflect.js?v=1';
+
+await new Promise((r) => (window.katex ? r() : addEventListener('load', r)));
+const B = await (await fetch('data/reflect_quadratic.json', {cache:'no-store'})).json();
+
+const host = document.getElementById('blocks');
+const tally = document.getElementById('tally');
+const seen = [];
+
+function report(r) {
+  const i = seen.findIndex((x) => x.facet === r.facet);
+  if (i >= 0) seen[i] = r; else seen.push(r);
+  paint();
+}
+
+// The 2x2 the whole instrument exists for: what they claimed against what they
+// showed. The off-diagonals are the only interesting cells.
+function paint() {
+  const rated = seen.filter((s) => s.claim != null);
+  const cell = (c, ok) => rated.filter((s) => (s.claim <= 1) === c && s.correct === ok);
+  const box = (label, list, cls) =>
+    '<div class="rf-cell ' + cls + '"><span class=rf-cell-n>' + list.length + '</span>' +
+    '<span class=rf-cell-l>' + label + '</span>' +
+    '<span class=rf-cell-f>' + list.map((s) => s.facet).join(', ') + '</span></div>';
+  tally.innerHTML =
+    '<h2>your answers</h2>' +
+    '<div class=rf-2x2>' +
+      box('said yes, answered correctly', cell(true, true), 'held') +
+      box('said yes, answered incorrectly', cell(true, false), 'over') +
+      box('said no, answered correctly', cell(false, true), 'under') +
+      box('said no, answered incorrectly', cell(false, false), 'gap') +
+    '</div>' +
+    '<div class=rf-tally-note>' + seen.length + ' of ' + B.length +
+    ' blocks answered &middot; a claim of &ldquo;' + CLAIMS[0] + '&rdquo; or &ldquo;' +
+    CLAIMS[1] + '&rdquo; counts as claiming it</div>';
+  tally.hidden = false;
+}
+
+B.forEach((b, i) => {
+  const n = renderBlock(b, report);
+  n.prepend(Object.assign(document.createElement('div'),
+    { className: 'rf-num', textContent: String(i + 1).padStart(2, '0') }));
+  host.appendChild(n);
+});
+</script>
+<script type=module>
+import { mountThemes } from './js/theme.js?v=2';
+mountThemes();
+</script>
+</body>
+</html>

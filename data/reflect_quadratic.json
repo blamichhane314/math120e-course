@@ -1,0 +1,352 @@
+[
+ {
+  "type": "probe",
+  "ask": "recognise",
+  "multi": true,
+  "rate": true,
+  "facet": "recognise-quadratic",
+  "obj": [
+   "1.2/O3"
+  ],
+  "stem": "Which of these are quadratic equations?",
+  "note": "Choose all that apply.",
+  "options": [
+   {
+    "tex": "3x+7=1"
+   },
+   {
+    "tex": "x^{2}-5x+6=0"
+   },
+   {
+    "tex": "x(x+3)=4"
+   },
+   {
+    "tex": "2^{x}=8"
+   },
+   {
+    "tex": "x^{3}-5x+6=0"
+   }
+  ],
+  "keys": [
+   1,
+   2
+  ],
+  "diag": {
+   "0": "degree 1 — an equation having an $x$ in it is not the same as being quadratic",
+   "3": "$x$ is in the exponent, not the base. That is exponential.",
+   "4": "degree 3. Having powers is not the same as being quadratic."
+  },
+  "miss": {
+   "2": "It is quadratic: expanding gives $x^{2}+3x-4=0$. The degree is read after the equation is written as $ax^{2}+bx+c=0$."
+  }
+ },
+ {
+  "type": "probe",
+  "ask": "match",
+  "rate": true,
+  "facet": "roots-intercepts",
+  "obj": [
+   "1.7/O1",
+   "2.1/O3"
+  ],
+  "stem": "The graph of $y=f(x)$ is shown. What are the solutions of $f(x)=0$?",
+  "figure": {
+   "kind": "parabola",
+   "a": 1,
+   "b": -3,
+   "c": -4,
+   "xmin": -3,
+   "xmax": 6,
+   "ymin": -7,
+   "ymax": 6,
+   "roots": [
+    -1,
+    4
+   ]
+  },
+  "options": [
+   {
+    "tex": "x=-1 \\text{ or } x=4"
+   },
+   {
+    "tex": "x=0"
+   },
+   {
+    "tex": "y=-4"
+   },
+   {
+    "v": "You cannot tell without the equation"
+   }
+  ],
+  "key": 0,
+  "diag": {
+   "1": "reads &ldquo;$f(x)=0$&rdquo; as an instruction to set $x$ to zero",
+   "2": "gives where it crosses the $y$-axis instead of the $x$-axis",
+   "3": "The graph is enough: the solutions of $f(x)=0$ are the $x$-values where the curve meets the $x$-axis, here $x=-1$ and $x=4$."
+  }
+ },
+ {
+  "type": "probe",
+  "ask": "recognise",
+  "rate": true,
+  "facet": "roots-factors",
+  "obj": [
+   "1.7/O1"
+  ],
+  "stem": "$f(x)=(x-2)(x+5)$. Without expanding, where does the graph cross the $x$-axis?",
+  "options": [
+   {
+    "tex": "2 \\text{ and } -5"
+   },
+   {
+    "tex": "-2 \\text{ and } 5"
+   },
+   {
+    "tex": "2 \\text{ and } 5"
+   },
+   {
+    "v": "You have to expand it first"
+   }
+  ],
+  "key": 0,
+  "diag": {
+   "1": "reads the numbers in the brackets as the roots without changing sign",
+   "2": "drops the signs entirely",
+   "3": "$(x-2)(x+5)=0$ when one factor is zero, so $x=2$ or $x=-5$. Expanding is not needed."
+  }
+ },
+ {
+  "type": "probe",
+  "ask": "error",
+  "rate": true,
+  "facet": "read-coefficients",
+  "obj": [
+   "1.7/O2",
+   "1.1/O3"
+  ],
+  "stem": "A student solves $2x^{2}-3x-5=0$ with the formula. They write $a=2$, $b=3$, $c=5$, reach $\\sqrt{9-40}$, and conclude there are no real solutions.",
+  "ask_line": "What went wrong first?",
+  "options": [
+   {
+    "tex": "b \\text{ is } -3 \\text{ and } c \\text{ is } -5"
+   },
+   {
+    "tex": "\\text{the denominator should be } 2, \\text{ not } 4"
+   },
+   {
+    "tex": "\\text{it should be } 9+40"
+   },
+   {
+    "v": "Nothing — there really are no real solutions"
+   }
+  ],
+  "key": 0,
+  "diag": {
+   "1": "$2a=2(2)=4$ is correct. This looks wrong only if $a$ is misread.",
+   "2": "$9+40=49$ is the right value, but it follows only from $c=-5$. With $c=5$ as written, $b^{2}-4ac=9-40$.",
+   "3": "the roots are $-1$ and $\\tfrac{5}{2}$; with $b=-3$ and $c=-5$, $b^{2}-4ac=9+40=49$."
+  }
+ },
+ {
+  "type": "probe",
+  "ask": "method",
+  "rate": true,
+  "facet": "choose-method",
+  "obj": [
+   "1.7/O1",
+   "1.7/O2"
+  ],
+  "stem": "Which method applies to each?",
+  "rows": [
+   {
+    "tex": "x^{2}-9=0",
+    "key": 0
+   },
+   {
+    "tex": "x^{2}-5x+6=0",
+    "key": 1
+   },
+   {
+    "tex": "x^{2}+x-1=0",
+    "key": 2
+   }
+  ],
+  "cols": [
+   "square root",
+   "factor",
+   "formula"
+  ],
+  "point": "The formula solves all three. $x^{2}-9$ is a difference of squares, so $x=\\pm 3$ by square root. $x^{2}-5x+6$ factors as $(x-2)(x-3)$. $x^{2}+x-1$ has discriminant $5$, so it does not factor over the integers."
+ },
+ {
+  "type": "probe",
+  "ask": "recognise",
+  "rate": true,
+  "facet": "model-context",
+  "obj": [
+   "1.7/O1"
+  ],
+  "stem": "A rectangle is 3 cm longer than it is wide and has area 40 cm&sup2;. Which equation says that?",
+  "options": [
+   {
+    "tex": "w(w+3)=40"
+   },
+   {
+    "tex": "w+3=40"
+   },
+   {
+    "tex": "2w+2(w+3)=40"
+   },
+   {
+    "tex": "w^{2}+3=40"
+   }
+  ],
+  "key": 0,
+  "diag": {
+   "1": "uses the relationship between the sides as though it were the area",
+   "2": "that is the perimeter, not the area",
+   "3": "adds the 3 rather than applying it to the length"
+  },
+  "point": "$w(w+3)=40$ becomes $w^{2}+3w-40=0$, which factors as $(w+8)(w-5)$, so the width is 5."
+ },
+ {
+  "type": "predict",
+  "facet": "discriminant-crossings",
+  "obj": [
+   "1.7/O2"
+  ],
+  "stem": "$y=x^{2}-4x+c$. As $c$ increases from 0, what happens where the parabola meets the $x$-axis?",
+  "options": [
+   {
+    "v": "The two $x$-intercepts move apart"
+   },
+   {
+    "v": "They move together, then vanish"
+   },
+   {
+    "v": "They stay put and the curve moves up"
+   },
+   {
+    "v": "One stays still and the other moves"
+   }
+  ],
+  "key": 1,
+  "diag": {
+   "0": "the curve rises, so the $x$-intercepts close in rather than separate",
+   "2": "the vertical shift is real, but it changes where the curve meets the axis",
+   "3": "the parabola is symmetric about $x=2$, so the two roots move together"
+  },
+  "figure": {
+   "kind": "slider",
+   "a": 1,
+   "b": -4,
+   "cmin": 0,
+   "cmax": 6,
+   "c0": 0,
+   "xmin": -2,
+   "xmax": 6,
+   "ymin": -5,
+   "ymax": 8
+  },
+  "reveal": "The roots are $2\\pm\\sqrt{4-c}$. They meet at $c=4$ and there are none beyond it."
+ },
+ {
+  "type": "tell",
+  "facet": "roots-intercepts",
+  "obj": [
+   "1.7/O1"
+  ],
+  "title": "Solutions and $x$-intercepts",
+  "body": "Solving $f(x)=0$ asks: for which $x$ is the output zero? On a graph the output is the height. So you are asking where the height is zero — where the curve meets the $x$-axis."
+ },
+ {
+  "type": "check",
+  "facet": "roots-intercepts",
+  "obj": [
+   "1.7/O1"
+  ],
+  "stem": "A parabola never touches the $x$-axis. What does that tell you about $f(x)=0$?",
+  "options": [
+   {
+    "v": "It has no real solutions"
+   },
+   {
+    "v": "It has exactly one solution"
+   },
+   {
+    "v": "It has two solutions"
+   },
+   {
+    "v": "You cannot tell"
+   }
+  ],
+  "key": 0,
+  "diag": {
+   "1": "one solution is the case where it touches the axis at exactly one point",
+   "2": "two solutions is the case where it crosses twice",
+   "3": "The graph determines it: a parabola that never meets the $x$-axis has no $x$ with $f(x)=0$."
+  }
+ },
+ {
+  "type": "contrast",
+  "facet": "order-of-operations",
+  "obj": [
+   "1.1/O3"
+  ],
+  "stem": "These differ by one pair of parentheses.",
+  "left": {
+   "tex": "-3^{2}",
+   "label": "the exponent acts on 3, then the minus is applied",
+   "value": "-9"
+  },
+  "right": {
+   "tex": "(-3)^{2}",
+   "label": "the parentheses make $-3$ the base",
+   "value": "9"
+  },
+  "point": "In $b^{2}-4ac$ with $b=-3$: \\; $b^{2}=(-3)^{2}=9$, not $-9$."
+ },
+ {
+  "type": "multipart",
+  "facet": "factor-trinomial",
+  "obj": [
+   "1.3/O2"
+  ],
+  "stem": "Answer (a), then (b).",
+  "parts": [
+   {
+    "label": "(a)",
+    "q": "Two whole numbers with product 12 and sum 7.",
+    "slots": 2,
+    "key": "3, 4"
+   },
+   {
+    "label": "(b)",
+    "q": "Factor $x^{2}+7x+12$.",
+    "slots": 1,
+    "key": "(x+3)(x+4)"
+   }
+  ],
+  "point": "To factor $x^{2}+bx+c$ with leading coefficient 1, find two integers with product $c$ and sum $b$; they are the constants in the two factors."
+ },
+ {
+  "type": "show",
+  "facet": "coefficients-shape",
+  "obj": [
+   "1.7/O1",
+   "2.1/O3"
+  ],
+  "stem": "$y=ax^{2}+bx+c$. Move the coefficients and watch the roots.",
+  "figure": {
+   "kind": "abc",
+   "a": 1,
+   "b": -3,
+   "c": -4,
+   "xmin": -6,
+   "xmax": 6,
+   "ymin": -8,
+   "ymax": 8
+  },
+  "note": "The factored form is shown whenever the trinomial factors over the integers."
+ }
+]

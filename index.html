@@ -3,7 +3,7 @@
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <title>MATH 120E</title>
-<link rel=stylesheet href="styles.css?v=43">
+<link rel=stylesheet href="styles.css?v=53">
 <script>try{document.documentElement.dataset.theme=localStorage.getItem("m120.theme")||"ink"}catch(e){}</script>
 <body class=no-rail>
 <div id=read><div id=doc>
@@ -24,7 +24,9 @@
       bought through MyLab or as an access kit from the UNR bookstore.</span></dd>
     <dt>Calculator</dt><dd>A scientific calculator is required at every class.
       Graphing calculators are not permitted on exams.</dd>
-    <dt>Final exam</dt><dd>Day and time to be announced.</dd>
+    <dt>Final exam</dt><dd>Wednesday, December 16, 10:15&thinsp;a.m.&ndash;12:15&thinsp;p.m.
+      <span class=sub>Set by the university finals schedule: a four-credit
+      MTWR class takes the slot of its Monday/Wednesday meeting.</span></dd>
   </dl>
   </section>
 
@@ -67,6 +69,12 @@
 
   <h2>on this site</h2>
   <div class=cards>
+    <a class=card href="schedule.html">
+      <span class=ct>Schedule</span>
+      <span class=cd>Every class day of the term and what it covers, one month
+      at a time, with the exam days marked.</span>
+      <span class=cm id=m-cal></span>
+    </a>
     <a class=card href="connections.html">
       <span class=ct>Connections</span>
       <span class=cd>Every objective, what it rests on, and what later work uses
@@ -136,14 +144,15 @@
       Center, Suite 230.</dd>
   </dl>
 
-  <h2>the term</h2>
-  <div id=sched></div>
+  <h2>schedule</h2>
+  <div id=exams></div>
 
   <footer id=foot></footer>
 </div></div>
 <div id=margin></div>
 
 <script type=module>
+import { mountExams, examsOf, weeksOf } from './js/calendar.js?v=11';
 const d = await (await fetch('data/course.json', {cache:'no-store'})).json();
 const nObj = d.sections.reduce((a,s)=>a+s.objectives.length,0);
 let nQ = 0, nQSec = 0;
@@ -174,22 +183,14 @@ for (const [id, src] of [['m-pow','data/powers.json'], ['m-fac','data/factoring.
   } catch {}
 }
 
-const EXAM = {'Week 4':'Exam 1 · 1.1–1.7, 2.4','Week 7':'Exam 2 · 2.1–4.4',
-  'Week 10':'Exam 3 · 5.1–8.3','Week 13':'Exam 4 · 8.4–9.4','Week 16':'Final exam'};
-const bySec = Object.fromEntries(d.sections.map(s=>[s.id,s]));
-
-document.getElementById('sched').innerHTML = d.schedule.map(w => {
-  const secs = d.sections.filter(s => s.week === w.week);
-  if (!secs.length && !EXAM[w.week]) return '';
-  return '<div class=wkrow>' +
-    '<div class=wkh><b>' + w.week.toLowerCase() + '</b><span>' + (w.dates||'') + '</span></div>' +
-    '<div class=wkb>' +
-      (EXAM[w.week] ? '<div class=exam>' + EXAM[w.week].toLowerCase() + '</div>' : '') +
-      secs.map(s => '<a class=wks href="homework.html#' + s.id + '">' +
-        '<span class=n>' + s.id + '</span>' + s.title.toLowerCase() +
-        '<i>' + s.objectives.length + ' objectives</i></a>').join('') +
-    '</div></div>';
-}).join('');
+try {
+  const cal = await (await fetch('data/calendar.json', {cache:'no-store'})).json();
+  mountExams(document.getElementById('exams'), cal);
+  document.getElementById('m-cal').textContent =
+    weeksOf(cal).filter(w => w.items.some(i => i.kind === 'section' || i.kind === 'review'))
+      .length + ' weeks · ' +
+    examsOf(cal).length + ' exams';
+} catch {}
 
 document.getElementById('foot').innerHTML =
   'Homework problems are in MyLab, not here. The instructor reserves the right ' +

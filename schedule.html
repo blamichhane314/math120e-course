@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang=en>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>math 120e · schedule</title>
+<link rel=stylesheet href="styles.css?v=53">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem("m120.theme")||"ink"}catch(e){}</script>
+<body class=no-rail>
+<div id=read><div id=doc>
+  <a class=home href="index.html">math 120e</a>
+  <h1><span class=num id=term>fall</span>Schedule</h1>
+
+  <div id=cal></div>
+
+  <h2>exams</h2>
+  <div id=exams></div>
+
+  <h2>no class</h2>
+  <div id=off></div>
+
+  <h2>the term</h2>
+  <div id=sched></div>
+
+  <footer id=foot></footer>
+</div></div>
+<div id=margin></div>
+
+<script type=module>
+import { mountMonths, mountExams, mountWeeks, mountOff } from './js/calendar.js?v=11';
+
+const cal = await (await fetch('data/calendar.json', {cache:'no-store'})).json();
+document.getElementById('term').textContent = cal.term.toLowerCase();
+mountMonths(document.getElementById('cal'), cal);
+mountExams(document.getElementById('exams'), cal);
+mountOff(document.getElementById('off'), cal);
+
+const d = await (await fetch('data/course.json', {cache:'no-store'})).json();
+mountWeeks(document.getElementById('sched'), cal,
+           Object.fromEntries(d.sections.map(x => [x.id, x])));
+
+document.getElementById('foot').innerHTML =
+  'Homework problems are in MyLab, not here. The instructor reserves the right ' +
+  'to make changes to the schedule as needed.';
+</script>
+<script type=module>
+import { mountThemes } from './js/theme.js?v=2';
+mountThemes();
+</script>
+</body>
+</html>

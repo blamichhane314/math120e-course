@@ -1,0 +1,467 @@
+{
+ "term": "Fall 2026",
+ "start": "2026-08-24",
+ "end": "2026-12-16",
+ "meets": [
+  1,
+  2,
+  3,
+  4
+ ],
+ "closed": [
+  {
+   "date": "2026-09-07",
+   "title": "Labor Day"
+  },
+  {
+   "date": "2026-11-11",
+   "title": "Veterans Day"
+  },
+  {
+   "date": "2026-11-26",
+   "title": "Thanksgiving Day"
+  },
+  {
+   "date": "2026-12-09",
+   "title": "Prep Day"
+  }
+ ],
+ "days": {
+  "2026-08-24": [
+   {
+    "kind": "note",
+    "text": "Introduction & Syllabus"
+   }
+  ],
+  "2026-08-25": [
+   {
+    "kind": "section",
+    "id": "1.1",
+    "text": "The Real Numbers"
+   }
+  ],
+  "2026-08-26": [
+   {
+    "kind": "section",
+    "id": "1.2",
+    "text": "Polynomials"
+   }
+  ],
+  "2026-08-27": [
+   {
+    "kind": "section",
+    "id": "1.3",
+    "text": "Factoring"
+   }
+  ],
+  "2026-08-31": [
+   {
+    "kind": "section",
+    "id": "1.2",
+    "text": "Polynomials"
+   }
+  ],
+  "2026-09-01": [
+   {
+    "kind": "section",
+    "id": "1.3",
+    "text": "Factoring"
+   }
+  ],
+  "2026-09-02": [
+   {
+    "kind": "section",
+    "id": "1.3",
+    "text": "Factoring"
+   }
+  ],
+  "2026-09-03": [
+   {
+    "kind": "section",
+    "id": "1.4",
+    "text": "Rational Expressions"
+   },
+   {
+    "kind": "section",
+    "id": "1.5",
+    "text": "Exponents and Radicals"
+   }
+  ],
+  "2026-09-08": [
+   {
+    "kind": "section",
+    "id": "1.6",
+    "text": "First-Degree Equations"
+   }
+  ],
+  "2026-09-09": [
+   {
+    "kind": "section",
+    "id": "1.7",
+    "text": "Quadratic Equations"
+   }
+  ],
+  "2026-09-10": [
+   {
+    "kind": "section",
+    "id": "2.4",
+    "text": "Linear Inequalities"
+   }
+  ],
+  "2026-09-14": [
+   {
+    "kind": "review",
+    "text": "Review for Exam 1"
+   }
+  ],
+  "2026-09-15": [
+   {
+    "kind": "exam",
+    "text": "Exam 1",
+    "covers": "1.1 – 1.7, 2.4"
+   }
+  ],
+  "2026-09-16": [
+   {
+    "kind": "section",
+    "id": "2.1",
+    "text": "Graphs"
+   }
+  ],
+  "2026-09-17": [
+   {
+    "kind": "section",
+    "id": "2.2",
+    "text": "Equations of Lines"
+   }
+  ],
+  "2026-09-21": [
+   {
+    "kind": "section",
+    "id": "2.3",
+    "text": "Linear Models"
+   }
+  ],
+  "2026-09-22": [
+   {
+    "kind": "section",
+    "id": "3.1",
+    "text": "Functions"
+   }
+  ],
+  "2026-09-23": [
+   {
+    "kind": "section",
+    "id": "4.1",
+    "text": "Exponential Functions"
+   }
+  ],
+  "2026-09-24": [
+   {
+    "kind": "section",
+    "id": "4.1",
+    "text": "Exponential Functions"
+   },
+   {
+    "kind": "section",
+    "id": "4.2",
+    "text": "Applications of Exponential Functions"
+   }
+  ],
+  "2026-09-28": [
+   {
+    "kind": "section",
+    "id": "4.2",
+    "text": "Applications of Exponential Functions"
+   }
+  ],
+  "2026-09-29": [
+   {
+    "kind": "section",
+    "id": "4.3",
+    "text": "Logarithmic Functions"
+   }
+  ],
+  "2026-09-30": [
+   {
+    "kind": "section",
+    "id": "4.4",
+    "text": "Logarithmic and Exponential Equations"
+   }
+  ],
+  "2026-10-01": [
+   {
+    "kind": "section",
+    "id": "4.4",
+    "text": "Logarithmic and Exponential Equations"
+   }
+  ],
+  "2026-10-05": [
+   {
+    "kind": "review",
+    "text": "Review for Exam 2"
+   }
+  ],
+  "2026-10-06": [
+   {
+    "kind": "exam",
+    "text": "Exam 2",
+    "covers": "2.1 – 4.4"
+   }
+  ],
+  "2026-10-07": [
+   {
+    "kind": "section",
+    "id": "5.1",
+    "text": "Simple and Compound Interest"
+   }
+  ],
+  "2026-10-08": [
+   {
+    "kind": "section",
+    "id": "5.1",
+    "text": "Simple and Compound Interest"
+   }
+  ],
+  "2026-10-12": [
+   {
+    "kind": "section",
+    "id": "5.2",
+    "text": "Annuities, Future Value, and Sinking Funds"
+   }
+  ],
+  "2026-10-13": [
+   {
+    "kind": "section",
+    "id": "5.2",
+    "text": "Annuities, Future Value, and Sinking Funds"
+   }
+  ],
+  "2026-10-14": [
+   {
+    "kind": "section",
+    "id": "5.3",
+    "text": "Consumer Loans and Amortization"
+   }
+  ],
+  "2026-10-15": [
+   {
+    "kind": "section",
+    "id": "5.3",
+    "text": "Consumer Loans and Amortization"
+   }
+  ],
+  "2026-10-19": [
+   {
+    "kind": "section",
+    "id": "8.1",
+    "text": "Sets"
+   }
+  ],
+  "2026-10-20": [
+   {
+    "kind": "section",
+    "id": "8.2",
+    "text": "Applications of Venn Diagrams"
+   }
+  ],
+  "2026-10-21": [
+   {
+    "kind": "section",
+    "id": "8.3",
+    "text": "Introduction to Probability"
+   }
+  ],
+  "2026-10-22": [
+   {
+    "kind": "section",
+    "id": "8.3",
+    "text": "Introduction to Probability"
+   }
+  ],
+  "2026-10-26": [
+   {
+    "kind": "review",
+    "text": "Review for Exam 3"
+   }
+  ],
+  "2026-10-27": [
+   {
+    "kind": "exam",
+    "text": "Exam 3",
+    "covers": "5.1 – 8.3"
+   }
+  ],
+  "2026-10-28": [
+   {
+    "kind": "section",
+    "id": "8.4",
+    "text": "Basic Concepts of Probability"
+   }
+  ],
+  "2026-10-29": [
+   {
+    "kind": "section",
+    "id": "8.4",
+    "text": "Basic Concepts of Probability"
+   }
+  ],
+  "2026-11-02": [
+   {
+    "kind": "section",
+    "id": "8.5",
+    "text": "Conditional Probability & Independent Events"
+   }
+  ],
+  "2026-11-03": [
+   {
+    "kind": "section",
+    "id": "8.5",
+    "text": "Conditional Probability & Independent Events"
+   }
+  ],
+  "2026-11-04": [
+   {
+    "kind": "section",
+    "id": "9.1",
+    "text": "Probability Distributions & Expected Value"
+   }
+  ],
+  "2026-11-05": [
+   {
+    "kind": "section",
+    "id": "9.1",
+    "text": "Probability Distributions & Expected Value"
+   }
+  ],
+  "2026-11-09": [
+   {
+    "kind": "section",
+    "id": "9.2",
+    "text": "The Multiplication Principle, Permutations, and Combinations"
+   }
+  ],
+  "2026-11-10": [
+   {
+    "kind": "section",
+    "id": "9.2",
+    "text": "The Multiplication Principle, Permutations, and Combinations"
+   }
+  ],
+  "2026-11-12": [
+   {
+    "kind": "section",
+    "id": "9.3",
+    "text": "Applications of Counting"
+   },
+   {
+    "kind": "section",
+    "id": "9.4",
+    "text": "Binomial Probability"
+   }
+  ],
+  "2026-11-16": [
+   {
+    "kind": "review",
+    "text": "Review for Exam 4"
+   }
+  ],
+  "2026-11-17": [
+   {
+    "kind": "exam",
+    "text": "Exam 4",
+    "covers": "8.4 – 9.4"
+   }
+  ],
+  "2026-11-18": [
+   {
+    "kind": "section",
+    "id": "10.1",
+    "text": "Frequency Distributions"
+   }
+  ],
+  "2026-11-19": [
+   {
+    "kind": "section",
+    "id": "10.2",
+    "text": "Measures of Center"
+   }
+  ],
+  "2026-11-23": [
+   {
+    "kind": "section",
+    "id": "10.2",
+    "text": "Measures of Center"
+   }
+  ],
+  "2026-11-24": [
+   {
+    "kind": "section",
+    "id": "10.3",
+    "text": "Measures of Variation"
+   }
+  ],
+  "2026-11-25": [
+   {
+    "kind": "section",
+    "id": "10.4",
+    "text": "Normal Distributions"
+   }
+  ],
+  "2026-11-30": [
+   {
+    "kind": "section",
+    "id": "10.4",
+    "text": "Normal Distributions"
+   }
+  ],
+  "2026-12-01": [
+   {
+    "kind": "review",
+    "text": "Review for Final Exam"
+   }
+  ],
+  "2026-12-02": [
+   {
+    "kind": "review",
+    "text": "Review for Final Exam"
+   }
+  ],
+  "2026-12-03": [
+   {
+    "kind": "review",
+    "text": "Review for Final Exam"
+   }
+  ],
+  "2026-12-07": [
+   {
+    "kind": "review",
+    "text": "Review for Final Exam"
+   }
+  ],
+  "2026-12-08": [
+   {
+    "kind": "review",
+    "text": "Review for Final Exam"
+   }
+  ],
+  "2026-12-10": [
+   {
+    "kind": "note",
+    "text": "Finals week begins"
+   }
+  ],
+  "2026-12-16": [
+   {
+    "kind": "exam",
+    "text": "Final exam",
+    "covers": "cumulative",
+    "time": "10:15 a.m. – 12:15 p.m."
+   },
+   {
+    "kind": "note",
+    "text": "Instruction ends"
+   }
+  ]
+ }
+}

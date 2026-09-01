@@ -135,6 +135,7 @@ a.src:hover{color:var(--accent);border-bottom-color:var(--accent)}
    ground held open beside the work, so those pages drop it and the reading
    column takes the screen. */
 body.no-rail{grid-template-columns:minmax(0,1fr)}
+
 body.no-rail #rail{display:none}
 body.no-rail #theme{left:calc(var(--s)*2);bottom:calc(var(--s)*2);width:auto;
   border-radius:99px;border:1px solid var(--line);background:var(--paper-lift);
@@ -684,6 +685,70 @@ h1 .num{display:block}
 .cm{display:block;margin-top:calc(var(--s));font:9px var(--mono);
   letter-spacing:.16em;color:var(--ink-faint)}
 
+/* ── the schedule page: one month at a time, filling the frame ──── */
+.cal-nav{display:flex;flex-wrap:wrap;gap:calc(var(--s)*.5);
+  padding-bottom:calc(var(--s)*1.5);margin-bottom:calc(var(--s)*2.5);
+  border-bottom:1px solid var(--line-soft)}
+.cal-nav button{background:none;border:0;cursor:pointer;
+  padding:calc(var(--s)*1.25) calc(var(--s)*1.25);margin:calc(var(--s)*-1.25) 0;
+  font:10px var(--mono);letter-spacing:.16em;color:var(--ink-faint);
+  border-bottom:1px solid transparent;transition:color .2s var(--ease)}
+.cal-nav button:hover{color:var(--ink-soft)}
+.cal-nav button[aria-current=true]{color:var(--ink);border-bottom-color:var(--accent)}
+.cal-head{display:grid;font:9px var(--mono);letter-spacing:.18em;
+  color:var(--ink-faint);padding-bottom:calc(var(--s)*.75)}
+.cal-head span{padding-left:calc(var(--s)*1.25)}
+.cal-head .cal-wh{padding-left:0;opacity:.6}
+.cal-w{border-bottom:1px solid var(--line-soft);display:flex;
+  align-items:flex-start;justify-content:flex-end;
+  padding:calc(var(--s)*1.25) calc(var(--s)*1.25) 0 0;
+  font:10px var(--mono);letter-spacing:.06em;color:var(--ink-faint);opacity:.7}
+.cal-grid{display:grid;border-top:1px solid var(--line-soft);
+  border-left:1px solid var(--line-soft);margin-bottom:calc(var(--s)*6)}
+.cal-c{border-right:1px solid var(--line-soft);
+  border-bottom:1px solid var(--line-soft);min-height:7.5rem;
+  padding:calc(var(--s)*1.25);display:flex;flex-direction:column;
+  gap:calc(var(--s)*.75)}
+.cal-c.gone{border-color:transparent}
+.cal-c.now{background:var(--accent-tint)}
+.cal-n{font:10px var(--mono);letter-spacing:.06em;color:var(--ink-faint)}
+.cal-c.now .cal-n{color:var(--accent)}
+.cal-c.shut{opacity:.65}
+.cal-shut{font:9.5px var(--mono);letter-spacing:.1em;color:var(--ink-faint)}
+.cal-shut b{display:block;margin-top:3px;font-weight:400;color:var(--ink-soft)}
+.cal-i{display:block;font-size:13.5px;line-height:1.35;color:var(--ink-soft);
+  text-decoration:none;transition:color .14s var(--ease)}
+a.cal-i:hover{color:var(--accent)}
+.cal-id{display:block;font:9px var(--mono);letter-spacing:.14em;
+  color:var(--ink-faint);margin-bottom:3px}
+.cal-exam{align-self:flex-start;background:var(--accent);color:var(--paper);
+  border-radius:2px;padding:calc(var(--s)*.5) calc(var(--s)*.9);font-weight:500}
+.cal-cov{display:block;font:9px var(--mono);letter-spacing:.1em;
+  opacity:.85;margin-top:2px}
+.cal-review,.cal-note{color:var(--ink-faint);font-size:13px}
+@media (max-width:700px){
+  .cal-c{min-height:5rem;padding:calc(var(--s)*.75)}
+  .cal-i{font-size:12px}
+}
+
+.cal-list{border-top:1px solid var(--line-soft)}
+.cal-r{display:grid;grid-template-columns:5rem 15rem minmax(0,1fr);
+  gap:calc(var(--s)*2);align-items:baseline;padding:calc(var(--s)*1.25) 0;
+  border-bottom:1px solid var(--line-soft)}
+.cal-rn{font:10px var(--mono);letter-spacing:.16em;color:var(--accent)}
+.cal-rd{font-size:14px;color:var(--ink)}
+.cal-rc{font:10px var(--mono);letter-spacing:.06em;color:var(--ink-faint)}
+.cal-r.soon .cal-rn{color:var(--ink-faint)}
+.cal-r.soon .cal-rd{color:var(--ink-soft)}
+.cal-list.two .cal-r{grid-template-columns:4rem minmax(0,1fr)}
+.cal-list.two .cal-rd{font-size:13.5px;color:var(--ink-soft)}
+.cal-r.shut .cal-rn{color:var(--ink-faint)}
+.cal-r.shut .cal-rd{color:var(--ink)}
+@media (max-width:760px){
+  .cal-r,.cal-list.two .cal-r{grid-template-columns:minmax(0,1fr);
+    gap:calc(var(--s)*.25)}
+}
+
 .wkrow{display:flex;gap:calc(var(--s)*3);padding:calc(var(--s)*1.25) 0;
   border-bottom:1px solid var(--line-soft);align-items:baseline}
 .wkh{min-width:11rem}
@@ -694,6 +759,7 @@ h1 .num{display:block}
   font-size:13.5px;color:var(--ink-soft);transition:color .14s var(--ease)}
 .wks:hover{color:var(--accent)}
 .wks .n{font:10px var(--mono);color:var(--ink-faint);min-width:2.2rem}
+.wkn{font:10px var(--mono);letter-spacing:.12em;color:var(--ink-faint)}
 .wks i{font-style:normal;font:9px var(--mono);color:var(--ink-faint);
   letter-spacing:.1em}
 .exam{font:9.5px var(--mono);letter-spacing:.12em;color:var(--accent-soft);
@@ -774,6 +840,16 @@ h1{font-size:32px}
    column takes the screen. */
 body.no-rail{grid-template-columns:minmax(0,1fr)}
 body.no-rail #rail{display:none}
+
+/* Pages without the rail scroll the document itself. The nested scroller
+   exists so the rail can scroll independently; where there is no rail it
+   only costs. A trackpad keeps a nested scroller coasting after the fingers
+   lift, and a click landing during the coast is spent arresting the scroll
+   instead of reaching what it hit. Pages carrying full-bleed art opt out
+   with .bleed: their `width:100vw` is exact only while the document has no
+   scrollbar of its own. */
+body.no-rail:not(.bleed){height:auto;min-height:100vh;overflow:visible}
+body.no-rail:not(.bleed) #read{height:auto;overflow:visible}
 body.no-rail #theme{left:calc(var(--s)*2);bottom:calc(var(--s)*2);width:auto;
   border-radius:99px;border:1px solid var(--line);background:var(--paper-lift);
   padding:7px 10px;box-shadow:0 6px 18px -10px var(--shade)}

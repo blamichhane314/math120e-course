@@ -115,7 +115,8 @@ export function NumberLine(b) {
   g.appendChild(el('path', { d: `M${PAD - 14},${y} l7,-4.5 l0,9 z`, class: 'axis-f' }));
   g.appendChild(el('path', { d: `M${W - PAD + 14},${y} l-7,-4.5 l0,9 z`, class: 'axis-f' }));
 
-  const step = b.step ?? Math.max(1, Math.round((hi - lo) / 10));
+  const step = (typeof b.step === 'number' && b.step > 0) ? b.step
+    : Math.max(1, Math.round((hi - lo) / 10));   /* a 0 or negative step never terminates */
   for (let v = Math.ceil(lo / step) * step; v <= hi; v += step) {
     g.appendChild(el('line', { x1: X(v), y1: y - 4, x2: X(v), y2: y + 4, class: 'tick' }));
     g.appendChild(txt(X(v), y + 19, 'tlab', v));
@@ -228,8 +229,10 @@ export function Plane(b) {
   const X = (v) => P + ((v - x0) / (x1 - x0)) * (W - 2 * P);
   const Y = (v) => H - P - ((v - y0) / (y1 - y0)) * (H - 2 * P);
   const g = svg(W, H, 'fg-plane');
-  const sx = b.stepx ?? Math.max(1, Math.round((x1 - x0) / 10));
-  const sy = b.stepy ?? Math.max(1, Math.round((y1 - y0) / 10));
+  const sx = (typeof b.stepx === 'number' && b.stepx > 0) ? b.stepx
+    : Math.max(1, Math.round((x1 - x0) / 10));   /* a 0 or negative step never terminates */
+  const sy = (typeof b.stepy === 'number' && b.stepy > 0) ? b.stepy
+    : Math.max(1, Math.round((y1 - y0) / 10));
 
   for (let v = Math.ceil(x0 / sx) * sx; v <= x1; v += sx)
     g.appendChild(el('line', { x1: X(v), y1: Y(y0), x2: X(v), y2: Y(y1), class: 'grid' }));

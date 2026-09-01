@@ -1,0 +1,1096 @@
+{
+ "posted": "Sep 1",
+ "title": "Copies and factors",
+ "lede": "One shop, fifteen questions. §1.2, before polynomials.",
+ "sets": [
+  {
+   "name": "The shop",
+   "questions": [
+    {
+     "id": "b1",
+     "idea": "count",
+     "stem": "You have 1 book. A friend gives you their copy. How many books do you have?",
+     "opts": [
+      {
+       "t": "2",
+       "ok": true
+      },
+      {
+       "t": "1",
+       "d": "One book and one more book is two books."
+      },
+      {
+       "t": "11",
+       "d": "The books are added, not written side by side."
+      }
+     ],
+     "work": {
+      "ex": "1 + 1",
+      "is": "2",
+      "why": "One book and one more."
+     }
+    },
+    {
+     "id": "b2",
+     "idea": "count",
+     "stem": "Say there are `x` books on the shelf. A friend brings 5 more. How many books are on the shelf now?",
+     "opts": [
+      {
+       "t": "`x + 5`",
+       "ok": true
+      },
+      {
+       "t": "`5x`",
+       "k": "times",
+       "d": "`5x` is five shelves' worth. Five more books is `x + 5`. With 4 books on the shelf, 5 more makes 9, not 20."
+      },
+      {
+       "t": "`x^5`",
+       "k": "power",
+       "d": "`x^5` is five books multiplied together. Five more books is `x + 5`."
+      },
+      {
+       "t": "5",
+       "d": "The `x` books are still there."
+      }
+     ],
+     "work": {
+      "ex": "`x` books, 5 more",
+      "is": "`x + 5`",
+      "why": "Four books on the shelf and five more makes nine, not twenty."
+     },
+     "aspects": [
+      {
+       "lens": "the letter",
+       "body": "`x` is the number of books, not the books themselves. Five more books is `x + 5`; five shelves' worth would be `5x`."
+      },
+      {
+       "lens": "what if",
+       "body": "Put `x` = 4 in. Four books and five more is nine. `5x` would be twenty."
+      }
+     ]
+    },
+    {
+     "id": "b3",
+     "idea": "count",
+     "stem": "Which is larger, `2x` or `x + 2`?",
+     "opts": [
+      {
+       "t": "It depends on `x`.",
+       "ok": true
+      },
+      {
+       "t": "`2x`",
+       "k": "times",
+       "d": "At `x` = 1, `2x` is 2 and `x + 2` is 3. At `x` = 5 the other way round."
+      },
+      {
+       "t": "`x + 2`",
+       "d": "At `x` = 5, `2x` is 10 and `x + 2` is 7."
+      },
+      {
+       "t": "They are always equal.",
+       "d": "At `x` = 5 they are 10 and 7."
+      }
+     ],
+     "work": {
+      "ex": "`2x` against `x + 2`",
+      "is": "depends on `x`",
+      "why": "Equal at `x` = 2, and apart either side of it."
+     },
+     "aspects": [
+      {
+       "lens": "what if",
+       "body": "They are equal at `x` = 2, where both come to 4. Below 2 the sum is bigger; above 2 the product is."
+      }
+     ]
+    },
+    {
+     "id": "b4a",
+     "idea": "array",
+     "fig": {
+      "rows": 2,
+      "cols": 3
+     },
+     "stem": "The shop has 2 shelves, and each one holds 3 books. How many books is that?",
+     "opts": [
+      {
+       "t": "2 &times; 3 = 6",
+       "ok": true
+      },
+      {
+       "t": "2 + 3 = 5",
+       "d": "Adding gives 5. Each of the 2 shelves holds 3 books, so it is 2 lots of 3."
+      },
+      {
+       "t": "3 &times; 3 = 9",
+       "d": "That would be 3 shelves of 3. There are 2 shelves here."
+      },
+      {
+       "t": "23",
+       "d": "The two numbers are not written side by side."
+      }
+     ],
+     "work": {
+      "ex": "2 shelves of 3",
+      "is": "2 &times; 3 = 6",
+      "why": "Two rows of three."
+     }
+    },
+    {
+     "id": "b4b",
+     "idea": "array",
+     "fig": {
+      "rows": 3,
+      "cols": 3
+     },
+     "stem": "Now 3 shelves, with 3 books on each. How many books?",
+     "opts": [
+      {
+       "t": "3 &times; 3 = 9",
+       "ok": true
+      },
+      {
+       "t": "3 + 3 = 6",
+       "d": "Adding gives 6, which is 2 shelves of 3. There are 3 shelves here, each with 3."
+      },
+      {
+       "t": "2 &times; 3 = 6",
+       "d": "That was 2 shelves of 3."
+      },
+      {
+       "t": "3 + 3 + 3 + 3 = 12",
+       "d": "That is 4 shelves of 3."
+      }
+     ],
+     "work": {
+      "ex": "3 shelves of 3",
+      "is": "3 &times; 3 = 9",
+      "why": "Three rows of three."
+     }
+    },
+    {
+     "id": "b4",
+     "idea": "array",
+     "stem": "This time the shop has `x` shelves, and each one holds `x` books. How many books are in the shop?",
+     "opts": [
+      {
+       "t": "`x * x = x^2`",
+       "ok": true
+      },
+      {
+       "t": "`x + x = 2x`",
+       "d": "That is 2 shelves' worth. There are `x` shelves, each holding `x`."
+      },
+      {
+       "t": "`2 * x = 2x`",
+       "d": "That is 2 shelves of `x` books. The number of shelves is `x`, not 2."
+      },
+      {
+       "t": "`x + 2`",
+       "d": "Nothing is being added here."
+      }
+     ],
+     "work": {
+      "ex": "`x` shelves of `x`",
+      "is": "`x * x = x^2`",
+      "why": "2 &times; 2 = 4, 3 &times; 3 = 9, and `x` &times; `x` = `x^2`."
+     },
+     "aspects": [
+      {
+       "lens": "the letter",
+       "body": "The same `x` is doing two jobs at once: how many shelves, and how many books on each. One number, two roles."
+      },
+      {
+       "lens": "the picture",
+       "body": "3 shelves of 3 was a block 3 across and 3 down, 9 books in it. `x` shelves of `x` is that same block with the side left unsaid."
+      },
+      {
+       "lens": "what kind of thing",
+       "body": "4 shelves of 4 books is 16 books. Shelves times books-per-shelf leaves books, not shelves."
+      },
+      {
+       "lens": "what if",
+       "body": "If every shelf held 3 books instead of `x`, the shop would have `3x` books. At 5 shelves that is 15, not 25."
+      }
+     ],
+     "fig": {
+      "rows": 4,
+      "cols": 4,
+      "unknown": true
+     }
+    },
+    {
+     "id": "n1",
+     "idea": "count",
+     "stem": "Does `x * x` equal `2x` for every value of `x`?",
+     "opts": [
+      {
+       "t": "No",
+       "ok": true
+      },
+      {
+       "t": "Yes",
+       "d": "At `x` = 5, `x * x` is 25 and `2x` is 10. They agree only at `x` = 0 and `x` = 2."
+      }
+     ],
+     "work": {
+      "ex": "`x * x` against `2x`",
+      "is": "not equal",
+      "why": "At `x` = 5, 25 against 10."
+     },
+     "aspects": [
+      {
+       "lens": "in general",
+       "body": "They do match at `x` = 0 and `x` = 2, so a single lucky value proves nothing. At `x` = 3 they are 9 and 6, and at `x` = 10 they are 100 and 20."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Adding and multiplying",
+   "questions": [
+    {
+     "id": "a1",
+     "idea": "add",
+     "stem": "Simplify `x^2 + x^2`",
+     "opts": [
+      {
+       "t": "`2x^2`",
+       "ok": true
+      },
+      {
+       "t": "`x^4`",
+       "k": "x4",
+       "d": "The exponents were added. `x^2` twice is two of the same thing, the way `7 + 7` is `2*7`."
+      },
+      {
+       "t": "`2x^4`",
+       "k": "both",
+       "d": "Both numbers moved. Only one of them moves in a step."
+      },
+      {
+       "t": "`x^2`",
+       "k": "same",
+       "d": "Two shelves were counted as one."
+      }
+     ],
+     "work": {
+      "ex": "`x^2 + x^2`",
+      "is": "`2x^2`",
+      "why": "Two of the same thing, as `7 + 7` is `2*7`."
+     },
+     "aspects": [
+      {
+       "lens": "in general",
+       "body": "`x^2 + x^2` is 2 of them, the same way `7 + 7` is `2 * 7`. `x^2 + x^3` is not 2 of anything."
+      },
+      {
+       "lens": "the letter",
+       "body": "In `2x^2` the 2 in front counts how many there are. The 2 up top counts how many `x`s are multiplied. At `x` = 3 that is 2 lots of 9, so 18."
+      }
+     ]
+    },
+    {
+     "id": "a2",
+     "idea": "mult",
+     "stem": "Simplify `x^2 * x^2`",
+     "opts": [
+      {
+       "t": "`x^4`",
+       "ok": true
+      },
+      {
+       "t": "`2x^2`",
+       "k": "2x2",
+       "d": "Copies were counted. `(x*x)(x*x)` is four `x`'s in a row."
+      },
+      {
+       "t": "`2x^4`",
+       "k": "both",
+       "d": "Both numbers moved. Only one of them moves in a step."
+      },
+      {
+       "t": "`x^2`",
+       "k": "same",
+       "d": "Nothing was combined. `(x*x)(x*x)` is four factors."
+      }
+     ],
+     "work": {
+      "ex": "`x^2 * x^2`",
+      "is": "`x^4`",
+      "why": "`(x*x)(x*x)` — four `x`'s."
+     },
+     "aspects": [
+      {
+       "lens": "the picture",
+       "body": "`(x*x)(x*x)` written out is four `x`'s in a row. Count them; there is no rule to remember."
+      },
+      {
+       "lens": "in general",
+       "body": "`x^2 * x^3` is `(x*x)(x*x*x)`, five `x`s in a row, so `x^5`. Count the `x`s and you have the rule."
+      }
+     ]
+    },
+    {
+     "id": "p11",
+     "idea": "add",
+     "stem": "For all numbers `k`, `k + k + k + k + k` can be written as",
+     "opts": [
+      {
+       "t": "`5k`",
+       "ok": true
+      },
+      {
+       "t": "`k^5`",
+       "k": "power",
+       "d": "`k^5` is five `k`'s multiplied. This is five `k`'s added, which is `5k`."
+      },
+      {
+       "t": "`k + 5`",
+       "d": "Five copies of `k`, not `k` and 5."
+      },
+      {
+       "t": "`5(k + 1)`",
+       "d": "Nothing here adds 1 to `k`."
+      }
+     ],
+     "work": {
+      "ex": "`k+k+k+k+k`",
+      "is": "`5k`",
+      "why": "Five copies added."
+     }
+    },
+    {
+     "id": "p09",
+     "idea": "mult",
+     "stem": "Which of these expressions is equivalent to `n * n * n` for all values of `n`?",
+     "opts": [
+      {
+       "t": "`n^3`",
+       "ok": true
+      },
+      {
+       "t": "`3n`",
+       "k": "times",
+       "d": "`3n` is three `n`'s added. This is three multiplied, which is `n^3`."
+      },
+      {
+       "t": "`n + 3`",
+       "d": "Nothing is added here."
+      },
+      {
+       "t": "`n/3`",
+       "d": "Nothing is divided here."
+      }
+     ],
+     "work": {
+      "ex": "`n*n*n`",
+      "is": "`n^3`",
+      "why": "Three `n`'s multiplied."
+     }
+    },
+    {
+     "id": "a3",
+     "idea": "nocomb",
+     "stem": "Simplify `x^2 + x^3`",
+     "opts": [
+      {
+       "t": "It cannot be combined.",
+       "ok": true
+      },
+      {
+       "t": "`x^5`",
+       "d": "The exponents were added. At `x` = 2 this is 4 + 8 = 12, and `x^5` is 32."
+      },
+      {
+       "t": "`2x^5`",
+       "d": "`x^2` and `x^3` are not copies of one thing."
+      },
+      {
+       "t": "`x^6`",
+       "d": "`x^2` and `x^3` are not copies of one thing."
+      }
+     ],
+     "work": {
+      "ex": "`x^2 + x^3`",
+      "is": "nothing to combine",
+      "why": "At `x` = 2 that is 4 + 8 = 12, while `x^5` is 32."
+     },
+     "aspects": [
+      {
+       "lens": "what kind of thing",
+       "body": "`x^2` and `x^3` are different kinds of thing, so there is nothing to count. It is 2 apples and 3 oranges."
+      },
+      {
+       "lens": "what if",
+       "body": "At `x` = 2 this is 4 + 8 = 12. `x^5` would be 32. They are not the same expression."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "A number in front and a number above",
+   "questions": [
+    {
+     "id": "c1",
+     "idea": "add",
+     "stem": "Simplify `2x^2 + 3x^2`",
+     "opts": [
+      {
+       "t": "`5x^2`",
+       "ok": true
+      },
+      {
+       "t": "`5x^4`",
+       "d": "The exponent moved too. Adding moves only the number in front."
+      },
+      {
+       "t": "`6x^4`",
+       "d": "Everything was multiplied. The sign is a plus."
+      },
+      {
+       "t": "`6x^2`",
+       "d": "The fronts were multiplied. Two and three of a thing is five of it."
+      }
+     ],
+     "work": {
+      "ex": "`2x^2 + 3x^2`",
+      "is": "`5x^2`",
+      "why": "As `2*7 + 3*7` is `5*7`."
+     }
+    },
+    {
+     "id": "c2",
+     "idea": "coeff",
+     "stem": "Simplify `2x^2 * 3x^2`",
+     "opts": [
+      {
+       "t": "`6x^4`",
+       "ok": true
+      },
+      {
+       "t": "`6x^2`",
+       "d": "The front is right; the exponent has not moved. There are four `x`'s here."
+      },
+      {
+       "t": "`5x^4`",
+       "d": "The fronts were added. In a product they multiply."
+      },
+      {
+       "t": "`5x^2`",
+       "d": "The whole thing was treated as a sum. The sign is a times."
+      }
+     ],
+     "work": {
+      "ex": "`2x^2 * 3x^2`",
+      "is": "`6x^4`",
+      "why": "In front, 2 times 3. Above, 2 plus 2."
+     },
+     "aspects": [
+      {
+       "lens": "in general",
+       "body": "`2x^2 * 3x^2`: the 2 and the 3 multiply to 6, and the two `x`'s and two more `x`'s make four, so `6x^4`."
+      },
+      {
+       "lens": "the picture",
+       "body": "`2x^2` is 2 tiles, each `x` by `x`. `3x^2` is 3 of the same tile. The 2 and the 3 multiply to 6; the `x`s multiply to `x^4`."
+      }
+     ]
+    },
+    {
+     "id": "c3",
+     "idea": "mult",
+     "stem": "Simplify `x * x^2`",
+     "opts": [
+      {
+       "t": "`x^3`",
+       "ok": true
+      },
+      {
+       "t": "`x^2`",
+       "d": "A lone `x` is `x^1`, so it brings one factor: `x*x*x`."
+      },
+      {
+       "t": "`2x^2`",
+       "d": "Copies were counted. This is a product."
+      },
+      {
+       "t": "`2x^3`",
+       "d": "No count appears in front of a product of powers."
+      }
+     ],
+     "work": {
+      "ex": "`x * x^2`",
+      "is": "`x^3`",
+      "why": "A lone `x` is `x^1`."
+     }
+    },
+    {
+     "id": "c4",
+     "idea": "check",
+     "stem": "Put `x` = 2 into both sides of `2x^2 + 2x^2` = `4x^2`. Does it hold up?",
+     "opts": [
+      {
+       "t": "8 + 8 and 16 — it holds",
+       "ok": true
+      },
+      {
+       "t": "8 + 8 and 16 — it fails",
+       "d": "Both sides equal 16, so it holds."
+      },
+      {
+       "t": "4 + 4 and 16 — it fails",
+       "d": "`2x^2` at `x` = 2 is 2 times 4, which is 8."
+      },
+      {
+       "t": "8 + 8 and 64 — it fails",
+       "d": "`4x^2` at `x` = 2 is 4 times 4, which is 16."
+      }
+     ],
+     "work": {
+      "ex": "`2x^2 + 2x^2` = `4x^2` at `x` = 2",
+      "is": "16 and 16",
+      "why": "The sides agree, so it holds."
+     },
+     "aspects": [
+      {
+       "lens": "in general",
+       "body": "Put `x` = 2 into `x^2 + x^2 = x^4` and you get 4 + 4 = 8 against 16. The sides disagree, so the rewriting is wrong."
+      },
+      {
+       "lens": "again later",
+       "body": "Try it on `4^0 - 4^-1` or `(-4)^(3/2)`. When an exponent rule looks doubtful, put a number in before trusting it."
+      }
+     ]
+    },
+    {
+     "id": "c5",
+     "idea": "mult",
+     "stem": "Two expressions were multiplied and the result was `x^5`. One of them was `x^2`. What was the other?",
+     "opts": [
+      {
+       "t": "`x^3`",
+       "ok": true
+      },
+      {
+       "t": "`x^7`",
+       "d": "`x^2 * x^7` is `x^9`."
+      },
+      {
+       "t": "`x^2`",
+       "d": "`x^2 * x^2` is `x^4`."
+      },
+      {
+       "t": "`x^5`",
+       "d": "`x^2 * x^5` is `x^7`."
+      }
+     ],
+     "work": {
+      "ex": "`x^2` times what gives `x^5`",
+      "is": "`x^3`",
+      "why": "Two factors there, three more to reach five."
+     }
+    }
+   ]
+  },
+  {
+   "name": "The press",
+   "questions": [
+    {
+     "id": "r1",
+     "idea": "model",
+     "stem": "A press prints a book. Which of these changes when it prints one more copy?",
+     "opts": [
+      {
+       "t": "The paper and ink for that copy",
+       "ok": true
+      },
+      {
+       "t": "The $4,000 rent on the building",
+       "d": "The rent is the same whether the press prints 1 copy or 1,000."
+      },
+      {
+       "t": "The price printed on the cover",
+       "d": "The price is set in advance; printing one more does not change it."
+      },
+      {
+       "t": "None of them",
+       "d": "Paper and ink are bought per copy."
+      }
+     ],
+     "work": {
+      "ex": "one more copy",
+      "is": "paper and ink",
+      "why": "What changes with the count is what carries an `x`."
+     },
+     "aspects": [
+      {
+       "lens": "in general",
+       "body": "Paper and ink carry an `x` because they are bought per copy: `7x`. The 4,000 does not, because it is the same at 1 copy and at 1,000."
+      },
+      {
+       "lens": "again later",
+       "body": "`C = 7x + 4000` splits the same way every cost in this course does: `7x` moves with the count, 4,000 does not."
+      }
+     ]
+    },
+    {
+     "id": "r2",
+     "idea": "model",
+     "stem": "The press sells each copy for $18. Call the money coming in `R`. If it sells `x` copies, what is `R`?",
+     "opts": [
+      {
+       "t": "`R = 18x`",
+       "ok": true
+      },
+      {
+       "t": "`R = 18 + x`",
+       "d": "Each copy brings in 18 dollars, so `x` copies bring in `18x`."
+      },
+      {
+       "t": "`R = 18`",
+       "d": "That is one copy's worth. The press sells `x` of them."
+      },
+      {
+       "t": "`R = x`",
+       "d": "That counts the copies, not the money."
+      }
+     ],
+     "work": {
+      "ex": "$18 a copy, `x` copies",
+      "is": "`R = 18x`",
+      "why": "A price for each one, times how many."
+     },
+     "aspects": [
+      {
+       "lens": "what kind of thing",
+       "body": "18 is dollars for each copy, and there are `x` copies, so `18x` is dollars. At 500 copies that is 9,000 dollars."
+      },
+      {
+       "lens": "in general",
+       "body": "500 copies bring in 9,000 dollars; 1,000 copies bring in 18,000. Double the copies, double the money."
+      },
+      {
+       "lens": "what if",
+       "body": "Sell nothing and `R` = 18 &times; 0 = 0. Nothing printed, nothing taken in."
+      }
+     ]
+    },
+    {
+     "id": "r3",
+     "idea": "model",
+     "stem": "Printing costs $7 a copy, and the rent is $4,000 no matter how many copies are printed. Call the money going out `C`. What is `C`?",
+     "opts": [
+      {
+       "t": "`C = 7x + 4000`",
+       "ok": true
+      },
+      {
+       "t": "`C = 11x`",
+       "d": "This adds the 7 and the 4,000 as if both were charged per copy. The rent is $4,000 whether the press prints one copy or a thousand."
+      },
+      {
+       "t": "`C = 7x`",
+       "d": "The rent still has to be paid."
+      },
+      {
+       "t": "`C = 4000x`",
+       "d": "The rent is paid once, not once per copy."
+      }
+     ],
+     "work": {
+      "ex": "$7 a copy plus $4,000 rent",
+      "is": "`C = 7x + 4000`",
+      "why": "Costs come in pieces, and the pieces add."
+     },
+     "aspects": [
+      {
+       "lens": "what kind of thing",
+       "body": "At 1,000 copies `C` is 11,000, and 4,000 of that was owed before a single copy was printed. The two terms are the same units but not the same kind of cost."
+      },
+      {
+       "lens": "in general",
+       "body": "At 500 copies, `C` is 3,500 + 4,000 = 7,500. The 3,500 moved with the count and the 4,000 did not."
+      }
+     ]
+    },
+    {
+     "id": "r7",
+     "idea": "model",
+     "stem": "Profit is whatever is left once the costs are paid. Call it `P`. Write `P` using `R` and `C`.",
+     "opts": [
+      {
+       "t": "`P = R - C`",
+       "ok": true
+      },
+      {
+       "t": "`P = R + C`",
+       "d": "This adds what the press spent to what it earned."
+      },
+      {
+       "t": "`P = C - R`",
+       "d": "The wrong way round &mdash; this takes the earnings away from the costs."
+      },
+      {
+       "t": "`P = R &times; C`",
+       "d": "Nothing here is being multiplied."
+      }
+     ],
+     "work": {
+      "ex": "what is left",
+      "is": "`P = R - C`",
+      "why": "Written once with names, it holds whatever `R` and `C` turn out to be."
+     },
+     "aspects": [
+      {
+       "lens": "the letter",
+       "body": "`R` is not a fixed number. Print 500 copies and `R` is 9,000; print 1,000 and `R` is 18,000. The letter names the amount, and the amount moves with `x`."
+      },
+      {
+       "lens": "in general",
+       "body": "Once `P = R - C` becomes `11x - 4000`, the two steps collapse into one. At 500 copies you go straight to `11(500) - 4000` = 1,500, without working out 9,000 and 7,500 first."
+      },
+      {
+       "lens": "what kind of thing",
+       "body": "`R` and `C` can never be negative &mdash; you cannot take in less than nothing or spend less than nothing. `P` can. At 250 copies `P` is -1,250."
+      },
+      {
+       "lens": "what if",
+       "body": "`C - R` gives the same size with the opposite sign: 6,000 instead of -6,000 at 250 copies. It answers how far short the press fell, rather than what it made."
+      },
+      {
+       "lens": "again later",
+       "body": "Writing `R = 18x` is already the idea behind `f(x) = 18x`: name the rule once, then feed it any `x`."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Into one expression",
+   "questions": [
+    {
+     "id": "r4",
+     "idea": "model",
+     "stem": "So `R = 18x` and `C = 7x + 4000`. Put those into `P = R - C`.",
+     "opts": [
+      {
+       "t": "`P = 18x - (7x + 4000)`",
+       "ok": true
+      },
+      {
+       "t": "`P = 18x - 7x + 4000`",
+       "d": "`C` is the whole of `7x + 4000`, so all of it has to come off. Written this way the rent gets added on instead."
+      },
+      {
+       "t": "`P = 18x + 7x + 4000`",
+       "d": "This adds everything the press spent to everything it earned."
+      },
+      {
+       "t": "`P = 7x + 4000 - 18x`",
+       "d": "That is `C - R`, the wrong way round."
+      }
+     ],
+     "work": {
+      "ex": "`P = R - C`",
+      "is": "`18x - (7x + 4000)`",
+      "why": "`C` is a bundle, and the whole bundle comes off."
+     }
+    },
+    {
+     "id": "r6",
+     "idea": "check",
+     "stem": "Selling 250 copies, the press really loses $1,250. Work out `18x - 7x + 4000` at 250 copies. What does it give?",
+     "opts": [
+      {
+       "t": "$6,750",
+       "ok": true
+      },
+      {
+       "t": "-$1,250",
+       "d": "That is the true answer, but not what this expression gives. Try it: 4,500 &minus; 1,750 + 4,000."
+      },
+      {
+       "t": "$2,750",
+       "d": "That is `11x` at 250, before the rent has been dealt with at all."
+      },
+      {
+       "t": "$750",
+       "d": "4,500 &minus; 1,750 is 2,750, and this version then adds 4,000."
+      }
+     ],
+     "work": {
+      "ex": "`18x - 7x + 4000` at 250",
+      "is": "$6,750",
+      "why": "The truth is a $1,250 loss. Adding the rent instead of taking it off moved the answer by $8,000 &mdash; twice the rent."
+     }
+    },
+    {
+     "id": "r8",
+     "idea": "model",
+     "stem": "Write `18x - (7x + 4000)` as a single expression.",
+     "opts": [
+      {
+       "t": "`11x - 4000`",
+       "ok": true
+      },
+      {
+       "t": "`11x + 4000`",
+       "d": "The minus has to reach the rent as well. Taking away `7x + 4000` takes away the 4,000 too."
+      },
+      {
+       "t": "`25x + 4000`",
+       "d": "The `7x` is being taken away, not added."
+      },
+      {
+       "t": "`11x`",
+       "d": "The rent has gone missing. It is still owed."
+      }
+     ],
+     "work": {
+      "ex": "`18x - (7x + 4000)`",
+      "is": "`11x - 4000`",
+      "why": "$11 left on each copy, and $4,000 to make up first."
+     },
+     "aspects": [
+      {
+       "lens": "in general",
+       "body": "`18x - (7x + 4000)` is `18x - 7x - 4000`. The minus reaches the 4,000 as well as the `7x`."
+      },
+      {
+       "lens": "the letter",
+       "body": "`18x` and `7x` combine because they count the same thing. The 4,000 has nothing to pair with, so it stays as it is."
+      },
+      {
+       "lens": "what if",
+       "body": "Leave the parentheses out and the rent gets added instead. At 250 copies that reads $6,750 rather than a $1,250 loss &mdash; out by $8,000, twice the rent."
+      },
+      {
+       "lens": "again later",
+       "body": "`(8x^2 - 7x + 27) - (3x^2 + 9x - 85)` is the same step: the minus reaches all three terms."
+      }
+     ]
+    },
+    {
+     "id": "r5",
+     "idea": "model",
+     "stem": "The profit works out to `11x - 4000`. What is the 4,000 telling you?",
+     "opts": [
+      {
+       "t": "The press starts $4,000 behind before it sells anything.",
+       "ok": true
+      },
+      {
+       "t": "The press loses $4,000 on every copy.",
+       "d": "That would be `4000x`. The rent is charged once."
+      },
+      {
+       "t": "The press must sell 4,000 copies.",
+       "d": "That is a different question, and the answer is not 4,000."
+      },
+      {
+       "t": "Each copy leaves $4,000.",
+       "d": "Each copy leaves 11 dollars. That is the other number."
+      }
+     ],
+     "work": {
+      "ex": "`11x - 4000`",
+      "is": "$11 a copy, $4,000 behind",
+      "why": "At `x` = 0 the profit is -4,000: nothing printed, rent still paid."
+     }
+    }
+   ]
+  },
+  {
+   "name": "A second title",
+   "questions": [
+    {
+     "id": "t1",
+     "idea": "model",
+     "stem": "A second book sells at $32 a copy, so `R = 32x`. Its costs work out to `C = 2x^2 + 12x + 5000`. Write `P = R - C` with those put in.",
+     "opts": [
+      {
+       "t": "`P = 32x - (2x^2 + 12x + 5000)`",
+       "ok": true
+      },
+      {
+       "t": "`P = 32x - 2x^2 + 12x + 5000`",
+       "d": "All of `C` is being taken away, so all three of its terms sit inside the parentheses."
+      },
+      {
+       "t": "`P = (2x^2 + 12x + 5000) - 32x`",
+       "d": "That is `C - R`, the wrong way round."
+      },
+      {
+       "t": "`P = 32x + 2x^2 + 12x + 5000`",
+       "d": "The costs are taken away, not added."
+      }
+     ],
+     "work": {
+      "ex": "`P = R - C`",
+      "is": "`32x - (2x^2 + 12x + 5000)`",
+      "why": "`C` is all three terms, so all three go inside."
+     },
+     "aspects": [
+      {
+       "lens": "the letter",
+       "body": "`C` is a name for three terms at once. The parentheses are what hold them together while the minus acts on them."
+      }
+     ]
+    },
+    {
+     "id": "t2",
+     "idea": "model",
+     "stem": "Take the parentheses off `32x - (2x^2 + 12x + 5000)`.",
+     "opts": [
+      {
+       "t": "`32x - 2x^2 - 12x - 5000`",
+       "ok": true
+      },
+      {
+       "t": "`32x - 2x^2 + 12x + 5000`",
+       "d": "Only the first term changed sign. The minus reaches all three."
+      },
+      {
+       "t": "`32x + 2x^2 + 12x + 5000`",
+       "d": "Every sign inside flips, and none of them stayed."
+      },
+      {
+       "t": "`32x - 2x^2 - 12x + 5000`",
+       "d": "The 5,000 is inside too, so it is taken away as well."
+      }
+     ],
+     "work": {
+      "ex": "`32x - (2x^2 + 12x + 5000)`",
+      "is": "`32x - 2x^2 - 12x - 5000`",
+      "why": "The minus reaches all three terms."
+     },
+     "aspects": [
+      {
+       "lens": "in general",
+       "body": "Taking away a bundle takes away every part of it, so all three signs inside flip."
+      },
+      {
+       "lens": "what if",
+       "body": "At `x` = 100 the costs are 20,000 + 1,200 + 5,000 = 26,200. Miss the 5,000 and the profit comes out 5,000 too high."
+      }
+     ]
+    },
+    {
+     "id": "t3",
+     "idea": "add",
+     "stem": "In `32x - 2x^2 - 12x - 5000`, which terms can be combined?",
+     "opts": [
+      {
+       "t": "`32x` and `-12x`",
+       "ok": true
+      },
+      {
+       "t": "`-2x^2` and `-12x`",
+       "d": "One counts `x` squared and the other counts `x`. They are different kinds of term."
+      },
+      {
+       "t": "`-2x^2` and `-5000`",
+       "d": "One carries an `x` and the other does not."
+      },
+      {
+       "t": "All four of them",
+       "d": "Only terms with the same power of `x` can be counted together."
+      }
+     ],
+     "work": {
+      "ex": "`32x - 2x^2 - 12x - 5000`",
+      "is": "`32x` with `-12x`",
+      "why": "Same power of `x`, so they count the same thing. The other two have no partner."
+     }
+    },
+    {
+     "id": "t4",
+     "idea": "add",
+     "stem": "Write the profit as one polynomial, highest power first.",
+     "opts": [
+      {
+       "t": "`-2x^2 + 20x - 5000`",
+       "ok": true
+      },
+      {
+       "t": "`-2x^2 + 44x - 5000`",
+       "d": "`32x` and `-12x` make `20x`, not `44x`."
+      },
+      {
+       "t": "`2x^2 + 20x - 5000`",
+       "d": "The `2x^2` was taken away, so it stays negative."
+      },
+      {
+       "t": "`-2x^2 + 20x + 5000`",
+       "d": "The 5,000 was taken away too."
+      }
+     ],
+     "work": {
+      "ex": "`32x - 2x^2 - 12x - 5000`",
+      "is": "`-2x^2 + 20x - 5000`",
+      "why": "`32x - 12x` is `20x`; the other two terms stand as they are."
+     }
+    }
+   ]
+  }
+ ],
+ "ideas": {
+  "count": {
+   "name": "What a letter stands for",
+   "obj": "1.1/O2",
+   "text": "Evaluate algebraic expressions"
+  },
+  "array": {
+   "name": "Rows of rows, and what a square is",
+   "obj": "1.2/O1",
+   "text": "Evaluate exponential expressions"
+  },
+  "add": {
+   "name": "Adding like terms",
+   "obj": "1.2/O2",
+   "text": "Perform operations on exponential expressions"
+  },
+  "mult": {
+   "name": "Multiplying powers",
+   "obj": "1.2/O2",
+   "text": "Perform operations on exponential expressions"
+  },
+  "coeff": {
+   "name": "A number in front and a number above",
+   "obj": "1.2/O2",
+   "text": "Perform operations on exponential expressions"
+  },
+  "nocomb": {
+   "name": "Terms that will not combine",
+   "obj": "1.2/O3",
+   "text": "Identify characteristics of polynomials"
+  },
+  "check": {
+   "name": "Settling it by putting a number in",
+   "obj": "1.1/O2",
+   "text": "Evaluate algebraic expressions"
+  },
+  "model": {
+   "name": "Turning the shop into an expression",
+   "obj": "1.2/O6",
+   "text": "Solve applications involving polynomials"
+  },
+  "common": {
+   "name": "Taking a common factor out",
+   "obj": "1.2/O5",
+   "text": "Multiply polynomials"
+  }
+ },
+ "lenses": [
+  "the letter",
+  "in general",
+  "what kind of thing",
+  "the picture",
+  "what if",
+  "again later"
+ ]
+}

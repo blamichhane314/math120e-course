@@ -680,6 +680,7 @@ h1 .num{display:block}
   letter-spacing:-.008em;margin-bottom:6px}
 .card:hover .ct{color:var(--accent)}
 .cd{display:block;font-size:13.5px;line-height:1.5;color:var(--ink-soft)}
+.cd b{color:var(--ink-faint);font:10px/1.9 var(--mono);letter-spacing:.1em;font-weight:400}
 .cm{display:block;margin-top:calc(var(--s));font:9px var(--mono);
   letter-spacing:.16em;color:var(--ink-faint)}
 
@@ -1321,3 +1322,285 @@ body::before{background:radial-gradient(120% 90% at 50% 0%,
   line-height:1.5}
 .rf-tally-note{margin-top:calc(var(--s)*2);font:10px var(--mono);
   letter-spacing:.1em;color:var(--ink-faint)}
+
+/* ══ reflections ═════════════════════════════════════════════════════
+   A session, not a page of questions: cards accumulate downward so the
+   student can see the way they came. Colour stays out of it except on the
+   two verdicts and the report, because everything here is already
+   consequential enough without being decorated.                        */
+.rx-stage{margin-top:calc(var(--s)*2)}
+.rx-card{border:1px solid var(--line-soft);border-left:2px solid var(--line);
+  border-radius:3px;background:var(--paper-lift);
+  padding:calc(var(--s)*2.25) calc(var(--s)*2.5);
+  margin-bottom:calc(var(--s)*2)}
+.rx-card.rx-anchor{border-left-color:var(--accent)}
+.rx-card.rx-report{border-left-color:var(--accent);background:var(--paper)}
+.rx-card.rx-note,.rx-card.rx-practice{background:var(--paper)}
+
+.rx-head{display:flex;align-items:baseline;justify-content:space-between;
+  gap:calc(var(--s)*2);margin-bottom:calc(var(--s)*1.5)}
+.rx-tag{font:9px/1 var(--mono);letter-spacing:.18em;color:var(--accent)}
+.rx-src{font:9px/1 var(--mono);letter-spacing:.14em;color:var(--ink-faint)}
+.rx-lede{font-size:13.5px;color:var(--ink-soft);margin-bottom:calc(var(--s)*1.5)}
+
+/* the claim, committed before the question can be answered */
+.rx-claim{margin-bottom:calc(var(--s)*2)}
+.rx-claim-q{font-size:12.5px;color:var(--ink-soft);margin-bottom:calc(var(--s))}
+.rx-claim-row{display:flex;flex-wrap:wrap;gap:6px}
+.rx-claim-b{font:11px/1.3 var(--sans);text-align:left;background:none;
+  border:1px solid var(--line);color:var(--ink-soft);padding:7px 11px;
+  border-radius:2px;cursor:pointer;
+  transition:color .14s var(--ease),border-color .14s var(--ease)}
+.rx-claim-b:hover{color:var(--ink);border-color:var(--ink-faint)}
+.rx-claim.done .rx-claim-b{cursor:default;opacity:.4}
+.rx-claim.done .rx-claim-b.on{opacity:1;color:var(--accent);
+  border-color:var(--accent-soft)}
+
+.rx-expr{font-size:19px;margin:calc(var(--s)*1.5) 0;overflow-x:auto}
+.rx-ask{font-size:14px;margin-bottom:calc(var(--s)*1.5)}
+
+.rx-opts{display:flex;flex-direction:column;gap:6px}
+.rx-opt{display:flex;align-items:center;gap:calc(var(--s)*1.5);text-align:left;
+  background:none;border:1px solid var(--line);border-radius:2px;
+  padding:9px calc(var(--s)*1.5);cursor:pointer;color:var(--ink);
+  transition:border-color .14s var(--ease),background .14s var(--ease)}
+.rx-opt:hover{border-color:var(--ink-faint)}
+.rx-oi{font:9px/1 var(--mono);color:var(--ink-faint);flex:none;width:10px}
+.rx-opts.done .rx-opt{cursor:default}
+.rx-opts.done .rx-opt:hover{border-color:var(--line)}
+.rx-opts.done .rx-opt.picked{border-color:var(--accent)}
+.rx-opts.done .rx-opt.key{background:color-mix(in srgb,var(--accent) 8%,transparent)}
+.rx-opts.done .rx-opt.key .rx-oi{color:var(--accent)}
+
+.rx-entry{display:flex;align-items:center;gap:calc(var(--s));flex-wrap:wrap}
+.rx-in{font:15px var(--mono);background:var(--paper);color:var(--ink);
+  border:1px solid var(--line);border-bottom-color:var(--ink-faint);
+  border-radius:2px;padding:7px 10px;width:150px;
+  transition:border-color .14s var(--ease)}
+.rx-in:focus{outline:none;border-color:var(--accent)}
+.rx-in:disabled{opacity:.7}
+.rx-go{font:9px/1 var(--mono);letter-spacing:.16em;background:none;
+  border:1px solid var(--line);color:var(--ink-soft);padding:8px 13px;
+  border-radius:2px;cursor:pointer;
+  transition:color .14s var(--ease),border-color .14s var(--ease)}
+.rx-go:hover:not(:disabled){color:var(--accent);border-color:var(--accent-soft)}
+.rx-go:disabled{opacity:.4;cursor:default}
+.rx-hint{font-size:11.5px;color:var(--ink-faint)}
+
+.rx-verdict{font-size:13px;line-height:1.6;margin-top:calc(var(--s)*1.75);
+  padding-left:calc(var(--s)*1.5);border-left:2px solid var(--line)}
+.rx-verdict.ok{border-left-color:var(--accent)}
+.rx-verdict.no{border-left-color:var(--ink-faint);color:var(--ink-soft)}
+
+.rx-note{font-size:13.5px;line-height:1.65;color:var(--ink)}
+.rx-note.rx-quiet{font-size:12px;color:var(--ink-faint);
+  padding-bottom:calc(var(--s)*1.5);margin-bottom:calc(var(--s)*.5);
+  border-bottom:1px solid var(--line-soft)}
+
+.rx-next{margin-top:calc(var(--s)*2);font:9px/1 var(--mono);letter-spacing:.16em;
+  background:none;border:1px solid var(--line);color:var(--ink-soft);
+  padding:9px 15px;border-radius:2px;cursor:pointer;
+  transition:color .14s var(--ease),border-color .14s var(--ease)}
+.rx-next:hover:not(:disabled){color:var(--accent);border-color:var(--accent-soft)}
+.rx-next.spent{opacity:.35;cursor:default}
+
+/* the report: the anchor again, annotated. No score anywhere. */
+.rx-anchor-again{font-size:20px;margin:calc(var(--s)*1.5) 0 calc(var(--s)*2.5);
+  overflow-x:auto}
+.rx-rows{display:flex;flex-direction:column;gap:1px}
+.rx-r{display:grid;grid-template-columns:1fr 1fr auto;gap:calc(var(--s)*1.5);
+  align-items:baseline;padding:9px 0;border-top:1px solid var(--line-soft)}
+.rx-r-n{font-size:13px;color:var(--ink)}
+.rx-r-w{font-size:12px;color:var(--ink-faint)}
+.rx-r-v{font:9px/1 var(--mono);letter-spacing:.14em;color:var(--ink-faint);
+  white-space:nowrap}
+.rx-r.rx-held .rx-r-v{color:var(--accent)}
+.rx-r.rx-recovered .rx-r-v{color:var(--ink-soft)}
+.rx-r.rx-open .rx-r-v{color:var(--ink);border-bottom:1px solid var(--accent)}
+.rx-cal{margin-top:calc(var(--s)*2.5);padding-left:calc(var(--s)*1.5);
+  border-left:2px solid var(--accent);font-size:13.5px;line-height:1.65}
+.rx-fwd{margin-top:calc(var(--s)*2);font-size:12px;color:var(--ink-faint);
+  line-height:1.6}
+
+button.card{font:inherit;text-align:left;width:100%}
+@media(max-width:700px){
+  .rx-r{grid-template-columns:1fr auto}
+  .rx-r-w{display:none}
+}
+
+/* ══ reflection: new node kinds ══════════════════════════════════════ */
+.rx-card.rx-contrast,.rx-card.rx-fade{background:var(--paper)}
+.rx-card.rx-exit{border-left-color:var(--ink-faint)}
+.rx-shown{font-size:17px;margin:calc(var(--s)) 0 calc(var(--s)*1.5);
+  padding-left:calc(var(--s)*1.5);border-left:2px solid var(--line);
+  color:var(--ink-soft);overflow-x:auto}
+.rx-pair{display:grid;grid-template-columns:1fr 1fr;gap:calc(var(--s)*2.5);
+  margin:calc(var(--s)*2) 0}
+.rx-side{padding:calc(var(--s)*1.5);border:1px solid var(--line-soft);
+  border-radius:3px;text-align:center}
+.rx-side-x{font-size:20px}
+.rx-side-v{font-size:16px;color:var(--accent);margin-top:calc(var(--s)*.5)}
+.rx-side-l{font-size:11.5px;color:var(--ink-faint);margin-top:calc(var(--s));
+  line-height:1.5}
+.rx-carry{margin-top:calc(var(--s)*1.5);font:10px/1.6 var(--mono);
+  letter-spacing:.1em;color:var(--accent);padding-left:calc(var(--s)*1.5);
+  border-left:2px solid var(--accent-soft)}
+.rx-trail{display:flex;flex-wrap:wrap;align-items:center;gap:6px;
+  margin-top:calc(var(--s)*2);font:10px/1.7 var(--mono);color:var(--ink-faint)}
+.rx-trail-n{border:1px solid var(--line);border-radius:2px;padding:3px 7px}
+.rx-trail-a{color:var(--line)}
+@media(max-width:640px){.rx-pair{grid-template-columns:1fr}}
+
+/* ══ instructor mode: the graph ══════════════════════════════════════
+   You cannot hand-author a branching world you cannot see. Columns are
+   distance from the anchor, so depth reads left to right.              */
+.gv-bar{display:flex;flex-wrap:wrap;align-items:center;gap:calc(var(--s)*2);
+  padding:calc(var(--s)*1.5) 0;border-bottom:1px solid var(--line);
+  margin-bottom:calc(var(--s)*2)}
+.gv-stat{font:10px/1 var(--mono);letter-spacing:.14em;color:var(--ink-faint)}
+.gv-stat b{color:var(--ink);font-size:13px;letter-spacing:0}
+.gv-stat.bad b,.gv-bad{color:var(--accent)}
+.gv-legend{margin-left:auto;display:flex;gap:6px}
+.gv-key{font:9px/1 var(--mono);letter-spacing:.12em;padding:4px 8px;
+  border-radius:2px;border:1px solid var(--line);color:var(--ink-faint)}
+.gv-grid{display:flex;gap:calc(var(--s)*2);overflow-x:auto;
+  padding-bottom:calc(var(--s)*2);align-items:flex-start}
+.gv-col{flex:0 0 235px;display:flex;flex-direction:column;gap:calc(var(--s))}
+.gv-col-h{font:9px/1 var(--mono);letter-spacing:.16em;color:var(--ink-faint);
+  padding-bottom:calc(var(--s));border-bottom:1px solid var(--line-soft)}
+.gv-node{border:1px solid var(--line);border-left:3px solid var(--line);
+  border-radius:3px;padding:calc(var(--s)*1.25);cursor:pointer;
+  background:var(--paper-lift);
+  transition:border-color .14s var(--ease),background .14s var(--ease)}
+.gv-node:hover{border-color:var(--ink-faint)}
+.gv-node.on{border-color:var(--accent);border-left-color:var(--accent)}
+.gv-n-k{font:8.5px/1 var(--mono);letter-spacing:.16em;color:var(--accent)}
+.gv-n-t{font-size:12.5px;color:var(--ink);margin:5px 0 3px;line-height:1.4}
+.gv-n-i{font:9px/1.4 var(--mono);color:var(--ink-faint)}
+.gv-n-e{display:flex;flex-direction:column;gap:2px;margin-top:calc(var(--s))}
+.gv-e{font:9px/1.5 var(--mono);color:var(--ink-faint)}
+.gv-e i{color:var(--accent);font-style:normal}
+.gv-e-option{color:var(--ink-soft)}
+.gv-e-wrong{color:var(--ink-faint)}
+/* facet identity by border only — colour stays out of the content */
+.gv-f-rad{border-left-color:#5b7c99}
+.gv-f-bar{border-left-color:#a8432e}
+.gv-f-prec{border-left-color:#7a8b5a}
+.gv-f-sign{border-left-color:#9a6b3f}
+.gv-k-exit{opacity:.72}
+
+/* ══ the network ═════════════════════════════════════════════════════
+   The same graph drawn as a graph. Edge WEIGHT carries kind, not hue:
+   solid = an option, accented = a right answer, dashed = a wrong answer,
+   dotted = a specific wrong value that has its own destination.       */
+.nw-wrap{overflow:auto;border:1px solid var(--line-soft);border-radius:3px;
+  background:var(--paper);padding:calc(var(--s))}
+svg.nw{display:block}
+.nw-e{stroke:var(--line);stroke-width:1.1px;opacity:.85}
+.nw-e-right{stroke:var(--accent-soft)}
+.nw-e-wrong{stroke-dasharray:4 3}
+.nw-e-route{stroke-dasharray:1.5 3;stroke:var(--ink-faint)}
+.nw-back{stroke:var(--accent-soft);stroke-dasharray:2 4;opacity:.5}
+.nw-el{font:9.5px var(--mono);fill:var(--ink-faint);opacity:.8}
+svg.nw.focused .nw-e{opacity:.13}
+svg.nw.focused .nw-e.on{opacity:1;stroke-width:2px;stroke:var(--accent)}
+svg.nw.focused .nw-el{opacity:.18}
+
+.nw-n rect{fill:var(--paper-lift);stroke:var(--line);stroke-width:1px}
+.nw-n text{font:11px var(--sans);fill:var(--ink-soft)}
+.nw-n{cursor:pointer}
+.nw-n .nw-tab{stroke:none}
+.nw-f-rad .nw-tab{fill:#5b7c99}
+.nw-f-bar .nw-tab{fill:#a8432e}
+.nw-f-prec .nw-tab{fill:#7a8b5a}
+.nw-f-sign .nw-tab{fill:#9a6b3f}
+.nw-f-none .nw-tab{fill:var(--ink-faint)}
+.nw-k-exit rect{stroke-dasharray:3 2}
+.nw-term rect{fill:none;stroke:var(--accent-soft);stroke-dasharray:3 2}
+.nw-term text{fill:var(--accent)}
+.nw-src rect{fill:none;stroke:var(--accent);stroke-width:1.4px}
+.nw-src text{font:11px var(--mono);fill:var(--accent)}
+svg.nw.focused .nw-n rect{opacity:.4}
+svg.nw.focused .nw-n.on rect{opacity:1;stroke:var(--accent)}
+svg.nw.focused .nw-n text{opacity:.4}
+svg.nw.focused .nw-n.on text{opacity:1;fill:var(--ink)}
+
+/* ══ bigger type ═════════════════════════════════════════════════════ */
+.gv-n-k{font-size:9.5px}
+.gv-n-t{font-size:14px}
+.gv-n-i{font-size:10px}
+.gv-e{font-size:10.5px;line-height:1.6}
+.gv-stat{font-size:11px}
+.gv-stat b{font-size:14px}
+.gv-col-h{font-size:10px}
+.gv-key{font-size:10px}
+.gv-col{flex:0 0 258px}
+
+.rx-lede{font-size:15px}
+.rx-ask{font-size:15.5px;line-height:1.55}
+.rx-note{font-size:15px;line-height:1.7}
+.rx-note.rx-quiet{font-size:13px}
+.rx-verdict{font-size:14.5px;line-height:1.65}
+.rx-claim-q{font-size:13.5px}
+.rx-claim-b{font-size:12.5px}
+.rx-opt{padding:11px calc(var(--s)*1.5);font-size:14.5px}
+.rx-oi{font-size:10px;width:12px}
+.rx-hint{font-size:12.5px}
+.rx-side-l{font-size:12.5px}
+.rx-side-x{font-size:21px}
+.rx-side-v{font-size:17px}
+.rx-tag,.rx-src{font-size:9.5px}
+.rx-expr{font-size:20px}
+.rx-in{font-size:16px;width:170px}
+.rx-trail{font-size:10.5px}
+.rx-carry{font-size:11px}
+
+/* ══ node inspector ══════════════════════════════════════════════════
+   Clicking a node in either instructor view shows the card as a student
+   meets it, and where every answer sends them. A drawer rather than a
+   panel below, so the graph stays in view while you read.            */
+#inspect{position:fixed;right:0;top:0;bottom:0;width:420px;z-index:40;
+  background:var(--paper);border-left:1px solid var(--line);
+  box-shadow:-14px 0 34px rgba(0,0,0,.22);
+  overflow-y:auto;padding:calc(var(--s)*3) calc(var(--s)*3) calc(var(--s)*6)}
+#inspect[hidden]{display:none}
+.ins-x-btn{position:absolute;top:calc(var(--s)*1.5);right:calc(var(--s)*2);
+  font:9.5px/1 var(--mono);letter-spacing:.16em;background:none;
+  border:1px solid var(--line);color:var(--ink-faint);padding:6px 10px;
+  border-radius:2px;cursor:pointer}
+.ins-x-btn:hover{color:var(--accent);border-color:var(--accent-soft)}
+.ins-h{display:flex;flex-direction:column;gap:3px;margin-bottom:calc(var(--s)*1.5);
+  padding-right:60px}
+.ins-kind{font:9.5px/1 var(--mono);letter-spacing:.18em;color:var(--accent)}
+.ins-id{font:10px/1.4 var(--mono);color:var(--ink-faint)}
+.ins-t{font-size:16px;color:var(--ink);margin-bottom:calc(var(--s))}
+.ins-sub{font:9.5px/1 var(--mono);letter-spacing:.14em;color:var(--ink-faint);
+  margin:calc(var(--s)*2.25) 0 calc(var(--s));padding-bottom:5px;
+  border-bottom:1px solid var(--line-soft)}
+.ins-x{font-size:19px;margin:calc(var(--s)*1.5) 0;overflow-x:auto}
+.ins-x.ins-shown{font-size:17px;padding-left:calc(var(--s)*1.5);
+  border-left:2px solid var(--line);color:var(--ink-soft)}
+.ins-ask{font-size:14.5px;line-height:1.6;color:var(--ink);
+  margin:calc(var(--s)) 0}
+.ins-note{font-size:14px;line-height:1.7;color:var(--ink-soft)}
+.ins-note.ins-quiet{font-size:12.5px;color:var(--ink-faint)}
+.ins-meta{font:11px/1.6 var(--mono);color:var(--ink-faint)}
+.ins-pair{display:grid;grid-template-columns:1fr 1fr;gap:calc(var(--s)*1.5);
+  margin:calc(var(--s)*1.5) 0}
+.ins-side{border:1px solid var(--line-soft);border-radius:3px;
+  padding:calc(var(--s));text-align:center}
+.ins-side-x{font-size:17px}
+.ins-side-v{font-size:14px;color:var(--accent);margin-top:4px}
+.ins-side-l{font-size:11px;color:var(--ink-faint);margin-top:5px;line-height:1.5}
+.ins-rows{display:flex;flex-direction:column;gap:1px}
+.ins-r{display:grid;grid-template-columns:auto 1fr;gap:4px calc(var(--s));
+  padding:8px 0;border-bottom:1px solid var(--line-soft);align-items:baseline}
+.ins-r-k{font:11px/1.4 var(--mono);color:var(--ink);white-space:nowrap}
+.ins-r-o{font-size:13px;color:var(--ink-soft)}
+.ins-r-t{font:11px/1.4 var(--mono);color:var(--accent);grid-column:2}
+.ins-r-d{grid-column:1/-1;font-size:12px;line-height:1.55;color:var(--ink-faint)}
+.ins-r.ins-ok .ins-r-k{color:var(--accent)}
+.ins-from{display:flex;flex-wrap:wrap;gap:5px}
+.ins-fb{font:10.5px/1.4 var(--mono);border:1px solid var(--line);
+  border-radius:2px;padding:4px 7px;color:var(--ink-faint)}
+@media(max-width:900px){#inspect{width:100%;left:0}}

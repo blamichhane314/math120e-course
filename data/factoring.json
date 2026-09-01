@@ -1,0 +1,302 @@
+{
+ "posted": "Sep 1",
+ "title": "Common factors",
+ "sets": [
+  {
+   "name": "What they share",
+   "questions": [
+    {
+     "id": "f1",
+     "kind": "factor",
+     "idea": "common",
+     "terms": [
+      {
+       "show": "`x^3`",
+       "chips": [
+        "x",
+        "x",
+        "x"
+       ]
+      },
+      {
+       "show": "`x^2`",
+       "chips": [
+        "x",
+        "x"
+       ]
+      }
+     ],
+     "answer": "`x^2(x + 1)`",
+     "stem": "`x^3 + x^2`. Write each term out as factors. Any factor that appears in both can be written once, out front.",
+     "work": {
+      "ex": "`x^3 + x^2`",
+      "is": "`x^2(x + 1)`",
+      "why": "Three `x`s and two `x`s. Two of them appear in both, so those two are written once; the second term is then used up and leaves 1."
+     },
+     "aspects": [
+      {
+       "lens": "in general",
+       "body": "The shared part is a count, and it is the smaller: 3 and 2 share 2. The shorter term runs out first."
+      }
+     ]
+    },
+    {
+     "id": "f5",
+     "kind": "factor",
+     "idea": "common",
+     "terms": [
+      {
+       "show": "`6x`",
+       "chips": [
+        "2",
+        "3",
+        "x"
+       ]
+      },
+      {
+       "show": "9",
+       "chips": [
+        "3",
+        "3"
+       ]
+      }
+     ],
+     "answer": "`3(2x + 3)`",
+     "stem": "`6x + 9`. Only one of these has an `x`, so see what is left to share.",
+     "work": {
+      "ex": "`6x + 9`",
+      "is": "`3(2x + 3)`",
+      "why": "`6x` is `2 &middot; 3 &middot; x` and 9 is `3 &middot; 3`. Only the 3 appears in both; the `x` is in one term, so it stays inside."
+     },
+     "aspects": [
+      {
+       "lens": "in general",
+       "body": "A factor has to be in every term without exception. The `x` is in `6x` but not in 9, so it cannot come out."
+      }
+     ]
+    },
+    {
+     "id": "f2",
+     "kind": "factor",
+     "idea": "common",
+     "terms": [
+      {
+       "show": "`4x^2`",
+       "chips": [
+        "2",
+        "2",
+        "x",
+        "x"
+       ]
+      },
+      {
+       "show": "`10x`",
+       "chips": [
+        "2",
+        "5",
+        "x"
+       ]
+      }
+     ],
+     "answer": "`2x(2x + 5)`",
+     "stem": "`4x^2 + 10x`. The numbers split into factors too. Write out both terms, then write the shared factors once.",
+     "work": {
+      "ex": "`4x^2 + 10x`",
+      "is": "`2x(2x + 5)`",
+      "why": "`4x^2` is `2 &middot; 2 &middot; x &middot; x` and `10x` is `2 &middot; 5 &middot; x`. One 2 and one `x` appear in both."
+     },
+     "aspects": [
+      {
+       "lens": "in general",
+       "body": "Numbers split into factors the same way `x` does. 4 is `2 &middot; 2` and 10 is `2 &middot; 5`, so one 2 is shared and the other is not."
+      },
+      {
+       "lens": "what if",
+       "body": "Write only the `x` once and you get `x(4x + 10)`. That is true, but 4 and 10 are both even, so a 2 appears in both as well."
+      }
+     ]
+    },
+    {
+     "id": "f3",
+     "kind": "factor",
+     "idea": "common",
+     "terms": [
+      {
+       "show": "`4x^2`",
+       "chips": [
+        "2",
+        "2",
+        "x",
+        "x"
+       ]
+      },
+      {
+       "show": "`4x`",
+       "chips": [
+        "2",
+        "2",
+        "x"
+       ]
+      }
+     ],
+     "answer": "`4x(x + 1)`",
+     "stem": "`4x^2 + 4x`. Write out both terms and pull the shared factors to the front. Watch what the second term is left with.",
+     "work": {
+      "ex": "`4x^2 + 4x`",
+      "is": "`4x(x + 1)`",
+      "why": "The second term is made entirely of shared factors, so it leaves 1 rather than nothing. Without the 1 the expression would read `4x(x)`, which is `4x^2`."
+     },
+     "aspects": [
+      {
+       "lens": "what kind of thing",
+       "body": "A term used up leaves 1, not nothing. Two terms go in and two come out."
+      }
+     ]
+    },
+    {
+     "id": "f7",
+     "kind": "factor",
+     "idea": "common",
+     "terms": [
+      {
+       "show": "`6x^3`",
+       "chips": [
+        "2",
+        "3",
+        "x",
+        "x",
+        "x"
+       ]
+      },
+      {
+       "show": "`9x^2`",
+       "chips": [
+        "3",
+        "3",
+        "x",
+        "x"
+       ]
+      },
+      {
+       "show": "`3x`",
+       "chips": [
+        "3",
+        "x"
+       ]
+      }
+     ],
+     "answer": "`3x(2x^2 + 3x + 1)`",
+     "stem": "`6x^3 + 9x^2 + 3x`. Three terms. A factor still has to be in all of them.",
+     "work": {
+      "ex": "`6x^3 + 9x^2 + 3x`",
+      "is": "`3x(2x^2 + 3x + 1)`",
+      "why": "All three have a 3 and one `x`. The last term is used up by them, so it leaves 1."
+     },
+     "aspects": [
+      {
+       "lens": "in general",
+       "body": "The shortest term limits everything: `3x` has only one 3 and one `x`, so that is all any of them can share."
+      }
+     ]
+    },
+    {
+     "id": "f6",
+     "kind": "factor",
+     "idea": "common",
+     "terms": [
+      {
+       "show": "`6x`",
+       "chips": [
+        "-3",
+        "2",
+        "x"
+       ],
+       "neg": true
+      },
+      {
+       "show": "15",
+       "chips": [
+        "-3",
+        "5"
+       ],
+       "neg": true
+      }
+     ],
+     "answer": "`&minus;3(2x + 5)`",
+     "stem": "`-6x - 15`. Both terms are negative, so the minus can come out with the rest.",
+     "work": {
+      "ex": "`-6x - 15`",
+      "is": "`&minus;3(2x + 5)`",
+      "why": "Taking the minus out with the 3 leaves both terms inside positive: `&minus;3 &times; 2x` is `-6x`, and `&minus;3 &times; 5` is `-15`."
+     },
+     "aspects": [
+      {
+       "lens": "what if",
+       "body": "Write only 3 out front and the bracket keeps its minus signs: `3(-2x - 5)`. Both are correct. Taking the minus out as well leaves every term inside the bracket positive."
+      },
+      {
+       "lens": "again later",
+       "body": "This is the second pair of `4x^2 + 10x - 6x - 15`, and its bracket comes out as `2x + 5` &mdash; the same bracket the first pair gave."
+      }
+     ]
+    },
+    {
+     "id": "f4",
+     "kind": "factor",
+     "idea": "common",
+     "terms": [
+      {
+       "show": "`2x(2x+5)`",
+       "chips": [
+        "2x",
+        "(2x+5)"
+       ]
+      },
+      {
+       "show": "`3(2x+5)`",
+       "chips": [
+        "-3",
+        "(2x+5)"
+       ],
+       "neg": true
+      }
+     ],
+     "answer": "`(2x + 5)(2x - 3)`",
+     "stem": "`2x(2x+5) - 3(2x+5)`. These are the two pieces you just factored, added together. What both terms have now is a whole bracket.",
+     "work": {
+      "ex": "`2x(2x+5) - 3(2x+5)`",
+      "is": "`(2x + 5)(2x - 3)`",
+      "why": "`2x+5` appears in both terms, so it is written once in front, exactly as a number or an `x` would be."
+     },
+     "aspects": [
+      {
+       "lens": "in general",
+       "body": "A bracket is a factor like any other. Nothing about writing it once is different; only what the terms share has changed."
+      },
+      {
+       "lens": "again later",
+       "body": "This is the second half of factoring by grouping, and grouping is how `2x^2 + 7x + 3` is factored once the middle term is split."
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "ideas": {
+  "array": {
+   "name": "Rows of rows, and what a square is",
+   "obj": "1.2/O1",
+   "text": "Evaluate exponential expressions"
+  },
+  "mult": {
+   "name": "Multiplying powers",
+   "obj": "1.2/O2",
+   "text": "Perform operations on exponential expressions"
+  },
+  "common": {
+   "name": "Taking a common factor out",
+   "obj": "1.3/O1",
+   "text": "Factor out the greatest common factor"
+  }
+ }
+}

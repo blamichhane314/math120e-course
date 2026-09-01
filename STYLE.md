@@ -12,11 +12,24 @@ Three sources, in this order of authority:
    first draft's practice stopped at $(8-2\cdot 3)/2$. A section can cover
    every objective and still leave students unprepared for the work they are
    actually set.
-3. **Explicit instruction from the instructor.** Overrides either of the above,
+3. **Evidence of what students actually did.** Diagnostic responses, quiz,
+   homework and exam results, and what the instructor sees while walking the
+   room. This does not decide what a section *covers* — objectives do that —
+   it decides **emphasis**: which item gets a slide of its own, which distractor
+   is worth writing, which facet a reflection probes first, what is worth
+   returning to. **An error that has been observed outranks one that seems
+   likely.** Applies to everything a student reads, not only to reflections.
+4. **Explicit instruction from the instructor.** Overrides any of the above,
    including anything written in this file.
 
 Nothing else is a source. Not what a topic usually looks like elsewhere, and
 not what seems pedagogically interesting in the abstract.
+
+**Evidence can also say that more coverage is the wrong answer.** Where a
+misconception persists in material that already treats it several times, the
+fault is in the treatment, not in the amount of it. Adding a seventh instance of
+the same shape is the reflex to resist. See `REFLECTION_DESIGN.md` §2 for the
+worked case.
 
 ## Two versions of the notes
 

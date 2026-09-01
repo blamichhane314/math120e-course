@@ -4,6 +4,12 @@ A static site for the course. It holds the objectives, the schedule, and
 practice questions written for this course. The assigned problems are in MyLab
 and are not reproduced here.
 
+## Where the build is recorded
+
+`~/Documents/math120e/COURSE_LOG.md` (private repo) holds where everything
+lives, decisions that should not be re-argued, and the defects with their
+causes. `~/Documents/AGENT_FINDING_LOG.md` holds the research.
+
 ## Pages
 
 - `index.html`: the term at a glance

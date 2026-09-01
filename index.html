@@ -3,7 +3,7 @@
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <title>MATH 120E</title>
-<link rel=stylesheet href="styles.css?v=36">
+<link rel=stylesheet href="styles.css?v=43">
 <script>try{document.documentElement.dataset.theme=localStorage.getItem("m120.theme")||"ink"}catch(e){}</script>
 <body class=no-rail>
 <div id=read><div id=doc>
@@ -86,6 +86,28 @@
     </a>
   </div>
 
+  <h2>review</h2>
+  <p class=lede>Short sets of questions for going back over a section. Answers
+  appear at the end of each set rather than after every question, and nothing
+  is graded or kept.</p>
+  <div class=cards>
+    <a class=card href="powers.html">
+      <span class=ct>Basics of polynomials</span>
+      <span class=cd>What a letter stands for, what happens when you add or
+      multiply it, and how a shop turns into an expression.<br>
+      <b>1.1</b> evaluating expressions &middot; <b>1.2</b> exponents,
+      operations on them, what makes a polynomial, and applications.</span>
+      <span class=cm id=m-pow></span>
+    </a>
+    <a class=card href="factoring.html">
+      <span class=ct>Common factors</span>
+      <span class=cd>Each term written out as the factors it is made of, so what
+      they share can be seen and written once instead of twice.<br>
+      <b>1.3</b> factoring out the greatest common factor.</span>
+      <span class=cm id=m-fac></span>
+    </a>
+  </div>
+
   <h2>interactive resources</h2>
   <div class=cards>
     <a class=card href="tools.html">
@@ -142,6 +164,15 @@ try {
     .reduce((a, [, v]) => a + [].concat(v).length, 0);
   document.getElementById('m-tools').textContent = n + ' worked expressions';
 } catch {}
+
+for (const [id, src] of [['m-pow','data/powers.json'], ['m-fac','data/factoring.json']]) {
+  try {
+    const a = await (await fetch(src, {cache:'no-store'})).json();
+    const n = a.sets.reduce((t, s) => t + s.questions.length, 0);
+    document.getElementById(id).textContent = 'posted ' + a.posted + ' · ' +
+      n + ' questions' + (a.sets.length > 1 ? ' in ' + a.sets.length + ' sets' : '');
+  } catch {}
+}
 
 const EXAM = {'Week 4':'Exam 1 · 1.1–1.7, 2.4','Week 7':'Exam 2 · 2.1–4.4',
   'Week 10':'Exam 3 · 5.1–8.3','Week 13':'Exam 4 · 8.4–9.4','Week 16':'Final exam'};

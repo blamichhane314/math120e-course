@@ -1,5 +1,11 @@
 # Writing for this course
 
+**Scope: every piece of student-facing text in this course.** The class notes
+in `notes/`, the site copy, the study guide and worksheets in `guide/`, and
+anything else a student reads. The genre changes — slides, a worksheet and a
+study guide differ in typeface, palette and density, and should — but the
+register below does not change with it.
+
 ## Where the content comes from
 
 Three sources, in this order of authority:
@@ -28,8 +34,7 @@ not what seems pedagogically interesting in the abstract.
 **Evidence can also say that more coverage is the wrong answer.** Where a
 misconception persists in material that already treats it several times, the
 fault is in the treatment, not in the amount of it. Adding a seventh instance of
-the same shape is the reflex to resist. See `REFLECTION_DESIGN.md` §2 for the
-worked case.
+the same shape is the reflex to resist.
 
 ## Two versions of the notes
 
@@ -248,6 +253,46 @@ A motivating opener is permitted by rule 8, but it is still held to the same
 standard as everything else: claim exactly as much as is true, and no more. The
 temptation at the opening of a section is to reach for the grand definition,
 because a section feels like it deserves a grand beginning. It does not.
+
+---
+
+## 3c. The seams are where narration gets in
+
+Rule 3 is easy to keep in the body of a slide or a page and easy to lose at the
+**seams**: the line under a heading, the caption under a figure, the sentence
+opening a section, the note under an answer key. Those slots feel like they want
+prose, nothing else is competing for the space, and the sentence that arrives to
+fill them is almost always about the artifact rather than about the mathematics.
+
+**Rejected**, all four found and struck in one session, all at seams:
+
+> Final answers only. If one does not match, the work is where the mistake is.
+
+> Each of these is a pair that students routinely read as the same thing.
+> Compute both sides. If they differ, say so.
+
+> In step 1 a monomial comes out and the shaded bracket is left behind. In step 2
+> the shaded bracket is what comes out.
+
+> Both are correct. Which one is wanted depends on the bracket it has to
+> match, which is the next slide.
+
+The first describes the answer key. The second describes what students do. The
+third narrates a diagram that already shows it. The fourth points at another
+part of the document.
+
+**The check, and it takes a minute.** Before shipping, read *only* the sentences
+at the seams — skip the mathematics, skip the problems — and ask of each: **would
+this sentence still be true if the mathematics on the page were replaced with
+different mathematics?** If yes, it is about the artifact, and it goes.
+"Final answers only" survives that substitution. "$-3(2x+5)$ leaves $2x+5$ in
+both" does not.
+
+**Do not over-correct.** Framing the instructor asked for is content, not
+narration — a study guide that says which sections it covers so far, or a
+worksheet that says what the class is about to do, is doing a job. The test is
+whether it was asked for and whether it tells the reader something they act on,
+not whether it happens to be prose.
 
 ---
 

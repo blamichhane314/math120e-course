@@ -1,1 +1,19 @@
 .DS_Store
+
+# Design and process docs are private: they quote the instructor directly and
+# GitHub Pages serves every file in this repo, linked or not. They live in
+# ~/Documents/math120e/design/, which is outside any git repo.
+*_DESIGN.md
+DESIGN*.md
+NOTES*.md
+*_LOG.md
+notes/
+guide/
+
+# Held back deliberately (COURSE_LOG §4): under construction, not for students.
+# Remove these lines when the owner decides to publish them.
+reflections.html
+js/reflection.js
+data/reflect/
+data/reflect_1_1_order.json
+tools/check_reflection.py

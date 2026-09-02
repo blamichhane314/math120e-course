@@ -731,6 +731,21 @@ a.cal-i:hover{color:var(--accent)}
   .cal-i{font-size:12px}
 }
 
+/* ── review topics: a topic opens to the reviews inside it ──────── */
+.topic{border-top:1px solid var(--line-soft)}
+.topic + .topic{border-top:1px solid var(--line-soft)}
+.topic:last-of-type{border-bottom:1px solid var(--line-soft)}
+.topic summary{list-style:none;cursor:pointer;display:flex;align-items:baseline;
+  gap:calc(var(--s)*2);padding:calc(var(--s)*2.25) 0}
+.topic summary::-webkit-details-marker{display:none}
+.topic summary::before{content:"+";font:12px/1 var(--mono);color:var(--ink-faint);
+  width:1rem;flex:none;transition:color .16s var(--ease)}
+.topic[open] summary::before{content:"\2212"}
+.topic summary:hover::before,.topic summary:hover .tt{color:var(--accent)}
+.tt{font-size:17px;font-weight:500;color:var(--ink);transition:color .16s var(--ease)}
+.tn{margin-left:auto;font:9px var(--mono);letter-spacing:.16em;color:var(--ink-faint)}
+.topic .cards{padding:0 0 calc(var(--s)*3) 1rem}
+
 .cal-list{border-top:1px solid var(--line-soft)}
 .cal-r{display:grid;grid-template-columns:5rem 15rem minmax(0,1fr);
   gap:calc(var(--s)*2);align-items:baseline;padding:calc(var(--s)*1.25) 0;

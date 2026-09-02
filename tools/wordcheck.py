@@ -9,13 +9,13 @@ FAULTS=[
   'editorial tag-on clause'),
  (r'\b(write what|write the number of|write the price|write the revenue)\b',
   'instruction that is not a question'),
- (r'\bwaiting to be found\b', 'invented vocabulary'),
+ (r'\bwaiting to be found|largest pieces?|biggest pieces?\b', 'invented vocabulary'),
  (r'(?<!\w)\*\w|\*\*|_\w', 'stray markdown'),
  (r'\b(great|well done|nice|excellent|good job|oops|remember,)\b', 'praise or coaching'),
  (r'\b(graph|straight lines?|the lines?|curve|plot|axis|axes|slope|parabola)\b',
   'leans on graphing, which §1.2 has not reached'),
 ]
-FILES=['data/powers.json','data/factoring.json']
+FILES=['data/powers.json','data/factoring.json','data/factored.json']
 d={'sets':[],'ideas':{}}
 for _f in FILES:
     _d=json.load(open(_f))

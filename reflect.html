@@ -27,7 +27,9 @@ a{color:#f8b800;text-decoration:none}a:hover{color:#fff}
 @keyframes exIn{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}
 @keyframes exDrift{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @keyframes exFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
-.katex{font-size:1.04em}
+.katex{font-size:1.12em}
+.m{white-space:nowrap}
+@media (max-width:820px){[data-rail]{display:none!important}[data-sticky]{position:static!important}[data-prompt]{font-size:20px!important}}
 @media print{
   body{background:#fff}
   [data-sumgrid]{display:block !important}
@@ -40,107 +42,106 @@ a{color:#f8b800;text-decoration:none}a:hover{color:#fff}
 
   <div data-norail="1" style="position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden">
     <div style="position:absolute;inset:0;background:{{ bgWash }}"></div>
-    <div style="position:absolute;inset:0;opacity:.16;background-image:repeating-linear-gradient(0deg,#ffffff10 0 1px,transparent 1px 34px),repeating-linear-gradient(90deg,#ffffff10 0 1px,transparent 1px 34px)"></div>
-    <div style="position:absolute;left:0;right:0;bottom:0;height:196px;background:{{ rangeFar }};clip-path:polygon(0% 100%,0% 62%,4% 62%,4% 48%,8% 48%,8% 34%,12% 34%,12% 22%,16% 22%,16% 34%,20% 34%,20% 48%,24% 48%,24% 58%,28% 58%,28% 44%,32% 44%,32% 30%,36% 30%,36% 42%,40% 42%,40% 56%,44% 56%,44% 66%,48% 66%,48% 52%,52% 52%,52% 38%,56% 38%,56% 26%,60% 26%,60% 40%,64% 40%,64% 54%,68% 54%,68% 64%,72% 64%,72% 50%,76% 50%,76% 36%,80% 36%,80% 48%,84% 48%,84% 60%,88% 60%,88% 46%,92% 46%,92% 58%,96% 58%,96% 68%,100% 68%,100% 100%)"></div>
+        <div style="position:absolute;left:0;right:0;bottom:0;height:196px;background:{{ rangeFar }};clip-path:polygon(0% 100%,0% 62%,4% 62%,4% 48%,8% 48%,8% 34%,12% 34%,12% 22%,16% 22%,16% 34%,20% 34%,20% 48%,24% 48%,24% 58%,28% 58%,28% 44%,32% 44%,32% 30%,36% 30%,36% 42%,40% 42%,40% 56%,44% 56%,44% 66%,48% 66%,48% 52%,52% 52%,52% 38%,56% 38%,56% 26%,60% 26%,60% 40%,64% 40%,64% 54%,68% 54%,68% 64%,72% 64%,72% 50%,76% 50%,76% 36%,80% 36%,80% 48%,84% 48%,84% 60%,88% 60%,88% 46%,92% 46%,92% 58%,96% 58%,96% 68%,100% 68%,100% 100%)"></div>
     <div style="position:absolute;left:0;right:0;bottom:0;height:138px;background:{{ rangeNear }};clip-path:polygon(0% 100%,0% 70%,6% 70%,6% 54%,12% 54%,12% 38%,18% 38%,18% 52%,24% 52%,24% 66%,30% 66%,30% 46%,36% 46%,36% 30%,42% 30%,42% 44%,48% 44%,48% 60%,54% 60%,54% 72%,60% 72%,60% 56%,66% 56%,66% 40%,72% 40%,72% 54%,78% 54%,78% 68%,84% 68%,84% 50%,90% 50%,90% 64%,96% 64%,96% 74%,100% 74%,100% 100%)"></div>
     <div style="position:absolute;left:0;right:0;bottom:0;height:132px;background:{{ bottomFade }}"></div>
-    <div style="position:absolute;left:0;bottom:0;width:200%;height:40px;display:flex;animation:exDrift 120s linear infinite;opacity:.42">
+    <div data-band="1" style="position:absolute;left:0;bottom:0;width:200%;height:40px;display:none;opacity:.42">
       <div style="width:50%;height:100%;background:{{ bandStripe }}"></div>
       <div style="width:50%;height:100%;background:{{ bandStripe }}"></div>
     </div>
   </div>
 
-  <div style="position:relative;z-index:1;max-width:1120px;margin:0 auto;display:flex;gap:26px;align-items:flex-start;flex-wrap:wrap">
+  <div style="position:relative;z-index:1;max-width:980px;margin:0 auto;display:flex;gap:26px;align-items:flex-start;flex-wrap:wrap">
 
-    <div style="flex:1 1 540px;min-width:300px;display:flex;flex-direction:column;gap:24px">
+    <div style="flex:1 1 540px;min-width:300px;max-width:44rem;display:flex;flex-direction:column;gap:24px">
 
       <sc-if value="{{ isStart }}" hint-placeholder-val="{{ true }}">
         <div style="display:flex;flex-direction:column;gap:28px;animation:exIn .3s ease both">
-          <h1 style="font-family:'Press Start 2P',monospace;font-size:21px;line-height:1.5;margin:8px 0 0;text-shadow:4px 4px 0 #00000066">Exam 1 Reflection</h1>
+          <h1 style="font-family:'Press Start 2P',monospace;font-size:16px;line-height:1.6;margin:8px 0 0;">Exam 1 Reflection</h1>
 
           <sc-if value="{{ hasResume }}" hint-placeholder-val="{{ false }}">
-            <div onClick="{{ resume }}" style="display:flex;align-items:center;gap:15px;padding:16px 18px;border:3px solid #f8b800;border-radius:10px;background:{{ cCard }};box-shadow:0 5px 0 #00000055;cursor:pointer;min-height:60px;box-sizing:border-box">
-              <span style="flex:none;width:13px;height:13px;background:#f8b800;border-radius:2px"></span>
+            <div onClick="{{ resume }}" style="display:flex;align-items:center;gap:15px;padding:12px 14px;border:1px solid rgba(255,255,255,.22);border-radius:4px;background:{{ cCard }};cursor:pointer;min-height:48px;box-sizing:border-box">
+              <span style="flex:none;width:8px;height:8px;background:#8b93b8;border-radius:1px"></span>
               <div style="flex:1;display:flex;flex-direction:column;gap:7px">
-                <span style="font-family:'Press Start 2P',monospace;font-size:10px;letter-spacing:1px;color:#f8b800">Pick up where I was</span>
+                <span style="font-size:13px;font-weight:600;color:#b9c0dd">Pick up where I was</span>
                 <span data-tex="{{ resumePrompt }}" style="font-size:15px;line-height:1.6;color:#eef1fb"></span>
               </div>
             </div>
           </sc-if>
 
-          <div style="border:4px solid #1a1210;border-radius:12px;background:{{ cCard }};box-shadow:0 7px 0 #00000055;overflow:hidden">
-            <div style="height:7px;background:repeating-linear-gradient(90deg,#f8b800 0 18px,{{ cCard }} 18px 26px)"></div>
+          <div style="border:1px solid rgba(255,255,255,.14);border-radius:4px;background:{{ cCard }};overflow:hidden">
+            <div style="height:1px;background:rgba(255,255,255,.12)"></div>
             <div style="padding:20px 22px 22px;display:flex;flex-direction:column;gap:15px">
-              <span style="font-family:'Press Start 2P',monospace;font-size:11px;letter-spacing:1px;color:#f8b800">How this works</span>
+              <span style="font-size:13px;font-weight:600;color:#b9c0dd">How this works</span>
               <div style="display:flex;flex-direction:column;gap:12px">
                 <div style="display:flex;gap:13px;align-items:flex-start">
-                  <span style="flex:none;width:11px;height:11px;margin-top:6px;background:#7ee0ff;border-radius:2px"></span>
+                  <span style="flex:none;width:6px;height:6px;margin-top:9px;background:#8b93b8;border-radius:1px"></span>
                   <span style="flex:1;font-size:15.5px;line-height:1.65;color:#eef1fb">There is more to a problem than its answer: what kind of thing it is, what it asks for, which move applies, and what would confirm it.</span>
                 </div>
                 <div style="display:flex;gap:13px;align-items:flex-start">
-                  <span style="flex:none;width:11px;height:11px;margin-top:6px;background:#8fe36a;border-radius:2px"></span>
+                  <span style="flex:none;width:6px;height:6px;margin-top:9px;background:#8b93b8;border-radius:1px"></span>
                   <span style="flex:1;font-size:15.5px;line-height:1.65;color:#eef1fb">Most of that stays in your head, so it is hard to tell which parts you really rely on.</span>
                 </div>
                 <div style="display:flex;gap:13px;align-items:flex-start">
-                  <span style="flex:none;width:11px;height:11px;margin-top:6px;background:#f8b800;border-radius:2px"></span>
+                  <span style="flex:none;width:6px;height:6px;margin-top:9px;background:#8b93b8;border-radius:1px"></span>
                   <span style="flex:1;font-size:15.5px;line-height:1.65;color:#eef1fb">So at each step you select what you actually used or noticed.</span>
                 </div>
                 <div style="display:flex;gap:13px;align-items:flex-start">
-                  <span style="flex:none;width:11px;height:11px;margin-top:6px;background:#c9a0ff;border-radius:2px"></span>
+                  <span style="flex:none;width:6px;height:6px;margin-top:9px;background:#8b93b8;border-radius:1px"></span>
                   <span style="flex:1;font-size:15.5px;line-height:1.65;color:#eef1fb">Then you see which of them hold up, which stop short, and the one the step really turns on.</span>
                 </div>
               </div>
-              <span style="font-size:15px;line-height:1.65;color:#b9c0dd;border-top:3px solid {{ cDivider }};padding-top:14px">What you keep becomes your notes. Across problems, a pattern shows up: the parts you lean on, and the parts you skip.</span>
+              <span style="font-size:15px;line-height:1.65;color:#b9c0dd;border-top:1px solid {{ cDivider }};padding-top:14px">What you keep becomes your notes. Across problems, a pattern shows up: the parts you lean on, and the parts you skip.</span>
             </div>
           </div>
 
           <div style="display:flex;flex-direction:column;gap:10px">
             <sc-for list="{{ startIdeas }}" as="id" hint-placeholder-count="7">
-              <div onClick="{{ id.open }}" style="display:flex;align-items:center;gap:15px;padding:15px 18px;border:3px solid #1a1210;border-radius:10px;background:{{ cPanel }};box-shadow:0 5px 0 #00000055;cursor:{{ id.cursor }};min-height:60px;box-sizing:border-box">
+              <div onClick="{{ id.open }}" style="display:flex;align-items:center;gap:15px;padding:12px 14px;border:1px solid rgba(255,255,255,.12);border-radius:4px;background:{{ cPanel }};cursor:{{ id.cursor }};min-height:48px;box-sizing:border-box">
                 <span style="flex:none;display:grid;grid-template-columns:repeat(5,5px);grid-auto-rows:5px;gap:1px">
                   <sc-for list="{{ id.cells }}" as="c" hint-placeholder-count="25">
                     <span style="background:{{ c.bg }};border-radius:1px"></span>
                   </sc-for>
                 </span>
-                <span style="flex:1;font-family:'Press Start 2P',monospace;font-size:11px;line-height:1.7;color:{{ id.color }}">{{ id.title }}</span>
-                <span style="flex:none;font-size:13px;color:#f8b800">{{ id.mark }}</span>
+                <span style="flex:1;font-size:17px;font-weight:500;line-height:1.5;color:{{ id.color }}">{{ id.title }}</span>
+                <span style="flex:none;font-size:11px;color:#8b93b8">{{ id.mark }}</span>
               </div>
             </sc-for>
           </div>
 
           <div style="display:flex;flex-direction:column;gap:12px;align-items:flex-start">
-            <button onClick="{{ openSummary }}" style="font-family:'Press Start 2P',monospace;font-size:9px;letter-spacing:1px;padding:13px 15px;border:3px solid #1a1210;border-radius:7px;background:{{ cPanel }};color:#f8b800;box-shadow:0 4px 0 #00000055;cursor:pointer">Summary</button>
-            <button onClick="{{ pressClear }}" style="font-family:'Press Start 2P',monospace;font-size:9px;letter-spacing:1px;padding:13px 15px;border:3px solid #1a1210;border-radius:7px;background:{{ cPanelDeep }};color:#8b93b8;box-shadow:0 4px 0 #00000055;cursor:pointer;text-align:left;line-height:1.7">{{ clearLabel }}</button>
+            <button onClick="{{ openSummary }}" style="font-size:14px;font-weight:500;padding:10px 14px;border:1px solid rgba(255,255,255,.12);border-radius:3px;background:{{ cPanelDeep }};color:#b9c0dd;cursor:pointer">Summary</button>
+            <button onClick="{{ pressClear }}" style="font-size:14px;font-weight:500;padding:10px 14px;border:1px solid rgba(255,255,255,.12);border-radius:3px;background:{{ cPanelDeep }};color:#8b93b8;cursor:pointer;text-align:left;line-height:1.7">{{ clearLabel }}</button>
           </div>
         </div>
       </sc-if>
 
       <sc-if value="{{ isIdea }}" hint-placeholder-val="{{ false }}">
         <div style="display:flex;flex-direction:column;gap:22px;animation:exIn .3s ease both">
-          <h2 style="font-family:'Press Start 2P',monospace;font-size:15px;line-height:1.6;margin:8px 0 0;text-shadow:3px 3px 0 #00000055">{{ ideaTitle }}</h2>
+          <h2 style="font-size:22px;font-weight:600;letter-spacing:-.01em;line-height:1.3;margin:8px 0 0;">{{ ideaTitle }}</h2>
           <div style="display:flex;flex-direction:column;gap:10px">
             <sc-for list="{{ ideaProblems }}" as="p" hint-placeholder-count="4">
-              <div onClick="{{ p.open }}" style="display:flex;align-items:center;gap:15px;padding:17px 19px;border:3px solid #1a1210;border-radius:10px;background:{{ cPanel }};box-shadow:0 5px 0 #00000055;cursor:pointer;min-height:62px;box-sizing:border-box">
-                <span style="flex:none;width:7px;align-self:stretch;background:{{ p.motif }};border-radius:2px"></span>
+              <div onClick="{{ p.open }}" style="display:flex;align-items:center;gap:15px;padding:12px 14px;border:1px solid rgba(255,255,255,.12);border-radius:4px;background:{{ cPanel }};cursor:pointer;min-height:48px;box-sizing:border-box">
+                <span style="flex:none;width:2px;align-self:stretch;background:rgba(255,255,255,.14);border-radius:1px"></span>
                 <span data-tex="{{ p.prompt }}" style="flex:1;font-size:17px;line-height:1.6;color:#eef1fb"></span>
-                <span style="flex:none;font-size:13px;color:#f8b800">{{ p.mark }}</span>
+                <span style="flex:none;font-size:11px;color:#8b93b8">{{ p.mark }}</span>
               </div>
             </sc-for>
           </div>
-          <button onClick="{{ goStart }}" style="align-self:flex-start;font-family:'Press Start 2P',monospace;font-size:9px;letter-spacing:1px;padding:12px 14px;border:3px solid #1a1210;border-radius:7px;background:{{ cPanelDeep }};color:#b9c0dd;box-shadow:0 4px 0 #00000055;cursor:pointer">Back</button>
+          <button onClick="{{ goStart }}" style="align-self:flex-start;font-size:14px;font-weight:500;padding:9px 13px;border:1px solid rgba(255,255,255,.12);border-radius:3px;background:{{ cPanelDeep }};color:#b9c0dd;cursor:pointer">Back</button>
         </div>
       </sc-if>
 
       <sc-if value="{{ hasProblem }}" hint-placeholder-val="{{ false }}">
-        <div style="position:sticky;top:0;z-index:2;padding-top:10px;background:{{ stickyFade }}">
-          <div style="border:4px solid #1a1210;border-radius:14px;background:{{ cDeep }};box-shadow:0 8px 0 #00000066;overflow:hidden">
-            <div style="height:8px;background:{{ activeMotif }}"></div>
-            <div style="padding:24px 26px;display:flex;flex-direction:column;gap:14px">
-              <div data-tex="{{ probPrompt }}" style="font-size:30px;line-height:1.5;color:#fff;text-wrap:pretty"></div>
+        <div data-sticky="1" style="position:sticky;top:0;z-index:2;padding-top:10px;background:{{ stickyFade }}">
+          <div style="border:1px solid rgba(255,255,255,.14);border-radius:4px;background:{{ cDeep }};overflow:hidden">
+            <div style="height:3px;background:{{ activeMotif }}"></div>
+            <div style="padding:18px 22px;display:flex;flex-direction:column;gap:12px">
+              <div data-tex="{{ probPrompt }}" data-prompt="1" style="font-size:24px;line-height:1.45;color:#fff;text-wrap:pretty"></div>
               <sc-if value="{{ hasStageLabel }}" hint-placeholder-val="{{ false }}">
-                <div style="display:flex;align-items:center;gap:13px;border-top:3px solid {{ cDivider }};padding-top:14px">
-                  <span style="flex:none;width:13px;height:13px;background:{{ activeMotif }};border-radius:2px"></span>
-                  <span style="font-family:'Press Start 2P',monospace;font-size:12px;letter-spacing:1.5px;color:#fff">{{ stageLabel }}</span>
+                <div style="display:flex;align-items:center;gap:13px;border-top:1px solid {{ cDivider }};padding-top:14px">
+                  <span style="flex:none;width:8px;height:8px;background:{{ activeMotif }};border-radius:1px"></span>
+                  <span style="font-family:'Press Start 2P',monospace;font-size:8px;letter-spacing:1px;color:#b9c0dd">{{ stageLabel }}</span>
                 </div>
               </sc-if>
             </div>
@@ -153,16 +154,16 @@ a{color:#f8b800;text-decoration:none}a:hover{color:#fff}
           <p style="margin:0;font-size:15.5px;line-height:1.65;color:#b9c0dd">Work it on paper, then open a stage.</p>
           <div style="display:flex;flex-direction:column;gap:10px">
             <sc-for list="{{ probStages }}" as="s" hint-placeholder-count="3">
-              <div onClick="{{ s.open }}" style="display:flex;align-items:center;gap:15px;padding:17px 19px;border:3px solid #1a1210;border-radius:10px;background:{{ cPanel }};box-shadow:0 5px 0 #00000055;cursor:pointer;min-height:60px;box-sizing:border-box">
-                <span style="flex:none;width:13px;height:13px;background:{{ activeMotif }};border-radius:2px"></span>
-                <span style="flex:1;font-family:'Press Start 2P',monospace;font-size:12px;letter-spacing:1px;color:#eef1fb">{{ s.label }}</span>
-                <span style="flex:none;font-size:13px;color:#f8b800">{{ s.mark }}</span>
+              <div onClick="{{ s.open }}" style="display:flex;align-items:center;gap:15px;padding:12px 14px;border:1px solid rgba(255,255,255,.12);border-radius:4px;background:{{ cPanel }};cursor:pointer;min-height:48px;box-sizing:border-box">
+                <span style="flex:none;width:8px;height:8px;background:#8b93b8;border-radius:1px"></span>
+                <span style="flex:1;font-size:17px;font-weight:500;color:#eef1fb">{{ s.label }}</span>
+                <span style="flex:none;font-size:11px;color:#8b93b8">{{ s.mark }}</span>
               </div>
             </sc-for>
           </div>
           <div style="display:flex;gap:10px;flex-wrap:wrap">
-            <button onClick="{{ goIdea }}" style="font-family:'Press Start 2P',monospace;font-size:9px;letter-spacing:1px;padding:12px 14px;border:3px solid #1a1210;border-radius:7px;background:{{ cPanelDeep }};color:#b9c0dd;box-shadow:0 4px 0 #00000055;cursor:pointer">Back</button>
-            <button onClick="{{ goHome }}" style="font-family:'Press Start 2P',monospace;font-size:9px;letter-spacing:1px;padding:12px 14px;border:3px solid #1a1210;border-radius:7px;background:{{ cPanelDeep }};color:#b9c0dd;box-shadow:0 4px 0 #00000055;cursor:pointer">Home</button>
+            <button onClick="{{ goIdea }}" style="font-size:14px;font-weight:500;padding:9px 13px;border:1px solid rgba(255,255,255,.12);border-radius:3px;background:{{ cPanelDeep }};color:#b9c0dd;cursor:pointer">Back</button>
+            <button onClick="{{ goHome }}" style="font-size:14px;font-weight:500;padding:9px 13px;border:1px solid rgba(255,255,255,.12);border-radius:3px;background:{{ cPanelDeep }};color:#b9c0dd;cursor:pointer">Home</button>
           </div>
         </div>
       </sc-if>
@@ -172,16 +173,16 @@ a{color:#f8b800;text-decoration:none}a:hover{color:#fff}
           <p style="margin:0;font-size:15.5px;line-height:1.65;color:#b9c0dd">Select what you noticed, thought of, or know.</p>
           <div style="display:flex;flex-direction:column;gap:10px">
             <sc-for list="{{ tickRows }}" as="r" hint-placeholder-count="6">
-              <div onClick="{{ r.toggle }}" style="display:flex;gap:15px;align-items:flex-start;padding:16px 18px;border:3px solid #1a1210;border-radius:9px;background:{{ cPanel }};box-shadow:0 5px 0 #00000055;cursor:pointer;min-height:60px;box-sizing:border-box">
-                <span style="flex:none;width:23px;height:23px;margin-top:2px;border:3px solid #1a1210;border-radius:4px;background:{{ r.box }};box-sizing:border-box"></span>
+              <div onClick="{{ r.toggle }}" style="display:flex;gap:15px;align-items:flex-start;padding:12px 14px;border:1px solid rgba(255,255,255,.12);border-radius:3px;background:{{ cPanel }};cursor:pointer;min-height:48px;box-sizing:border-box">
+                <span style="flex:none;width:18px;height:18px;margin-top:4px;border:1px solid rgba(255,255,255,.35);border-radius:3px;background:{{ r.box }};box-sizing:border-box"></span>
                 <span data-tex="{{ r.text }}" style="flex:1;font-size:15.5px;line-height:1.65;color:#eef1fb"></span>
-                <span style="flex:none;font-family:'Press Start 2P',monospace;font-size:7px;line-height:1.9;color:#6f77a0;max-width:96px;text-align:right">{{ r.mark }}</span>
+                <span style="flex:none;font-size:11px;line-height:1.5;color:#8b93b8;max-width:120px;text-align:right">{{ r.mark }}</span>
               </div>
             </sc-for>
           </div>
           <div style="display:flex;gap:10px;flex-wrap:wrap">
-            <button onClick="{{ goProblem }}" style="font-family:'Press Start 2P',monospace;font-size:9px;letter-spacing:1px;padding:12px 14px;border:3px solid #1a1210;border-radius:7px;background:{{ cPanelDeep }};color:#b9c0dd;box-shadow:0 4px 0 #00000055;cursor:pointer">Back</button>
-            <button onClick="{{ goHome }}" style="font-family:'Press Start 2P',monospace;font-size:9px;letter-spacing:1px;padding:12px 14px;border:3px solid #1a1210;border-radius:7px;background:{{ cPanelDeep }};color:#b9c0dd;box-shadow:0 4px 0 #00000055;cursor:pointer">Home</button>
+            <button onClick="{{ goProblem }}" style="font-size:14px;font-weight:500;padding:9px 13px;border:1px solid rgba(255,255,255,.12);border-radius:3px;background:{{ cPanelDeep }};color:#b9c0dd;cursor:pointer">Back</button>
+            <button onClick="{{ goHome }}" style="font-size:14px;font-weight:500;padding:9px 13px;border:1px solid rgba(255,255,255,.12);border-radius:3px;background:{{ cPanelDeep }};color:#b9c0dd;cursor:pointer">Home</button>
           </div>
         </div>
       </sc-if>
@@ -189,26 +190,26 @@ a{color:#f8b800;text-decoration:none}a:hover{color:#fff}
       <sc-if value="{{ isWindow }}" hint-placeholder-val="{{ false }}">
         <div style="display:flex;flex-direction:column;gap:16px;animation:exIn .3s ease both">
           <sc-for list="{{ winLines }}" as="w" hint-placeholder-count="2">
-            <div style="display:flex;gap:16px;align-items:flex-start;margin-top:{{ w.gap }};padding:17px 19px;border:3px solid #1a1210;border-radius:10px;background:{{ cCard }};box-shadow:0 5px 0 #00000044">
+            <div style="display:flex;gap:16px;align-items:flex-start;margin-top:{{ w.gap }};padding:12px 14px;border:1px solid rgba(255,255,255,.12);border-radius:4px;background:{{ cCard }};">
               <div style="flex:1;display:flex;flex-direction:column;gap:11px">
-                <span style="font-family:'Press Start 2P',monospace;font-size:10px;line-height:1.8;letter-spacing:1.2px;color:{{ w.labelColor }}">{{ w.statusLabel }}</span>
+                <span style="font-size:12px;line-height:1.5;letter-spacing:.02em;color:{{ w.labelColor }}">{{ w.statusLabel }}</span>
                 <span data-tex="{{ w.text }}" style="font-size:16px;line-height:1.65;color:#eef1fb"></span>
                 <sc-if value="{{ w.hasSecond }}" hint-placeholder-val="{{ false }}">
-                  <span data-tex="{{ w.second }}" style="font-size:16px;line-height:1.65;color:#eef1fb;padding:11px 0 11px 22px;border-left:4px solid {{ cRule }};background:{{ cSoft }};border-radius:0 6px 6px 0"></span>
+                  <span data-tex="{{ w.second }}" style="font-size:16px;line-height:1.65;color:#eef1fb;padding:11px 0 11px 22px;border-left:2px solid {{ cRule }};background:{{ cSoft }};border-radius:0 6px 6px 0"></span>
                 </sc-if>
                 <sc-if value="{{ w.hasRecog }}" hint-placeholder-val="{{ false }}">
-                  <span style="font-size:14.5px;line-height:1.6;color:#b9c0dd;border-top:3px solid {{ cDivider }};padding-top:11px">{{ w.recog }}</span>
+                  <span style="font-size:14.5px;line-height:1.6;color:#b9c0dd;border-top:1px solid {{ cDivider }};padding-top:11px">{{ w.recog }}</span>
                 </sc-if>
               </div>
               <sc-if value="{{ w.keepable }}" hint-placeholder-val="{{ true }}">
-                <button onClick="{{ w.toggle }}" style="flex:none;font-family:'Press Start 2P',monospace;font-size:8px;letter-spacing:1px;padding:12px 12px;border:3px solid #1a1210;border-radius:6px;background:{{ w.keepBg }};color:{{ w.keepFg }};box-shadow:0 3px 0 #00000055;cursor:pointer;min-width:66px">{{ w.keepLabel }}</button>
+                <button onClick="{{ w.toggle }}" style="flex:none;font-size:12px;font-weight:600;padding:8px 10px;border:1px solid rgba(255,255,255,.12);border-radius:3px;background:{{ w.keepBg }};color:{{ w.keepFg }};cursor:pointer;min-width:66px">{{ w.keepLabel }}</button>
               </sc-if>
             </div>
           </sc-for>
           <div style="display:flex;gap:10px;flex-wrap:wrap;padding-top:6px">
-            <button onClick="{{ goProblem }}" style="font-family:'Press Start 2P',monospace;font-size:9px;letter-spacing:1px;padding:12px 14px;border:3px solid #1a1210;border-radius:7px;background:{{ cPanelDeep }};color:#b9c0dd;box-shadow:0 4px 0 #00000055;cursor:pointer">Back</button>
-            <button onClick="{{ openSummary }}" style="font-family:'Press Start 2P',monospace;font-size:9px;letter-spacing:1px;padding:12px 14px;border:3px solid #1a1210;border-radius:7px;background:{{ cPanel }};color:#f8b800;box-shadow:0 4px 0 #00000055;cursor:pointer">Summary</button>
-            <button onClick="{{ goHome }}" style="font-family:'Press Start 2P',monospace;font-size:9px;letter-spacing:1px;padding:12px 14px;border:3px solid #1a1210;border-radius:7px;background:{{ cPanelDeep }};color:#b9c0dd;box-shadow:0 4px 0 #00000055;cursor:pointer">Home</button>
+            <button onClick="{{ goProblem }}" style="font-size:14px;font-weight:500;padding:9px 13px;border:1px solid rgba(255,255,255,.12);border-radius:3px;background:{{ cPanelDeep }};color:#b9c0dd;cursor:pointer">Back</button>
+            <button onClick="{{ openSummary }}" style="font-size:14px;font-weight:500;padding:9px 13px;border:1px solid rgba(255,255,255,.12);border-radius:3px;background:{{ cPanelDeep }};color:#b9c0dd;cursor:pointer">Summary</button>
+            <button onClick="{{ goHome }}" style="font-size:14px;font-weight:500;padding:9px 13px;border:1px solid rgba(255,255,255,.12);border-radius:3px;background:{{ cPanelDeep }};color:#b9c0dd;cursor:pointer">Home</button>
           </div>
         </div>
       </sc-if>
@@ -216,48 +217,48 @@ a{color:#f8b800;text-decoration:none}a:hover{color:#fff}
       <sc-if value="{{ isRead }}" hint-placeholder-val="{{ false }}">
         <div style="display:flex;flex-direction:column;gap:14px;animation:exIn .3s ease both">
           <sc-for list="{{ readLines }}" as="rl" hint-placeholder-count="2">
-            <div style="display:flex;gap:16px;align-items:flex-start;padding:17px 19px;border:3px solid #1a1210;border-radius:10px;background:{{ cCard }};box-shadow:0 5px 0 #00000044">
+            <div style="display:flex;gap:16px;align-items:flex-start;padding:12px 14px;border:1px solid rgba(255,255,255,.12);border-radius:4px;background:{{ cCard }};">
               <span data-tex="{{ rl.text }}" style="flex:1;font-size:16px;line-height:1.65;color:#eef1fb"></span>
-              <button onClick="{{ rl.toggle }}" style="flex:none;font-family:'Press Start 2P',monospace;font-size:8px;letter-spacing:1px;padding:12px 12px;border:3px solid #1a1210;border-radius:6px;background:{{ rl.keepBg }};color:{{ rl.keepFg }};box-shadow:0 3px 0 #00000055;cursor:pointer;min-width:66px">{{ rl.keepLabel }}</button>
+              <button onClick="{{ rl.toggle }}" style="flex:none;font-size:12px;font-weight:600;padding:8px 10px;border:1px solid rgba(255,255,255,.12);border-radius:3px;background:{{ rl.keepBg }};color:{{ rl.keepFg }};cursor:pointer;min-width:66px">{{ rl.keepLabel }}</button>
             </div>
           </sc-for>
           <div style="display:flex;gap:10px;flex-wrap:wrap;padding-top:6px">
-            <button onClick="{{ goProblem }}" style="font-family:'Press Start 2P',monospace;font-size:9px;letter-spacing:1px;padding:12px 14px;border:3px solid #1a1210;border-radius:7px;background:{{ cPanelDeep }};color:#b9c0dd;box-shadow:0 4px 0 #00000055;cursor:pointer">Back</button>
-            <button onClick="{{ openSummary }}" style="font-family:'Press Start 2P',monospace;font-size:9px;letter-spacing:1px;padding:12px 14px;border:3px solid #1a1210;border-radius:7px;background:{{ cPanel }};color:#f8b800;box-shadow:0 4px 0 #00000055;cursor:pointer">Summary</button>
-            <button onClick="{{ goHome }}" style="font-family:'Press Start 2P',monospace;font-size:9px;letter-spacing:1px;padding:12px 14px;border:3px solid #1a1210;border-radius:7px;background:{{ cPanelDeep }};color:#b9c0dd;box-shadow:0 4px 0 #00000055;cursor:pointer">Home</button>
+            <button onClick="{{ goProblem }}" style="font-size:14px;font-weight:500;padding:9px 13px;border:1px solid rgba(255,255,255,.12);border-radius:3px;background:{{ cPanelDeep }};color:#b9c0dd;cursor:pointer">Back</button>
+            <button onClick="{{ openSummary }}" style="font-size:14px;font-weight:500;padding:9px 13px;border:1px solid rgba(255,255,255,.12);border-radius:3px;background:{{ cPanelDeep }};color:#b9c0dd;cursor:pointer">Summary</button>
+            <button onClick="{{ goHome }}" style="font-size:14px;font-weight:500;padding:9px 13px;border:1px solid rgba(255,255,255,.12);border-radius:3px;background:{{ cPanelDeep }};color:#b9c0dd;cursor:pointer">Home</button>
           </div>
         </div>
       </sc-if>
 
       <sc-if value="{{ isSummary }}" hint-placeholder-val="{{ false }}">
         <div style="display:flex;flex-direction:column;gap:34px;animation:exIn .3s ease both">
-          <h1 style="font-family:'Press Start 2P',monospace;font-size:19px;line-height:1.5;margin:8px 0 0;text-shadow:4px 4px 0 #00000066">What I kept</h1>
+          <h1 style="font-family:'Press Start 2P',monospace;font-size:16px;line-height:1.6;margin:8px 0 0;">What I kept</h1>
           <sc-for list="{{ sumIdeas }}" as="si" hint-placeholder-count="0">
             <div style="display:flex;flex-direction:column;gap:18px">
-              <div style="display:flex;gap:16px;align-items:flex-start;border-bottom:4px solid {{ si.motif }};padding-bottom:15px">
+              <div style="display:flex;gap:16px;align-items:flex-start;border-bottom:1px solid rgba(255,255,255,.12);padding-bottom:12px">
                 <span style="flex:none;display:grid;grid-template-columns:repeat(5,7px);grid-auto-rows:7px;gap:1px;margin-top:3px">
                   <sc-for list="{{ si.cells }}" as="c" hint-placeholder-count="25">
                     <span style="background:{{ c.bg }};border-radius:1px"></span>
                   </sc-for>
                 </span>
-                <span data-tex="{{ si.spine }}" style="flex:1;font-size:17px;line-height:1.6;color:#f8b800;font-weight:600"></span>
+                <span data-tex="{{ si.spine }}" style="flex:1;font-size:17px;line-height:1.6;color:#eef1fb;font-weight:600"></span>
               </div>
               <div data-sumgrid="1" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(288px,1fr));gap:16px">
                 <sc-for list="{{ si.problems }}" as="sp" hint-placeholder-count="0">
-                  <div style="border:3px solid #1a1210;border-radius:11px;background:{{ cCard }};box-shadow:0 6px 0 #00000044;overflow:hidden;display:flex;flex-direction:column">
-                    <div style="height:6px;background:{{ si.motif }}"></div>
-                    <div data-tex="{{ sp.prompt }}" style="padding:17px 18px;font-size:20px;line-height:1.5;color:#fff;border-bottom:3px solid {{ cDivider }}"></div>
+                  <div style="border:1px solid rgba(255,255,255,.12);border-radius:4px;background:{{ cCard }};overflow:hidden;display:flex;flex-direction:column">
+                    <div style="height:0"></div>
+                    <div data-tex="{{ sp.prompt }}" style="padding:17px 18px;font-size:20px;line-height:1.5;color:#fff;border-bottom:1px solid {{ cDivider }}"></div>
                     <div style="padding:16px 18px 18px;display:flex;flex-direction:column;gap:14px">
                       <sc-for list="{{ sp.lines }}" as="sl" hint-placeholder-count="0">
-                        <div style="display:flex;gap:13px;align-items:flex-start;padding:{{ sl.pad }};background:{{ sl.bg }};border-radius:7px">
+                        <div style="display:flex;gap:13px;align-items:flex-start;padding:{{ sl.pad }};background:{{ sl.bg }};border-radius:3px">
                           <div style="flex:1;display:flex;flex-direction:column;gap:10px">
                             <span data-tex="{{ sl.text }}" style="font-size:15px;line-height:1.65;color:#eef1fb"></span>
                             <sc-if value="{{ sl.hasSecond }}" hint-placeholder-val="{{ false }}">
-                              <span data-tex="{{ sl.second }}" style="font-size:15px;line-height:1.65;color:#eef1fb;padding:9px 0 9px 18px;border-left:4px solid {{ cRule }};background:{{ cSoft }};border-radius:0 6px 6px 0"></span>
+                              <span data-tex="{{ sl.second }}" style="font-size:15px;line-height:1.65;color:#eef1fb;padding:9px 0 9px 18px;border-left:2px solid {{ cRule }};background:{{ cSoft }};border-radius:0 6px 6px 0"></span>
                             </sc-if>
                           </div>
                           <sc-if value="{{ sl.keepable }}" hint-placeholder-val="{{ false }}">
-                            <button onClick="{{ sl.toggle }}" style="flex:none;font-family:'Press Start 2P',monospace;font-size:7.5px;letter-spacing:1px;padding:10px 10px;border:3px solid #1a1210;border-radius:6px;background:{{ cPanel }};color:#f8b800;box-shadow:0 3px 0 #00000055;cursor:pointer">Kept</button>
+                            <button onClick="{{ sl.toggle }}" style="flex:none;font-size:12px;font-weight:600;padding:7px 9px;border:1px solid rgba(255,255,255,.12);border-radius:3px;background:{{ cPanel }};color:#f8b800;cursor:pointer">Kept</button>
                           </sc-if>
                         </div>
                       </sc-for>
@@ -268,18 +269,18 @@ a{color:#f8b800;text-decoration:none}a:hover{color:#fff}
             </div>
           </sc-for>
           <div style="display:flex;gap:10px;flex-wrap:wrap">
-            <button onClick="{{ closeSummary }}" style="font-family:'Press Start 2P',monospace;font-size:9px;letter-spacing:1px;padding:12px 14px;border:3px solid #1a1210;border-radius:7px;background:{{ cPanelDeep }};color:#b9c0dd;box-shadow:0 4px 0 #00000055;cursor:pointer">Back</button>
-            <button onClick="{{ goHome }}" style="font-family:'Press Start 2P',monospace;font-size:9px;letter-spacing:1px;padding:12px 14px;border:3px solid #1a1210;border-radius:7px;background:{{ cPanelDeep }};color:#b9c0dd;box-shadow:0 4px 0 #00000055;cursor:pointer">Home</button>
+            <button onClick="{{ closeSummary }}" style="font-size:14px;font-weight:500;padding:9px 13px;border:1px solid rgba(255,255,255,.12);border-radius:3px;background:{{ cPanelDeep }};color:#b9c0dd;cursor:pointer">Back</button>
+            <button onClick="{{ goHome }}" style="font-size:14px;font-weight:500;padding:9px 13px;border:1px solid rgba(255,255,255,.12);border-radius:3px;background:{{ cPanelDeep }};color:#b9c0dd;cursor:pointer">Home</button>
           </div>
         </div>
       </sc-if>
 
     </div>
 
-    <div data-norail="1" style="flex:0 1 176px;min-width:150px;position:sticky;top:22px;max-height:calc(100vh - 48px);overflow:hidden;display:flex;flex-direction:column;gap:14px;padding-top:12px">
+    <div data-norail="1" data-rail="1" style="flex:0 1 176px;min-width:150px;position:sticky;top:22px;max-height:calc(100vh - 48px);overflow:hidden;display:flex;flex-direction:column;gap:14px;padding-top:12px">
       <div style="display:flex;flex-direction:column;gap:7px">
         <sc-for list="{{ railTiles }}" as="t" hint-placeholder-count="7">
-          <div style="display:flex;align-items:center;gap:11px;padding:8px 9px;border:3px solid {{ t.border }};border-radius:8px;background:{{ t.bg }};opacity:{{ t.op }}">
+          <div style="display:flex;align-items:center;gap:11px;padding:8px 9px;border:3px solid {{ t.border }};border-radius:3px;background:{{ t.bg }};opacity:{{ t.op }}">
             <span style="flex:none;display:grid;grid-template-columns:repeat(5,4px);grid-auto-rows:4px;gap:1px">
               <sc-for list="{{ t.cells }}" as="c" hint-placeholder-count="25">
                 <span style="background:{{ c.bg }};border-radius:1px"></span>
@@ -289,7 +290,7 @@ a{color:#f8b800;text-decoration:none}a:hover{color:#fff}
           </div>
         </sc-for>
       </div>
-      <div style="display:flex;flex-direction:column;gap:5px;padding:0 4px">
+      <div data-tower="1" style="display:none;flex-direction:column;gap:5px;padding:0 4px">
         <sc-for list="{{ towerBlocks }}" as="b" hint-placeholder-count="9">
           <span style="height:{{ b.h }};background:{{ b.bg }};border-radius:3px;opacity:{{ b.op }}"></span>
         </sc-for>
@@ -299,9 +300,9 @@ a{color:#f8b800;text-decoration:none}a:hover{color:#fff}
   </div>
 
   <sc-if value="{{ isTick }}" hint-placeholder-val="{{ false }}">
-    <div style="position:fixed;left:0;right:0;bottom:0;z-index:4;padding:14px 20px 18px;background:#0c0918f2;border-top:3px solid #1a1210">
-      <div style="max-width:1120px;margin:0 auto;display:flex">
-        <button onClick="{{ submitTick }}" style="flex:1;font-family:'Press Start 2P',monospace;font-size:12px;letter-spacing:1px;padding:18px 16px;border:3px solid #1a1210;border-radius:8px;background:#f8b800;color:#1a1210;box-shadow:0 5px 0 #00000066;cursor:pointer">Continue</button>
+    <div style="position:fixed;left:0;right:0;bottom:0;z-index:4;padding:10px 20px 14px;background:#0c0918f2;border-top:1px solid rgba(255,255,255,.10)">
+      <div style="max-width:980px;margin:0 auto;display:flex">
+        <button onClick="{{ submitTick }}" style="flex:1;max-width:44rem;font-size:15px;font-weight:600;padding:13px 16px;border:0;border-radius:3px;background:#f8b800;color:#1a1210;cursor:pointer">Continue</button>
       </div>
     </div>
   </sc-if>
@@ -313,9 +314,9 @@ const STR = ["Exam 1 Reflection","How this works","Summary","Start over","Press 
 
 // Dark-only palettes (handoff §4.5 keeps v1 dark); the choice is an author prop, not a student control.
 const PALETTES = {
-  "Dusk plum":   { base:"#100c1c", a:"#2e2256", b:"#1d2a4d", far:"#1a1533", near:"#241c45", fade:"#0c0918",
+  "Dusk plum":   { base:"#100c1c", a:"#2c2158", b:"#1a2a4c", far:"#1c1640", near:"#282052", fade:"#0c0918",
                    s1:"rgba(46,36,80,.85)", s2:"rgba(28,22,54,.85)",
-                   panel:"#211a3a", card:"#1c1633", deep:"#181231", panelDeep:"#1a1430", soft:"#241d45", divider:"#2a2348", rule:"#4a3f78" },
+                   panel:"#181329", card:"#161126", deep:"#140f24", panelDeep:"#130e21", soft:"#1d1733", divider:"rgba(255,255,255,.10)", rule:"#5a4f8a" },
   "Night forest":{ base:"#0b1410", a:"#1c3a2a", b:"#16324a", far:"#13241a", near:"#1b3527", fade:"#08100c",
                    s1:"rgba(32,62,45,.85)", s2:"rgba(20,40,29,.85)",
                    panel:"#172c20", card:"#13251b", deep:"#102018", panelDeep:"#112019", soft:"#1b3526", divider:"#22402f", rule:"#3d6b4f" },
@@ -350,7 +351,11 @@ function renderTex(el, src){
       var sp=document.createElement("span");
       try{ window.katex.render(m, sp, {output:"html", throwOnError:true}); }
       catch(e){ sp.textContent=m; console.error("KaTeX failed on", m, e); }
-      el.appendChild(sp); i=j+1; continue;
+      var wrap=document.createElement("span"); wrap.className="m"; wrap.appendChild(sp);
+      var k=j+1, glue="";
+      while(k<src.length && ",.;:!?)".indexOf(src[k])>=0){ glue+=src[k]; k++; }
+      if(glue) wrap.appendChild(document.createTextNode(glue));
+      el.appendChild(wrap); i=k; continue;
     }
     buf+=src[i]; i++;
   }
@@ -415,9 +420,9 @@ class Component extends DCLogic {
     if(c.src) bits.push(c.src);
     return bits.join(" · ");
   }
-  cellsFor(idea){
+  cellsFor(idea, on){
     var out=[];
-    for(var k=0;k<25;k++) out.push({ bg: idea.emblem.charAt(k)==="#" ? idea.motif : "#ffffff12" });
+    for(var k=0;k<25;k++) out.push({ bg: idea.emblem.charAt(k)==="#" ? (on ? idea.motif : "#a597e0") : "#ffffff12" });
     return out;
   }
 
@@ -557,14 +562,14 @@ class Component extends DCLogic {
         else self.setState({ screen:"idea", idea:w.idea });
       },
       startIdeas: ideas.map(function(idea){
-        return { title: idea.title, cursor:"pointer", color:"#eef1fb", cells: self.cellsFor(idea),
+        return { title: idea.title, cursor:"pointer", color:"#eef1fb", cells: self.cellsFor(idea, false),
           mark: idea.problems.some(problemVisited) ? mark : "",
           open: function(){ self.setWhere({ idea:idea.id, problem:null }); self.setState({ screen:"idea", idea:idea.id }); } };
       }),
       railTiles: ideas.map(function(idea){
         var on = activeIdea ? idea.id===activeIdea.id : false;
-        return { cells: self.cellsFor(idea), motif: idea.motif, op: on ? 1 : 0.5,
-          border: on ? "#1a1210" : "#1a121000", bg: on ? pal.panel : "#ffffff08" };
+        return { cells: self.cellsFor(idea, on), motif: on ? idea.motif : "rgba(255,255,255,.14)", op: on ? 1 : 0.45,
+          border: on ? "rgba(255,255,255,.14)" : "rgba(255,255,255,0)", bg: on ? pal.panel : "transparent" };
       }),
       towerBlocks: [0,1,2,3,4].map(function(n){
         var m = activeIdea ? activeIdea.motif : "#f8b800";
@@ -597,10 +602,10 @@ class Component extends DCLogic {
         st.claims.forEach(function(c){ byI[c.i]=c; });
         v.tickRows = s.perm.map(function(i){
           var c = byI[i];
-          return { text:c.text, box: s.ticks.indexOf(i)>=0 ? "#f8b800" : "#0f0b1a",
+          return { text:c.text, box: s.ticks.indexOf(i)>=0 ? "#f8b800" : "transparent",
             mark: showMarks ? self.markOf(c) : "",
             toggle: function(){ self.toggleTick(i); } };
-        }).concat([{ text:"I don't see any of these.", box: s.ticks.indexOf(null)>=0 ? "#f8b800" : "#0f0b1a",
+        }).concat([{ text:"I don't see any of these.", box: s.ticks.indexOf(null)>=0 ? "#f8b800" : "transparent",
           mark:"", toggle: function(){ self.toggleTick(null); } }]);
       }
       if(s.screen==="window"){
@@ -626,7 +631,7 @@ class Component extends DCLogic {
             : "";
           return { text:c.text, hasSecond: !!second, second: second ? second.text : "", gap: ln.gap,
             statusLabel: label, recog: recog, hasRecog: !!recog,
-            labelColor: (picked && c.status === "wrong") ? "#ff7a68" : "#b9c0dd",
+            labelColor: "#8b93b8",
             keepable: !self.isAlways(c), keepLabel: kept ? "Kept" : "Keep",
             keepBg: kept ? pal.panel : pal.panelDeep, keepFg: kept ? "#f8b800" : "#8b93b8",
             toggle: function(){ self.save(kept ? self.dropKeep(s.problem, st.name, c.i) : self.addKeep(s.problem, st.name, c, "student")); } };
@@ -660,7 +665,7 @@ class Component extends DCLogic {
           });
           return { prompt:p.prompt, lines: admin.concat(mine) };
         }).filter(function(p){ return p.lines.length>0; });
-        return { spine: ide.spine, motif: ide.motif, cells: self.cellsFor(ide), problems: problems };
+        return { spine: ide.spine, motif: ide.motif, cells: self.cellsFor(ide, false), problems: problems };
       }).filter(function(x){ return x.problems.length>0; });
     }
 
@@ -687,6 +692,33 @@ class Component extends DCLogic {
     var t = setInterval(function () {
       if (window.__dcSetProps && window.__dcRootName) { clearInterval(t); window.__dcSetProps(window.__dcRootName(), o); }
     }, 30);
+  }
+
+  // screenshot aid: ?open=idea:factor | problem:f2 | f2.look[&tick=5,2] | s3.check | summary ; &seed=1 fills a record first
+  if (Q.get("open")) {
+    (async function () {
+      while (!(window.__app && window.__app.state.ideas && window.__app.state.ideas.length)) await wait(30);
+      var app = window.__app, o = Q.get("open");
+      var go = async function (st) { app.setState(st); await wait(80); };
+      if (Q.get("seed") === "1") {
+        try { localStorage.removeItem(KEY); } catch (e) {}
+        app.setState({ rec: { claims_hash: window.__CLAIMS_HASH, submissions: [], opened: [], kept: [], visited: {} }, seq: 0 }); await wait(60);
+        var seedTick = async function (pid, sn, ticks) { app.openStage(pid, sn); await wait(60); ticks.forEach(function (i) { app.toggleTick(i); }); app.submitTick(); await wait(60); };
+        await seedTick("n1", "look", [1]); await seedTick("s2", "look", [3, 6]); await seedTick("f2", "look", [5, 2]); app.openStage("s3", "check"); await wait(60);
+      }
+      var ideaOf = function (pid) { var f = app.findIdeaOf(pid); return f ? f.id : null; };
+      if (o === "summary") await go({ screen: "summary", back: "start" });
+      else if (o.indexOf("idea:") === 0) await go({ screen: "idea", idea: o.slice(5) });
+      else if (o.indexOf("problem:") === 0) { var pid0 = o.slice(8); await go({ screen: "problem", problem: pid0, idea: ideaOf(pid0) }); }
+      else if (o.indexOf(".") > 0) {
+        var pid = o.split(".")[0], sn = o.split(".")[1];
+        await go({ idea: ideaOf(pid), problem: pid }); app.openStage(pid, sn); await wait(80);
+        var t = Q.get("tick");
+        if (t && app.state.screen === "tick") { t.split(",").forEach(function (i) { app.toggleTick(i === "none" ? null : Number(i)); }); app.submitTick(); await wait(80); }
+      }
+      await wait(500);                                       // let the 300 ms entrance fade finish
+      document.documentElement.setAttribute("data-shot-ready", "1");
+    })();
   }
 
   if (Q.get("check") !== "1" && Q.get("verify8") !== "1") return;

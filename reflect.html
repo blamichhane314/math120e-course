@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<!-- Built by build_reflect.py from the owner's Claude Design artboard; do not edit by hand. -->
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exam 1 Reflection</title>
+<script>
+  window.__resources = {
+    "https://unpkg.com/react@18.3.1/umd/react.production.min.js": "vendor/reflect/react.production.min.js",
+    "https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js": "vendor/reflect/react-dom.production.min.js"
+  };
+  window.__CLAIMS = [{"id":"numbers","title":"Numbers","spine":"There is nothing to solve for. The answer comes straight from the numbers given.","problems":[{"id":"n0","prompt":"Which is greater, $-2$ or $3$?","answer":"$3$","stages":[{"name":"look","mode":"tick","claims":[{"i":1,"text":"Two numbers, and the answer is one of them. Nothing to solve.","status":"sound","class":"identity","tag":"spine","ref":null,"src":null,"always":false,"cls":"identity"},{"i":2,"text":"$3$ is to the right of $0$ and $-2$ is to the left, so $3$ is greater.","status":"sound","class":"result","tag":"decision","ref":null,"src":null,"always":true,"cls":"result"},{"i":3,"text":"Any positive number is greater than any negative number.","status":"sound","class":"warrant","tag":"","ref":null,"src":null,"always":false,"cls":"warrant"},{"i":4,"text":"They cannot be compared, since one is negative and one is positive, so there is no answer.","status":"wrong","class":"identity","tag":"","ref":"look.3","src":"auth","always":false,"cls":"identity"}]}]},{"id":"n1","prompt":"Which is greater, $-5$ or $-3$?","answer":"$-3$","stages":[{"name":"look","mode":"tick","claims":[{"i":1,"text":"Two negatives, and I pick the greater. There is no $x$ anywhere.","status":"sound","class":"identity","tag":"spine","ref":null,"src":null,"always":false,"cls":"identity"},{"i":2,"text":"Greater means further to the right on the number line.","status":"sound","class":"method","tag":"decision","ref":null,"src":null,"always":true,"cls":"method"},{"i":3,"text":"$-3$ is to the right of $-5$, so $-3$ is greater.","status":"sound","class":"result","tag":"","ref":null,"src":null,"always":false,"cls":"result"},{"i":4,"text":"Both are negative, so the one closer to $0$ is greater.","status":"sound","class":"warrant","tag":"","ref":null,"src":null,"always":false,"cls":"warrant"},{"i":5,"text":"$-5$ is greater because $5$ is bigger than $3$, so the bigger digit wins.","status":"wrong","class":"method","tag":"pair","ref":"look.2","src":"auth","always":false,"cls":"method"}]}]},{"id":"n2","prompt":"Write $-3 \\le x < 4$ in interval notation.","answer":"$[-3,\\,4)$","stages":[{"name":"look","mode":"tick","claims":[{"i":1,"text":"Nothing to solve. The inequality and the interval are the same set of numbers.","status":"sound","class":"identity","tag":"spine","ref":null,"src":null,"always":false,"cls":"identity"},{"i":2,"text":"$\\le$ includes $-3$, so $-3$ gets a bracket.","status":"sound","class":"method","tag":"decision","ref":null,"src":null,"always":true,"cls":"method"},{"i":3,"text":"$<$ leaves out $4$, so $4$ gets a parenthesis.","status":"sound","class":"method","tag":"","ref":null,"src":null,"always":false,"cls":"method"},{"i":4,"text":"Every number between $-3$ and $4$ is in the set, fractions and decimals too.","status":"sound","class":"read","tag":"","ref":null,"src":null,"always":false,"cls":"read"},{"i":5,"text":"$[-3,\\,4)$","status":"sound","class":"result","tag":"","ref":null,"src":null,"always":false,"cls":"result"},{"i":6,"text":"$(-3,\\,4]$, since the round one goes with the smaller number.","status":"wrong","class":"result","tag":"pair","ref":"look.2","src":"auth","always":false,"cls":"result"},{"i":7,"text":"The set is $-3,-2,-1,0,1,2,3$, the whole numbers from $-3$ up to $4$.","status":"wrong","class":"read","tag":"","ref":"look.4","src":"auth","always":false,"cls":"read"}]}]},{"id":"n3","prompt":"$\\dfrac{\\sqrt{25}-3\\cdot 4}{2-6}$","answer":"$\\dfrac{7}{4}$","stages":[{"name":"look","mode":"tick","claims":[{"i":1,"text":"This is a number. There is one value to find, and no letter to solve for.","status":"sound","class":"identity","tag":"spine","ref":null,"src":null,"always":false,"cls":"identity"},{"i":2,"text":"The fraction bar groups the whole top and the whole bottom.","status":"sound","class":"form","tag":"","ref":null,"src":null,"always":false,"cls":"form"},{"i":3,"text":"The square root covers only the $25$, so $\\sqrt{25}$ is $5$.","status":"sound","class":"read","tag":"","ref":null,"src":null,"always":false,"cls":"read"},{"i":4,"text":"I work the top and the bottom separately, then divide.","status":"sound","class":"move","tag":"decision","ref":null,"src":null,"always":true,"cls":"move"},{"i":5,"text":"Inside the top, $3\\cdot 4$ happens before the subtraction.","status":"sound","class":"method","tag":"","ref":null,"src":null,"always":false,"cls":"method"},{"i":6,"text":"Only $3\\cdot 4$ is over $2-6$; the $\\sqrt{25}$ is outside the fraction.","status":"wrong","class":"form","tag":"pair","ref":"look.2","src":"obs:grouping bar","always":false,"cls":"form"},{"i":7,"text":"The square root covers the whole top, so I take the root of $5-12$.","status":"wrong","class":"read","tag":"","ref":"look.3","src":"auth","always":false,"cls":"read"}]},{"name":"do","mode":"tick","claims":[{"i":1,"text":"$\\sqrt{25}=5$.","status":"sound","class":"move","tag":"","ref":null,"src":null,"always":false,"cls":"move"},{"i":2,"text":"$3\\cdot 4=12$, so the top is $5-12=-7$.","status":"sound","class":"move","tag":"","ref":null,"src":null,"always":false,"cls":"move"},{"i":3,"text":"$2-6=-4$.","status":"sound","class":"move","tag":"","ref":null,"src":null,"always":false,"cls":"move"},{"i":4,"text":"$\\dfrac{-7}{-4}=\\dfrac{7}{4}$, since a negative over a negative is positive.","status":"sound","class":"result","tag":"decision","ref":null,"src":null,"always":true,"cls":"result"},{"i":5,"text":"$5-12=7$, the bigger number minus the smaller.","status":"wrong","class":"move","tag":"","ref":"do.2","src":"auth","always":false,"cls":"move"},{"i":6,"text":"$5-3=2$, then $2\\cdot 4=8$, working left to right.","status":"wrong","class":"move","tag":"","ref":"look.5","src":"obs:precedence","always":false,"cls":"move"},{"i":7,"text":"$\\dfrac{-7}{-4}=-\\dfrac{7}{4}$, keeping the minus.","status":"wrong","class":"result","tag":"","ref":"do.4","src":"auth","always":false,"cls":"result"}]},{"name":"check","mode":"read","claims":[{"i":1,"text":"$7$ and $4$ share no factor, so $\\frac{7}{4}$ is in lowest terms.","status":"sound","class":"warrant","tag":"","ref":null,"src":null,"always":false,"cls":"warrant"},{"i":2,"text":"Top and bottom were both negative, so the answer should be positive. It is.","status":"sound","class":"warrant","tag":"","ref":null,"src":null,"always":false,"cls":"warrant"}]}]},{"id":"n4","prompt":"Name the property: $6(x+2)=6x+12$.","answer":"Distributive","stages":[{"name":"look","mode":"tick","claims":[{"i":1,"text":"This asks for a name, not a value. Nothing to compute and nothing to solve.","status":"sound","class":"identity","tag":"spine","ref":null,"src":null,"always":false,"cls":"identity"},{"i":2,"text":"The $6$ outside is multiplied onto each term inside: $6\\cdot x$ and $6\\cdot 2$.","status":"sound","class":"read","tag":"decision","ref":null,"src":null,"always":true,"cls":"read"},{"i":3,"text":"Multiplying the $6$ through the parentheses is the distributive property.","status":"sound","class":"result","tag":"","ref":null,"src":null,"always":false,"cls":"result"},{"i":4,"text":"$6(x+2)$ and $6x+12$ come out the same for any $x$: at $x=1$ both are $18$.","status":"sound","class":"warrant","tag":"","ref":null,"src":null,"always":false,"cls":"warrant"},{"i":5,"text":"Commutative, since the order of things changed from left to right.","status":"wrong","class":"result","tag":"pair","ref":"look.2","src":"auth","always":false,"cls":"result"},{"i":6,"text":"Associative, since the parentheses were removed and the grouping changed.","status":"wrong","class":"result","tag":"","ref":"look.2","src":"auth","always":false,"cls":"result"}]}]}],"motif":"#7ee0ff","emblem":"..#...#.#..###..#.#...#.."},{"id":"evaluate","title":"Evaluate","spine":"This is an expression. It has a value for each $x$, and evaluating finds it at one $x$.","problems":[{"id":"e1","prompt":"$2x$ when $x=3$","answer":"$6$","stages":[{"name":"look","mode":"tick","claims":[{"i":1,"text":"$x$ stands for a number. Here it is $3$, so I put $3$ in for $x$.","status":"sound","class":"identity","tag":"spine","ref":null,"src":null,"always":false,"cls":"identity"},{"i":2,"text":"$2x$ means $2$ times $x$.","status":"sound","class":"read","tag":"decision","ref":null,"src":null,"always":true,"cls":"read"},{"i":3,"text":"When $x=3$, $2x$ becomes $2\\cdot 3=6$.","status":"sound","class":"result","tag":"","ref":null,"src":null,"always":false,"cls":"result"},{"i":4,"text":"When $x=3$, $2x$ becomes $23$, the $2$ and the $3$ side by side.","status":"wrong","class":"result","tag":"pair","ref":"look.2","src":"auth","always":false,"cls":"result"},{"i":5,"text":"When $x=3$, $2x$ is $2+3=5$, since the $2$ is added on.","status":"wrong","class":"method","tag":"","ref":"look.2","src":"auth","always":false,"cls":"method"}]}]},{"id":"e5","prompt":"$b^{2}-4ac$ when $a=2$, $b=-5$, $c=1$","answer":"$17$","stages":[{"name":"look","mode":"tick","claims":[{"i":1,"text":"$a$, $b$ and $c$ are given numbers, so $b^{2}-4ac$ is one number to compute.","status":"sound","class":"identity","tag":"spine","ref":null,"src":null,"always":false,"cls":"identity"},{"i":2,"text":"Three letters, three numbers to put in; $b$ is $-5$ with its sign.","status":"sound","class":"read","tag":"","ref":null,"src":null,"always":false,"cls":"read"},{"i":3,"text":"$b^{2}$ is $(-5)^{2}$, the square of the whole $-5$.","status":"sound","class":"method","tag":"decision","ref":null,"src":null,"always":true,"cls":"method"},{"i":4,"text":"$4ac$ is $4\\cdot 2\\cdot 1$, three things multiplied.","status":"sound","class":"read","tag":"","ref":null,"src":null,"always":false,"cls":"read"},{"i":5,"text":"$b^{2}$ is $-5^{2}=-25$, since the minus stays out in front.","status":"wrong","class":"method","tag":"pair","ref":"look.3","src":"obs:sticky sign","always":false,"cls":"method"},{"i":6,"text":"$4ac$ is $4+2+1$, adding the three together.","status":"wrong","class":"read","tag":"","ref":"look.4","src":"auth","always":false,"cls":"read"}]},{"name":"do","mode":"tick","claims":[{"i":1,"text":"$(-5)^{2}=25$.","status":"sound","class":"move","tag":"","ref":null,"src":null,"always":false,"cls":"move"},{"i":2,"text":"$4\\cdot 2\\cdot 1=8$.","status":"sound","class":"move","tag":"","ref":null,"src":null,"always":false,"cls":"move"},{"i":3,"text":"$25-8=17$.","status":"sound","class":"result","tag":"decision","ref":null,"src":null,"always":true,"cls":"result"},{"i":4,"text":"$-25-8=-33$, with the square negative.","status":"wrong","class":"move","tag":"","ref":"look.3","src":"obs:sticky sign","always":false,"cls":"move"},{"i":5,"text":"$25-4=21$, subtracting only the $4$.","status":"wrong","class":"move","tag":"","ref":"do.2","src":"auth","always":false,"cls":"move"}]},{"name":"check","mode":"read","claims":[{"i":1,"text":"$17$ is positive, which agrees with $25$ being bigger than $8$.","status":"sound","class":"warrant","tag":"","ref":null,"src":null,"always":false,"cls":"warrant"}]}]},{"id":"e2","prompt":"$3x^{2}-x$ when $x=-2$","answer":"$14$","stages":[{"name":"look","mode":"tick","claims":[{"i":1,"text":"This is an expression with a value for each $x$. I am finding its value at $x=-2$.","status":"sound","class":"identity","tag":"spine","ref":null,"src":null,"always":false,"cls":"identity"},{"i":2,"text":"$x$ appears twice, and both get replaced by $-2$.","status":"sound","class":"read","tag":"","ref":null,"src":null,"always":false,"cls":"read"},{"i":3,"text":"$x^{2}$ means $x$ times $x$, so $(-2)^{2}$ is $(-2)(-2)$.","status":"sound","class":"method","tag":"","ref":null,"src":null,"always":false,"cls":"method"},{"i":4,"text":"I put parentheses around $-2$ wherever $x$ was.","status":"sound","class":"move","tag":"decision","ref":null,"src":null,"always":true,"cls":"move"},{"i":5,"text":"The $3$ multiplies $x^{2}$; it is not squared.","status":"sound","class":"read","tag":"","ref":null,"src":null,"always":false,"cls":"read"},{"i":6,"text":"There is an unknown, so I need to solve for $x$ before I can do anything.","status":"wrong","class":"identity","tag":"cross","ref":"look.1","src":"auth","always":false,"cls":"identity"}]},{"name":"do","mode":"tick","claims":[{"i":1,"text":"$(-2)^{2}=4$.","status":"sound","class":"move","tag":"","ref":null,"src":null,"always":false,"cls":"move"},{"i":2,"text":"$3\\cdot 4=12$.","status":"sound","class":"move","tag":"","ref":null,"src":null,"always":false,"cls":"move"},{"i":3,"text":"$-(-2)=+2$: subtracting a negative adds.","status":"sound","class":"move","tag":"","ref":null,"src":null,"always":false,"cls":"move"},{"i":4,"text":"$12+2=14$.","status":"sound","class":"result","tag":"decision","ref":null,"src":null,"always":true,"cls":"result"},{"i":5,"text":"$(-2)^{2}=-4$, the square of $2$ with the minus kept.","status":"wrong","class":"move","tag":"pair","ref":"look.3","src":"obs:sticky sign","always":false,"cls":"move"},{"i":6,"text":"$-x$ at $x=-2$ is $-2$, since the minus is already there.","status":"wrong","class":"move","tag":"","ref":"look.4","src":"obs:substituting a negative","always":false,"cls":"move"},{"i":7,"text":"$3(-2)^{2}=(-6)^{2}=36$, multiplying by $3$ first.","status":"wrong","class":"move","tag":"","ref":"look.5","src":"auth","always":false,"cls":"move"}]},{"name":"check","mode":"read","claims":[{"i":1,"text":"The square of a negative is positive, so $3x^{2}$ came out as $+12$.","status":"sound","class":"warrant","tag":"","ref":null,"src":null,"always":false,"cls":"warrant"},{"i":2,"text":"At $x=2$ instead: $12-2=10$. The $3x^{2}$ term is $12$ either way; only the $-x$ term changed.","status":"sound","class":"warrant","tag":"","ref":null,"src":null,"always":false,"cls":"warrant"}]}]},{"id":"e3","prompt":"$C=\\dfrac{5}{9}(F-32)$ when $F=68$","answer":"$C=20$","stages":[{"name":"look","mode":"tick","claims":[{"i":1,"text":"$F$ is Fahrenheit and $C$ is Celsius. I am finding $C$ when $F=68$.","status":"sound","class":"identity","tag":"spine","ref":null,"src":null,"always":false,"cls":"identity"},{"i":2,"text":"The parentheses mean $F-32$ is done first, then multiplied by $\\frac{5}{9}$.","status":"sound","class":"method","tag":"","ref":null,"src":null,"always":false,"cls":"method"},{"i":3,"text":"I replace $F$ with $68$.","status":"sound","class":"move","tag":"decision","ref":null,"src":null,"always":true,"cls":"move"},{"i":4,"text":"$\\frac{5}{9}$ multiplies only $F$; the $32$ is subtracted afterward.","status":"wrong","class":"method","tag":"pair","ref":"look.2","src":"obs:grouping bar","always":false,"cls":"method"}]},{"name":"do","mode":"tick","claims":[{"i":1,"text":"$68-32=36$.","status":"sound","class":"move","tag":"","ref":null,"src":null,"always":false,"cls":"move"},{"i":2,"text":"$\\frac{5}{9}\\cdot 36=5\\cdot 4=20$, dividing $36$ by $9$ first.","status":"sound","class":"result","tag":"decision","ref":null,"src":null,"always":true,"cls":"result"},{"i":3,"text":"$5\\cdot 36=180$, and $180\\div 9=20$.","status":"sound","class":"result","tag":"alt","ref":null,"src":null,"always":false,"cls":"result"},{"i":4,"text":"$\\frac{5}{9}\\cdot 68-32$, which is about $37.8-32$.","status":"wrong","class":"move","tag":"","ref":"look.2","src":"obs:grouping bar","always":false,"cls":"move"}]},{"name":"check","mode":"read","claims":[{"i":1,"text":"$F=32$ gives $C=0$, and $68$ is above $32$, so $C$ should be positive. It is.","status":"sound","class":"warrant","tag":"","ref":null,"src":null,"always":false,"cls":"warrant"}]}]},{"id":"e4","prompt":"A press sells a book for \\$18, so the revenue on $x$ books is $R=18x$. Printing $x$ books costs $C=7x+4000$. Find $R$ and $C$ when $x=250$.","answer":"$R=4500$, $C=5750$","stages":[{"name":"look","mode":"tick","claims":[{"i":1,"text":"$x$ is a number of books. $R$ and $C$ are expressions: they give dollars for each $x$.","status":"sound","class":"identity","tag":"spine","ref":null,"src":null,"always":false,"cls":"identity"},{"i":2,"text":"$18x$ is not one number yet. Once $x=250$, it is $4500$.","status":"sound","class":"identity","tag":"","ref":null,"src":null,"always":false,"cls":"identity"},{"i":3,"text":"$18x$ is $18$ times $x$; in $C$ only the $x$ is multiplied by $7$, and $4000$ is added.","status":"sound","class":"read","tag":"","ref":null,"src":null,"always":false,"cls":"read"},{"i":4,"text":"I put $250$ in for $x$ in both $R$ and $C$.","status":"sound","class":"move","tag":"decision","ref":null,"src":null,"always":true,"cls":"move"},{"i":5,"text":"$R=18+250$, the $18$ and the $x$ added together.","status":"wrong","class":"result","tag":"pair","ref":"look.3","src":"auth","always":false,"cls":"result"},{"i":6,"text":"I set $18x=7x+4000$ and solve for $x$, since that is what $x$ is for.","status":"wrong","class":"method","tag":"cross","ref":"look.1","src":"auth","always":false,"cls":"method"}]},{"name":"do","mode":"tick","claims":[{"i":1,"text":"$R=18\\cdot 250=4500$.","status":"sound","class":"result","tag":"","ref":null,"src":null,"always":false,"cls":"result"},{"i":2,"text":"$C=7\\cdot 250+4000=1750+4000=5750$.","status":"sound","class":"result","tag":"decision","ref":null,"src":null,"always":true,"cls":"result"},{"i":3,"text":"$C=7(250+4000)$, multiplying everything by $7$.","status":"wrong","class":"move","tag":"","ref":"look.3","src":"obs:grouping bar","always":false,"cls":"move"},{"i":4,"text":"$R=4500$ and $C=5750$, so at $250$ books the press spends more than it takes in.","status":"sound","class":"warrant","tag":"","ref":null,"src":null,"always":false,"cls":"warrant"}]},{"name":"check","mode":"read","claims":[{"i":1,"text":"$C$ is bigger than $R$ at $250$ books; the $4000$ alone is nearly all of $R$.","status":"sound","class":"warrant","tag":"","ref":null,"src":null,"always":false,"cls":"warrant"}]}]}],"motif":"#8fe36a","emblem":"#...#.#.#...#...#.#.#...#"},{"id":"polyops","title":"Add, subtract, multiply polynomials","spine":"Adding, subtracting or multiplying polynomials gives a new expression, equal to the old one at every $x$.","problems":[{"id":"p1","prompt":"$3x+5x$","answer":"$8x$","stages":[{"name":"look","mode":"tick","claims":[{"i":1,"text":"This is an expression to simplify, not an equation to solve.","status":"sound","class":"identity","tag":"spine","ref":null,"src":null,"always":false,"cls":"identity"},{"i":2,"text":"$3x$ and $5x$ are like terms, same variable and same power, so they combine.","status":"sound","class":"form","tag":"decision","ref":null,"src":null,"always":true,"cls":"form"},{"i":3,"text":"$3x+5x=8x$: three $x$'s and five $x$'s make eight $x$'s.","status":"sound","class":"method","tag":"arith","ref":null,"src":null,"always":false,"cls":"method"},{"i":4,"text":"$3x+5x=8x^{2}$, since the $x$'s multiply too.","status":"wrong","class":"result","tag":"pair","ref":"look.3","src":"auth","always":false,"cls":"result"},{"i":5,"text":"$3x+5x=15x$, multiplying the $3$ and the $5$.","status":"wrong","class":"result","tag":"","ref":"look.3","src":"auth","always":false,"cls":"result"},{"i":6,"text":"These cannot be combined because $x$ is unknown, so it stays $3x+5x$.","status":"wrong","class":"form","tag":"","ref":"look.2","src":"auth","always":false,"cls":"form"}]}]},{"id":"p2","prompt":"$\\left(4x^{2}-3x+2\\right)-\\left(x^{2}+5x-7\\right)$","answer":"$3x^{2}-8x+9$","stages":[{"name":"look","mode":"tick","claims":[{"i":1,"text":"This is an expression, so I combine like terms; there is no $x$ to find.","status":"sound","class":"identity","tag":"spine","ref":null,"src":null,"always":false,"cls":"identity"},{"i":2,"text":"The minus in front of the second parenthesis applies to all three terms inside.","status":"sound","class":"method","tag":"decision","ref":null,"src":null,"always":true,"cls":"method"},{"i":3,"text":"$x^{2}$ goes with $x^{2}$, $x$ with $x$, numbers with numbers.","status":"sound","class":"method","tag":"","ref":null,"src":null,"always":false,"cls":"method"},{"i":4,"text":"$-(x^{2}+5x-7)$ is $-x^{2}-5x+7$, as $-(3-4)$ is $-3+4$.","status":"sound","class":"method","tag":"arith","ref":null,"src":null,"always":false,"cls":"method"},{"i":5,"text":"The minus applies only to $x^{2}$, the first term inside; the rest keep their signs.","status":"wrong","class":"method","tag":"pair","ref":"look.2","src":"obs:second sign not flipped","always":false,"cls":"method"},{"i":6,"text":"This is an equation with $x$ in it, so I find what $x$ is.","status":"wrong","class":"identity","tag":"cross","ref":"look.1","src":"auth","always":false,"cls":"identity"}]},{"name":"do","mode":"tick","claims":[{"i":1,"text":"Removing the parentheses: $4x^{2}-3x+2-x^{2}-5x+7$.","status":"sound","class":"move","tag":"","ref":null,"src":null,"always":false,"cls":"move"},{"i":2,"text":"$4x^{2}-x^{2}=3x^{2}$, since $-x^{2}$ is $-1x^{2}$.","status":"sound","class":"move","tag":"","ref":null,"src":null,"always":false,"cls":"move"},{"i":3,"text":"$-3x-5x=-8x$.","status":"sound","class":"move","tag":"","ref":null,"src":null,"always":false,"cls":"move"},{"i":4,"text":"$2+7=9$.","status":"sound","class":"move","tag":"","ref":null,"src":null,"always":false,"cls":"move"},{"i":5,"text":"$3x^{2}-8x+9$.","status":"sound","class":"result","tag":"decision","ref":null,"src":null,"always":true,"cls":"result"},{"i":6,"text":"$4x^{2}-3x+2-x^{2}+5x-7$, changing only the first sign.","status":"wrong","class":"move","tag":"pair","ref":"look.2","src":"obs:second sign not flipped","always":false,"cls":"move"},{"i":7,"text":"$4x^{2}-x^{2}=4x^{2}$, since there is nothing in front of the second one.","status":"wrong","class":"move","tag":"","ref":"do.2","src":"auth","always":false,"cls":"move"}]},{"name":"check","mode":"read","claims":[{"i":1,"text":"One $x^{2}$ term, one $x$ term, one number: nothing is left to combine.","status":"sound","class":"warrant","tag":"","ref":null,"src":null,"always":false,"cls":"warrant"},{"i":2,"text":"At $x=1$: the original is $3-(-1)=4$ and the answer is $3-8+9=4$.","status":"sound","class":"warrant","tag":"plugin","ref":null,"src":null,"always":false,"cls":"warrant"}]}]},{"id":"p3","prompt":"$(x+4)(x-2)$","answer":"$x^{2}+2x-8$","stages":[{"name":"look","mode":"tick","claims":[{"i":1,"text":"This is a product to multiply out, not an equation to solve.","status":"sound","class":"identity","tag":"spine","ref":null,"src":null,"always":false,"cls":"identity"},{"i":2,"text":"Every term in $(x+4)$ multiplies every term in $(x-2)$.","status":"sound","class":"method","tag":"decision","ref":null,"src":null,"always":true,"cls":"method"},{"i":3,"text":"That is four products: $x\\cdot x$, $x\\cdot(-2)$, $4\\cdot x$, $4\\cdot(-2)$.","status":"sound","class":"read","tag":"","ref":null,"src":null,"always":false,"cls":"read"},{"i":4,"text":"The two middle products combine because both are $x$ terms.","status":"sound","class":"method","tag":"","ref":null,"src":null,"always":false,"cls":"method"},{"i":5,"text":"$(x+4)(x-2)=x^{2}-8$: $x$ times $x$ and $4$ times $-2$.","status":"wrong","class":"result","tag":"pair","ref":"look.3","src":"auth","always":false,"cls":"result"},{"i":6,"text":"$x=-4$ or $x=2$, from setting each factor equal to zero.","status":"wrong","class":"result","tag":"cross","ref":"look.1","src":"auth","always":false,"cls":"result"}]},{"name":"do","mode":"tick","claims":[{"i":1,"text":"$x\\cdot x=x^{2}$.","status":"sound","class":"move","tag":"","ref":null,"src":null,"always":false,"cls":"move"},{"i":2,"text":"$x\\cdot(-2)+4\\cdot x=-2x+4x=2x$.","status":"sound","class":"move","tag":"decision","ref":null,"src":null,"always":true,"cls":"move"},{"i":3,"text":"$4\\cdot(-2)=-8$.","status":"sound","class":"move","tag":"","ref":null,"src":null,"always":false,"cls":"move"},{"i":4,"text":"$x^{2}+2x-8$.","status":"sound","class":"result","tag":"","ref":null,"src":null,"always":false,"cls":"result"},{"i":5,"text":"$x^{2}+6x-8$, since the middle is $2x+4x=6x$.","status":"wrong","class":"result","tag":"","ref":"do.2","src":"auth","always":false,"cls":"result"},{"i":6,"text":"$x^{2}-2x-8$, since $-2x+4x=-2x$.","status":"wrong","class":"result","tag":"","ref":"do.2","src":"auth","always":false,"cls":"result"}]},{"name":"check","mode":"read","claims":[{"i":1,"text":"At $x=1$: $(5)(-1)=-5$ and $1+2-8=-5$.","status":"sound","class":"warrant","tag":"plugin","ref":null,"src":null,"always":false,"cls":"warrant"},{"i":2,"text":"Factoring $x^{2}+2x-8$ gives back $(x+4)(x-2)$.","status":"sound","class":"warrant","tag":"connect","ref":null,"src":null,"always":false,"cls":"warrant"}]}]},{"id":"p4","prompt":"With $R=18x$ and $C=7x+4000$, write the profit $P=R-C$ as a polynomial in $x$.","answer":"$P=11x-4000$","stages":[{"name":"look","mode":"tick","claims":[{"i":1,"text":"$P$ is an expression in $x$, not a number: no $x$ to find.","status":"sound","class":"identity","tag":"spine","ref":null,"src":null,"always":false,"cls":"identity"},{"i":2,"text":"$R-C$ is $18x-(7x+4000)$, and the minus applies to both $7x$ and $4000$.","status":"sound","class":"method","tag":"decision","ref":null,"src":null,"always":true,"cls":"method"},{"i":3,"text":"$18x$ and $7x$ are like terms, so they combine to $11x$.","status":"sound","class":"method","tag":"","ref":null,"src":null,"always":false,"cls":"method"},{"i":4,"text":"The minus applies only to the $7x$; the $4000$ is added, since it was already positive.","status":"wrong","class":"method","tag":"pair","ref":"look.2","src":"obs:second sign not flipped","always":false,"cls":"method"}]},{"name":"do","mode":"tick","claims":[{"i":1,"text":"$18x-7x-4000$.","status":"sound","class":"move","tag":"","ref":null,"src":null,"always":false,"cls":"move"},{"i":2,"text":"$P=11x-4000$.","status":"sound","class":"result","tag":"decision","ref":null,"src":null,"always":true,"cls":"result"},{"i":3,"text":"$P=11x-4000$ has degree $1$; the leading coefficient is $11$, the number on the highest power of $x$.","status":"sound","class":"read","tag":"","ref":null,"src":null,"always":false,"cls":"read"},{"i":4,"text":"$P=18x-7x+4000=11x+4000$.","status":"wrong","class":"result","tag":"","ref":"look.2","src":"obs:second sign not flipped","always":false,"cls":"result"},{"i":5,"text":"$P=11x$, since $4000$ is not an $x$ term and drops out.","status":"wrong","class":"result","tag":"","ref":"do.1","src":"auth","always":false,"cls":"result"},{"i":6,"text":"The leading coefficient is $-4000$, the biggest number in it.","status":"wrong","class":"read","tag":"","ref":"do.3","src":"auth","always":false,"cls":"read"}]},{"name":"check","mode":"read","claims":[{"i":1,"text":"At $x=500$: $R=9000$, $C=7500$, $R-C=1500$; and $11(500)-4000=1500$.","status":"sound","class":"warrant","tag":"plugin","ref":null,"src":null,"always":false,"cls":"warrant"},{"i":2,"text":"$P$ is negative at $x=250$ and positive at $x=500$, so the break-even point is between them.","status":"sound","class":"warrant","tag":"","ref":null,"src":null,"always":false,"cls":"warrant"}]}]}],"motif":"#f8b800","emblem":"..#....#..#####..#....#.."},{"id":"exponents","title":"Exponents and radicals","spine":"The simplified form is the same expression written shorter. The value does not change.","problems":[{"id":"x1","prompt":"$x^{5}\\cdot x^{3}$","answer":"$x^{8}$","stages":[{"name":"look","mode":"tick","claims":[{"i":1,"text":"Two powers of $x$ multiplied. I am rewriting, not solving.","status":"sound","class":"identity","tag":"spine","ref":null,"src":null,"always":false,"cls":"identity"},{"i":2,"text":"$x^{5}$ is five $x$'s multiplied and $x^{3}$ is three more, so together there are eight.","status":"sound","class":"method","tag":"arith","ref":null,"src":null,"always":false,"cls":"method"},{"i":3,"text":"The exponents add because this is multiplication; $x^{5}+x^{3}$ would not combine.","status":"sound","class":"method","tag":"decision","ref":null,"src":null,"always":true,"cls":"method"},{"i":4,"text":"$x^{5}\\cdot x^{3}=x^{8}$.","status":"sound","class":"result","tag":"","ref":null,"src":null,"always":false,"cls":"result"},{"i":5,"text":"$x^{5}\\cdot x^{3}=x^{15}$, since $5$ times $3$ is $15$.","status":"wrong","class":"result","tag":"pair","ref":"look.2","src":"auth","always":false,"cls":"result"},{"i":6,"text":"$x^{5}+x^{3}$ would also be $x^{8}$, by the same rule.","status":"wrong","class":"method","tag":"","ref":"look.3","src":"auth","always":false,"cls":"method"}]}]},{"id":"x4","prompt":"$\\sqrt{18}\\cdot\\sqrt{2}$","answer":"$6$","stages":[{"name":"look","mode":"tick","claims":[{"i":1,"text":"Two square roots multiplied. The answer is a number, and there is nothing to solve.","status":"sound","class":"identity","tag":"spine","ref":null,"src":null,"always":false,"cls":"identity"},{"i":2,"text":"Two roots multiplied go under one root: $\\sqrt{18}\\cdot\\sqrt{2}=\\sqrt{18\\cdot 2}=\\sqrt{36}$.","status":"sound","class":"method","tag":"decision","ref":null,"src":null,"always":true,"cls":"method"},{"i":3,"text":"$\\sqrt{36}=6$.","status":"sound","class":"result","tag":"","ref":null,"src":null,"always":false,"cls":"result"},{"i":4,"text":"$\\sqrt{18}=\\sqrt{9}\\sqrt{2}=3\\sqrt{2}$, so $3\\sqrt{2}\\cdot\\sqrt{2}=3\\cdot 2=6$.","status":"sound","class":"method","tag":"alt","ref":null,"src":null,"always":false,"cls":"method"},{"i":5,"text":"$\\sqrt{18}\\cdot\\sqrt{2}=\\sqrt{20}$, adding under the root.","status":"wrong","class":"result","tag":"pair","ref":"look.2","src":"auth","always":false,"cls":"result"},{"i":6,"text":"$\\sqrt{18}\\cdot\\sqrt{2}=2\\sqrt{18}$, the $\\sqrt{2}$ becoming a $2$.","status":"wrong","class":"result","tag":"","ref":"look.2","src":"auth","always":false,"cls":"result"}]},{"name":"check","mode":"read","claims":[{"i":1,"text":"$\\sqrt{18}$ is a bit over $4$ and $\\sqrt{2}$ is a bit over $1.4$; their product is about $6$.","status":"sound","class":"warrant","tag":"","ref":null,"src":null,"always":false,"cls":"warrant"}]}]},{"id":"x2","prompt":"$\\left(2x^{-3}y^{2}\\right)^{-2}$, with positive exponents","answer":"$\\dfrac{x^{6}}{4y^{4}}$","stages":[{"name":"look","mode":"tick","claims":[{"i":1,"text":"A product of powers with an outer exponent. I rewrite it; no $x$ or $y$ to find.","status":"sound","class":"identity","tag":"spine","ref":null,"src":null,"always":false,"cls":"identity"},{"i":2,"text":"The outer $-2$ applies to every factor inside: the $2$, the $x^{-3}$ and the $y^{2}$.","status":"sound","class":"method","tag":"decision","ref":null,"src":null,"always":true,"cls":"method"},{"i":3,"text":"The $-3$ and the outer $-2$ mean reciprocals; they do not make anything negative.","status":"sound","class":"method","tag":"","ref":null,"src":null,"always":false,"cls":"method"},{"i":4,"text":"I multiply the exponents: $(-3)(-2)=+6$ for $x$, and $(2)(-2)=-4$ for $y$.","status":"sound","class":"move","tag":"","ref":null,"src":null,"always":false,"cls":"move"},{"i":5,"text":"The $-2$ applies only to $y^{2}$, the factor next to it; the $2$ and $x^{-3}$ are left alone.","status":"wrong","class":"method","tag":"pair","ref":"look.2","src":"auth","always":false,"cls":"method"},{"i":6,"text":"$2^{-2}=-4$, a negative exponent making a negative number.","status":"wrong","class":"move","tag":"","ref":"look.3","src":"auth","always":false,"cls":"move"}]},{"name":"do","mode":"tick","claims":[{"i":1,"text":"$2^{-2}=\\frac{1}{4}$.","status":"sound","class":"move","tag":"","ref":null,"src":null,"always":false,"cls":"move"},{"i":2,"text":"$\\left(x^{-3}\\right)^{-2}=x^{6}$.","status":"sound","class":"move","tag":"","ref":null,"src":null,"always":false,"cls":"move"},{"i":3,"text":"$\\left(y^{2}\\right)^{-2}=y^{-4}=\\frac{1}{y^{4}}$.","status":"sound","class":"move","tag":"","ref":null,"src":null,"always":false,"cls":"move"},{"i":4,"text":"$\\dfrac{x^{6}}{4y^{4}}$.","status":"sound","class":"result","tag":"decision","ref":null,"src":null,"always":true,"cls":"result"},{"i":5,"text":"$\\left(x^{-3}\\right)^{-2}=x^{-5}$, adding the exponents.","status":"wrong","class":"move","tag":"","ref":"look.4","src":"auth","always":false,"cls":"move"},{"i":6,"text":"$\\left(x^{-3}\\right)^{-2}=x^{-6}$, a negative times a negative staying negative.","status":"wrong","class":"move","tag":"","ref":"look.4","src":"auth","always":false,"cls":"move"},{"i":7,"text":"$\\dfrac{4x^{6}}{y^{4}}$, with $2^{-2}$ as $4$.","status":"wrong","class":"result","tag":"","ref":"look.3","src":"auth","always":false,"cls":"result"}]},{"name":"check","mode":"read","claims":[{"i":1,"text":"The exponents in the answer are $6$ and $4$, both positive.","status":"sound","class":"warrant","tag":"","ref":null,"src":null,"always":false,"cls":"warrant"},{"i":2,"text":"At $x=1$, $y=1$: the original is $2^{-2}=\\frac{1}{4}$ and the answer is $\\frac{1}{4}$.","status":"sound","class":"warrant","tag":"plugin","ref":null,"src":null,"always":false,"cls":"warrant"}]}]},{"id":"x3","prompt":"$8^{2/3}$","answer":"$4$","stages":[{"name":"look","mode":"tick","claims":[{"i":1,"text":"This is a number, written with a rational exponent. One value.","status":"sound","class":"identity","tag":"spine","ref":null,"src":null,"always":false,"cls":"identity"},{"i":2,"text":"The $3$ in the denominator is a cube root; the $2$ on top is a square.","status":"sound","class":"method","tag":"decision","ref":null,"src":null,"always":true,"cls":"method"},{"i":3,"text":"Root first: $\\sqrt[3]{8}=2$, then $2^{2}=4$.","status":"sound","class":"move","tag":"","ref":null,"src":null,"always":false,"cls":"move"},{"i":4,"text":"Power first: $8^{2}=64$, then $\\sqrt[3]{64}=4$.","status":"sound","class":"move","tag":"alt","ref":null,"src":null,"always":false,"cls":"move"},{"i":5,"text":"$8^{2/3}=8\\cdot\\frac{2}{3}=\\frac{16}{3}$, multiplying by the fraction.","status":"wrong","class":"result","tag":"pair","ref":"look.2","src":"auth","always":false,"cls":"result"},{"i":6,"text":"The $2$ is the root and the $3$ is the power: $(\\sqrt{8})^{3}$.","status":"wrong","class":"method","tag":"","ref":"look.2","src":"auth","always":false,"cls":"method"}]},{"name":"check","mode":"read","claims":[{"i":1,"text":"The exponent is between $0$ and $1$, so the answer is between $8^{0}=1$ and $8^{1}=8$; $4$ is.","status":"sound","class":"warrant","tag":"","ref":null,"src":null,"always":false,"cls":"warrant"}]}]}],"motif":"#c9a0ff","emblem":"#...#..#.#...#....#.#...#"},{"id":"factor","title":"Factor","spine":"Factoring means writing it as a product. It is the same expression; there is no $x$ to find.","problems":[{"id":"f1","prompt":"Factor $6x^{2}-9x$.","answer":"$3x(2x-3)$","stages":[{"name":"look","mode":"tick","claims":[{"i":1,"text":"$6x^{2}-9x$ is an expression. I am writing it as a product; there is no $x$ to find.","status":"sound","class":"identity","tag":"spine","ref":null,"src":null,"always":false,"cls":"identity"},{"i":2,"text":"It is like writing $15$ as $3\\cdot 5$.","status":"sound","class":"method","tag":"arith","ref":null,"src":null,"always":false,"cls":"method"},{"i":3,"text":"Both terms share $3$, and both share $x$.","status":"sound","class":"read","tag":"","ref":null,"src":null,"always":false,"cls":"read"},{"i":4,"text":"The greatest common factor is $3x$.","status":"sound","class":"form","tag":"decision","ref":null,"src":null,"always":true,"cls":"form"},{"i":5,"text":"The greatest common factor is $3$, since $x$ is not a number and cannot be a factor.","status":"wrong","class":"form","tag":"pair","ref":"look.4","src":"auth","always":false,"cls":"form"},{"i":6,"text":"There is no common factor, since $6$ and $9$ are different numbers.","status":"wrong","class":"form","tag":"","ref":"look.3","src":"auth","always":false,"cls":"form"}]},{"name":"do","mode":"tick","claims":[{"i":1,"text":"$6x^{2}\\div 3x=2x$.","status":"sound","class":"move","tag":"","ref":null,"src":null,"always":false,"cls":"move"},{"i":2,"text":"$9x\\div 3x=3$.","status":"sound","class":"move","tag":"","ref":null,"src":null,"always":false,"cls":"move"},{"i":3,"text":"$3x(2x-3)$.","status":"sound","class":"result","tag":"decision","ref":null,"src":null,"always":true,"cls":"result"},{"i":4,"text":"$3x(2x-9x)$, and the $-9x$ just stays.","status":"wrong","class":"result","tag":"","ref":"do.2","src":"auth","always":false,"cls":"result"},{"i":5,"text":"$3(2x^{2}-3x)$.","status":"incomplete","class":"result","tag":"","ref":"look.4","src":null,"always":false,"cls":"result"}]},{"name":"check","mode":"read","claims":[{"i":1,"text":"Multiplying back: $3x\\cdot 2x=6x^{2}$ and $3x\\cdot(-3)=-9x$.","status":"sound","class":"warrant","tag":"","ref":null,"src":null,"always":false,"cls":"warrant"},{"i":2,"text":"$2x-3$ has no common factor, so it is factored completely.","status":"sound","class":"warrant","tag":"","ref":null,"src":null,"always":false,"cls":"warrant"}]}]},{"id":"f2","prompt":"Factor $x^{2}-7x+12$.","answer":"$(x-3)(x-4)$","stages":[{"name":"look","mode":"tick","claims":[{"i":1,"text":"Three terms with $x^{2}$, $x$ and a number. I am writing it as a product, not solving.","status":"sound","class":"identity","tag":"spine","ref":null,"src":null,"always":false,"cls":"identity"},{"i":2,"text":"Three terms, and the coefficient of $x^{2}$ is $1$.","status":"sound","class":"read","tag":"","ref":null,"src":null,"always":false,"cls":"read"},{"i":3,"text":"No common factor other than $1$, so there is no GCF to take out.","status":"sound","class":"form","tag":"decision","ref":null,"src":null,"always":true,"cls":"form"},{"i":4,"text":"This has three terms, so it is not a difference of squares.","status":"sound","class":"read","tag":"","ref":null,"src":null,"always":false,"cls":"read"},{"i":5,"text":"This is a difference of squares, since $x^{2}$ appears and there is a minus.","status":"wrong","class":"form","tag":"pair","ref":"look.4","src":"auth","always":false,"cls":"form"}]},{"name":"plan","mode":"tick","claims":[{"i":1,"text":"Leading coefficient $1$, so I look for two numbers that multiply to $12$ and add to $-7$.","status":"sound","class":"method","tag":"decision","ref":null,"src":null,"always":true,"cls":"method"},{"i":2,"text":"$12$ is positive and $-7$ is negative, so both numbers are negative.","status":"sound","class":"method","tag":"","ref":null,"src":null,"always":false,"cls":"method"},{"i":3,"text":"$12$ is positive, so one number is positive and one is negative.","status":"wrong","class":"method","tag":"pair","ref":"plan.2","src":"obs:second sign not flipped","always":false,"cls":"method"},{"i":4,"text":"The two numbers must add to $12$ and multiply to $-7$.","status":"wrong","class":"method","tag":"","ref":"plan.1","src":"auth","always":false,"cls":"method"},{"i":5,"text":"Both numbers are positive, since $12$ is positive; the $-7$ just means subtract.","status":"wrong","class":"method","tag":"","ref":"plan.2","src":"obs:second sign not flipped","always":false,"cls":"method"}]},{"name":"do","mode":"tick","claims":[{"i":1,"text":"Pairs that multiply to $12$: $1\\cdot 12$, $2\\cdot 6$, $3\\cdot 4$.","status":"sound","class":"move","tag":"","ref":null,"src":null,"always":false,"cls":"move"},{"i":2,"text":"$-3+(-4)=-7$, so the numbers are $-3$ and $-4$.","status":"sound","class":"move","tag":"decision","ref":null,"src":null,"always":true,"cls":"move"},{"i":3,"text":"$(x-3)(x-4)$.","status":"sound","class":"result","tag":"","ref":null,"src":null,"always":false,"cls":"result"},{"i":4,"text":"$(x+3)(x+4)$, since $3+4=7$.","status":"wrong","class":"result","tag":"","ref":"plan.2","src":"obs:second sign not flipped","always":false,"cls":"result"},{"i":5,"text":"$(x-3)(x+4)$, one of each sign.","status":"wrong","class":"result","tag":"","ref":"plan.2","src":"auth","always":false,"cls":"result"},{"i":6,"text":"$x=3$ and $x=4$ are the answers.","status":"wrong","class":"result","tag":"cross","ref":"look.1","src":"obs:factored and stopped","always":false,"cls":"result"}]},{"name":"check","mode":"read","claims":[{"i":1,"text":"Multiplying back: $x^{2}-4x-3x+12=x^{2}-7x+12$.","status":"sound","class":"warrant","tag":"","ref":null,"src":null,"always":false,"cls":"warrant"},{"i":2,"text":"At $x=1$: $1-7+12=6$ and $(-2)(-3)=6$.","status":"sound","class":"warrant","tag":"plugin","ref":null,"src":null,"always":false,"cls":"warrant"}]}]},{"id":"f3","prompt":"Factor $x^{2}-25$.","answer":"$(x+5)(x-5)$","stages":[{"name":"look","mode":"tick","claims":[{"i":1,"text":"Two terms with a minus between. I am writing it as a product, not solving.","status":"sound","class":"identity","tag":"spine","ref":null,"src":null,"always":false,"cls":"identity"},{"i":2,"text":"Two terms, both perfect squares, with a minus between them.","status":"sound","class":"read","tag":"","ref":null,"src":null,"always":false,"cls":"read"},{"i":3,"text":"This is a difference of squares: $a^{2}-b^{2}=(a+b)(a-b)$ with $a=x$ and $b=5$.","status":"sound","class":"form","tag":"decision","ref":null,"src":null,"always":true,"cls":"form"},{"i":4,"text":"Two numbers that multiply to $-25$ and add to $0$ also work: $5$ and $-5$.","status":"sound","class":"method","tag":"connect","ref":null,"src":null,"always":false,"cls":"method"},{"i":5,"text":"$x^{2}-25=(x-5)^{2}$, a square of a difference.","status":"wrong","class":"result","tag":"pair","ref":"look.3","src":"auth","always":false,"cls":"result"},{"i":6,"text":"$x^{2}-25$ does not factor because there is no middle term to split.","status":"wrong","class":"form","tag":"","ref":"look.3","src":"auth","always":false,"cls":"form"}]},{"name":"do","mode":"tick","claims":[{"i":1,"text":"$(x+5)(x-5)$.","status":"sound","class":"result","tag":"decision","ref":null,"src":null,"always":true,"cls":"result"},{"i":2,"text":"Multiplying back: $x^{2}-5x+5x-25$; the middle terms cancel.","status":"sound","class":"warrant","tag":"","ref":null,"src":null,"always":false,"cls":"warrant"},{"i":3,"text":"$(x+5)(x+5)$, both plus.","status":"wrong","class":"result","tag":"","ref":"look.3","src":"auth","always":false,"cls":"result"},{"i":4,"text":"$(x-25)(x+1)$, since $-25\\cdot 1=-25$.","status":"wrong","class":"result","tag":"","ref":"look.4","src":"auth","always":false,"cls":"result"}]}]},{"id":"f4","prompt":"Factor $2x^{2}+7x+3$.","answer":"$(2x+1)(x+3)$","stages":[{"name":"look","mode":"tick","claims":[{"i":1,"text":"Three terms, $2$ in front of the $x^{2}$. I am writing it as a product, not solving.","status":"sound","class":"identity","tag":"spine","ref":null,"src":null,"always":false,"cls":"identity"},{"i":2,"text":"Three terms, and the coefficient of $x^{2}$ is $2$, not $1$.","status":"sound","class":"read","tag":"","ref":null,"src":null,"always":false,"cls":"read"},{"i":3,"text":"No common factor, so the $2$ has to go in one of the factors.","status":"sound","class":"form","tag":"","ref":null,"src":null,"always":false,"cls":"form"},{"i":4,"text":"With leading coefficient $2$, I look for two numbers that multiply to $2\\cdot 3=6$ and add to $7$.","status":"sound","class":"method","tag":"decision","ref":null,"src":null,"always":true,"cls":"method"},{"i":5,"text":"Two numbers that multiply to $3$ and add to $7$, the same as when the coefficient is $1$.","status":"wrong","class":"method","tag":"pair","ref":"look.4","src":"auth","always":false,"cls":"method"}]},{"name":"plan","mode":"tick","claims":[{"i":1,"text":"$1$ and $6$: they multiply to $6$ and add to $7$.","status":"sound","class":"move","tag":"","ref":null,"src":null,"always":false,"cls":"move"},{"i":2,"text":"I split $7x$ as $x+6x$: $2x^{2}+x+6x+3$.","status":"sound","class":"move","tag":"decision","ref":null,"src":null,"always":true,"cls":"move"},{"i":3,"text":"Group: $x(2x+1)+3(2x+1)$; both groups leave $2x+1$.","status":"sound","class":"move","tag":"","ref":null,"src":null,"always":false,"cls":"move"},{"i":4,"text":"The numbers are $2$ and $3$, the ones already in the problem.","status":"wrong","class":"move","tag":"","ref":"plan.1","src":"auth","always":false,"cls":"move"},{"i":5,"text":"One factor starts with $2x$ and the other with $x$, since $2x\\cdot x=2x^{2}$.","status":"sound","class":"method","tag":"alt","ref":null,"src":null,"always":false,"cls":"method"}]},{"name":"do","mode":"tick","claims":[{"i":1,"text":"$2x+1$ is common to both groups, so it comes out: $(2x+1)(x+3)$.","status":"sound","class":"result","tag":"decision","ref":null,"src":null,"always":true,"cls":"result"},{"i":2,"text":"$(2x+3)(x+1)=2x^{2}+5x+3$, so the $1$ and $3$ cannot be swapped.","status":"sound","class":"warrant","tag":"","ref":null,"src":null,"always":false,"cls":"warrant"},{"i":3,"text":"$(2x+3)(x+1)$, putting the $3$ with the $2x$.","status":"wrong","class":"result","tag":"","ref":"do.2","src":"auth","always":false,"cls":"result"},{"i":4,"text":"$(2x+1)(x+3)=2x^{2}+6x+x+3$, and $6x+x$ is the $7x$ I started with.","status":"sound","class":"warrant","tag":"","ref":null,"src":null,"always":false,"cls":"warrant"}]},{"name":"check","mode":"read","claims":[{"i":1,"text":"Multiplying back: $2x^{2}+6x+x+3=2x^{2}+7x+3$.","status":"sound","class":"warrant","tag":"","ref":null,"src":null,"always":false,"cls":"warrant"},{"i":2,"text":"At $x=1$: $2+7+3=12$ and $(3)(4)=12$.","status":"sound","class":"warrant","tag":"plugin","ref":null,"src":null,"always":false,"cls":"warrant"}]}]}],"motif":"#e04b2f","emblem":"#####.#....####..#....#.."},{"id":"rational","title":"Rational expressions","spine":"A fraction of expressions. Writing it in lowest terms divides out what top and bottom share.","problems":[{"id":"r1","prompt":"Write $\\dfrac{12}{18}$ in lowest terms.","answer":"$\\dfrac{2}{3}$","stages":[{"name":"look","mode":"tick","claims":[{"i":1,"text":"$\\dfrac{12}{18}$ is a number. Lowest terms is the same number with the smallest top and bottom.","status":"sound","class":"identity","tag":"spine","ref":null,"src":null,"always":false,"cls":"identity"},{"i":2,"text":"I divide the top and the bottom by the same factor.","status":"sound","class":"method","tag":"decision","ref":null,"src":null,"always":true,"cls":"method"},{"i":3,"text":"$12$ and $18$ share the factor $6$.","status":"sound","class":"read","tag":"","ref":null,"src":null,"always":false,"cls":"read"},{"i":4,"text":"$\\dfrac{12}{18}=\\dfrac{6\\cdot 2}{6\\cdot 3}=\\dfrac{2}{3}$.","status":"sound","class":"result","tag":"","ref":null,"src":null,"always":false,"cls":"result"},{"i":5,"text":"$\\dfrac{12}{18}=\\dfrac{2}{8}$, cancelling the $1$'s that appear in both.","status":"wrong","class":"move","tag":"pair","ref":"look.2","src":"auth","always":false,"cls":"move"},{"i":6,"text":"$\\dfrac{12}{18}=\\dfrac{6}{12}$, subtracting $6$ from each.","status":"wrong","class":"move","tag":"","ref":"look.2","src":"auth","always":false,"cls":"move"}]}]},{"id":"r2","prompt":"Write $\\dfrac{x^{2}-9}{x^{2}+x-6}$ in lowest terms.","answer":"$\\dfrac{x-3}{x-2}$","stages":[{"name":"look","mode":"tick","claims":[{"i":1,"text":"An expression, so I factor top and bottom and divide out what they share. No $x$ to find.","status":"sound","class":"identity","tag":"spine","ref":null,"src":null,"always":false,"cls":"identity"},{"i":2,"text":"Same as reducing $\\frac{12}{18}$: factor top and bottom, divide out what they share.","status":"sound","class":"method","tag":"arith","ref":null,"src":null,"always":false,"cls":"method"},{"i":3,"text":"Only factors divide out; $x^{2}$ and $9$ are terms here, not factors.","status":"sound","class":"method","tag":"decision","ref":null,"src":null,"always":true,"cls":"method"},{"i":4,"text":"The top and bottom are not factored yet, so nothing divides out.","status":"sound","class":"form","tag":"","ref":null,"src":null,"always":false,"cls":"form"},{"i":5,"text":"The $x^{2}$ on top cancels the $x^{2}$ on the bottom, leaving $\\frac{-9}{x-6}$.","status":"wrong","class":"move","tag":"pair","ref":"look.3","src":"auth","always":false,"cls":"move"},{"i":6,"text":"$9$ and $6$ reduce to $3$ and $2$, since both divide by $3$.","status":"wrong","class":"move","tag":"","ref":"look.3","src":"auth","always":false,"cls":"move"}]},{"name":"do","mode":"tick","claims":[{"i":1,"text":"$x^{2}-9=(x+3)(x-3)$.","status":"sound","class":"move","tag":"","ref":null,"src":null,"always":false,"cls":"move"},{"i":2,"text":"$x^{2}+x-6=(x+3)(x-2)$: two numbers that multiply to $-6$ and add to $1$ are $3$ and $-2$.","status":"sound","class":"move","tag":"","ref":null,"src":null,"always":false,"cls":"move"},{"i":3,"text":"Both have the factor $x+3$, which divides out.","status":"sound","class":"move","tag":"decision","ref":null,"src":null,"always":true,"cls":"move"},{"i":4,"text":"$\\dfrac{x-3}{x-2}$.","status":"sound","class":"result","tag":"","ref":null,"src":null,"always":false,"cls":"result"},{"i":5,"text":"$x^{2}+x-6=(x-3)(x+2)$: $-3$ and $2$ multiply to $-6$.","status":"wrong","class":"move","tag":"","ref":"do.2","src":"auth","always":false,"cls":"move"},{"i":6,"text":"$\\dfrac{x-3}{x-2}$ reduces further to $\\dfrac{3}{2}$, cancelling the $x$'s.","status":"wrong","class":"result","tag":"","ref":"look.3","src":"auth","always":false,"cls":"result"}]},{"name":"check","mode":"read","claims":[{"i":1,"text":"At $x=1$: the original is $\\frac{-8}{-4}=2$ and the answer is $\\frac{-2}{-1}=2$.","status":"sound","class":"warrant","tag":"plugin","ref":null,"src":null,"always":false,"cls":"warrant"},{"i":2,"text":"$x-3$ and $x-2$ share no factor, so this is lowest terms.","status":"sound","class":"warrant","tag":"","ref":null,"src":null,"always":false,"cls":"warrant"}]}]}],"motif":"#6ee7c8","emblem":"..#..#####..#....#....#.."},{"id":"solve","title":"Solve","spine":"This is an equation: true for some $x$, false for the rest. Solving means finding which $x$.","problems":[{"id":"s1","prompt":"Solve $2x+1=7$.","answer":"$x=3$","stages":[{"name":"look","mode":"tick","claims":[{"i":1,"text":"This is an equation: two expressions that are equal for some $x$ and not for others.","status":"sound","class":"identity","tag":"spine","ref":null,"src":null,"always":false,"cls":"identity"},{"i":2,"text":"A solution is a value of $x$ that makes both sides the same number.","status":"sound","class":"identity","tag":"","ref":null,"src":null,"always":false,"cls":"identity"},{"i":3,"text":"$x$ was doubled, then $1$ was added; I undo the $1$ first, then the doubling.","status":"sound","class":"method","tag":"decision","ref":null,"src":null,"always":true,"cls":"method"},{"i":4,"text":"At $x=3$: the left is $2\\cdot 3+1=7$ and the right is $7$.","status":"sound","class":"warrant","tag":"","ref":null,"src":null,"always":false,"cls":"warrant"},{"i":5,"text":"The $=$ tells me to work out $2x+1$, and $7$ is what comes out.","status":"wrong","class":"identity","tag":"","ref":"look.2","src":"auth","always":false,"cls":"identity"},{"i":6,"text":"$2x+1=7$ is true no matter what $x$ is; it is just a fact about $2x+1$.","status":"wrong","class":"identity","tag":"pair","ref":"look.1","src":"auth","always":false,"cls":"identity"}]},{"name":"do","mode":"tick","claims":[{"i":1,"text":"Subtract $1$: $2x=6$.","status":"sound","class":"move","tag":"","ref":null,"src":null,"always":false,"cls":"move"},{"i":2,"text":"Divide by $2$: $x=3$.","status":"sound","class":"result","tag":"decision","ref":null,"src":null,"always":true,"cls":"result"},{"i":3,"text":"Divide by $2$ first, every term: $x+\\frac{1}{2}=\\frac{7}{2}$, so $x=3$. Same answer.","status":"sound","class":"move","tag":"alt","ref":null,"src":null,"always":false,"cls":"move"},{"i":4,"text":"$x=7-1-2=4$, taking away the $1$ and the $2$.","status":"wrong","class":"move","tag":"","ref":"look.3","src":"auth","always":false,"cls":"move"},{"i":5,"text":"Divide by $2$ first: $x+1=3.5$, so $x=2.5$.","status":"wrong","class":"move","tag":"","ref":"do.3","src":"auth","always":false,"cls":"move"}]},{"name":"check","mode":"read","claims":[{"i":1,"text":"At $x=4$: $2(4)+1=9$, not $7$, so $4$ is not a solution.","status":"sound","class":"warrant","tag":"","ref":null,"src":null,"always":false,"cls":"warrant"}]}]},{"id":"s4","prompt":"Solve $A=P+Prt$ for $t$.","answer":"$t=\\dfrac{A-P}{Pr}$","stages":[{"name":"look","mode":"tick","claims":[{"i":1,"text":"An equation in four letters. Solving for $t$: $t$ alone on one side, the rest on the other.","status":"sound","class":"identity","tag":"spine","ref":null,"src":null,"always":false,"cls":"identity"},{"i":2,"text":"The answer is an expression in $A$, $P$ and $r$, not a number.","status":"sound","class":"identity","tag":"","ref":null,"src":null,"always":false,"cls":"identity"},{"i":3,"text":"Same steps as solving for $x$: undo what was done to $t$, last thing first.","status":"sound","class":"method","tag":"decision","ref":null,"src":null,"always":true,"cls":"method"},{"i":4,"text":"$t$ was multiplied by $P$ and $r$, then $P$ was added; I undo the added $P$ first.","status":"sound","class":"method","tag":"","ref":null,"src":null,"always":false,"cls":"method"},{"i":5,"text":"With numbers for $A$, $P$ and $r$, the same steps give $t$ as a number.","status":"sound","class":"identity","tag":"connect","ref":null,"src":null,"always":false,"cls":"identity"},{"i":6,"text":"I need numbers for $A$, $P$ and $r$ before I can start.","status":"wrong","class":"identity","tag":"cross","ref":"look.2","src":"auth","always":false,"cls":"identity"},{"i":7,"text":"I subtract $Prt$ from both sides to get $t$ alone.","status":"wrong","class":"method","tag":"pair","ref":"look.4","src":"auth","always":false,"cls":"method"}]},{"name":"do","mode":"tick","claims":[{"i":1,"text":"Subtract $P$: $A-P=Prt$.","status":"sound","class":"move","tag":"","ref":null,"src":null,"always":false,"cls":"move"},{"i":2,"text":"Divide by $Pr$: $t=\\dfrac{A-P}{Pr}$.","status":"sound","class":"result","tag":"decision","ref":null,"src":null,"always":true,"cls":"result"},{"i":3,"text":"Divide by $P$ first: $\\frac{A}{P}=1+rt$, then $t=\\frac{A/P-1}{r}$. Same answer.","status":"sound","class":"move","tag":"alt","ref":null,"src":null,"always":false,"cls":"move"},{"i":4,"text":"$t=A-P-Pr$, subtracting everything off.","status":"wrong","class":"result","tag":"","ref":"look.4","src":"auth","always":false,"cls":"result"},{"i":5,"text":"$t=\\dfrac{A}{Pr}-P$, dividing only the $A$.","status":"wrong","class":"result","tag":"","ref":"do.3","src":"auth","always":false,"cls":"result"}]},{"name":"check","mode":"read","claims":[{"i":1,"text":"At $P=1000$, $r=0.05$, $A=1100$: $t=\\frac{100}{50}=2$; and $1000+1000(0.05)(2)=1100$ gives $A$ back.","status":"sound","class":"warrant","tag":"plugin","ref":null,"src":null,"always":false,"cls":"warrant"},{"i":2,"text":"The result is a formula: put in any $A$, $P$ and $r$ and it gives $t$.","status":"sound","class":"warrant","tag":"connect","ref":null,"src":null,"always":false,"cls":"warrant"}]}]},{"id":"s2","prompt":"Solve $5(x-2)=3x+8$.","answer":"$x=9$","stages":[{"name":"look","mode":"tick","claims":[{"i":1,"text":"This is an equation: the two sides are equal for some $x$, and I am finding which.","status":"sound","class":"identity","tag":"spine","ref":null,"src":null,"always":false,"cls":"identity"},{"i":2,"text":"$x$ appears to the first power only, so this is linear.","status":"sound","class":"identity","tag":"","ref":null,"src":null,"always":false,"cls":"identity"},{"i":3,"text":"I need to find the $x$ that makes $5(x-2)$ the same number as $3x+8$.","status":"sound","class":"identity","tag":"","ref":null,"src":null,"always":false,"cls":"identity"},{"i":4,"text":"I need to get $x$ by itself on one side.","status":"sound","class":"method","tag":"","ref":null,"src":null,"always":false,"cls":"method"},{"i":5,"text":"Whatever I do to one side I do to the other, so the solution does not change.","status":"sound","class":"method","tag":"decision","ref":null,"src":null,"always":true,"cls":"method"},{"i":6,"text":"This is quadratic because of the $5(x-2)$, which multiplies out to two terms.","status":"wrong","class":"identity","tag":"pair","ref":"look.2","src":"auth","always":false,"cls":"identity"}]},{"name":"do","mode":"tick","claims":[{"i":1,"text":"Distribute: $5x-10=3x+8$.","status":"sound","class":"move","tag":"","ref":null,"src":null,"always":false,"cls":"move"},{"i":2,"text":"$5x-3x=8+10$, so $2x=18$.","status":"sound","class":"move","tag":"decision","ref":null,"src":null,"always":true,"cls":"move"},{"i":3,"text":"$x=9$.","status":"sound","class":"result","tag":"","ref":null,"src":null,"always":false,"cls":"result"},{"i":4,"text":"$5x-2=3x+8$, multiplying only the $x$ by $5$.","status":"wrong","class":"move","tag":"","ref":"do.1","src":"obs:grouping bar","always":false,"cls":"move"},{"i":5,"text":"$2x=-2$, so $x=-1$, taking $8-10$.","status":"wrong","class":"move","tag":"","ref":"do.2","src":"auth","always":false,"cls":"move"},{"i":6,"text":"$8x=18$, adding $3x$ across.","status":"wrong","class":"move","tag":"","ref":"do.2","src":"auth","always":false,"cls":"move"}]},{"name":"check","mode":"read","claims":[{"i":1,"text":"At $x=9$: $5(7)=35$ and $27+8=35$. Both sides agree.","status":"sound","class":"warrant","tag":"","ref":null,"src":null,"always":false,"cls":"warrant"},{"i":2,"text":"At $x=-1$: $5(-3)=-15$ and $-3+8=5$. They do not agree, so $-1$ is not a solution.","status":"sound","class":"warrant","tag":"","ref":null,"src":null,"always":false,"cls":"warrant"}]}]},{"id":"s3","prompt":"Solve $x^{2}-5x+6=0$.","answer":"$x=2$ or $x=3$","stages":[{"name":"look","mode":"tick","claims":[{"i":1,"text":"This is an equation, and I am finding the $x$ values that make it true.","status":"sound","class":"identity","tag":"spine","ref":null,"src":null,"always":false,"cls":"identity"},{"i":2,"text":"$x^{2}$ is present, so this is quadratic, not linear.","status":"sound","class":"identity","tag":"","ref":null,"src":null,"always":false,"cls":"identity"},{"i":3,"text":"One side is already $0$, which is what the zero-product property needs.","status":"sound","class":"form","tag":"","ref":null,"src":null,"always":false,"cls":"form"},{"i":4,"text":"I factor $x^{2}-5x+6$ like any factoring problem.","status":"sound","class":"method","tag":"connect","ref":null,"src":null,"always":false,"cls":"method"},{"i":5,"text":"Getting $x$ alone does not work here, because $x$ appears in two terms with different powers.","status":"sound","class":"method","tag":"decision","ref":null,"src":null,"always":true,"cls":"method"},{"i":6,"text":"Moving $6$ over and dividing by $x$ gets $x$ by itself.","status":"wrong","class":"method","tag":"pair","ref":"look.5","src":"auth","always":false,"cls":"method"},{"i":7,"text":"This is an expression to factor, and $(x-2)(x-3)$ is the answer.","status":"wrong","class":"identity","tag":"cross","ref":"look.1","src":"obs:factored and stopped","always":false,"cls":"identity"}]},{"name":"plan","mode":"tick","claims":[{"i":1,"text":"Two numbers that multiply to $6$ and add to $-5$: $-2$ and $-3$.","status":"sound","class":"move","tag":"","ref":null,"src":null,"always":false,"cls":"move"},{"i":2,"text":"$(x-2)(x-3)=0$.","status":"sound","class":"move","tag":"","ref":null,"src":null,"always":false,"cls":"move"},{"i":3,"text":"A product is $0$ only when one of its factors is $0$.","status":"sound","class":"method","tag":"decision","ref":null,"src":null,"always":true,"cls":"method"},{"i":4,"text":"So $x-2=0$ or $x-3=0$: two linear equations, each one step.","status":"sound","class":"method","tag":"connect","ref":null,"src":null,"always":false,"cls":"method"},{"i":5,"text":"One quadratic I could not solve became two linear ones I can: $x-2=0$ and $x-3=0$.","status":"sound","class":"identity","tag":"","ref":null,"src":null,"always":false,"cls":"identity"},{"i":6,"text":"$(x+2)(x+3)=0$, since $2+3=5$.","status":"wrong","class":"move","tag":"","ref":"plan.1","src":"obs:second sign not flipped","always":false,"cls":"move"},{"i":7,"text":"$x^{2}-5x=-6$, so $x(x-5)=-6$ and $x=-6$ or $x-5=-6$.","status":"wrong","class":"method","tag":"","ref":"look.3","src":"obs:zero-product step","always":false,"cls":"method"}]},{"name":"do","mode":"tick","claims":[{"i":1,"text":"$x-2=0$ gives $x=2$.","status":"sound","class":"move","tag":"","ref":null,"src":null,"always":false,"cls":"move"},{"i":2,"text":"$x-3=0$ gives $x=3$.","status":"sound","class":"move","tag":"","ref":null,"src":null,"always":false,"cls":"move"},{"i":3,"text":"$x=2$ or $x=3$.","status":"sound","class":"result","tag":"decision","ref":null,"src":null,"always":true,"cls":"result"},{"i":4,"text":"$x=-2$ or $x=-3$, the numbers inside the parentheses.","status":"wrong","class":"result","tag":"pair","ref":"do.1","src":"auth","always":false,"cls":"result"}]},{"name":"check","mode":"read","claims":[{"i":1,"text":"At $x=2$: $4-10+6=0$. At $x=3$: $9-15+6=0$.","status":"sound","class":"warrant","tag":"","ref":null,"src":null,"always":false,"cls":"warrant"},{"i":2,"text":"A quadratic has at most two solutions, and I have two.","status":"sound","class":"warrant","tag":"","ref":null,"src":null,"always":false,"cls":"warrant"},{"i":3,"text":"$(x-2)(x-3)$ is $x^{2}-5x+6$ for every $x$. It is $0$ only at $x=2$ and $x=3$.","status":"sound","class":"warrant","tag":"","ref":null,"src":null,"always":false,"cls":"warrant"}]}]}],"motif":"#ffd6a0","emblem":".###..#....###.....#.###."}];
+  window.__CLAIMS_HASH = "abdb1c413a151606836669469bff2b9e9e6f9588bf44221467bf9738f64e466f";
+  </script>
+  <script src="vendor/reflect/support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="vendor/reflect/fonts/fonts.css">
+<link rel="stylesheet" href="vendor/katex/katex.min.css">
+<script src="vendor/katex/katex.min.js"></script>
+<style>
+body{margin:0;background:#100c1c;-webkit-font-smoothing:antialiased}
+a{color:#f8b800;text-decoration:none}a:hover{color:#fff}
+@keyframes exIn{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}
+@keyframes exDrift{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes exFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+.katex{font-size:1.04em}
+@media print{
+  body{background:#fff}
+  [data-sumgrid]{display:block !important}
+  [data-norail]{display:none !important}
+}
+</style>
+</helmet>
+
+<div data-screen-label="Exam 1 Reflection" onClick="{{ disarm }}" style="position:relative;min-height:100vh;box-sizing:border-box;padding:26px 20px 104px;font-family:'Archivo',system-ui,sans-serif;color:#eef1fb;background:{{ bgBase }}">
+
+  <div data-norail="1" style="position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden">
+    <div style="position:absolute;inset:0;background:{{ bgWash }}"></div>
+    <div style="position:absolute;inset:0;opacity:.16;background-image:repeating-linear-gradient(0deg,#ffffff10 0 1px,transparent 1px 34px),repeating-linear-gradient(90deg,#ffffff10 0 1px,transparent 1px 34px)"></div>
+    <div style="position:absolute;left:0;right:0;bottom:0;height:196px;background:{{ rangeFar }};clip-path:polygon(0% 100%,0% 62%,4% 62%,4% 48%,8% 48%,8% 34%,12% 34%,12% 22%,16% 22%,16% 34%,20% 34%,20% 48%,24% 48%,24% 58%,28% 58%,28% 44%,32% 44%,32% 30%,36% 30%,36% 42%,40% 42%,40% 56%,44% 56%,44% 66%,48% 66%,48% 52%,52% 52%,52% 38%,56% 38%,56% 26%,60% 26%,60% 40%,64% 40%,64% 54%,68% 54%,68% 64%,72% 64%,72% 50%,76% 50%,76% 36%,80% 36%,80% 48%,84% 48%,84% 60%,88% 60%,88% 46%,92% 46%,92% 58%,96% 58%,96% 68%,100% 68%,100% 100%)"></div>
+    <div style="position:absolute;left:0;right:0;bottom:0;height:138px;background:{{ rangeNear }};clip-path:polygon(0% 100%,0% 70%,6% 70%,6% 54%,12% 54%,12% 38%,18% 38%,18% 52%,24% 52%,24% 66%,30% 66%,30% 46%,36% 46%,36% 30%,42% 30%,42% 44%,48% 44%,48% 60%,54% 60%,54% 72%,60% 72%,60% 56%,66% 56%,66% 40%,72% 40%,72% 54%,78% 54%,78% 68%,84% 68%,84% 50%,90% 50%,90% 64%,96% 64%,96% 74%,100% 74%,100% 100%)"></div>
+    <div style="position:absolute;left:0;right:0;bottom:0;height:132px;background:{{ bottomFade }}"></div>
+    <div style="position:absolute;left:0;bottom:0;width:200%;height:40px;display:flex;animation:exDrift 120s linear infinite;opacity:.42">
+      <div style="width:50%;height:100%;background:{{ bandStripe }}"></div>
+      <div style="width:50%;height:100%;background:{{ bandStripe }}"></div>
+    </div>
+  </div>
+
+  <div style="position:relative;z-index:1;max-width:1120px;margin:0 auto;display:flex;gap:26px;align-items:flex-start;flex-wrap:wrap">
+
+    <div style="flex:1 1 540px;min-width:300px;display:flex;flex-direction:column;gap:24px">
+
+      <sc-if value="{{ isStart }}" hint-placeholder-val="{{ true }}">
+        <div style="display:flex;flex-direction:column;gap:28px;animation:exIn .3s ease both">
+          <h1 style="font-family:'Press Start 2P',monospace;font-size:21px;line-height:1.5;margin:8px 0 0;text-shadow:4px 4px 0 #00000066">Exam 1 Reflection</h1>
+
+          <sc-if value="{{ hasResume }}" hint-placeholder-val="{{ false }}">
+            <div onClick="{{ resume }}" style="display:flex;align-items:center;gap:15px;padding:16px 18px;border:3px solid #f8b800;border-radius:10px;background:{{ cCard }};box-shadow:0 5px 0 #00000055;cursor:pointer;min-height:60px;box-sizing:border-box">
+              <span style="flex:none;width:13px;height:13px;background:#f8b800;border-radius:2px"></span>
+              <div style="flex:1;display:flex;flex-direction:column;gap:7px">
+                <span style="font-family:'Press Start 2P',monospace;font-size:10px;letter-spacing:1px;color:#f8b800">Pick up where I was</span>
+                <span data-tex="{{ resumePrompt }}" style="font-size:15px;line-height:1.6;color:#eef1fb"></span>
+              </div>
+            </div>
+          </sc-if>
+
+          <div style="border:4px solid #1a1210;border-radius:12px;background:{{ cCard }};box-shadow:0 7px 0 #00000055;overflow:hidden">
+            <div style="height:7px;background:repeating-linear-gradient(90deg,#f8b800 0 18px,{{ cCard }} 18px 26px)"></div>
+            <div style="padding:20px 22px 22px;display:flex;flex-direction:column;gap:15px">
+              <span style="font-family:'Press Start 2P',monospace;font-size:11px;letter-spacing:1px;color:#f8b800">How this works</span>
+              <div style="display:flex;flex-direction:column;gap:12px">
+                <div style="display:flex;gap:13px;align-items:flex-start">
+                  <span style="flex:none;width:11px;height:11px;margin-top:6px;background:#7ee0ff;border-radius:2px"></span>
+                  <span style="flex:1;font-size:15.5px;line-height:1.65;color:#eef1fb">There is more to a problem than its answer: what kind of thing it is, what it asks for, which move applies, and what would confirm it.</span>
+                </div>
+                <div style="display:flex;gap:13px;align-items:flex-start">
+                  <span style="flex:none;width:11px;height:11px;margin-top:6px;background:#8fe36a;border-radius:2px"></span>
+                  <span style="flex:1;font-size:15.5px;line-height:1.65;color:#eef1fb">Most of that stays in your head, so it is hard to tell which parts you really rely on.</span>
+                </div>
+                <div style="display:flex;gap:13px;align-items:flex-start">
+                  <span style="flex:none;width:11px;height:11px;margin-top:6px;background:#f8b800;border-radius:2px"></span>
+                  <span style="flex:1;font-size:15.5px;line-height:1.65;color:#eef1fb">So at each step you select what you actually used or noticed.</span>
+                </div>
+                <div style="display:flex;gap:13px;align-items:flex-start">
+                  <span style="flex:none;width:11px;height:11px;margin-top:6px;background:#c9a0ff;border-radius:2px"></span>
+                  <span style="flex:1;font-size:15.5px;line-height:1.65;color:#eef1fb">Then you see which of them hold up, which stop short, and the one the step really turns on.</span>
+                </div>
+              </div>
+              <span style="font-size:15px;line-height:1.65;color:#b9c0dd;border-top:3px solid {{ cDivider }};padding-top:14px">What you keep becomes your notes. Across problems, a pattern shows up: the parts you lean on, and the parts you skip.</span>
+            </div>
+          </div>
+
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <sc-for list="{{ startIdeas }}" as="id" hint-placeholder-count="7">
+              <div onClick="{{ id.open }}" style="display:flex;align-items:center;gap:15px;padding:15px 18px;border:3px solid #1a1210;border-radius:10px;background:{{ cPanel }};box-shadow:0 5px 0 #00000055;cursor:{{ id.cursor }};min-height:60px;box-sizing:border-box">
+                <span style="flex:none;display:grid;grid-template-columns:repeat(5,5px);grid-auto-rows:5px;gap:1px">
+                  <sc-for list="{{ id.cells }}" as="c" hint-placeholder-count="25">
+                    <span style="background:{{ c.bg }};border-radius:1px"></span>
+                  </sc-for>
+                </span>
+                <span style="flex:1;font-family:'Press Start 2P',monospace;font-size:11px;line-height:1.7;color:{{ id.color }}">{{ id.title }}</span>
+                <span style="flex:none;font-size:13px;color:#f8b800">{{ id.mark }}</span>
+              </div>
+            </sc-for>
+          </div>
+
+          <div style="display:flex;flex-direction:column;gap:12px;align-items:flex-start">
+            <button onClick="{{ openSummary }}" style="font-family:'Press Start 2P',monospace;font-size:9px;letter-spacing:1px;padding:13px 15px;border:3px solid #1a1210;border-radius:7px;background:{{ cPanel }};color:#f8b800;box-shadow:0 4px 0 #00000055;cursor:pointer">Summary</button>
+            <button onClick="{{ pressClear }}" style="font-family:'Press Start 2P',monospace;font-size:9px;letter-spacing:1px;padding:13px 15px;border:3px solid #1a1210;border-radius:7px;background:{{ cPanelDeep }};color:#8b93b8;box-shadow:0 4px 0 #00000055;cursor:pointer;text-align:left;line-height:1.7">{{ clearLabel }}</button>
+          </div>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ isIdea }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex;flex-direction:column;gap:22px;animation:exIn .3s ease both">
+          <h2 style="font-family:'Press Start 2P',monospace;font-size:15px;line-height:1.6;margin:8px 0 0;text-shadow:3px 3px 0 #00000055">{{ ideaTitle }}</h2>
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <sc-for list="{{ ideaProblems }}" as="p" hint-placeholder-count="4">
+              <div onClick="{{ p.open }}" style="display:flex;align-items:center;gap:15px;padding:17px 19px;border:3px solid #1a1210;border-radius:10px;background:{{ cPanel }};box-shadow:0 5px 0 #00000055;cursor:pointer;min-height:62px;box-sizing:border-box">
+                <span style="flex:none;width:7px;align-self:stretch;background:{{ p.motif }};border-radius:2px"></span>
+                <span data-tex="{{ p.prompt }}" style="flex:1;font-size:17px;line-height:1.6;color:#eef1fb"></span>
+                <span style="flex:none;font-size:13px;color:#f8b800">{{ p.mark }}</span>
+              </div>
+            </sc-for>
+          </div>
+          <button onClick="{{ goStart }}" style="align-self:flex-start;font-family:'Press Start 2P',monospace;font-size:9px;letter-spacing:1px;padding:12px 14px;border:3px solid #1a1210;border-radius:7px;background:{{ cPanelDeep }};color:#b9c0dd;box-shadow:0 4px 0 #00000055;cursor:pointer">Back</button>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ hasProblem }}" hint-placeholder-val="{{ false }}">
+        <div style="position:sticky;top:0;z-index:2;padding-top:10px;background:{{ stickyFade }}">
+          <div style="border:4px solid #1a1210;border-radius:14px;background:{{ cDeep }};box-shadow:0 8px 0 #00000066;overflow:hidden">
+            <div style="height:8px;background:{{ activeMotif }}"></div>
+            <div style="padding:24px 26px;display:flex;flex-direction:column;gap:14px">
+              <div data-tex="{{ probPrompt }}" style="font-size:30px;line-height:1.5;color:#fff;text-wrap:pretty"></div>
+              <sc-if value="{{ hasStageLabel }}" hint-placeholder-val="{{ false }}">
+                <div style="display:flex;align-items:center;gap:13px;border-top:3px solid {{ cDivider }};padding-top:14px">
+                  <span style="flex:none;width:13px;height:13px;background:{{ activeMotif }};border-radius:2px"></span>
+                  <span style="font-family:'Press Start 2P',monospace;font-size:12px;letter-spacing:1.5px;color:#fff">{{ stageLabel }}</span>
+                </div>
+              </sc-if>
+            </div>
+          </div>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ isProblem }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex;flex-direction:column;gap:20px;animation:exIn .3s ease both">
+          <p style="margin:0;font-size:15.5px;line-height:1.65;color:#b9c0dd">Work it on paper, then open a stage.</p>
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <sc-for list="{{ probStages }}" as="s" hint-placeholder-count="3">
+              <div onClick="{{ s.open }}" style="display:flex;align-items:center;gap:15px;padding:17px 19px;border:3px solid #1a1210;border-radius:10px;background:{{ cPanel }};box-shadow:0 5px 0 #00000055;cursor:pointer;min-height:60px;box-sizing:border-box">
+                <span style="flex:none;width:13px;height:13px;background:{{ activeMotif }};border-radius:2px"></span>
+                <span style="flex:1;font-family:'Press Start 2P',monospace;font-size:12px;letter-spacing:1px;color:#eef1fb">{{ s.label }}</span>
+                <span style="flex:none;font-size:13px;color:#f8b800">{{ s.mark }}</span>
+              </div>
+            </sc-for>
+          </div>
+          <div style="display:flex;gap:10px;flex-wrap:wrap">
+            <button onClick="{{ goIdea }}" style="font-family:'Press Start 2P',monospace;font-size:9px;letter-spacing:1px;padding:12px 14px;border:3px solid #1a1210;border-radius:7px;background:{{ cPanelDeep }};color:#b9c0dd;box-shadow:0 4px 0 #00000055;cursor:pointer">Back</button>
+            <button onClick="{{ goHome }}" style="font-family:'Press Start 2P',monospace;font-size:9px;letter-spacing:1px;padding:12px 14px;border:3px solid #1a1210;border-radius:7px;background:{{ cPanelDeep }};color:#b9c0dd;box-shadow:0 4px 0 #00000055;cursor:pointer">Home</button>
+          </div>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ isTick }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex;flex-direction:column;gap:18px;animation:exIn .3s ease both">
+          <p style="margin:0;font-size:15.5px;line-height:1.65;color:#b9c0dd">Select what you noticed, thought of, or know.</p>
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <sc-for list="{{ tickRows }}" as="r" hint-placeholder-count="6">
+              <div onClick="{{ r.toggle }}" style="display:flex;gap:15px;align-items:flex-start;padding:16px 18px;border:3px solid #1a1210;border-radius:9px;background:{{ cPanel }};box-shadow:0 5px 0 #00000055;cursor:pointer;min-height:60px;box-sizing:border-box">
+                <span style="flex:none;width:23px;height:23px;margin-top:2px;border:3px solid #1a1210;border-radius:4px;background:{{ r.box }};box-sizing:border-box"></span>
+                <span data-tex="{{ r.text }}" style="flex:1;font-size:15.5px;line-height:1.65;color:#eef1fb"></span>
+                <span style="flex:none;font-family:'Press Start 2P',monospace;font-size:7px;line-height:1.9;color:#6f77a0;max-width:96px;text-align:right">{{ r.mark }}</span>
+              </div>
+            </sc-for>
+          </div>
+          <div style="display:flex;gap:10px;flex-wrap:wrap">
+            <button onClick="{{ goProblem }}" style="font-family:'Press Start 2P',monospace;font-size:9px;letter-spacing:1px;padding:12px 14px;border:3px solid #1a1210;border-radius:7px;background:{{ cPanelDeep }};color:#b9c0dd;box-shadow:0 4px 0 #00000055;cursor:pointer">Back</button>
+            <button onClick="{{ goHome }}" style="font-family:'Press Start 2P',monospace;font-size:9px;letter-spacing:1px;padding:12px 14px;border:3px solid #1a1210;border-radius:7px;background:{{ cPanelDeep }};color:#b9c0dd;box-shadow:0 4px 0 #00000055;cursor:pointer">Home</button>
+          </div>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ isWindow }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex;flex-direction:column;gap:16px;animation:exIn .3s ease both">
+          <sc-for list="{{ winLines }}" as="w" hint-placeholder-count="2">
+            <div style="display:flex;gap:16px;align-items:flex-start;margin-top:{{ w.gap }};padding:17px 19px;border:3px solid #1a1210;border-radius:10px;background:{{ cCard }};box-shadow:0 5px 0 #00000044">
+              <div style="flex:1;display:flex;flex-direction:column;gap:11px">
+                <span style="font-family:'Press Start 2P',monospace;font-size:10px;line-height:1.8;letter-spacing:1.2px;color:{{ w.labelColor }}">{{ w.statusLabel }}</span>
+                <span data-tex="{{ w.text }}" style="font-size:16px;line-height:1.65;color:#eef1fb"></span>
+                <sc-if value="{{ w.hasSecond }}" hint-placeholder-val="{{ false }}">
+                  <span data-tex="{{ w.second }}" style="font-size:16px;line-height:1.65;color:#eef1fb;padding:11px 0 11px 22px;border-left:4px solid {{ cRule }};background:{{ cSoft }};border-radius:0 6px 6px 0"></span>
+                </sc-if>
+                <sc-if value="{{ w.hasRecog }}" hint-placeholder-val="{{ false }}">
+                  <span style="font-size:14.5px;line-height:1.6;color:#b9c0dd;border-top:3px solid {{ cDivider }};padding-top:11px">{{ w.recog }}</span>
+                </sc-if>
+              </div>
+              <sc-if value="{{ w.keepable }}" hint-placeholder-val="{{ true }}">
+                <button onClick="{{ w.toggle }}" style="flex:none;font-family:'Press Start 2P',monospace;font-size:8px;letter-spacing:1px;padding:12px 12px;border:3px solid #1a1210;border-radius:6px;background:{{ w.keepBg }};color:{{ w.keepFg }};box-shadow:0 3px 0 #00000055;cursor:pointer;min-width:66px">{{ w.keepLabel }}</button>
+              </sc-if>
+            </div>
+          </sc-for>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;padding-top:6px">
+            <button onClick="{{ goProblem }}" style="font-family:'Press Start 2P',monospace;font-size:9px;letter-spacing:1px;padding:12px 14px;border:3px solid #1a1210;border-radius:7px;background:{{ cPanelDeep }};color:#b9c0dd;box-shadow:0 4px 0 #00000055;cursor:pointer">Back</button>
+            <button onClick="{{ openSummary }}" style="font-family:'Press Start 2P',monospace;font-size:9px;letter-spacing:1px;padding:12px 14px;border:3px solid #1a1210;border-radius:7px;background:{{ cPanel }};color:#f8b800;box-shadow:0 4px 0 #00000055;cursor:pointer">Summary</button>
+            <button onClick="{{ goHome }}" style="font-family:'Press Start 2P',monospace;font-size:9px;letter-spacing:1px;padding:12px 14px;border:3px solid #1a1210;border-radius:7px;background:{{ cPanelDeep }};color:#b9c0dd;box-shadow:0 4px 0 #00000055;cursor:pointer">Home</button>
+          </div>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ isRead }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex;flex-direction:column;gap:14px;animation:exIn .3s ease both">
+          <sc-for list="{{ readLines }}" as="rl" hint-placeholder-count="2">
+            <div style="display:flex;gap:16px;align-items:flex-start;padding:17px 19px;border:3px solid #1a1210;border-radius:10px;background:{{ cCard }};box-shadow:0 5px 0 #00000044">
+              <span data-tex="{{ rl.text }}" style="flex:1;font-size:16px;line-height:1.65;color:#eef1fb"></span>
+              <button onClick="{{ rl.toggle }}" style="flex:none;font-family:'Press Start 2P',monospace;font-size:8px;letter-spacing:1px;padding:12px 12px;border:3px solid #1a1210;border-radius:6px;background:{{ rl.keepBg }};color:{{ rl.keepFg }};box-shadow:0 3px 0 #00000055;cursor:pointer;min-width:66px">{{ rl.keepLabel }}</button>
+            </div>
+          </sc-for>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;padding-top:6px">
+            <button onClick="{{ goProblem }}" style="font-family:'Press Start 2P',monospace;font-size:9px;letter-spacing:1px;padding:12px 14px;border:3px solid #1a1210;border-radius:7px;background:{{ cPanelDeep }};color:#b9c0dd;box-shadow:0 4px 0 #00000055;cursor:pointer">Back</button>
+            <button onClick="{{ openSummary }}" style="font-family:'Press Start 2P',monospace;font-size:9px;letter-spacing:1px;padding:12px 14px;border:3px solid #1a1210;border-radius:7px;background:{{ cPanel }};color:#f8b800;box-shadow:0 4px 0 #00000055;cursor:pointer">Summary</button>
+            <button onClick="{{ goHome }}" style="font-family:'Press Start 2P',monospace;font-size:9px;letter-spacing:1px;padding:12px 14px;border:3px solid #1a1210;border-radius:7px;background:{{ cPanelDeep }};color:#b9c0dd;box-shadow:0 4px 0 #00000055;cursor:pointer">Home</button>
+          </div>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ isSummary }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex;flex-direction:column;gap:34px;animation:exIn .3s ease both">
+          <h1 style="font-family:'Press Start 2P',monospace;font-size:19px;line-height:1.5;margin:8px 0 0;text-shadow:4px 4px 0 #00000066">What I kept</h1>
+          <sc-for list="{{ sumIdeas }}" as="si" hint-placeholder-count="0">
+            <div style="display:flex;flex-direction:column;gap:18px">
+              <div style="display:flex;gap:16px;align-items:flex-start;border-bottom:4px solid {{ si.motif }};padding-bottom:15px">
+                <span style="flex:none;display:grid;grid-template-columns:repeat(5,7px);grid-auto-rows:7px;gap:1px;margin-top:3px">
+                  <sc-for list="{{ si.cells }}" as="c" hint-placeholder-count="25">
+                    <span style="background:{{ c.bg }};border-radius:1px"></span>
+                  </sc-for>
+                </span>
+                <span data-tex="{{ si.spine }}" style="flex:1;font-size:17px;line-height:1.6;color:#f8b800;font-weight:600"></span>
+              </div>
+              <div data-sumgrid="1" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(288px,1fr));gap:16px">
+                <sc-for list="{{ si.problems }}" as="sp" hint-placeholder-count="0">
+                  <div style="border:3px solid #1a1210;border-radius:11px;background:{{ cCard }};box-shadow:0 6px 0 #00000044;overflow:hidden;display:flex;flex-direction:column">
+                    <div style="height:6px;background:{{ si.motif }}"></div>
+                    <div data-tex="{{ sp.prompt }}" style="padding:17px 18px;font-size:20px;line-height:1.5;color:#fff;border-bottom:3px solid {{ cDivider }}"></div>
+                    <div style="padding:16px 18px 18px;display:flex;flex-direction:column;gap:14px">
+                      <sc-for list="{{ sp.lines }}" as="sl" hint-placeholder-count="0">
+                        <div style="display:flex;gap:13px;align-items:flex-start;padding:{{ sl.pad }};background:{{ sl.bg }};border-radius:7px">
+                          <div style="flex:1;display:flex;flex-direction:column;gap:10px">
+                            <span data-tex="{{ sl.text }}" style="font-size:15px;line-height:1.65;color:#eef1fb"></span>
+                            <sc-if value="{{ sl.hasSecond }}" hint-placeholder-val="{{ false }}">
+                              <span data-tex="{{ sl.second }}" style="font-size:15px;line-height:1.65;color:#eef1fb;padding:9px 0 9px 18px;border-left:4px solid {{ cRule }};background:{{ cSoft }};border-radius:0 6px 6px 0"></span>
+                            </sc-if>
+                          </div>
+                          <sc-if value="{{ sl.keepable }}" hint-placeholder-val="{{ false }}">
+                            <button onClick="{{ sl.toggle }}" style="flex:none;font-family:'Press Start 2P',monospace;font-size:7.5px;letter-spacing:1px;padding:10px 10px;border:3px solid #1a1210;border-radius:6px;background:{{ cPanel }};color:#f8b800;box-shadow:0 3px 0 #00000055;cursor:pointer">Kept</button>
+                          </sc-if>
+                        </div>
+                      </sc-for>
+                    </div>
+                  </div>
+                </sc-for>
+              </div>
+            </div>
+          </sc-for>
+          <div style="display:flex;gap:10px;flex-wrap:wrap">
+            <button onClick="{{ closeSummary }}" style="font-family:'Press Start 2P',monospace;font-size:9px;letter-spacing:1px;padding:12px 14px;border:3px solid #1a1210;border-radius:7px;background:{{ cPanelDeep }};color:#b9c0dd;box-shadow:0 4px 0 #00000055;cursor:pointer">Back</button>
+            <button onClick="{{ goHome }}" style="font-family:'Press Start 2P',monospace;font-size:9px;letter-spacing:1px;padding:12px 14px;border:3px solid #1a1210;border-radius:7px;background:{{ cPanelDeep }};color:#b9c0dd;box-shadow:0 4px 0 #00000055;cursor:pointer">Home</button>
+          </div>
+        </div>
+      </sc-if>
+
+    </div>
+
+    <div data-norail="1" style="flex:0 1 176px;min-width:150px;position:sticky;top:22px;max-height:calc(100vh - 48px);overflow:hidden;display:flex;flex-direction:column;gap:14px;padding-top:12px">
+      <div style="display:flex;flex-direction:column;gap:7px">
+        <sc-for list="{{ railTiles }}" as="t" hint-placeholder-count="7">
+          <div style="display:flex;align-items:center;gap:11px;padding:8px 9px;border:3px solid {{ t.border }};border-radius:8px;background:{{ t.bg }};opacity:{{ t.op }}">
+            <span style="flex:none;display:grid;grid-template-columns:repeat(5,4px);grid-auto-rows:4px;gap:1px">
+              <sc-for list="{{ t.cells }}" as="c" hint-placeholder-count="25">
+                <span style="background:{{ c.bg }};border-radius:1px"></span>
+              </sc-for>
+            </span>
+            <span style="flex:1;height:5px;background:{{ t.motif }};border-radius:2px"></span>
+          </div>
+        </sc-for>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:5px;padding:0 4px">
+        <sc-for list="{{ towerBlocks }}" as="b" hint-placeholder-count="9">
+          <span style="height:{{ b.h }};background:{{ b.bg }};border-radius:3px;opacity:{{ b.op }}"></span>
+        </sc-for>
+      </div>
+    </div>
+
+  </div>
+
+  <sc-if value="{{ isTick }}" hint-placeholder-val="{{ false }}">
+    <div style="position:fixed;left:0;right:0;bottom:0;z-index:4;padding:14px 20px 18px;background:#0c0918f2;border-top:3px solid #1a1210">
+      <div style="max-width:1120px;margin:0 auto;display:flex">
+        <button onClick="{{ submitTick }}" style="flex:1;font-family:'Press Start 2P',monospace;font-size:12px;letter-spacing:1px;padding:18px 16px;border:3px solid #1a1210;border-radius:8px;background:#f8b800;color:#1a1210;box-shadow:0 5px 0 #00000066;cursor:pointer">Continue</button>
+      </div>
+    </div>
+  </sc-if>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;palette&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Dusk plum&quot;,&quot;Night forest&quot;,&quot;Deep sea&quot;,&quot;Cavern coal&quot;],&quot;default&quot;:&quot;Dusk plum&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Look&quot;,&quot;label&quot;:&quot;Background palette&quot;},&quot;notes&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Instructor&quot;,&quot;label&quot;:&quot;Notes mode (sound claims only)&quot;},&quot;instructorView&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Instructor&quot;,&quot;label&quot;:&quot;Show authoring marks on rows&quot;}}">
+const STR = ["Exam 1 Reflection","How this works","Summary","Start over","Press again to clear everything","Work it on paper, then open a stage.","Select what you noticed, thought of, or know.","I don't see any of these.","Continue","Back","Keep","Kept","What I kept","Look","Plan","Do","Check"];
+
+// Dark-only palettes (handoff §4.5 keeps v1 dark); the choice is an author prop, not a student control.
+const PALETTES = {
+  "Dusk plum":   { base:"#100c1c", a:"#2e2256", b:"#1d2a4d", far:"#1a1533", near:"#241c45", fade:"#0c0918",
+                   s1:"rgba(46,36,80,.85)", s2:"rgba(28,22,54,.85)",
+                   panel:"#211a3a", card:"#1c1633", deep:"#181231", panelDeep:"#1a1430", soft:"#241d45", divider:"#2a2348", rule:"#4a3f78" },
+  "Night forest":{ base:"#0b1410", a:"#1c3a2a", b:"#16324a", far:"#13241a", near:"#1b3527", fade:"#08100c",
+                   s1:"rgba(32,62,45,.85)", s2:"rgba(20,40,29,.85)",
+                   panel:"#172c20", card:"#13251b", deep:"#102018", panelDeep:"#112019", soft:"#1b3526", divider:"#22402f", rule:"#3d6b4f" },
+  "Deep sea":    { base:"#0a1020", a:"#1b2d55", b:"#123a4a", far:"#12203a", near:"#192c4d", fade:"#070c1a",
+                   s1:"rgba(28,48,86,.85)", s2:"rgba(18,32,58,.85)",
+                   panel:"#182744", card:"#13203a", deep:"#101c33", panelDeep:"#111d36", soft:"#1c2e50", divider:"#243a5e", rule:"#3f5c8f" },
+  "Cavern coal": { base:"#14100e", a:"#3a2a22", b:"#2a2438", far:"#1f1813", near:"#2c231c", fade:"#0f0b09",
+                   s1:"rgba(58,44,34,.85)", s2:"rgba(38,29,22,.85)",
+                   panel:"#2b2219", card:"#241d16", deep:"#1f1912", panelDeep:"#1e1811", soft:"#332920", divider:"#3d3124", rule:"#6b563c" }
+};
+
+const KEY = "math120e.reflect.v1";
+const LABEL = {look:"Look", plan:"Plan", do:"Do", check:"Check"};
+
+function hashData(s){ let h=2166136261; for(let k=0;k<s.length;k++){ h^=s.charCodeAt(k); h=Math.imul(h,16777619); } return (h>>>0).toString(16); }
+
+function renderTex(el, src){
+  while(el.firstChild) el.removeChild(el.firstChild);
+  var i=0, buf="";
+  function flush(){ if(buf){ el.appendChild(document.createTextNode(buf)); buf=""; } }
+  while(i<src.length){
+    if(src[i]==="\\" && src[i+1]==="$"){ buf+="$"; i+=2; continue; }
+    if(src[i]==="$"){
+      var j=i+1, m="";
+      while(j<src.length){
+        if(src[j]==="\\" && src[j+1]==="$"){ m+="\\$"; j+=2; continue; }
+        if(src[j]==="$") break;
+        m+=src[j]; j++;
+      }
+      if(j>=src.length){ buf+=src[i]; i++; continue; }
+      flush();
+      var sp=document.createElement("span");
+      try{ window.katex.render(m, sp, {output:"html", throwOnError:true}); }
+      catch(e){ sp.textContent=m; console.error("KaTeX failed on", m, e); }
+      el.appendChild(sp); i=j+1; continue;
+    }
+    buf+=src[i]; i++;
+  }
+  flush();
+}
+
+class Component extends DCLogic {
+  state = { screen:"start", idea:null, problem:null, stage:null, ticks:[], perm:[], armed:false, rec:null, openedAt:0, seq:0, back:"start", ideas:[] };
+
+  componentDidMount(){
+    var self = this; window.__app = this;
+    Promise.resolve({ IDEAS: window.__CLAIMS }).then(function(mod){
+      var ideas = mod.IDEAS;
+      var rec = null;
+      try{ rec = JSON.parse(localStorage.getItem(KEY) || "null"); }catch(e){ rec = null; }
+      if(!rec || !rec.submissions) rec = { claims_hash:window.__CLAIMS_HASH, submissions:[], opened:[], kept:[], visited:{} };
+      var seq = rec.submissions.reduce(function(m,s){ return Math.max(m, s.seq||0); }, 0);
+      self.setState({ ideas:ideas, rec:rec, seq:seq });
+    }).catch(function(e){ console.error("claim data failed to load", e); });
+    this.paintMath();
+  }
+  componentDidUpdate(){ this.paintMath(); }
+
+  paintMath(){
+    if(!this.el) return;
+    if(!window.katex){
+      if(!this._waiting){
+        this._waiting = true;
+        var self = this, tries = 0;
+        var poll = setInterval(function(){
+          if(window.katex || ++tries > 120){ clearInterval(poll); self._waiting = false; if(window.katex) self.paintMath(); }
+        }, 100);
+      }
+      return;
+    }
+    var nodes = this.el.querySelectorAll("[data-tex]");
+    for(var k=0;k<nodes.length;k++){
+      var n = nodes[k], src = n.getAttribute("data-tex") || "";
+      if(n.getAttribute("data-tex-done") === src) continue;
+      renderTex(n, src);
+      n.setAttribute("data-tex-done", src);
+    }
+  }
+
+  get el(){ return this._root || (this._root = document.querySelector("[data-screen-label='Exam 1 Reflection']")); }
+  get ideas(){ return this.state.ideas || []; }
+
+  findIdeaOf(pid){ return this.ideas.find(function(v){ return v.problems.some(function(p){ return p.id===pid; }); }) || null; }
+  findProblem(pid){ var out=null; this.ideas.forEach(function(v){ v.problems.forEach(function(p){ if(p.id===pid) out=p; }); }); return out; }
+  findStage(pid, sname){ var p=this.findProblem(pid); return p ? (p.stages.find(function(s){ return s.name===sname; }) || null) : null; }
+  claimAt(pid, refStr){
+    if(!refStr) return null;
+    var bits=refStr.split("."), st=this.findStage(pid, bits[0]);
+    if(!st) return null;
+    return st.claims.find(function(c){ return c.i===parseInt(bits[1],10); }) || null;
+  }
+  isAlways(c){ return c.always === true || c.tag === "decision"; }
+  markOf(c){
+    var bits=[c.cls];
+    if(c.tag) bits.push(c.tag);
+    if(c.status!=="sound") bits.unshift(c.status);
+    if(c.src) bits.push(c.src);
+    return bits.join(" · ");
+  }
+  cellsFor(idea){
+    var out=[];
+    for(var k=0;k<25;k++) out.push({ bg: idea.emblem.charAt(k)==="#" ? idea.motif : "#ffffff12" });
+    return out;
+  }
+
+  save(rec){ this.setState({ rec:rec }); try{ localStorage.setItem(KEY, JSON.stringify(rec)); }catch(e){} }
+  rec(){ return this.state.rec || { claims_hash:"", submissions:[], opened:[], kept:[], visited:{} }; }
+  notes(){ return !!this.props.notes; }
+  visible(claims){ return this.notes() ? claims.filter(function(c){ return c.status==="sound"; }) : claims; }
+
+  isKept(pid, sname, i){
+    return this.rec().kept.some(function(k){ return k.problem===pid && k.stage===sname && k.i===i; });
+  }
+  addKeep(pid, sname, c, by){
+    var rec = this.rec();
+    if(this.isKept(pid, sname, c.i)) return rec;
+    var idea = this.findIdeaOf(pid), prob = this.findProblem(pid), second = this.claimAt(pid, c.ref);
+    rec.kept = rec.kept.concat([{ t:new Date().toISOString(), idea:idea.id, prompt:prob.prompt, problem:pid, stage:sname, i:c.i, text:c.text, second: second ? second.text : null, by:by }]);
+    return rec;
+  }
+  dropKeep(pid, sname, i){
+    var rec = this.rec();
+    rec.kept = rec.kept.filter(function(k){ return !(k.problem===pid && k.stage===sname && k.i===i); });
+    return rec;
+  }
+  setWhere(w){ var rec = this.rec(); rec.where = w; this.save(rec); }
+
+  markVisited(pid, sname){
+    var rec = this.rec();
+    rec.visited = Object.assign({}, rec.visited); rec.visited[pid+"."+sname] = true;
+    return rec;
+  }
+
+  openStage(pid, sname){
+    var st = this.findStage(pid, sname);
+    if(st.mode === "read"){
+      var rec = this.markVisited(pid, sname);
+      rec.opened = rec.opened.concat([{ t:new Date().toISOString(), problem:pid, stage:sname }]);
+      this.save(rec);
+      this.setState({ screen:"read", problem:pid, stage:sname });
+      return;
+    }
+    var shown = this.visible(st.claims);
+    var pool = shown.map(function(c){ return c.i; });
+    for(var a=pool.length-1;a>0;a--){ var b=Math.floor(Math.random()*(a+1)); var t=pool[a]; pool[a]=pool[b]; pool[b]=t; }
+    // Owner's instruction: a claim that does not hold never opens the list. Row 0 is drawn at
+    // random from the sound claims, skipping the decision claim, so position stays uninformative.
+    var statusOf = {}, tagOf = {};
+    shown.forEach(function(c){ statusOf[c.i] = c.status; tagOf[c.i] = c.tag; });
+    var cands = pool.filter(function(i){ return statusOf[i] === "sound" && tagOf[i] !== "decision"; });
+    if(!cands.length) cands = pool.filter(function(i){ return statusOf[i] === "sound"; });
+    if(cands.length){
+      var pick = cands[Math.floor(Math.random() * cands.length)];
+      var at = pool.indexOf(pick);
+      pool[at] = pool[0]; pool[0] = pick;
+    }
+    this.setState({ screen:"tick", problem:pid, stage:sname, ticks:[], perm:pool, openedAt:Date.now() });
+  }
+
+  toggleTick(i){
+    var ticks = this.state.ticks.slice();
+    if(i === null){ this.setState({ ticks: ticks.indexOf(null)>=0 ? [] : [null] }); return; }
+    ticks = ticks.filter(function(v){ return v!==null; });
+    var at = ticks.indexOf(i);
+    if(at>=0) ticks.splice(at,1); else ticks.push(i);
+    this.setState({ ticks:ticks });
+  }
+
+  submitTick(){
+    var pid = this.state.problem, sname = this.state.stage, st = this.findStage(pid, sname);
+    var ticks = this.state.ticks, none = ticks.indexOf(null)>=0;
+    var seq = this.state.seq + 1;
+    var rec = this.markVisited(pid, sname);
+    rec.submissions = rec.submissions.concat([{
+      t:new Date().toISOString(), problem:pid, stage:sname, seq:seq,
+      state: none ? "none" : (ticks.length ? "ticked" : "empty"),
+      notes: this.notes(), ticks: none ? [] : ticks.slice(), perm: this.state.perm.slice(),
+      ms: Date.now() - this.state.openedAt
+    }]);
+    var self = this;
+    (none ? [] : ticks).forEach(function(i){
+      var c = st.claims.find(function(v){ return v.i===i; });
+      if(c && !self.isAlways(c)) rec = self.addKeep(pid, sname, c, "default");
+    });
+    this.save(rec);
+    this.setState({ screen:"window", seq:seq });
+  }
+
+  pressClear(){
+    if(!this.state.armed){ this.setState({ armed:true }); return; }
+    try{ localStorage.removeItem(KEY); }catch(e){}
+    this.setState({ armed:false, rec:{ claims_hash:window.__CLAIMS_HASH, submissions:[], opened:[], kept:[], visited:{} } });
+  }
+
+  renderVals(){
+    var self = this, s = this.state, rec = this.rec(), ideas = this.ideas;
+    var mark = "\u25C6";
+    var visited = rec.visited || {};
+    var problemVisited = function(p){ return p.stages.some(function(st){ return !!visited[p.id+"."+st.name]; }); };
+    var showMarks = !!this.props.instructorView;
+    var hasProblem = ["problem","tick","window","read"].indexOf(s.screen) >= 0;
+    var activeIdea = ideas.find(function(x){ return x.id===s.idea; }) || null;
+
+    var pal = PALETTES[this.props.palette] || PALETTES["Dusk plum"];
+
+    var v = {
+      bgBase: pal.base,
+      bgWash: "radial-gradient(900px 520px at 14% -10%," + pal.a + " 0%," + pal.base + " 68%),radial-gradient(700px 500px at 92% 12%," + pal.b + " 0%," + pal.base + "00 64%)",
+      rangeFar: pal.far, rangeNear: pal.near,
+      cPanel: pal.panel, cCard: pal.card, cDeep: pal.deep, cPanelDeep: pal.panelDeep,
+      cSoft: pal.soft, cDivider: pal.divider, cRule: pal.rule,
+      stickyFade: "linear-gradient(" + pal.base + " 62%," + pal.base + "00)",
+      bottomFade: "linear-gradient(" + pal.base + "00," + pal.fade + ")",
+      bandStripe: "repeating-linear-gradient(90deg," + pal.s1 + " 0 46px," + pal.s2 + " 46px 92px)",
+      isStart: s.screen==="start", isIdea: s.screen==="idea", isProblem: s.screen==="problem",
+      isTick: s.screen==="tick", isWindow: s.screen==="window", isRead: s.screen==="read", isSummary: s.screen==="summary",
+      hasProblem: hasProblem, hasStageLabel: ["tick","window","read"].indexOf(s.screen) >= 0,
+      activeMotif: activeIdea ? activeIdea.motif : "#f8b800",
+      clearLabel: s.armed ? "Press again to clear everything" : "Start over",
+      pressClear: function(){ self.pressClear(); },
+      disarm: function(e){ if(s.armed && e && e.target && e.target.textContent !== "Press again to clear everything") self.setState({ armed:false }); },
+      goStart: function(){ self.setState({ screen:"start" }); },
+      goHome: function(){ self.setState({ screen:"start" }); },
+      goIdea: function(){ self.setState({ screen:"idea" }); },
+      goProblem: function(){ self.setState({ screen:"problem" }); },
+      openSummary: function(){ self.setState({ screen:"summary", back:s.screen }); },
+      closeSummary: function(){ self.setState({ screen: s.back==="summary" ? "start" : s.back }); },
+      submitTick: function(){ self.submitTick(); },
+      hasResume: !!(rec.where && (rec.where.problem || rec.where.idea)) && s.screen === "start",
+      resumePrompt: (function(){
+        var w = rec.where; if(!w) return "";
+        if(w.problem){ var p = self.findProblem(w.problem); return p ? p.prompt : ""; }
+        var ide = ideas.find(function(x){ return x.id===w.idea; });
+        return ide ? ide.title : "";
+      })(),
+      resume: function(){
+        var w = rec.where; if(!w) return;
+        if(w.problem) self.setState({ screen:"problem", idea:w.idea, problem:w.problem });
+        else self.setState({ screen:"idea", idea:w.idea });
+      },
+      startIdeas: ideas.map(function(idea){
+        return { title: idea.title, cursor:"pointer", color:"#eef1fb", cells: self.cellsFor(idea),
+          mark: idea.problems.some(problemVisited) ? mark : "",
+          open: function(){ self.setWhere({ idea:idea.id, problem:null }); self.setState({ screen:"idea", idea:idea.id }); } };
+      }),
+      railTiles: ideas.map(function(idea){
+        var on = activeIdea ? idea.id===activeIdea.id : false;
+        return { cells: self.cellsFor(idea), motif: idea.motif, op: on ? 1 : 0.5,
+          border: on ? "#1a1210" : "#1a121000", bg: on ? pal.panel : "#ffffff08" };
+      }),
+      towerBlocks: [0,1,2,3,4].map(function(n){
+        var m = activeIdea ? activeIdea.motif : "#f8b800";
+        return { h: (9 + (n%3)*5) + "px", bg: n%4===0 ? m : "#ffffff14", op: 0.28 + (8-n)*0.06 };
+      })
+    };
+
+    if(activeIdea){
+      v.ideaTitle = activeIdea.title;
+      v.ideaProblems = activeIdea.problems.map(function(p){
+        return { prompt:p.prompt, motif: activeIdea.motif, mark: problemVisited(p) ? mark : "",
+          open: function(){ self.setWhere({ idea:activeIdea.id, problem:p.id }); self.setState({ screen:"problem", problem:p.id }); } };
+      });
+    }
+
+    var prob = this.findProblem(s.problem);
+    if(prob){
+      v.probPrompt = prob.prompt;
+      v.probStages = prob.stages.map(function(st){
+        return { label: LABEL[st.name], mark: visited[prob.id+"."+st.name] ? mark : "",
+          open: function(){ self.openStage(prob.id, st.name); } };
+      });
+    }
+
+    var st = s.problem && s.stage ? this.findStage(s.problem, s.stage) : null;
+    if(st){
+      v.stageLabel = LABEL[st.name];
+      if(s.screen==="tick"){
+        var byI = {};
+        st.claims.forEach(function(c){ byI[c.i]=c; });
+        v.tickRows = s.perm.map(function(i){
+          var c = byI[i];
+          return { text:c.text, box: s.ticks.indexOf(i)>=0 ? "#f8b800" : "#0f0b1a",
+            mark: showMarks ? self.markOf(c) : "",
+            toggle: function(){ self.toggleTick(i); } };
+        }).concat([{ text:"I don't see any of these.", box: s.ticks.indexOf(null)>=0 ? "#f8b800" : "#0f0b1a",
+          mark:"", toggle: function(){ self.toggleTick(null); } }]);
+      }
+      if(s.screen==="window"){
+        var lines = [], none = s.ticks.indexOf(null)>=0;
+        (none ? [] : s.ticks).forEach(function(i){
+          var c = st.claims.find(function(x){ return x.i===i; });
+          if(c) lines.push({ c:c, gap:"0px" });
+        });
+        var dec = st.claims.find(function(c){ return c.tag==="decision"; });
+        if(dec && s.ticks.indexOf(dec.i)<0) lines.push({ c:dec, gap: lines.length ? "28px" : "0px" });
+        v.winLines = lines.map(function(ln){
+          var c = ln.c, second = self.claimAt(s.problem, c.ref), kept = self.isKept(s.problem, st.name, c.i);
+          var picked = s.ticks.indexOf(c.i) >= 0;
+          var label = !picked ? "You did not select this one"
+            : c.status === "sound" ? "Holds"
+            : c.status === "incomplete" ? "Stops short" : "Does not hold";
+          // Only judge recognition when the settling claim was on this same stage —
+          // a cross-stage ref was never on screen, so not selecting it was impossible.
+          var sameStageRef = !!c.ref && c.ref.split(".")[0] === st.name;
+          var refPicked = sameStageRef && s.ticks.indexOf(parseInt(c.ref.split(".")[1], 10)) >= 0;
+          var recog = (picked && c.status !== "sound" && second && sameStageRef)
+            ? (refPicked ? "You also selected the claim that settles it." : "You did not select the claim that settles it.")
+            : "";
+          return { text:c.text, hasSecond: !!second, second: second ? second.text : "", gap: ln.gap,
+            statusLabel: label, recog: recog, hasRecog: !!recog,
+            labelColor: (picked && c.status === "wrong") ? "#ff7a68" : "#b9c0dd",
+            keepable: !self.isAlways(c), keepLabel: kept ? "Kept" : "Keep",
+            keepBg: kept ? pal.panel : pal.panelDeep, keepFg: kept ? "#f8b800" : "#8b93b8",
+            toggle: function(){ self.save(kept ? self.dropKeep(s.problem, st.name, c.i) : self.addKeep(s.problem, st.name, c, "student")); } };
+        });
+      }
+      if(s.screen==="read"){
+        v.readLines = this.visible(st.claims).map(function(c){
+          var kept = self.isKept(s.problem, st.name, c.i);
+          return { text:c.text, keepLabel: kept ? "Kept" : "Keep",
+            keepBg: kept ? pal.panel : pal.panelDeep, keepFg: kept ? "#f8b800" : "#8b93b8",
+            toggle: function(){ self.save(kept ? self.dropKeep(s.problem, st.name, c.i) : self.addKeep(s.problem, st.name, c, "student")); } };
+        });
+      }
+    }
+
+    if(s.screen==="summary"){
+      v.sumIdeas = ideas.map(function(ide){
+        var problems = ide.problems.map(function(p){
+          var admin = [];
+          if(problemVisited(p)){
+            p.stages.forEach(function(stg){
+              stg.claims.forEach(function(c){
+                if(self.isAlways(c)) admin.push({ text:c.text, hasSecond:false, second:"", keepable:false,
+                  bg:pal.soft, pad:"13px 15px", toggle:function(){} });
+              });
+            });
+          }
+          var mine = rec.kept.filter(function(k){ return k.problem===p.id; }).map(function(k){
+            return { text:k.text, hasSecond: !!k.second, second: k.second || "", keepable:true,
+              bg:"#00000000", pad:"0px", toggle: function(){ self.save(self.dropKeep(k.problem, k.stage, k.i)); } };
+          });
+          return { prompt:p.prompt, lines: admin.concat(mine) };
+        }).filter(function(p){ return p.lines.length>0; });
+        return { spine: ide.spine, motif: ide.motif, cells: self.cellsFor(ide), problems: problems };
+      }).filter(function(x){ return x.problems.length>0; });
+    }
+
+    return v;
+  }
+}
+</script>
+<script>
+/* Appended to the artboard by build_reflect.py. Two jobs, both invisible to a student:
+   (1) URL parameters drive the design's author props: ?notes=1  ?instructor=1  ?palette=Deep%20sea
+   (2) ?check=1 runs the handoff §11 acceptance checks against the live component (window.__app),
+       adapted to the design's own rules; ?verify8=1 is the second half of check 8 after a real reload. */
+(function () {
+  "use strict";
+  var Q = new URLSearchParams(location.search), KEY = "math120e.reflect.v1";
+  var wait = function (ms) { return new Promise(function (r) { setTimeout(r, ms); }); };
+
+  // (1) props from the URL
+  var o = {};
+  if (Q.get("notes") === "1") o.notes = true;
+  if (Q.get("instructor") === "1") o.instructorView = true;
+  if (Q.get("palette")) o.palette = Q.get("palette");
+  if (Object.keys(o).length) {
+    var t = setInterval(function () {
+      if (window.__dcSetProps && window.__dcRootName) { clearInterval(t); window.__dcSetProps(window.__dcRootName(), o); }
+    }, 30);
+  }
+
+  if (Q.get("check") !== "1" && Q.get("verify8") !== "1") return;
+
+  async function ready() {
+    while (!(window.__app && window.__app.state.ideas && window.__app.state.ideas.length)) await wait(30);
+    if (Object.keys(o).length) { while (!(window.__app.props && window.__app.props.notes === !!o.notes)) await wait(30); }
+    await wait(80); return window.__app;
+  }
+  var flush = function () { return wait(60); };
+  function report(lines, fails) {
+    var pre = document.createElement("pre"); pre.id = "checks";
+    pre.style.cssText = "position:relative;z-index:9;margin:0;padding:16px 20px;white-space:pre-wrap;font:12px/1.5 ui-monospace,monospace;color:#b9c0dd;background:#0c0918";
+    pre.textContent = lines.join("\n"); document.body.appendChild(pre);
+    document.title = fails ? "CHECKS FAIL " + fails : "CHECKS PASS";
+  }
+
+  if (Q.get("verify8") === "1") {
+    ready().then(async function (app) {
+      app.setState({ screen: "summary", back: "start" }); await flush();
+      var v = app.renderVals(), kept = 0;
+      v.sumIdeas.forEach(function (si) { si.problems.forEach(function (p) { p.lines.forEach(function (l) { if (l.keepable) kept++; }); }); });
+      report(["kept lines " + kept + "; spines " + v.sumIdeas.length], 0); document.title = "VERIFY8";
+    });
+    return;
+  }
+
+  ready().then(async function (app) {
+    var out = [], fails = 0, saved = localStorage.getItem(KEY);
+    var ok = function (name, cond, note) { out.push((cond ? "pass " : "FAIL ") + name + (note ? "  " + note : "")); if (!cond) fails++; };
+    var ideas = app.state.ideas, root = document.querySelector("[data-screen-label='Exam 1 Reflection']");
+    var fresh = function () { return { claims_hash: window.__CLAIMS_HASH, submissions: [], opened: [], kept: [], visited: {} }; };
+    var reset = async function () { try { localStorage.removeItem(KEY); } catch (e) {} app.setState({ rec: fresh(), seq: 0, screen: "start", armed: false, ticks: [], perm: [] }); await flush(); };
+    var open = async function (pid, sn) { app.openStage(pid, sn); await flush(); };
+    var submit = async function (pid, sn, ticks, none) { await open(pid, sn); if (none) app.toggleTick(null); else ticks.forEach(function (i) { app.toggleTick(i); }); app.submitTick(); await flush(); };
+    var lines = function () { return (app.renderVals().winLines || []).map(function (w) { return { text: w.text, second: w.hasSecond ? w.second : null, label: w.statusLabel, toggle: w.keepable ? w.keepLabel : null }; }); };
+    var summary = async function () { app.setState({ screen: "summary", back: "start" }); await flush(); return app.renderVals().sumIdeas; };
+    var claim = function (pid, sn, i) { return app.findStage(pid, sn).claims.find(function (c) { return c.i === i; }); };
+    var strings = [];
+    ideas.forEach(function (idea) { strings.push(idea.spine); idea.problems.forEach(function (p) { strings.push(p.prompt); p.stages.forEach(function (s) { s.claims.forEach(function (c) { strings.push(c.text); }); }); }); });
+    try {
+      // 1. every prompt, spine and claim renders with throwOnError; no backslash in textContent; e4 shows a dollar before 18
+      var probe = document.createElement("div"), bad = null, n = 0;
+      strings.forEach(function (s) {
+        if (bad) return;
+        probe.innerHTML = "";
+        try {
+          var i = 0, txt = "";
+          while (i < s.length) {
+            if (s[i] === "\\" && s[i + 1] === "$") { txt += "$"; i += 2; continue; }
+            if (s[i] === "$") { var j = s.indexOf("$", i + 1); var sp = document.createElement("span"); window.katex.render(s.slice(i + 1, j), sp, { output: "html", throwOnError: true }); probe.appendChild(document.createTextNode(txt)); txt = ""; probe.appendChild(sp); i = j + 1; continue; }
+            txt += s[i]; i++;
+          }
+          probe.appendChild(document.createTextNode(txt)); n++;
+          if (probe.textContent.indexOf("\\") >= 0) bad = s;
+        } catch (e) { bad = s + " :: " + e.message; }
+      });
+      ok("1 render", !bad && n === strings.length, bad ? "at: " + bad : n + " strings");
+      app.setState({ screen: "problem", problem: "e4", idea: "evaluate" }); await flush();
+      var e4 = root.querySelector("[data-tex]");
+      ok("1 e4 dollar", !!e4 && /\$18/.test(e4.textContent), e4 ? e4.textContent.slice(0, 40) : "no prompt");
+      // 2. on every tick stage the rows differ only in text; 13. row 0 is sound and not the decision claim (the design's rule)
+      var diff = null, row0bad = null, walked = 0, SKIP = { "height": 1, "block-size": 1, "perspective-origin": 1, "transform-origin": 1 };
+      for (var a = 0; a < ideas.length && !diff; a++) for (var b = 0; b < ideas[a].problems.length && !diff; b++) {
+        var pr = ideas[a].problems[b];
+        for (var c = 0; c < pr.stages.length && !diff; c++) {
+          var st = pr.stages[c]; if (st.mode !== "tick") continue;
+          await open(pr.id, st.name); walked++;
+          var first = app.state.perm[0], c0 = claim(pr.id, st.name, first);
+          if (!(c0.status === "sound" && c0.tag !== "decision")) row0bad = row0bad || (pr.id + "." + st.name);
+          var p = Array.prototype.find.call(root.querySelectorAll("p"), function (x) { return x.textContent === "Select what you noticed, thought of, or know."; });
+          var rows = p ? Array.prototype.slice.call(p.nextElementSibling.children) : [];
+          if (rows.length !== app.state.perm.length + 1) { diff = pr.id + "." + st.name + " rows=" + rows.length; break; }
+          var base = getComputedStyle(rows[0]);
+          for (var r = 1; r < rows.length && !diff; r++) { var cs = getComputedStyle(rows[r]); for (var k = 0; k < base.length; k++) { var prop = base[k]; if (SKIP[prop]) continue; if (cs.getPropertyValue(prop) !== base.getPropertyValue(prop)) { diff = pr.id + "." + st.name + " " + prop; break; } } }
+        }
+      }
+      ok("2 rows identical", !diff, diff || walked + " stages walked");
+      ok("13 row 0 sound, not decision", !row0bad, row0bad || "all openings");
+      // 10 (early). notes mode: no non-sound claim is visible on any stage; the remaining checks tick non-sound claims through the model, so they stop here
+      if (app.notes()) {
+        var leak0 = 0; ideas.forEach(function (idea) { idea.problems.forEach(function (p) { p.stages.forEach(function (s) { if (app.visible(s.claims).some(function (c) { return c.status !== "sound"; })) leak0++; }); }); });
+        ok("10 notes mode", leak0 === 0, "checked, " + leak0 + " leaks");
+        throw "notes-mode run: checks 3 to 12 tick non-sound claims and are skipped here";
+      }
+      // 3. f2.look with claim 5 ticked
+      await reset(); await submit("f2", "look", [5]); var L = lines();
+      ok("3 f2.look", L.length === 2 && L[0].second === "This has three terms, so it is not a difference of squares." && L[0].toggle === "Kept" && L[0].label === "Does not hold" && L[1].toggle === null && L[1].label === "You did not select this one", JSON.stringify(L).slice(0, 220));
+      // 4. f2.plan with none
+      await reset(); await submit("f2", "plan", [], true); L = lines();
+      ok("4 f2.plan none", L.length === 1 && /^Leading coefficient/.test(L[0].text) && L[0].toggle === null, L[0] && L[0].text);
+      // 5. s3.check: three lines, Keep on each, nothing tickable
+      await reset(); await open("s3", "check"); var R = app.renderVals().readLines || [];
+      ok("5 s3.check", app.state.screen === "read" && R.length === 3 && R.every(function (l) { return l.keepLabel === "Keep"; }) && !app.renderVals().tickRows);
+      // 6. three kept lines across two ideas; summary: two spines in data order; no digit outside .katex / [data-tex]
+      await reset(); await submit("n1", "look", [1]); await submit("s2", "look", [3, 6]); var S = await summary();
+      var order = ideas.map(function (i) { return i.spine; }).filter(function (s) { return S.some(function (x) { return x.spine === s; }); });
+      var digit = null, walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+      while (walker.nextNode()) { var tn = walker.currentNode; if (tn.parentElement.closest(".katex, [data-tex]")) continue; if (/\d/.test(tn.textContent)) { digit = tn.textContent.trim(); break; } }
+      ok("6 summary", S.length === 2 && JSON.stringify(S.map(function (x) { return x.spine; })) === JSON.stringify(order) && !digit, digit ? "digit: " + digit : S.map(function (x) { return x.spine.slice(0, 30); }).join(" | "));
+      // 7. re-open f2.look after a submission: fresh; two submissions, distinct seq
+      await reset(); await submit("f2", "look", [5]); await open("f2", "look");
+      var pre = app.state.ticks.length; app.toggleTick(1); app.submitTick(); await flush();
+      var subs = app.rec().submissions.filter(function (s) { return s.problem === "f2" && s.stage === "look"; });
+      ok("7 re-entry", pre === 0 && subs.length === 2 && subs[0].seq !== subs[1].seq, "seq " + subs.map(function (s) { return s.seq; }).join(","));
+      // 8. soft reload: re-read the stored record, summary shows the three kept lines; the runner does the real reload
+      await reset(); await submit("n1", "look", [1]); await submit("s2", "look", [3, 6]);
+      app.setState({ rec: JSON.parse(localStorage.getItem(KEY)) }); S = await summary();
+      var keptShown = 0; S.forEach(function (si) { si.problems.forEach(function (p) { p.lines.forEach(function (l) { if (l.keepable) keptShown++; }); }); });
+      app.setState({ screen: "problem", problem: "s2", idea: "solve" }); await flush();
+      var marks = (app.renderVals().probStages || []).filter(function (s) { return s.mark; }).length;
+      ok("8 reload (soft)", keptShown === 3 && marks === 1, "kept " + keptShown + ", visited stage marks " + marks);
+      ok("10 notes mode", true, "run with &notes=1 to exercise");
+      // 11. s2.look with 3 and 6: both Kept, decision (i=5) without toggle; summary order; un-keep drops
+      await reset(); await submit("s2", "look", [3, 6]); L = lines();
+      var c6 = claim("s2", "look", 6), secondOK = (c6.status === "sound") === (L[1].second === null);
+      ok("11 window", L.length === 3 && L[0].toggle === "Kept" && L[1].toggle === "Kept" && secondOK && L[2].toggle === null && /^Whatever I do to one side/.test(L[2].text));
+      S = await summary(); var s2 = S[0].problems[0].lines;
+      ok("11 summary order", S.length === 1 && s2.length === 4 && !s2[0].keepable && !s2[1].keepable && s2[2].keepable && s2[3].keepable, JSON.stringify(s2.map(function (l) { return l.keepable; })));
+      app.save(app.dropKeep("s2", "look", 3)); await flush();
+      ok("11 un-keep drops", app.renderVals().sumIdeas[0].problems[0].lines.length === 3);
+      // 12. only n3.check opened, nothing kept: exactly the two administrative keeps, no toggles
+      await reset(); await open("n3", "check"); S = await summary(); var n3 = S.length ? S[0].problems[0].lines : [];
+      ok("12 n3 admin keeps", n3.length === 2 && n3[0].text === "I work the top and the bottom separately, then divide." && n3.every(function (l) { return !l.keepable; }), JSON.stringify(n3.map(function (l) { return l.text.slice(0, 40); })));
+    } catch (e) { if (typeof e === "string") out.push("skip " + e); else { out.push("FAIL harness threw: " + (e && e.stack || e)); fails++; } }
+    finally {
+      if (Q.get("leave") === "1") { await reset(); await submit("n1", "look", [1]); await submit("s2", "look", [3, 6]); }
+      else { try { if (saved === null) localStorage.removeItem(KEY); else localStorage.setItem(KEY, saved); } catch (e) {} app.setState({ rec: saved ? JSON.parse(saved) : fresh() }); }
+      app.setState({ screen: "start" }); await flush();
+    }
+    report(out, fails);
+  });
+})();
+
+</script>
+</body>
+</html>

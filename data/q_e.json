@@ -1,0 +1,2973 @@
+{
+ "3.1": [
+  {
+   "id": "3.1/O1/q1",
+   "obj": "3.1/O1",
+   "level": "core",
+   "kind": "fill",
+   "stem": [
+    {
+     "t": "text",
+     "v": "$f(x)=4x-3$. Find $f(a)$."
+    }
+   ],
+   "answer": {
+    "kind": "fill",
+    "template": "$f(a)=⟨0⟩$",
+    "slots": [
+     {
+      "size": 8,
+      "numeric": false
+     }
+    ],
+    "note": "type an expression such as 4a-3"
+   },
+   "key": "4a-3",
+   "why": "Every $x$ in the rule is replaced by $a$: $4(a)-3$."
+  },
+  {
+   "id": "3.1/O1/q2",
+   "obj": "3.1/O1",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "$f(x)=x^{2}+1$. Find $f(3t)$."
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "math",
+       "tex": "9t^{2}+1",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "3t^{2}+1",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "9t^{2}+3",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "3t^{2}+3",
+       "display": false
+      }
+     ]
+    ],
+    "multi": false
+   },
+   "key": "0",
+   "why": "$(3t)^{2}+1=9t^{2}+1$, since the square applies to the $3$ as well as the $t$.",
+   "diag": {
+    "1": "$(3t)^{2}$ written as $3t^{2}$: the $3$ was not squared",
+    "2": "the $+1$ was multiplied by $3$ as well",
+    "3": "the $3$ neither squared nor kept out of the constant"
+   }
+  },
+  {
+   "id": "3.1/O1/q3",
+   "obj": "3.1/O1",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "$g(x)=x^{2}-2x$. Find $g(x+3)$ and simplify."
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "math",
+       "tex": "x^{2}+4x+3",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "x^{2}-2x+3",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "x^{2}+4x+15",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "x^{2}+6x+3",
+       "display": false
+      }
+     ]
+    ],
+    "multi": false
+   },
+   "key": "0",
+   "why": "$(x+3)^{2}-2(x+3)=x^{2}+6x+9-2x-6=x^{2}+4x+3$.",
+   "diag": {
+    "1": "$(x+3)^{2}$ expanded as $x^{2}+9$, with no middle term",
+    "2": "$-2(x+3)$ taken as $-2x+6$: the sign on $6$ is lost",
+    "3": "the $-2x$ from the second term was not combined with $6x$"
+   }
+  },
+  {
+   "id": "3.1/O1/q4",
+   "obj": "3.1/O1",
+   "level": "stretch",
+   "kind": "multipart",
+   "stem": [
+    {
+     "t": "text",
+     "v": "$h(x)=6-x$."
+    }
+   ],
+   "answer": {
+    "kind": "multipart",
+    "parts": [
+     {
+      "label": "(a)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Find $h(-p)$."
+       }
+      ],
+      "answer": {
+       "kind": "fill",
+       "template": "$h(-p)=⟨0⟩$",
+       "slots": [
+        {
+         "size": 8,
+         "numeric": false
+        }
+       ],
+       "note": "type an expression such as 6+p"
+      }
+     },
+     {
+      "label": "(b)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Find $h(m-4)$ and simplify."
+       }
+      ],
+      "answer": {
+       "kind": "fill",
+       "template": "$h(m-4)=⟨0⟩$",
+       "slots": [
+        {
+         "size": 8,
+         "numeric": false
+        }
+       ]
+      }
+     }
+    ]
+   },
+   "key": "6+p; 10-m",
+   "why": "$6-(-p)=6+p$, and $6-(m-4)=6-m+4=10-m$: the subtraction applies to both terms of the input."
+  },
+  {
+   "id": "3.1/O2/q1",
+   "obj": "3.1/O2",
+   "level": "core",
+   "kind": "compute",
+   "stem": [
+    {
+     "t": "text",
+     "v": "$f(x)=3x-8$."
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "size": 4,
+      "label": "$f(4)=$"
+     },
+     {
+      "size": 4,
+      "label": "$f(-2)=$"
+     }
+    ]
+   },
+   "key": "4, -14",
+   "why": "$3(4)-8=4$ and $3(-2)-8=-6-8=-14$."
+  },
+  {
+   "id": "3.1/O2/q2",
+   "obj": "3.1/O2",
+   "level": "core",
+   "kind": "compute",
+   "stem": [
+    {
+     "t": "text",
+     "v": "$g(x)=x^{2}-5x$."
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "size": 5,
+      "label": "$g(-3)=$"
+     },
+     {
+      "size": 6,
+      "label": "$g(2.5)=$"
+     }
+    ],
+    "note": "type a decimal where needed"
+   },
+   "key": "24, -6.25",
+   "why": "$(-3)^{2}-5(-3)=9+15=24$ and $(2.5)^{2}-5(2.5)=6.25-12.5=-6.25$."
+  },
+  {
+   "id": "3.1/O2/q3",
+   "obj": "3.1/O2",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "$f(x)=9$. Find $f(-4)$."
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "math",
+       "tex": "9",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "-36",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "-4",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "text",
+       "v": "Undefined"
+      }
+     ]
+    ],
+    "multi": false
+   },
+   "key": "0",
+   "why": "The rule has no $x$ in it, so it gives $9$ at every input.",
+   "diag": {
+    "1": "multiplies $9$ by the input, reading $f(-4)$ as a product",
+    "2": "returns the input itself",
+    "3": "a constant rule has a value at every input"
+   }
+  },
+  {
+   "id": "3.1/O2/q4",
+   "obj": "3.1/O2",
+   "level": "stretch",
+   "kind": "compute",
+   "stem": [
+    {
+     "t": "text",
+     "v": "$k(x)=2^{x}$."
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "size": 4,
+      "label": "$k(3)=$"
+     },
+     {
+      "size": 4,
+      "label": "$k(0)=$"
+     },
+     {
+      "size": 5,
+      "label": "$k(-2)=$",
+      "numeric": false
+     }
+    ],
+    "note": "type a fraction as 1/4"
+   },
+   "key": "8, 1, 1/4",
+   "why": "$2^{3}=8$, $2^{0}=1$, and $2^{-2}=\\dfrac{1}{2^{2}}=\\dfrac14$."
+  },
+  {
+   "id": "3.1/O3/q1",
+   "obj": "3.1/O3",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Find the domain of $f(x)=5x-2$."
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "math",
+       "tex": "(-\\infty,\\infty)",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "[0,\\infty)",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "(-\\infty,2)\\cup(2,\\infty)",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "[2,\\infty)",
+       "display": false
+      }
+     ]
+    ],
+    "multi": false
+   },
+   "key": "0",
+   "why": "$5x-2$ has no denominator and no root, so every real number gives a value.",
+   "diag": {
+    "1": "restricts to non-negative inputs with no reason to",
+    "2": "removes $x=2$ as if it made a denominator zero",
+    "3": "treats $5x-2$ as if it were under a square root"
+   }
+  },
+  {
+   "id": "3.1/O3/q2",
+   "obj": "3.1/O3",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Find the domain of $f(x)=\\sqrt{x-4}$."
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "math",
+       "tex": "[4,\\infty)",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "(4,\\infty)",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "(-\\infty,4]",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "(-\\infty,\\infty)",
+       "display": false
+      }
+     ]
+    ],
+    "multi": false
+   },
+   "key": "0",
+   "why": "The expression under the root must satisfy $x-4\\ge 0$, so $x\\ge 4$, with $4$ included since $\\sqrt{0}=0$.",
+   "diag": {
+    "1": "excludes $4$, but $\\sqrt{0}$ is defined",
+    "2": "the inequality solved in the wrong direction",
+    "3": "ignores the root; $\\sqrt{-1}$ is not a real number"
+   }
+  },
+  {
+   "id": "3.1/O3/q3",
+   "obj": "3.1/O3",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Find the domain of $f(x)=\\dfrac{3}{x+7}$."
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "math",
+       "tex": "(-\\infty,-7)\\cup(-7,\\infty)",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "(-\\infty,7)\\cup(7,\\infty)",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "[-7,\\infty)",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "(-\\infty,\\infty)",
+       "display": false
+      }
+     ]
+    ],
+    "multi": false
+   },
+   "key": "0",
+   "why": "The denominator is $0$ at $x=-7$, and that one value is removed.",
+   "diag": {
+    "1": "removes $7$; the denominator is $0$ at $-7$, not $7$",
+    "2": "treats the denominator like a radicand and keeps only $x\\ge -7$",
+    "3": "keeps $x=-7$, where the fraction is $\\frac{3}{0}$"
+   }
+  },
+  {
+   "id": "3.1/O3/q4",
+   "obj": "3.1/O3",
+   "level": "stretch",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Find the domain of $f(x)=\\sqrt{12-3x}$."
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "math",
+       "tex": "(-\\infty,4]",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "[4,\\infty)",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "(-\\infty,4)",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "(-\\infty,-4]",
+       "display": false
+      }
+     ]
+    ],
+    "multi": false
+   },
+   "key": "0",
+   "why": "$12-3x\\ge 0$ gives $-3x\\ge -12$, and dividing by $-3$ reverses the inequality: $x\\le 4$.",
+   "diag": {
+    "1": "the inequality was not reversed when dividing by $-3$",
+    "2": "$4$ left out, but $\\sqrt{0}$ is defined",
+    "3": "$-12$ divided by $3$ instead of $-3$"
+   }
+  },
+  {
+   "id": "3.1/O4/q1",
+   "obj": "3.1/O4",
+   "level": "core",
+   "kind": "multipart",
+   "stem": [
+    {
+     "t": "text",
+     "v": "A stand has daily fixed costs of $600$ dollars. Each item costs $50$ cents to make and sells for $2$ dollars. Let $x$ be the number of items made and sold in a day."
+    }
+   ],
+   "answer": {
+    "kind": "multipart",
+    "parts": [
+     {
+      "label": "(a)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Which rule gives the daily cost?"
+       }
+      ],
+      "answer": {
+       "kind": "choice",
+       "options": [
+        [
+         {
+          "t": "math",
+          "tex": "c(x)=0.5x+600",
+          "display": false
+         }
+        ],
+        [
+         {
+          "t": "math",
+          "tex": "c(x)=50x+600",
+          "display": false
+         }
+        ],
+        [
+         {
+          "t": "math",
+          "tex": "c(x)=600x+0.5",
+          "display": false
+         }
+        ],
+        [
+         {
+          "t": "math",
+          "tex": "c(x)=2x+600",
+          "display": false
+         }
+        ]
+       ],
+       "multi": false
+      }
+     },
+     {
+      "label": "(b)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Write the daily revenue and profit rules."
+       }
+      ],
+      "answer": {
+       "kind": "fill",
+       "template": "$r(x)=⟨0⟩x$ and $p(x)=⟨1⟩x-600$",
+       "slots": [
+        {
+         "size": 4
+        },
+        {
+         "size": 4
+        }
+       ]
+      }
+     },
+     {
+      "label": "(c)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Find the profit from $800$ items."
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 6,
+         "label": "$p(800)=$"
+        }
+       ]
+      }
+     }
+    ]
+   },
+   "key": "0; 2, 1.5; 600",
+   "why": "Cost is $0.5$ per item plus $600$; revenue is $2$ per item; profit $2x-(0.5x+600)=1.5x-600$, which is $600$ at $x=800$.",
+   "diag": {
+    "1": "(a): $50$ cents entered as $50$ dollars",
+    "2": "(a): the fixed cost multiplied by $x$ and the unit cost left alone",
+    "3": "(a): the selling price used as the cost per item"
+   }
+  },
+  {
+   "id": "3.1/O4/q2",
+   "obj": "3.1/O4",
+   "level": "core",
+   "kind": "compute",
+   "stem": [
+    {
+     "t": "text",
+     "v": "The number of employees (thousands) at a company is approximated by $N(t)=2t+35$, where $t=10$ corresponds to 2010."
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "size": 5,
+      "label": "$N(16)=$"
+     },
+     {
+      "size": 5,
+      "label": "in 2008:"
+     }
+    ]
+   },
+   "key": "67, 51",
+   "why": "2016 is $t=16$, giving $67$; 2008 is $t=8$, giving $51$, both in thousands."
+  },
+  {
+   "id": "3.1/O4/q3",
+   "obj": "3.1/O4",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "The price of a share is approximated by $P(x)=0.4x^{2}-6x+50$, where $x=10$ corresponds to the start of 2010. $P(12)=35.6$. What does this value mean?"
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "text",
+       "v": "At the start of 2012 the price was $35.60$ dollars."
+      }
+     ],
+     [
+      {
+       "t": "text",
+       "v": "Twelve years after 2010 the price was $35.60$ dollars."
+      }
+     ],
+     [
+      {
+       "t": "text",
+       "v": "At the end of 2012 the price was $35.60$ dollars."
+      }
+     ],
+     [
+      {
+       "t": "text",
+       "v": "The price was $12$ dollars after $35.6$ years."
+      }
+     ]
+    ],
+    "multi": false
+   },
+   "key": "0",
+   "why": "$x=12$ is the start of 2012 under the stated convention, and the output is the price in dollars.",
+   "diag": {
+    "1": "reads $x=12$ as twelve years after the base year rather than as the year 2012",
+    "2": "the convention names the start of the year, not the end",
+    "3": "input and output exchanged"
+   }
+  },
+  {
+   "id": "3.1/O4/q4",
+   "obj": "3.1/O4",
+   "level": "stretch",
+   "kind": "multipart",
+   "stem": [
+    {
+     "t": "text",
+     "v": "A phone's value in dollars, $x$ years after purchase, is $V(x)=900-120x$."
+    }
+   ],
+   "answer": {
+    "kind": "multipart",
+    "parts": [
+     {
+      "label": "(a)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Find $V(0)$ and $V(5)$."
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 5,
+         "label": "$V(0)=$"
+        },
+        {
+         "size": 5,
+         "label": "$V(5)=$"
+        }
+       ]
+      }
+     },
+     {
+      "label": "(b)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "After how many years is the value $180$ dollars?"
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 4,
+         "label": "$x=$"
+        }
+       ]
+      }
+     }
+    ]
+   },
+   "key": "900, 300; 6",
+   "why": "$V(0)=900$ is the purchase price and $V(5)=300$; $900-120x=180$ gives $120x=720$, so $x=6$."
+  }
+ ],
+ "4.1": [
+  {
+   "id": "4.1/O1/q1",
+   "obj": "4.1/O1",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Classify the function."
+    },
+    {
+     "t": "math",
+     "tex": "f(x)=7^{x}",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "text",
+       "v": "Linear"
+      }
+     ],
+     [
+      {
+       "t": "text",
+       "v": "Quadratic"
+      }
+     ],
+     [
+      {
+       "t": "text",
+       "v": "Exponential"
+      }
+     ]
+    ],
+    "multi": false
+   },
+   "key": "2",
+   "why": "The variable is in the exponent, which is what makes a function exponential.",
+   "diag": {
+    "0": "a linear rule has $x$ to the first power, as in $7x$",
+    "1": "a quadratic rule has $x^{2}$; here the $x$ is the exponent, not the base"
+   }
+  },
+  {
+   "id": "4.1/O1/q2",
+   "obj": "4.1/O1",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Classify the function."
+    },
+    {
+     "t": "math",
+     "tex": "g(x)=7x",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "text",
+       "v": "Linear"
+      }
+     ],
+     [
+      {
+       "t": "text",
+       "v": "Quadratic"
+      }
+     ],
+     [
+      {
+       "t": "text",
+       "v": "Exponential"
+      }
+     ]
+    ],
+    "multi": false
+   },
+   "key": "0",
+   "why": "$7x$ is $x$ to the first power with a constant coefficient: a line.",
+   "diag": {
+    "1": "no $x^{2}$ term appears",
+    "2": "$7x$ has $x$ as a base to the power $1$, not in an exponent"
+   }
+  },
+  {
+   "id": "4.1/O1/q3",
+   "obj": "4.1/O1",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Classify the function."
+    },
+    {
+     "t": "math",
+     "tex": "h(x)=2x^{2}-x+5",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "text",
+       "v": "Linear"
+      }
+     ],
+     [
+      {
+       "t": "text",
+       "v": "Quadratic"
+      }
+     ],
+     [
+      {
+       "t": "text",
+       "v": "Exponential"
+      }
+     ]
+    ],
+    "multi": false
+   },
+   "key": "1",
+   "why": "The highest power of $x$ is $2$.",
+   "diag": {
+    "0": "the $x^{2}$ term rules out a line",
+    "2": "the exponents are constants; the variable is a base"
+   }
+  },
+  {
+   "id": "4.1/O1/q4",
+   "obj": "4.1/O1",
+   "level": "stretch",
+   "kind": "multipart",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Two questions on the form of a rule."
+    }
+   ],
+   "answer": {
+    "kind": "multipart",
+    "parts": [
+     {
+      "label": "(a)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Classify $f(x)=350(1.08)^{x}$."
+       }
+      ],
+      "answer": {
+       "kind": "choice",
+       "options": [
+        [
+         {
+          "t": "text",
+          "v": "Linear"
+         }
+        ],
+        [
+         {
+          "t": "text",
+          "v": "Quadratic"
+         }
+        ],
+        [
+         {
+          "t": "text",
+          "v": "Exponential"
+         }
+        ]
+       ],
+       "multi": false
+      }
+     },
+     {
+      "label": "(b)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Which of these is linear?"
+       }
+      ],
+      "answer": {
+       "kind": "choice",
+       "options": [
+        [
+         {
+          "t": "math",
+          "tex": "4^{x}",
+          "display": false
+         }
+        ],
+        [
+         {
+          "t": "math",
+          "tex": "4x^{2}",
+          "display": false
+         }
+        ],
+        [
+         {
+          "t": "math",
+          "tex": "4x+2",
+          "display": false
+         }
+        ],
+        [
+         {
+          "t": "math",
+          "tex": "\\dfrac{4}{x}",
+          "display": false
+         }
+        ]
+       ],
+       "multi": false
+      }
+     }
+    ]
+   },
+   "key": "2; 2",
+   "why": "In $350(1.08)^{x}$ the variable is the exponent; $4x+2$ is the only rule with $x$ to the first power and not in a denominator.",
+   "diag": {
+    "0": "(a): the coefficient $350$ does not change where $x$ sits; (b): $4^{x}$ is exponential",
+    "1": "(a): there is no $x^{2}$; (b): $4x^{2}$ is quadratic",
+    "3": "(b): $\\frac{4}{x}$ is rational, with $x$ in a denominator"
+   }
+  },
+  {
+   "id": "4.1/O2/q1",
+   "obj": "4.1/O2",
+   "level": "core",
+   "kind": "multipart",
+   "stem": [
+    {
+     "t": "text",
+     "v": "$f(x)=1.4^{x}$."
+    }
+   ],
+   "answer": {
+    "kind": "multipart",
+    "parts": [
+     {
+      "label": "(a)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Without graphing, describe the graph."
+       }
+      ],
+      "answer": {
+       "kind": "select",
+       "template": "The graph exponentially ⟨0⟩.",
+       "slots": [
+        {
+         "options": [
+          "grows",
+          "decays"
+         ]
+        }
+       ]
+      }
+     },
+     {
+      "label": "(b)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Find the second coordinates of the points with first coordinates $0$ and $1$."
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 4,
+         "label": "$f(0)=$"
+        },
+        {
+         "size": 4,
+         "label": "$f(1)=$"
+        }
+       ]
+      }
+     }
+    ]
+   },
+   "key": "grows; 1, 1.4",
+   "why": "A base larger than $1$ makes each step multiply by more than $1$; $1.4^{0}=1$ and $1.4^{1}=1.4$."
+  },
+  {
+   "id": "4.1/O2/q2",
+   "obj": "4.1/O2",
+   "level": "core",
+   "kind": "multipart",
+   "stem": [
+    {
+     "t": "text",
+     "v": "$g(x)=\\left(\\frac{1}{3}\\right)^{x}$."
+    }
+   ],
+   "answer": {
+    "kind": "multipart",
+    "parts": [
+     {
+      "label": "(a)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Without graphing, describe the graph."
+       }
+      ],
+      "answer": {
+       "kind": "select",
+       "template": "The graph exponentially ⟨0⟩.",
+       "slots": [
+        {
+         "options": [
+          "grows",
+          "decays"
+         ]
+        }
+       ]
+      }
+     },
+     {
+      "label": "(b)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Find $g(0)$ and $g(1)$."
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 4,
+         "label": "$g(0)=$"
+        },
+        {
+         "size": 5,
+         "label": "$g(1)=$",
+         "numeric": false
+        }
+       ],
+       "note": "type a fraction as 1/3"
+      }
+     }
+    ]
+   },
+   "key": "decays; 1, 1/3",
+   "why": "A base between $0$ and $1$ makes each step multiply by less than $1$; $g(0)=1$ and $g(1)=\\frac13$."
+  },
+  {
+   "id": "4.1/O2/q3",
+   "obj": "4.1/O2",
+   "level": "core",
+   "kind": "multipart",
+   "stem": [
+    {
+     "t": "text",
+     "v": "$h(x)=5\\cdot 2^{x}$."
+    }
+   ],
+   "answer": {
+    "kind": "multipart",
+    "parts": [
+     {
+      "label": "(a)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "From left to right, the graph"
+       }
+      ],
+      "answer": {
+       "kind": "select",
+       "template": "⟨0⟩.",
+       "slots": [
+        {
+         "options": [
+          "rises",
+          "falls"
+         ]
+        }
+       ]
+      }
+     },
+     {
+      "label": "(b)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Find $h(0)$ and $h(1)$."
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 4,
+         "label": "$h(0)=$"
+        },
+        {
+         "size": 4,
+         "label": "$h(1)=$"
+        }
+       ]
+      }
+     }
+    ]
+   },
+   "key": "rises; 5, 10",
+   "why": "The base $2$ is larger than $1$, so the graph rises; $5\\cdot 2^{0}=5$ and $5\\cdot 2^{1}=10$."
+  },
+  {
+   "id": "4.1/O2/q4",
+   "obj": "4.1/O2",
+   "level": "stretch",
+   "kind": "multipart",
+   "stem": [
+    {
+     "t": "text",
+     "v": "$k(x)=12^{-x}$."
+    }
+   ],
+   "answer": {
+    "kind": "multipart",
+    "parts": [
+     {
+      "label": "(a)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Complete the description."
+       }
+      ],
+      "answer": {
+       "kind": "select",
+       "template": "The graph is entirely ⟨0⟩ the $x$-axis.",
+       "slots": [
+        {
+         "options": [
+          "above",
+          "below"
+         ]
+        }
+       ]
+      }
+     },
+     {
+      "label": "(b)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "From left to right, the graph"
+       }
+      ],
+      "answer": {
+       "kind": "select",
+       "template": "⟨0⟩.",
+       "slots": [
+        {
+         "options": [
+          "rises",
+          "falls"
+         ]
+        }
+       ]
+      }
+     },
+     {
+      "label": "(c)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Find $k(0)$ and $k(1)$."
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 4,
+         "label": "$k(0)=$"
+        },
+        {
+         "size": 5,
+         "label": "$k(1)=$",
+         "numeric": false
+        }
+       ],
+       "note": "type a fraction as 1/12"
+      }
+     }
+    ]
+   },
+   "key": "above; falls; 1, 1/12",
+   "why": "$12^{-x}=\\left(\\frac{1}{12}\\right)^{x}$ is positive at every $x$ and shrinks as $x$ grows; $k(0)=1$ and $k(1)=\\frac{1}{12}$."
+  },
+  {
+   "id": "4.1/O3/q1",
+   "obj": "4.1/O3",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Which graph is $y=2^{x}$?"
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "plane",
+       "xr": [
+        -4,
+        4
+       ],
+       "yr": [
+        -2,
+        10
+       ],
+       "stepx": 1,
+       "stepy": 2,
+       "curves": [
+        {
+         "points": [
+          {
+           "x": -4.0,
+           "y": 0.0625
+          },
+          {
+           "x": -3.8333,
+           "y": 0.0702
+          },
+          {
+           "x": -3.6667,
+           "y": 0.0787
+          },
+          {
+           "x": -3.5,
+           "y": 0.0884
+          },
+          {
+           "x": -3.3333,
+           "y": 0.0992
+          },
+          {
+           "x": -3.1667,
+           "y": 0.1114
+          },
+          {
+           "x": -3.0,
+           "y": 0.125
+          },
+          {
+           "x": -2.8333,
+           "y": 0.1403
+          },
+          {
+           "x": -2.6667,
+           "y": 0.1575
+          },
+          {
+           "x": -2.5,
+           "y": 0.1768
+          },
+          {
+           "x": -2.3333,
+           "y": 0.1984
+          },
+          {
+           "x": -2.1667,
+           "y": 0.2227
+          },
+          {
+           "x": -2.0,
+           "y": 0.25
+          },
+          {
+           "x": -1.8333,
+           "y": 0.2806
+          },
+          {
+           "x": -1.6667,
+           "y": 0.315
+          },
+          {
+           "x": -1.5,
+           "y": 0.3536
+          },
+          {
+           "x": -1.3333,
+           "y": 0.3969
+          },
+          {
+           "x": -1.1667,
+           "y": 0.4454
+          },
+          {
+           "x": -1.0,
+           "y": 0.5
+          },
+          {
+           "x": -0.8333,
+           "y": 0.5612
+          },
+          {
+           "x": -0.6667,
+           "y": 0.63
+          },
+          {
+           "x": -0.5,
+           "y": 0.7071
+          },
+          {
+           "x": -0.3333,
+           "y": 0.7937
+          },
+          {
+           "x": -0.1667,
+           "y": 0.8909
+          },
+          {
+           "x": 0.0,
+           "y": 1.0
+          },
+          {
+           "x": 0.1667,
+           "y": 1.1225
+          },
+          {
+           "x": 0.3333,
+           "y": 1.2599
+          },
+          {
+           "x": 0.5,
+           "y": 1.4142
+          },
+          {
+           "x": 0.6667,
+           "y": 1.5874
+          },
+          {
+           "x": 0.8333,
+           "y": 1.7818
+          },
+          {
+           "x": 1.0,
+           "y": 2.0
+          },
+          {
+           "x": 1.1667,
+           "y": 2.2449
+          },
+          {
+           "x": 1.3333,
+           "y": 2.5198
+          },
+          {
+           "x": 1.5,
+           "y": 2.8284
+          },
+          {
+           "x": 1.6667,
+           "y": 3.1748
+          },
+          {
+           "x": 1.8333,
+           "y": 3.5636
+          },
+          {
+           "x": 2.0,
+           "y": 4.0
+          },
+          {
+           "x": 2.1667,
+           "y": 4.4898
+          },
+          {
+           "x": 2.3333,
+           "y": 5.0397
+          },
+          {
+           "x": 2.5,
+           "y": 5.6569
+          },
+          {
+           "x": 2.6667,
+           "y": 6.3496
+          },
+          {
+           "x": 2.8333,
+           "y": 7.1272
+          },
+          {
+           "x": 3.0,
+           "y": 8.0
+          },
+          {
+           "x": 3.1667,
+           "y": 8.9797
+          },
+          {
+           "x": 3.3333,
+           "y": 10.0794
+          },
+          {
+           "x": 3.5,
+           "y": 11.3137
+          },
+          {
+           "x": 3.6667,
+           "y": 12.6992
+          },
+          {
+           "x": 3.8333,
+           "y": 14.2544
+          },
+          {
+           "x": 4.0,
+           "y": 16.0
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     [
+      {
+       "t": "plane",
+       "xr": [
+        -4,
+        4
+       ],
+       "yr": [
+        -2,
+        10
+       ],
+       "stepx": 1,
+       "stepy": 2,
+       "curves": [
+        {
+         "points": [
+          {
+           "x": -4.0,
+           "y": 16.0
+          },
+          {
+           "x": -3.8333,
+           "y": 14.2544
+          },
+          {
+           "x": -3.6667,
+           "y": 12.6992
+          },
+          {
+           "x": -3.5,
+           "y": 11.3137
+          },
+          {
+           "x": -3.3333,
+           "y": 10.0794
+          },
+          {
+           "x": -3.1667,
+           "y": 8.9797
+          },
+          {
+           "x": -3.0,
+           "y": 8.0
+          },
+          {
+           "x": -2.8333,
+           "y": 7.1272
+          },
+          {
+           "x": -2.6667,
+           "y": 6.3496
+          },
+          {
+           "x": -2.5,
+           "y": 5.6569
+          },
+          {
+           "x": -2.3333,
+           "y": 5.0397
+          },
+          {
+           "x": -2.1667,
+           "y": 4.4898
+          },
+          {
+           "x": -2.0,
+           "y": 4.0
+          },
+          {
+           "x": -1.8333,
+           "y": 3.5636
+          },
+          {
+           "x": -1.6667,
+           "y": 3.1748
+          },
+          {
+           "x": -1.5,
+           "y": 2.8284
+          },
+          {
+           "x": -1.3333,
+           "y": 2.5198
+          },
+          {
+           "x": -1.1667,
+           "y": 2.2449
+          },
+          {
+           "x": -1.0,
+           "y": 2.0
+          },
+          {
+           "x": -0.8333,
+           "y": 1.7818
+          },
+          {
+           "x": -0.6667,
+           "y": 1.5874
+          },
+          {
+           "x": -0.5,
+           "y": 1.4142
+          },
+          {
+           "x": -0.3333,
+           "y": 1.2599
+          },
+          {
+           "x": -0.1667,
+           "y": 1.1225
+          },
+          {
+           "x": 0.0,
+           "y": 1.0
+          },
+          {
+           "x": 0.1667,
+           "y": 0.8909
+          },
+          {
+           "x": 0.3333,
+           "y": 0.7937
+          },
+          {
+           "x": 0.5,
+           "y": 0.7071
+          },
+          {
+           "x": 0.6667,
+           "y": 0.63
+          },
+          {
+           "x": 0.8333,
+           "y": 0.5612
+          },
+          {
+           "x": 1.0,
+           "y": 0.5
+          },
+          {
+           "x": 1.1667,
+           "y": 0.4454
+          },
+          {
+           "x": 1.3333,
+           "y": 0.3969
+          },
+          {
+           "x": 1.5,
+           "y": 0.3536
+          },
+          {
+           "x": 1.6667,
+           "y": 0.315
+          },
+          {
+           "x": 1.8333,
+           "y": 0.2806
+          },
+          {
+           "x": 2.0,
+           "y": 0.25
+          },
+          {
+           "x": 2.1667,
+           "y": 0.2227
+          },
+          {
+           "x": 2.3333,
+           "y": 0.1984
+          },
+          {
+           "x": 2.5,
+           "y": 0.1768
+          },
+          {
+           "x": 2.6667,
+           "y": 0.1575
+          },
+          {
+           "x": 2.8333,
+           "y": 0.1403
+          },
+          {
+           "x": 3.0,
+           "y": 0.125
+          },
+          {
+           "x": 3.1667,
+           "y": 0.1114
+          },
+          {
+           "x": 3.3333,
+           "y": 0.0992
+          },
+          {
+           "x": 3.5,
+           "y": 0.0884
+          },
+          {
+           "x": 3.6667,
+           "y": 0.0787
+          },
+          {
+           "x": 3.8333,
+           "y": 0.0702
+          },
+          {
+           "x": 4.0,
+           "y": 0.0625
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     [
+      {
+       "t": "plane",
+       "xr": [
+        -4,
+        4
+       ],
+       "yr": [
+        -2,
+        10
+       ],
+       "stepx": 1,
+       "stepy": 2,
+       "curves": [
+        {
+         "points": [
+          {
+           "x": -4.0,
+           "y": 16.0
+          },
+          {
+           "x": -3.8333,
+           "y": 14.6944
+          },
+          {
+           "x": -3.6667,
+           "y": 13.4444
+          },
+          {
+           "x": -3.5,
+           "y": 12.25
+          },
+          {
+           "x": -3.3333,
+           "y": 11.1111
+          },
+          {
+           "x": -3.1667,
+           "y": 10.0278
+          },
+          {
+           "x": -3.0,
+           "y": 9.0
+          },
+          {
+           "x": -2.8333,
+           "y": 8.0278
+          },
+          {
+           "x": -2.6667,
+           "y": 7.1111
+          },
+          {
+           "x": -2.5,
+           "y": 6.25
+          },
+          {
+           "x": -2.3333,
+           "y": 5.4444
+          },
+          {
+           "x": -2.1667,
+           "y": 4.6944
+          },
+          {
+           "x": -2.0,
+           "y": 4.0
+          },
+          {
+           "x": -1.8333,
+           "y": 3.3611
+          },
+          {
+           "x": -1.6667,
+           "y": 2.7778
+          },
+          {
+           "x": -1.5,
+           "y": 2.25
+          },
+          {
+           "x": -1.3333,
+           "y": 1.7778
+          },
+          {
+           "x": -1.1667,
+           "y": 1.3611
+          },
+          {
+           "x": -1.0,
+           "y": 1.0
+          },
+          {
+           "x": -0.8333,
+           "y": 0.6944
+          },
+          {
+           "x": -0.6667,
+           "y": 0.4444
+          },
+          {
+           "x": -0.5,
+           "y": 0.25
+          },
+          {
+           "x": -0.3333,
+           "y": 0.1111
+          },
+          {
+           "x": -0.1667,
+           "y": 0.0278
+          },
+          {
+           "x": 0.0,
+           "y": 0.0
+          },
+          {
+           "x": 0.1667,
+           "y": 0.0278
+          },
+          {
+           "x": 0.3333,
+           "y": 0.1111
+          },
+          {
+           "x": 0.5,
+           "y": 0.25
+          },
+          {
+           "x": 0.6667,
+           "y": 0.4444
+          },
+          {
+           "x": 0.8333,
+           "y": 0.6944
+          },
+          {
+           "x": 1.0,
+           "y": 1.0
+          },
+          {
+           "x": 1.1667,
+           "y": 1.3611
+          },
+          {
+           "x": 1.3333,
+           "y": 1.7778
+          },
+          {
+           "x": 1.5,
+           "y": 2.25
+          },
+          {
+           "x": 1.6667,
+           "y": 2.7778
+          },
+          {
+           "x": 1.8333,
+           "y": 3.3611
+          },
+          {
+           "x": 2.0,
+           "y": 4.0
+          },
+          {
+           "x": 2.1667,
+           "y": 4.6944
+          },
+          {
+           "x": 2.3333,
+           "y": 5.4444
+          },
+          {
+           "x": 2.5,
+           "y": 6.25
+          },
+          {
+           "x": 2.6667,
+           "y": 7.1111
+          },
+          {
+           "x": 2.8333,
+           "y": 8.0278
+          },
+          {
+           "x": 3.0,
+           "y": 9.0
+          },
+          {
+           "x": 3.1667,
+           "y": 10.0278
+          },
+          {
+           "x": 3.3333,
+           "y": 11.1111
+          },
+          {
+           "x": 3.5,
+           "y": 12.25
+          },
+          {
+           "x": 3.6667,
+           "y": 13.4444
+          },
+          {
+           "x": 3.8333,
+           "y": 14.6944
+          },
+          {
+           "x": 4.0,
+           "y": 16.0
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     [
+      {
+       "t": "plane",
+       "xr": [
+        -4,
+        4
+       ],
+       "yr": [
+        -2,
+        10
+       ],
+       "stepx": 1,
+       "stepy": 2,
+       "curves": [
+        {
+         "points": [
+          {
+           "x": -4.0,
+           "y": -8.0
+          },
+          {
+           "x": -3.8333,
+           "y": -7.6667
+          },
+          {
+           "x": -3.6667,
+           "y": -7.3333
+          },
+          {
+           "x": -3.5,
+           "y": -7.0
+          },
+          {
+           "x": -3.3333,
+           "y": -6.6667
+          },
+          {
+           "x": -3.1667,
+           "y": -6.3333
+          },
+          {
+           "x": -3.0,
+           "y": -6.0
+          },
+          {
+           "x": -2.8333,
+           "y": -5.6667
+          },
+          {
+           "x": -2.6667,
+           "y": -5.3333
+          },
+          {
+           "x": -2.5,
+           "y": -5.0
+          },
+          {
+           "x": -2.3333,
+           "y": -4.6667
+          },
+          {
+           "x": -2.1667,
+           "y": -4.3333
+          },
+          {
+           "x": -2.0,
+           "y": -4.0
+          },
+          {
+           "x": -1.8333,
+           "y": -3.6667
+          },
+          {
+           "x": -1.6667,
+           "y": -3.3333
+          },
+          {
+           "x": -1.5,
+           "y": -3.0
+          },
+          {
+           "x": -1.3333,
+           "y": -2.6667
+          },
+          {
+           "x": -1.1667,
+           "y": -2.3333
+          },
+          {
+           "x": -1.0,
+           "y": -2.0
+          },
+          {
+           "x": -0.8333,
+           "y": -1.6667
+          },
+          {
+           "x": -0.6667,
+           "y": -1.3333
+          },
+          {
+           "x": -0.5,
+           "y": -1.0
+          },
+          {
+           "x": -0.3333,
+           "y": -0.6667
+          },
+          {
+           "x": -0.1667,
+           "y": -0.3333
+          },
+          {
+           "x": 0.0,
+           "y": 0.0
+          },
+          {
+           "x": 0.1667,
+           "y": 0.3333
+          },
+          {
+           "x": 0.3333,
+           "y": 0.6667
+          },
+          {
+           "x": 0.5,
+           "y": 1.0
+          },
+          {
+           "x": 0.6667,
+           "y": 1.3333
+          },
+          {
+           "x": 0.8333,
+           "y": 1.6667
+          },
+          {
+           "x": 1.0,
+           "y": 2.0
+          },
+          {
+           "x": 1.1667,
+           "y": 2.3333
+          },
+          {
+           "x": 1.3333,
+           "y": 2.6667
+          },
+          {
+           "x": 1.5,
+           "y": 3.0
+          },
+          {
+           "x": 1.6667,
+           "y": 3.3333
+          },
+          {
+           "x": 1.8333,
+           "y": 3.6667
+          },
+          {
+           "x": 2.0,
+           "y": 4.0
+          },
+          {
+           "x": 2.1667,
+           "y": 4.3333
+          },
+          {
+           "x": 2.3333,
+           "y": 4.6667
+          },
+          {
+           "x": 2.5,
+           "y": 5.0
+          },
+          {
+           "x": 2.6667,
+           "y": 5.3333
+          },
+          {
+           "x": 2.8333,
+           "y": 5.6667
+          },
+          {
+           "x": 3.0,
+           "y": 6.0
+          },
+          {
+           "x": 3.1667,
+           "y": 6.3333
+          },
+          {
+           "x": 3.3333,
+           "y": 6.6667
+          },
+          {
+           "x": 3.5,
+           "y": 7.0
+          },
+          {
+           "x": 3.6667,
+           "y": 7.3333
+          },
+          {
+           "x": 3.8333,
+           "y": 7.6667
+          },
+          {
+           "x": 4.0,
+           "y": 8.0
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    ],
+    "multi": false
+   },
+   "key": "0",
+   "why": "The curve passes through $(0,1)$, rises to the right, and approaches the $x$-axis to the left without touching it.",
+   "diag": {
+    "1": "$\\left(\\frac12\\right)^{x}$: passes through $(0,1)$ but falls to the right",
+    "2": "$x^{2}$: a parabola, symmetric and through the origin",
+    "3": "$2x$: a line through the origin"
+   }
+  },
+  {
+   "id": "4.1/O3/q2",
+   "obj": "4.1/O3",
+   "level": "core",
+   "kind": "compute",
+   "stem": [
+    {
+     "t": "text",
+     "v": "$f(x)=a^{x}$ and $f(2)=25$. Assume $a>0$. Find $f(3)$."
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "size": 5,
+      "label": "$f(3)=$"
+     }
+    ]
+   },
+   "key": "125",
+   "why": "$a^{2}=25$ gives $a=5$, so $f(3)=5^{3}=125$."
+  },
+  {
+   "id": "4.1/O3/q3",
+   "obj": "4.1/O3",
+   "level": "core",
+   "kind": "fill",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Give a rule of the form $f(x)=a^{x}$ for the exponential function whose graph contains the given point."
+    }
+   ],
+   "answer": {
+    "kind": "fill",
+    "template": "Through $(2,49)$: $f(x)=⟨0⟩^{x}$. \\quad Through $(3,64)$: $g(x)=⟨1⟩^{x}$.",
+    "slots": [
+     {
+      "size": 3
+     },
+     {
+      "size": 3
+     }
+    ]
+   },
+   "key": "7, 4",
+   "why": "$a^{2}=49$ gives $a=7$; $a^{3}=64$ gives $a=4$."
+  },
+  {
+   "id": "4.1/O3/q4",
+   "obj": "4.1/O3",
+   "level": "stretch",
+   "kind": "multipart",
+   "stem": [
+    {
+     "t": "text",
+     "v": "$f(x)=2^{x}$, $g(x)=2^{x+3}$ and $h(x)=2^{x-3}$."
+    }
+   ],
+   "answer": {
+    "kind": "multipart",
+    "parts": [
+     {
+      "label": "(a)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Complete the sentence."
+       }
+      ],
+      "answer": {
+       "kind": "select",
+       "template": "The graph of $g$ is the graph of $f$ shifted ⟨0⟩ by $3$.",
+       "slots": [
+        {
+         "options": [
+          "to the left",
+          "to the right",
+          "upwards",
+          "downwards"
+         ]
+        }
+       ]
+      }
+     },
+     {
+      "label": "(b)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Complete the sentence."
+       }
+      ],
+      "answer": {
+       "kind": "select",
+       "template": "The graph of $h$ is the graph of $f$ shifted ⟨0⟩ by $3$.",
+       "slots": [
+        {
+         "options": [
+          "to the left",
+          "to the right",
+          "upwards",
+          "downwards"
+         ]
+        }
+       ]
+      }
+     },
+     {
+      "label": "(c)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Find $g(-3)$ and $h(3)$."
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 4,
+         "label": "$g(-3)=$"
+        },
+        {
+         "size": 4,
+         "label": "$h(3)=$"
+        }
+       ]
+      }
+     }
+    ]
+   },
+   "key": "to the left; to the right; 1, 1",
+   "why": "$g(-3)=2^{0}=1$, the value $f$ has at $0$, so $g$ reaches each height $3$ units earlier; $h(3)=2^{0}=1$, three units later."
+  },
+  {
+   "id": "4.1/O4/q1",
+   "obj": "4.1/O4",
+   "level": "core",
+   "kind": "multipart",
+   "stem": [
+    {
+     "t": "text",
+     "v": "The assets of a firm (millions of dollars) are approximated by $A(x)=200(1.05)^{x}$, where $x=10$ corresponds to 2010."
+    }
+   ],
+   "answer": {
+    "kind": "multipart",
+    "parts": [
+     {
+      "label": "(a)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Which value of $x$ represents 2014?"
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 4,
+         "label": "$x=$"
+        }
+       ]
+      }
+     },
+     {
+      "label": "(b)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Find the assets in 2014, to the nearest hundredth."
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 8,
+         "label": "$A(14)=$"
+        }
+       ]
+      }
+     }
+    ]
+   },
+   "key": "14; 395.99",
+   "why": "$x=2014-2000=14$, and $200(1.05)^{14}=395.99$."
+  },
+  {
+   "id": "4.1/O4/q2",
+   "obj": "4.1/O4",
+   "level": "core",
+   "kind": "compute",
+   "stem": [
+    {
+     "t": "text",
+     "v": "The table gives the value $y$ of one dollar after $t$ years, as money loses value. Estimate the cost in $4$ years of an item that costs $50$ dollars today."
+    },
+    {
+     "t": "table",
+     "cols": [
+      "$t$",
+      "$1$",
+      "$2$",
+      "$3$",
+      "$4$",
+      "$5$"
+     ],
+     "rows": [
+      [
+       "$y$",
+       "0.95",
+       "0.90",
+       "0.86",
+       "0.82",
+       "0.78"
+      ]
+     ],
+     "numeric": true
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "size": 7,
+      "label": "dollars"
+     }
+    ],
+    "note": "round to the nearest cent"
+   },
+   "key": "60.98",
+   "why": "In $4$ years a dollar is worth $0.82$ of today's dollar, so the item costs $\\dfrac{50}{0.82}=60.98$: the price is divided by the value, not multiplied."
+  },
+  {
+   "id": "4.1/O4/q3",
+   "obj": "4.1/O4",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "The assets of a firm are approximated by $A(x)=344e^{0.07x}$, where $x=7$ corresponds to 2007. Which method finds the assets in 2016?"
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "text",
+       "v": "Substitute $16$ for $x$ and evaluate $A(16)$."
+      }
+     ],
+     [
+      {
+       "t": "text",
+       "v": "Find where the graph of $A$ meets the line $y=16$; the assets are the $x$-coordinate."
+      }
+     ],
+     [
+      {
+       "t": "text",
+       "v": "Substitute $2016$ for $x$ and evaluate."
+      }
+     ],
+     [
+      {
+       "t": "text",
+       "v": "Find where the graph of $A$ meets the line $y=2016$."
+      }
+     ]
+    ],
+    "multi": false
+   },
+   "key": "0",
+   "why": "A year is given and a value is wanted: the year's $x$ goes into the rule.",
+   "diag": {
+    "1": "that method answers the reverse question, a value given and the year wanted",
+    "2": "the convention makes 2016 into $x=16$, not $2016$",
+    "3": "intersecting with a horizontal line is for a given value of $A$, and $2016$ is a year, not an amount"
+   }
+  },
+  {
+   "id": "4.1/O4/q4",
+   "obj": "4.1/O4",
+   "level": "stretch",
+   "kind": "multipart",
+   "stem": [
+    {
+     "t": "text",
+     "v": "The amount invested in a type of fund (trillions of dollars) is approximated by $B(x)=0.5(1.2)^{x}$, where $x=10$ corresponds to 2010."
+    }
+   ],
+   "answer": {
+    "kind": "multipart",
+    "parts": [
+     {
+      "label": "(a)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Find the amount in 2015, to the nearest hundredth."
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 7,
+         "label": "$B(15)=$"
+        }
+       ]
+      }
+     },
+     {
+      "label": "(b)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Which method finds the first full year in which the amount exceeds $20$ trillion dollars?"
+       }
+      ],
+      "answer": {
+       "kind": "choice",
+       "options": [
+        [
+         {
+          "t": "text",
+          "v": "Find where the graph of $B$ meets the line $y=20$; the year is read from the $x$-coordinate."
+         }
+        ],
+        [
+         {
+          "t": "text",
+          "v": "Substitute $20$ for $x$ and evaluate $B(20)$."
+         }
+        ]
+       ],
+       "multi": false
+      }
+     }
+    ]
+   },
+   "key": "7.70; 0",
+   "why": "$0.5(1.2)^{15}=7.70$; a value of $B$ is given, so the year is where the graph reaches height $20$.",
+   "diag": {
+    "1": "(b): $20$ is an amount of money, not a year, so it is not an input"
+   }
+  }
+ ],
+ "4.2": [
+  {
+   "id": "4.2/O1/q1",
+   "obj": "4.2/O1",
+   "level": "core",
+   "kind": "compute",
+   "stem": [
+    {
+     "t": "text",
+     "v": "The annual output of a plant (thousand tonnes) is approximated by $g(t)=15.2(1.03)^{t}$, where $t=10$ corresponds to 2010. Find the output in 2020, to two decimal places."
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "size": 7,
+      "label": "$g(20)=$"
+     }
+    ]
+   },
+   "key": "27.45",
+   "why": "2020 is $t=20$, and $15.2(1.03)^{20}=27.45$."
+  },
+  {
+   "id": "4.2/O1/q2",
+   "obj": "4.2/O1",
+   "level": "core",
+   "kind": "compute",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Production (millions of barrels) is approximated by $f(t)=1500(1.04)^{t}$, where $t=8$ corresponds to 2008. If the trend continues, find the production in 2018, to the nearest whole number."
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "size": 7,
+      "label": "$f(18)=$"
+     }
+    ]
+   },
+   "key": "3039",
+   "why": "2018 is $t=18$, and $1500(1.04)^{18}\\approx 3038.7$, which rounds to $3039$."
+  },
+  {
+   "id": "4.2/O1/q3",
+   "obj": "4.2/O1",
+   "level": "core",
+   "kind": "multipart",
+   "stem": [
+    {
+     "t": "text",
+     "v": "The number of subscribers (thousands) is approximated by $P(t)=80(0.97)^{t}$, where $t=0$ corresponds to 2010."
+    }
+   ],
+   "answer": {
+    "kind": "multipart",
+    "parts": [
+     {
+      "label": "(a)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Find the number in 2015, to one decimal place."
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 6,
+         "label": "$P(5)=$"
+        }
+       ]
+      }
+     },
+     {
+      "label": "(b)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Over time, the number"
+       }
+      ],
+      "answer": {
+       "kind": "select",
+       "template": "⟨0⟩.",
+       "slots": [
+        {
+         "options": [
+          "grows",
+          "decays"
+         ]
+        }
+       ]
+      }
+     }
+    ]
+   },
+   "key": "68.7; decays",
+   "why": "$80(0.97)^{5}=68.7$; the base $0.97$ is less than $1$, so each year multiplies by less than $1$."
+  },
+  {
+   "id": "4.2/O1/q4",
+   "obj": "4.2/O1",
+   "level": "stretch",
+   "kind": "multipart",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Two models for the same quantity from $t=0$: $L(t)=15+0.5t$ and $E(t)=15(1.03)^{t}$."
+    }
+   ],
+   "answer": {
+    "kind": "multipart",
+    "parts": [
+     {
+      "label": "(a)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Find both at $t=20$, to one decimal place."
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 6,
+         "label": "$L(20)=$"
+        },
+        {
+         "size": 6,
+         "label": "$E(20)=$"
+        }
+       ]
+      }
+     },
+     {
+      "label": "(b)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "At $t=20$, which model gives the larger value?"
+       }
+      ],
+      "answer": {
+       "kind": "choice",
+       "options": [
+        [
+         {
+          "t": "math",
+          "tex": "L",
+          "display": false
+         }
+        ],
+        [
+         {
+          "t": "math",
+          "tex": "E",
+          "display": false
+         }
+        ]
+       ],
+       "multi": false
+      }
+     }
+    ]
+   },
+   "key": "25.0, 27.1; 1",
+   "why": "$L(20)=25$ adds $0.5$ twenty times; $E(20)=15(1.03)^{20}=27.1$ multiplies by $1.03$ twenty times, and by $t=20$ the multiplying has overtaken the adding.",
+   "diag": {
+    "0": "(b): at $t=20$ the exponential value $27.1$ is the larger"
+   }
+  },
+  {
+   "id": "4.2/O2/q1",
+   "obj": "4.2/O2",
+   "level": "core",
+   "kind": "compute",
+   "stem": [
+    {
+     "t": "text",
+     "v": "The percent of residents using a service is approximated by $g(t)=\\dfrac{600}{1+29e^{-0.07t}}$, where $t=0$ corresponds to 2010. Find the percent in 2018, to one decimal place."
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "size": 6,
+      "label": "$g(8)=$"
+     }
+    ]
+   },
+   "key": "34.2",
+   "why": "$t=8$, and $\\dfrac{600}{1+29e^{-0.56}}=34.2$."
+  },
+  {
+   "id": "4.2/O2/q2",
+   "obj": "4.2/O2",
+   "level": "core",
+   "kind": "multipart",
+   "stem": [
+    {
+     "t": "text",
+     "v": "With the same model $g(t)=\\dfrac{600}{1+29e^{-0.07t}}$, $t=0$ corresponding to 2010:"
+    }
+   ],
+   "answer": {
+    "kind": "multipart",
+    "parts": [
+     {
+      "label": "(a)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Find the percent in 2022, to one decimal place."
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 6,
+         "label": "$g(12)=$"
+        }
+       ]
+      }
+     },
+     {
+      "label": "(b)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "According to the model, does the percent reach $70$ by 2025?"
+       }
+      ],
+      "answer": {
+       "kind": "choice",
+       "options": [
+        [
+         {
+          "t": "text",
+          "v": "Yes"
+         }
+        ],
+        [
+         {
+          "t": "text",
+          "v": "No"
+         }
+        ]
+       ],
+       "multi": false
+      }
+     },
+     {
+      "label": "(c)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Find the model's value for 2025, to one decimal place."
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 6,
+         "label": "$g(15)=$"
+        }
+       ]
+      }
+     }
+    ]
+   },
+   "key": "44.4; 1; 53.8",
+   "why": "$g(12)=44.4$ and $g(15)=53.8$, which is below $70$.",
+   "diag": {
+    "0": "(b): $g(15)$ is about $54$, short of $70$"
+   }
+  },
+  {
+   "id": "4.2/O2/q3",
+   "obj": "4.2/O2",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "For $g(t)=\\dfrac{600}{1+29e^{-0.07t}}$, as $t$ grows large, $e^{-0.07t}$ approaches $0$. The value of $g(t)$ approaches"
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "math",
+       "tex": "600",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "29",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "0",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "\\dfrac{600}{30}",
+       "display": false
+      }
+     ]
+    ],
+    "multi": false
+   },
+   "key": "0",
+   "why": "With $e^{-0.07t}$ near $0$ the denominator is near $1$, so $g(t)$ is near $600$: the model's ceiling.",
+   "diag": {
+    "1": "$29$ is the coefficient of the shrinking term, not a value of $g$",
+    "2": "the denominator approaches $1$, not infinity",
+    "3": "$\\frac{600}{30}$ is $g(0)$, the starting value, not the long-run value"
+   }
+  },
+  {
+   "id": "4.2/O2/q4",
+   "obj": "4.2/O2",
+   "level": "stretch",
+   "kind": "multipart",
+   "stem": [
+    {
+     "t": "text",
+     "v": "The model is $h(t)=\\dfrac{400}{1+19e^{-0.09t}}$, with $t=0$ corresponding to 2012."
+    }
+   ],
+   "answer": {
+    "kind": "multipart",
+    "parts": [
+     {
+      "label": "(a)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Which expression gives the value for 2020?"
+       }
+      ],
+      "answer": {
+       "kind": "choice",
+       "options": [
+        [
+         {
+          "t": "math",
+          "tex": "\\dfrac{400}{1+19e^{-0.09\\cdot 8}}",
+          "display": false
+         }
+        ],
+        [
+         {
+          "t": "math",
+          "tex": "\\dfrac{400}{1+19e^{-0.09}}\\cdot 8",
+          "display": false
+         }
+        ],
+        [
+         {
+          "t": "math",
+          "tex": "\\dfrac{400}{1+19e^{-0.09\\cdot 2020}}",
+          "display": false
+         }
+        ],
+        [
+         {
+          "t": "math",
+          "tex": "\\dfrac{400}{(1+19e^{-0.09})^{8}}",
+          "display": false
+         }
+        ]
+       ],
+       "multi": false
+      }
+     },
+     {
+      "label": "(b)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Evaluate it, to one decimal place."
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 6,
+         "label": "$h(8)=$"
+        }
+       ]
+      }
+     }
+    ]
+   },
+   "key": "0; 39.0",
+   "why": "2020 is $t=8$, which goes into the exponent: $\\dfrac{400}{1+19e^{-0.72}}=39.0$.",
+   "diag": {
+    "1": "(a): $t$ multiplies the whole fraction instead of the exponent",
+    "2": "(a): the year itself used as $t$ instead of $2020-2012$",
+    "3": "(a): $t$ applied as a power of the denominator"
+   }
+  }
+ ]
+}

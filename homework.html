@@ -24,7 +24,7 @@ const d = await (await fetch('data/course.json', {cache:'no-store'})).json();
 // Practice questions written for this course. The assignments are in MyLab;
 // these cover the same objectives.
 let Q = {};
-for (const f of ['q_a','q_b','q_c']) {
+for (const f of ['q_a','q_b','q_c','q_d','q_e','q_f']) {
   try { Object.assign(Q, await (await fetch('data/' + f + '.json', {cache:'no-store'})).json()); }
   catch {}
 }

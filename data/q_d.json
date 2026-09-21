@@ -1,0 +1,3443 @@
+{
+ "2.1": [
+  {
+   "id": "2.1/O1/q1",
+   "obj": "2.1/O1",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "In which quadrant does the point $(-4,7)$ lie?"
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "text",
+       "v": "Quadrant I"
+      }
+     ],
+     [
+      {
+       "t": "text",
+       "v": "Quadrant II"
+      }
+     ],
+     [
+      {
+       "t": "text",
+       "v": "Quadrant III"
+      }
+     ],
+     [
+      {
+       "t": "text",
+       "v": "Quadrant IV"
+      }
+     ]
+    ],
+    "multi": false
+   },
+   "key": "1",
+   "why": "The first coordinate $-4$ is negative and the second $7$ is positive, which is the upper left.",
+   "diag": {
+    "0": "reads the negative $x$ as though it were to the right",
+    "2": "takes both coordinates as negative",
+    "3": "swaps the coordinates, placing $7$ horizontally and $-4$ vertically"
+   }
+  },
+  {
+   "id": "2.1/O1/q2",
+   "obj": "2.1/O1",
+   "level": "core",
+   "kind": "select",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Complete the sentence."
+    }
+   ],
+   "answer": {
+    "kind": "select",
+    "template": "The point $(5,-3)$ lies in quadrant ⟨0⟩.",
+    "slots": [
+     {
+      "options": [
+       "I",
+       "II",
+       "III",
+       "IV"
+      ]
+     }
+    ]
+   },
+   "key": "IV",
+   "why": "$x=5$ is to the right and $y=-3$ is below the axis, which is the lower right."
+  },
+  {
+   "id": "2.1/O1/q3",
+   "obj": "2.1/O1",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Which point lies in Quadrant III?"
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "math",
+       "tex": "(2,-6)",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "(-3,-1)",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "(-5,4)",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "(0,-2)",
+       "display": false
+      }
+     ]
+    ],
+    "multi": false
+   },
+   "key": "1",
+   "why": "Quadrant III is the lower left, where both coordinates are negative: $(-3,-1)$.",
+   "diag": {
+    "0": "$x=2$ is positive, so $(2,-6)$ is in Quadrant IV",
+    "2": "$y=4$ is positive, so $(-5,4)$ is in Quadrant II",
+    "3": "$x=0$ puts $(0,-2)$ on the $y$-axis, in no quadrant"
+   }
+  },
+  {
+   "id": "2.1/O1/q4",
+   "obj": "2.1/O1",
+   "level": "stretch",
+   "kind": "multipart",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Four points are listed."
+    }
+   ],
+   "answer": {
+    "kind": "multipart",
+    "parts": [
+     {
+      "label": "(a)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Which point lies in no quadrant?"
+       }
+      ],
+      "answer": {
+       "kind": "choice",
+       "options": [
+        [
+         {
+          "t": "math",
+          "tex": "(0,-5)",
+          "display": false
+         }
+        ],
+        [
+         {
+          "t": "math",
+          "tex": "(-5,-5)",
+          "display": false
+         }
+        ],
+        [
+         {
+          "t": "math",
+          "tex": "(5,-5)",
+          "display": false
+         }
+        ],
+        [
+         {
+          "t": "math",
+          "tex": "(-5,5)",
+          "display": false
+         }
+        ]
+       ],
+       "multi": false
+      }
+     },
+     {
+      "label": "(b)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "That point lies on an axis. Which one?"
+       }
+      ],
+      "answer": {
+       "kind": "select",
+       "template": "It lies on the ⟨0⟩-axis.",
+       "slots": [
+        {
+         "options": [
+          "x",
+          "y"
+         ]
+        }
+       ]
+      }
+     }
+    ]
+   },
+   "key": "0; y",
+   "why": "A point with a coordinate equal to $0$ sits on an axis; $x=0$ means the $y$-axis.",
+   "diag": {
+    "1": "(a): $(-5,-5)$ is in Quadrant III",
+    "2": "(a): $(5,-5)$ is in Quadrant IV",
+    "3": "(a): $(-5,5)$ is in Quadrant II"
+   }
+  },
+  {
+   "id": "2.1/O2/q1",
+   "obj": "2.1/O2",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Is $(3,-2)$ a solution of the equation?"
+    },
+    {
+     "t": "math",
+     "tex": "2x-5y=16",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "text",
+       "v": "Yes"
+      }
+     ],
+     [
+      {
+       "t": "text",
+       "v": "No"
+      }
+     ]
+    ],
+    "multi": false
+   },
+   "key": "0",
+   "why": "$2(3)-5(-2)=6+10=16$, so the pair makes the equation true.",
+   "diag": {
+    "1": "sign lost on $-5(-2)$, giving $6-10=-4$ instead of $16$"
+   }
+  },
+  {
+   "id": "2.1/O2/q2",
+   "obj": "2.1/O2",
+   "level": "core",
+   "kind": "compute",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Find $y$ so that $(4,y)$ is a solution of $3x+y=7$."
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "size": 6,
+      "label": "$y=$"
+     }
+    ]
+   },
+   "key": "-5",
+   "why": "Substituting $x=4$ gives $12+y=7$, so $y=-5$."
+  },
+  {
+   "id": "2.1/O2/q3",
+   "obj": "2.1/O2",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Which ordered pair is a solution of $y=-2x+5$?"
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "math",
+       "tex": "(1,3)",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "(3,1)",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "(0,-5)",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "(-1,3)",
+       "display": false
+      }
+     ]
+    ],
+    "multi": false
+   },
+   "key": "0",
+   "why": "At $x=1$, $-2(1)+5=3$, so $(1,3)$ satisfies the equation.",
+   "diag": {
+    "1": "the coordinates of $(1,3)$ swapped; at $x=3$ the equation gives $-1$",
+    "2": "at $x=0$ the value is $+5$, not $-5$",
+    "3": "at $x=-1$, $-2(-1)+5=7$, not $3$"
+   }
+  },
+  {
+   "id": "2.1/O2/q4",
+   "obj": "2.1/O2",
+   "level": "stretch",
+   "kind": "multipart",
+   "stem": [
+    {
+     "t": "text",
+     "v": "The equation is $x-3y=6$."
+    }
+   ],
+   "answer": {
+    "kind": "multipart",
+    "parts": [
+     {
+      "label": "(a)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Is $(0,-2)$ a solution?"
+       }
+      ],
+      "answer": {
+       "kind": "choice",
+       "options": [
+        [
+         {
+          "t": "text",
+          "v": "Yes"
+         }
+        ],
+        [
+         {
+          "t": "text",
+          "v": "No"
+         }
+        ]
+       ],
+       "multi": false
+      }
+     },
+     {
+      "label": "(b)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Is $(6,0)$ a solution?"
+       }
+      ],
+      "answer": {
+       "kind": "choice",
+       "options": [
+        [
+         {
+          "t": "text",
+          "v": "Yes"
+         }
+        ],
+        [
+         {
+          "t": "text",
+          "v": "No"
+         }
+        ]
+       ],
+       "multi": false
+      }
+     },
+     {
+      "label": "(c)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Is $(3,1)$ a solution?"
+       }
+      ],
+      "answer": {
+       "kind": "choice",
+       "options": [
+        [
+         {
+          "t": "text",
+          "v": "Yes"
+         }
+        ],
+        [
+         {
+          "t": "text",
+          "v": "No"
+         }
+        ]
+       ],
+       "multi": false
+      }
+     }
+    ]
+   },
+   "key": "Yes; Yes; No",
+   "why": "$0-3(-2)=6$ and $6-0=6$ hold; $3-3(1)=0$ does not. The two pairs that work are the intercepts.",
+   "diag": {
+    "1": "(a) or (b): a sign error in $-3(-2)$; (c): $3-3$ read as $6$"
+   }
+  },
+  {
+   "id": "2.1/O3/q1",
+   "obj": "2.1/O3",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Which graph is the line $x+2y=4$?"
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "plane",
+       "xr": [
+        -8,
+        8
+       ],
+       "yr": [
+        -8,
+        8
+       ],
+       "stepx": 2,
+       "stepy": 2,
+       "curves": [
+        {
+         "points": [
+          {
+           "x": -8.0,
+           "y": 6.0
+          },
+          {
+           "x": 8.0,
+           "y": -2.0
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     [
+      {
+       "t": "plane",
+       "xr": [
+        -8,
+        8
+       ],
+       "yr": [
+        -8,
+        8
+       ],
+       "stepx": 2,
+       "stepy": 2,
+       "curves": [
+        {
+         "points": [
+          {
+           "x": -2.0,
+           "y": 8.0
+          },
+          {
+           "x": 6.0,
+           "y": -8.0
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     [
+      {
+       "t": "plane",
+       "xr": [
+        -8,
+        8
+       ],
+       "yr": [
+        -8,
+        8
+       ],
+       "stepx": 2,
+       "stepy": 2,
+       "curves": [
+        {
+         "points": [
+          {
+           "x": -8.0,
+           "y": -2.0
+          },
+          {
+           "x": 8.0,
+           "y": 6.0
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     [
+      {
+       "t": "plane",
+       "xr": [
+        -8,
+        8
+       ],
+       "yr": [
+        -8,
+        8
+       ],
+       "stepx": 2,
+       "stepy": 2,
+       "curves": [
+        {
+         "points": [
+          {
+           "x": -8.0,
+           "y": 2.0
+          },
+          {
+           "x": 8.0,
+           "y": -6.0
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    ],
+    "multi": false
+   },
+   "key": "0",
+   "why": "At $x=0$, $2y=4$ gives $(0,2)$; at $y=0$, $x=4$ gives $(4,0)$, and the line through them falls to the right.",
+   "diag": {
+    "1": "intercepts swapped: the line drawn passes through $(0,4)$ and $(2,0)$",
+    "2": "the line rises, so its points such as $(4,4)$ give $4+8=12$, not $4$",
+    "3": "$(0,-2)$ gives $0-4=-4$, not $4$; the $y$-intercept sign is lost"
+   }
+  },
+  {
+   "id": "2.1/O3/q2",
+   "obj": "2.1/O3",
+   "level": "core",
+   "kind": "fill",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Complete the table of solutions of $2x-y=6$."
+    },
+    {
+     "t": "table",
+     "cols": [
+      "$x$",
+      "$y$"
+     ],
+     "rows": [
+      [
+       "0",
+       null
+      ],
+      [
+       "3",
+       null
+      ],
+      [
+       "5",
+       null
+      ]
+     ],
+     "numeric": true
+    }
+   ],
+   "answer": {
+    "kind": "fill",
+    "template": "$(0,⟨0⟩)$, $(3,⟨1⟩)$, $(5,⟨2⟩)$",
+    "slots": [
+     {
+      "size": 4
+     },
+     {
+      "size": 4
+     },
+     {
+      "size": 4
+     }
+    ]
+   },
+   "key": "-6, 0, 4",
+   "why": "Solving for $y$ gives $y=2x-6$; the three values of $x$ give $-6$, $0$ and $4$."
+  },
+  {
+   "id": "2.1/O3/q3",
+   "obj": "2.1/O3",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Which graph is the line $y=3x$?"
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "plane",
+       "xr": [
+        -4,
+        4
+       ],
+       "yr": [
+        -8,
+        8
+       ],
+       "stepx": 2,
+       "stepy": 2,
+       "curves": [
+        {
+         "points": [
+          {
+           "x": -2.6667,
+           "y": -8.0
+          },
+          {
+           "x": 2.6667,
+           "y": 8.0
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     [
+      {
+       "t": "plane",
+       "xr": [
+        -4,
+        4
+       ],
+       "yr": [
+        -8,
+        8
+       ],
+       "stepx": 2,
+       "stepy": 2,
+       "curves": [
+        {
+         "points": [
+          {
+           "x": -4.0,
+           "y": -1.3333
+          },
+          {
+           "x": 4.0,
+           "y": 1.3333
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     [
+      {
+       "t": "plane",
+       "xr": [
+        -4,
+        4
+       ],
+       "yr": [
+        -8,
+        8
+       ],
+       "stepx": 2,
+       "stepy": 2,
+       "curves": [
+        {
+         "points": [
+          {
+           "x": -2.6667,
+           "y": 8.0
+          },
+          {
+           "x": 2.6667,
+           "y": -8.0
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     [
+      {
+       "t": "plane",
+       "xr": [
+        -4,
+        4
+       ],
+       "yr": [
+        -8,
+        8
+       ],
+       "stepx": 2,
+       "stepy": 2,
+       "curves": [
+        {
+         "points": [
+          {
+           "x": -3.6667,
+           "y": -8.0
+          },
+          {
+           "x": 1.6667,
+           "y": 8.0
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    ],
+    "multi": false
+   },
+   "key": "0",
+   "why": "The line passes through $(0,0)$ and $(1,3)$: up $3$ for each $1$ to the right.",
+   "diag": {
+    "1": "up $1$ for each $3$ to the right, which is $y=\\frac{1}{3}x$",
+    "2": "falls to the right, which is $y=-3x$",
+    "3": "passes through $(0,3)$, so it is $y=3x+3$"
+   }
+  },
+  {
+   "id": "2.1/O3/q4",
+   "obj": "2.1/O3",
+   "level": "stretch",
+   "kind": "multipart",
+   "stem": [
+    {
+     "t": "text",
+     "v": "The equation is $3x+4y=12$."
+    }
+   ],
+   "answer": {
+    "kind": "multipart",
+    "parts": [
+     {
+      "label": "(a)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Find the two points where the line meets the axes."
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 4,
+         "label": "$x$-intercept"
+        },
+        {
+         "size": 4,
+         "label": "$y$-intercept"
+        }
+       ]
+      }
+     },
+     {
+      "label": "(b)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Is $(2,1.5)$ on the line?"
+       }
+      ],
+      "answer": {
+       "kind": "choice",
+       "options": [
+        [
+         {
+          "t": "text",
+          "v": "Yes"
+         }
+        ],
+        [
+         {
+          "t": "text",
+          "v": "No"
+         }
+        ]
+       ],
+       "multi": false
+      }
+     }
+    ]
+   },
+   "key": "4, 3; Yes",
+   "why": "$y=0$ gives $x=4$ and $x=0$ gives $y=3$; at $(2,1.5)$, $6+6=12$, so it lies on the line.",
+   "diag": {
+    "1": "(b): $4(1.5)$ computed as $4.5$ or $2$ rather than $6$"
+   }
+  },
+  {
+   "id": "2.1/O4/q1",
+   "obj": "2.1/O4",
+   "level": "core",
+   "kind": "fill",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Find the intercepts of the line from its graph."
+    },
+    {
+     "t": "plane",
+     "xr": [
+      -6,
+      6
+     ],
+     "yr": [
+      -6,
+      6
+     ],
+     "stepx": 2,
+     "stepy": 2,
+     "curves": [
+      {
+       "points": [
+        {
+         "x": -6.0,
+         "y": -2.0
+        },
+        {
+         "x": 6.0,
+         "y": 6.0
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "answer": {
+    "kind": "fill",
+    "template": "The $x$-intercept is ⟨0⟩ and the $y$-intercept is ⟨1⟩.",
+    "slots": [
+     {
+      "size": 4
+     },
+     {
+      "size": 4
+     }
+    ]
+   },
+   "key": "-3, 2",
+   "why": "The line crosses the $x$-axis at $(-3,0)$ and the $y$-axis at $(0,2)$."
+  },
+  {
+   "id": "2.1/O4/q2",
+   "obj": "2.1/O4",
+   "level": "core",
+   "kind": "fill",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Find all the intercepts of the graph."
+    },
+    {
+     "t": "plane",
+     "xr": [
+      -4,
+      6
+     ],
+     "yr": [
+      -4,
+      6
+     ],
+     "stepx": 2,
+     "stepy": 2,
+     "curves": [
+      {
+       "points": [
+        {
+         "x": -0.6,
+         "y": 5.76
+        },
+        {
+         "x": -0.4917,
+         "y": 5.2084
+        },
+        {
+         "x": -0.3833,
+         "y": 4.6803
+        },
+        {
+         "x": -0.275,
+         "y": 4.1756
+        },
+        {
+         "x": -0.1667,
+         "y": 3.6944
+        },
+        {
+         "x": -0.0583,
+         "y": 3.2367
+        },
+        {
+         "x": 0.05,
+         "y": 2.8025
+        },
+        {
+         "x": 0.1583,
+         "y": 2.3917
+        },
+        {
+         "x": 0.2667,
+         "y": 2.0044
+        },
+        {
+         "x": 0.375,
+         "y": 1.6406
+        },
+        {
+         "x": 0.4833,
+         "y": 1.3003
+        },
+        {
+         "x": 0.5917,
+         "y": 0.9834
+        },
+        {
+         "x": 0.7,
+         "y": 0.69
+        },
+        {
+         "x": 0.8083,
+         "y": 0.4201
+        },
+        {
+         "x": 0.9167,
+         "y": 0.1736
+        },
+        {
+         "x": 1.025,
+         "y": -0.0494
+        },
+        {
+         "x": 1.1333,
+         "y": -0.2489
+        },
+        {
+         "x": 1.2417,
+         "y": -0.4249
+        },
+        {
+         "x": 1.35,
+         "y": -0.5775
+        },
+        {
+         "x": 1.4583,
+         "y": -0.7066
+        },
+        {
+         "x": 1.5667,
+         "y": -0.8122
+        },
+        {
+         "x": 1.675,
+         "y": -0.8944
+        },
+        {
+         "x": 1.7833,
+         "y": -0.9531
+        },
+        {
+         "x": 1.8917,
+         "y": -0.9883
+        },
+        {
+         "x": 2.0,
+         "y": -1.0
+        },
+        {
+         "x": 2.1083,
+         "y": -0.9883
+        },
+        {
+         "x": 2.2167,
+         "y": -0.9531
+        },
+        {
+         "x": 2.325,
+         "y": -0.8944
+        },
+        {
+         "x": 2.4333,
+         "y": -0.8122
+        },
+        {
+         "x": 2.5417,
+         "y": -0.7066
+        },
+        {
+         "x": 2.65,
+         "y": -0.5775
+        },
+        {
+         "x": 2.7583,
+         "y": -0.4249
+        },
+        {
+         "x": 2.8667,
+         "y": -0.2489
+        },
+        {
+         "x": 2.975,
+         "y": -0.0494
+        },
+        {
+         "x": 3.0833,
+         "y": 0.1736
+        },
+        {
+         "x": 3.1917,
+         "y": 0.4201
+        },
+        {
+         "x": 3.3,
+         "y": 0.69
+        },
+        {
+         "x": 3.4083,
+         "y": 0.9834
+        },
+        {
+         "x": 3.5167,
+         "y": 1.3003
+        },
+        {
+         "x": 3.625,
+         "y": 1.6406
+        },
+        {
+         "x": 3.7333,
+         "y": 2.0044
+        },
+        {
+         "x": 3.8417,
+         "y": 2.3917
+        },
+        {
+         "x": 3.95,
+         "y": 2.8025
+        },
+        {
+         "x": 4.0583,
+         "y": 3.2367
+        },
+        {
+         "x": 4.1667,
+         "y": 3.6944
+        },
+        {
+         "x": 4.275,
+         "y": 4.1756
+        },
+        {
+         "x": 4.3833,
+         "y": 4.6803
+        },
+        {
+         "x": 4.4917,
+         "y": 5.2084
+        },
+        {
+         "x": 4.6,
+         "y": 5.76
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "answer": {
+    "kind": "fill",
+    "template": "$x$-intercepts: ⟨0⟩ and ⟨1⟩. $y$-intercept: ⟨2⟩.",
+    "slots": [
+     {
+      "size": 4
+     },
+     {
+      "size": 4
+     },
+     {
+      "size": 4
+     }
+    ]
+   },
+   "key": "1, 3, 3",
+   "why": "The curve crosses the $x$-axis at $1$ and at $3$, and the $y$-axis at $3$."
+  },
+  {
+   "id": "2.1/O4/q3",
+   "obj": "2.1/O4",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "How many $x$-intercepts does this graph have?"
+    },
+    {
+     "t": "plane",
+     "xr": [
+      -4,
+      4
+     ],
+     "yr": [
+      -2,
+      8
+     ],
+     "stepx": 2,
+     "stepy": 2,
+     "curves": [
+      {
+       "points": [
+        {
+         "x": -2.6,
+         "y": 7.76
+        },
+        {
+         "x": -2.4917,
+         "y": 7.2084
+        },
+        {
+         "x": -2.3833,
+         "y": 6.6803
+        },
+        {
+         "x": -2.275,
+         "y": 6.1756
+        },
+        {
+         "x": -2.1667,
+         "y": 5.6944
+        },
+        {
+         "x": -2.0583,
+         "y": 5.2367
+        },
+        {
+         "x": -1.95,
+         "y": 4.8025
+        },
+        {
+         "x": -1.8417,
+         "y": 4.3917
+        },
+        {
+         "x": -1.7333,
+         "y": 4.0044
+        },
+        {
+         "x": -1.625,
+         "y": 3.6406
+        },
+        {
+         "x": -1.5167,
+         "y": 3.3003
+        },
+        {
+         "x": -1.4083,
+         "y": 2.9834
+        },
+        {
+         "x": -1.3,
+         "y": 2.69
+        },
+        {
+         "x": -1.1917,
+         "y": 2.4201
+        },
+        {
+         "x": -1.0833,
+         "y": 2.1736
+        },
+        {
+         "x": -0.975,
+         "y": 1.9506
+        },
+        {
+         "x": -0.8667,
+         "y": 1.7511
+        },
+        {
+         "x": -0.7583,
+         "y": 1.5751
+        },
+        {
+         "x": -0.65,
+         "y": 1.4225
+        },
+        {
+         "x": -0.5417,
+         "y": 1.2934
+        },
+        {
+         "x": -0.4333,
+         "y": 1.1878
+        },
+        {
+         "x": -0.325,
+         "y": 1.1056
+        },
+        {
+         "x": -0.2167,
+         "y": 1.0469
+        },
+        {
+         "x": -0.1083,
+         "y": 1.0117
+        },
+        {
+         "x": 0.0,
+         "y": 1.0
+        },
+        {
+         "x": 0.1083,
+         "y": 1.0117
+        },
+        {
+         "x": 0.2167,
+         "y": 1.0469
+        },
+        {
+         "x": 0.325,
+         "y": 1.1056
+        },
+        {
+         "x": 0.4333,
+         "y": 1.1878
+        },
+        {
+         "x": 0.5417,
+         "y": 1.2934
+        },
+        {
+         "x": 0.65,
+         "y": 1.4225
+        },
+        {
+         "x": 0.7583,
+         "y": 1.5751
+        },
+        {
+         "x": 0.8667,
+         "y": 1.7511
+        },
+        {
+         "x": 0.975,
+         "y": 1.9506
+        },
+        {
+         "x": 1.0833,
+         "y": 2.1736
+        },
+        {
+         "x": 1.1917,
+         "y": 2.4201
+        },
+        {
+         "x": 1.3,
+         "y": 2.69
+        },
+        {
+         "x": 1.4083,
+         "y": 2.9834
+        },
+        {
+         "x": 1.5167,
+         "y": 3.3003
+        },
+        {
+         "x": 1.625,
+         "y": 3.6406
+        },
+        {
+         "x": 1.7333,
+         "y": 4.0044
+        },
+        {
+         "x": 1.8417,
+         "y": 4.3917
+        },
+        {
+         "x": 1.95,
+         "y": 4.8025
+        },
+        {
+         "x": 2.0583,
+         "y": 5.2367
+        },
+        {
+         "x": 2.1667,
+         "y": 5.6944
+        },
+        {
+         "x": 2.275,
+         "y": 6.1756
+        },
+        {
+         "x": 2.3833,
+         "y": 6.6803
+        },
+        {
+         "x": 2.4917,
+         "y": 7.2084
+        },
+        {
+         "x": 2.6,
+         "y": 7.76
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "text",
+       "v": "None"
+      }
+     ],
+     [
+      {
+       "t": "text",
+       "v": "One"
+      }
+     ],
+     [
+      {
+       "t": "text",
+       "v": "Two"
+      }
+     ]
+    ],
+    "multi": false
+   },
+   "key": "0",
+   "why": "The curve stays above the $x$-axis, so it never crosses it; its only intercept is the $y$-intercept $1$.",
+   "diag": {
+    "1": "counts the $y$-intercept $(0,1)$ as an $x$-intercept",
+    "2": "reads the two arms as two crossings, but neither reaches the axis"
+   }
+  },
+  {
+   "id": "2.1/O4/q4",
+   "obj": "2.1/O4",
+   "level": "stretch",
+   "kind": "multipart",
+   "stem": [
+    {
+     "t": "text",
+     "v": "The revenue $R$ and cost $C$ of producing $x$ units are graphed."
+    },
+    {
+     "t": "plane",
+     "xr": [
+      0,
+      850
+     ],
+     "yr": [
+      0,
+      8000
+     ],
+     "stepx": 100,
+     "stepy": 1000,
+     "xlabel": "units",
+     "ylabel": "dollars",
+     "curves": [
+      {
+       "points": [
+        {
+         "x": 0.0,
+         "y": 0.0
+        },
+        {
+         "x": 800.0,
+         "y": 7200.0
+        }
+       ],
+       "label": "R"
+      },
+      {
+       "points": [
+        {
+         "x": 0.0,
+         "y": 1200.0
+        },
+        {
+         "x": 800.0,
+         "y": 5200.0
+        }
+       ],
+       "label": "C",
+       "soft": true
+      }
+     ]
+    }
+   ],
+   "answer": {
+    "kind": "multipart",
+    "parts": [
+     {
+      "label": "(a)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Read the cost of producing $400$ units."
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 6,
+         "label": "$C=$"
+        }
+       ]
+      }
+     },
+     {
+      "label": "(b)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Read the revenue from $400$ units."
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 6,
+         "label": "$R=$"
+        }
+       ]
+      }
+     },
+     {
+      "label": "(c)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Find the profit from $400$ units."
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 6,
+         "label": "profit $=$"
+        }
+       ]
+      }
+     }
+    ]
+   },
+   "key": "3200; 3600; 400",
+   "why": "Going up from $400$ meets $C$ at $3200$ and $R$ at $3600$; the profit is the gap, $3600-3200=400$."
+  },
+  {
+   "id": "2.1/O5/q1",
+   "obj": "2.1/O5",
+   "level": "core",
+   "kind": "compute",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Find the intercepts of $4x+5y=20$ without graphing."
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "size": 4,
+      "label": "$x$-intercept"
+     },
+     {
+      "size": 4,
+      "label": "$y$-intercept"
+     }
+    ]
+   },
+   "key": "5, 4",
+   "why": "$y=0$ leaves $4x=20$, so $x=5$; $x=0$ leaves $5y=20$, so $y=4$."
+  },
+  {
+   "id": "2.1/O5/q2",
+   "obj": "2.1/O5",
+   "level": "core",
+   "kind": "compute",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Find the intercepts of $3x-2y=12$ without graphing."
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "size": 4,
+      "label": "$x$-intercept"
+     },
+     {
+      "size": 4,
+      "label": "$y$-intercept"
+     }
+    ]
+   },
+   "key": "4, -6",
+   "why": "$y=0$ gives $3x=12$, so $x=4$; $x=0$ gives $-2y=12$, so $y=-6$."
+  },
+  {
+   "id": "2.1/O5/q3",
+   "obj": "2.1/O5",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Which pair of points are the intercepts of $y=2x-8$?"
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "math",
+       "tex": "(4,0)\\text{ and }(0,-8)",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "(0,4)\\text{ and }(-8,0)",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "(4,0)\\text{ and }(0,8)",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "(-4,0)\\text{ and }(0,-8)",
+       "display": false
+      }
+     ]
+    ],
+    "multi": false
+   },
+   "key": "0",
+   "why": "$y=0$ gives $2x=8$, so $(4,0)$; $x=0$ gives $y=-8$, so $(0,-8)$.",
+   "diag": {
+    "1": "each intercept written with its coordinates swapped",
+    "2": "the $y$-intercept sign lost: at $x=0$, $y=-8$",
+    "3": "$2x-8=0$ solved as $x=-4$"
+   }
+  },
+  {
+   "id": "2.1/O5/q4",
+   "obj": "2.1/O5",
+   "level": "stretch",
+   "kind": "multipart",
+   "stem": [
+    {
+     "t": "text",
+     "v": "The equation is $x-3y=0$."
+    }
+   ],
+   "answer": {
+    "kind": "multipart",
+    "parts": [
+     {
+      "label": "(a)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Find the intercepts."
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 4,
+         "label": "$x$-intercept"
+        },
+        {
+         "size": 4,
+         "label": "$y$-intercept"
+        }
+       ]
+      }
+     },
+     {
+      "label": "(b)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Both intercepts are the same point, so a second point is needed to draw the line. Find $y$ when $x=3$."
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 4,
+         "label": "$y=$"
+        }
+       ]
+      }
+     }
+    ]
+   },
+   "key": "0, 0; 1",
+   "why": "Setting either variable to $0$ forces the other to $0$, so the line passes through the origin; at $x=3$, $3-3y=0$ gives $y=1$."
+  }
+ ],
+ "2.2": [
+  {
+   "id": "2.2/O1/q1",
+   "obj": "2.2/O1",
+   "level": "core",
+   "kind": "compute",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Find the slope of the line through $(2,3)$ and $(6,11)$."
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "size": 4,
+      "label": "$m=$"
+     }
+    ]
+   },
+   "key": "2",
+   "why": "$m=\\dfrac{11-3}{6-2}=\\dfrac{8}{4}=2$."
+  },
+  {
+   "id": "2.2/O1/q2",
+   "obj": "2.2/O1",
+   "level": "core",
+   "kind": "compute",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Find the slope of the line through $(-3,4)$ and $(5,-2)$."
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "size": 5,
+      "label": "$m=$",
+      "numeric": false
+     }
+    ],
+    "note": "type a fraction as -3/4"
+   },
+   "key": "-3/4",
+   "why": "$m=\\dfrac{-2-4}{5-(-3)}=\\dfrac{-6}{8}=-\\dfrac{3}{4}$."
+  },
+  {
+   "id": "2.2/O1/q3",
+   "obj": "2.2/O1",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Find the slope of the line through $(4,-1)$ and $(4,7)$."
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "text",
+       "v": "Undefined"
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "0",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "8",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "2",
+       "display": false
+      }
+     ]
+    ],
+    "multi": false
+   },
+   "key": "0",
+   "why": "The run is $4-4=0$, and a fraction with denominator $0$ has no value: the line is vertical.",
+   "diag": {
+    "1": "$0$ is the slope of a horizontal line; here the two $x$-coordinates agree, not the $y$-coordinates",
+    "2": "the rise $7-(-1)=8$ alone, without dividing by the run",
+    "3": "$8$ divided by $4$, using an $x$-coordinate as the run"
+   }
+  },
+  {
+   "id": "2.2/O1/q4",
+   "obj": "2.2/O1",
+   "level": "stretch",
+   "kind": "multipart",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Two lines pass through $(1,5)$."
+    }
+   ],
+   "answer": {
+    "kind": "multipart",
+    "parts": [
+     {
+      "label": "(a)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "The first also passes through $(4,-1)$. Find its slope."
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 4,
+         "label": "$m=$"
+        }
+       ]
+      }
+     },
+     {
+      "label": "(b)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "The second also passes through $(4,5)$. Find its slope."
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 4,
+         "label": "$m=$"
+        }
+       ]
+      }
+     }
+    ]
+   },
+   "key": "-2; 0",
+   "why": "$\\dfrac{-1-5}{4-1}=-2$; the second pair has the same $y$-coordinate, so the rise is $0$ and the slope is $0$."
+  },
+  {
+   "id": "2.2/O2/q1",
+   "obj": "2.2/O2",
+   "level": "core",
+   "kind": "fill",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Write the equation of the line with slope $3$ and $y$-intercept $-2$."
+    }
+   ],
+   "answer": {
+    "kind": "fill",
+    "template": "$y=⟨0⟩x+⟨1⟩$",
+    "slots": [
+     {
+      "size": 3
+     },
+     {
+      "size": 3
+     }
+    ],
+    "note": "type a negative number with its sign"
+   },
+   "key": "3, -2",
+   "why": "In $y=mx+b$ the slope is the coefficient of $x$ and the $y$-intercept is the constant."
+  },
+  {
+   "id": "2.2/O2/q2",
+   "obj": "2.2/O2",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Which equation has slope $-\\frac{1}{2}$ and $y$-intercept $4$?"
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "math",
+       "tex": "y=-\\tfrac{1}{2}x+4",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "y=4x-\\tfrac{1}{2}",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "y=-\\tfrac{1}{2}x-4",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "y=\\tfrac{1}{2}x+4",
+       "display": false
+      }
+     ]
+    ],
+    "multi": false
+   },
+   "key": "0",
+   "why": "Slope-intercept form is $y=mx+b$ with $m=-\\frac12$ and $b=4$.",
+   "diag": {
+    "1": "slope and intercept exchanged",
+    "2": "the intercept's sign changed",
+    "3": "the slope's sign dropped"
+   }
+  },
+  {
+   "id": "2.2/O2/q3",
+   "obj": "2.2/O2",
+   "level": "core",
+   "kind": "fill",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Write the equation of the line with slope $0$ and $y$-intercept $7$."
+    }
+   ],
+   "answer": {
+    "kind": "fill",
+    "template": "$y=⟨0⟩$",
+    "slots": [
+     {
+      "size": 3
+     }
+    ]
+   },
+   "key": "7",
+   "why": "With $m=0$ the $x$ term is $0x$, so $y=0x+7=7$ at every $x$: a horizontal line."
+  },
+  {
+   "id": "2.2/O2/q4",
+   "obj": "2.2/O2",
+   "level": "stretch",
+   "kind": "multipart",
+   "stem": [
+    {
+     "t": "text",
+     "v": "A line has slope $2$ and $y$-intercept $-3$."
+    }
+   ],
+   "answer": {
+    "kind": "multipart",
+    "parts": [
+     {
+      "label": "(a)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Where does it cross the $y$-axis?"
+       }
+      ],
+      "answer": {
+       "kind": "fill",
+       "template": "At the point $(0,⟨0⟩)$.",
+       "slots": [
+        {
+         "size": 3
+        }
+       ]
+      }
+     },
+     {
+      "label": "(b)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Find the point on the line with $x=1$."
+       }
+      ],
+      "answer": {
+       "kind": "fill",
+       "template": "$(1,⟨0⟩)$",
+       "slots": [
+        {
+         "size": 3
+        }
+       ]
+      }
+     },
+     {
+      "label": "(c)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Find the point on the line with $x=4$."
+       }
+      ],
+      "answer": {
+       "kind": "fill",
+       "template": "$(4,⟨0⟩)$",
+       "slots": [
+        {
+         "size": 3
+        }
+       ]
+      }
+     }
+    ]
+   },
+   "key": "-3; -1; 5",
+   "why": "$y=2x-3$ gives $-3$ at $x=0$, then rises by $2$ for each step of $1$ in $x$: $-1$ at $x=1$, $5$ at $x=4$."
+  },
+  {
+   "id": "2.2/O3/q1",
+   "obj": "2.2/O3",
+   "level": "core",
+   "kind": "compute",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Find the slope and the $y$-intercept."
+    },
+    {
+     "t": "math",
+     "tex": "y=-4x+9",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "size": 4,
+      "label": "$m=$"
+     },
+     {
+      "size": 4,
+      "label": "$b=$"
+     }
+    ]
+   },
+   "key": "-4, 9",
+   "why": "The equation is already solved for $y$: the coefficient of $x$ is $-4$ and the constant is $9$."
+  },
+  {
+   "id": "2.2/O3/q2",
+   "obj": "2.2/O3",
+   "level": "core",
+   "kind": "compute",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Find the slope and the $y$-intercept."
+    },
+    {
+     "t": "math",
+     "tex": "2x+y=7",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "size": 4,
+      "label": "$m=$"
+     },
+     {
+      "size": 4,
+      "label": "$b=$"
+     }
+    ]
+   },
+   "key": "-2, 7",
+   "why": "Solving for $y$ gives $y=-2x+7$."
+  },
+  {
+   "id": "2.2/O3/q3",
+   "obj": "2.2/O3",
+   "level": "core",
+   "kind": "compute",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Find the slope and the $y$-intercept."
+    },
+    {
+     "t": "math",
+     "tex": "5x-2y=8",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "size": 5,
+      "label": "$m=$",
+      "numeric": false
+     },
+     {
+      "size": 4,
+      "label": "$b=$"
+     }
+    ],
+    "note": "type a fraction as 5/2"
+   },
+   "key": "5/2, -4",
+   "why": "$-2y=-5x+8$, and dividing every term by $-2$ gives $y=\\frac{5}{2}x-4$."
+  },
+  {
+   "id": "2.2/O3/q4",
+   "obj": "2.2/O3",
+   "level": "stretch",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Which line has slope $\\frac{3}{4}$?"
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "math",
+       "tex": "4x-3y=6",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "3x-4y=8",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "3x+4y=8",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "4x+3y=6",
+       "display": false
+      }
+     ]
+    ],
+    "multi": false
+   },
+   "key": "1",
+   "why": "$3x-4y=8$ solved for $y$ is $y=\\frac{3}{4}x-2$.",
+   "diag": {
+    "0": "$4x-3y=6$ gives $y=\\frac{4}{3}x-2$: the reciprocal",
+    "2": "$3x+4y=8$ gives $y=-\\frac{3}{4}x+2$: the sign is lost when dividing by $4$",
+    "3": "$4x+3y=6$ gives $y=-\\frac{4}{3}x+2$"
+   }
+  },
+  {
+   "id": "2.2/O4/q1",
+   "obj": "2.2/O4",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Which graph is $2x+3y=6$, drawn through its intercepts?"
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "plane",
+       "xr": [
+        -6,
+        6
+       ],
+       "yr": [
+        -6,
+        6
+       ],
+       "stepx": 2,
+       "stepy": 2,
+       "curves": [
+        {
+         "points": [
+          {
+           "x": -6.0,
+           "y": 6.0
+          },
+          {
+           "x": 6.0,
+           "y": -2.0
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     [
+      {
+       "t": "plane",
+       "xr": [
+        -6,
+        6
+       ],
+       "yr": [
+        -6,
+        6
+       ],
+       "stepx": 2,
+       "stepy": 2,
+       "curves": [
+        {
+         "points": [
+          {
+           "x": -2.0,
+           "y": 6.0
+          },
+          {
+           "x": 6.0,
+           "y": -6.0
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     [
+      {
+       "t": "plane",
+       "xr": [
+        -6,
+        6
+       ],
+       "yr": [
+        -6,
+        6
+       ],
+       "stepx": 2,
+       "stepy": 2,
+       "curves": [
+        {
+         "points": [
+          {
+           "x": -6.0,
+           "y": -2.0
+          },
+          {
+           "x": 6.0,
+           "y": 6.0
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     [
+      {
+       "t": "plane",
+       "xr": [
+        -6,
+        6
+       ],
+       "yr": [
+        -6,
+        6
+       ],
+       "stepx": 2,
+       "stepy": 2,
+       "curves": [
+        {
+         "points": [
+          {
+           "x": -6.0,
+           "y": 2.0
+          },
+          {
+           "x": 6.0,
+           "y": -6.0
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    ],
+    "multi": false
+   },
+   "key": "0",
+   "why": "$y=0$ gives $x=3$ and $x=0$ gives $y=2$; the line joins $(3,0)$ and $(0,2)$.",
+   "diag": {
+    "1": "intercepts swapped: the line joins $(2,0)$ and $(0,3)$",
+    "2": "rises to the right; it passes through $(-3,0)$, where $2x+3y=-6$",
+    "3": "the $y$-intercept drawn at $-2$: at $x=0$, $3y=6$ gives $+2$"
+   }
+  },
+  {
+   "id": "2.2/O4/q2",
+   "obj": "2.2/O4",
+   "level": "core",
+   "kind": "fill",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Find the two intercept points of $5x-2y=10$, which are the points used to draw its graph."
+    }
+   ],
+   "answer": {
+    "kind": "fill",
+    "template": "$(⟨0⟩,0)$ and $(0,⟨1⟩)$",
+    "slots": [
+     {
+      "size": 3
+     },
+     {
+      "size": 3
+     }
+    ]
+   },
+   "key": "2, -5",
+   "why": "$y=0$ gives $5x=10$, so $x=2$; $x=0$ gives $-2y=10$, so $y=-5$."
+  },
+  {
+   "id": "2.2/O4/q3",
+   "obj": "2.2/O4",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Which graph is $4x-y=4$?"
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "plane",
+       "xr": [
+        -6,
+        6
+       ],
+       "yr": [
+        -6,
+        6
+       ],
+       "stepx": 2,
+       "stepy": 2,
+       "curves": [
+        {
+         "points": [
+          {
+           "x": -0.5,
+           "y": -6.0
+          },
+          {
+           "x": 2.5,
+           "y": 6.0
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     [
+      {
+       "t": "plane",
+       "xr": [
+        -6,
+        6
+       ],
+       "yr": [
+        -6,
+        6
+       ],
+       "stepx": 2,
+       "stepy": 2,
+       "curves": [
+        {
+         "points": [
+          {
+           "x": -0.5,
+           "y": 6.0
+          },
+          {
+           "x": 2.5,
+           "y": -6.0
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     [
+      {
+       "t": "plane",
+       "xr": [
+        -6,
+        6
+       ],
+       "yr": [
+        -6,
+        6
+       ],
+       "stepx": 2,
+       "stepy": 2,
+       "curves": [
+        {
+         "points": [
+          {
+           "x": -2.5,
+           "y": -6.0
+          },
+          {
+           "x": 0.5,
+           "y": 6.0
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     [
+      {
+       "t": "plane",
+       "xr": [
+        -6,
+        6
+       ],
+       "yr": [
+        -6,
+        6
+       ],
+       "stepx": 2,
+       "stepy": 2,
+       "curves": [
+        {
+         "points": [
+          {
+           "x": -6.0,
+           "y": -2.5
+          },
+          {
+           "x": 6.0,
+           "y": 0.5
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    ],
+    "multi": false
+   },
+   "key": "0",
+   "why": "The intercepts are $(1,0)$ and $(0,-4)$, and the line through them rises steeply.",
+   "diag": {
+    "1": "falls to the right and passes through $(0,4)$: the sign of $y$ is lost twice",
+    "2": "passes through $(0,4)$; at $x=0$, $-y=4$ gives $y=-4$",
+    "3": "passes through $(4,0)$ and $(0,-1)$: the intercepts swapped"
+   }
+  },
+  {
+   "id": "2.2/O4/q4",
+   "obj": "2.2/O4",
+   "level": "stretch",
+   "kind": "multipart",
+   "stem": [
+    {
+     "t": "text",
+     "v": "The equation is $x+2y=0$."
+    }
+   ],
+   "answer": {
+    "kind": "multipart",
+    "parts": [
+     {
+      "label": "(a)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Find the intercepts."
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 3,
+         "label": "$x$-intercept"
+        },
+        {
+         "size": 3,
+         "label": "$y$-intercept"
+        }
+       ]
+      }
+     },
+     {
+      "label": "(b)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Find a second point on the line, with $x=2$."
+       }
+      ],
+      "answer": {
+       "kind": "fill",
+       "template": "$(2,⟨0⟩)$",
+       "slots": [
+        {
+         "size": 3
+        }
+       ]
+      }
+     },
+     {
+      "label": "(c)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Which graph is the line?"
+       }
+      ],
+      "answer": {
+       "kind": "choice",
+       "options": [
+        [
+         {
+          "t": "plane",
+          "xr": [
+           -6,
+           6
+          ],
+          "yr": [
+           -6,
+           6
+          ],
+          "stepx": 2,
+          "stepy": 2,
+          "curves": [
+           {
+            "points": [
+             {
+              "x": -6.0,
+              "y": 3.0
+             },
+             {
+              "x": 6.0,
+              "y": -3.0
+             }
+            ]
+           }
+          ]
+         }
+        ],
+        [
+         {
+          "t": "plane",
+          "xr": [
+           -6,
+           6
+          ],
+          "yr": [
+           -6,
+           6
+          ],
+          "stepx": 2,
+          "stepy": 2,
+          "curves": [
+           {
+            "points": [
+             {
+              "x": -3.0,
+              "y": 6.0
+             },
+             {
+              "x": 3.0,
+              "y": -6.0
+             }
+            ]
+           }
+          ]
+         }
+        ],
+        [
+         {
+          "t": "plane",
+          "xr": [
+           -6,
+           6
+          ],
+          "yr": [
+           -6,
+           6
+          ],
+          "stepx": 2,
+          "stepy": 2,
+          "curves": [
+           {
+            "points": [
+             {
+              "x": -6.0,
+              "y": -3.0
+             },
+             {
+              "x": 6.0,
+              "y": 3.0
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       ],
+       "multi": false
+      }
+     }
+    ]
+   },
+   "key": "0, 0; -1; 0",
+   "why": "Both intercepts are the origin; $x=2$ gives $2+2y=0$, so $(2,-1)$, and the line through $(0,0)$ and $(2,-1)$ falls gently.",
+   "diag": {
+    "1": "(c): down $2$ for each $1$ across, which is $y=-2x$",
+    "2": "(c): rises; the sign in $y=-\\frac{1}{2}x$ is lost"
+   }
+  },
+  {
+   "id": "2.2/O5/q1",
+   "obj": "2.2/O5",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Are the lines parallel, perpendicular, or neither?"
+    },
+    {
+     "t": "math",
+     "tex": "y=2x+1 \\qquad y=2x-5",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "text",
+       "v": "Parallel"
+      }
+     ],
+     [
+      {
+       "t": "text",
+       "v": "Perpendicular"
+      }
+     ],
+     [
+      {
+       "t": "text",
+       "v": "Neither"
+      }
+     ]
+    ],
+    "multi": false
+   },
+   "key": "0",
+   "why": "Both slopes are $2$; equal slopes with different intercepts give parallel lines.",
+   "diag": {
+    "1": "perpendicular needs slopes whose product is $-1$; $2\\cdot 2=4$",
+    "2": "the slopes are equal, which is the parallel case"
+   }
+  },
+  {
+   "id": "2.2/O5/q2",
+   "obj": "2.2/O5",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Are the lines parallel, perpendicular, or neither?"
+    },
+    {
+     "t": "math",
+     "tex": "y=3x-2 \\qquad y=-\\tfrac{1}{3}x+4",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "text",
+       "v": "Parallel"
+      }
+     ],
+     [
+      {
+       "t": "text",
+       "v": "Perpendicular"
+      }
+     ],
+     [
+      {
+       "t": "text",
+       "v": "Neither"
+      }
+     ]
+    ],
+    "multi": false
+   },
+   "key": "1",
+   "why": "$3\\cdot\\left(-\\frac13\\right)=-1$: each slope is the negative reciprocal of the other.",
+   "diag": {
+    "0": "parallel needs equal slopes; $3$ and $-\\frac13$ differ",
+    "2": "the product of the slopes is $-1$, which is the perpendicular case"
+   }
+  },
+  {
+   "id": "2.2/O5/q3",
+   "obj": "2.2/O5",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Are the lines parallel, perpendicular, or neither?"
+    },
+    {
+     "t": "math",
+     "tex": "2x-3y=6 \\qquad 4x-3y=1",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "text",
+       "v": "Parallel"
+      }
+     ],
+     [
+      {
+       "t": "text",
+       "v": "Perpendicular"
+      }
+     ],
+     [
+      {
+       "t": "text",
+       "v": "Neither"
+      }
+     ]
+    ],
+    "multi": false
+   },
+   "key": "2",
+   "why": "The slopes are $\\frac23$ and $\\frac43$: not equal, and their product $\\frac89$ is not $-1$.",
+   "diag": {
+    "0": "the equations look alike, but the slopes $\\frac23$ and $\\frac43$ differ",
+    "1": "$\\frac23\\cdot\\frac43=\\frac89$, not $-1$"
+   }
+  },
+  {
+   "id": "2.2/O5/q4",
+   "obj": "2.2/O5",
+   "level": "stretch",
+   "kind": "multipart",
+   "stem": [
+    {
+     "t": "text",
+     "v": "The lines are $3x+4y=8$ and $8x-6y=5$."
+    }
+   ],
+   "answer": {
+    "kind": "multipart",
+    "parts": [
+     {
+      "label": "(a)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Find the slope of $3x+4y=8$."
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 5,
+         "label": "$m=$",
+         "numeric": false
+        }
+       ],
+       "note": "type a fraction as -3/4"
+      }
+     },
+     {
+      "label": "(b)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Find the slope of $8x-6y=5$."
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 5,
+         "label": "$m=$",
+         "numeric": false
+        }
+       ]
+      }
+     },
+     {
+      "label": "(c)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "The lines are"
+       }
+      ],
+      "answer": {
+       "kind": "choice",
+       "options": [
+        [
+         {
+          "t": "text",
+          "v": "Parallel"
+         }
+        ],
+        [
+         {
+          "t": "text",
+          "v": "Perpendicular"
+         }
+        ],
+        [
+         {
+          "t": "text",
+          "v": "Neither"
+         }
+        ]
+       ],
+       "multi": false
+      }
+     }
+    ]
+   },
+   "key": "-3/4; 4/3; 1",
+   "why": "$y=-\\frac34x+2$ and $y=\\frac43x-\\frac56$; the product $-\\frac34\\cdot\\frac43=-1$ makes them perpendicular.",
+   "diag": {
+    "0": "(c): the slopes are not equal",
+    "2": "(c): the product of $-\\frac34$ and $\\frac43$ is $-1$"
+   }
+  },
+  {
+   "id": "2.2/O6/q1",
+   "obj": "2.2/O6",
+   "level": "core",
+   "kind": "fill",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Write the equation of the line with slope $2$ through $(3,-1)$ in slope-intercept form."
+    }
+   ],
+   "answer": {
+    "kind": "fill",
+    "template": "$y=⟨0⟩x+⟨1⟩$",
+    "slots": [
+     {
+      "size": 3
+     },
+     {
+      "size": 3
+     }
+    ],
+    "note": "type a negative number with its sign"
+   },
+   "key": "2, -7",
+   "why": "$y-(-1)=2(x-3)$ gives $y+1=2x-6$, so $y=2x-7$."
+  },
+  {
+   "id": "2.2/O6/q2",
+   "obj": "2.2/O6",
+   "level": "core",
+   "kind": "fill",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Write the equation of the line through $(1,2)$ and $(3,8)$ in slope-intercept form."
+    }
+   ],
+   "answer": {
+    "kind": "fill",
+    "template": "$y=⟨0⟩x+⟨1⟩$",
+    "slots": [
+     {
+      "size": 3
+     },
+     {
+      "size": 3
+     }
+    ]
+   },
+   "key": "3, -1",
+   "why": "$m=\\dfrac{8-2}{3-1}=3$, then $y-2=3(x-1)$ gives $y=3x-1$."
+  },
+  {
+   "id": "2.2/O6/q3",
+   "obj": "2.2/O6",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Write the equation of the horizontal line through $(4,-6)$."
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "math",
+       "tex": "y=-6",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "x=4",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "y=4",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "x=-6",
+       "display": false
+      }
+     ]
+    ],
+    "multi": false
+   },
+   "key": "0",
+   "why": "A horizontal line keeps the same $y$ at every point, and this one passes through $y=-6$.",
+   "diag": {
+    "1": "$x=4$ is the vertical line through the point",
+    "2": "uses the $x$-coordinate as the constant height",
+    "3": "a vertical line, with the wrong coordinate"
+   }
+  },
+  {
+   "id": "2.2/O6/q4",
+   "obj": "2.2/O6",
+   "level": "stretch",
+   "kind": "multipart",
+   "stem": [
+    {
+     "t": "text",
+     "v": "A company had $8\\%$ of a market in 2012 and $20\\%$ in 2016. Let $x=12$ correspond to 2012."
+    }
+   ],
+   "answer": {
+    "kind": "multipart",
+    "parts": [
+     {
+      "label": "(a)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Find the slope of the line through the two data points."
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 4,
+         "label": "$m=$"
+        }
+       ]
+      }
+     },
+     {
+      "label": "(b)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Write the linear equation for the percent $y$ in year $x$."
+       }
+      ],
+      "answer": {
+       "kind": "fill",
+       "template": "$y=⟨0⟩x+⟨1⟩$",
+       "slots": [
+        {
+         "size": 3
+        },
+        {
+         "size": 4
+        }
+       ]
+      }
+     },
+     {
+      "label": "(c)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "If the trend continues, find the first full year in which the company has $45\\%$ of the market."
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 5,
+         "label": "year"
+        }
+       ]
+      }
+     }
+    ]
+   },
+   "key": "3; 3, -28; 2025",
+   "why": "Through $(12,8)$ and $(16,20)$ the slope is $3$ and $y=3x-28$; $3x-28=45$ gives $x=24.33$, so the first full year is $x=25$, which is 2025."
+  }
+ ],
+ "2.3": [
+  {
+   "id": "2.3/O1/q1",
+   "obj": "2.3/O1",
+   "level": "core",
+   "kind": "compute",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Use $C=\\frac{5}{9}(F-32)$ to convert $86^\\circ$F to Celsius."
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "size": 5,
+      "label": "$^\\circ$C"
+     }
+    ]
+   },
+   "key": "30",
+   "why": "$\\frac59(86-32)=\\frac59(54)=30$."
+  },
+  {
+   "id": "2.3/O1/q2",
+   "obj": "2.3/O1",
+   "level": "core",
+   "kind": "compute",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Convert $25^\\circ$C to Fahrenheit."
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "size": 5,
+      "label": "$^\\circ$F"
+     }
+    ]
+   },
+   "key": "77",
+   "why": "Solving $C=\\frac59(F-32)$ for $F$ gives $F=\\frac95C+32$, and $\\frac95(25)+32=77$."
+  },
+  {
+   "id": "2.3/O1/q3",
+   "obj": "2.3/O1",
+   "level": "core",
+   "kind": "compute",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Convert $-4^\\circ$F to Celsius."
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "size": 5,
+      "label": "$^\\circ$C"
+     }
+    ]
+   },
+   "key": "-20",
+   "why": "$\\frac59(-4-32)=\\frac59(-36)=-20$."
+  },
+  {
+   "id": "2.3/O1/q4",
+   "obj": "2.3/O1",
+   "level": "stretch",
+   "kind": "multipart",
+   "stem": [
+    {
+     "t": "text",
+     "v": "The formula $C=\\frac{5}{9}(F-32)$ converts Fahrenheit to Celsius."
+    }
+   ],
+   "answer": {
+    "kind": "multipart",
+    "parts": [
+     {
+      "label": "(a)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Solve it for $F$."
+       }
+      ],
+      "answer": {
+       "kind": "choice",
+       "options": [
+        [
+         {
+          "t": "math",
+          "tex": "F=\\tfrac{9}{5}C+32",
+          "display": false
+         }
+        ],
+        [
+         {
+          "t": "math",
+          "tex": "F=\\tfrac{5}{9}C+32",
+          "display": false
+         }
+        ],
+        [
+         {
+          "t": "math",
+          "tex": "F=\\tfrac{9}{5}(C+32)",
+          "display": false
+         }
+        ],
+        [
+         {
+          "t": "math",
+          "tex": "F=\\tfrac{9}{5}C-32",
+          "display": false
+         }
+        ]
+       ],
+       "multi": false
+      }
+     },
+     {
+      "label": "(b)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Convert $100^\\circ$C to Fahrenheit."
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 5,
+         "label": "$^\\circ$F"
+        }
+       ]
+      }
+     }
+    ]
+   },
+   "key": "0; 212",
+   "why": "Multiplying both sides by $\\frac95$ and adding $32$ gives $F=\\frac95C+32$; at $C=100$ that is $180+32=212$.",
+   "diag": {
+    "1": "(a): the fraction $\\frac59$ is not inverted when moved across",
+    "2": "(a): the $32$ is added before the multiplication is undone",
+    "3": "(a): $32$ subtracted instead of added; undoing $-32$ adds $32$"
+   }
+  },
+  {
+   "id": "2.3/O2/q1",
+   "obj": "2.3/O2",
+   "level": "core",
+   "kind": "multipart",
+   "stem": [
+    {
+     "t": "text",
+     "v": "A quantity was $40$ in 2010 and $52$ in 2016. Let $x=10$ correspond to 2010, and assume the trend is a straight line."
+    }
+   ],
+   "answer": {
+    "kind": "multipart",
+    "parts": [
+     {
+      "label": "(a)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Find the slope of the line through the two data points."
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 4,
+         "label": "$m=$"
+        }
+       ]
+      }
+     },
+     {
+      "label": "(b)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Write the equation of the line."
+       }
+      ],
+      "answer": {
+       "kind": "fill",
+       "template": "$y=⟨0⟩x+⟨1⟩$",
+       "slots": [
+        {
+         "size": 3
+        },
+        {
+         "size": 3
+        }
+       ]
+      }
+     },
+     {
+      "label": "(c)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Estimate the quantity in 2013."
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 4
+        }
+       ]
+      }
+     }
+    ]
+   },
+   "key": "2; 2, 20; 46",
+   "why": "$m=\\dfrac{52-40}{16-10}=2$ and $b=40-2(10)=20$, so $y=2x+20$; at $x=13$ it gives $46$."
+  },
+  {
+   "id": "2.3/O2/q2",
+   "obj": "2.3/O2",
+   "level": "core",
+   "kind": "compute",
+   "stem": [
+    {
+     "t": "text",
+     "v": "The model $y=1.5x+12$ gives a quantity in year $x$, where $x=10$ corresponds to 2010. Estimate the quantity in 2018."
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "size": 5
+     }
+    ]
+   },
+   "key": "39",
+   "why": "2018 is $x=18$, and $1.5(18)+12=39$."
+  },
+  {
+   "id": "2.3/O2/q3",
+   "obj": "2.3/O2",
+   "level": "core",
+   "kind": "multipart",
+   "stem": [
+    {
+     "t": "text",
+     "v": "A value was $3.2$ in 2011 and $4.4$ in 2015. Let $x=11$ correspond to 2011."
+    }
+   ],
+   "answer": {
+    "kind": "multipart",
+    "parts": [
+     {
+      "label": "(a)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Write the linear equation through the two points."
+       }
+      ],
+      "answer": {
+       "kind": "fill",
+       "template": "$y=⟨0⟩x+⟨1⟩$",
+       "slots": [
+        {
+         "size": 4
+        },
+        {
+         "size": 4
+        }
+       ],
+       "note": "type a negative number with its sign"
+      }
+     },
+     {
+      "label": "(b)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Estimate the value in 2014."
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 5
+        }
+       ]
+      }
+     }
+    ]
+   },
+   "key": "0.3, -0.1; 4.1",
+   "why": "$m=\\dfrac{4.4-3.2}{15-11}=0.3$ and $b=3.2-0.3(11)=-0.1$; at $x=14$, $0.3(14)-0.1=4.1$."
+  },
+  {
+   "id": "2.3/O2/q4",
+   "obj": "2.3/O2",
+   "level": "stretch",
+   "kind": "multipart",
+   "stem": [
+    {
+     "t": "text",
+     "v": "A price index was $210.5$ in 2012 and $231.3$ in 2016. Let $x=12$ correspond to 2012, and assume the trend continues as a straight line."
+    }
+   ],
+   "answer": {
+    "kind": "multipart",
+    "parts": [
+     {
+      "label": "(a)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Write the linear equation, rounding $m$ and $b$ to two decimal places."
+       }
+      ],
+      "answer": {
+       "kind": "fill",
+       "template": "$y=⟨0⟩x+⟨1⟩$",
+       "slots": [
+        {
+         "size": 4
+        },
+        {
+         "size": 5
+        }
+       ]
+      }
+     },
+     {
+      "label": "(b)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Estimate the index in 2015."
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 6
+        }
+       ]
+      }
+     },
+     {
+      "label": "(c)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Find the first full year in which the index passes $250$."
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 5,
+         "label": "year"
+        }
+       ]
+      }
+     }
+    ]
+   },
+   "key": "5.2, 148.1; 226.1; 2020",
+   "why": "$m=\\dfrac{231.3-210.5}{4}=5.2$ and $b=210.5-5.2(12)=148.1$; $y(15)=226.1$; $5.2x+148.1=250$ gives $x=19.6$, so the first full year is $x=20$, which is 2020."
+  }
+ ]
+}

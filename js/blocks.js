@@ -221,27 +221,49 @@ export function Histogram(b) {
 }
 
 /* ── coordinate plane ──────────────────────────────────────────── */
-// curves are a function of x, or an explicit point list
+// curves are an explicit point list (or a function of x when built in code);
+// ticks are numbered unless ticks:false; xlabel/ylabel title the axes; a curve
+// may carry a label, set at its last drawn point
 export function Plane(b) {
-  const W = 360, H = 344, P = 28;
+  const ticks = b.ticks !== false;
+  const W = 360, H = 344, P = 28, PL = ticks ? 46 : P, PB = ticks ? 34 : P;
   const [x0, x1] = b.xr || [-10, 10];
   const [y0, y1] = b.yr || [-10, 10];
-  const X = (v) => P + ((v - x0) / (x1 - x0)) * (W - 2 * P);
-  const Y = (v) => H - P - ((v - y0) / (y1 - y0)) * (H - 2 * P);
+  const X = (v) => PL + ((v - x0) / (x1 - x0)) * (W - PL - P);
+  const Y = (v) => H - PB - ((v - y0) / (y1 - y0)) * (H - PB - P);
   const g = svg(W, H, 'fg-plane');
   const sx = (typeof b.stepx === 'number' && b.stepx > 0) ? b.stepx
     : Math.max(1, Math.round((x1 - x0) / 10));   /* a 0 or negative step never terminates */
   const sy = (typeof b.stepy === 'number' && b.stepy > 0) ? b.stepy
     : Math.max(1, Math.round((y1 - y0) / 10));
+  const near = (v) => Math.abs(v) < 1e-9 ? 0 : v;
+  const fmt = (v) => String(+v.toFixed(6));
 
-  for (let v = Math.ceil(x0 / sx) * sx; v <= x1; v += sx)
+  for (let v = Math.ceil(x0 / sx - 1e-9) * sx; v <= x1 + 1e-9; v += sx)
     g.appendChild(el('line', { x1: X(v), y1: Y(y0), x2: X(v), y2: Y(y1), class: 'grid' }));
-  for (let v = Math.ceil(y0 / sy) * sy; v <= y1; v += sy)
+  for (let v = Math.ceil(y0 / sy - 1e-9) * sy; v <= y1 + 1e-9; v += sy)
     g.appendChild(el('line', { x1: X(x0), y1: Y(v), x2: X(x1), y2: Y(v), class: 'grid' }));
-  if (y0 <= 0 && y1 >= 0) g.appendChild(el('line', { x1: X(x0), y1: Y(0), x2: X(x1), y2: Y(0), class: 'axis' }));
-  if (x0 <= 0 && x1 >= 0) g.appendChild(el('line', { x1: X(0), y1: Y(y0), x2: X(0), y2: Y(y1), class: 'axis' }));
+  const hasX = y0 <= 0 && y1 >= 0, hasY = x0 <= 0 && x1 >= 0;
+  if (hasX) g.appendChild(el('line', { x1: X(x0), y1: Y(0), x2: X(x1), y2: Y(0), class: 'axis' }));
+  if (hasY) g.appendChild(el('line', { x1: X(0), y1: Y(y0), x2: X(0), y2: Y(y1), class: 'axis' }));
 
-  const span = y1 - y0;
+  // tick numbers sit on the axis when it is in the frame, on the frame's edge
+  // when it is not; 0 is written once, beside the origin
+  if (ticks) {
+    const yb = hasX ? Y(0) : Y(y0), xb = hasY ? X(0) : X(x0);
+    for (let v = Math.ceil(x0 / sx - 1e-9) * sx; v <= x1 + 1e-9; v += sx) {
+      if (near(v) === 0 && hasY) continue;
+      g.appendChild(txt(X(v), yb + 13, 'tlab', fmt(near(v))));
+    }
+    for (let v = Math.ceil(y0 / sy - 1e-9) * sy; v <= y1 + 1e-9; v += sy) {
+      if (near(v) === 0 && hasX) continue;
+      g.appendChild(txt(xb - 5, Y(v) + 3.5, 'tlab end', fmt(near(v))));
+    }
+    if (hasX && hasY) g.appendChild(txt(X(0) - 5, Y(0) + 13, 'tlab end', '0'));
+  }
+  if (b.xlabel) g.appendChild(txt(X(x1), (hasX ? Y(0) : Y(y0)) + 26, 'alab end', b.xlabel));
+  if (b.ylabel) g.appendChild(txt((hasY ? X(0) : X(x0)) - 4, Y(y1) - 9, 'alab start', b.ylabel));
+
   (b.curves || []).forEach((c) => {
     let pts = c.points;
     if (!pts && c.fn) {
@@ -253,15 +275,19 @@ export function Plane(b) {
         pts.push(Number.isFinite(y) ? { x, y } : null);
       }
     }
-    let d = '', pen = false;
+    let d = '', pen = false, last = null;
     (pts || []).forEach((p) => {
       // break the path where the curve leaves the frame instead of drawing a
       // false vertical joining the two edges
-      if (!p || p.y < y0 - span || p.y > y1 + span) { pen = false; return; }
+      if (!p || p.y < y0 - 1e-9 || p.y > y1 + 1e-9 || p.x < x0 - 1e-9 || p.x > x1 + 1e-9) { pen = false; return; }
       d += (pen ? 'L' : 'M') + X(p.x).toFixed(1) + ',' + Y(p.y).toFixed(1) + ' ';
-      pen = true;
+      pen = true; last = p;
     });
-    if (d) g.appendChild(el('path', { d, class: 'curve' + (c.dashed ? ' dashed' : '') }));
+    if (d) g.appendChild(el('path', { d, class: 'curve' + (c.dashed ? ' dashed' : '') + (c.soft ? ' soft' : '') }));
+    if (c.label && last) {
+      const lx = Math.min(X(last.x) + 6, W - 4), ly = Math.max(Y(last.y) - 6, 12);
+      g.appendChild(txt(lx, ly, 'plab' + (X(last.x) + 6 > W - 40 ? ' end' : ' start'), c.label));
+    }
   });
 
   (b.points || []).forEach((p) => {

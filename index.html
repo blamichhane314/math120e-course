@@ -172,7 +172,7 @@ import { mountExams, examsOf, weeksOf } from './js/calendar.js?v=11';
 const d = await (await fetch('data/course.json', {cache:'no-store'})).json();
 const nObj = d.sections.reduce((a,s)=>a+s.objectives.length,0);
 let nQ = 0, nQSec = 0;
-for (const f of ['q_a','q_b','q_c']) {
+for (const f of ['q_a','q_b','q_c','q_d','q_e','q_f']) {
   try {
     const j = await (await fetch('data/' + f + '.json', {cache:'no-store'})).json();
     for (const k of Object.keys(j)) { nQSec++; nQ += j[k].length; }

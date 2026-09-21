@@ -224,6 +224,11 @@ a.pgref:hover{color:var(--accent);border-bottom-color:var(--accent)}
 .fg .pt{fill:var(--accent)}
 .fg .pt.hollow{fill:var(--paper);stroke:var(--accent);stroke-width:2}
 .fg .plab{font-size:10px;fill:var(--ink-soft)}
+.fg .plab.end{text-anchor:end}
+.a-optbody .fg-plane{width:100%}
+.a-optbody .fg-plane .tlab{font-size:15px}
+.a-optbody .fg-plane .plab{font-size:15px}
+.fg .curve.soft{stroke:var(--ink-soft)}
 .b-fig{margin:calc(var(--s)*1.5) 0;max-width:100%;overflow-x:auto}
 
 /* content blocks */

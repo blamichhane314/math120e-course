@@ -1,0 +1,1163 @@
+{
+ "4.3": [
+  {
+   "id": "4.3/O1/q1",
+   "obj": "4.3/O1",
+   "level": "core",
+   "kind": "fill",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Write $\\log_{2}32=5$ as an exponential equation."
+    }
+   ],
+   "answer": {
+    "kind": "fill",
+    "template": "$⟨0⟩^{⟨1⟩}=32$",
+    "slots": [
+     {
+      "size": 3
+     },
+     {
+      "size": 3
+     }
+    ]
+   },
+   "key": "2, 5",
+   "why": "$\\log_{b}y=x$ means $b^{x}=y$: the base stays the base, and the value of the logarithm becomes the exponent."
+  },
+  {
+   "id": "4.3/O1/q2",
+   "obj": "4.3/O1",
+   "level": "core",
+   "kind": "fill",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Write $10^{-2}=0.01$ as a logarithmic equation."
+    }
+   ],
+   "answer": {
+    "kind": "fill",
+    "template": "$\\log ⟨0⟩=⟨1⟩$",
+    "slots": [
+     {
+      "size": 5
+     },
+     {
+      "size": 3
+     }
+    ],
+    "note": "$\\log$ with no base written means base 10"
+   },
+   "key": "0.01, -2",
+   "why": "The exponent $-2$ is the logarithm, and $0.01$ is the number it is the logarithm of."
+  },
+  {
+   "id": "4.3/O1/q3",
+   "obj": "4.3/O1",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Which logarithmic equation is equivalent to $e^{2.3026}=10$?"
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "math",
+       "tex": "\\ln 10=2.3026",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "\\log 10=2.3026",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "\\ln 2.3026=10",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "\\log_{10}e=2.3026",
+       "display": false
+      }
+     ]
+    ],
+    "multi": false
+   },
+   "key": "0",
+   "why": "The base is $e$, so the logarithm is $\\ln$; the exponent $2.3026$ is $\\ln 10$.",
+   "diag": {
+    "1": "$\\log$ is base $10$, but the base here is $e$",
+    "2": "the number and the exponent exchanged",
+    "3": "base and number exchanged"
+   }
+  },
+  {
+   "id": "4.3/O1/q4",
+   "obj": "4.3/O1",
+   "level": "stretch",
+   "kind": "fill",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Write $\\log_{5}\\dfrac{1}{125}=-3$ as an exponential equation."
+    }
+   ],
+   "answer": {
+    "kind": "fill",
+    "template": "$5^{⟨0⟩}=⟨1⟩$",
+    "slots": [
+     {
+      "size": 3
+     },
+     {
+      "size": 6,
+      "numeric": false
+     }
+    ],
+    "note": "type a fraction as 1/125"
+   },
+   "key": "-3, 1/125",
+   "why": "$5^{-3}=\\dfrac{1}{5^{3}}=\\dfrac{1}{125}$: a negative exponent is a reciprocal (\\S1.5)."
+  },
+  {
+   "id": "4.3/O2/q1",
+   "obj": "4.3/O2",
+   "level": "core",
+   "kind": "compute",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Evaluate without a calculator."
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "size": 4,
+      "label": "$\\log 1000=$"
+     },
+     {
+      "size": 4,
+      "label": "$\\log_{3}81=$"
+     }
+    ]
+   },
+   "key": "3, 4",
+   "why": "$10^{3}=1000$ and $3^{4}=81$: each logarithm asks for the power."
+  },
+  {
+   "id": "4.3/O2/q2",
+   "obj": "4.3/O2",
+   "level": "core",
+   "kind": "compute",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Evaluate without a calculator."
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "size": 4,
+      "label": "$\\log_{2}\\frac{1}{8}=$"
+     },
+     {
+      "size": 4,
+      "label": "$\\ln e=$"
+     }
+    ]
+   },
+   "key": "-3, 1",
+   "why": "$2^{-3}=\\frac18$ and $e^{1}=e$."
+  },
+  {
+   "id": "4.3/O2/q3",
+   "obj": "4.3/O2",
+   "level": "core",
+   "kind": "compute",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Use a calculator. Round to four decimal places."
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "size": 7,
+      "label": "$\\log 250=$"
+     },
+     {
+      "size": 7,
+      "label": "$\\ln 0.4=$"
+     }
+    ]
+   },
+   "key": "2.3979, -0.9163",
+   "why": "The $\\log$ key gives base $10$ and the $\\ln$ key gives base $e$; a number below $1$ has a negative logarithm."
+  },
+  {
+   "id": "4.3/O2/q4",
+   "obj": "4.3/O2",
+   "level": "stretch",
+   "kind": "compute",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Evaluate without a calculator."
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "size": 5,
+      "label": "$\\log_{4}8=$",
+      "numeric": false
+     },
+     {
+      "size": 5,
+      "label": "$\\log_{9}3=$",
+      "numeric": false
+     }
+    ],
+    "note": "type a fraction as 3/2"
+   },
+   "key": "3/2, 1/2",
+   "why": "$4^{3/2}=(\\sqrt4)^{3}=8$ and $9^{1/2}=\\sqrt9=3$: rational exponents from \\S1.5."
+  },
+  {
+   "id": "4.3/O3/q1",
+   "obj": "4.3/O3",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Write as a single logarithm."
+    },
+    {
+     "t": "math",
+     "tex": "\\log 20-\\log 4",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "math",
+       "tex": "\\log 5",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "\\log 16",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "\\log 80",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "\\dfrac{\\log 20}{\\log 4}",
+       "display": false
+      }
+     ]
+    ],
+    "multi": false
+   },
+   "key": "0",
+   "why": "A difference of logarithms is the logarithm of the quotient: $\\log\\frac{20}{4}=\\log 5$.",
+   "diag": {
+    "1": "subtracts the numbers instead of dividing them",
+    "2": "multiplies; a product goes with a sum of logarithms",
+    "3": "turns the difference into a quotient of logarithms, which is a different quantity"
+   }
+  },
+  {
+   "id": "4.3/O3/q2",
+   "obj": "4.3/O3",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Write as a single logarithm. Assume $x$ and $y$ are positive."
+    },
+    {
+     "t": "math",
+     "tex": "2\\log x+3\\log y",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "math",
+       "tex": "\\log\\left(x^{2}y^{3}\\right)",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "\\log(2x+3y)",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "\\log\\left(x^{2}+y^{3}\\right)",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "\\log(6xy)",
+       "display": false
+      }
+     ]
+    ],
+    "multi": false
+   },
+   "key": "0",
+   "why": "The coefficients become exponents, $\\log x^{2}+\\log y^{3}$, and the sum becomes the logarithm of the product.",
+   "diag": {
+    "1": "the coefficients left as coefficients inside the logarithm",
+    "2": "a sum of logarithms is a product inside, not a sum",
+    "3": "the coefficients multiplied instead of raised"
+   }
+  },
+  {
+   "id": "4.3/O3/q3",
+   "obj": "4.3/O3",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Write as a sum of logarithms with every variable to the first power."
+    },
+    {
+     "t": "math",
+     "tex": "\\ln\\left(7x^{4}y\\right)",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "math",
+       "tex": "\\ln 7+4\\ln x+\\ln y",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "4\\ln(7xy)",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "\\ln 7+\\ln 4+\\ln x+\\ln y",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "\\ln 7\\cdot 4\\ln x\\cdot\\ln y",
+       "display": false
+      }
+     ]
+    ],
+    "multi": false
+   },
+   "key": "0",
+   "why": "The product splits into $\\ln 7+\\ln x^{4}+\\ln y$, and the exponent $4$ comes down as a coefficient.",
+   "diag": {
+    "1": "the exponent $4$ applied to the whole product; it belongs to $x$ alone",
+    "2": "the exponent $4$ treated as a factor $4$",
+    "3": "a product of logarithms; the rule gives a sum"
+   }
+  },
+  {
+   "id": "4.3/O3/q4",
+   "obj": "4.3/O3",
+   "level": "stretch",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Write as a sum or difference of logarithms with every variable to the first power."
+    },
+    {
+     "t": "math",
+     "tex": "\\ln\\dfrac{3y}{5z}",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "math",
+       "tex": "\\ln 3+\\ln y-\\ln 5-\\ln z",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "\\ln 3+\\ln y-\\ln 5+\\ln z",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "\\dfrac{\\ln 3+\\ln y}{\\ln 5+\\ln z}",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "\\ln 3\\ln y-\\ln 5\\ln z",
+       "display": false
+      }
+     ]
+    ],
+    "multi": false
+   },
+   "key": "0",
+   "why": "$\\ln(3y)-\\ln(5z)$, and each product splits into a sum; both parts of the denominator are subtracted.",
+   "diag": {
+    "1": "only $5$ subtracted; the $z$ is in the denominator too",
+    "2": "the fraction kept as a fraction of logarithms",
+    "3": "products of logarithms in place of sums"
+   }
+  },
+  {
+   "id": "4.3/O4/q1",
+   "obj": "4.3/O4",
+   "level": "core",
+   "kind": "compute",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Evaluate, to six decimal places."
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "size": 9,
+      "label": "$\\log_{3}50=$"
+     }
+    ]
+   },
+   "key": "3.560877",
+   "why": "$\\log_{3}50=\\dfrac{\\ln 50}{\\ln 3}=\\dfrac{3.912023}{1.098612}=3.560877$."
+  },
+  {
+   "id": "4.3/O4/q2",
+   "obj": "4.3/O4",
+   "level": "core",
+   "kind": "compute",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Evaluate, to six decimal places."
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "size": 9,
+      "label": "$\\log_{7}2=$"
+     }
+    ]
+   },
+   "key": "0.356207",
+   "why": "$\\log_{7}2=\\dfrac{\\ln 2}{\\ln 7}$, a number below $1$ because $2$ is less than the base."
+  },
+  {
+   "id": "4.3/O4/q3",
+   "obj": "4.3/O4",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Which expression equals $\\log_{5}40$?"
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "math",
+       "tex": "\\dfrac{\\ln 40}{\\ln 5}",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "\\dfrac{\\ln 5}{\\ln 40}",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "\\ln\\dfrac{40}{5}",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "\\ln 40-\\ln 5",
+       "display": false
+      }
+     ]
+    ],
+    "multi": false
+   },
+   "key": "0",
+   "why": "Change of base: $\\log_{b}y=\\dfrac{\\ln y}{\\ln b}$, with the number on top and the base underneath.",
+   "diag": {
+    "1": "base and number inverted",
+    "2": "the quotient taken inside one logarithm",
+    "3": "$\\ln 40-\\ln 5$ is $\\ln 8$, not a change of base"
+   }
+  },
+  {
+   "id": "4.3/O4/q4",
+   "obj": "4.3/O4",
+   "level": "stretch",
+   "kind": "multipart",
+   "stem": [
+    {
+     "t": "text",
+     "v": "The doubling function $D(r)=\\dfrac{\\ln 2}{\\ln(1+r)}$ gives the years needed to double money invested at annual rate $r$ (as a decimal)."
+    }
+   ],
+   "answer": {
+    "kind": "multipart",
+    "parts": [
+     {
+      "label": "(a)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Find $D(0.05)$, to two decimal places."
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 6,
+         "label": "$D(0.05)=$"
+        }
+       ]
+      }
+     },
+     {
+      "label": "(b)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Compute $72\\div 5$."
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 5
+        }
+       ]
+      }
+     },
+     {
+      "label": "(c)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Rounded to the nearest year, the two agree."
+       }
+      ],
+      "answer": {
+       "kind": "choice",
+       "options": [
+        [
+         {
+          "t": "text",
+          "v": "True"
+         }
+        ],
+        [
+         {
+          "t": "text",
+          "v": "False"
+         }
+        ]
+       ],
+       "multi": false
+      }
+     }
+    ]
+   },
+   "key": "14.21; 14.4; 0",
+   "why": "$\\dfrac{\\ln 2}{\\ln 1.05}=14.21$ and $72\\div 5=14.4$; both round to $14$ years, which is the rule of $72$.",
+   "diag": {
+    "1": "(c): $14.21$ and $14.4$ both round to $14$"
+   }
+  }
+ ],
+ "4.4": [
+  {
+   "id": "4.4/O1/q1",
+   "obj": "4.4/O1",
+   "level": "core",
+   "kind": "compute",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Solve."
+    },
+    {
+     "t": "math",
+     "tex": "\\log_{2}(x+3)=4",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "size": 4,
+      "label": "$x=$"
+     }
+    ]
+   },
+   "key": "13",
+   "why": "In exponential form $x+3=2^{4}=16$, so $x=13$."
+  },
+  {
+   "id": "4.4/O1/q2",
+   "obj": "4.4/O1",
+   "level": "core",
+   "kind": "compute",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Solve."
+    },
+    {
+     "t": "math",
+     "tex": "\\ln(5x-2)=\\ln(3x+8)",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "size": 4,
+      "label": "$x=$"
+     }
+    ]
+   },
+   "key": "5",
+   "why": "Equal logarithms have equal arguments: $5x-2=3x+8$, so $x=5$; both arguments are positive there."
+  },
+  {
+   "id": "4.4/O1/q3",
+   "obj": "4.4/O1",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Solve."
+    },
+    {
+     "t": "math",
+     "tex": "\\ln(2x+6)-\\ln x=\\ln 4",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "math",
+       "tex": "x=3",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "x=-3",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "x=6",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "text",
+       "v": "No solution"
+      }
+     ]
+    ],
+    "multi": false
+   },
+   "key": "0",
+   "why": "The difference is $\\ln\\dfrac{2x+6}{x}$, so $\\dfrac{2x+6}{x}=4$, giving $2x+6=4x$ and $x=3$.",
+   "diag": {
+    "1": "$2x+6=4x$ solved with a sign slip; and $x=-3$ would make $\\ln x$ undefined",
+    "2": "$2x+6=4$ solved instead of $2x+6=4x$; the $x$ on the right was dropped",
+    "3": "$x=3$ makes both arguments positive, so the solution stands"
+   }
+  },
+  {
+   "id": "4.4/O1/q4",
+   "obj": "4.4/O1",
+   "level": "stretch",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Solve."
+    },
+    {
+     "t": "math",
+     "tex": "2\\ln(x-1)=\\ln(x+5)",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "math",
+       "tex": "x=4",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "x=4\\text{ and }x=-1",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "x=-1",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "text",
+       "v": "No solution"
+      }
+     ]
+    ],
+    "multi": false
+   },
+   "key": "0",
+   "why": "$\\ln(x-1)^{2}=\\ln(x+5)$ gives $(x-1)^{2}=x+5$, so $x^{2}-3x-4=0$ and $(x-4)(x+1)=0$; $x=-1$ makes $\\ln(x-1)$ undefined, leaving $x=4$.",
+   "diag": {
+    "1": "$x=-1$ is a solution of the quadratic but not of the original equation, where $\\ln(-2)$ has no value",
+    "2": "the one value that fails the check",
+    "3": "$x=4$ checks: $2\\ln 3=\\ln 9$"
+   }
+  },
+  {
+   "id": "4.4/O2/q1",
+   "obj": "4.4/O2",
+   "level": "core",
+   "kind": "compute",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Solve without logarithms."
+    },
+    {
+     "t": "math",
+     "tex": "2^{3x-1}=32",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "size": 4,
+      "label": "$x=$"
+     }
+    ]
+   },
+   "key": "2",
+   "why": "$32=2^{5}$, so $3x-1=5$ and $x=2$."
+  },
+  {
+   "id": "4.4/O2/q2",
+   "obj": "4.4/O2",
+   "level": "core",
+   "kind": "compute",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Solve without logarithms."
+    },
+    {
+     "t": "math",
+     "tex": "5^{x+4}=25",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "size": 4,
+      "label": "$x=$"
+     }
+    ]
+   },
+   "key": "-2",
+   "why": "$25=5^{2}$, so $x+4=2$ and $x=-2$."
+  },
+  {
+   "id": "4.4/O2/q3",
+   "obj": "4.4/O2",
+   "level": "core",
+   "kind": "compute",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Solve without logarithms."
+    },
+    {
+     "t": "math",
+     "tex": "9^{x}=27",
+     "display": true
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "size": 5,
+      "label": "$x=$",
+      "numeric": false
+     }
+    ],
+    "note": "type a fraction as 3/2"
+   },
+   "key": "3/2",
+   "why": "$9^{x}=3^{2x}$ and $27=3^{3}$, so $2x=3$."
+  },
+  {
+   "id": "4.4/O2/q4",
+   "obj": "4.4/O2",
+   "level": "stretch",
+   "kind": "multipart",
+   "stem": [
+    {
+     "t": "text",
+     "v": "Solve with logarithms."
+    }
+   ],
+   "answer": {
+    "kind": "multipart",
+    "parts": [
+     {
+      "label": "(a)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "$e^{4x}=7$. Round to three decimal places."
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 6,
+         "label": "$x=$"
+        }
+       ]
+      }
+     },
+     {
+      "label": "(b)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "$2e^{3x+1}=10$. Round to four decimal places."
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 7,
+         "label": "$x=$"
+        }
+       ]
+      }
+     }
+    ]
+   },
+   "key": "0.486; 0.2031",
+   "why": "$4x=\\ln 7$ gives $x=0.486$; dividing by $2$ first, $e^{3x+1}=5$, so $3x+1=\\ln 5$ and $x=0.2031$."
+  },
+  {
+   "id": "4.4/O3/q1",
+   "obj": "4.4/O3",
+   "level": "core",
+   "kind": "multipart",
+   "stem": [
+    {
+     "t": "text",
+     "v": "The revenue of a company (billions of dollars) is approximated by $R(x)=25e^{0.09x}$, where $x=11$ corresponds to 2011."
+    }
+   ],
+   "answer": {
+    "kind": "multipart",
+    "parts": [
+     {
+      "label": "(a)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Find the revenue in 2020, to two decimal places."
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 7,
+         "label": "$R(20)=$"
+        }
+       ]
+      }
+     },
+     {
+      "label": "(b)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Find the first full year in which revenue exceeds $200$ billion dollars."
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 5,
+         "label": "year"
+        }
+       ]
+      }
+     }
+    ]
+   },
+   "key": "151.24; 2024",
+   "why": "$25e^{1.8}=151.24$; $e^{0.09x}=8$ gives $x=\\dfrac{\\ln 8}{0.09}=23.1$, so the first full year is $x=24$, which is 2024."
+  },
+  {
+   "id": "4.4/O3/q2",
+   "obj": "4.4/O3",
+   "level": "core",
+   "kind": "compute",
+   "stem": [
+    {
+     "t": "text",
+     "v": "The delinquency rate on a bank's loans (percent) is approximated by $D(x)=6.5e^{-0.08x}$, where $x=9$ corresponds to 2009. Find the first full year in which the rate falls below $3\\%$."
+    }
+   ],
+   "answer": {
+    "kind": "compute",
+    "slots": [
+     {
+      "size": 5,
+      "label": "year"
+     }
+    ]
+   },
+   "key": "2010",
+   "why": "$e^{-0.08x}=\\dfrac{3}{6.5}$ gives $x=\\dfrac{\\ln(3/6.5)}{-0.08}=9.66$, so the first full year is $x=10$, which is 2010."
+  },
+  {
+   "id": "4.4/O3/q3",
+   "obj": "4.4/O3",
+   "level": "core",
+   "kind": "choice",
+   "stem": [
+    {
+     "t": "text",
+     "v": "A quantity is modelled by $f(x)$ with $x=10$ corresponding to 2010. Solving $f(x)=500$ gives $x=17.4$. In which year does the quantity first exceed $500$ for the full year?"
+    }
+   ],
+   "answer": {
+    "kind": "choice",
+    "options": [
+     [
+      {
+       "t": "math",
+       "tex": "2018",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "2017",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "2017.4",
+       "display": false
+      }
+     ],
+     [
+      {
+       "t": "math",
+       "tex": "17",
+       "display": false
+      }
+     ]
+    ],
+    "multi": false
+   },
+   "key": "0",
+   "why": "The quantity passes $500$ during $x=17$, so the first whole year above it is $x=18$, which is 2018.",
+   "diag": {
+    "1": "$x=17.4$ rounded down; during most of 2017 the quantity is still below $500$",
+    "2": "a year is a whole number",
+    "3": "$x$ reported instead of the year it stands for"
+   }
+  },
+  {
+   "id": "4.4/O3/q4",
+   "obj": "4.4/O3",
+   "level": "stretch",
+   "kind": "multipart",
+   "stem": [
+    {
+     "t": "text",
+     "v": "A town's population (thousands) is approximated by $P(t)=50(1.06)^{t}$, where $t=0$ corresponds to 2010."
+    }
+   ],
+   "answer": {
+    "kind": "multipart",
+    "parts": [
+     {
+      "label": "(a)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Find the population in 2020, to two decimal places."
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 7,
+         "label": "$P(10)=$"
+        }
+       ]
+      }
+     },
+     {
+      "label": "(b)",
+      "stem": [
+       {
+        "t": "text",
+        "v": "Find the first full year in which the population reaches $100$ thousand."
+       }
+      ],
+      "answer": {
+       "kind": "compute",
+       "slots": [
+        {
+         "size": 5,
+         "label": "year"
+        }
+       ]
+      }
+     }
+    ]
+   },
+   "key": "89.54; 2022",
+   "why": "$50(1.06)^{10}=89.54$; $(1.06)^{t}=2$ gives $t=\\dfrac{\\ln 2}{\\ln 1.06}=11.9$, so the first full year is $t=12$, which is 2022."
+  }
+ ]
+}

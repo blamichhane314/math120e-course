@@ -72,7 +72,7 @@
   },
   {
    "name": "Infinity is never included",
-   "statement": "$(2,\\infty)$ — always a parenthesis on $\\infty$."
+   "statement": "$(2,\\infty)$: always a parenthesis on $\\infty$."
   },
   {
    "name": "On the graph",
@@ -193,7 +193,7 @@
   },
   {
    "name": "Profit",
-   "statement": "$P=R-C$ — profit is revenue minus cost."
+   "statement": "$P=R-C$: profit is revenue minus cost."
   }
  ],
  "1.3/O1": [
@@ -351,7 +351,7 @@
  "1.7/O1": [
   {
    "name": "Standard form first",
-   "statement": "$ax^{2}+bx+c=0$ — everything on one side, zero on the other."
+   "statement": "$ax^{2}+bx+c=0$: everything on one side, zero on the other."
   },
   {
    "name": "Zero-product property",
@@ -408,6 +408,326 @@
    "name": "Distance between two numbers",
    "statement": "$|a-b|$ is the distance from $a$ to $b$.",
    "note": "$|2-7|=5$ and $|7-2|=5$."
+  }
+ ],
+ "2.1/O1": [
+  {
+   "name": "Ordered pair",
+   "statement": "$(x,y)$: the first number is the horizontal position, the second the vertical."
+  },
+  {
+   "name": "Quadrants",
+   "statement": "Numbered I to IV anticlockwise from the upper right: I is $(+,+)$, II is $(-,+)$, III is $(-,-)$, IV is $(+,-)$."
+  },
+  {
+   "name": "On an axis",
+   "statement": "A point with a $0$ coordinate lies on an axis and is in no quadrant.",
+   "note": "$(0,1)$ is on the $y$-axis; $(4,0)$ is on the $x$-axis."
+  }
+ ],
+ "2.1/O2": [
+  {
+   "name": "Checking a pair",
+   "statement": "Substitute the first number for $x$ and the second for $y$; the pair is a solution when the two sides agree.",
+   "note": "$(2,-3)$ in $4x-y-11=0$: $8+3-11=0$."
+  }
+ ],
+ "2.1/O3": [
+  {
+   "name": "Graph of an equation",
+   "statement": "Every point on the graph is a solution of the equation, and no point off it is."
+  },
+  {
+   "name": "Drawing a line",
+   "statement": "Choose three values of $x$, compute $y$ for each, plot the points, draw the line through them.",
+   "note": "$x=0$ and $y=0$ are the quickest choices; a line through the origin needs one more."
+  }
+ ],
+ "2.1/O4": [
+  {
+   "name": "Intercepts on a graph",
+   "statement": "An $x$-intercept is where the graph crosses the $x$-axis, where $y=0$; a $y$-intercept is where it crosses the $y$-axis, where $x=0$."
+  },
+  {
+   "name": "How many",
+   "statement": "A graph may cross the $x$-axis twice, once, or not at all.",
+   "note": "The $x$-intercept $6$ is the point $(6,0)$."
+  },
+  {
+   "name": "Reading a value",
+   "statement": "Go up from the $x$-axis to the curve, then across to the $y$-axis; the profit at $x$ is the gap between the revenue and cost lines there."
+  }
+ ],
+ "2.1/O5": [
+  {
+   "name": "From the equation",
+   "statement": "For the $x$-intercept set $y=0$ and solve for $x$; for the $y$-intercept set $x=0$ and solve for $y$.",
+   "note": "$5x+2y=20$: $x$-intercept $4$, $y$-intercept $10$."
+  }
+ ],
+ "2.2/O1": [
+  {
+   "name": "Slope",
+   "statement": "$m=\\dfrac{y_{2}-y_{1}}{x_{2}-x_{1}}$, the rise over the run between two points.",
+   "note": "Subtract in the same order on top and bottom; both differences can involve a negative."
+  },
+  {
+   "name": "Horizontal and vertical",
+   "statement": "A horizontal line has slope $0$; a vertical line has undefined slope, since its run is $0$."
+  }
+ ],
+ "2.2/O2": [
+  {
+   "name": "Slope-intercept form",
+   "statement": "$y=mx+b$: $m$ is the slope and $b$ is the $y$-intercept, the value of $y$ at $x=0$."
+  }
+ ],
+ "2.2/O3": [
+  {
+   "name": "Reading m and b",
+   "statement": "Solve the equation for $y$ first; the coefficient of $x$ is $m$ and the constant is $b$.",
+   "note": "$9x=4y+12$ becomes $y=\\frac94x-3$, so $m=\\frac94$, $b=-3$."
+  }
+ ],
+ "2.2/O4": [
+  {
+   "name": "Graphing by intercepts",
+   "statement": "Find both intercepts, plot them, draw the line through them.",
+   "note": "$\\frac{10}{3}$ is $3\\frac13$: a third of the way from $3$ to $4$."
+  }
+ ],
+ "2.2/O5": [
+  {
+   "name": "Parallel",
+   "statement": "Equal slopes, different $y$-intercepts."
+  },
+  {
+   "name": "Perpendicular",
+   "statement": "Slopes whose product is $-1$: each is the negative reciprocal of the other.",
+   "note": "$\\frac23$ and $-\\frac32$."
+  },
+  {
+   "name": "Neither",
+   "statement": "Slopes that are unequal and whose product is not $-1$; the lines meet once."
+  }
+ ],
+ "2.2/O6": [
+  {
+   "name": "Point-slope form",
+   "statement": "$y-y_{1}=m(x-x_{1})$ for the line of slope $m$ through $(x_{1},y_{1})$; then solve for $y$."
+  },
+  {
+   "name": "Two points",
+   "statement": "Find $m$ from the two points first, then use either point in point-slope form."
+  },
+  {
+   "name": "Horizontal and vertical lines",
+   "statement": "Through $(x_{1},y_{1})$: the horizontal line is $y=y_{1}$, the vertical line is $x=x_{1}$."
+  },
+  {
+   "name": "Year index",
+   "statement": "$x=\\text{year}-\\text{base year}$; a year given means substitute for $x$, a value given means set $y$ equal to it and solve for $x$.",
+   "note": "For the first full year, round $x$ up to the next whole number."
+  }
+ ],
+ "2.3/O1": [
+  {
+   "name": "Fahrenheit to Celsius",
+   "statement": "$C=\\dfrac{5}{9}(F-32)$."
+  },
+  {
+   "name": "Celsius to Fahrenheit",
+   "statement": "$F=\\dfrac{9}{5}C+32$, the same formula solved for $F$."
+  }
+ ],
+ "2.3/O2": [
+  {
+   "name": "A line from two data points",
+   "statement": "The two points give $m$; then $b=y-mx$ from either point; predict by substituting the year's $x$."
+  },
+  {
+   "name": "Rounding",
+   "statement": "Round $m$ to two decimal places, then use the rounded $m$ to find $b$."
+  }
+ ],
+ "3.1/O1": [
+  {
+   "name": "Function notation",
+   "statement": "$f(x)$ is the value the rule $f$ gives at $x$; $f(3)$ is $f$ at $3$, not $f$ times $3$."
+  },
+  {
+   "name": "Algebraic input",
+   "statement": "Replace every $x$ in the rule by the input, in parentheses, then simplify.",
+   "note": "$(3t)^{2}$ is $9t^{2}$; $(x+5)^{2}$ is $x^{2}+10x+25$."
+  }
+ ],
+ "3.1/O2": [
+  {
+   "name": "Numerical input",
+   "statement": "Substitute the number for every $x$, in parentheses, then follow the order of operations.",
+   "note": "$2(-3)^{2}$ is $18$: the square comes first."
+  },
+  {
+   "name": "Constant function",
+   "statement": "A rule with no $x$ in it, such as $f(x)=6$, gives the same value at every input."
+  }
+ ],
+ "3.1/O3": [
+  {
+   "name": "Domain",
+   "statement": "The set of inputs at which the rule gives a value, written in interval notation."
+  },
+  {
+   "name": "Polynomial",
+   "statement": "Domain $(-\\infty,\\infty)$."
+  },
+  {
+   "name": "Even root",
+   "statement": "Set the expression under the root $\\ge 0$ and solve.",
+   "note": "$\\sqrt{15-x}$: $x\\le 15$, domain $(-\\infty,15]$."
+  },
+  {
+   "name": "Denominator",
+   "statement": "Set the denominator $\\ne 0$ and remove that value.",
+   "note": "$\\dfrac{5}{x+2}$: domain $(-\\infty,-2)\\cup(-2,\\infty)$."
+  }
+ ],
+ "3.1/O4": [
+  {
+   "name": "Cost, revenue, profit",
+   "statement": "Cost is fixed cost plus cost per item times items; revenue is price times items; profit is revenue minus cost.",
+   "note": "Cents go in as dollars: $30$ cents is $0.3x$."
+  },
+  {
+   "name": "A model in function notation",
+   "statement": "A year is entered as $t=\\text{year}-2000$; the output carries the units named in the sentence."
+  }
+ ],
+ "4.1/O1": [
+  {
+   "name": "Where the variable sits",
+   "statement": "Linear: $x$ to the first power, $y=mx+b$. Quadratic: an $x^{2}$ term. Exponential: $x$ in the exponent, $y=a^{x}$ or $y=c\\cdot a^{x}$."
+  }
+ ],
+ "4.1/O2": [
+  {
+   "name": "Growth and decay",
+   "statement": "$a^{x}$ grows when $a>1$ and decays when $0<a<1$; $a^{-x}$ is $\\left(\\frac1a\\right)^{x}$."
+  },
+  {
+   "name": "Two points always known",
+   "statement": "$a^{0}=1$ and $a^{1}=a$; the graph passes through $(0,1)$ and $(1,a)$."
+  }
+ ],
+ "4.1/O3": [
+  {
+   "name": "Shape of $y=a^{x}$",
+   "statement": "Entirely above the $x$-axis, through $(0,1)$; approaches the $x$-axis on one side without touching it."
+  },
+  {
+   "name": "Finding the base",
+   "statement": "From a point $(x,y)$ on $y=a^{x}$, $a$ is the number whose $x$-th power is $y$.",
+   "note": "$(2,49)$ gives $a=7$."
+  },
+  {
+   "name": "Shifts",
+   "statement": "$a^{x+c}$ is $a^{x}$ shifted left by $c$; $a^{x-c}$ is shifted right by $c$."
+  }
+ ],
+ "4.1/O4": [
+  {
+   "name": "Evaluate or solve",
+   "statement": "A year given: substitute for $x$ and evaluate. A value given: find where the graph meets the horizontal line at that value, and read $x$."
+  },
+  {
+   "name": "Money losing value",
+   "statement": "The future cost is today's price divided by the value of a dollar then."
+  }
+ ],
+ "4.2/O1": [
+  {
+   "name": "Exponential model",
+   "statement": "$g(t)=c\\cdot a^{t}$ with $t$ the year index; evaluate at the year's $t$ and round as instructed."
+  }
+ ],
+ "4.2/O2": [
+  {
+   "name": "Logistic function",
+   "statement": "$g(t)=\\dfrac{M}{1+ke^{-rt}}$; as $t$ grows, $e^{-rt}$ approaches $0$ and $g(t)$ approaches the ceiling $M$."
+  },
+  {
+   "name": "On a calculator",
+   "statement": "Compute the exponent first, then $e$ to it, then the denominator, then the division."
+  }
+ ],
+ "4.3/O1": [
+  {
+   "name": "The equivalence",
+   "statement": "$\\log_{b}y=x$ means $b^{x}=y$: the base stays the base, the logarithm is the exponent."
+  },
+  {
+   "name": "Two named bases",
+   "statement": "$\\log$ with no base written is base $10$; $\\ln$ is base $e$."
+  }
+ ],
+ "4.3/O2": [
+  {
+   "name": "Evaluating",
+   "statement": "$\\log_{b}y$ asks: $b$ to what power is $y$?",
+   "note": "$\\log_{5}625=4$; $\\log_{5}\\frac{1}{125}=-3$; $\\ln e=1$; $\\log 1=0$."
+  }
+ ],
+ "4.3/O3": [
+  {
+   "name": "Product",
+   "statement": "$\\log_{b}(xy)=\\log_{b}x+\\log_{b}y$."
+  },
+  {
+   "name": "Quotient",
+   "statement": "$\\log_{b}\\dfrac{x}{y}=\\log_{b}x-\\log_{b}y$."
+  },
+  {
+   "name": "Power",
+   "statement": "$\\log_{b}x^{n}=n\\log_{b}x$."
+  }
+ ],
+ "4.3/O4": [
+  {
+   "name": "Change of base",
+   "statement": "$\\log_{b}y=\\dfrac{\\ln y}{\\ln b}=\\dfrac{\\log y}{\\log b}$.",
+   "note": "$\\log_{4}305=\\dfrac{\\ln 305}{\\ln 4}$."
+  }
+ ],
+ "4.4/O1": [
+  {
+   "name": "One logarithm equals a number",
+   "statement": "Rewrite in exponential form and solve.",
+   "note": "$\\log_{3}(5x-3)=1$ gives $5x-3=3$."
+  },
+  {
+   "name": "Logarithm equals logarithm",
+   "statement": "Combine each side into a single logarithm, then set the arguments equal."
+  },
+  {
+   "name": "Check",
+   "statement": "Every solution must make each argument positive; a value that does not is rejected, and there may be no solution."
+  }
+ ],
+ "4.4/O2": [
+  {
+   "name": "Same base",
+   "statement": "Write both sides as powers of one base, then set the exponents equal.",
+   "note": "$4^{9x-5}=16$ gives $9x-5=2$."
+  },
+  {
+   "name": "With logarithms",
+   "statement": "Isolate the power, take $\\ln$ of both sides, and bring the exponent down: $e^{5x}=3$ gives $5x=\\ln 3$."
+  }
+ ],
+ "4.4/O3": [
+  {
+   "name": "First full year",
+   "statement": "Solve for $x$, round up to the next whole number, convert back to a year."
   }
  ]
 }

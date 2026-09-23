@@ -296,6 +296,57 @@ not whether it happens to be prose.
 
 ---
 
+## 3d. The opening paragraph is where the voice slips
+
+Rule 3 is kept in the body and lost in the **opening paragraph of a document**:
+the sentence or two above the first problem, where nothing mathematical is
+competing for the space. What arrives there is a description of the document,
+addressed to the reader in a companionable voice.
+
+**Rejected**, from a worksheet on lines and models:
+
+> Two questions are asked of every model below. Given the year, find the value.
+> Given the value, find the year. Part 1 hands you the equation; part 2 hands
+> you data, and the equation is yours to build.
+
+Three faults, and they travel together.
+
+**The document is made an agent.** *"Part 1 hands you the equation"*, *"part 2
+hands you data"*. A part of a document does not hand anyone anything. The same
+verb family: a table that *shows you*, a section that *walks you through*, a
+guide that *takes you from* one thing to another.
+
+**The reader is made a companion.** *"the equation is yours to build"* is a
+flourish, not an instruction. So are *"you will see"*, *"we will find"*, and
+*"now you are ready for"*. Rule 7 already bars the lecturing voice; this is the
+same voice being warm instead of stern.
+
+**The balanced pair is ornament.** *"Given the year, find the value. Given the
+value, find the year."* Two clauses of equal length, mirrored, the second
+built by swapping the nouns of the first. It reads as finished writing, which
+is why it survives a draft. Other instances struck from these documents:
+*"The first number is the horizontal position, the second the vertical."*
+*"The name is new. The work is not."* The second of those was kept only
+because both halves carry a claim a student acts on; the first was cut.
+
+**The test, and it is the cheapest one in this file.** Cover the opening
+paragraph and read the first problem. If no problem becomes harder to do, the
+paragraph was about the document, and it goes.
+
+**What an opening may be**, when it is there at all:
+
+- an instruction the student acts on: *"Show your work."*
+- a statement of mathematics the problems use: *"Every factoring problem is a
+  multiplication read backwards."*
+- nothing. A worksheet may begin at problem 1.
+
+**⚠ Do not over-correct.** A document may say which sections it covers, and the
+Exam 1 study guide's framing paragraphs were asked for by the instructor and
+stay. The test is whether the sentence was asked for, and whether it tells the
+reader something they act on, not whether it happens to be prose.
+
+---
+
 ## 4. Slide titles are labels, not headlines
 
 **Rejected:** "The one that catches everyone" · "Why there is an order at all"

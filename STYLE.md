@@ -123,6 +123,117 @@ concrete one and delete the summary. Do not lead with the summary.
 
 ---
 
+## Rule 0a. The register is measurable, and four audits have measured it
+
+On 2026-09-23 a chapter 2 study guide was rated 2/10 by the instructor for a
+tone he called "very AI rhythmic". Four independent audits measured the draft
+against his own writing (the Exam 1 paper, the syllabus page, and the two study
+guide paragraphs he asked for). **The draft was simpler, shorter and colder
+than his prose, not more complex.** These are the numbers. Write to them.
+
+| | his writing | the rejected draft |
+|---|---|---|
+| mean sentence | 10.1 words | 8.3 |
+| mean word length | 4.31 letters | 3.53 |
+| words of 8+ letters | 11.4% | 5.6% |
+| distinct words | 301 of 752 | 182 of 648 |
+| `you` / `your` | 18 tokens | 1 |
+| three-part lists in one sentence | 8 | **0** |
+| "X rather than Y" contrasts | 4 | **0** |
+| sentences opening on a fronted condition | 1 of 76 | 18 of 79 |
+| `if` | 0 | 3 |
+| mirrored two-part constructions | 0 | **16** |
+
+**The five tells, all countable.** Before shipping any explanatory prose, count
+them. Any non-zero count in 1, 2 or 4 is a rewrite.
+
+1. **The mirrored pair.** Two clauses or sentences of near-equal length where
+   the second is the first with its nouns or symbols swapped. *"On the $x$-axis
+   every point has $y=0$. On the $y$-axis every point has $x=0$."* *"$m$ is the
+   number in front of $x$. $b$ is the number on its own."* *"A year comes in as
+   $x=\text{year}-2000$, and an answer in $x$ goes back out."* The reader hears
+   the beat before the distinction. **He never writes one. Sixteen were in one
+   draft.**
+2. **The snap closer.** A long sentence followed by a short verdict fragment:
+   *"…multiply to $-1$. Anything else is neither."* Eight in one draft, and 20
+   of 30 paragraphs ended at or below their own mean length. Paragraphs must be
+   allowed to end on their longest sentence.
+3. **Flatness.** 66% of the draft's sentences sat inside one 8-word band, and
+   27% of all units were inside a run of three near-identical lengths. Without
+   a long sentence to push against, every short one lands at the same weight,
+   which is what makes tells 1 and 2 audible. **Write some 20-word sentences.**
+4. **The fronted condition.** *"If the line goes up…, $m$ is positive. If it
+   goes down… If it is flat…"* He opens on a condition once in 76 sentences and
+   uses `if` zero times. Put the subject first, or an imperative.
+5. **The absent three-part list.** He writes eight per 766 words, third item
+   longest: *"Each objective gives one worked example, the rules that example
+   used, and problems to try."* The draft had none, because it split every
+   three-part idea into mirrored pairs. **When the material has three parts,
+   write one sentence with three parts.**
+
+**His contrast is subordinated, never balanced.** *"Work across a set rather
+than stopping after the first one."* *"Homework problems are in MyLab, not
+here."* Four instances, all one sentence with an unequal second half.
+
+---
+
+## Rule 0b. Never rate the difficulty, and never hedge
+
+**He concedes difficulty. He never minimises it.** *"There are a lot of
+problems here, and that is on purpose."* His writing contains no *easy*,
+*easiest*, *simply*, *just*, *quick*, *saves time*, *straight away*.
+
+**Rejected**, all from one draft:
+
+> Five things that **save time** · the two **easiest** to find · write
+> $y=mx+b$ **straight away** · each one costs **a single** substitution
+
+A rating tells the student how hard their work should feel, which is rule 2's
+fault in a new place, and it is wrong for whoever finds it hard.
+
+**And he never hedges.** Flat claims: *"None of these are multiple choice."*
+*"The problems on the exam will be these same kinds with different numbers."*
+
+**Rejected:** *"$x$ is **usually** a year."* *"**Most** problems in this
+chapter need this step first."* *"**almost every** graph is a straight line."*
+If the claim needs a hedge, it is a claim about the exercise set rather than
+about mathematics, and rule 3c already removes it.
+
+---
+
+## Rule 0c. Objects do not act, and warmth is not a voice
+
+**Rejected**, one draft: an equation that **hides** $m$ and $b$ · numbers that
+**appear** when you solve · a year that **comes in** · an answer that **goes
+back out** · a problem that **asks** · a move that **opens** most problems · a
+number that **sits** in front of $x$ · dots that **line up**.
+
+An equation does not conceal anything. Write what is true of it: *"$5x-2y=20$
+is not solved for $y$, so the coefficient of $x$ is not the slope."*
+
+**The warmth question, because stripping these makes prose colder.** Warmth
+here is not tone and not address. It is four content decisions, and rule 5
+already contains the model in its accepted sentence, *"$-9^{2}=-81$ and
+$(-9)^{2}=81$. The exponent applies to 9 unless parentheses place the minus
+inside the base."* That reads as warm because the error was anticipated and
+named with a number.
+
+1. **Anticipate the near miss, arithmetically.** *"A positive $24$ divided by a
+   negative $-3$ is negative, and dropping that sign is the usual mistake
+   here."*
+2. **Give the reason for a step**, not just the step.
+3. **Close the inference.** Do not name an operation the student must then
+   perform on their own: show $x_{1}=8$ and $y_{1}=-2$ going into
+   $y-y_{1}=m(x-x_{1})$.
+4. **Point at a number on this page**, never at `(\S1.6)` or at another part of
+   the document. A student working at midnight has no textbook open.
+
+Coldness in these documents has never come from the prohibitions. It comes
+from unclosed inferences: each one is a signal that the reader's difficulty was
+not imagined.
+
+---
+
 ## 1. Do not paraphrase standard terminology
 
 **Rejected:**
@@ -156,6 +267,47 @@ self-fulfilling.
 Plain language is for **explanation**. Standard terminology is for
 **naming**. Explain plainly, but name correctly, and never substitute the one
 for the other.
+
+### The substitutions actually made, and what they cost
+
+A chapter 2 draft written to the instruction "very very simple" replaced the
+course's own words throughout. **Simple sentences, correct names.** Simplicity
+belongs to the syntax and the examples, never to the vocabulary.
+
+| written | should have been |
+|---|---|
+| dot | point |
+| grid | the coordinate plane |
+| "Where it crosses" (a heading) | the $y$-intercept |
+| "How steep it is" (a heading) | the slope |
+| "the number in front of $x$" | the coefficient of $x$ |
+| "the number on its own" | the constant term |
+| flat | horizontal |
+| "has no slope" | the slope is **undefined** |
+| crossings | intercepts |
+| "the top and the bottom" | the numerator and the denominator |
+| "put in a zero" | substitute $0$ |
+| "the rule" | the equation, or the model |
+
+Two further costs, both real:
+
+**The same object got four names and no anchor.** In one file the slope was
+called $m$, *the number in front of $x$*, *the number multiplying $x$*, and
+*the slope*, with no sentence saying these are one thing.
+
+**The correct term was withheld from the explanation and then used on the
+student under assessment.** The explanation said "a pair of numbers"; the
+problem four pages later said "Write the two data points as **ordered
+pairs**". *Coordinate* appeared nowhere but the answer key, which is where a
+stuck student goes.
+
+### Do not invent notation either
+
+The same draft introduced **$Ax+By=C$** as a named form and set a problem
+asking students to convert into it. That notation appears nowhere in this
+course, MyLab never names the form, and *standard form* already means
+something else here (\S1.2 polynomials, \S1.7 quadratics). Refer to the shape
+with an instance: *"$5x-2y=20$ is not solved for $y$."*
 
 ---
 
@@ -332,6 +484,20 @@ because both halves carry a claim a student acts on; the first was cut.
 **The test, and it is the cheapest one in this file.** Cover the opening
 paragraph and read the first problem. If no problem becomes harder to do, the
 paragraph was about the document, and it goes.
+
+**⚠ The fix for a mirrored pair is to break the cadence, not to delete the
+claim.** This rule caused a real loss. *"The first number is the horizontal
+position, the second the vertical"* was struck from a worksheet as ornament and
+recorded above as a rejected example. It is also the one fact every problem in
+chapter 2 depends on, and nothing replaced it: the study guide that followed
+never told students which number is $x$. Before striking a balanced sentence,
+write down what it claims. If a student acts on that claim, keep it and recast
+it unbalanced:
+
+> An ordered pair such as $(3,2)$ names one point. The first number, $3$, is
+> measured along the $x$-axis, and the second number, $2$, is measured straight
+> up from there. Read them in that order every time, because $(3,2)$ and
+> $(2,3)$ are two different points.
 
 **What an opening may be**, when it is there at all:
 
@@ -564,6 +730,45 @@ caption for something the reader can already see. Delete it.
 
 ---
 
+## How a practice document is ordered
+
+A study guide is used alone, days before an exam, by a student who cannot
+currently explain the chapter's first idea. Order is not presentation; it is
+most of whether the document works.
+
+**Build, do not open at full difficulty.** A chapter 2 draft opened on a
+seven-part synthesis problem, which is where a student should finish. Reordered,
+it ran: intercepts and drawing one line, slope, reading $m$ and $b$, writing an
+equation, two lines, **then** the synthesis, then the applied problems, then a
+mixed set with no headings.
+
+**Each block carries its own support.** A statement of the idea with a number
+in it, a worked example, then practice whose first item is closest to the
+worked one. A worked example alone is not support for someone working alone.
+
+**The worked example must be at least as hard as the problems it prepares.** A
+draft taught intercepts on $2x+y=8$, where neither substitution requires a
+division, then set $3x+4y=24$ (two divisions) and $2x-5y=10$ (division by a
+negative). Walk the worked example against every problem it heads and check
+that no problem needs a step the example never takes.
+
+**Group by what the problem hands you, not by objective number.** The five
+\S2.2 objectives are one object sliced by what is given, so an
+objective-indexed drill teaches the executions five times and the choice never.
+*Two points · a slope and a point · an equation not solved for $y$ · a graph ·
+two equations* is the useful division, and it is also what an exam question
+looks like.
+
+**Cross-cutting conventions get their own block.** The year index, evaluate
+against solve, "the first full year", units and rounding belong to no
+objective, and roughly 20 of the 107 assigned problems in the Exam 2 span turn
+on them. Scattered, a student meets each five times and never sees it stated.
+
+**Put a box explaining a convention above the problems that use it**, never
+after them.
+
+---
+
 ## What the figures should be
 
 The figures were the part of the first draft that worked, so the conventions
@@ -573,6 +778,22 @@ across a boundary it does not belong inside — a representative value placed on
 the edge of a ring asserts something false. Where two things are being
 contrasted, separate them physically: two arrows at the same height read as one
 span.
+
+**A value a question asks the student to read off a graph must land on a
+gridline.** A draft drew revenue and cost with gridlines every 500 dollars and
+then asked for values of 1240 and 1440; three of its four parts were
+unanswerable as printed. The fix is to choose the coefficients so the answers
+are exact: $R=12x$ and $C=8x+400$ with gridlines every 200 dollars and 25
+items gives 1800, 1600, a profit of 200 and a break-even at 100.
+
+**If a fact is visual, draw it.** One draft taught parallel and perpendicular
+as arithmetic on two fractions with no picture anywhere, and never drew a
+vertical line while asserting its slope is undefined. Parts 3, 4 and 5 of that
+document contained no figure at all.
+
+**An instruction must be true of every figure it governs.** *"Read both
+intercepts from the graph"* headed two figures, the second a parabola with
+three.
 
 ---
 
@@ -648,3 +869,26 @@ Patterns confirmed as working across several reviews. Carry them forward:
 11. **For every `\statement` with a worked example under it:** does the
     explanation say anything the example does not demonstrate? If not, empty
     the slot (rule 13).
+12. **Count the mirrored pairs. The target is zero** (rule 0a). Two clauses of
+    near-equal length, the second built by swapping the first's nouns.
+13. **Count sentences of 20 words or more.** Zero is a failure, not a success:
+    without them the short sentences have nothing to push against.
+14. **Does any paragraph end on its shortest sentence?** Rewrite so it does not.
+15. **Count `if` at the start of a sentence, and fronted conditions.** He uses
+    one in 76 sentences.
+16. **Is there a three-part list anywhere?** If the material has three parts and
+    the draft has none, they were split into mirrored pairs.
+17. **Grep for `easy`, `easiest`, `simply`, `just`, `quick`, `saves time`,
+    `straight away`, `usually`, `most`, `almost every`.** All are failures
+    (rule 0b).
+18. **Does any inanimate subject take a verb of agency?** Search for
+    `hides`, `shows you`, `tells`, `sits`, `opens`, `appears`, `asks`, `comes`,
+    `goes` (rule 0c).
+19. **Is every course term the course's own?** Check against rule 1's table:
+    point, coordinate plane, slope, $y$-intercept, coefficient, constant term,
+    horizontal, undefined, intercept, numerator, denominator, substitute.
+20. **For every question asked about a figure, is the answer readable off it?**
+21. **Does the worked example take every step its problems require**, including
+    dividing by a negative?
+22. **Before striking a balanced sentence, write down its claim.** If a student
+    acts on the claim, recast the sentence instead of deleting it (rule 3d).

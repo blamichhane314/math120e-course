@@ -543,11 +543,11 @@
  "2.3/O2": [
   {
    "name": "A line from two data points",
-   "statement": "The two points give $m$; then $b=y-mx$ from either point; predict by substituting the year's $x$."
+   "statement": "The two points give $m$; either point then goes into $y-y_{1}=m(x-x_{1})$, which is solved for $y$; predict by substituting the year's $x$."
   },
   {
    "name": "Rounding",
-   "statement": "Round $m$ to two decimal places, then use the rounded $m$ to find $b$."
+   "statement": "Round $m$ to two decimal places first, then use the rounded $m$ in point-slope form."
   }
  ],
  "3.1/O1": [

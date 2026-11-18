@@ -781,7 +781,7 @@ function reset() {
     rows: CLASSES.map(() => ({ filled: false, cnt: 0, cell: cell(''), glow: 0 })),
     cols: CLASSES.map(() => ({ dim: 0 })),
     total: { cell: cell(''), glow: 0 },
-    lay: { table: 0, hist: 0, total: 0, sw: 0, key: 0, keyLit: 0, coin: 0, b10: 0, b100: 0, px: 0 },
+    lay: { table: 0, hist: 0, total: 0, fuse: 0, sw: 0, key: 0, keyLit: 0, coin: 0, b10: 0, b100: 0, px: 0 },
     head: cell('FREQUENCY'), vt: cell('FREQUENCY'),
     AXC: { mode: 'F', ax: { M: 8, Mt: 8, R: .4, Rt: .4 }, ticks: null, tickPrev: null, tickFade: 1, nL: () => 20 },
     puck: 0, marks: { rows01: 0, bars01: 0, tail: 0 },
@@ -886,6 +886,8 @@ function allSorted() {
   fade(S, 'imprintA', 0, 900, 0, E.cross, false);
   let sum = 0;
   S.rows.forEach((r, k) => after(700 + k * 240, () => { sum += r.cnt; setCell(S.total.cell, String(sum)); r.glow = 1; fade(r, 'glow', 0, 700, 0, E.out, false); Snd.tick(); }));
+  // the sorted stacks close up into the bars of the histogram
+  layA('fuse', 1, 1200, 700 + 6 * 240 + 300);
 }
 function markDims(bars, to, dur, delay) { S.cols.forEach((c, k) => fade(c, 'dim', bars.includes(k) || !bars.length ? 0 : to, dur, delay)); }
 function beat8() {
@@ -1434,7 +1436,8 @@ function sortTiles() {
   after(150 + order.length * 95 + 700, () => showAfter(WORDS.pr1l));
 }
 // problem 2: the tiles fall into the columns beside the student's bars
-function colPos(t, j) { const L = P2L, pitch = L.H / L.M; return { x: L.x0 + t.k * L.colW + 62, y: L.base - (j + 1) * pitch + 2, w: 44, h: pitch - 4 }; }
+// the tiles stack inside the student's bar, one tile for each value, so they show the bar's height
+function colPos(t, j) { const L = P2L, pitch = L.H / L.M, w = 64; return { x: L.x0 + t.k * L.colW + (L.colW - w) / 2, y: L.base - (j + 1) * pitch + 2, w, h: pitch - 4 }; }
 function placeColumns(p) { const cnt = Array(6).fill(0); for (const t of p.tiles) { const j = cnt[t.k]++; const s = colPos(t, j); after(1, () => { Object.assign(t, { x: s.x, y: s.y, st: 'col', slot: j, a: 1, rot: 0 }); }); } }
 function dropTiles() {
   const p = S.p; if (!p || p.k !== 2 || PROB.p2.dropped) return;
@@ -1808,6 +1811,33 @@ function drawTile(g, t, lift = 0, dim = 0) {
   if (dk > .004) { g.fillStyle = `rgba(8,10,8,${dk.toFixed(3)})`; g.beginPath(); g.roundRect(-w / 2, -h / 2, w, h + 3.2, 6); g.fill(); }
   g.restore();
 }
+// a histogram bar as the notes draw it: one solid block from one class boundary to the next, outlined,
+// so neighbouring bars touch and share an edge. The outline leaves the bottom open; the axis is the bottom.
+function solidBar(g, x, top, w, hgt, a, dim = 0) {
+  if (a <= .003 || hgt <= .3) return;
+  const base = top + hgt;
+  g.save();
+  if (NIGHTM()) {
+    g.globalCompositeOperation = 'lighter'; g.globalAlpha = a * .14 * (1 - .6 * dim); g.drawImage(HALO, x - 20, top - 16, w + 40, hgt + 26);
+    g.globalCompositeOperation = 'source-over'; g.globalAlpha = a * (1 - .45 * dim);
+    const gx = g.createLinearGradient(x, 0, x + w, 0); gx.addColorStop(0, 'rgb(242,196,138)'); gx.addColorStop(.5, 'rgb(255,234,204)'); gx.addColorStop(1, 'rgb(242,196,138)');
+    g.fillStyle = gx; g.fillRect(x, top, w, hgt);
+    const gy = g.createLinearGradient(0, top, 0, base); gy.addColorStop(0, 'rgba(255,250,236,.2)'); gy.addColorStop(1, 'rgba(160,90,36,.16)');
+    g.fillStyle = gy; g.fillRect(x, top, w, hgt);
+    g.strokeStyle = 'rgba(112,60,22,.75)';
+  } else {
+    g.globalAlpha = a;
+    const gx = g.createLinearGradient(x, 0, x + w, 0); gx.addColorStop(0, '#ded2b8'); gx.addColorStop(.12, '#efe6d2'); gx.addColorStop(.85, '#e9dfc9'); gx.addColorStop(1, '#d4c5a6');
+    g.fillStyle = gx; g.fillRect(x, top, w, hgt);
+    g.fillStyle = 'rgba(255,255,248,.7)'; g.fillRect(x + 1.5, top + 1.2, w - 3, 1);
+    const dk = 1 - (1 - shade(x + w / 2, top + hgt / 2)) * (1 - .28 * dim);
+    if (dk > .004) { g.fillStyle = `rgba(8,10,8,${dk.toFixed(3)})`; g.fillRect(x, top, w, hgt); }
+    g.strokeStyle = 'rgba(46,36,22,.75)';
+  }
+  g.lineWidth = 1.3; g.lineJoin = 'miter';
+  g.beginPath(); g.moveTo(x, base); g.lineTo(x, top); g.lineTo(x + w, top); g.lineTo(x + w, base); g.stroke();
+  g.restore();
+}
 
 /* the ruler, gridlines and labels, shared by every histogram */
 // ruler numbers at full brightness with a soft dark edge, so they read over flying tiles
@@ -1878,6 +1908,17 @@ function drawCommute(g, A0) {
       glowRect(g, x0 + k * colW + 1, base - H, colW - 2, H, h * .8, 2);
     }
     drawAxis(g, S.AXC, x0, base, H, 6, colW, pH, x0 - 66, S.vt);
+    // once every time is sorted, the stacks close up into the histogram's bars: each bar fills its class, edge to edge
+    const fz = S.lay.fuse;
+    if (fz > .003) {
+      const pitch = H / 8, wf = lerp(TILE.w, colW, E.io(clamp(fz * 1.4))), ba = pH * clamp(fz * 1.8);
+      for (let k = 0; k < 6; k++) {
+        const c = S.rows[k].cnt; if (!c) continue;
+        const xk = x0 + k * colW + (colW - wf) / 2, hgt = c * pitch;
+        if (!NIGHTM()) shadowAt(g, SPR.bsh, xk + wf / 2 + 3, base - hgt / 2 + 4, wf, hgt, .45 * ba, .8);
+        solidBar(g, xk, base - hgt, wf, hgt, ba, S.cols[k].dim);
+      }
+    }
     for (let k = 0; k < 6; k++) { const rv = stag(pH, k, 6); ptext(g, CLASSES[k], x0 + (k + .5) * colW, base + 30, '400 19px Newsreader', 'center', rv, 5 * (1 - rv)); }
   }
   if (S.lay.key > .002) drawKey(g, KEY.x, KEY.y, S.lay.key * A0, S.lay.keyLit, 2, null);
@@ -1886,10 +1927,14 @@ function drawCommute(g, A0) {
 const SHAPEBARS = [[1, 2.5, 4.4, 4.4, 2.5, 1], [.8, 1, 1.8, 2.8, 4.4, 5], [5, 4.4, 2.8, 1.8, 1, .8]];
 function miniHist(g, x, y, w, h, bars, a, lit) {
   const n = bars.length, bw = w / n, mx = 5;
+  // bars edge to edge, each outlined, as the notes' shape pictures
   for (let i = 0; i < n; i++) {
-    const bh = bars[i] / mx * h;
-    if (NIGHTM()) glowTile(g, x + i * bw + 1, y + h - bh, bw - 2, bh, null, a * (.55 + .45 * lit));
-    else { g.save(); g.globalAlpha = a; const gr = g.createLinearGradient(0, y + h - bh, 0, y + h); gr.addColorStop(0, `rgba(244,238,224,${.72 + .28 * lit})`); gr.addColorStop(1, `rgba(214,204,182,${.72 + .28 * lit})`); g.fillStyle = gr; g.beginPath(); g.roundRect(x + i * bw + 1, y + h - bh, bw - 2, bh, 1.5); g.fill(); g.restore(); }
+    const bh = bars[i] / mx * h, bx = x + i * bw, by = y + h - bh;
+    g.save();
+    if (NIGHTM()) { g.globalAlpha = a * (.55 + .45 * lit); g.fillStyle = 'rgb(250,218,172)'; g.fillRect(bx, by, bw, bh); g.strokeStyle = 'rgba(112,60,22,.8)'; }
+    else { g.globalAlpha = a; const gr = g.createLinearGradient(0, by, 0, y + h); gr.addColorStop(0, `rgba(244,238,224,${.72 + .28 * lit})`); gr.addColorStop(1, `rgba(214,204,182,${.72 + .28 * lit})`); g.fillStyle = gr; g.fillRect(bx, by, bw, bh); g.strokeStyle = 'rgba(46,36,22,.7)'; }
+    g.lineWidth = 1; g.beginPath(); g.moveTo(bx, y + h); g.lineTo(bx, by); g.lineTo(bx + bw, by); g.lineTo(bx + bw, y + h); g.stroke();
+    g.restore();
   }
   brassH(g, x - 4, x + w + 4, y + h + 1, 2.5, a);
 }
@@ -1939,9 +1984,11 @@ function drawCommuteTiles(g) {
     g.save(); g.filter = `blur(${2 * SC * DPR}px)`; g.fillStyle = NIGHTM() ? `rgba(242,201,138,${a})` : `rgba(0,0,0,${a})`; g.beginPath(); g.roundRect(im.x + 4, im.y + 4, TILE.w - 8, TILE.h - 6, 6); g.fill(); g.restore();
   }
   const order = S.tiles.slice().sort((a, b) => (a.z - b.z) || (a.i - b.i));
+  const ta = 1 - clamp((S.lay.fuse - .2) / .6);
   for (const t of order) {
     const lift = t.st === 'list' ? hvc(t.k) * 6 - pvc(t.k) * 3 : 0;
-    drawTile(g, t, lift, t.st === 'bar' ? S.cols[t.k].dim : 0);
+    if (t.st === 'bar' || t.st === 'gone') { if (ta <= .003) continue; drawTile(g, ta < 1 ? Object.assign({}, t, { a: t.a * ta }) : t, lift, t.st === 'bar' ? S.cols[t.k].dim : 0); }
+    else drawTile(g, t, lift, 0);
   }
 }
 function drawMarks(g) {
@@ -2171,25 +2218,18 @@ function fraction(g, cx, cy, num, den, a) {
 function drawPieces(g, E, A0) {
   const { x0, colW, base, H, n } = E.L, mf = Mf(E), pitch = H / Math.max(mf, 1e-6);
   E.drawn.pitch = pitch; E.drawn.colH = [];
-  const pw = Math.min(colW - 24, 92);
+  // each bar fills its column, edge to edge with its neighbours, as in the notes
+  const pw = colW;
   for (let k = 0; k < n; k++) {
     const c = E.landed[k]; if (!c) { E.drawn.colH[k] = 0; continue; }
     const w = pw, x = x0 + k * colW + (colW - w) / 2, hgt = Math.min(c * pitch, H * 1.02), top = base - hgt;
     E.drawn.colH[k] = hgt;
     if (!NIGHTM()) shadowAt(g, SPR.bsh, x + w / 2 + 3, top + hgt / 2 + 4, w, hgt, .5 * A0, .8);
-    if (pitch >= 13) { for (let i = 0; i < c; i++) tileProc(g, x, base - (i + 1) * pitch + 1, w, pitch - 2, String(E.values[k]), A0); }
-    else if (NIGHTM()) {
-      glowTile(g, x, top, w, hgt, null, A0);
-      if (pitch >= 2.2) { g.save(); g.globalAlpha = A0; g.fillStyle = 'rgba(160,90,36,.28)'; for (let i = 1; i < c; i++) g.fillRect(x + 1, base - i * pitch - .5, w - 2, Math.min(1, pitch * .3)); g.restore(); }
-    } else {
-      g.save(); g.globalAlpha = A0;
-      const gr = g.createLinearGradient(x, 0, x + w, 0); gr.addColorStop(0, '#d8cbb0'); gr.addColorStop(.15, '#efe6d2'); gr.addColorStop(.8, '#e9dfc9'); gr.addColorStop(1, '#c9b998');
-      g.fillStyle = gr; g.beginPath(); g.roundRect(x, top, w, hgt, Math.min(4, hgt / 2)); g.fill();
-      if (pitch >= 2.2) { g.fillStyle = 'rgba(110,90,60,.30)'; for (let i = 1; i < c; i++) g.fillRect(x + 1, base - i * pitch - .5, w - 2, Math.min(1, pitch * .3)); }
-      else { g.save(); g.beginPath(); g.rect(x, top, w, hgt); g.clip(); const sp = Math.max(1.6, pitch * Math.ceil(1.6 / pitch)); g.fillStyle = 'rgba(110,90,60,.20)'; for (let y = base; y > top; y -= sp) g.fillRect(x, y - .5, w, .55); g.restore(); }
-      g.fillStyle = 'rgba(255,255,248,.75)'; g.fillRect(x + 2, top + .5, w - 4, 1);
-      const dk = shade(x + w / 2, top + hgt / 2); if (dk > .004) { g.fillStyle = `rgba(8,10,8,${dk.toFixed(3)})`; g.beginPath(); g.roundRect(x, top, w, hgt + 3, Math.min(4, hgt / 2)); g.fill(); }
-      g.restore();
+    // a few tosses: each toss is a tile, stacked flush in its column; many tosses: one solid bar, with a faint line per toss while those can be told apart
+    if (pitch >= 20) { for (let i = 0; i < c; i++) tileProc(g, x, base - (i + 1) * pitch, w, pitch, String(E.values[k]), A0); }
+    else {
+      solidBar(g, x, top, w, hgt, A0);
+      if (pitch >= 2.2) { g.save(); g.globalAlpha = A0; g.fillStyle = NIGHTM() ? 'rgba(160,90,36,.28)' : 'rgba(110,90,60,.30)'; for (let i = 1; i < c; i++) g.fillRect(x + 1, base - i * pitch - .5, w - 2, Math.min(1, pitch * .3)); g.restore(); }
     }
   }
   for (let k = 0; k < n; k++) {
@@ -2202,11 +2242,11 @@ function drawPieces(g, E, A0) {
 }
 function drawFlying(g, E, A0) {
   const { x0, colW, base, H } = E.L, pitch = H / Math.max(Mf(E), 1e-6), pend = Array(E.nv).fill(0);
-  const pw = Math.min(colW - 24, 92);
+  const pw = colW;
   for (const pc of E.flying) {
     let tx, ty, w1, h1;
     if (pc.dest === 'rec') { const nn = Math.max(E.recLenS, pc.recIndex + 1), rp = recPitch(Math.ceil(nn)), first = Math.max(0, nn - 40); tx = REC.x + (pc.recIndex - first) * rp + 2; ty = REC.y + 3; w1 = rp - 4; h1 = REC.h - 6; }
-    else { const slot = E.landed[pc.ci] + pend[pc.ci]++; tx = x0 + pc.ci * colW + (colW - pw) / 2; w1 = pw; h1 = Math.max(1.2, pitch - (pitch >= 13 ? 2 : 0)); ty = base - (slot + 1) * pitch + (pitch >= 13 ? 1 : 0); }
+    else { const slot = E.landed[pc.ci] + pend[pc.ci]++; tx = x0 + pc.ci * colW + (colW - pw) / 2; w1 = pw; h1 = Math.max(1.2, pitch); ty = base - (slot + 1) * pitch; }
     const big = pc.size === 'big', stream = pc.size === 'stream';
     let w0 = big ? 64 : pc.size === 'mid' ? 54 : 22, h0 = big ? 32 : pc.size === 'mid' ? 27 : 6;
     if (pc.from) { w0 = Math.max(16, E.recPitchS - 4); h0 = REC.h - 6; }
@@ -2286,26 +2326,28 @@ function drawP2(g, p) {
   ptext(g, 'CLASS', L.x + 24, top + 21, '400 11px "Geist Mono"', 'left', a, 0, '.16em');
   ptext(g, 'FREQUENCY', (L.split + L.x + L.w) / 2, top + 21, '400 11px "Geist Mono"', 'center', a, 0, '.12em');
   for (let k = 0; k < 6; k++) { const y = L.row0 + k * L.rowH; ptext(g, D.classes[k].label, L.x + 24, y + 33, '400 21px Newsreader', 'left', a, 0); ptext(g, String(D.freq[k]), (L.split + L.x + L.w) / 2, y + 33, '400 22px Newsreader', 'center', a, 0); }
-  // the histogram: the student's bars on the left of each column, the tiles on the right
+  // the histogram: the student's bar fills its class, edge to edge; the tiles drop inside it
   plotBack(g, L.x0, L.base, L.H, 6, L.colW, a);
   const A = { mode: 'F', ax: { M: L.M }, nL: () => D.N, ticks: { items: [0, 2, 4, 6, 8].map(v => ({ v, label: String(v) })) }, tickPrev: null, tickFade: 1 };
   drawAxis(g, A, L.x0, L.base, L.H, 6, L.colW, a, L.x0 - 62, { txt: 'FREQUENCY', old: '', sw: 1 });
   for (let k = 0; k < 6; k++) {
     const cxk = L.x0 + k * L.colW;
     ptext(g, D.classes[k].label, cxk + L.colW / 2, L.base + 30, '400 18px Newsreader', 'center', a, 0);
-    const v = PROB.p2.bars[k], bx = cxk + 12, bw = 44, bh = v * pitch, by = L.base - bh;
+    const v = PROB.p2.bars[k], bx = cxk, bw = L.colW, bh = v * pitch, by = L.base - bh;
     const hh = S.hv['bar' + k] || 0, gl = S.glowT['bar' + k] || 0;
-    if (gl > .01) invite(g, bx - 2, by - 14, bw + 4, 14, gl * a, 4);
+    if (gl > .01) invite(g, bx + 8, by - 14, bw - 16, 14, gl * a, 4);
     // the bar the student draws: a light ink bar with a brass grip at its top
     g.save(); g.globalAlpha = a;
     if (bh > .5) {
       g.fillStyle = NIGHTM() ? 'rgba(243,239,231,.16)' : 'rgba(236,226,201,.16)'; g.fillRect(bx, by, bw, bh);
-      g.strokeStyle = NIGHTM() ? 'rgba(246,242,234,.75)' : 'rgba(240,232,210,.8)'; g.lineWidth = 1.4; g.strokeRect(bx + .7, by + .7, bw - 1.4, bh - .7);
+      // outlined on three sides, so a bar shares its edge with the next one and the axis is its bottom
+      g.strokeStyle = NIGHTM() ? 'rgba(246,242,234,.75)' : 'rgba(240,232,210,.8)'; g.lineWidth = 1.4; g.lineJoin = 'miter';
+      g.beginPath(); g.moveTo(bx, L.base); g.lineTo(bx, by); g.lineTo(bx + bw, by); g.lineTo(bx + bw, L.base); g.stroke();
     }
     const gy = by - 5 - hh * 1.5;
     const gg = g.createLinearGradient(0, gy - 4, 0, gy + 4);
     if (NIGHTM()) { gg.addColorStop(0, '#fff4dc'); gg.addColorStop(1, '#f2c98a'); } else { gg.addColorStop(0, '#f3dca2'); gg.addColorStop(.5, '#c49a59'); gg.addColorStop(1, '#6b5228'); }
-    g.fillStyle = gg; g.beginPath(); g.roundRect(bx - 3, gy - 4, bw + 6, 9, 3); g.fill();
+    g.fillStyle = gg; g.beginPath(); g.roundRect(bx + 10, gy - 4, bw - 20, 9, 3); g.fill();
     g.strokeStyle = 'rgba(60,40,16,.5)'; g.lineWidth = .8; for (let i = -2; i <= 2; i++) { g.beginPath(); g.moveTo(bx + bw / 2 + i * 5, gy - 2); g.lineTo(bx + bw / 2 + i * 5, gy + 3); g.stroke(); }
     g.restore();
   }
@@ -2347,13 +2389,12 @@ function drawP4(g, p) {
   const tail = shapeIs === 2 ? [n - 2, n - 1] : shapeIs === 1 ? [0, 1] : [0, n - 1];
   p.drawnH = [];
   for (let k = 0; k < n; k++) {
-    const cxk = x0 + k * colW, f = D.freq[k], w = colW - 18, x = cxk + 9, hgt = f * pitch;
+    const cxk = x0 + k * colW, f = D.freq[k], w = colW, x = cxk, hgt = f * pitch;
     p.drawnH[k] = hgt;
     ptext(g, D.classes[k].label, cxk + colW / 2, base + 30, '400 18px Newsreader', 'center', a, 0);
     if (!f) continue;
     if (!NIGHTM()) shadowAt(g, SPR.bsh, x + w / 2 + 3, base - hgt / 2 + 4, w, hgt, .5 * a, .8);
-    // each bar is a stack of thin slips, one for each value
-    for (let i = 0; i < f; i++) tileProc(g, x, base - (i + 1) * pitch + .5, w, Math.max(1.5, pitch - 1.5), null, a);
+    solidBar(g, x, base - hgt, w, hgt, a);
     const ma = p.markA * a;
     if (ma > .003 && D.freq[k] === D.freq[top]) prect(g, x - 5, base - hgt - 6, w + 10, hgt + 10, 6, p.markA, 1, 1.6, NIGHTM() ? `rgba(246,214,150,${.85 * ma})` : `rgba(241,215,150,${.85 * ma})`);
     if (ma > .003 && tail.includes(k)) { glowRect(g, x - 4, base - hgt - 6, w + 8, hgt + 8, ma * 1.2, 5); }
